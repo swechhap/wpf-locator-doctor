@@ -1,12 +1,19 @@
-# WPF Testability Scorecard
+# WPF Locator Doctor
 
-Rates how easy a WPF app is to automate, and tells you exactly what to fix.
+**Diagnose, heal and fix the locators in your WPF UI automation tests.**
 
-It checks whether the controls a tester needs (buttons, text boxes, lists, menus, tabs…) have good **AutomationIds**:
+Finding good locators in a WPF app usually means hours in inspect tools (Inspect.exe, FlaUInspect, Accessibility Insights),
+and tests still break when IDs are missing, duplicated or renamed. WPF Locator Doctor checks your app for you.
+
+**Today: the testability scorecard.** It checks whether the controls a tester needs (buttons, text boxes, lists, menus, tabs…) have good **AutomationIds**:
 are they there, set on purpose, unique, still the same as last time, and actually visible to test tools.
 It gives each screen and the whole app a score from 0 to 100 and a grade from A to F. Every problem comes with the file, the line, and the line of XAML to add.
 
-This is the first building block of a larger plan (locator discovery, self-healing tests, and an MCP server for AI assistants). See [docs/research-analysis.md](docs/research-analysis.md).
+**Coming next:** an MCP server so AI assistants (Claude Code, Copilot, Cursor…) can find locators for you, self-healing for broken locators in
+FlaUI / Appium tests, and automatic pull requests that fix the test code or add the missing IDs to the app.
+See [docs/research-analysis.md](docs/research-analysis.md) for the research and plan.
+
+Works with any WPF app (.NET Framework or .NET). Built on Windows UI Automation and [FlaUI](https://github.com/FlaUI/FlaUI).
 
 ## Two ways to scan
 
@@ -24,19 +31,19 @@ You need the [.NET SDK](https://dotnet.microsoft.com/download) (version 10 or ne
 Scan a project's source (any operating system):
 
 ```bash
-dotnet run --project src/WpfTestability.Cli -f net10.0 -- scan-source path/to/YourWpfProject
+dotnet run --project src/WpfLocatorDoctor.Cli -f net10.0 -- scan-source path/to/YourWpfProject
 ```
 
 Scan the running app (Windows):
 
 ```bash
-dotnet run --project src/WpfTestability.Cli -f net10.0-windows -- scan-live --exe path/to/YourApp.exe --source path/to/YourWpfProject
+dotnet run --project src/WpfLocatorDoctor.Cli -f net10.0-windows -- scan-live --exe path/to/YourApp.exe --source path/to/YourWpfProject
 ```
 
 Try it on the included practice app, which has one example of every problem:
 
 ```bash
-dotnet run --project src/WpfTestability.Cli -f net10.0 -- scan-source samples/PracticeApp
+dotnet run --project src/WpfLocatorDoctor.Cli -f net10.0 -- scan-source samples/PracticeApp
 ```
 
 Both scans write two files into `./testability-report/`:
@@ -47,7 +54,7 @@ Both scans write two files into `./testability-report/`:
 ## Using it in a build pipeline
 
 ```bash
-dotnet run --project src/WpfTestability.Cli -f net10.0 -- scan-source src/MyApp --min-score 75 --baseline last-report.json --quiet
+dotnet run --project src/WpfLocatorDoctor.Cli -f net10.0 -- scan-source src/MyApp --min-score 75 --baseline last-report.json --quiet
 ```
 
 Exit codes: `0` OK · `1` score below `--min-score` · `2` wrong usage · `3` the scan failed.
@@ -67,7 +74,7 @@ Each check gives a percentage. The score is the weighted average of the checks t
 
 Grades: **A** 90+ · **B** 75–89 · **C** 60–74 · **D** 40–59 · **F** below 40.
 
-Run `wpf-testability rules` to list every problem type (WT001–WT012) with a plain-English explanation.
+Run `wpf-locator-doctor rules` to list every problem type (WT001–WT012) with a plain-English explanation.
 
 ### Why "where the ID came from" matters
 
@@ -86,11 +93,11 @@ The source scan reads the C# code to find these.
 ## Project layout
 
 ```
-src/WpfTestability.Core     The engine: XAML + C# scanning, scoring, reports. Runs anywhere.
-src/WpfTestability.Live     Live scanning of a running app with FlaUI. Windows only.
-src/WpfTestability.Cli      The wpf-testability command.
+src/WpfLocatorDoctor.Core     The engine: XAML + C# scanning, scoring, reports. Runs anywhere.
+src/WpfLocatorDoctor.Live     Live scanning of a running app with FlaUI. Windows only.
+src/WpfLocatorDoctor.Cli      The wpf-locator-doctor command.
 samples/PracticeApp         A small WPF app with one example of each problem (and good examples).
-tests/                      Automated tests (run with: dotnet test WpfTestability.slnx).
+tests/                      Automated tests (run with: dotnet test WpfLocatorDoctor.slnx).
 docs/research-analysis.md   Research behind this project.
 ```
 

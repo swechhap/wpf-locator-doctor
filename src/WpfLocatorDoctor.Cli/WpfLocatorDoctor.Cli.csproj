@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    Built twice:
+      net10.0          - runs anywhere; offers the XAML source scan only.
+      net10.0-windows  - runs on Windows; adds the live-app scan (FlaUI).
+  -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFrameworks>net10.0;net10.0-windows</TargetFrameworks>
+    <RootNamespace>WpfLocatorDoctor.Cli</RootNamespace>
+    <AssemblyName>wpf-locator-doctor</AssemblyName>
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>wpf-locator-doctor</ToolCommandName>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0-windows'">
+    <DefineConstants>$(DefineConstants);LIVE_SCAN</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WpfLocatorDoctor.Core\WpfLocatorDoctor.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net10.0-windows'">
+    <ProjectReference Include="..\WpfLocatorDoctor.Live\WpfLocatorDoctor.Live.csproj" />
+  </ItemGroup>
+
+</Project>

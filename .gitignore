@@ -486,5 +486,5 @@ $RECYCLE.BIN/
 # Vim temporary swap files
 *.swp
 
-# wpf-testability output
+# wpf-locator-doctor output
 testability-report/

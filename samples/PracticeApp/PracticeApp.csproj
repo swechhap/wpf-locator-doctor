@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!--
+    A small WPF app that is deliberately full of locator problems (and some good examples),
+    used to test and demonstrate wpf-testability. Builds anywhere; runs on Windows only.
+  -->
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net10.0-windows</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <RootNamespace>PracticeApp</RootNamespace>
+  </PropertyGroup>
+
+</Project>

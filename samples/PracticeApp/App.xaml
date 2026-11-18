@@ -1,0 +1,11 @@
+<Application x:Class="PracticeApp.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <!-- GOOD: gives every order row its own ID, taken from the order number. -->
+        <Style x:Key="OrderRowStyle" TargetType="DataGridRow">
+            <Setter Property="AutomationProperties.AutomationId" Value="{Binding OrderNumber}" />
+        </Style>
+    </Application.Resources>
+</Application>

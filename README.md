@@ -106,3 +106,7 @@ docs/research-analysis.md   Research behind this project.
 - The source scan can't see controls created only in C# code, and it guesses third-party controls (Telerik, DevExpress…) from their class names.
 - The live scan only sees open windows and the list rows on screen. Open other screens and scan again.
 - The live scan has been compiled against FlaUI but not yet run against a real app (it was developed on a Mac). Try it on the practice app on Windows first.
+
+## License
+
+[MIT](LICENSE). Free to use, change and share, including in commercial projects.

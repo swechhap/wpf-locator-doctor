@@ -9,5 +9,8 @@
     <!-- Allows running on a newer .NET runtime when the exact target runtime is not installed. -->
     <RollForward>Major</RollForward>
     <Version>0.1.0</Version>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/swechhap/wpf-locator-doctor</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/swechhap/wpf-locator-doctor</PackageProjectUrl>
   </PropertyGroup>
 </Project>

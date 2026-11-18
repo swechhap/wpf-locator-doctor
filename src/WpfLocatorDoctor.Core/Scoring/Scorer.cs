@@ -9,14 +9,21 @@ public sealed class Baseline
     public required string File { get; init; }
     public required Dictionary<string, HashSet<string>> IdsByScreen { get; init; }
 
-    public static Baseline FromScorecard(Scorecard previous, string file) => new()
+    /// <summary>Reads the IDs per screen from an earlier report. Screens that appear twice are merged.</summary>
+    public static Baseline FromScorecard(Scorecard previous, string file)
     {
-        File = file,
-        IdsByScreen = previous.Screens.ToDictionary(
-            s => s.Name,
-            s => new HashSet<string>(s.AutomationIds, StringComparer.Ordinal),
-            StringComparer.Ordinal),
-    };
+        ArgumentNullException.ThrowIfNull(previous);
+        return new Baseline
+        {
+            File = file,
+            IdsByScreen = previous.Screens
+                .GroupBy(s => s.Name, StringComparer.Ordinal)
+                .ToDictionary(
+                    g => g.Key,
+                    g => new HashSet<string>(g.SelectMany(s => s.AutomationIds), StringComparer.Ordinal),
+                    StringComparer.Ordinal),
+        };
+    }
 }
 
 /// <summary>Turns a scan into scores, grades and findings.</summary>
@@ -47,6 +54,7 @@ public static class Scorer
 
     public static Scorecard Evaluate(ScanResult scan, Baseline? baseline = null)
     {
+        ArgumentNullException.ThrowIfNull(scan);
         var card = new Scorecard
         {
             Mode = scan.Mode,

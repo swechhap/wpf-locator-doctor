@@ -3,7 +3,10 @@
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <!-- Code-quality rules: .NET's recommended set, and any warning fails the build. Rule tweaks live in .editorconfig. -->
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <GenerateDocumentationFile>false</GenerateDocumentationFile>
     <!-- Lets the Windows-only projects (live scanner, practice WPF app) compile on macOS/Linux. They still only run on Windows. -->
     <EnableWindowsTargeting>true</EnableWindowsTargeting>
     <!-- Allows running on a newer .NET runtime when the exact target runtime is not installed. -->

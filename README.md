@@ -93,19 +93,43 @@ The source scan reads the C# code to find these.
 ## Project layout
 
 ```
-src/WpfLocatorDoctor.Core     The engine: XAML + C# scanning, scoring, reports. Runs anywhere.
-src/WpfLocatorDoctor.Live     Live scanning of a running app with FlaUI. Windows only.
-src/WpfLocatorDoctor.Cli      The wpf-locator-doctor command.
-samples/PracticeApp         A small WPF app with one example of each problem (and good examples).
-tests/                      Automated tests (run with: dotnet test WpfLocatorDoctor.slnx).
-docs/research-analysis.md   Research behind this project.
+src/WpfLocatorDoctor.Core     The engine: XAML + C# scanning, scoring, reports, and the rules for judging
+                              each element of a running app. No Windows dependency, so it runs (and is tested) anywhere.
+src/WpfLocatorDoctor.Live     A thin Windows-only layer: starts or attaches to the app and reads its UI
+                              through FlaUI, then hands each element to the Core rules.
+src/WpfLocatorDoctor.Cli      The wpf-locator-doctor command (CliApp.cs holds the logic; Program.cs only starts it).
+samples/PracticeApp           A small WPF app with one example of each problem (and good examples).
+tests/                        Automated tests (run with: dotnet test WpfLocatorDoctor.slnx).
+docs/research-analysis.md     Research behind this project.
 ```
+
+The rule of thumb: anything that makes a decision lives in Core and has tests. The Windows-only layer only reads
+values from the screen, so as little as possible depends on having Windows to test it.
+
+## Tests and code quality
+
+```bash
+dotnet test WpfLocatorDoctor.slnx
+```
+
+| What | How it is tested | Where |
+|---|---|---|
+| Reading XAML and C# (source scan) | Small XAML/C# snippets, temporary project folders, and the practice app | `XamlSourceScannerTests`, `CodeBehindAnalyzerTests`, `EdgeCaseTests`, `PracticeAppTests` |
+| Scores, grades and problem reports | Hand-built scans with known answers | `ScorerTests`, `EdgeCaseTests` |
+| Live scan decisions (what counts as a control, rows, opaque areas, limits) | A fake UI tree, so no Windows or running app is needed | `LiveTreeWalkerTests` |
+| ID suggestions and reports (Markdown, JSON, terminal) | Direct checks of the output text | `HeuristicsAndReportTests`, `EdgeCaseTests` |
+| The command line: every command, option, error message and exit code | Runs the command in-process against temporary folders | `tests/WpfLocatorDoctor.Cli.Tests` |
+| The live scan against a real running app | GitHub Actions starts the practice app on Windows and scans it | `.github/workflows/ci.yml` (`live-scan` job) |
+
+Quality checks run on every build: .NET's recommended code-analysis rules are on, and any warning fails the build.
+GitHub Actions builds and tests on Linux and Windows for every push and pull request.
 
 ## Known limits
 
 - The source scan can't see controls created only in C# code, and it guesses third-party controls (Telerik, DevExpress…) from their class names.
 - The live scan only sees open windows and the list rows on screen. Open other screens and scan again.
-- The live scan has been compiled against FlaUI but not yet run against a real app (it was developed on a Mac). Try it on the practice app on Windows first.
+- The live scan's decisions are unit-tested, but the part that talks to a real app through FlaUI has only been compiled, not yet seen running
+  (it was developed on a Mac). The `live-scan` job in CI is the first real run; until it has passed it is allowed to fail.
 
 ## License
 

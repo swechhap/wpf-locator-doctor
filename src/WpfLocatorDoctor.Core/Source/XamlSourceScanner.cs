@@ -112,7 +112,7 @@ public sealed partial class XamlSourceScanner
             {
                 docs.Add((file, display, XDocument.Load(file, LoadOptions.SetLineInfo)));
             }
-            catch (XmlException ex)
+            catch (Exception ex) when (ex is XmlException or IOException or UnauthorizedAccessException)
             {
                 result.Notes.Add($"Could not read {display}: {ex.Message}");
             }
@@ -127,12 +127,11 @@ public sealed partial class XamlSourceScanner
         facts.CustomControls = CodeBehindAnalyzer.Analyze(csFiles);
         result.CustomControls.AddRange(facts.CustomControls.Values.Where(c => c.Status != PeerStatus.Unknown));
 
+        var usedNames = new HashSet<string>(StringComparer.Ordinal);
         foreach (var (_, display, doc) in docs)
         {
-            var screen = ScanDocument(doc, display, facts, result.CustomControlUsage);
-            if (screen is null)
-                continue;
-            result.Screens.Add(screen);
+            var screen = ScanDocument(doc, display, facts, result.CustomControlUsage, usedNames);
+            if (screen is not null) result.Screens.Add(screen);
         }
 
         if (docs.Count == 0)
@@ -152,7 +151,7 @@ public sealed partial class XamlSourceScanner
             facts.CustomControls = CodeBehindAnalyzer.AnalyzeText(csharp);
             result.CustomControls.AddRange(facts.CustomControls.Values.Where(c => c.Status != PeerStatus.Unknown));
         }
-        var screen = ScanDocument(doc, displayName, facts, result.CustomControlUsage);
+        var screen = ScanDocument(doc, displayName, facts, result.CustomControlUsage, new HashSet<string>(StringComparer.Ordinal));
         if (screen is not null) result.Screens.Add(screen);
         return result;
     }
@@ -230,7 +229,7 @@ public sealed partial class XamlSourceScanner
 
     // ------------------------------------------------------------------ per screen
 
-    private ScreenScan? ScanDocument(XDocument doc, string display, GlobalFacts facts, Dictionary<string, int> usage)
+    private static ScreenScan? ScanDocument(XDocument doc, string display, GlobalFacts facts, Dictionary<string, int> usage, HashSet<string> usedNames)
     {
         var root = doc.Root;
         if (root is null) return null;
@@ -238,9 +237,7 @@ public sealed partial class XamlSourceScanner
         if (rootTag is "Application" or "ResourceDictionary") return null;
 
         var xClass = root.Attribute(XName.Get("Class", XamlNs))?.Value;
-        var screenName = !string.IsNullOrWhiteSpace(xClass)
-            ? xClass[(xClass.LastIndexOf('.') + 1)..]
-            : System.IO.Path.GetFileNameWithoutExtension(display);
+        var screenName = UniqueScreenName(xClass, display, usedNames);
 
         var screen = new ScreenScan { Name = screenName, Origin = display };
 
@@ -268,6 +265,26 @@ public sealed partial class XamlSourceScanner
         return screen;
     }
 
+    /// <summary>
+    /// The class name without its namespace ("MainView"). If another screen already has that name,
+    /// the full class name ("Shop.Customer.MainView"), and failing that the file path, keeps names unique,
+    /// so per-screen scores and baselines never mix two screens up.
+    /// </summary>
+    private static string UniqueScreenName(string? xClass, string display, HashSet<string> used)
+    {
+        var shortName = !string.IsNullOrWhiteSpace(xClass)
+            ? xClass[(xClass.LastIndexOf('.') + 1)..]
+            : System.IO.Path.GetFileNameWithoutExtension(display);
+        foreach (var candidate in new[] { shortName, xClass, display })
+        {
+            if (!string.IsNullOrWhiteSpace(candidate) && used.Add(candidate)) return candidate;
+        }
+        // Only reachable if the same file is scanned twice.
+        var name = display;
+        for (var i = 2; !used.Add(name); i++) name = $"{display} ({i})";
+        return name;
+    }
+
     private sealed record DocState(
         ScreenScan Screen,
         string Display,
@@ -277,7 +294,7 @@ public sealed partial class XamlSourceScanner
         Dictionary<string, string> NamedText,
         XElement Root);
 
-    private void Visit(XElement el, Ctx ctx, DocState st)
+    private static void Visit(XElement el, Ctx ctx, DocState st)
     {
         var local = el.Name.LocalName;
         var ns = el.Name.NamespaceName;

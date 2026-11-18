@@ -1,0 +1,85 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  build-and-test:
+    name: Build and test (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Build (warnings fail the build)
+        run: dotnet build WpfLocatorDoctor.slnx -c Release
+
+      - name: Test
+        run: dotnet test WpfLocatorDoctor.slnx -c Release --no-build --collect:"XPlat Code Coverage" --results-directory test-results
+
+      - name: Scan the practice app's source (smoke test)
+        run: dotnet run --project src/WpfLocatorDoctor.Cli -c Release -f net10.0 --no-build -- scan-source samples/PracticeApp --out source-report
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: results-${{ matrix.os }}
+          path: |
+            test-results/
+            source-report/
+
+  live-scan:
+    # The live scan has never run against a real app yet. This job starts the practice app on a
+    # Windows runner and scans it. It is allowed to fail until it has been seen to pass; then
+    # remove `continue-on-error` so it protects the live scanner like the other tests.
+    name: Live scan of the practice app (Windows)
+    runs-on: windows-latest
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Build
+        run: dotnet build WpfLocatorDoctor.slnx -c Release
+
+      - name: Scan the running practice app
+        shell: pwsh
+        run: |
+          dotnet run --project src/WpfLocatorDoctor.Cli -c Release -f net10.0-windows --no-build -- `
+            scan-live --exe samples/PracticeApp/bin/Release/net10.0-windows/PracticeApp.exe `
+            --source samples/PracticeApp --out live-report --wait 60
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+      - name: Check the live report found the main window and its problems
+        shell: pwsh
+        run: |
+          $report = Get-Content live-report/testability-report.json -Raw | ConvertFrom-Json
+          if ($report.screens.Count -lt 1) { throw "No screens were found in the running app." }
+          if ($report.overall.interactiveCount -lt 5) { throw "Too few controls found: $($report.overall.interactiveCount)" }
+          $rules = $report.findings.ruleId | Sort-Object -Unique
+          Write-Host "Screens: $($report.screens.name -join ', ')"
+          Write-Host "Problem types found: $($rules -join ', ')"
+          foreach ($expected in 'WT001', 'WT004') {
+            if ($rules -notcontains $expected) { throw "Expected the live scan to report $expected." }
+          }
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: live-report
+          path: live-report/

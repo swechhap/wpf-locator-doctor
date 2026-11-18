@@ -6,6 +6,7 @@
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/WpfLocatorDoctor.Core.Tests/WpfLocatorDoctor.Core.Tests.csproj" />
+    <Project Path="tests/WpfLocatorDoctor.Cli.Tests/WpfLocatorDoctor.Cli.Tests.csproj" />
   </Folder>
   <Folder Name="/samples/">
     <Project Path="samples/PracticeApp/PracticeApp.csproj" />

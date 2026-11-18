@@ -45,20 +45,10 @@ public static partial class IdHeuristics
         _ => 0.0,
     };
 
-    public static string DescribeOrigin(IdOrigin origin) => origin switch
-    {
-        IdOrigin.Explicit => "set on purpose (AutomationProperties.AutomationId)",
-        IdOrigin.DataBound => "set from data, one per row",
-        IdOrigin.XName => "borrowed from x:Name",
-        IdOrigin.Uid => "borrowed from x:Uid",
-        IdOrigin.GeneratedLooking => "looks machine-generated",
-        IdOrigin.Unknown => "present (origin unknown)",
-        _ => "missing",
-    };
-
     /// <summary>Suggests an AutomationId for an element that has none, e.g. "SaveButton" for a Button labelled "Save".</summary>
     public static string SuggestId(UiElementInfo element)
     {
+        ArgumentNullException.ThrowIfNull(element);
         var typeSuffix = element.Kind switch
         {
             "TextBox" or "PasswordBox" or "RichTextBox" => "Input",
@@ -78,7 +68,10 @@ public static partial class IdHeuristics
             _ => StripPrefix(element.Kind),
         };
 
-        var basis = !string.IsNullOrWhiteSpace(element.XName) && !LooksGenerated(element.XName) ? element.XName
+        // An x:Name is a code identifier ("save_button"): its underscores separate words.
+        // A label or tooltip is display text ("_Save"): a single underscore marks the keyboard shortcut.
+        var useXName = !string.IsNullOrWhiteSpace(element.XName) && !LooksGenerated(element.XName);
+        var basis = useXName ? element.XName
                   : element.HasName && IsUsableText(element.Name) ? element.Name
                   : IsUsableText(element.Hint) ? element.Hint
                   : null;
@@ -86,7 +79,7 @@ public static partial class IdHeuristics
         if (basis is null)
             return $"{StripPrefix(element.Screen)}{typeSuffix}";
 
-        var core = ToPascalIdentifier(basis);
+        var core = ToPascalIdentifier(basis, isLabel: !useXName);
         if (core.Length == 0) return $"{StripPrefix(element.Screen)}{typeSuffix}";
         return core.EndsWith(typeSuffix, StringComparison.OrdinalIgnoreCase) ? core : core + typeSuffix;
     }
@@ -100,6 +93,7 @@ public static partial class IdHeuristics
     /// </summary>
     public static string CleanLabel(string text)
     {
+        ArgumentNullException.ThrowIfNull(text);
         var s = text.Trim();
         if (s.StartsWith('{')) return s;
         s = s.Replace("__", "\u0001", StringComparison.Ordinal)
@@ -115,12 +109,17 @@ public static partial class IdHeuristics
         return i >= 0 ? kind[(i + 1)..] : kind;
     }
 
-    /// <summary>"Save & close…" → "SaveClose". Keeps letters and digits only.</summary>
-    public static string ToPascalIdentifier(string text)
+    /// <summary>
+    /// "Save & close…" → "SaveClose". Keeps letters and digits only.
+    /// With <paramref name="isLabel"/> (the default), access-key underscores are removed first ("E_xit" → "Exit");
+    /// otherwise underscores separate words ("save_button" → "SaveButton").
+    /// </summary>
+    public static string ToPascalIdentifier(string text, bool isLabel = true)
     {
+        ArgumentNullException.ThrowIfNull(text);
         var sb = new StringBuilder();
         var upperNext = true;
-        foreach (var ch in CleanLabel(text).Replace("_", " "))
+        foreach (var ch in isLabel ? CleanLabel(text) : text)
         {
             if (char.IsLetterOrDigit(ch))
             {

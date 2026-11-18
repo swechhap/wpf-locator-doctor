@@ -1,0 +1,158 @@
+using WpfLocatorDoctor.Core.Model;
+using WpfLocatorDoctor.Core.Rules;
+
+namespace WpfLocatorDoctor.Core.Live;
+
+/// <summary>
+/// One element of a running app's UI Automation tree, as the live scan needs to see it.
+/// The Windows-only live scanner wraps FlaUI elements in this interface; tests use simple fakes.
+/// Implementations should never throw: return null / false / empty when a value can't be read.
+/// </summary>
+public interface ILiveNode
+{
+    /// <summary>UI Automation control type name, e.g. "Button", "Edit", "Custom".</summary>
+    string ControlType { get; }
+    string? AutomationId { get; }
+    string? Name { get; }
+    string? ClassName { get; }
+    bool IsKeyboardFocusable { get; }
+    bool IsOffscreen { get; }
+    double Width { get; }
+    double Height { get; }
+    /// <summary>Behaviours (patterns) the element supports, e.g. "Invoke", "Value".</summary>
+    IReadOnlyList<string> Patterns { get; }
+    IReadOnlyList<ILiveNode> Children { get; }
+}
+
+/// <summary>Safety limits for walking a live tree.</summary>
+public sealed record LiveWalkLimits(int MaxElementsPerWindow = 5000, int MaxRowsPerList = 50);
+
+/// <summary>
+/// Turns one window's UI Automation tree into the elements the scorer understands.
+/// Pure logic with no Windows dependency, so it is fully testable on any operating system.
+/// </summary>
+public static class LiveTreeWalker
+{
+    private readonly record struct Ctx(string[] Path, bool InRow, bool? RowsIdentifiable);
+
+    private sealed class WalkState(ScreenScan screen, LiveWalkLimits limits)
+    {
+        public ScreenScan Screen { get; } = screen;
+        public LiveWalkLimits Limits { get; } = limits;
+        public int Count { get; set; }
+        public bool LimitHit { get; set; }
+        public int ListsTruncated { get; set; }
+    }
+
+    /// <summary>Minimum size (in pixels) for an empty element to count as an area tests can't look into.</summary>
+    private const double OpaqueMinSize = 24;
+
+    /// <summary>Walks a window and returns it as a screen. Names already in <paramref name="usedNames"/> get a " (2)" suffix.</summary>
+    public static ScreenScan WalkWindow(ILiveNode window, LiveWalkLimits limits, ISet<string> usedNames)
+    {
+        var screen = new ScreenScan { Name = UniqueScreenName(window, usedNames), Origin = window.Name };
+        var state = new WalkState(screen, limits);
+        Visit(window, new Ctx([], false, null), state, isRoot: true);
+
+        if (state.LimitHit)
+            screen.Notes.Add($"Stopped after {limits.MaxElementsPerWindow} elements. Use --max-elements to look further.");
+        if (state.ListsTruncated > 0)
+            screen.Notes.Add($"{state.ListsTruncated} list(s) had more than {limits.MaxRowsPerList} rows; only the first {limits.MaxRowsPerList} were checked.");
+        return screen;
+    }
+
+    /// <summary>Screen name from the window's AutomationId, else its class (if not plain "Window"), else its title.</summary>
+    internal static string UniqueScreenName(ILiveNode window, ISet<string> used)
+    {
+        var baseName = !string.IsNullOrWhiteSpace(window.AutomationId) ? window.AutomationId!
+                     : !string.IsNullOrWhiteSpace(window.ClassName) && window.ClassName != "Window" ? window.ClassName!
+                     : !string.IsNullOrWhiteSpace(window.Name) ? window.Name!
+                     : "Window";
+        var name = baseName;
+        for (var i = 2; !used.Add(name); i++) name = $"{baseName} ({i})";
+        return name;
+    }
+
+    private static void Visit(ILiveNode el, Ctx ctx, WalkState st, bool isRoot)
+    {
+        if (st.Count >= st.Limits.MaxElementsPerWindow)
+        {
+            st.LimitHit = true;
+            return;
+        }
+
+        var controlType = el.ControlType;
+        if (ControlCatalog.LiveSkippedTypes.Contains(controlType)) return;
+
+        var id = NullIfEmpty(el.AutomationId);
+        if (id == "SystemMenuBar") return; // the window's system menu, not part of the app
+
+        st.Count++;
+        var className = NullIfEmpty(el.ClassName);
+        var name = NullIfEmpty(el.Name);
+        var patterns = el.Patterns;
+        var children = el.Children;
+
+        var isRow = !isRoot && ControlCatalog.LiveRowTypes.Contains(controlType);
+        var isItemsHost = ControlCatalog.LiveItemsHostTypes.Contains(controlType);
+        var hasAction = patterns.Any(p => p is "Invoke" or "Toggle" or "Value" or "SelectionItem" or "ExpandCollapse" or "RangeValue");
+        var interactive = !isRoot && !isRow &&
+                          (ControlCatalog.LiveInteractiveTypes.Contains(controlType) ||
+                           className is "DatePicker" ||
+                           (controlType == "Custom" && el.IsKeyboardFocusable && hasAction));
+
+        bool? rowsIdentifiable = null;
+        if (isItemsHost)
+        {
+            var rowIds = children
+                .Where(c => ControlCatalog.LiveRowTypes.Contains(c.ControlType))
+                .Take(st.Limits.MaxRowsPerList)
+                .Select(r => NullIfEmpty(r.AutomationId))
+                .ToList();
+            if (rowIds.Count > 0)
+                rowsIdentifiable = rowIds.All(r => r is not null) && rowIds.Distinct(StringComparer.Ordinal).Count() == rowIds.Count;
+        }
+
+        var kind = className ?? controlType;
+        var path = (ctx.Path.Length >= 4 ? ctx.Path[^3..] : ctx.Path).Append(kind).ToArray();
+
+        st.Screen.Elements.Add(new UiElementInfo
+        {
+            Screen = st.Screen.Name,
+            Kind = kind,
+            ControlType = controlType,
+            AutomationId = id,
+            IdOrigin = id is null ? IdOrigin.None : IdHeuristics.LooksGenerated(id) ? IdOrigin.GeneratedLooking : IdOrigin.Unknown,
+            Name = name,
+            HasName = name is not null,
+            IsInteractive = interactive,
+            IsItemsHost = isItemsHost,
+            InRepeatedTemplate = ctx.InRow,
+            RowsIdentifiable = isItemsHost ? rowsIdentifiable : ctx.InRow ? ctx.RowsIdentifiable : null,
+            IsOpaque = !isRoot && !ctx.InRow && controlType is "Custom" or "Pane" && id is null && name is null &&
+                       children.Count == 0 && !el.IsOffscreen && el.Width >= OpaqueMinSize && el.Height >= OpaqueMinSize,
+            Patterns = [.. patterns],
+            Path = string.Join(" > ", path),
+        });
+
+        // Parts inside self-contained controls (slider thumb, date picker button, ...) aren't scored.
+        if (!isRoot && ControlCatalog.LiveLeafTypes.Contains(controlType)) return;
+
+        var rowsSeen = 0;
+        foreach (var child in children)
+        {
+            var childIsRow = isItemsHost && ControlCatalog.LiveRowTypes.Contains(child.ControlType);
+            if (childIsRow && ++rowsSeen > st.Limits.MaxRowsPerList)
+            {
+                if (rowsSeen == st.Limits.MaxRowsPerList + 1) st.ListsTruncated++;
+                continue;
+            }
+
+            // Only data rows (not grid headers) mark their contents as repeated.
+            var childCtx = childIsRow ? new Ctx(path, true, rowsIdentifiable) : ctx with { Path = path };
+            Visit(child, childCtx, st, isRoot: false);
+        }
+    }
+
+    private static string? NullIfEmpty(string? s) => string.IsNullOrWhiteSpace(s) ? null : s;
+}

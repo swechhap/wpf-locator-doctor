@@ -8,10 +8,14 @@ namespace WpfLocatorDoctor.Core.Reporting;
 /// <summary>Plain-English report for people (readable on GitHub, in a pull request, or in any Markdown viewer).</summary>
 public static partial class MarkdownReport
 {
-    private const int MaxDetailedFindings = 500;
+    /// <summary>The Markdown report lists this many problems in detail; the JSON report always has all of them.</summary>
+    internal const int MaxDetailedFindings = 500;
+
+    private static readonly CultureInfo Inv = CultureInfo.InvariantCulture;
 
     public static string Render(Scorecard card)
     {
+        ArgumentNullException.ThrowIfNull(card);
         var sb = new StringBuilder();
         var o = card.Overall;
         var high = card.Findings.Count(f => f.Severity == Severity.High);
@@ -20,13 +24,13 @@ public static partial class MarkdownReport
 
         sb.AppendLine("# WPF testability report");
         sb.AppendLine();
-        sb.AppendLine($"**Overall grade: {o.Grade} ({Fmt(o.Score)} / 100).** {RuleBook.GradeMeaning(o.Grade)}");
+        sb.AppendLine(Inv, $"**Overall grade: {o.Grade} ({Fmt(o.Score)} / 100).** {RuleBook.GradeMeaning(o.Grade)}");
         sb.AppendLine();
-        sb.AppendLine($"- **Scanned:** `{card.Target}` ({(card.Mode == ScanMode.Source ? "XAML and C# source files" : "the running app")})");
-        sb.AppendLine($"- **Date:** {card.GeneratedAt.ToString("yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture)} UTC");
-        sb.AppendLine($"- **Screens:** {card.Screens.Count} · **Controls a user interacts with:** {o.InteractiveCount}");
-        sb.AppendLine($"- **Problems found:** {card.Findings.Count} ({high} high, {medium} medium, {low} low)");
-        if (card.BaselineFile is not null) sb.AppendLine($"- **Compared with baseline:** `{card.BaselineFile}`");
+        sb.AppendLine(Inv, $"- **Scanned:** `{card.Target}` ({(card.Mode == ScanMode.Source ? "XAML and C# source files" : "the running app")})");
+        sb.AppendLine(Inv, $"- **Date:** {card.GeneratedAt.ToString("yyyy-MM-dd HH:mm", CultureInfo.InvariantCulture)} UTC");
+        sb.AppendLine(Inv, $"- **Screens:** {card.Screens.Count} · **Controls a user interacts with:** {o.InteractiveCount}");
+        sb.AppendLine(Inv, $"- **Problems found:** {card.Findings.Count} ({high} high, {medium} medium, {low} low)");
+        if (card.BaselineFile is not null) sb.AppendLine(Inv, $"- **Compared with baseline:** `{card.BaselineFile}`");
         sb.AppendLine();
 
         sb.AppendLine("## How the score is made");
@@ -38,7 +42,7 @@ public static partial class MarkdownReport
         foreach (var c in o.Checks)
         {
             var info = RuleBook.Checks.First(x => x.Id == c.Id);
-            sb.AppendLine($"| {c.Title} | {Cell(info.Question)} | {c.Weight:0} | {(c.Measured ? Fmt(c.Percent) + "%" : "not measured")} | {Cell(c.Detail)} |");
+            sb.AppendLine(Inv, $"| {c.Title} | {Cell(info.Question)} | {c.Weight:0} | {(c.Measured ? Fmt(c.Percent) + "%" : "not measured")} | {Cell(c.Detail)} |");
         }
         sb.AppendLine();
         sb.AppendLine("Grades: **A** 90+ · **B** 75–89 · **C** 60–74 · **D** 40–59 · **F** below 40.");
@@ -52,7 +56,7 @@ public static partial class MarkdownReport
             sb.AppendLine("|---|:---:|---:|---:|---:|---|");
             foreach (var s in card.Screens.OrderBy(s => s.Summary.Score ?? 101).ThenBy(s => s.Name, StringComparer.Ordinal))
             {
-                sb.AppendLine($"| {Cell(s.Name)} | {s.Summary.Grade} | {Fmt(s.Summary.Score)} | {s.Summary.InteractiveCount} | {s.FindingCount} | {Cell(s.Origin ?? "")} |");
+                sb.AppendLine(Inv, $"| {Cell(s.Name)} | {s.Summary.Grade} | {Fmt(s.Summary.Score)} | {s.Summary.InteractiveCount} | {s.FindingCount} | {Cell(s.Origin ?? "")} |");
             }
             sb.AppendLine();
         }
@@ -66,14 +70,19 @@ public static partial class MarkdownReport
             foreach (var g in card.Findings.GroupBy(f => f.RuleId).OrderByDescending(g => g.Count()).ThenBy(g => g.Key, StringComparer.Ordinal))
             {
                 var rule = RuleBook.FindRule(g.Key);
-                sb.AppendLine($"| {g.Key}: {Cell(rule?.Title ?? g.First().Title)} | {g.Count()} | {Cell(rule?.WhyItMatters ?? "")} |");
+                sb.AppendLine(Inv, $"| {g.Key}: {Cell(rule?.Title ?? g.First().Title)} | {g.Count()} | {Cell(rule?.WhyItMatters ?? "")} |");
             }
             sb.AppendLine();
 
             sb.AppendLine("## Problems and fixes, by screen");
             sb.AppendLine();
-            var shown = 0;
-            foreach (var group in card.Findings.GroupBy(f => f.Screen).OrderBy(g => g.Key == "(code)" ? 0 : 1).ThenBy(g => g.Key, StringComparer.Ordinal))
+            var listed = card.Findings
+                .GroupBy(f => f.Screen)
+                .OrderBy(g => g.Key == "(code)" ? 0 : 1)
+                .ThenBy(g => g.Key, StringComparer.Ordinal)
+                .SelectMany(g => g)
+                .Take(MaxDetailedFindings);
+            foreach (var group in listed.GroupBy(f => f.Screen))
             {
                 var screen = card.Screens.FirstOrDefault(s => s.Name == group.Key);
                 sb.AppendLine(group.Key == "(code)"
@@ -82,19 +91,17 @@ public static partial class MarkdownReport
                 sb.AppendLine();
                 foreach (var f in group)
                 {
-                    if (shown++ >= MaxDetailedFindings) break;
                     var loc = f.Location is null || f.Location.Line == 0 ? "" : $" (`{f.Location}`)";
-                    sb.AppendLine($"- **{f.Severity}: {f.Title}.** {f.Message}{loc}");
+                    sb.AppendLine(Inv, $"- **{f.Severity}: {f.Title}.** {f.Message}{loc}");
                     if (!string.IsNullOrWhiteSpace(f.Suggestion))
-                        sb.AppendLine($"  - Fix: {FormatSuggestion(f.Suggestion!)}");
+                        sb.AppendLine(Inv, $"  - Fix: {FormatSuggestion(f.Suggestion!)}");
                 }
                 sb.AppendLine();
-                if (shown >= MaxDetailedFindings)
-                {
-                    sb.AppendLine($"_Only the first {MaxDetailedFindings} problems are listed here. The JSON report has all of them._");
-                    sb.AppendLine();
-                    break;
-                }
+            }
+            if (card.Findings.Count > MaxDetailedFindings)
+            {
+                sb.AppendLine(Inv, $"_Only the first {MaxDetailedFindings} problems are listed here. The JSON report has all of them._");
+                sb.AppendLine();
             }
         }
         else
@@ -107,7 +114,7 @@ public static partial class MarkdownReport
         {
             sb.AppendLine("## Notes");
             sb.AppendLine();
-            foreach (var n in card.Notes) sb.AppendLine($"- {n}");
+            foreach (var n in card.Notes) sb.AppendLine(Inv, $"- {n}");
             sb.AppendLine();
         }
 

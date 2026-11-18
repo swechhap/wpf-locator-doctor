@@ -6,8 +6,8 @@ using FlaUI.Core.Definitions;
 using FlaUI.Core.Identifiers;
 using FlaUI.UIA2;
 using FlaUI.UIA3;
+using WpfLocatorDoctor.Core.Live;
 using WpfLocatorDoctor.Core.Model;
-using WpfLocatorDoctor.Core.Rules;
 
 namespace WpfLocatorDoctor.Live;
 
@@ -33,52 +33,26 @@ public sealed class LiveScanOptions
 /// <summary>
 /// Reads the running WPF app through UI Automation (via FlaUI): exactly what test tools see.
 /// Windows only. Needs an unlocked desktop session.
+/// This class only starts/attaches to the app and reads the tree; the decisions about each element
+/// are made by <see cref="LiveTreeWalker"/> in the Core library, where they are unit-tested.
 /// </summary>
 public sealed class LiveAppScanner
 {
-    private sealed class WindowState
-    {
-        public required ScreenScan Screen { get; init; }
-        public required AutomationBase Automation { get; init; }
-        public required LiveScanOptions Options { get; init; }
-        public int Count { get; set; }
-        public bool LimitHit { get; set; }
-        public int ListsTruncated { get; set; }
-    }
-
-    private readonly record struct Ctx(string[] Path, bool InRow, bool? RowsIdentifiable);
-
     public ScanResult Scan(LiveScanOptions options)
     {
+        ArgumentNullException.ThrowIfNull(options);
         if (!OperatingSystem.IsWindows())
             throw new PlatformNotSupportedException("Live scanning uses Windows UI Automation and only works on Windows.");
         if (options.ExePath is null && options.Process is null)
-            throw new ArgumentException("Give either an .exe to start or a running process to attach to.");
+            throw new ArgumentException("Give either an .exe to start or a running process to attach to.", nameof(options));
 
         using AutomationBase automation = options.UseUia2 ? new UIA2Automation() : new UIA3Automation();
         automation.TransactionTimeout = TimeSpan.FromSeconds(60);
         automation.ConnectionTimeout = TimeSpan.FromSeconds(60);
 
-        Application app;
-        var launched = false;
-        if (options.ExePath is not null)
-        {
-            app = string.IsNullOrWhiteSpace(options.Arguments)
-                ? Application.Launch(options.ExePath)
-                : Application.Launch(options.ExePath, options.Arguments);
-            launched = true;
-        }
-        else if (int.TryParse(options.Process, out var pid))
-        {
-            app = Application.Attach(pid);
-        }
-        else
-        {
-            app = Application.Attach(options.Process!);
-        }
-
-        var target = options.ExePath ?? options.Process!;
-        var result = new ScanResult { Mode = ScanMode.Live, Target = target };
+        var (app, launched) = StartOrAttach(options);
+        var result = new ScanResult { Mode = ScanMode.Live, Target = options.ExePath ?? options.Process! };
+        var limits = new LiveWalkLimits(options.MaxElementsPerWindow, options.MaxRowsPerList);
 
         try
         {
@@ -94,10 +68,8 @@ public sealed class LiveAppScanner
             var windows = app.GetAllTopLevelWindows(automation);
             var usedNames = new HashSet<string>(StringComparer.Ordinal);
             foreach (var window in windows)
-            {
-                var screen = ScanWindow(window, automation, options, usedNames);
-                result.Screens.Add(screen);
-            }
+                result.Screens.Add(ScanWindow(window, automation, limits, usedNames));
+
             if (windows.Length == 0) result.Notes.Add("No windows were found for this process.");
             result.Notes.Add("Only windows that were open, and list rows that were on screen, were checked. Open other screens and scan again to cover them.");
         }
@@ -121,9 +93,26 @@ public sealed class LiveAppScanner
         return result;
     }
 
-    private static ScreenScan ScanWindow(Window window, AutomationBase automation, LiveScanOptions options, HashSet<string> usedNames)
+    private static (Application App, bool Launched) StartOrAttach(LiveScanOptions options)
+    {
+        if (options.ExePath is not null)
+        {
+            var app = string.IsNullOrWhiteSpace(options.Arguments)
+                ? Application.Launch(options.ExePath)
+                : Application.Launch(options.ExePath, options.Arguments);
+            return (app, true);
+        }
+        return int.TryParse(options.Process, out var pid)
+            ? (Application.Attach(pid), false)
+            : (Application.Attach(options.Process!), false);
+    }
+
+    private static ScreenScan ScanWindow(Window window, AutomationBase automation, LiveWalkLimits limits, ISet<string> usedNames)
     {
         var lib = automation.PropertyLibrary;
+        var patternChecks = FlaUiNode.PatternChecks(automation);
+
+        // Read the whole window in one cross-process call instead of one call per property.
         var cache = new CacheRequest
         {
             TreeScope = TreeScope.Subtree,
@@ -139,190 +128,74 @@ public sealed class LiveAppScanner
         {
             cache.Add(p);
         }
-        foreach (var p in PatternChecks(automation)) cache.Add(p.Property);
+        foreach (var (property, _) in patternChecks) cache.Add(property);
 
-        ScreenScan screen;
         using (cache.Activate())
         {
             var root = window.FindFirst(TreeScope.Element, TrueCondition.Default) ?? window;
-            var name = UniqueScreenName(root, usedNames);
-            screen = new ScreenScan { Name = name, Origin = SafeString(() => root.Name) };
-            var state = new WindowState { Screen = screen, Automation = automation, Options = options };
-            Visit(root, new Ctx([], false, null), state, isRoot: true);
-
-            if (state.LimitHit)
-                screen.Notes.Add($"Stopped after {options.MaxElementsPerWindow} elements. Use --max-elements to look further.");
-            if (state.ListsTruncated > 0)
-                screen.Notes.Add($"{state.ListsTruncated} list(s) had more than {options.MaxRowsPerList} rows; only the first {options.MaxRowsPerList} were checked.");
+            return LiveTreeWalker.WalkWindow(new FlaUiNode(root, patternChecks), limits, usedNames);
         }
-        return screen;
     }
 
-    private static string UniqueScreenName(AutomationElement root, HashSet<string> used)
+    /// <summary>Adapts a cached FlaUI element to <see cref="ILiveNode"/>. Every read is guarded, because UI Automation can fail per element.</summary>
+    private sealed class FlaUiNode(AutomationElement el, (PropertyId Property, string Name)[] patternChecks) : ILiveNode
     {
-        var id = SafeString(() => root.Properties.AutomationId.ValueOrDefault);
-        var cls = SafeString(() => root.Properties.ClassName.ValueOrDefault);
-        var title = SafeString(() => root.Properties.Name.ValueOrDefault);
-        var baseName = !string.IsNullOrWhiteSpace(id) ? id!
-                     : !string.IsNullOrWhiteSpace(cls) && cls != "Window" ? cls!
-                     : !string.IsNullOrWhiteSpace(title) ? title!
-                     : "Window";
-        var name = baseName;
-        for (var i = 2; !used.Add(name); i++) name = $"{baseName} ({i})";
-        return name;
-    }
+        private IReadOnlyList<ILiveNode>? _children;
+        private IReadOnlyList<string>? _patterns;
+        private System.Drawing.Rectangle? _rect;
+        private string? _controlType;
 
-    private static void Visit(AutomationElement el, Ctx ctx, WindowState st, bool isRoot)
-    {
-        if (st.Count >= st.Options.MaxElementsPerWindow)
+        public string ControlType => _controlType ??= Safe(() => el.Properties.ControlType.ValueOrDefault.ToString(), "Unknown");
+        public string? AutomationId => Safe(() => el.Properties.AutomationId.ValueOrDefault, null);
+        public string? Name => Safe(() => el.Properties.Name.ValueOrDefault, null);
+        public string? ClassName => Safe(() => el.Properties.ClassName.ValueOrDefault, null);
+        public bool IsKeyboardFocusable => Safe(() => el.Properties.IsKeyboardFocusable.ValueOrDefault, false);
+        public bool IsOffscreen => Safe(() => el.Properties.IsOffscreen.ValueOrDefault, false);
+        public double Width => Rect.Width;
+        public double Height => Rect.Height;
+
+        private System.Drawing.Rectangle Rect => _rect ??= Safe(() => el.Properties.BoundingRectangle.ValueOrDefault, default);
+
+        public IReadOnlyList<string> Patterns => _patterns ??= ReadPatterns();
+
+        public IReadOnlyList<ILiveNode> Children => _children ??=
+            Safe(() => el.CachedChildren ?? [], [])
+                .Select(c => (ILiveNode)new FlaUiNode(c, patternChecks))
+                .ToArray();
+
+        private List<string> ReadPatterns()
         {
-            st.LimitHit = true;
-            return;
-        }
-
-        var controlType = SafeControlType(el);
-        if (ControlCatalog.LiveSkippedTypes.Contains(controlType)) return;
-
-        var id = NullIfEmpty(SafeString(() => el.Properties.AutomationId.ValueOrDefault));
-        if (id == "SystemMenuBar") return;
-
-        st.Count++;
-        var className = NullIfEmpty(SafeString(() => el.Properties.ClassName.ValueOrDefault));
-        var name = NullIfEmpty(SafeString(() => el.Properties.Name.ValueOrDefault));
-        var focusable = SafeBool(() => el.Properties.IsKeyboardFocusable.ValueOrDefault);
-        var offscreen = SafeBool(() => el.Properties.IsOffscreen.ValueOrDefault);
-        var rect = SafeRect(el);
-        var patterns = SupportedPatterns(el, st.Automation);
-        var children = SafeChildren(el);
-
-        var isRow = !isRoot && ControlCatalog.LiveRowTypes.Contains(controlType);
-        var isItemsHost = ControlCatalog.LiveItemsHostTypes.Contains(controlType);
-        var hasAction = patterns.Any(p => p is "Invoke" or "Toggle" or "Value" or "SelectionItem" or "ExpandCollapse" or "RangeValue");
-        var interactive = !isRoot && !isRow &&
-                          (ControlCatalog.LiveInteractiveTypes.Contains(controlType) ||
-                           className is "DatePicker" ||
-                           controlType == "Custom" && focusable && hasAction);
-
-        bool? rowsIdentifiable = null;
-        AutomationElement[] rows = [];
-        if (isItemsHost)
-        {
-            rows = children.Where(c => ControlCatalog.LiveRowTypes.Contains(SafeControlType(c))).ToArray();
-            if (rows.Length > 0)
+            var list = new List<string>();
+            foreach (var (property, name) in patternChecks)
             {
-                var rowIds = rows.Take(st.Options.MaxRowsPerList)
-                    .Select(r => NullIfEmpty(SafeString(() => r.Properties.AutomationId.ValueOrDefault)))
-                    .ToList();
-                rowsIdentifiable = rowIds.All(r => r is not null) && rowIds.Distinct(StringComparer.Ordinal).Count() == rowIds.Count;
-            }
-        }
-
-        var kind = className ?? controlType;
-        var path = (ctx.Path.Length >= 4 ? ctx.Path[^3..] : ctx.Path).Append(kind).ToArray();
-
-        var info = new UiElementInfo
-        {
-            Screen = st.Screen.Name,
-            Kind = kind,
-            ControlType = controlType,
-            AutomationId = id,
-            IdOrigin = id is null ? IdOrigin.None : IdHeuristics.LooksGenerated(id) ? IdOrigin.GeneratedLooking : IdOrigin.Unknown,
-            Name = name,
-            HasName = name is not null,
-            IsInteractive = interactive,
-            IsItemsHost = isItemsHost,
-            InRepeatedTemplate = ctx.InRow,
-            RowsIdentifiable = isItemsHost ? rowsIdentifiable : ctx.InRow ? ctx.RowsIdentifiable : null,
-            IsOpaque = !isRoot && !ctx.InRow && controlType is "Custom" or "Pane" && id is null && name is null &&
-                       children.Length == 0 && !offscreen && rect.Width >= 24 && rect.Height >= 24,
-            Patterns = patterns,
-            Path = string.Join(" > ", path),
-        };
-        st.Screen.Elements.Add(info);
-
-        // Parts inside self-contained controls (slider thumb, date picker button, ...) aren't scored.
-        if (!isRoot && ControlCatalog.LiveLeafTypes.Contains(controlType)) return;
-
-        var rowsSeen = 0;
-        foreach (var child in children)
-        {
-            var childIsRow = isItemsHost && ControlCatalog.LiveRowTypes.Contains(SafeControlType(child));
-            if (childIsRow && ++rowsSeen > st.Options.MaxRowsPerList)
-            {
-                if (rowsSeen == st.Options.MaxRowsPerList + 1) st.ListsTruncated++;
-                continue;
-            }
-
-            // Only data rows (not grid headers) mark their contents as repeated.
-            var childCtx = childIsRow ? new Ctx(path, true, rowsIdentifiable) : ctx with { Path = path };
-            Visit(child, childCtx, st, isRoot: false);
-        }
-    }
-
-    private static (PropertyId Property, string Name)[] PatternChecks(AutomationBase automation)
-    {
-        var a = automation.PropertyLibrary.PatternAvailability;
-        return
-        [
-            (a.IsInvokePatternAvailable, "Invoke"),
-            (a.IsTogglePatternAvailable, "Toggle"),
-            (a.IsValuePatternAvailable, "Value"),
-            (a.IsSelectionItemPatternAvailable, "SelectionItem"),
-            (a.IsExpandCollapsePatternAvailable, "ExpandCollapse"),
-            (a.IsRangeValuePatternAvailable, "RangeValue"),
-            (a.IsSelectionPatternAvailable, "Selection"),
-            (a.IsGridPatternAvailable, "Grid"),
-            (a.IsScrollPatternAvailable, "Scroll"),
-        ];
-    }
-
-    private static List<string> SupportedPatterns(AutomationElement el, AutomationBase automation)
-    {
-        var list = new List<string>();
-        foreach (var (property, name) in PatternChecks(automation))
-        {
-            try
-            {
-                if (el.FrameworkAutomationElement.TryGetPropertyValue<bool>(property, out var available) && available)
+                if (Safe(() => el.FrameworkAutomationElement.TryGetPropertyValue<bool>(property, out var available) && available, false))
                     list.Add(name);
             }
-            catch (Exception ex) when (ex is COMException or InvalidOperationException or NotSupportedException)
-            {
-                // Some elements refuse property requests; treat as "not supported".
-            }
+            return list;
         }
-        return list;
-    }
 
-    private static string SafeControlType(AutomationElement el)
-    {
-        try { return el.Properties.ControlType.ValueOrDefault.ToString(); }
-        catch (Exception ex) when (ex is COMException or InvalidOperationException or NotSupportedException) { return "Unknown"; }
-    }
+        public static (PropertyId Property, string Name)[] PatternChecks(AutomationBase automation)
+        {
+            var a = automation.PropertyLibrary.PatternAvailability;
+            return
+            [
+                (a.IsInvokePatternAvailable, "Invoke"),
+                (a.IsTogglePatternAvailable, "Toggle"),
+                (a.IsValuePatternAvailable, "Value"),
+                (a.IsSelectionItemPatternAvailable, "SelectionItem"),
+                (a.IsExpandCollapsePatternAvailable, "ExpandCollapse"),
+                (a.IsRangeValuePatternAvailable, "RangeValue"),
+                (a.IsSelectionPatternAvailable, "Selection"),
+                (a.IsGridPatternAvailable, "Grid"),
+                (a.IsScrollPatternAvailable, "Scroll"),
+            ];
+        }
 
-    private static AutomationElement[] SafeChildren(AutomationElement el)
-    {
-        try { return el.CachedChildren ?? []; }
-        catch (Exception ex) when (ex is COMException or InvalidOperationException or NotSupportedException) { return []; }
+        /// <summary>Some elements refuse property requests (or vanish mid-scan); treat that as "no value".</summary>
+        private static T Safe<T>(Func<T> get, T fallback)
+        {
+            try { return get(); }
+            catch (Exception ex) when (ex is COMException or InvalidOperationException or NotSupportedException) { return fallback; }
+        }
     }
-
-    private static System.Drawing.Rectangle SafeRect(AutomationElement el)
-    {
-        try { return el.Properties.BoundingRectangle.ValueOrDefault; }
-        catch (Exception ex) when (ex is COMException or InvalidOperationException or NotSupportedException) { return default; }
-    }
-
-    private static string? SafeString(Func<string?> get)
-    {
-        try { return get(); }
-        catch (Exception ex) when (ex is COMException or InvalidOperationException or NotSupportedException) { return null; }
-    }
-
-    private static bool SafeBool(Func<bool> get)
-    {
-        try { return get(); }
-        catch (Exception ex) when (ex is COMException or InvalidOperationException or NotSupportedException) { return false; }
-    }
-
-    private static string? NullIfEmpty(string? s) => string.IsNullOrWhiteSpace(s) ? null : s;
 }

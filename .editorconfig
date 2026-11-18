@@ -1,0 +1,25 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 4
+
+[*.{csproj,props,targets,slnx,xml,xaml,json,yml,yaml}]
+indent_size = 2
+
+[*.cs]
+# Public instance methods are part of the API design (and easy to swap later); only flag private/internal ones.
+dotnet_code_quality.CA1822.api_surface = private, internal
+
+# Test names use underscores so they read as sentences.
+[tests/**.cs]
+dotnet_diagnostic.CA1707.severity = none
+
+# The practice app deliberately contains imperfect code for the scanner to find.
+[samples/**.cs]
+dotnet_diagnostic.CA1725.severity = none
+dotnet_diagnostic.CA1822.severity = none

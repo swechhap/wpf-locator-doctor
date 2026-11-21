@@ -1,5 +1,7 @@
 # WPF Locator Doctor
 
+[![M8ven Score](https://m8ven.ai/badge/mcp/swechhap-wpf-locator-doctor-p376m3?v=bdd0d74fbf257e75b17de6b1acc36e3c)](https://m8ven.ai/mcp/swechhap-wpf-locator-doctor-p376m3?s=readme)
+
 **Diagnose, heal and fix the locators in your WPF UI automation tests.**
 
 Finding good locators in a WPF app usually means hours in inspect tools (Inspect.exe, FlaUInspect, Accessibility Insights),

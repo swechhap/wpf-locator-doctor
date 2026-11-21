@@ -3,10 +3,12 @@
     <Project Path="src/WpfLocatorDoctor.Core/WpfLocatorDoctor.Core.csproj" />
     <Project Path="src/WpfLocatorDoctor.Live/WpfLocatorDoctor.Live.csproj" />
     <Project Path="src/WpfLocatorDoctor.Cli/WpfLocatorDoctor.Cli.csproj" />
+    <Project Path="src/WpfLocatorDoctor.Mcp/WpfLocatorDoctor.Mcp.csproj" />
   </Folder>
   <Folder Name="/tests/">
     <Project Path="tests/WpfLocatorDoctor.Core.Tests/WpfLocatorDoctor.Core.Tests.csproj" />
     <Project Path="tests/WpfLocatorDoctor.Cli.Tests/WpfLocatorDoctor.Cli.Tests.csproj" />
+    <Project Path="tests/WpfLocatorDoctor.Mcp.Tests/WpfLocatorDoctor.Mcp.Tests.csproj" />
   </Folder>
   <Folder Name="/samples/">
     <Project Path="samples/PracticeApp/PracticeApp.csproj" />

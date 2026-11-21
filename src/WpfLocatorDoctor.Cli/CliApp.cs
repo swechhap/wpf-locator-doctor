@@ -112,7 +112,8 @@ internal sealed class CliApp(TextWriter stdout, TextWriter stderr)
 #else
         _ = o;
         stderr.WriteLine("Live scanning uses Windows UI Automation, so it only works in the Windows build of this tool.");
-        stderr.WriteLine("On Windows run: dotnet run --project src/WpfLocatorDoctor.Cli -f net10.0-windows -- scan-live --exe <path>");
+        stderr.WriteLine("On Windows, download wpf-locator-doctor-live-win-x64.zip from https://github.com/swechhap/wpf-locator-doctor/releases");
+        stderr.WriteLine("or run: dotnet run --project src/WpfLocatorDoctor.Cli -f net10.0-windows -- scan-live --exe <path>");
         return ExitUsage;
 #endif
     }

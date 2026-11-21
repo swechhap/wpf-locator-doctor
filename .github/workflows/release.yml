@@ -1,0 +1,100 @@
+name: Release
+
+# Runs when a GitHub release is published. The release tag sets the version (tag v0.1.1-preview.1 → version 0.1.1-preview.1).
+#   1. Builds and tests, packs the source-scan .NET tool, attaches the .nupkg to the release,
+#      and publishes it to NuGet (only once the NUGET_USER repository variable is set).
+#   2. Builds the Windows live-scan version and attaches it to the release as a zip.
+#
+# Publishing to NuGet uses Trusted Publishing: no API key is stored in GitHub. On nuget.org, add a
+# Trusted Publishing policy for this repository with the workflow file "release.yml", then set the
+# repository variable NUGET_USER to your nuget.org username.
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+
+jobs:
+  nuget:
+    name: NuGet package (source scan)
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # attach the .nupkg to the release
+      id-token: write   # NuGet Trusted Publishing
+    env:
+      TAG: ${{ github.event.release.tag_name }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Work out the version from the tag
+        id: version
+        run: |
+          version="${TAG#v}"
+          if ! [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+(-[0-9A-Za-z.-]+)?$ ]]; then
+            echo "Release tag '$TAG' is not a version like v1.2.3 or v1.2.3-preview.1." >&2
+            exit 1
+          fi
+          echo "version=$version" >> "$GITHUB_OUTPUT"
+
+      - name: Build and test
+        run: |
+          dotnet build WpfLocatorDoctor.slnx -c Release
+          dotnet test WpfLocatorDoctor.slnx -c Release --no-build
+
+      - name: Pack
+        run: dotnet pack src/WpfLocatorDoctor.Cli -c Release -p:Version=${{ steps.version.outputs.version }} -o out
+
+      - name: Attach the package to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "$TAG" out/*.nupkg --clobber
+
+      - name: Log in to NuGet (Trusted Publishing)
+        if: vars.NUGET_USER != ''
+        id: nuget-login
+        uses: NuGet/login@v1
+        with:
+          user: ${{ vars.NUGET_USER }}
+
+      - name: Publish to NuGet
+        if: vars.NUGET_USER != ''
+        run: dotnet nuget push out/*.nupkg --api-key "${{ steps.nuget-login.outputs.NUGET_API_KEY }}" --source https://api.nuget.org/v3/index.json --skip-duplicate
+
+      - name: Note that NuGet publishing was skipped
+        if: vars.NUGET_USER == ''
+        run: echo "::notice::Not published to NuGet because the NUGET_USER repository variable is not set."
+
+  live-zip:
+    name: Windows live-scan download
+    runs-on: windows-latest
+    permissions:
+      contents: write   # attach the zip to the release
+    env:
+      TAG: ${{ github.event.release.tag_name }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Build the Windows version
+        shell: pwsh
+        run: |
+          $version = $env:TAG.TrimStart('v')
+          dotnet publish src/WpfLocatorDoctor.Cli -c Release -f net10.0-windows -r win-x64 --self-contained false `
+            -p:Version=$version -o publish/wpf-locator-doctor
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+          Compress-Archive -Path publish/wpf-locator-doctor/* -DestinationPath wpf-locator-doctor-live-win-x64.zip
+
+      - name: Attach the zip to the release
+        shell: pwsh
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "$env:TAG" wpf-locator-doctor-live-win-x64.zip --clobber

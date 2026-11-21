@@ -12,7 +12,26 @@
     <AssemblyName>wpf-locator-doctor</AssemblyName>
     <PackAsTool>true</PackAsTool>
     <ToolCommandName>wpf-locator-doctor</ToolCommandName>
+
+    <!-- NuGet package details. -->
+    <PackageId>wpf-locator-doctor</PackageId>
+    <Authors>swechhap</Authors>
+    <Description>Testability scorecard for WPF apps: checks the AutomationIds your UI tests depend on, scores each screen from 0 to 100, and tells you the exact line of XAML to add. This package contains the source scan, which runs on Windows, macOS and Linux. The live scan of a running app is a separate Windows download on the GitHub releases page.</Description>
+    <PackageTags>wpf;automationid;ui-automation;test-automation;testability;locators;flaui;xaml</PackageTags>
+    <PackageReadmeFile>README.nuget.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <!--
+    .NET tools must run on every operating system, so `dotnet pack` builds only the net10.0
+    (source scan) version. The Windows live-scan build ships as a zip on the GitHub releases page.
+  -->
+  <PropertyGroup Condition="'$(_IsPacking)' == 'true'">
+    <TargetFrameworks>net10.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.nuget.md" Pack="true" PackagePath="\" />
+  </ItemGroup>
 
   <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0-windows'">
     <DefineConstants>$(DefineConstants);LIVE_SCAN</DefineConstants>

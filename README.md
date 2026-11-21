@@ -17,6 +17,42 @@ See [docs/research-analysis.md](docs/research-analysis.md) for the research and 
 
 Works with any WPF app (.NET Framework or .NET). Built on Windows UI Automation and [FlaUI](https://github.com/FlaUI/FlaUI).
 
+## What you get
+
+This is a real scan of the included practice app (shortened):
+
+```text
+$ dotnet run --project src/WpfLocatorDoctor.Cli -f net10.0 -- scan-source samples/PracticeApp
+
+Overall: grade B, score 86.5/100. Good. A few gaps to fix.
+
+  ID coverage                 80.6%   25 of 31 controls have an AutomationId.
+  ID quality                  90.4%   19 set on purpose, 5 borrowed from x:Name, 1 look generated.
+  Uniqueness and rows         87.1%   1 ID(s) used more than once; 1 of 2 data lists have identifiable rows.
+  Visible to test tools       93.8%   2 invisible control(s), 0 opaque area(s).
+  Readable names              89.7%   26 of 29 controls have a readable name.
+
+Screens (worst first):
+  B     80.5  MainWindow  (21 controls, 14 problems)
+  A     92.5  AddressPanel  (3 controls, 3 problems)
+  A      100  SettingsWindow  (7 controls, 0 problems)
+
+Problems: 18 (6 high, 4 medium, 8 low)
+  HIGH   WT001 Button has no AutomationId.  [MainWindow.xaml:29]
+  HIGH   WT004 "ActionButton" is used 2 times on this screen (line 44, line 45).  [MainWindow.xaml:44]
+  HIGH   WT006 StarRating derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it.  [Controls/StarRating.cs:13]
+  MEDIUM WT003 Button "Clear" has the ID "Button_1", which looks machine-generated.  [MainWindow.xaml:27]
+  MEDIUM WT005 Rows in ListBox "Recent orders" have no unique ID.  [MainWindow.xaml:57]
+  …
+```
+
+The full report (`testability-report.md`) tells you exactly what to add:
+
+> - **High: Control has no AutomationId.** Button has no AutomationId. (`MainWindow.xaml:29`)
+>   - Fix: Add `AutomationProperties.AutomationId="RefreshButton"` to this element.
+> - **Medium: ID looks machine-generated.** Button "Clear" has the ID "Button_1", which looks machine-generated. (`MainWindow.xaml:27`)
+>   - Fix: Replace it with a meaningful ID, e.g. `AutomationProperties.AutomationId="ClearButton"`.
+
 ## Two ways to scan
 
 | | **Source scan** (`scan-source`) | **Live scan** (`scan-live`) |

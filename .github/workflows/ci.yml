@@ -32,6 +32,12 @@ jobs:
       - name: Scan the practice app's source (smoke test)
         run: dotnet run --project src/WpfLocatorDoctor.Cli -c Release -f net10.0 --no-build -- scan-source samples/PracticeApp --out source-report
 
+      - name: Pack the NuGet packages (smoke test)
+        if: runner.os == 'Linux'
+        run: |
+          dotnet pack src/WpfLocatorDoctor.Cli -c Release -o packages
+          dotnet pack src/WpfLocatorDoctor.Mcp -c Release -o packages
+
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -41,8 +47,8 @@ jobs:
             source-report/
 
   live-scan:
-    # Starts the practice app on a Windows runner and scans it, so the part of the live scanner
-    # that talks to a real app is tested on every push. A failure here fails the build.
+    # Starts the practice app on a Windows runner and scans it, then drives it through the MCP server's live tools,
+    # so the parts that talk to a real app are tested on every push. A failure here fails the build.
     name: Live scan of the practice app (Windows)
     runs-on: windows-latest
     steps:
@@ -75,6 +81,14 @@ jobs:
           foreach ($expected in 'WT001', 'WT004') {
             if ($rules -notcontains $expected) { throw "Expected the live scan to report $expected." }
           }
+
+      - name: Drive the practice app through the MCP server's live tools
+        shell: pwsh
+        env:
+          WLD_LIVE_TESTS: "1"
+        run: |
+          dotnet test tests/WpfLocatorDoctor.Mcp.Tests -c Release -f net10.0-windows --no-build --logger "console;verbosity=normal"
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
       - uses: actions/upload-artifact@v4
         if: always()

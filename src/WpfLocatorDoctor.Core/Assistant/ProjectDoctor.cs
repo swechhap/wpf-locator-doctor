@@ -32,8 +32,12 @@ public static class ProjectDoctor
             var (previous, file) = LoadBaseline(baselineReport);
             baseline = Baseline.FromScorecard(previous, file);
         }
-        var card = Scorer.Evaluate(scan, baseline);
+        return BuildScoreReport(Scorer.Evaluate(scan, baseline), saveReportTo);
+    }
 
+    /// <summary>Turns a scorecard (from a source or live scan) into the short answer, saving the full reports if asked.</summary>
+    internal static ScoreReport BuildScoreReport(Scorecard card, string? saveReportTo)
+    {
         SavedReportFiles? saved = null;
         if (!string.IsNullOrWhiteSpace(saveReportTo))
         {

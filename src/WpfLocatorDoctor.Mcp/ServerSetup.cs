@@ -5,6 +5,9 @@ using Microsoft.Extensions.DependencyInjection;
 using ModelContextProtocol;
 using ModelContextProtocol.Protocol;
 using WpfLocatorDoctor.Core.Assistant;
+#if LIVE_TOOLS
+using WpfLocatorDoctor.Live;
+#endif
 
 namespace WpfLocatorDoctor.Mcp;
 
@@ -21,9 +24,16 @@ internal static class ServerSetup
         DefaultIgnoreCondition = JsonIgnoreCondition.WhenWritingNull,
     };
 
-    public static IMcpServerBuilder AddWpfLocatorDoctor(this IMcpServerBuilder builder) => builder
-        .WithTools<SourceTools>(JsonOptions)
-        .WithRequestFilters(filters => filters.AddCallToolFilter(next => async (context, cancellationToken) =>
+    public static IMcpServerBuilder AddWpfLocatorDoctor(this IMcpServerBuilder builder)
+    {
+        ArgumentNullException.ThrowIfNull(builder);
+        builder.WithTools<SourceTools>(JsonOptions);
+#if LIVE_TOOLS
+        // One live session (one app) for the server's lifetime. The host disposes it on shutdown, closing an app the server started.
+        builder.Services.AddSingleton(_ => new LiveSession(new FlaUiAppConnector(), LiveSessionOptions.FromEnvironment()));
+        builder.WithTools<LiveTools>(JsonOptions);
+#endif
+        return builder.WithRequestFilters(filters => filters.AddCallToolFilter(next => async (context, cancellationToken) =>
         {
             try
             {
@@ -34,6 +44,7 @@ internal static class ServerSetup
                 return ErrorResult(ex.Message);
             }
         }));
+    }
 
     /// <summary>
     /// Mistakes in the request (wrong path, unknown screen…) and files that can't be read. The assistant gets the plain message

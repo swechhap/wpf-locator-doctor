@@ -1,13 +1,19 @@
 name: Release
 
 # Runs when a GitHub release is published. The release tag sets the version (tag v0.1.1-preview.1 → version 0.1.1-preview.1).
-#   1. Builds and tests, packs the source-scan .NET tool, attaches the .nupkg to the release,
-#      and publishes it to NuGet (only once the NUGET_USER repository variable is set).
-#   2. Builds the Windows live-scan version and attaches it to the release as a zip.
+#   1. nuget:    builds and tests, packs the two cross-platform .NET tools (the command-line tool and the MCP server with the
+#                source tools), attaches the .nupkg files to the release, and publishes them to NuGet (only once the
+#                NUGET_USER repository variable is set).
+#   2. windows:  builds the Windows versions and attaches them to the release: the live-scan command-line tool (zip), and the
+#                MCP server with every tool, as a zip and as an .mcpb bundle (one-click install in apps such as Claude Desktop).
+#   3. registry: writes the MCP Registry entry (server.json, listing the NuGet package and the .mcpb bundle) and attaches it to
+#                the release. Publishes it to the official MCP Registry only when the MCP_REGISTRY_PUBLISH repository variable
+#                is "true" (and NuGet publishing is on, because the registry checks the NuGet package).
 #
 # Publishing to NuGet uses Trusted Publishing: no API key is stored in GitHub. On nuget.org, add a
 # Trusted Publishing policy for this repository with the workflow file "release.yml", then set the
 # repository variable NUGET_USER to your nuget.org username.
+# Publishing to the MCP Registry uses GitHub's own sign-in (OIDC) for the io.github.swechhap namespace: nothing to store.
 
 on:
   release:
@@ -18,13 +24,15 @@ permissions:
 
 jobs:
   nuget:
-    name: NuGet package (source scan)
+    name: NuGet packages (source scan and MCP server)
     runs-on: ubuntu-latest
     permissions:
-      contents: write   # attach the .nupkg to the release
+      contents: write   # attach the .nupkg files to the release
       id-token: write   # NuGet Trusted Publishing
     env:
       TAG: ${{ github.event.release.tag_name }}
+    outputs:
+      version: ${{ steps.version.outputs.version }}
     steps:
       - uses: actions/checkout@v4
 
@@ -47,10 +55,18 @@ jobs:
           dotnet build WpfLocatorDoctor.slnx -c Release
           dotnet test WpfLocatorDoctor.slnx -c Release --no-build
 
-      - name: Pack
-        run: dotnet pack src/WpfLocatorDoctor.Cli -c Release -p:Version=${{ steps.version.outputs.version }} -o out
+      - name: Put the version into the MCP server's server.json
+        run: |
+          file=src/WpfLocatorDoctor.Mcp/.mcp/server.json
+          jq --arg v "${{ steps.version.outputs.version }}" '.version = $v | .packages[0].version = $v' "$file" > server.tmp
+          mv server.tmp "$file"
 
-      - name: Attach the package to the release
+      - name: Pack
+        run: |
+          dotnet pack src/WpfLocatorDoctor.Cli -c Release -p:Version=${{ steps.version.outputs.version }} -o out
+          dotnet pack src/WpfLocatorDoctor.Mcp -c Release -p:Version=${{ steps.version.outputs.version }} -o out
+
+      - name: Attach the packages to the release
         env:
           GH_TOKEN: ${{ github.token }}
         run: gh release upload "$TAG" out/*.nupkg --clobber
@@ -70,13 +86,15 @@ jobs:
         if: vars.NUGET_USER == ''
         run: echo "::notice::Not published to NuGet because the NUGET_USER repository variable is not set."
 
-  live-zip:
-    name: Windows live-scan download
+  windows:
+    name: Windows downloads (live scan and MCP server)
     runs-on: windows-latest
     permissions:
-      contents: write   # attach the zip to the release
+      contents: write   # attach the downloads to the release
     env:
       TAG: ${{ github.event.release.tag_name }}
+    outputs:
+      mcpb-sha256: ${{ steps.mcp.outputs.sha256 }}
     steps:
       - uses: actions/checkout@v4
 
@@ -84,7 +102,7 @@ jobs:
         with:
           dotnet-version: 10.0.x
 
-      - name: Build the Windows version
+      - name: Build the live-scan command-line tool
         shell: pwsh
         run: |
           $version = $env:TAG.TrimStart('v')
@@ -93,8 +111,104 @@ jobs:
           if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
           Compress-Archive -Path publish/wpf-locator-doctor/* -DestinationPath wpf-locator-doctor-live-win-x64.zip
 
-      - name: Attach the zip to the release
+      - name: Build the MCP server (zip and .mcpb bundle)
+        id: mcp
+        shell: pwsh
+        run: |
+          $version = $env:TAG.TrimStart('v')
+          dotnet publish src/WpfLocatorDoctor.Mcp -c Release -f net10.0-windows -r win-x64 --self-contained false `
+            -p:Version=$version -o publish/mcp/server
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
+
+          # The bundle is a zip with manifest.json at the top and the server in server/.
+          $manifest = Get-Content src/WpfLocatorDoctor.Mcp/.mcp/mcpb-manifest.json -Raw | ConvertFrom-Json
+          $manifest.version = $version
+          $manifest | ConvertTo-Json -Depth 20 | Set-Content publish/mcp/manifest.json -Encoding utf8NoBOM
+
+          Add-Type -AssemblyName System.IO.Compression.FileSystem
+          [System.IO.Compression.ZipFile]::CreateFromDirectory("$PWD/publish/mcp", "$PWD/wpf-locator-doctor-mcp-win-x64.mcpb")
+          [System.IO.Compression.ZipFile]::CreateFromDirectory("$PWD/publish/mcp/server", "$PWD/wpf-locator-doctor-mcp-win-x64.zip")
+
+          $sha = (Get-FileHash wpf-locator-doctor-mcp-win-x64.mcpb -Algorithm SHA256).Hash.ToLowerInvariant()
+          "sha256=$sha" >> $env:GITHUB_OUTPUT
+
+      - name: Attach the downloads to the release
         shell: pwsh
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh release upload "$env:TAG" wpf-locator-doctor-live-win-x64.zip --clobber
+        run: |
+          gh release upload "$env:TAG" wpf-locator-doctor-live-win-x64.zip wpf-locator-doctor-mcp-win-x64.zip wpf-locator-doctor-mcp-win-x64.mcpb --clobber
+
+  registry:
+    name: MCP Registry entry
+    needs: [nuget, windows]
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write   # attach server.json to the release
+      id-token: write   # sign in to the MCP Registry as this GitHub repository
+    env:
+      TAG: ${{ github.event.release.tag_name }}
+      VERSION: ${{ needs.nuget.outputs.version }}
+      MCPB_SHA256: ${{ needs.windows.outputs.mcpb-sha256 }}
+      MCP_PUBLISHER_VERSION: v1.8.1
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Write server.json (NuGet package and Windows bundle)
+        run: |
+          url="https://github.com/${GITHUB_REPOSITORY}/releases/download/${TAG}/wpf-locator-doctor-mcp-win-x64.mcpb"
+          jq --arg v "$VERSION" --arg url "$url" --arg sha "$MCPB_SHA256" '
+            .version = $v
+            | .packages[0].version = $v
+            | .packages += [{
+                registryType: "mcpb",
+                identifier: $url,
+                fileSha256: $sha,
+                transport: { type: "stdio" }
+              }]' src/WpfLocatorDoctor.Mcp/.mcp/server.json > server.json
+          cat server.json
+
+      - name: Attach server.json to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh release upload "$TAG" server.json --clobber
+
+      - name: Install cosign (to check mcp-publisher's signature)
+        if: vars.MCP_REGISTRY_PUBLISH == 'true' && vars.NUGET_USER != ''
+        uses: sigstore/cosign-installer@v3
+
+      - name: Install mcp-publisher
+        if: vars.MCP_REGISTRY_PUBLISH == 'true' && vars.NUGET_USER != ''
+        run: |
+          set -euo pipefail
+          archive="mcp-publisher_linux_amd64.tar.gz"
+          base_url="https://github.com/modelcontextprotocol/registry/releases/download/${MCP_PUBLISHER_VERSION}"
+          curl --fail --location --silent --show-error --output "$archive" "$base_url/$archive"
+          curl --fail --location --silent --show-error --output "$archive.sigstore.json" "$base_url/$archive.sigstore.json"
+          cosign verify-blob --bundle "$archive.sigstore.json" \
+            --certificate-identity "https://github.com/modelcontextprotocol/registry/.github/workflows/release.yml@refs/tags/${MCP_PUBLISHER_VERSION}" \
+            --certificate-oidc-issuer "https://token.actions.githubusercontent.com" "$archive"
+          tar xzf "$archive" mcp-publisher
+          rm -f "$archive" "$archive.sigstore.json"
+
+      - name: Wait until NuGet lists the package (the registry checks it)
+        if: vars.MCP_REGISTRY_PUBLISH == 'true' && vars.NUGET_USER != ''
+        run: |
+          lower=$(echo "$VERSION" | tr '[:upper:]' '[:lower:]')
+          for i in $(seq 1 40); do
+            if curl --fail --silent --output /dev/null "https://api.nuget.org/v3-flatcontainer/wpf-locator-doctor-mcp/$lower/wpf-locator-doctor-mcp.nuspec"; then
+              echo "The package is on NuGet."; exit 0
+            fi
+            echo "Not listed yet; waiting 30 seconds ($i/40)."; sleep 30
+          done
+          echo "The package didn't appear on NuGet in 20 minutes." >&2; exit 1
+
+      - name: Publish to the MCP Registry
+        if: vars.MCP_REGISTRY_PUBLISH == 'true' && vars.NUGET_USER != ''
+        run: |
+          ./mcp-publisher login github-oidc
+          ./mcp-publisher publish
+
+      - name: Note that MCP Registry publishing was skipped
+        if: vars.MCP_REGISTRY_PUBLISH != 'true' || vars.NUGET_USER == ''
+        run: echo "::notice::Not published to the MCP Registry. Set the repository variables NUGET_USER and MCP_REGISTRY_PUBLISH=true to publish."

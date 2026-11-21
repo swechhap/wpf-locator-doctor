@@ -51,13 +51,23 @@ public sealed class McpServerTests : IAsyncLifetime
         Assert.Contains("score_source", _client.ServerInstructions ?? "", StringComparison.Ordinal);
     }
 
+    private static readonly string[] SourceToolNames =
+        ["compare_to_baseline", "explain_rules", "list_problems", "score_source", "suggest_xaml_fixes"];
+
+    private static readonly string[] LiveToolNames =
+        ["act", "check_locator", "close_app", "open_app", "recommend_locators", "score_live_app", "snapshot_screen", "take_screenshot", "wait_for"];
+
     [Fact]
-    public async Task The_assistant_sees_five_well_described_tools()
+    public async Task The_assistant_sees_well_described_tools()
     {
         var tools = await _client.ListToolsAsync();
-        Assert.Equal(
-            ["compare_to_baseline", "explain_rules", "list_problems", "score_source", "suggest_xaml_fixes"],
-            tools.Select(t => t.Name).Order(StringComparer.Ordinal).ToArray());
+#if LIVE_TOOLS
+        string[] expected = [.. SourceToolNames, .. LiveToolNames];
+#else
+        var expected = SourceToolNames;
+#endif
+        Assert.Equal(expected.Order(StringComparer.Ordinal), tools.Select(t => t.Name).Order(StringComparer.Ordinal));
+        Assert.InRange(SourceToolNames.Length + LiveToolNames.Length, 10, 15); // a small, well-chosen tool list
 
         foreach (var tool in tools)
         {
@@ -68,9 +78,18 @@ public sealed class McpServerTests : IAsyncLifetime
                 Assert.True(p.Value.TryGetProperty("description", out _), $"{tool.Name}.{p.Name} has no description.");
         }
 
-        // Everything except score_source (which can save report files) only reads.
-        Assert.All(tools.Where(t => t.Name != "score_source"), t => Assert.True(t.ProtocolTool.Annotations?.ReadOnlyHint));
+        // The source tools only read, except score_source (which can save report files).
+        Assert.All(tools.Where(t => SourceToolNames.Contains(t.Name) && t.Name != "score_source"), t => Assert.True(t.ProtocolTool.Annotations?.ReadOnlyHint));
         Assert.False(tools.Single(t => t.Name == "score_source").ProtocolTool.Annotations?.DestructiveHint);
+#if LIVE_TOOLS
+        // Tools that change the app say so, so assistants ask before using them.
+        Assert.True(tools.Single(t => t.Name == "act").ProtocolTool.Annotations?.DestructiveHint);
+        Assert.True(tools.Single(t => t.Name == "close_app").ProtocolTool.Annotations?.DestructiveHint);
+        Assert.True(tools.Single(t => t.Name == "snapshot_screen").ProtocolTool.Annotations?.ReadOnlyHint);
+        Assert.Contains("open_app", _client.ServerInstructions ?? "", StringComparison.Ordinal);
+#else
+        Assert.Contains("Windows download", _client.ServerInstructions ?? "", StringComparison.Ordinal);
+#endif
     }
 
     [Fact]

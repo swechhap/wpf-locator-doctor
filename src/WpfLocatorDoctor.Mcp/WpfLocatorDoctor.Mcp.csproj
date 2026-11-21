@@ -4,14 +4,38 @@
     The MCP server: gives AI assistants (Claude Code, VS Code / GitHub Copilot, Cursor…) tools to score a WPF
     project and fix its locators. It talks to the assistant over standard input/output (stdio).
     Every decision is made in WpfLocatorDoctor.Core; this project only describes the tools and starts the server.
+
+    Built twice, like the command-line tool:
+      net10.0          - runs anywhere; the tools that read source code. Shipped as a NuGet package (run with dnx).
+      net10.0-windows  - runs on Windows; adds the tools for a running app (FlaUI). Shipped as a download on the
+                         GitHub releases page (a zip, and an .mcpb bundle for apps such as Claude Desktop).
   -->
   <PropertyGroup>
     <OutputType>Exe</OutputType>
-    <TargetFramework>net10.0</TargetFramework>
+    <TargetFrameworks>net10.0;net10.0-windows</TargetFrameworks>
     <RootNamespace>WpfLocatorDoctor.Mcp</RootNamespace>
     <AssemblyName>wpf-locator-doctor-mcp</AssemblyName>
-    <IsPackable>false</IsPackable>
+
+    <!-- NuGet package: a .NET tool marked as an MCP server, so `dnx wpf-locator-doctor-mcp` runs it. -->
+    <PackAsTool>true</PackAsTool>
+    <ToolCommandName>wpf-locator-doctor-mcp</ToolCommandName>
+    <PackageType>McpServer</PackageType>
+    <PackageId>wpf-locator-doctor-mcp</PackageId>
+    <Authors>swechhap</Authors>
+    <Description>MCP server for WPF testability: lets AI assistants (Claude Code, GitHub Copilot, Cursor…) score how easy a WPF app is to automate, list its locator problems, and plan the exact XAML AutomationId fixes. This package reads source code and runs on Windows, macOS and Linux. The tools for a running app (snapshot, locators, click, type, screenshot) are in the Windows download on the GitHub releases page.</Description>
+    <PackageTags>mcp;mcp-server;wpf;automationid;ui-automation;test-automation;testability;locators;flaui;xaml</PackageTags>
+    <PackageReadmeFile>README.nuget.md</PackageReadmeFile>
   </PropertyGroup>
+
+  <!-- .NET tools must run on every operating system, so `dotnet pack` builds only the net10.0 (source tools) version. -->
+  <PropertyGroup Condition="'$(_IsPacking)' == 'true'">
+    <TargetFrameworks>net10.0</TargetFrameworks>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="README.nuget.md" Pack="true" PackagePath="\" />
+    <None Include=".mcp/server.json" Pack="true" PackagePath="/.mcp/" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Microsoft.Extensions.Hosting" Version="10.0.0" />
@@ -20,6 +44,18 @@
 
   <ItemGroup>
     <ProjectReference Include="..\WpfLocatorDoctor.Core\WpfLocatorDoctor.Core.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup Condition="'$(TargetFramework)' == 'net10.0-windows'">
+    <DefineConstants>$(DefineConstants);LIVE_TOOLS</DefineConstants>
+  </PropertyGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' == 'net10.0-windows'">
+    <ProjectReference Include="..\WpfLocatorDoctor.Live\WpfLocatorDoctor.Live.csproj" />
+  </ItemGroup>
+
+  <ItemGroup Condition="'$(TargetFramework)' != 'net10.0-windows'">
+    <Compile Remove="LiveTools.cs" />
   </ItemGroup>
 
   <ItemGroup>

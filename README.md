@@ -22,7 +22,7 @@ Works with any WPF app (.NET Framework or .NET). Built on Windows UI Automation 
 This is a real scan of the included practice app (shortened):
 
 ```text
-$ dotnet run --project src/WpfLocatorDoctor.Cli -f net10.0 -- scan-source samples/PracticeApp
+$ wpf-locator-doctor scan-source samples/PracticeApp
 
 Overall: grade B, score 86.5/100. Good. A few gaps to fix.
 
@@ -64,25 +64,41 @@ The full report (`testability-report.md`) tells you exactly what to add:
 
 ## Quick start
 
-You need the [.NET SDK](https://dotnet.microsoft.com/download) (version 10 or newer).
+### Source scan (Windows, macOS, Linux)
 
-Scan a project's source (any operating system):
-
-```bash
-dotnet run --project src/WpfLocatorDoctor.Cli -f net10.0 -- scan-source path/to/YourWpfProject
-```
-
-Scan the running app (Windows):
+Install from [NuGet](https://www.nuget.org/packages/wpf-locator-doctor). You need the [.NET SDK](https://dotnet.microsoft.com/download), version 10 or newer:
 
 ```bash
-dotnet run --project src/WpfLocatorDoctor.Cli -f net10.0-windows -- scan-live --exe path/to/YourApp.exe --source path/to/YourWpfProject
+dotnet tool install -g wpf-locator-doctor --prerelease
 ```
 
-Try it on the included practice app, which has one example of every problem:
+Then scan a project:
+
+```bash
+wpf-locator-doctor scan-source path/to/YourWpfProject
+```
+
+### Live scan (Windows)
+
+Download `wpf-locator-doctor-live-win-x64.zip` from the [latest release](https://github.com/swechhap/wpf-locator-doctor/releases), unzip it, and run:
+
+```bash
+wpf-locator-doctor.exe scan-live --exe path/to/YourApp.exe --source path/to/YourWpfProject
+```
+
+It needs the [.NET 10 Desktop Runtime](https://dotnet.microsoft.com/download/dotnet/10.0). The Windows download also includes the source scan.
+
+### Run from the source code
+
+Clone this repo and try it on the included practice app, which has one example of every problem:
 
 ```bash
 dotnet run --project src/WpfLocatorDoctor.Cli -f net10.0 -- scan-source samples/PracticeApp
 ```
+
+For the live scan from source, use `-f net10.0-windows` and `scan-live` instead.
+
+### Reports
 
 Both scans write two files into `./testability-report/`:
 
@@ -92,7 +108,7 @@ Both scans write two files into `./testability-report/`:
 ## Using it in a build pipeline
 
 ```bash
-dotnet run --project src/WpfLocatorDoctor.Cli -f net10.0 -- scan-source src/MyApp --min-score 75 --baseline last-report.json --quiet
+wpf-locator-doctor scan-source src/MyApp --min-score 75 --baseline last-report.json --quiet
 ```
 
 Exit codes: `0` OK · `1` score below `--min-score` · `2` wrong usage · `3` the scan failed.

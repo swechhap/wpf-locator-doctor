@@ -41,12 +41,10 @@ jobs:
             source-report/
 
   live-scan:
-    # The live scan has never run against a real app yet. This job starts the practice app on a
-    # Windows runner and scans it. It is allowed to fail until it has been seen to pass; then
-    # remove `continue-on-error` so it protects the live scanner like the other tests.
+    # Starts the practice app on a Windows runner and scans it, so the part of the live scanner
+    # that talks to a real app is tested on every push. A failure here fails the build.
     name: Live scan of the practice app (Windows)
     runs-on: windows-latest
-    continue-on-error: true
     steps:
       - uses: actions/checkout@v4
 

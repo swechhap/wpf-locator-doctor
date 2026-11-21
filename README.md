@@ -130,8 +130,8 @@ GitHub Actions builds and tests on Linux and Windows for every push and pull req
 
 - The source scan can't see controls created only in C# code, and it guesses third-party controls (Telerik, DevExpress…) from their class names.
 - The live scan only sees open windows and the list rows on screen. Open other screens and scan again.
-- The live scan's decisions are unit-tested, but the part that talks to a real app through FlaUI has only been compiled, not yet seen running
-  (it was developed on a Mac). The `live-scan` job in CI is the first real run; until it has passed it is allowed to fail.
+- The live scan runs in CI on every push: it starts the practice app on Windows, scans it, and fails the build if the scan breaks.
+  It has not yet been tried on large real-world apps, so expect rough edges there.
 
 ## License
 

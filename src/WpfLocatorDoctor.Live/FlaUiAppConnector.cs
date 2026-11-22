@@ -104,8 +104,7 @@ internal sealed class FlaUiApp(Application app, AutomationBase automation, bool 
     {
         try
         {
-            var windows = app.GetAllTopLevelWindows(automation);
-            return windows.Select(w => (ILiveNode)Read(w, includeChildren)).ToList();
+            return AllWindows().Select(w => (ILiveNode)Read(w, includeChildren)).ToList();
         }
         catch (Exception ex) when (FlaUiAppConnector.IsAutomationProblem(ex))
         {
@@ -114,8 +113,28 @@ internal sealed class FlaUiApp(Application app, AutomationBase automation, bool 
         }
     }
 
+    /// <summary>
+    /// The app's top-level windows, plus the windows they own (a dialog opened with Owner = this). UI Automation lists an owned
+    /// window inside its owner rather than next to it, so it is looked for there and treated as a window of its own.
+    /// </summary>
+    private List<AutomationElement> AllWindows()
+    {
+        var result = new List<AutomationElement>();
+        var pending = new Queue<(AutomationElement Window, int Depth)>(app.GetAllTopLevelWindows(automation).Select(w => ((AutomationElement)w, 0)));
+        var isWindow = automation.ConditionFactory.ByControlType(ControlType.Window);
+        while (pending.Count > 0 && result.Count < 50)
+        {
+            var (window, depth) = pending.Dequeue();
+            result.Add(window);
+            if (depth >= 5) continue;
+            foreach (var owned in Safe(() => window.FindAllChildren(isWindow), []))
+                pending.Enqueue((owned, depth + 1));
+        }
+        return result;
+    }
+
     /// <summary>Reads a window (and, if asked, everything in it) in one cross-process call, keeping each element usable for actions.</summary>
-    private LiveElement Read(Window window, bool includeChildren)
+    private LiveElement Read(AutomationElement window, bool includeChildren)
     {
         var lib = automation.PropertyLibrary;
         var cache = new CacheRequest
@@ -177,6 +196,8 @@ internal sealed class FlaUiApp(Application app, AutomationBase automation, bool 
             foreach (var child in Safe(() => el.CachedChildren ?? [], []))
             {
                 if (count >= MaxNodes) break;
+                // An owned window (dialog) is read as a window of its own; see AllWindows.
+                if (Safe(() => child.Properties.ControlType.ValueOrDefault == ControlType.Window, false)) continue;
                 children.Add(Build(child, includeChildren, ref count));
             }
             node.Children = children;

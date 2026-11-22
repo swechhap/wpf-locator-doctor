@@ -331,7 +331,7 @@ public static class Scorer
         }
     }
 
-    private static string RowStyleSnippet(string hostKind)
+    internal static string RowStyleSnippet(string hostKind)
     {
         var (property, rowType) = hostKind switch
         {

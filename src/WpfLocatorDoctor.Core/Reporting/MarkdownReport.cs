@@ -8,6 +8,9 @@ namespace WpfLocatorDoctor.Core.Reporting;
 /// <summary>Plain-English report for people (readable on GitHub, in a pull request, or in any Markdown viewer).</summary>
 public static partial class MarkdownReport
 {
+    /// <summary>File name both the command line and the MCP server use for this report.</summary>
+    public const string DefaultFileName = "testability-report.md";
+
     /// <summary>The Markdown report lists this many problems in detail; the JSON report always has all of them.</summary>
     internal const int MaxDetailedFindings = 500;
 

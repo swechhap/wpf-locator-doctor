@@ -1,0 +1,23 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.swechhap/wpf-locator-doctor",
+  "title": "WPF Locator Doctor",
+  "description": "Scores how testable a WPF app is and suggests the AutomationId fixes UI tests need.",
+  "version": "0.2.0",
+  "repository": {
+    "url": "https://github.com/swechhap/wpf-locator-doctor",
+    "source": "github"
+  },
+  "packages": [
+    {
+      "registryType": "nuget",
+      "registryBaseUrl": "https://api.nuget.org/v3/index.json",
+      "identifier": "wpf-locator-doctor-mcp",
+      "version": "0.2.0",
+      "runtimeHint": "dnx",
+      "transport": {
+        "type": "stdio"
+      }
+    }
+  ]
+}

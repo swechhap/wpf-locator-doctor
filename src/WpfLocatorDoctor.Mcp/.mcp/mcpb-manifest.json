@@ -1,0 +1,51 @@
+{
+  "manifest_version": "0.3",
+  "name": "wpf-locator-doctor",
+  "display_name": "WPF Locator Doctor",
+  "version": "0.0.0",
+  "description": "Score a WPF app's testability, explore the running app, and get ranked, checked UI-test locators and AutomationId fixes.",
+  "long_description": "Lets your AI assistant check and fix how testable a WPF app is. UI tests (FlaUI, Appium, WinAppDriver) find controls by their AutomationId. Score a project from its source (0-100, A-F), list locator problems with file and line, and plan exact XAML fixes. With the running app: see the screen as test tools do, get ranked locators with reasons and FlaUI/Appium code, check that a locator finds exactly one element, click, type, select, wait, take screenshots and score the live app. Needs the .NET 10 Desktop Runtime (or newer).",
+  "author": { "name": "swechhap" },
+  "repository": { "type": "git", "url": "https://github.com/swechhap/wpf-locator-doctor" },
+  "homepage": "https://github.com/swechhap/wpf-locator-doctor",
+  "documentation": "https://github.com/swechhap/wpf-locator-doctor/blob/master/docs/mcp-server.md",
+  "license": "MIT",
+  "keywords": ["wpf", "ui-automation", "testing", "automationid", "locators", "flaui", "appium"],
+  "server": {
+    "type": "binary",
+    "entry_point": "server/wpf-locator-doctor-mcp.exe",
+    "mcp_config": {
+      "command": "${__dirname}/server/wpf-locator-doctor-mcp.exe",
+      "args": [],
+      "env": {
+        "WPF_LOCATOR_DOCTOR_ALLOWED_APPS": "${user_config.allowed_apps}"
+      }
+    }
+  },
+  "user_config": {
+    "allowed_apps": {
+      "type": "string",
+      "title": "Allowed apps",
+      "description": "Optional. Names of the apps the tools may start or attach to, separated by semicolons (e.g. MyApp;PracticeApp). Leave empty to allow any app.",
+      "default": "",
+      "required": false
+    }
+  },
+  "tools": [
+    { "name": "score_source", "description": "Score a WPF project's testability from its source code." },
+    { "name": "list_problems", "description": "List locator problems with file, line and fix." },
+    { "name": "suggest_xaml_fixes", "description": "Plan exact XAML edits that add unique AutomationIds." },
+    { "name": "compare_to_baseline", "description": "Compare with an earlier report: score change and disappeared IDs." },
+    { "name": "explain_rules", "description": "Explain the checks and problem types." },
+    { "name": "open_app", "description": "Start or attach to a WPF app." },
+    { "name": "snapshot_screen", "description": "Outline of the app's windows with refs and locator problems." },
+    { "name": "recommend_locators", "description": "Ranked locators for an element, with reasons, confidence and code." },
+    { "name": "check_locator", "description": "Check that a locator finds exactly one element." },
+    { "name": "act", "description": "Click, type, select, expand, collapse or focus an element." },
+    { "name": "wait_for", "description": "Wait for an element or window to appear, disappear or be enabled." },
+    { "name": "take_screenshot", "description": "PNG of an element or window." },
+    { "name": "score_live_app", "description": "Score the running app's open windows." },
+    { "name": "close_app", "description": "Close the app (or let go of it)." }
+  ],
+  "compatibility": { "platforms": ["win32"] }
+}

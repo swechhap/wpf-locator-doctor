@@ -11,8 +11,13 @@ and tests still break when IDs are missing, duplicated or renamed. WPF Locator D
 are they there, set on purpose, unique, still the same as last time, and actually visible to test tools.
 It gives each screen and the whole app a score from 0 to 100 and a grade from A to F. Every problem comes with the file, the line, and the line of XAML to add.
 
-**Coming next:** an MCP server so AI assistants (Claude Code, Copilot, Cursor…) can find locators for you, self-healing for broken locators in
-FlaUI / Appium tests, and automatic pull requests that fix the test code or add the missing IDs to the app.
+**New: an MCP server** so AI assistants (Claude Code, Copilot, Cursor…) can score your project and add the missing IDs for you,
+and, on Windows, explore the running app: see the screen as test tools do, get ranked locators that are checked to find exactly
+one element, click, type, wait and take screenshots.
+See [Use it from an AI assistant](#use-it-from-an-ai-assistant-mcp-server).
+
+**Coming next:** self-healing for broken locators in FlaUI / Appium tests, and automatic pull requests that fix the test code or
+add the missing IDs to the app.
 See [docs/research-analysis.md](docs/research-analysis.md) for the research and plan.
 
 Works with any WPF app (.NET Framework or .NET). Built on Windows UI Automation and [FlaUI](https://github.com/FlaUI/FlaUI).
@@ -105,6 +110,32 @@ Both scans write two files into `./testability-report/`:
 - `testability-report.md`: the report for people (grade, what each check found, every problem with its fix).
 - `testability-report.json`: the same data for tools. Pass it as `--baseline` next time to check that no IDs disappeared.
 
+## Use it from an AI assistant (MCP server)
+
+The MCP server gives your AI assistant tools to work on your app's locators. Then just ask, for example:
+*"Score src/MyApp and add the missing AutomationIds to the worst screen."* or
+*"Start the app, open the settings window and give me the best locator for its OK button."*
+
+| Where | Tools | Get it |
+|---|---|---|
+| Any OS (reads source code) | `score_source`, `list_problems`, `suggest_xaml_fixes` (exact line edits with unique new IDs), `compare_to_baseline`, `explain_rules` | NuGet package `wpf-locator-doctor-mcp`, run with `dnx` |
+| Windows (adds the running app) | all of the above, plus `open_app`, `snapshot_screen`, `recommend_locators`, `check_locator`, `act`, `wait_for`, `take_screenshot`, `score_live_app`, `close_app` | `wpf-locator-doctor-mcp-win-x64.zip` or `.mcpb` on the [releases page](https://github.com/swechhap/wpf-locator-doctor/releases) |
+
+Add it to Claude Code (VS Code and Cursor are similar; see the guide):
+
+```bash
+claude mcp add wpf-locator-doctor -- dnx wpf-locator-doctor-mcp --yes
+```
+
+On Windows, point it at the downloaded server instead:
+
+```bash
+claude mcp add wpf-locator-doctor -- C:\tools\wpf-locator-doctor-mcp\wpf-locator-doctor-mcp.exe
+```
+
+The packages arrive with the first release that includes the MCP server; until then, build it from this repository (the guide shows how).
+Full guide, with VS Code and Cursor setup, safety settings and example answers: [docs/mcp-server.md](docs/mcp-server.md).
+
 ## Using it in a build pipeline
 
 ```bash
@@ -149,11 +180,14 @@ The source scan reads the C# code to find these.
 ```
 src/WpfLocatorDoctor.Core     The engine: XAML + C# scanning, scoring, reports, and the rules for judging
                               each element of a running app. No Windows dependency, so it runs (and is tested) anywhere.
-src/WpfLocatorDoctor.Live     A thin Windows-only layer: starts or attaches to the app and reads its UI
-                              through FlaUI, then hands each element to the Core rules.
+src/WpfLocatorDoctor.Live     A thin Windows-only layer: starts or attaches to the app, reads its UI and carries out
+                              actions through FlaUI, and hands everything to the Core rules.
 src/WpfLocatorDoctor.Cli      The wpf-locator-doctor command (CliApp.cs holds the logic; Program.cs only starts it).
+src/WpfLocatorDoctor.Mcp      The MCP server for AI assistants. Only describes the tools; the answers come from Core (Assistant/).
+                              Built twice: cross-platform (source tools, NuGet) and Windows (adds the live tools).
 samples/PracticeApp           A small WPF app with one example of each problem (and good examples).
 tests/                        Automated tests (run with: dotnet test WpfLocatorDoctor.slnx).
+docs/mcp-server.md            How to set up and use the MCP server.
 docs/research-analysis.md     Research behind this project.
 ```
 
@@ -173,7 +207,10 @@ dotnet test WpfLocatorDoctor.slnx
 | Live scan decisions (what counts as a control, rows, opaque areas, limits) | A fake UI tree, so no Windows or running app is needed | `LiveTreeWalkerTests` |
 | ID suggestions and reports (Markdown, JSON, terminal) | Direct checks of the output text | `HeuristicsAndReportTests`, `EdgeCaseTests` |
 | The command line: every command, option, error message and exit code | Runs the command in-process against temporary folders | `tests/WpfLocatorDoctor.Cli.Tests` |
-| The live scan against a real running app | GitHub Actions starts the practice app on Windows and scans it | `.github/workflows/ci.yml` (`live-scan` job) |
+| The MCP tools' answers: scores, filters, suggested IDs, exact XAML edits, baseline comparison, error messages | The practice app and temporary projects; one test applies every suggested edit and re-scores | `ProjectDoctorTests`, `XamlFixPlannerTests` |
+| The live MCP tools' decisions: what a snapshot shows, locator ranking and code, matching, how to click or type, waiting, allowed apps | A fake app, so no Windows or running app is needed | `LiveSessionTests` |
+| The MCP server as an assistant sees it: tool list, JSON answers, error messages | Starts the real server and talks to it with the official MCP client | `tests/WpfLocatorDoctor.Mcp.Tests` |
+| The live scan and the live MCP tools against a real running app | GitHub Actions starts the practice app on Windows, scans it, then drives it through the MCP server (snapshot, locators, type, menu, wait, screenshot, score) | `.github/workflows/ci.yml` (`live-scan` job), `LiveToolsTests` |
 
 Quality checks run on every build: .NET's recommended code-analysis rules are on, and any warning fails the build.
 GitHub Actions builds and tests on Linux and Windows for every push and pull request.

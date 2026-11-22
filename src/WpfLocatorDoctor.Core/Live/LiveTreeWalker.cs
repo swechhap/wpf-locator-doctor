@@ -22,6 +22,25 @@ public interface ILiveNode
     /// <summary>Behaviours (patterns) the element supports, e.g. "Invoke", "Value".</summary>
     IReadOnlyList<string> Patterns { get; }
     IReadOnlyList<ILiveNode> Children { get; }
+
+    // Current state, used by the AI assistant's live tools. The scan doesn't need them, so they have defaults.
+
+    bool IsEnabled => true;
+    /// <summary>A password box: its text is never read or shown.</summary>
+    bool IsPassword => false;
+    /// <summary>Text or value shown by the element (Value behaviour), e.g. a text box's text.</summary>
+    string? Value => null;
+    /// <summary>"On", "Off" or "Indeterminate" for check boxes and toggle buttons.</summary>
+    string? ToggleState => null;
+    /// <summary>"Expanded", "Collapsed", "PartiallyExpanded" or "LeafNode".</summary>
+    string? ExpandState => null;
+    /// <summary>For list rows, tabs and radio buttons: is it selected?</summary>
+    bool? IsSelected => null;
+    /// <summary>
+    /// UI Automation's identity for the element, if known. The same control can be reached twice (an open menu's items appear under
+    /// the menu and in its pop-up window), and this tells the two apart from two different controls.
+    /// </summary>
+    string? RuntimeId => null;
 }
 
 /// <summary>Safety limits for walking a live tree.</summary>
@@ -95,11 +114,7 @@ public static class LiveTreeWalker
 
         var isRow = !isRoot && ControlCatalog.LiveRowTypes.Contains(controlType);
         var isItemsHost = ControlCatalog.LiveItemsHostTypes.Contains(controlType);
-        var hasAction = patterns.Any(p => p is "Invoke" or "Toggle" or "Value" or "SelectionItem" or "ExpandCollapse" or "RangeValue");
-        var interactive = !isRoot && !isRow &&
-                          (ControlCatalog.LiveInteractiveTypes.Contains(controlType) ||
-                           className is "DatePicker" ||
-                           (controlType == "Custom" && el.IsKeyboardFocusable && hasAction));
+        var interactive = !isRoot && !isRow && IsInteractive(controlType, className, el.IsKeyboardFocusable, patterns);
 
         bool? rowsIdentifiable = null;
         if (isItemsHost)
@@ -129,8 +144,7 @@ public static class LiveTreeWalker
             IsItemsHost = isItemsHost,
             InRepeatedTemplate = ctx.InRow,
             RowsIdentifiable = isItemsHost ? rowsIdentifiable : ctx.InRow ? ctx.RowsIdentifiable : null,
-            IsOpaque = !isRoot && !ctx.InRow && controlType is "Custom" or "Pane" && id is null && name is null &&
-                       children.Count == 0 && !el.IsOffscreen && el.Width >= OpaqueMinSize && el.Height >= OpaqueMinSize,
+            IsOpaque = !isRoot && !ctx.InRow && LooksOpaque(el, id, name, children.Count),
             Patterns = [.. patterns],
             Path = string.Join(" > ", path),
         });
@@ -154,5 +168,18 @@ public static class LiveTreeWalker
         }
     }
 
-    private static string? NullIfEmpty(string? s) => string.IsNullOrWhiteSpace(s) ? null : s;
+    /// <summary>Something a user clicks, types into or selects (not a list row: rows are judged per list).</summary>
+    internal static bool IsInteractive(string controlType, string? className, bool keyboardFocusable, IReadOnlyList<string> patterns) =>
+        !ControlCatalog.LiveRowTypes.Contains(controlType) &&
+        (ControlCatalog.LiveInteractiveTypes.Contains(controlType) ||
+         className is "DatePicker" ||
+         (controlType == "Custom" && keyboardFocusable &&
+          patterns.Any(p => p is "Invoke" or "Toggle" or "Value" or "SelectionItem" or "ExpandCollapse" or "RangeValue")));
+
+    /// <summary>An empty "custom" or "pane" area with no ID, name or children: possibly drawn content test tools can't look into.</summary>
+    internal static bool LooksOpaque(ILiveNode el, string? id, string? name, int childCount) =>
+        el.ControlType is "Custom" or "Pane" && id is null && name is null && childCount == 0 &&
+        !el.IsOffscreen && el.Width >= OpaqueMinSize && el.Height >= OpaqueMinSize;
+
+    internal static string? NullIfEmpty(string? s) => string.IsNullOrWhiteSpace(s) ? null : s;
 }

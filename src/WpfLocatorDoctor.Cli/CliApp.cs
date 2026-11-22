@@ -20,8 +20,8 @@ internal sealed class CliApp(TextWriter stdout, TextWriter stderr)
     public const int ExitUsage = 2;
     public const int ExitScanFailed = 3;
 
-    public const string JsonReportName = "testability-report.json";
-    public const string MarkdownReportName = "testability-report.md";
+    public const string JsonReportName = JsonReport.DefaultFileName;
+    public const string MarkdownReportName = MarkdownReport.DefaultFileName;
 
     public int Run(IReadOnlyList<string> args)
     {

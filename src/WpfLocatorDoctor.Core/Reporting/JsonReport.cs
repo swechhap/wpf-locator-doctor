@@ -7,6 +7,9 @@ namespace WpfLocatorDoctor.Core.Reporting;
 /// <summary>Machine-readable report. Also used as the baseline for the next run's stability check.</summary>
 public static class JsonReport
 {
+    /// <summary>File name both the command line and the MCP server use for this report.</summary>
+    public const string DefaultFileName = "testability-report.json";
+
     private static readonly JsonSerializerOptions Options = new()
     {
         WriteIndented = true,

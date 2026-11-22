@@ -126,8 +126,9 @@ public sealed class LiveToolsTests : IAsyncLifetime
             var image = Assert.Single(shot.Content.OfType<ImageContentBlock>());
             Assert.Equal("image/png", image.MimeType);
 
-            // Close the settings window with Cancel and wait for it to go.
-            await Call("act", new() { ["action"] = "click", ["automationId"] = "SettingsCancelButton" });
+            // Close the settings window with OK and wait for it to go. (Not Cancel: the window is opened with Show(), and
+            // WPF's IsCancel button only closes windows opened with ShowDialog().)
+            await Call("act", new() { ["action"] = "click", ["automationId"] = "SettingsOkButton" });
             var gone = await Call("wait_for", new() { ["window"] = "SettingsWindow", ["until"] = "disappears", ["timeoutSeconds"] = 20 });
             Assert.True(gone.GetProperty("met").GetBoolean(), gone.GetProperty("summary").GetString());
 

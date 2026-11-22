@@ -29,6 +29,7 @@ public class LiveSessionTests
         public string? ToggleState { get; set; }
         public string? ExpandState { get; init; }
         public bool? IsSelected { get; init; }
+        public string? RuntimeId { get; init; }
     }
 
     private sealed class FakeApp(params Node[] windows) : ILiveApp
@@ -368,6 +369,20 @@ public class LiveSessionTests
         Assert.Equal(4, session.CheckLocator(new LocatorQuery(AutomationId: "RemoveButton")).Count);
         Assert.True(session.CheckLocator(new LocatorQuery(AutomationId: "RemoveButton", Within: "Totals")).Unique);
         Assert.True(session.CheckLocator(new LocatorQuery(Name: "Only my orders", ControlType: "checkbox")).Unique);
+    }
+
+    [Fact]
+    public void A_control_reached_through_two_windows_counts_once()
+    {
+        // An open menu: its items appear under the menu item in the main window and again in the menu's pop-up window.
+        Node Item() => new("MenuItem", "OpenSettingsMenuItem", "Settings…") { Patterns = ["Invoke"], RuntimeId = "42.7.1" };
+        var main = OrdersWindow();
+        main.Children = [.. main.Children, new Node("MenuItem", "FileMenu", "File") { Patterns = ["ExpandCollapse"], Children = [Item()] }];
+        var popup = new Node("Window", null, null) { ClassName = "Popup", Children = [new Node("Menu") { Children = [Item()] }] };
+        var (session, _, _) = Open(new FakeApp(main, popup));
+
+        Assert.True(session.CheckLocator(new LocatorQuery(AutomationId: "OpenSettingsMenuItem")).Unique);
+        Assert.Single(session.Snapshot().Outline, l => l.Contains("#OpenSettingsMenuItem", StringComparison.Ordinal));
     }
 
     [Fact]

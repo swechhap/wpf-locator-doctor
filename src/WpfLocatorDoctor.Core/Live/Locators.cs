@@ -140,10 +140,19 @@ public static class LocatorMatcher
             }
             matches.AddRange(candidates.Where(c => Matches(c.Node, query)));
         }
+        matches = Distinct(matches);
 
         if (query.Index is { } index)
             return index >= 1 && index <= matches.Count ? [matches[index - 1]] : [];
         return matches;
+    }
+
+    /// <summary>Drops elements reached a second time through another window (same UI Automation runtime ID), keeping the first.</summary>
+    public static List<Located> Distinct(IEnumerable<Located> found)
+    {
+        ArgumentNullException.ThrowIfNull(found);
+        var seen = new HashSet<string>(StringComparer.Ordinal);
+        return found.Where(l => string.IsNullOrEmpty(l.Node.RuntimeId) || seen.Add(l.Node.RuntimeId)).ToList();
     }
 
     /// <summary>The windows a query searches: the one it names, or all of them.</summary>
@@ -178,9 +187,9 @@ public static class LocatorMatcher
              (wanted.Length >= 3 && actual.Contains(wanted, StringComparison.OrdinalIgnoreCase)) ||
              (actual.Length >= 3 && wanted.Contains(actual, StringComparison.OrdinalIgnoreCase)));
 
-        return WindowsFor(windows, query)
-            .SelectMany(w => LiveTree.Descendants(w, w))
-            .Where(l => Near(l.Node.AutomationId, query.AutomationId) || Near(l.Node.Name, query.Name ?? query.AutomationId))
+        return Distinct(WindowsFor(windows, query)
+                .SelectMany(w => LiveTree.Descendants(w, w))
+                .Where(l => Near(l.Node.AutomationId, query.AutomationId) || Near(l.Node.Name, query.Name ?? query.AutomationId)))
             .Take(max)
             .ToList();
     }

@@ -36,6 +36,11 @@ public interface ILiveNode
     string? ExpandState => null;
     /// <summary>For list rows, tabs and radio buttons: is it selected?</summary>
     bool? IsSelected => null;
+    /// <summary>
+    /// UI Automation's identity for the element, if known. The same control can be reached twice (an open menu's items appear under
+    /// the menu and in its pop-up window), and this tells the two apart from two different controls.
+    /// </summary>
+    string? RuntimeId => null;
 }
 
 /// <summary>Safety limits for walking a live tree.</summary>

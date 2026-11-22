@@ -128,7 +128,7 @@ internal sealed class FlaUiApp(Application app, AutomationBase automation, bool 
                  {
                      lib.Element.AutomationId, lib.Element.Name, lib.Element.ClassName, lib.Element.ControlType,
                      lib.Element.FrameworkId, lib.Element.IsKeyboardFocusable, lib.Element.IsOffscreen,
-                     lib.Element.BoundingRectangle, lib.Element.IsEnabled, lib.Element.IsPassword,
+                     lib.Element.BoundingRectangle, lib.Element.IsEnabled, lib.Element.IsPassword, lib.Element.RuntimeId,
                      lib.Value.Value, lib.Toggle.ToggleState, lib.ExpandCollapse.ExpandCollapseState, lib.SelectionItem.IsSelected,
                  })
         {
@@ -158,6 +158,7 @@ internal sealed class FlaUiApp(Application app, AutomationBase automation, bool 
             IsOffscreen = Safe(() => el.Properties.IsOffscreen.ValueOrDefault, false),
             IsEnabled = Safe(() => el.Properties.IsEnabled.ValueOrDefault, true),
             IsPassword = Safe(() => el.Properties.IsPassword.ValueOrDefault, false),
+            RuntimeId = Safe(() => el.Properties.RuntimeId.ValueOrDefault is { Length: > 0 } ids ? string.Join('.', ids) : null, null),
             Width = rect.Width,
             Height = rect.Height,
             Patterns = ReadPatterns(el),
@@ -339,5 +340,6 @@ internal sealed class FlaUiApp(Application app, AutomationBase automation, bool 
         public string? ToggleState { get; set; }
         public string? ExpandState { get; set; }
         public bool? IsSelected { get; set; }
+        public string? RuntimeId { get; init; }
     }
 }

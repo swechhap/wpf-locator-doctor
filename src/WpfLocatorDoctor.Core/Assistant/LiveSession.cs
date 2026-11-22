@@ -200,6 +200,7 @@ public sealed class LiveSession : IDisposable
         public int RowsHidden { get; private set; }
         public SortedSet<string> DuplicateIds { get; } = new(StringComparer.Ordinal);
         private Dictionary<string, int> _idCounts = [];
+        private readonly HashSet<string> _seen = new(StringComparer.Ordinal);
 
         public void AddWindow(ILiveNode window)
         {
@@ -221,6 +222,8 @@ public sealed class LiveSession : IDisposable
             {
                 var type = node.ControlType;
                 if (ControlCatalog.LiveSkippedTypes.Contains(type) || node.AutomationId == "SystemMenuBar") continue;
+                // Already shown through another window (an open menu's items also appear in its pop-up window).
+                if (!string.IsNullOrEmpty(node.RuntimeId) && !_seen.Add(node.RuntimeId)) continue;
                 if (isList && ControlCatalog.LiveRowTypes.Contains(type) && ++rows > RowsShownPerList)
                 {
                     RowsHidden++;

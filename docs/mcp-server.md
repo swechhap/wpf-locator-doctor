@@ -90,7 +90,8 @@ How locators are ranked:
 ### Source tools (any OS)
 
 You need the [.NET SDK](https://dotnet.microsoft.com/download), version 10 or newer. `dnx` (part of the SDK) downloads and runs
-the server; there is nothing else to install. Add `--prerelease` after `--yes` while only preview versions are published.
+the server; there is nothing else to install. If your shell can't find `dnx` (for example with .NET from Homebrew), use
+`dotnet dnx` instead.
 
 **Claude Code.** Run this in your WPF project's folder:
 

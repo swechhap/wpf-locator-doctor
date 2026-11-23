@@ -191,6 +191,8 @@ src/WpfLocatorDoctor.Mcp      The MCP server for AI assistants. Only describes t
                               Built twice: cross-platform (source tools, NuGet) and Windows (adds the live tools).
 samples/PracticeApp           A small WPF app with one example of each problem (and good examples).
 tests/                        Automated tests (run with: dotnet test WpfLocatorDoctor.slnx).
+benchmark/                    Runs the tool on 11 open-source WPF apps and checks it against UI Automation (docs/benchmark.md).
+docs/benchmark.md             Benchmark results: crashes, speed, precision, live agreement, and follow-ups.
 docs/why-it-matters.md        Why testability matters, for testers and the developers they work with.
 docs/mcp-server.md            How to set up and use the MCP server.
 docs/research-analysis.md     Research behind this project.
@@ -225,7 +227,10 @@ GitHub Actions builds and tests on Linux and Windows for every push and pull req
 - The source scan can't see controls created only in C# code, and it guesses third-party controls (Telerik, DevExpress…) from their class names.
 - The live scan only sees open windows and the list rows on screen. Open other screens and scan again.
 - The live scan runs in CI on every push: it starts the practice app on Windows, scans it, and fails the build if the scan breaks.
-  It has not yet been tried on large real-world apps, so expect rough edges there.
+- A [benchmark on 11 open-source WPF apps](docs/benchmark.md) (ILSpy, dnSpyEx, MahApps.Metro, MaterialDesign and others) found
+  no crashes, 94% of reported problems real, and live scans and recommended locators that matched UI Automation every time.
+  Its weak spots: readable names set by styles or `Label Target="Name"` can be reported as missing, and the
+  "invisible custom control" check over-reports controls that only wrap other controls. Details and follow-ups are on that page.
 
 ## License
 

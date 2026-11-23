@@ -1,0 +1,107 @@
+{
+  "app": "Playnite (desktop app)",
+  "commit": "8c08a305d68e287e71984ea691239212a6046cf7",
+  "scanPath": "source/Playnite.DesktopApp",
+  "labels": [
+    {
+      "finding": "WT001\thigh\tControls/SettingsSections/AppearanceGeneral.xaml:130\tCheckBox \"{DynamicResource LOCSettingsShowBackIma…\" has no AutomationId.",
+      "label": "real",
+      "why": "Settings check box with no ID; its text is a translated resource."
+    },
+    {
+      "finding": "WT001\thigh\tControls/SettingsSections/AppearanceGeneral.xaml:58\tHyperlink \"{DynamicResource LOCSettingsGetThemes}\" has no AutomationId.",
+      "label": "real",
+      "why": "Hyperlink with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tControls/SettingsSections/Search.xaml:87\tCheckBox \"{DynamicResource LOCLibraryIconTitle}\" has no AutomationId.",
+      "label": "real",
+      "why": "Settings check box with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tWindows/DatabaseFieldsManagerWindow.xaml:21\tTabControl has no AutomationId.",
+      "label": "real",
+      "why": "Tab control with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tWindows/DatabaseFieldsManagerWindow.xaml:248\tButton \"{DynamicResource LOCRemoveTitle}\" has no AutomationId.",
+      "label": "real",
+      "why": "Button with no ID; the window has several \"Remove\" buttons, one per tab."
+    },
+    {
+      "finding": "WT001\thigh\tWindows/EmulatorsWindow.xaml:234\tTextBox has no AutomationId.",
+      "label": "real",
+      "why": "Text box with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tWindows/GameEditWindow.xaml:1029\tButton \"{DynamicResource LOCMenuHelpTitle}\" has no AutomationId.",
+      "label": "real",
+      "why": "Help button with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tWindows/GoogleImageDownloadWindow.xaml:93\tpctrls:NullIntNumericBox has no AutomationId.",
+      "label": "real",
+      "why": "NullIntNumericBox derives from TextBox and has no ID."
+    },
+    {
+      "finding": "WT002\tlow\tControls/SettingsSections/Backup.xaml:41\tSlider [SliderRotatingBackup] gets its ID \"SliderRotatingBackup\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from Name."
+    },
+    {
+      "finding": "WT002\tlow\tWindows/ToolsConfigWindow.xaml:26\tButton \"{DynamicResource LOCCancelLabel}\" gets its ID \"ButtonCancel\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from Name."
+    },
+    {
+      "finding": "WT005\tmedium\tControls/AddonsSections/InstalledExtensions.xaml:53\tRows in ItemsControl have no unique ID.",
+      "label": "real",
+      "why": "Link rows from data with no ID."
+    },
+    {
+      "finding": "WT005\tmedium\tControls/SettingsSections/Updates.xaml:30\tRows in ComboBox have no unique ID.",
+      "label": "real",
+      "why": "Items come from an enum behaviour with no ID per item."
+    },
+    {
+      "finding": "WT005\tmedium\tWindows/EmulatedGameImportWindow.xaml:173\tRows in ComboBox have no unique ID.",
+      "label": "real",
+      "why": "Profile combo box filled from data with no ID per item."
+    },
+    {
+      "finding": "WT008\tlow\tControls/GamesGridView.xaml:418\tListView [GridGames] has no readable name.",
+      "label": "real",
+      "why": "Main games list with no name."
+    },
+    {
+      "finding": "WT008\tlow\tControls/SettingsSections/AppearanceGridView.xaml:175\tpctrls:NullIntNumericBox has no readable name.",
+      "label": "real",
+      "why": "The caption is a TextBlock, not a Label with Target."
+    },
+    {
+      "finding": "WT008\tlow\tControls/SettingsSections/AppearanceLayout.xaml:97\tComboBox has no readable name.",
+      "label": "real",
+      "why": "Combo box with no label."
+    },
+    {
+      "finding": "WT008\tlow\tWindows/GameEditWindow.xaml:378\tTextBox has no readable name.",
+      "label": "real",
+      "why": "Score box with only a tooltip, which becomes help text, not a name."
+    },
+    {
+      "finding": "WT008\tlow\tWindows/GameEditWindow.xaml:607\tTextBox has no readable name.",
+      "label": "real",
+      "why": "The caption is a TextBlock, not a Label with Target."
+    },
+    {
+      "finding": "WT008\tlow\tWindows/GameEditWindow.xaml:888\tpctrls:PathSelectionBox [TextInstallDir] has no readable name.",
+      "label": "real",
+      "why": "PathSelectionBox derives from TextBox; the caption is a TextBlock, not a Label with Target."
+    },
+    {
+      "finding": "WT008\tlow\tWindows/GoogleImageDownloadWindow.xaml:93\tpctrls:NullIntNumericBox has no readable name.",
+      "label": "real",
+      "why": "Height box next to a TextBlock \"x\", with no name."
+    }
+  ]
+}

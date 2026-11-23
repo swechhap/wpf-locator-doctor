@@ -1,0 +1,92 @@
+{
+  "id": "wpfui",
+  "name": "WPF UI gallery (lepoco/wpfui)",
+  "commit": "35eae0e6975625ac3ff4b3426e89dcae66c8da06",
+  "groundTruthElements": 95,
+  "groundTruthWindows": 1,
+  "liveScan": {
+    "elements": 78,
+    "score": 66.9,
+    "coveragePercent": 50,
+    "problemsByRule": {
+      "WT001": 8,
+      "WT005": 2,
+      "WT008": 11
+    }
+  },
+  "liveVsTruth": {
+    "groundTruthControls": 16,
+    "skippedByDesign": {},
+    "comparedControls": 16,
+    "liveScanControls": 16,
+    "paired": 16,
+    "pairedOutcome": {
+      "both without an ID": 8,
+      "same ID": 8
+    },
+    "missedByLiveScan": 0,
+    "onlyInLiveScan": 0,
+    "idAgreement": 1.0,
+    "groundTruthIdCoverage": 0.5,
+    "examples": {}
+  },
+  "sourceVsTruth": {
+    "groundTruthControls": 16,
+    "sourceScreensOnScreen": [
+      "DashboardPage"
+    ],
+    "matchedToSource": 5,
+    "outcome": {
+      "ID not found in the XAML": 8,
+      "can't be paired (no ID and no name)": 3,
+      "both without an ID": 5
+    },
+    "pairableControls": 13,
+    "sourceSeesControl": 0.3846,
+    "idAgreement": 1.0,
+    "groundTruthIdsFoundInXaml": 0.0,
+    "falseAlarms": 0,
+    "examples": {
+      "ID not found in the XAML": [
+        "Button #NavigationBackButton",
+        "Button #NavigationToggleButton",
+        "Button #NavigationAutoSuggestBoxButton",
+        "List #NavigationItems",
+        "List #NavigationFooterItems",
+        "Button #TitleBarMinimizeButton",
+        "Button #TitleBarMaximizeButton",
+        "Button #TitleBarCloseButton"
+      ],
+      "can't be paired (no ID and no name)": [
+        "Button",
+        "Button",
+        "Button"
+      ]
+    }
+  },
+  "locators": {
+    "elementsChecked": 32,
+    "elementsWithoutLocator": 0,
+    "locators": 81,
+    "outcome": {
+      "finds exactly the element": 81
+    },
+    "unique": 1.0,
+    "bestLocatorUnique": 1.0,
+    "byKind": {
+      "AutomationId": {
+        "finds exactly the element": 9
+      },
+      "position": {
+        "finds exactly the element": 32
+      },
+      "inside a parent's ID": {
+        "finds exactly the element": 20
+      },
+      "name + type": {
+        "finds exactly the element": 20
+      }
+    },
+    "examples": {}
+  }
+}

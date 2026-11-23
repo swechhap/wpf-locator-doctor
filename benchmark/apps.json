@@ -1,0 +1,137 @@
+{
+  "description": "Open-source WPF apps the benchmark scans. Each is pinned to one commit so results only change when this tool changes. Licenses were checked: all allow cloning and running the code for testing.",
+  "apps": [
+    {
+      "id": "ilspy",
+      "name": "ILSpy",
+      "repo": "https://github.com/icsharpcode/ILSpy",
+      "commit": "1377eb6e7351b21112858c8c1df39848f40181ec",
+      "pinnedFrom": "tag v10.1.1 (the last WPF release; ILSpy moved to Avalonia in v11)",
+      "license": "MIT",
+      "scanPath": "ILSpy",
+      "styles": ["plain WPF", "controls built in code", "docking layout"]
+    },
+    {
+      "id": "dnspyex",
+      "name": "dnSpyEx",
+      "repo": "https://github.com/dnSpyEx/dnSpy",
+      "commit": "bb09d2c54718e0f73d01d2e1085ddb8772aee555",
+      "pinnedFrom": "branch master, 2026-11-18",
+      "license": "GPL-3.0",
+      "scanPath": ".",
+      "styles": ["MVVM", "controls built in code", "plug-in extensions"]
+    },
+    {
+      "id": "screentogif",
+      "name": "ScreenToGif",
+      "repo": "https://github.com/NickeManarin/ScreenToGif",
+      "commit": "a4d0a67c2131cd048ceec86cd40afc2f1a06f2fd",
+      "pinnedFrom": "branch master, 2026-07-28",
+      "license": "MS-PL",
+      "scanPath": "ScreenToGif",
+      "styles": ["plain WPF", "custom controls", "heavy code-behind"]
+    },
+    {
+      "id": "snoop",
+      "name": "Snoop",
+      "repo": "https://github.com/snoopwpf/snoopwpf",
+      "commit": "2bf48f60c2bb1753001f6be9122395def9070fa9",
+      "pinnedFrom": "branch develop, 2026-08-23",
+      "license": "MS-PL",
+      "scanPath": "Snoop.Core",
+      "styles": ["plain WPF", "custom controls", "tool windows"]
+    },
+    {
+      "id": "mahapps",
+      "name": "MahApps.Metro demo",
+      "repo": "https://github.com/MahApps/MahApps.Metro",
+      "commit": "9466e8acd96591e1f552841bc5357f376552bb57",
+      "pinnedFrom": "branch develop, 2026-11-02",
+      "license": "MIT",
+      "scanPath": "src/MahApps.Metro.Samples/MahApps.Metro.Demo",
+      "styles": ["themed control library", "custom window chrome"],
+      "live": {
+        "project": "src/MahApps.Metro.Samples/MahApps.Metro.Demo/MahApps.Metro.Demo.csproj",
+        "framework": "net8.0-windows",
+        "exe": "MahApps.Metro.Demo.exe"
+      }
+    },
+    {
+      "id": "materialdesign",
+      "name": "MaterialDesignInXamlToolkit demo",
+      "repo": "https://github.com/MaterialDesignInXAML/MaterialDesignInXamlToolkit",
+      "commit": "5b626957f891f02dcb179cd0be754d8e782767aa",
+      "pinnedFrom": "branch master, 2026-11-23",
+      "license": "MIT",
+      "scanPath": "src/MainDemo.Wpf",
+      "styles": ["themed control library", "MVVM"],
+      "live": {
+        "project": "src/MainDemo.Wpf/MaterialDesignDemo.csproj",
+        "framework": "net8.0-windows",
+        "exe": "MaterialDesignDemo.exe"
+      }
+    },
+    {
+      "id": "handycontrol",
+      "name": "HandyControl demo",
+      "repo": "https://github.com/HandyOrg/HandyControl",
+      "commit": "e9ad3d701b90e724399a413569fbd7f35a141053",
+      "pinnedFrom": "branch master, 2026-10-15",
+      "license": "MIT",
+      "scanPath": "src/Shared/HandyControlDemo_Shared",
+      "styles": ["themed control library", "MVVM", "shared projects"]
+    },
+    {
+      "id": "wpfui",
+      "name": "WPF UI gallery (lepoco/wpfui)",
+      "repo": "https://github.com/lepoco/wpfui",
+      "commit": "35eae0e6975625ac3ff4b3426e89dcae66c8da06",
+      "pinnedFrom": "branch main, 2026-11-17",
+      "license": "MIT",
+      "scanPath": "src/Wpf.Ui.Gallery",
+      "styles": ["themed control library", "MVVM", "navigation pages"],
+      "live": {
+        "project": "src/Wpf.Ui.Gallery/Wpf.Ui.Gallery.csproj",
+        "framework": "net10.0-windows10.0.26100.0",
+        "exe": "Wpf.Ui.Gallery.exe"
+      }
+    },
+    {
+      "id": "wpfsamples",
+      "name": "Microsoft WPF-Samples",
+      "repo": "https://github.com/microsoft/WPF-Samples",
+      "commit": "811d01e95c8c929e68539d698d0a0609e94fd185",
+      "pinnedFrom": "branch main, 2026-09-16",
+      "license": "MIT",
+      "scanPath": ".",
+      "styles": ["plain WPF", "x:Uid localization", "hundreds of small samples"],
+      "live": {
+        "name": "GlobalizationHomepage sample (uses x:Uid)",
+        "project": "Globalization and Localization/GlobalizationHomepage/GlobalizationHomepage.csproj",
+        "framework": "net10.0-windows",
+        "exe": "GlobalizationHomepage.exe",
+        "sourcePath": "Globalization and Localization/GlobalizationHomepage"
+      }
+    },
+    {
+      "id": "npe",
+      "name": "NuGet Package Explorer",
+      "repo": "https://github.com/NuGetPackageExplorer/NuGetPackageExplorer",
+      "commit": "e2b0d9c8e0264d1580c1fc33a4bd866294856357",
+      "pinnedFrom": "branch main, 2026-10-08",
+      "license": "MIT",
+      "scanPath": "PackageExplorer",
+      "styles": ["MVVM", "plain WPF"]
+    },
+    {
+      "id": "playnite",
+      "name": "Playnite (desktop app)",
+      "repo": "https://github.com/JosefNemec/Playnite",
+      "commit": "8c08a305d68e287e71984ea691239212a6046cf7",
+      "pinnedFrom": "branch master, 2026-11-18",
+      "license": "MIT",
+      "scanPath": "source/Playnite.DesktopApp",
+      "styles": ["MVVM", "themes where views live in styles"]
+    }
+  ]
+}

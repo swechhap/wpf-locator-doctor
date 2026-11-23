@@ -1,0 +1,392 @@
+{
+  "apps": [
+    {
+      "id": "ilspy",
+      "name": "ILSpy",
+      "commit": "1377eb6e7351b21112858c8c1df39848f40181ec",
+      "scanPath": "ILSpy",
+      "crashed": false,
+      "exitCode": 0,
+      "seconds": [
+        0.8,
+        0.69
+      ],
+      "deterministic": true,
+      "score": 54.7,
+      "grade": "D",
+      "elements": 212,
+      "controls": 89,
+      "screens": 104,
+      "problems": 145,
+      "problemsByRule": {
+        "WT001": 69,
+        "WT002": 20,
+        "WT005": 22,
+        "WT006": 5,
+        "WT008": 29
+      },
+      "checks": {
+        "coverage": 22.5,
+        "quality": 70,
+        "uniqueness": 62.7,
+        "stability": null,
+        "visibility": 100,
+        "names": 67
+      },
+      "notes": 0
+    },
+    {
+      "id": "dnspyex",
+      "name": "dnSpyEx",
+      "commit": "bb09d2c54718e0f73d01d2e1085ddb8772aee555",
+      "scanPath": ".",
+      "crashed": false,
+      "exitCode": 0,
+      "seconds": [
+        3.86,
+        3.8
+      ],
+      "deterministic": true,
+      "score": 57.1,
+      "grade": "D",
+      "elements": 1106,
+      "controls": 960,
+      "screens": 113,
+      "problems": 1339,
+      "problemsByRule": {
+        "WT001": 721,
+        "WT002": 226,
+        "WT005": 105,
+        "WT006": 10,
+        "WT008": 277
+      },
+      "checks": {
+        "coverage": 23.5,
+        "quality": 70,
+        "uniqueness": 70.2,
+        "stability": null,
+        "visibility": 98.6,
+        "names": 70.2
+      },
+      "notes": 0
+    },
+    {
+      "id": "screentogif",
+      "name": "ScreenToGif",
+      "commit": "a4d0a67c2131cd048ceec86cd40afc2f1a06f2fd",
+      "scanPath": "ScreenToGif",
+      "crashed": false,
+      "exitCode": 0,
+      "seconds": [
+        1.02,
+        1.02
+      ],
+      "deterministic": true,
+      "score": 69,
+      "grade": "C",
+      "elements": 1716,
+      "controls": 1091,
+      "screens": 61,
+      "problems": 1407,
+      "problemsByRule": {
+        "WT001": 362,
+        "WT002": 557,
+        "WT005": 34,
+        "WT006": 13,
+        "WT007": 13,
+        "WT008": 428
+      },
+      "checks": {
+        "coverage": 51.1,
+        "quality": 70,
+        "uniqueness": 95.7,
+        "stability": null,
+        "visibility": 83.2,
+        "names": 53.4
+      },
+      "notes": 0
+    },
+    {
+      "id": "snoop",
+      "name": "Snoop",
+      "commit": "2bf48f60c2bb1753001f6be9122395def9070fa9",
+      "scanPath": "Snoop.Core",
+      "crashed": false,
+      "exitCode": 0,
+      "seconds": [
+        0.54,
+        0.53
+      ],
+      "deterministic": true,
+      "score": 65.2,
+      "grade": "C",
+      "elements": 224,
+      "controls": 141,
+      "screens": 24,
+      "problems": 220,
+      "problemsByRule": {
+        "WT001": 81,
+        "WT002": 60,
+        "WT005": 21,
+        "WT006": 7,
+        "WT007": 1,
+        "WT008": 50
+      },
+      "checks": {
+        "coverage": 42.6,
+        "quality": 70,
+        "uniqueness": 79,
+        "stability": null,
+        "visibility": 99.3,
+        "names": 64
+      },
+      "notes": 0
+    },
+    {
+      "id": "mahapps",
+      "name": "MahApps.Metro demo",
+      "commit": "9466e8acd96591e1f552841bc5357f376552bb57",
+      "scanPath": "src/MahApps.Metro.Samples/MahApps.Metro.Demo",
+      "crashed": false,
+      "exitCode": 0,
+      "seconds": [
+        0.41,
+        0.41
+      ],
+      "deterministic": true,
+      "score": 47.7,
+      "grade": "D",
+      "elements": 909,
+      "controls": 709,
+      "screens": 38,
+      "problems": 1157,
+      "problemsByRule": {
+        "WT001": 632,
+        "WT002": 77,
+        "WT005": 83,
+        "WT006": 1,
+        "WT008": 364
+      },
+      "checks": {
+        "coverage": 10.9,
+        "quality": 70,
+        "uniqueness": 60.2,
+        "stability": null,
+        "visibility": 100,
+        "names": 47.2
+      },
+      "notes": 0
+    },
+    {
+      "id": "materialdesign",
+      "name": "MaterialDesignInXamlToolkit demo",
+      "commit": "5b626957f891f02dcb179cd0be754d8e782767aa",
+      "scanPath": "src/MainDemo.Wpf",
+      "crashed": false,
+      "exitCode": 0,
+      "seconds": [
+        0.39,
+        0.4
+      ],
+      "deterministic": true,
+      "score": 49.8,
+      "grade": "D",
+      "elements": 1508,
+      "controls": 1174,
+      "screens": 53,
+      "problems": 1594,
+      "problemsByRule": {
+        "WT001": 958,
+        "WT002": 120,
+        "WT005": 77,
+        "WT006": 1,
+        "WT008": 438
+      },
+      "checks": {
+        "coverage": 10.2,
+        "quality": 70,
+        "uniqueness": 69.1,
+        "stability": null,
+        "visibility": 91.8,
+        "names": 57.3
+      },
+      "notes": 0
+    },
+    {
+      "id": "handycontrol",
+      "name": "HandyControl demo",
+      "commit": "e9ad3d701b90e724399a413569fbd7f35a141053",
+      "scanPath": "src/Shared/HandyControlDemo_Shared",
+      "crashed": false,
+      "exitCode": 0,
+      "seconds": [
+        0.43,
+        0.43
+      ],
+      "deterministic": true,
+      "score": 41.3,
+      "grade": "D",
+      "elements": 1210,
+      "controls": 1023,
+      "screens": 137,
+      "problems": 1558,
+      "problemsByRule": {
+        "WT001": 1005,
+        "WT002": 18,
+        "WT005": 92,
+        "WT008": 443
+      },
+      "checks": {
+        "coverage": 1.8,
+        "quality": 70,
+        "uniqueness": 42.5,
+        "stability": null,
+        "visibility": 100,
+        "names": 56.1
+      },
+      "notes": 0
+    },
+    {
+      "id": "wpfui",
+      "name": "WPF UI gallery (lepoco/wpfui)",
+      "commit": "35eae0e6975625ac3ff4b3426e89dcae66c8da06",
+      "scanPath": "src/Wpf.Ui.Gallery",
+      "crashed": false,
+      "exitCode": 0,
+      "seconds": [
+        0.4,
+        0.4
+      ],
+      "deterministic": true,
+      "score": 48.2,
+      "grade": "D",
+      "elements": 584,
+      "controls": 402,
+      "screens": 82,
+      "problems": 358,
+      "problemsByRule": {
+        "WT001": 264,
+        "WT002": 5,
+        "WT005": 11,
+        "WT006": 4,
+        "WT008": 74
+      },
+      "checks": {
+        "coverage": 1.2,
+        "quality": 70,
+        "uniqueness": 80.6,
+        "stability": null,
+        "visibility": 66.9,
+        "names": 72.4
+      },
+      "notes": 0
+    },
+    {
+      "id": "wpfsamples",
+      "name": "Microsoft WPF-Samples",
+      "commit": "811d01e95c8c929e68539d698d0a0609e94fd185",
+      "scanPath": ".",
+      "crashed": false,
+      "exitCode": 0,
+      "seconds": [
+        1.53,
+        1.51
+      ],
+      "deterministic": true,
+      "score": 68.7,
+      "grade": "C",
+      "elements": 4629,
+      "controls": 2942,
+      "screens": 506,
+      "problems": 3518,
+      "problemsByRule": {
+        "WT001": 1617,
+        "WT002": 1145,
+        "WT003": 45,
+        "WT005": 136,
+        "WT006": 6,
+        "WT007": 2,
+        "WT008": 567
+      },
+      "checks": {
+        "coverage": 40.4,
+        "quality": 67.7,
+        "uniqueness": 93.5,
+        "stability": null,
+        "visibility": 95.3,
+        "names": 78.5
+      },
+      "notes": 1
+    },
+    {
+      "id": "npe",
+      "name": "NuGet Package Explorer",
+      "commit": "e2b0d9c8e0264d1580c1fc33a4bd866294856357",
+      "scanPath": "PackageExplorer",
+      "crashed": false,
+      "exitCode": 0,
+      "seconds": [
+        0.41,
+        0.41
+      ],
+      "deterministic": true,
+      "score": 60.1,
+      "grade": "C",
+      "elements": 334,
+      "controls": 261,
+      "screens": 24,
+      "problems": 366,
+      "problemsByRule": {
+        "WT001": 189,
+        "WT002": 72,
+        "WT005": 31,
+        "WT008": 74
+      },
+      "checks": {
+        "coverage": 27.6,
+        "quality": 70,
+        "uniqueness": 75.6,
+        "stability": null,
+        "visibility": 100,
+        "names": 71.6
+      },
+      "notes": 0
+    },
+    {
+      "id": "playnite",
+      "name": "Playnite (desktop app)",
+      "commit": "8c08a305d68e287e71984ea691239212a6046cf7",
+      "scanPath": "source/Playnite.DesktopApp",
+      "crashed": false,
+      "exitCode": 0,
+      "seconds": [
+        0.58,
+        0.57
+      ],
+      "deterministic": true,
+      "score": 52.2,
+      "grade": "D",
+      "elements": 1034,
+      "controls": 881,
+      "screens": 66,
+      "problems": 1337,
+      "problemsByRule": {
+        "WT001": 694,
+        "WT002": 174,
+        "WT004": 1,
+        "WT005": 130,
+        "WT006": 24,
+        "WT008": 314
+      },
+      "checks": {
+        "coverage": 19.8,
+        "quality": 70,
+        "uniqueness": 58.7,
+        "stability": null,
+        "visibility": 98.5,
+        "names": 63.3
+      },
+      "notes": 0
+    }
+  ]
+}

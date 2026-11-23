@@ -1,0 +1,155 @@
+# ILSpy @ 1377eb6e73, scan path: ILSpy
+score 54.7  grade D  elements 212  controls 89  screens 104
+check coverage      22.5%  20 of 89 controls have an AutomationId.
+check quality         70%  20 borrowed from x:Name.
+check uniqueness    62.7%  0 ID(s) used more than once; 0 of 22 data lists have identifiable rows.
+check stability      n/a%  Not measured. Run again with --baseline <previous report.json> to compare.
+check visibility     100%  0 invisible control(s), 0 opaque area(s).
+check names           67%  59 of 88 controls have a readable name.
+problems WT001=69  WT002=20  WT005=22  WT006=5  WT008=29
+
+WT005	medium	Analyzers/AnalyzerTreeView.xaml:1	Rows in treeView:SharpTreeView have no unique ID.
+WT005	medium	AssemblyTree/AssemblyListPane.xaml:1	Rows in treeView:SharpTreeView "Assemblies and Classes" have no unique ID.
+WT006	medium	Controls/CollapsiblePanel.cs:32	CollapsiblePanel derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/CollapsiblePanel.cs:166	SelfCollapsingPanel derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT001	high	Controls/MainMenu.xaml:14	MenuItem "{x:Static properties:Resources._File}" has no AutomationId.
+WT001	high	Controls/MainMenu.xaml:17	MenuItem "{x:Static properties:Resources._View}" has no AutomationId.
+WT001	high	Controls/MainMenu.xaml:18	MenuItem "{x:Static properties:Resources.Show_pub…" has no AutomationId.
+WT001	high	Controls/MainMenu.xaml:20	MenuItem "{x:Static properties:Resources.Show_int…" has no AutomationId.
+WT001	high	Controls/MainMenu.xaml:22	MenuItem "{x:Static properties:Resources.Show_all…" has no AutomationId.
+WT001	high	Controls/MainMenu.xaml:25	MenuItem "{x:Static properties:Resources.Theme}" has no AutomationId.
+WT001	high	Controls/MainMenu.xaml:44	MenuItem "{x:Static properties:Resources.UILangua…" has no AutomationId.
+WT001	high	Controls/MainMenu.xaml:45	MenuItem "{x:Static properties:Resources.UILangua…" has no AutomationId.
+WT002	low	Controls/MainMenu.xaml:49	MenuItem "{x:Static properties:Resources._Window}" gets its ID "WindowMenuItem" from x:Name.
+WT005	medium	Controls/MainToolBar.xaml:38	Rows in ItemsControl have no unique ID.
+WT002	low	Controls/MainToolBar.xaml:39	ComboBox [assemblyListComboBox] gets its ID "assemblyListComboBox" from x:Name.
+WT005	medium	Controls/MainToolBar.xaml:39	Rows in ComboBox [assemblyListComboBox] have no unique ID.
+WT008	low	Controls/MainToolBar.xaml:39	ComboBox [assemblyListComboBox] has no readable name.
+WT001	high	Controls/MainToolBar.xaml:44	Button has no AutomationId.
+WT008	low	Controls/MainToolBar.xaml:44	Button has no readable name.
+WT001	high	Controls/MainToolBar.xaml:51	CheckBox has no AutomationId.
+WT008	low	Controls/MainToolBar.xaml:51	CheckBox has no readable name.
+WT001	high	Controls/MainToolBar.xaml:56	CheckBox has no AutomationId.
+WT008	low	Controls/MainToolBar.xaml:56	CheckBox has no readable name.
+WT001	high	Controls/MainToolBar.xaml:61	CheckBox has no AutomationId.
+WT008	low	Controls/MainToolBar.xaml:61	CheckBox has no readable name.
+WT005	medium	Controls/MainToolBar.xaml:68	Rows in ItemsControl have no unique ID.
+WT002	low	Controls/MainToolBar.xaml:69	ComboBox [languageComboBox] gets its ID "languageComboBox" from x:Name.
+WT005	medium	Controls/MainToolBar.xaml:69	Rows in ComboBox [languageComboBox] have no unique ID.
+WT008	low	Controls/MainToolBar.xaml:69	ComboBox [languageComboBox] has no readable name.
+WT005	medium	Controls/MainToolBar.xaml:76	Rows in ItemsControl have no unique ID.
+WT002	low	Controls/MainToolBar.xaml:80	ComboBox [languageVersionComboBox] gets its ID "languageVersionComboBox" from x:Name.
+WT005	medium	Controls/MainToolBar.xaml:80	Rows in ComboBox [languageVersionComboBox] have no unique ID.
+WT008	low	Controls/MainToolBar.xaml:80	ComboBox [languageVersionComboBox] has no readable name.
+WT002	low	Controls/ResourceObjectTable.xaml:46	local:SearchBox [resourceFilterBox] gets its ID "resourceFilterBox" from x:Name.
+WT008	low	Controls/ResourceObjectTable.xaml:46	local:SearchBox [resourceFilterBox] has no readable name.
+WT002	low	Controls/ResourceObjectTable.xaml:51	ListView [resourceListView] gets its ID "resourceListView" from x:Name.
+WT005	medium	Controls/ResourceObjectTable.xaml:51	Rows in ListView [resourceListView] have no unique ID.
+WT008	low	Controls/ResourceObjectTable.xaml:51	ListView [resourceListView] has no readable name.
+WT002	low	Controls/ResourceStringTable.xaml:45	local:SearchBox [resourceFilterBox] gets its ID "resourceFilterBox" from x:Name.
+WT008	low	Controls/ResourceStringTable.xaml:45	local:SearchBox [resourceFilterBox] has no readable name.
+WT002	low	Controls/ResourceStringTable.xaml:50	ListView [resourceListView] gets its ID "resourceListView" from x:Name.
+WT005	medium	Controls/ResourceStringTable.xaml:50	Rows in ListView [resourceListView] have no unique ID.
+WT008	low	Controls/ResourceStringTable.xaml:50	ListView [resourceListView] has no readable name.
+WT006	medium	Controls/TreeView/InsertMarker.cs:24	InsertMarker derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/TreeView/SharpTreeNodeView.cs:30	SharpTreeNodeView derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/ZoomButtons.cs:32	ZoomButtons derives from RangeBase and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT001	medium	Metadata/FlagsTooltip.xaml:16	ListBox (inside a list row template) has no AutomationId.
+WT005	medium	Metadata/FlagsTooltip.xaml:16	Rows in ListBox have no unique ID.
+WT008	low	Metadata/FlagsTooltip.xaml:16	ListBox has no readable name.
+WT001	medium	Metadata/FlagsTooltip.xaml:19	CheckBox "{Binding Name}" (inside a list row template) has no AutomationId.
+WT005	medium	Options/DecompilerSettingsPanel.xaml:13	Rows in ItemsControl have no unique ID.
+WT001	medium	Options/DecompilerSettingsPanel.xaml:17	Expander "{Binding Category}" (inside a list row template) has no AutomationId.
+WT001	medium	Options/DecompilerSettingsPanel.xaml:19	CheckBox "{Binding Category}" (inside a list row template) has no AutomationId.
+WT005	medium	Options/DecompilerSettingsPanel.xaml:24	Rows in ItemsControl have no unique ID.
+WT001	medium	Options/DecompilerSettingsPanel.xaml:27	CheckBox "{Binding Description}" (inside a list row template) has no AutomationId.
+WT001	high	Options/DisplaySettingsPanel.xaml:14	ComboBox has no AutomationId.
+WT005	medium	Options/DisplaySettingsPanel.xaml:14	Rows in ComboBox have no unique ID.
+WT008	low	Options/DisplaySettingsPanel.xaml:14	ComboBox has no readable name.
+WT001	high	Options/DisplaySettingsPanel.xaml:29	ComboBox has no AutomationId.
+WT005	medium	Options/DisplaySettingsPanel.xaml:29	Rows in ComboBox have no unique ID.
+WT008	low	Options/DisplaySettingsPanel.xaml:29	ComboBox has no readable name.
+WT001	high	Options/DisplaySettingsPanel.xaml:37	ComboBox has no AutomationId.
+WT005	medium	Options/DisplaySettingsPanel.xaml:37	Rows in ComboBox have no unique ID.
+WT008	low	Options/DisplaySettingsPanel.xaml:37	ComboBox has no readable name.
+WT001	high	Options/DisplaySettingsPanel.xaml:45	CheckBox "{x:Static properties:Resources.UseTabsI…" has no AutomationId.
+WT002	low	Options/DisplaySettingsPanel.xaml:48	TextBox [tabSizeTextBox] gets its ID "tabSizeTextBox" from x:Name.
+WT008	low	Options/DisplaySettingsPanel.xaml:48	TextBox [tabSizeTextBox] has no readable name.
+WT002	low	Options/DisplaySettingsPanel.xaml:52	TextBox [indentSizeTextBox] gets its ID "indentSizeTextBox" from x:Name.
+WT008	low	Options/DisplaySettingsPanel.xaml:52	TextBox [indentSizeTextBox] has no readable name.
+WT001	high	Options/DisplaySettingsPanel.xaml:58	CheckBox "{x:Static properties:Resources.ShowLine…" has no AutomationId.
+WT001	high	Options/DisplaySettingsPanel.xaml:59	CheckBox "{x:Static properties:Resources.EnableWo…" has no AutomationId.
+WT001	high	Options/DisplaySettingsPanel.xaml:60	CheckBox "{x:Static properties:Resources.EnableFo…" has no AutomationId.
+WT001	high	Options/DisplaySettingsPanel.xaml:61	CheckBox "{x:Static properties:Resources.Highligh…" has no AutomationId.
+WT001	high	Options/DisplaySettingsPanel.xaml:62	CheckBox "{x:Static properties:Resources.Highligh…" has no AutomationId.
+WT001	high	Options/DisplaySettingsPanel.xaml:63	CheckBox "{x:Static properties:Resources.ExpandMe…" has no AutomationId.
+WT001	high	Options/DisplaySettingsPanel.xaml:64	CheckBox "{x:Static properties:Resources.ExpandUs…" has no AutomationId.
+WT001	high	Options/DisplaySettingsPanel.xaml:65	CheckBox "{x:Static properties:Resources.ShowInfo…" has no AutomationId.
+WT001	high	Options/DisplaySettingsPanel.xaml:66	CheckBox "{x:Static properties:Resources.ShowRawO…" has no AutomationId.
+WT001	high	Options/DisplaySettingsPanel.xaml:67	CheckBox "{x:Static properties:Resources.DecodeCu…" has no AutomationId.
+WT001	high	Options/DisplaySettingsPanel.xaml:72	CheckBox "{x:Static properties:Resources.ShowMeta…" has no AutomationId.
+WT001	high	Options/DisplaySettingsPanel.xaml:73	CheckBox "{x:Static properties:Resources.ShowMeta…" has no AutomationId.
+WT001	high	Options/DisplaySettingsPanel.xaml:74	CheckBox "{x:Static properties:Resources.HideEmpt…" has no AutomationId.
+WT001	high	Options/DisplaySettingsPanel.xaml:75	CheckBox "{x:Static properties:Resources.UseNeste…" has no AutomationId.
+WT001	high	Options/DisplaySettingsPanel.xaml:80	CheckBox "{x:Static properties:Resources.SortResu…" has no AutomationId.
+WT001	high	Options/DisplaySettingsPanel.xaml:81	CheckBox "{x:Static properties:Resources.StyleThe…" has no AutomationId.
+WT001	high	Options/DisplaySettingsPanel.xaml:82	CheckBox "{x:Static properties:Resources.EnableSm…" has no AutomationId.
+WT001	high	Options/MiscSettingsPanel.xaml:13	CheckBox "{x:Static properties:Resources.AllowMul…" has no AutomationId.
+WT001	high	Options/MiscSettingsPanel.xaml:14	CheckBox "{x:Static properties:Resources.LoadAsse…" has no AutomationId.
+WT001	high	Options/MiscSettingsPanel.xaml:15	Button "{Binding AddRemoveShellIntegrationText,…" has no AutomationId.
+WT001	high	Options/OptionsDialog.xaml:17	Button "{x:Static properties:Resources.ResetToD…" has no AutomationId.
+WT001	high	Options/OptionsDialog.xaml:20	Button "{x:Static properties:Resources.OK}" has no AutomationId.
+WT001	high	Options/OptionsDialog.xaml:24	Button "{x:Static properties:Resources.Cancel}" has no AutomationId.
+WT001	high	Options/OptionsDialog.xaml:27	TabControl has no AutomationId.
+WT002	low	Search/SearchPane.xaml:25	controls:SearchBox [searchBox] gets its ID "searchBox" from x:Name.
+WT008	low	Search/SearchPane.xaml:25	controls:SearchBox [searchBox] has no readable name.
+WT002	low	Search/SearchPane.xaml:32	ComboBox [searchModeComboBox] gets its ID "searchModeComboBox" from x:Name.
+WT005	medium	Search/SearchPane.xaml:32	Rows in ComboBox [searchModeComboBox] have no unique ID.
+WT008	low	Search/SearchPane.xaml:32	ComboBox [searchModeComboBox] has no readable name.
+WT002	low	Search/SearchPane.xaml:51	ListView [listBox] gets its ID "listBox" from x:Name.
+WT005	medium	Search/SearchPane.xaml:51	Rows in ListView [listBox] have no unique ID.
+WT008	low	Search/SearchPane.xaml:51	ListView [listBox] has no readable name.
+WT001	high	TextView/DecompilerTextView.xaml:109	Button "{x:Static properties:Resources.Cancel}" has no AutomationId.
+WT001	high	Views/CompareView.xaml:36	Button has no AutomationId.
+WT008	low	Views/CompareView.xaml:36	Button has no readable name.
+WT001	high	Views/CompareView.xaml:40	ToggleButton has no AutomationId.
+WT008	low	Views/CompareView.xaml:40	ToggleButton has no readable name.
+WT001	high	Views/CompareView.xaml:44	Button has no AutomationId.
+WT008	low	Views/CompareView.xaml:44	Button has no readable name.
+WT001	high	Views/CompareView.xaml:48	Button has no AutomationId.
+WT008	low	Views/CompareView.xaml:48	Button has no readable name.
+WT001	high	Views/CompareView.xaml:53	stv:SharpTreeView has no AutomationId.
+WT005	medium	Views/CompareView.xaml:53	Rows in stv:SharpTreeView have no unique ID.
+WT008	low	Views/CompareView.xaml:53	stv:SharpTreeView has no readable name.
+WT002	low	Views/CreateListDialog.xaml:18	TextBox [ListNameBox] gets its ID "ListNameBox" from x:Name.
+WT008	low	Views/CreateListDialog.xaml:18	TextBox [ListNameBox] has no readable name.
+WT002	low	Views/CreateListDialog.xaml:21	Button "{x:Static properties:Resources.Create}" gets its ID "okButton" from x:Name.
+WT001	high	Views/CreateListDialog.xaml:22	Button "{x:Static properties:Resources.Cancel}" has no AutomationId.
+WT001	high	Views/DebugSteps.xaml:12	CheckBox "{x:Static properties:Resources.UseField…" has no AutomationId.
+WT001	high	Views/DebugSteps.xaml:13	CheckBox "{x:Static properties:Resources.UseLogic…" has no AutomationId.
+WT001	high	Views/DebugSteps.xaml:14	CheckBox "{x:Static properties:Resources.ShowILRa…" has no AutomationId.
+WT001	high	Views/DebugSteps.xaml:15	CheckBox "{x:Static properties:Resources.ShowChil…" has no AutomationId.
+WT002	low	Views/DebugSteps.xaml:17	TreeView [tree] gets its ID "tree" from x:Name.
+WT005	medium	Views/DebugSteps.xaml:17	Rows in TreeView [tree] have no unique ID.
+WT008	low	Views/DebugSteps.xaml:17	TreeView [tree] has no readable name.
+WT001	high	Views/DebugSteps.xaml:25	MenuItem "{x:Static properties:Resources.ShowStat…" has no AutomationId.
+WT001	high	Views/DebugSteps.xaml:26	MenuItem "{x:Static properties:Resources.ShowStat…" has no AutomationId.
+WT001	high	Views/DebugSteps.xaml:27	MenuItem "{x:Static properties:Resources.DebugThi…" has no AutomationId.
+WT002	low	Views/ManageAssemblyListsDialog.xaml:38	ListBox [listView] gets its ID "listView" from x:Name.
+WT005	medium	Views/ManageAssemblyListsDialog.xaml:38	Rows in ListBox [listView] have no unique ID.
+WT008	low	Views/ManageAssemblyListsDialog.xaml:38	ListBox [listView] has no readable name.
+WT001	high	Views/ManageAssemblyListsDialog.xaml:54	Button "{x:Static properties:Resources._New}" has no AutomationId.
+WT001	high	Views/ManageAssemblyListsDialog.xaml:55	Button "{x:Static properties:Resources.C_lone}" has no AutomationId.
+WT001	high	Views/ManageAssemblyListsDialog.xaml:56	Button "{x:Static properties:Resources.R_ename}" has no AutomationId.
+WT001	high	Views/ManageAssemblyListsDialog.xaml:57	Button "{x:Static properties:Resources.OpenList…" has no AutomationId.
+WT001	high	Views/ManageAssemblyListsDialog.xaml:58	Button "{x:Static properties:Resources._Reset}" has no AutomationId.
+WT001	high	Views/ManageAssemblyListsDialog.xaml:61	Button "{x:Static properties:Resources.Close}" has no AutomationId.
+WT001	high	Views/ManageAssemblyListsDialog.xaml:62	Button "{x:Static properties:Resources.AddPreco…" has no AutomationId.
+WT002	low	Views/OpenFromGacDialog.xaml:29	TextBox "{x:Static properties:Resources._Search}" gets its ID "filterTextBox" from x:Name.
+WT002	low	Views/OpenFromGacDialog.xaml:31	ListView [listView] gets its ID "listView" from x:Name.
+WT005	medium	Views/OpenFromGacDialog.xaml:31	Rows in ListView [listView] have no unique ID.
+WT008	low	Views/OpenFromGacDialog.xaml:31	ListView [listView] has no readable name.
+WT002	low	Views/OpenFromGacDialog.xaml:43	Button "{x:Static properties:Resources.OpenList…" gets its ID "okButton" from x:Name.
+WT001	high	Views/OpenFromGacDialog.xaml:44	Button "{x:Static properties:Resources.Cancel}" has no AutomationId.
+WT001	high	Views/UpdatePanel.xaml:11	Button "X" has no AutomationId.
+WT001	high	Views/UpdatePanel.xaml:16	Button "{Binding ButtonText}" has no AutomationId.

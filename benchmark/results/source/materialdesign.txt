@@ -1,0 +1,1604 @@
+# MaterialDesignInXamlToolkit demo @ 5b626957f8, scan path: src/MainDemo.Wpf
+score 49.8  grade D  elements 1508  controls 1174  screens 53
+check coverage      10.2%  120 of 1174 controls have an AutomationId.
+check quality         70%  120 borrowed from x:Name.
+check uniqueness    69.1%  0 ID(s) used more than once; 0 of 77 data lists have identifiable rows.
+check stability      n/a%  Not measured. Run again with --baseline <previous report.json> to compare.
+check visibility    91.8%  96 invisible control(s), 0 opaque area(s).
+check names         57.3%  588 of 1026 controls have a readable name.
+problems WT001=958  WT002=120  WT005=77  WT006=1  WT008=438
+
+WT001	high	Buttons.xaml:44	Button has no AutomationId.
+WT008	low	Buttons.xaml:44	Button has no readable name.
+WT001	high	Buttons.xaml:54	Button has no AutomationId.
+WT008	low	Buttons.xaml:54	Button has no readable name.
+WT001	high	Buttons.xaml:65	Button has no AutomationId.
+WT008	low	Buttons.xaml:65	Button has no readable name.
+WT001	high	Buttons.xaml:75	Button has no AutomationId.
+WT008	low	Buttons.xaml:75	Button has no readable name.
+WT001	high	Buttons.xaml:84	Button has no AutomationId.
+WT008	low	Buttons.xaml:84	Button has no readable name.
+WT001	high	Buttons.xaml:93	Button has no AutomationId.
+WT008	low	Buttons.xaml:93	Button has no readable name.
+WT001	high	Buttons.xaml:105	Button has no AutomationId.
+WT008	low	Buttons.xaml:105	Button has no readable name.
+WT001	high	Buttons.xaml:115	Button has no AutomationId.
+WT008	low	Buttons.xaml:115	Button has no readable name.
+WT001	high	Buttons.xaml:125	Button has no AutomationId.
+WT008	low	Buttons.xaml:125	Button has no readable name.
+WT001	high	Buttons.xaml:135	Button has no AutomationId.
+WT008	low	Buttons.xaml:135	Button has no readable name.
+WT001	high	Buttons.xaml:145	Button has no AutomationId.
+WT008	low	Buttons.xaml:145	Button has no readable name.
+WT001	high	Buttons.xaml:155	Button has no AutomationId.
+WT008	low	Buttons.xaml:155	Button has no readable name.
+WT001	high	Buttons.xaml:166	Button "LIGHT" has no AutomationId.
+WT001	high	Buttons.xaml:174	Button "MID" has no AutomationId.
+WT001	high	Buttons.xaml:181	Button "DARK" has no AutomationId.
+WT001	high	Buttons.xaml:188	Button "LIGHT" has no AutomationId.
+WT001	high	Buttons.xaml:196	Button "MID" has no AutomationId.
+WT001	high	Buttons.xaml:204	Button "DARK" has no AutomationId.
+WT001	high	Buttons.xaml:213	Button "LIGHT" has no AutomationId.
+WT001	high	Buttons.xaml:220	Button "MID" has no AutomationId.
+WT001	high	Buttons.xaml:227	Button "DARK" has no AutomationId.
+WT001	high	Buttons.xaml:234	Button "LIGHT" has no AutomationId.
+WT001	high	Buttons.xaml:241	Button "MID" has no AutomationId.
+WT001	high	Buttons.xaml:248	Button "DARK" has no AutomationId.
+WT001	high	Buttons.xaml:257	Button "LIGHT" has no AutomationId.
+WT001	high	Buttons.xaml:266	Button "MID" has no AutomationId.
+WT001	high	Buttons.xaml:274	Button "DARK" has no AutomationId.
+WT001	high	Buttons.xaml:283	Button "LIGHT" has no AutomationId.
+WT001	high	Buttons.xaml:291	Button "MID" has no AutomationId.
+WT001	high	Buttons.xaml:299	Button "DARK" has no AutomationId.
+WT001	high	Buttons.xaml:308	Button "LIGHT" has no AutomationId.
+WT001	high	Buttons.xaml:315	Button "MID" has no AutomationId.
+WT001	high	Buttons.xaml:322	Button "DARK" has no AutomationId.
+WT001	high	Buttons.xaml:330	Button "LIGHT" has no AutomationId.
+WT001	high	Buttons.xaml:336	Button "MID" has no AutomationId.
+WT001	high	Buttons.xaml:342	Button "DARK" has no AutomationId.
+WT001	high	Buttons.xaml:350	Button "LIGHT" has no AutomationId.
+WT001	high	Buttons.xaml:358	Button "MID" has no AutomationId.
+WT001	high	Buttons.xaml:366	Button "DARK" has no AutomationId.
+WT001	high	Buttons.xaml:374	Button "LIGHT" has no AutomationId.
+WT001	high	Buttons.xaml:382	Button "MID" has no AutomationId.
+WT001	high	Buttons.xaml:390	Button "DARK" has no AutomationId.
+WT001	high	Buttons.xaml:400	Button "MAIL" has no AutomationId.
+WT001	high	Buttons.xaml:406	Button "LOVE" has no AutomationId.
+WT001	high	Buttons.xaml:412	Button "STATUS" has no AutomationId.
+WT001	high	Buttons.xaml:418	Button "CLICK ME!" has no AutomationId.
+WT001	high	Buttons.xaml:426	Button "{Binding OrClickMeCount}" has no AutomationId.
+WT001	high	Buttons.xaml:436	Button "{materialDesign:PackIcon AirplaneTakeof…" has no AutomationId.
+WT001	high	Buttons.xaml:447	Button "CUSTOM RIPPLE" has no AutomationId.
+WT001	high	Buttons.xaml:456	Button "NO RIPPLE" has no AutomationId.
+WT001	high	Buttons.xaml:465	RepeatButton "REPEAT" has no AutomationId.
+WT001	high	Buttons.xaml:473	Button has no AutomationId.
+WT008	low	Buttons.xaml:473	Button has no readable name.
+WT001	high	Buttons.xaml:481	Button has no AutomationId.
+WT008	low	Buttons.xaml:481	Button has no readable name.
+WT001	high	Buttons.xaml:489	Button has no AutomationId.
+WT008	low	Buttons.xaml:489	Button has no readable name.
+WT001	high	Buttons.xaml:516	Button "5/50 Radius" has no AutomationId.
+WT001	high	Buttons.xaml:528	Button "10/50 Radius" has no AutomationId.
+WT001	high	Buttons.xaml:540	Button "25/50 Radius" has no AutomationId.
+WT001	high	Buttons.xaml:552	Button "25/50 Radius" has no AutomationId.
+WT001	high	Buttons.xaml:572	Button "DISMISS" has no AutomationId.
+WT001	high	Buttons.xaml:593	Button "Indeterminate" has no AutomationId.
+WT001	high	Buttons.xaml:606	Button "DISMISS" has no AutomationId.
+WT001	high	Buttons.xaml:627	Button "Indeterminate" has no AutomationId.
+WT001	high	Buttons.xaml:640	Button "DISMISS" has no AutomationId.
+WT001	high	Buttons.xaml:661	Button "Indeterminate" has no AutomationId.
+WT001	high	Buttons.xaml:679	Button has no AutomationId.
+WT008	low	Buttons.xaml:679	Button has no readable name.
+WT001	high	Buttons.xaml:718	Button "{materialDesign:PackIcon DotsHorizontal}" has no AutomationId.
+WT001	high	Buttons.xaml:727	Button "{materialDesign:PackIcon DotsHorizontal}" has no AutomationId.
+WT001	high	Buttons.xaml:735	Button "{materialDesign:PackIcon DotsHorizontal}" has no AutomationId.
+WT001	high	Buttons.xaml:748	Button "{materialDesign:PackIcon DotsHorizontal}" has no AutomationId.
+WT001	high	Buttons.xaml:797	TextBox has no AutomationId.
+WT008	low	Buttons.xaml:797	TextBox has no readable name.
+WT001	high	Buttons.xaml:802	TextBox has no AutomationId.
+WT008	low	Buttons.xaml:802	TextBox has no readable name.
+WT001	high	Buttons.xaml:807	TextBox has no AutomationId.
+WT008	low	Buttons.xaml:807	TextBox has no readable name.
+WT001	high	Buttons.xaml:812	CheckBox has no AutomationId.
+WT008	low	Buttons.xaml:812	CheckBox has no readable name.
+WT001	high	Buttons.xaml:816	CheckBox has no AutomationId.
+WT008	low	Buttons.xaml:816	CheckBox has no readable name.
+WT001	high	Buttons.xaml:821	CheckBox has no AutomationId.
+WT008	low	Buttons.xaml:821	CheckBox has no readable name.
+WT001	high	Buttons.xaml:825	ComboBox has no AutomationId.
+WT008	low	Buttons.xaml:825	ComboBox has no readable name.
+WT001	high	Buttons.xaml:845	Button "Save" has no AutomationId.
+WT001	high	Buttons.xaml:847	Button "Cancel" has no AutomationId.
+WT001	high	Buttons.xaml:873	Button "1" has no AutomationId.
+WT001	high	Buttons.xaml:875	Button "2" has no AutomationId.
+WT001	high	Buttons.xaml:879	Button "3" has no AutomationId.
+WT001	high	Buttons.xaml:892	Button "1" has no AutomationId.
+WT001	high	Buttons.xaml:896	Button "2" has no AutomationId.
+WT001	high	Buttons.xaml:898	Button "3" has no AutomationId.
+WT001	high	Buttons.xaml:910	Button "Instant Duration" has no AutomationId.
+WT001	high	Buttons.xaml:915	Button "Default Duration" has no AutomationId.
+WT001	high	Buttons.xaml:920	Button "Long Duration" has no AutomationId.
+WT001	high	Buttons.xaml:959	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:966	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:975	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:987	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:996	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:1005	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:1017	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:1026	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:1035	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:1047	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:1056	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:1065	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:1077	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:1086	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:1095	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:1107	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:1116	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:1125	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:1137	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:1146	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:1155	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:1167	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:1176	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:1185	materialDesign:SplitButton "Split Button" has no AutomationId.
+WT001	high	Buttons.xaml:1201	materialDesign:SplitButton "Corners" has no AutomationId.
+WT001	high	Buttons.xaml:1211	materialDesign:SplitButton "Open Up" has no AutomationId.
+WT001	high	Buttons.xaml:1221	materialDesign:SplitButton "Popup Corners" has no AutomationId.
+WT001	high	Cards.xaml:38	Button has no AutomationId.
+WT008	low	Cards.xaml:38	Button has no readable name.
+WT001	high	Cards.xaml:55	Button has no AutomationId.
+WT008	low	Cards.xaml:55	Button has no readable name.
+WT001	high	Cards.xaml:61	Button has no AutomationId.
+WT008	low	Cards.xaml:61	Button has no readable name.
+WT001	high	Cards.xaml:69	Button "More" has no AutomationId.
+WT001	high	Cards.xaml:70	Button "Options" has no AutomationId.
+WT001	high	Cards.xaml:88	Button has no AutomationId.
+WT008	low	Cards.xaml:88	Button has no readable name.
+WT001	high	Cards.xaml:105	Button has no AutomationId.
+WT008	low	Cards.xaml:105	Button has no readable name.
+WT001	high	Cards.xaml:111	Button has no AutomationId.
+WT008	low	Cards.xaml:111	Button has no readable name.
+WT001	high	Cards.xaml:119	Button "More" has no AutomationId.
+WT001	high	Cards.xaml:120	Button "Options" has no AutomationId.
+WT001	high	Cards.xaml:143	Button has no AutomationId.
+WT008	low	Cards.xaml:143	Button has no readable name.
+WT001	high	Cards.xaml:183	ListBox has no AutomationId.
+WT008	low	Cards.xaml:183	ListBox has no readable name.
+WT001	high	Cards.xaml:212	Button "RESERVE" has no AutomationId.
+WT001	high	Cards.xaml:249	Button has no AutomationId.
+WT008	low	Cards.xaml:249	Button has no readable name.
+WT001	high	Cards.xaml:260	Button "More" has no AutomationId.
+WT001	high	Cards.xaml:261	Button "Options" has no AutomationId.
+WT001	high	Cards.xaml:301	CheckBox "Do something good" has no AutomationId.
+WT001	high	Cards.xaml:304	CheckBox "Take a breather" has no AutomationId.
+WT001	high	Cards.xaml:307	CheckBox "And go create" has no AutomationId.
+WT001	high	Cards.xaml:310	RadioButton "This?" has no AutomationId.
+WT001	high	Cards.xaml:313	RadioButton "Or This?" has no AutomationId.
+WT001	high	Cards.xaml:320	Button has no AutomationId.
+WT008	low	Cards.xaml:320	Button has no readable name.
+WT001	high	Cards.xaml:347	Button "FLIPPABLZ!" has no AutomationId.
+WT001	high	Cards.xaml:354	Button "GO BACK" has no AutomationId.
+WT001	high	Cards.xaml:381	Button "EDIT" has no AutomationId.
+WT001	high	Cards.xaml:396	Button has no AutomationId.
+WT008	low	Cards.xaml:396	Button has no readable name.
+WT001	high	Cards.xaml:417	TextBox has no AutomationId.
+WT008	low	Cards.xaml:417	TextBox has no readable name.
+WT001	high	Cards.xaml:421	TextBox has no AutomationId.
+WT008	low	Cards.xaml:421	TextBox has no readable name.
+WT001	high	Cards.xaml:431	ToggleButton has no AutomationId.
+WT008	low	Cards.xaml:431	ToggleButton has no readable name.
+WT001	high	Cards.xaml:438	ToggleButton has no AutomationId.
+WT008	low	Cards.xaml:438	ToggleButton has no readable name.
+WT001	high	Cards.xaml:450	Button "RESIZING..." has no AutomationId.
+WT001	high	Cards.xaml:464	Button has no AutomationId.
+WT008	low	Cards.xaml:464	Button has no readable name.
+WT001	high	Cards.xaml:486	TextBox has no AutomationId.
+WT008	low	Cards.xaml:486	TextBox has no readable name.
+WT001	high	Cards.xaml:490	TextBox has no AutomationId.
+WT008	low	Cards.xaml:490	TextBox has no readable name.
+WT001	high	Cards.xaml:500	ToggleButton has no AutomationId.
+WT008	low	Cards.xaml:500	ToggleButton has no readable name.
+WT001	high	Cards.xaml:507	ToggleButton has no AutomationId.
+WT008	low	Cards.xaml:507	ToggleButton has no readable name.
+WT001	high	Cards.xaml:521	Button "Rounded Flipper" has no AutomationId.
+WT001	high	Cards.xaml:529	Button "GO BACK" has no AutomationId.
+WT001	high	Cards.xaml:546	Button "Rounded Card Flipper 1" has no AutomationId.
+WT001	high	Cards.xaml:553	Button "GO BACK" has no AutomationId.
+WT001	high	Cards.xaml:570	Button "Rounded Card Flipper 2" has no AutomationId.
+WT001	high	Cards.xaml:577	Button "GO BACK" has no AutomationId.
+WT001	high	Chips.xaml:128	CheckBox "CheckBox" has no AutomationId.
+WT001	high	Chips.xaml:134	CheckBox "Primary" has no AutomationId.
+WT001	high	Chips.xaml:140	CheckBox "Secondary" has no AutomationId.
+WT001	high	Chips.xaml:146	CheckBox "Outline" has no AutomationId.
+WT001	high	Chips.xaml:152	CheckBox "Primary Outline" has no AutomationId.
+WT001	high	Chips.xaml:158	CheckBox "Secondary Outline" has no AutomationId.
+WT001	high	Chips.xaml:167	ListBox has no AutomationId.
+WT008	low	Chips.xaml:167	ListBox has no readable name.
+WT001	high	Chips.xaml:178	ListBox has no AutomationId.
+WT008	low	Chips.xaml:178	ListBox has no readable name.
+WT001	high	Chips.xaml:189	ListBox has no AutomationId.
+WT008	low	Chips.xaml:189	ListBox has no readable name.
+WT001	high	Chips.xaml:202	ListBox has no AutomationId.
+WT008	low	Chips.xaml:202	ListBox has no readable name.
+WT001	high	Chips.xaml:213	ListBox has no AutomationId.
+WT008	low	Chips.xaml:213	ListBox has no readable name.
+WT001	high	Chips.xaml:224	ListBox has no AutomationId.
+WT008	low	Chips.xaml:224	ListBox has no readable name.
+WT001	high	Chips.xaml:241	RadioButton "RadioButton" has no AutomationId.
+WT001	high	Chips.xaml:247	RadioButton "Primary" has no AutomationId.
+WT001	high	Chips.xaml:254	RadioButton "Secondary" has no AutomationId.
+WT001	high	Chips.xaml:262	RadioButton "Outline" has no AutomationId.
+WT001	high	Chips.xaml:268	RadioButton "Primary Outline" has no AutomationId.
+WT001	high	Chips.xaml:275	RadioButton "Secondary Outline" has no AutomationId.
+WT002	low	Chips.xaml:284	ListBox [RadioButtonGroupChoiceChip] gets its ID "RadioButtonGroupChoiceChip" from x:Name.
+WT008	low	Chips.xaml:284	ListBox [RadioButtonGroupChoiceChip] has no readable name.
+WT002	low	Chips.xaml:295	ListBox [RadioButtonGroupChoiceChipPrimary] gets its ID "RadioButtonGroupChoiceChipPrimary" from x:Name.
+WT008	low	Chips.xaml:295	ListBox [RadioButtonGroupChoiceChipPrimary] has no readable name.
+WT002	low	Chips.xaml:306	ListBox [RadioButtonGroupChoiceChipSecondary] gets its ID "RadioButtonGroupChoiceChipSecondary" from x:Name.
+WT008	low	Chips.xaml:306	ListBox [RadioButtonGroupChoiceChipSecondary] has no readable name.
+WT002	low	Chips.xaml:319	ListBox [RadioButtonGroupChoiceChipOutline] gets its ID "RadioButtonGroupChoiceChipOutline" from x:Name.
+WT008	low	Chips.xaml:319	ListBox [RadioButtonGroupChoiceChipOutline] has no readable name.
+WT002	low	Chips.xaml:330	ListBox [RadioButtonGroupChoiceChipPrimaryOutline] gets its ID "RadioButtonGroupChoiceChipPrimaryOutline" from x:Name.
+WT008	low	Chips.xaml:330	ListBox [RadioButtonGroupChoiceChipPrimaryOutline] has no readable name.
+WT002	low	Chips.xaml:341	ListBox [RadioButtonGroupChoiceChipSecondaryOutline] gets its ID "RadioButtonGroupChoiceChipSecondaryOutline" from x:Name.
+WT008	low	Chips.xaml:341	ListBox [RadioButtonGroupChoiceChipSecondaryOutline] has no readable name.
+WT001	high	ColorTool.xaml:165	Button "Primary" has no AutomationId.
+WT001	high	ColorTool.xaml:251	Button "Secondary" has no AutomationId.
+WT001	high	ColorTool.xaml:337	Button "Text on Primary" has no AutomationId.
+WT001	high	ColorTool.xaml:402	Button "Text on Secondary" has no AutomationId.
+WT002	low	ColorTool.xaml:476	RadioButton "MD Palette" gets its ID "MdPaletteButton" from x:Name.
+WT002	low	ColorTool.xaml:482	RadioButton "Custom" gets its ID "CustomPaletteButton" from x:Name.
+WT001	high	ColorTool.xaml:497	TextBox has no AutomationId.
+WT008	low	ColorTool.xaml:497	TextBox has no readable name.
+WT005	medium	ColorTool.xaml:537	Rows in ItemsControl have no unique ID.
+WT005	medium	ColorTool.xaml:544	Rows in ItemsControl have no unique ID.
+WT001	high	ColorZones.xaml:37	ListBox has no AutomationId.
+WT008	low	ColorZones.xaml:37	ListBox has no readable name.
+WT001	high	ColorZones.xaml:45	ToggleButton has no AutomationId.
+WT008	low	ColorZones.xaml:45	ToggleButton has no readable name.
+WT001	high	ColorZones.xaml:61	ToggleButton has no AutomationId.
+WT008	low	ColorZones.xaml:61	ToggleButton has no readable name.
+WT001	high	ColorZones.xaml:76	ToggleButton has no AutomationId.
+WT008	low	ColorZones.xaml:76	ToggleButton has no readable name.
+WT001	high	ColorZones.xaml:81	ToggleButton has no AutomationId.
+WT008	low	ColorZones.xaml:81	ToggleButton has no readable name.
+WT001	high	ColorZones.xaml:83	ComboBox has no AutomationId.
+WT008	low	ColorZones.xaml:83	ComboBox has no readable name.
+WT001	high	ColorZones.xaml:107	Button has no AutomationId.
+WT008	low	ColorZones.xaml:107	Button has no readable name.
+WT001	high	ColorZones.xaml:111	TextBox has no AutomationId.
+WT008	low	ColorZones.xaml:111	TextBox has no readable name.
+WT001	high	ColorZones.xaml:119	Button has no AutomationId.
+WT008	low	ColorZones.xaml:119	Button has no readable name.
+WT001	high	ColorZones.xaml:127	Button has no AutomationId.
+WT008	low	ColorZones.xaml:127	Button has no readable name.
+WT001	high	ColorZones.xaml:147	ToggleButton has no AutomationId.
+WT008	low	ColorZones.xaml:147	ToggleButton has no readable name.
+WT001	high	ColorZones.xaml:162	ToggleButton has no AutomationId.
+WT008	low	ColorZones.xaml:162	ToggleButton has no readable name.
+WT001	high	ColorZones.xaml:182	ToggleButton has no AutomationId.
+WT008	low	ColorZones.xaml:182	ToggleButton has no readable name.
+WT001	high	ColorZones.xaml:189	Button "Some action" has no AutomationId.
+WT001	high	ComboBoxes.xaml:37	ComboBox has no AutomationId.
+WT008	low	ComboBoxes.xaml:37	ComboBox has no readable name.
+WT001	high	ComboBoxes.xaml:45	ComboBox has no AutomationId.
+WT008	low	ComboBoxes.xaml:45	ComboBox has no readable name.
+WT001	high	ComboBoxes.xaml:56	ComboBox has no AutomationId.
+WT008	low	ComboBoxes.xaml:56	ComboBox has no readable name.
+WT001	high	ComboBoxes.xaml:66	ComboBox has no AutomationId.
+WT008	low	ComboBoxes.xaml:66	ComboBox has no readable name.
+WT001	high	ComboBoxes.xaml:81	ComboBox has no AutomationId.
+WT008	low	ComboBoxes.xaml:81	ComboBox has no readable name.
+WT002	low	ComboBoxes.xaml:100	CheckBox "Display Selected Item In Drop Down" gets its ID "DisplaySelectedItemCheckBox" from x:Name.
+WT001	high	ComboBoxes.xaml:105	ComboBox has no AutomationId.
+WT008	low	ComboBoxes.xaml:105	ComboBox has no readable name.
+WT001	high	ComboBoxes.xaml:121	ComboBox has no AutomationId.
+WT005	medium	ComboBoxes.xaml:121	Rows in ComboBox have no unique ID.
+WT008	low	ComboBoxes.xaml:121	ComboBox has no readable name.
+WT001	high	ComboBoxes.xaml:140	ComboBox has no AutomationId.
+WT005	medium	ComboBoxes.xaml:140	Rows in ComboBox have no unique ID.
+WT008	low	ComboBoxes.xaml:140	ComboBox has no readable name.
+WT001	high	ComboBoxes.xaml:156	ComboBox has no AutomationId.
+WT005	medium	ComboBoxes.xaml:156	Rows in ComboBox have no unique ID.
+WT008	low	ComboBoxes.xaml:156	ComboBox has no readable name.
+WT001	high	ComboBoxes.xaml:161	ComboBox has no AutomationId.
+WT005	medium	ComboBoxes.xaml:161	Rows in ComboBox have no unique ID.
+WT008	low	ComboBoxes.xaml:161	ComboBox has no readable name.
+WT001	high	ComboBoxes.xaml:168	ComboBox has no AutomationId.
+WT005	medium	ComboBoxes.xaml:168	Rows in ComboBox have no unique ID.
+WT008	low	ComboBoxes.xaml:168	ComboBox has no readable name.
+WT002	low	ComboBoxes.xaml:195	CheckBox "Enabled" gets its ID "FilledComboBoxEnabledCheckBox" from x:Name.
+WT001	high	ComboBoxes.xaml:200	Button "Clear" has no AutomationId.
+WT002	low	ComboBoxes.xaml:207	ComboBox [FilledComboBox] gets its ID "FilledComboBox" from x:Name.
+WT008	low	ComboBoxes.xaml:207	ComboBox [FilledComboBox] has no readable name.
+WT001	high	ComboBoxes.xaml:219	ComboBox has no AutomationId.
+WT005	medium	ComboBoxes.xaml:219	Rows in ComboBox have no unique ID.
+WT008	low	ComboBoxes.xaml:219	ComboBox has no readable name.
+WT001	high	ComboBoxes.xaml:238	ComboBox has no AutomationId.
+WT008	low	ComboBoxes.xaml:238	ComboBox has no readable name.
+WT002	low	ComboBoxes.xaml:262	CheckBox "Enabled" gets its ID "OutlinedComboBoxEnabledCheckBox" from x:Name.
+WT001	high	ComboBoxes.xaml:267	Button "Clear" has no AutomationId.
+WT002	low	ComboBoxes.xaml:274	ComboBox [OutlinedComboBox] gets its ID "OutlinedComboBox" from x:Name.
+WT005	medium	ComboBoxes.xaml:274	Rows in ComboBox [OutlinedComboBox] have no unique ID.
+WT008	low	ComboBoxes.xaml:274	ComboBox [OutlinedComboBox] has no readable name.
+WT001	high	ComboBoxes.xaml:283	ComboBox has no AutomationId.
+WT005	medium	ComboBoxes.xaml:283	Rows in ComboBox have no unique ID.
+WT008	low	ComboBoxes.xaml:283	ComboBox has no readable name.
+WT001	high	ComboBoxes.xaml:301	ComboBox has no AutomationId.
+WT008	low	ComboBoxes.xaml:301	ComboBox has no readable name.
+WT002	low	ComboBoxes.xaml:315	CheckBox "Rotate drop-down content" gets its ID "CheckBoxClockwiseRotateContent" from x:Name.
+WT001	high	ComboBoxes.xaml:322	ComboBox has no AutomationId.
+WT008	low	ComboBoxes.xaml:322	ComboBox has no readable name.
+WT001	high	ComboBoxes.xaml:346	ComboBox has no AutomationId.
+WT008	low	ComboBoxes.xaml:346	ComboBox has no readable name.
+WT001	high	ComboBoxes.xaml:370	ComboBox has no AutomationId.
+WT008	low	ComboBoxes.xaml:370	ComboBox has no readable name.
+WT002	low	ComboBoxes.xaml:399	CheckBox "Rotate drop-down content" gets its ID "CheckBoxCounterClockwiseRotateContent" from x:Name.
+WT001	high	ComboBoxes.xaml:406	ComboBox has no AutomationId.
+WT008	low	ComboBoxes.xaml:406	ComboBox has no readable name.
+WT001	high	ComboBoxes.xaml:430	ComboBox has no AutomationId.
+WT008	low	ComboBoxes.xaml:430	ComboBox has no readable name.
+WT001	high	ComboBoxes.xaml:454	ComboBox has no AutomationId.
+WT008	low	ComboBoxes.xaml:454	ComboBox has no readable name.
+WT002	low	DataGrids.xaml:30	ComboBox [selectionUnitComboBox] gets its ID "selectionUnitComboBox" from x:Name.
+WT005	medium	DataGrids.xaml:30	Rows in ComboBox [selectionUnitComboBox] have no unique ID.
+WT008	low	DataGrids.xaml:30	ComboBox [selectionUnitComboBox] has no readable name.
+WT001	high	DataGrids.xaml:39	DataGrid has no AutomationId.
+WT005	medium	DataGrids.xaml:39	Rows in DataGrid have no unique ID.
+WT008	low	DataGrids.xaml:39	DataGrid has no readable name.
+WT001	high	DataGrids.xaml:49	CheckBox has no AutomationId.
+WT008	low	DataGrids.xaml:49	CheckBox has no readable name.
+WT001	medium	DataGrids.xaml:141	TextBox (inside a list row template) has no AutomationId.
+WT008	low	DataGrids.xaml:141	TextBox has no readable name.
+WT001	high	DataGrids.xaml:159	DataGrid has no AutomationId.
+WT005	medium	DataGrids.xaml:159	Rows in DataGrid have no unique ID.
+WT008	low	DataGrids.xaml:159	DataGrid has no readable name.
+WT001	high	DataGrids.xaml:170	DataGrid has no AutomationId.
+WT005	medium	DataGrids.xaml:170	Rows in DataGrid have no unique ID.
+WT008	low	DataGrids.xaml:170	DataGrid has no readable name.
+WT001	high	DataGrids.xaml:183	DataGrid has no AutomationId.
+WT005	medium	DataGrids.xaml:183	Rows in DataGrid have no unique ID.
+WT008	low	DataGrids.xaml:183	DataGrid has no readable name.
+WT001	high	DataGrids.xaml:193	DataGrid has no AutomationId.
+WT005	medium	DataGrids.xaml:193	Rows in DataGrid have no unique ID.
+WT008	low	DataGrids.xaml:193	DataGrid has no readable name.
+WT001	medium	DataGrids.xaml:201	Button "{materialDesign:PackIcon Kind=Pen}" (inside a list row template) has no AutomationId.
+WT001	medium	DataGrids.xaml:210	Button "{materialDesign:PackIcon Kind=ContentDu…" (inside a list row template) has no AutomationId.
+WT001	medium	DataGrids.xaml:219	Button "{materialDesign:PackIcon Kind=Bin}" (inside a list row template) has no AutomationId.
+WT002	low	Dialogs.xaml:54	TextBox [FruitTextBox] gets its ID "FruitTextBox" from x:Name.
+WT008	low	Dialogs.xaml:54	TextBox [FruitTextBox] has no readable name.
+WT001	high	Dialogs.xaml:59	Button "ACCEPT" has no AutomationId.
+WT001	high	Dialogs.xaml:69	Button "CANCEL" has no AutomationId.
+WT002	low	Dialogs.xaml:92	ListBox [FruitListBox] gets its ID "FruitListBox" from x:Name.
+WT008	low	Dialogs.xaml:92	ListBox [FruitListBox] has no readable name.
+WT001	high	Dialogs.xaml:104	Button "{materialDesign:PackIcon Kind=Plus,    …" has no AutomationId.
+WT001	high	Dialogs.xaml:135	Button "PASS VIEW" has no AutomationId.
+WT001	high	Dialogs.xaml:148	Button "CANCEL" has no AutomationId.
+WT001	high	Dialogs.xaml:158	Button "PASS MODEL" has no AutomationId.
+WT001	high	Dialogs.xaml:190	Button "RUN CODE" has no AutomationId.
+WT001	high	Dialogs.xaml:195	Button "EXTENDED" has no AutomationId.
+WT001	high	Dialogs.xaml:228	Button "RUN" has no AutomationId.
+WT002	low	Dialogs.xaml:256	TextBox [AnimalTextBox] gets its ID "AnimalTextBox" from x:Name.
+WT008	low	Dialogs.xaml:256	TextBox [AnimalTextBox] has no readable name.
+WT001	high	Dialogs.xaml:261	Button "ACCEPT" has no AutomationId.
+WT001	high	Dialogs.xaml:271	Button "CANCEL" has no AutomationId.
+WT002	low	Dialogs.xaml:294	ListBox [AnimalListBox] gets its ID "AnimalListBox" from x:Name.
+WT008	low	Dialogs.xaml:294	ListBox [AnimalListBox] has no readable name.
+WT001	high	Dialogs.xaml:306	Button "{materialDesign:PackIcon Kind=Plus,    …" has no AutomationId.
+WT001	high	Dialogs.xaml:332	Button "{materialDesign:PackIcon Kind=Reload}" has no AutomationId.
+WT002	low	Dialogs.xaml:338	Slider [BlurRadiusSlider] gets its ID "BlurRadiusSlider" from x:Name.
+WT008	low	Dialogs.xaml:338	Slider [BlurRadiusSlider] has no readable name.
+WT001	high	Dialogs.xaml:363	Button "Open" has no AutomationId.
+WT005	medium	Domain/DocumentationLinks.xaml:69	Rows in ItemsControl have no unique ID.
+WT001	high	Domain/Sample4Dialog.xaml:15	TextBox has no AutomationId.
+WT008	low	Domain/Sample4Dialog.xaml:15	TextBox has no readable name.
+WT001	high	Domain/Sample4Dialog.xaml:23	Button "ACCEPT" has no AutomationId.
+WT001	high	Domain/Sample4Dialog.xaml:28	Button "CANCEL" has no AutomationId.
+WT001	high	Domain/SampleDialog.xaml:22	TextBox has no AutomationId.
+WT008	low	Domain/SampleDialog.xaml:22	TextBox has no readable name.
+WT001	high	Domain/SampleDialog.xaml:35	TextBox has no AutomationId.
+WT008	low	Domain/SampleDialog.xaml:35	TextBox has no readable name.
+WT001	high	Domain/SampleDialog.xaml:43	Button "ACCEPT" has no AutomationId.
+WT001	high	Domain/SampleDialog.xaml:51	Button "CANCEL" has no AutomationId.
+WT001	high	Domain/SampleMessageDialog.xaml:20	Button "ACCEPT" has no AutomationId.
+WT002	low	Drawers.xaml:21	ToggleButton [BackgroundToggle] gets its ID "BackgroundToggle" from x:Name.
+WT008	low	Drawers.xaml:21	ToggleButton [BackgroundToggle] has no readable name.
+WT002	low	Drawers.xaml:27	ToggleButton [TransitionToggle] gets its ID "TransitionToggle" from x:Name.
+WT008	low	Drawers.xaml:27	ToggleButton [TransitionToggle] has no readable name.
+WT001	high	Drawers.xaml:32	ComboBox has no AutomationId.
+WT008	low	Drawers.xaml:32	ComboBox has no readable name.
+WT002	low	Drawers.xaml:40	CheckBox "ApplyBlurBackground" gets its ID "cbApplyBlurBackground" from x:Name.
+WT001	high	Drawers.xaml:43	Button "{materialDesign:PackIcon Kind=Reload}" has no AutomationId.
+WT002	low	Drawers.xaml:48	Slider [BlurRadiusSlider] gets its ID "BlurRadiusSlider" from x:Name.
+WT008	low	Drawers.xaml:48	Slider [BlurRadiusSlider] has no readable name.
+WT001	high	Drawers.xaml:91	Button "CLOSE THIS" has no AutomationId.
+WT001	high	Drawers.xaml:98	Button "CLOSE ALL" has no AutomationId.
+WT001	high	Drawers.xaml:114	Button "CLOSE ALL" has no AutomationId.
+WT001	high	Drawers.xaml:120	Button "CLOSE THIS" has no AutomationId.
+WT001	high	Drawers.xaml:135	Button "CLOSE THIS" has no AutomationId.
+WT001	high	Drawers.xaml:142	Button "CLOSE ALL" has no AutomationId.
+WT001	high	Drawers.xaml:159	Button "CLOSE ALL" has no AutomationId.
+WT001	high	Drawers.xaml:165	Button "CLOSE THIS" has no AutomationId.
+WT001	high	Drawers.xaml:187	Button "{materialDesign:PackIcon Kind=ArrowLeft}" has no AutomationId.
+WT001	high	Drawers.xaml:194	Button "{materialDesign:PackIcon Kind=ArrowUp}" has no AutomationId.
+WT001	high	Drawers.xaml:201	Button "{materialDesign:PackIcon Kind=ArrowRigh…" has no AutomationId.
+WT001	high	Drawers.xaml:208	Button "{materialDesign:PackIcon Kind=ArrowDown}" has no AutomationId.
+WT001	high	Drawers.xaml:215	Button "{materialDesign:PackIcon Kind=ArrowAll}" has no AutomationId.
+WT001	high	Elevation.xaml:19	Button "2 DP" has no AutomationId.
+WT001	high	Elevation.xaml:23	Button "4 DP" has no AutomationId.
+WT001	high	Elevation.xaml:29	Button "8 DP" has no AutomationId.
+WT001	high	Elevation.xaml:35	Button "12 DP" has no AutomationId.
+WT001	high	Elevation.xaml:41	Button "16 DP" has no AutomationId.
+WT001	high	Elevation.xaml:50	Button "0" has no AutomationId.
+WT001	high	Elevation.xaml:56	Button "2" has no AutomationId.
+WT001	high	Elevation.xaml:62	Button "6" has no AutomationId.
+WT001	high	Elevation.xaml:66	Button "12" has no AutomationId.
+WT001	high	Elevation.xaml:72	Button "16" has no AutomationId.
+WT001	high	Expander.xaml:47	Expander "Expander Example 1a" has no AutomationId.
+WT001	high	Expander.xaml:56	Expander "Expander Example 1b" has no AutomationId.
+WT001	high	Expander.xaml:67	Expander "Expander Example 1c" has no AutomationId.
+WT001	high	Expander.xaml:76	Expander "Custom Header Padding" has no AutomationId.
+WT001	high	Expander.xaml:92	Expander "Expander Example 2a" has no AutomationId.
+WT001	high	Expander.xaml:103	Expander "Expander Example 2b" has no AutomationId.
+WT001	high	Expander.xaml:114	Expander "Expander Example 2c" has no AutomationId.
+WT001	high	Expander.xaml:129	Expander "Expander Example 3a" has no AutomationId.
+WT001	high	Expander.xaml:150	Expander "Expander Example 3b" has no AutomationId.
+WT001	high	Expander.xaml:173	Expander "Expander Example 4a" has no AutomationId.
+WT001	high	Expander.xaml:192	Expander "Expander Example 4b" has no AutomationId.
+WT001	high	Expander.xaml:211	Expander "Expander Example 4c" has no AutomationId.
+WT001	high	Expander.xaml:230	Expander "Expander Example 4d" has no AutomationId.
+WT001	high	Expander.xaml:261	Expander "Custom Header Padding" has no AutomationId.
+WT002	low	Fields.xaml:51	TextBox [NameTextBox] gets its ID "NameTextBox" from x:Name.
+WT008	low	Fields.xaml:51	TextBox [NameTextBox] has no readable name.
+WT002	low	Fields.xaml:71	TextBox [PhoneTextBox] gets its ID "PhoneTextBox" from x:Name.
+WT008	low	Fields.xaml:71	TextBox [PhoneTextBox] has no readable name.
+WT002	low	Fields.xaml:82	TextBox [CommentTextBox] gets its ID "CommentTextBox" from x:Name.
+WT008	low	Fields.xaml:82	TextBox [CommentTextBox] has no readable name.
+WT001	high	Fields.xaml:91	TextBox has no AutomationId.
+WT008	low	Fields.xaml:91	TextBox has no readable name.
+WT001	high	Fields.xaml:99	TextBox has no AutomationId.
+WT008	low	Fields.xaml:99	TextBox has no readable name.
+WT002	low	Fields.xaml:121	PasswordBox [PasswordBox] gets its ID "PasswordBox" from x:Name.
+WT008	low	Fields.xaml:121	PasswordBox [PasswordBox] has no readable name.
+WT002	low	Fields.xaml:134	PasswordBox [FloatingPasswordBox] gets its ID "FloatingPasswordBox" from x:Name.
+WT008	low	Fields.xaml:134	PasswordBox [FloatingPasswordBox] has no readable name.
+WT001	high	Fields.xaml:144	TextBox has no AutomationId.
+WT008	low	Fields.xaml:144	TextBox has no readable name.
+WT001	high	Fields.xaml:155	TextBox has no AutomationId.
+WT008	low	Fields.xaml:155	TextBox has no readable name.
+WT001	high	Fields.xaml:163	TextBox has no AutomationId.
+WT008	low	Fields.xaml:163	TextBox has no readable name.
+WT001	high	Fields.xaml:171	PasswordBox has no AutomationId.
+WT008	low	Fields.xaml:171	PasswordBox has no readable name.
+WT002	low	Fields.xaml:189	CheckBox "Wrap text" gets its ID "TextBoxWrapTextCheckBox" from x:Name.
+WT001	high	Fields.xaml:193	TextBox has no AutomationId.
+WT008	low	Fields.xaml:193	TextBox has no readable name.
+WT002	low	Fields.xaml:214	CheckBox "Rich Text Box: IsReadOnly" gets its ID "RichTextBoxIsReadOnlyCheckBox" from x:Name.
+WT001	high	Fields.xaml:218	RichTextBox has no AutomationId.
+WT008	low	Fields.xaml:218	RichTextBox has no readable name.
+WT001	high	Fields.xaml:233	Hyperlink "Material Design in XAML" has no AutomationId.
+WT002	low	Fields.xaml:265	CheckBox "Enabled" gets its ID "MaterialDesignFilledTextBoxEnabledComboBox" from x:Name.
+WT001	high	Fields.xaml:267	TextBox has no AutomationId.
+WT008	low	Fields.xaml:267	TextBox has no readable name.
+WT002	low	Fields.xaml:279	CheckBox "View Text Input Count" gets its ID "MaterialDesignFilledTextBoxTextCountComboBox" from x:Name.
+WT001	high	Fields.xaml:281	TextBox has no AutomationId.
+WT008	low	Fields.xaml:281	TextBox has no readable name.
+WT002	low	Fields.xaml:292	CheckBox "Enabled" gets its ID "MaterialDesignFilledPasswordBoxEnabledComboBox" from x:Name.
+WT001	high	Fields.xaml:294	PasswordBox has no AutomationId.
+WT008	low	Fields.xaml:294	PasswordBox has no readable name.
+WT002	low	Fields.xaml:303	CheckBox "View Password Input Count" gets its ID "MaterialDesignFilledPasswordBoxTextCountComboBox" from x:Name.
+WT001	high	Fields.xaml:305	PasswordBox has no AutomationId.
+WT008	low	Fields.xaml:305	PasswordBox has no readable name.
+WT001	high	Fields.xaml:315	TextBox has no AutomationId.
+WT008	low	Fields.xaml:315	TextBox has no readable name.
+WT001	high	Fields.xaml:333	PasswordBox has no AutomationId.
+WT008	low	Fields.xaml:333	PasswordBox has no readable name.
+WT002	low	Fields.xaml:360	CheckBox "Enabled" gets its ID "MaterialDesignOutlinedTextBoxEnabledComboBox" from x:Name.
+WT001	high	Fields.xaml:362	TextBox has no AutomationId.
+WT008	low	Fields.xaml:362	TextBox has no readable name.
+WT002	low	Fields.xaml:375	CheckBox "View Text Input Count" gets its ID "MaterialDesignOutlinedTextBoxTextCountComboBox" from x:Name.
+WT001	high	Fields.xaml:377	TextBox has no AutomationId.
+WT008	low	Fields.xaml:377	TextBox has no readable name.
+WT002	low	Fields.xaml:390	CheckBox "Enabled" gets its ID "MaterialDesignOutlinedPasswordBoxEnabledComboBox" from x:Name.
+WT001	high	Fields.xaml:392	PasswordBox has no AutomationId.
+WT008	low	Fields.xaml:392	PasswordBox has no readable name.
+WT001	high	Fields.xaml:401	CheckBox has no AutomationId.
+WT008	low	Fields.xaml:401	CheckBox has no readable name.
+WT001	high	Fields.xaml:403	PasswordBox has no AutomationId.
+WT008	low	Fields.xaml:403	PasswordBox has no readable name.
+WT001	high	Fields.xaml:411	CheckBox has no AutomationId.
+WT008	low	Fields.xaml:411	CheckBox has no readable name.
+WT001	high	Fields.xaml:413	TextBox has no AutomationId.
+WT008	low	Fields.xaml:413	TextBox has no readable name.
+WT001	high	Fields.xaml:431	CheckBox has no AutomationId.
+WT008	low	Fields.xaml:431	CheckBox has no readable name.
+WT001	high	Fields.xaml:432	PasswordBox has no AutomationId.
+WT008	low	Fields.xaml:432	PasswordBox has no readable name.
+WT002	low	Fields.xaml:459	CheckBox "Enabled" gets its ID "RevealPasswordDefaultEnabled" from x:Name.
+WT001	high	Fields.xaml:460	PasswordBox has no AutomationId.
+WT008	low	Fields.xaml:460	PasswordBox has no readable name.
+WT001	high	Fields.xaml:467	Button "Set from VM" has no AutomationId.
+WT002	low	Fields.xaml:476	CheckBox "Enabled" gets its ID "RevealPasswordFloatingEnabled" from x:Name.
+WT001	high	Fields.xaml:477	PasswordBox has no AutomationId.
+WT008	low	Fields.xaml:477	PasswordBox has no readable name.
+WT001	high	Fields.xaml:484	Button "Set from VM" has no AutomationId.
+WT002	low	Fields.xaml:493	CheckBox "Enabled" gets its ID "RevealPasswordFilledEnabled" from x:Name.
+WT001	high	Fields.xaml:494	PasswordBox has no AutomationId.
+WT008	low	Fields.xaml:494	PasswordBox has no readable name.
+WT002	low	Fields.xaml:505	CheckBox "Enabled" gets its ID "RevealPasswordOutlinedEnabled" from x:Name.
+WT001	high	Fields.xaml:506	PasswordBox has no AutomationId.
+WT008	low	Fields.xaml:506	PasswordBox has no readable name.
+WT001	high	Fields.xaml:525	TextBox has no AutomationId.
+WT008	low	Fields.xaml:525	TextBox has no readable name.
+WT001	high	Fields.xaml:530	TextBox has no AutomationId.
+WT008	low	Fields.xaml:530	TextBox has no readable name.
+WT001	high	Fields.xaml:536	TextBox has no AutomationId.
+WT008	low	Fields.xaml:536	TextBox has no readable name.
+WT001	high	Fields.xaml:542	TextBox has no AutomationId.
+WT008	low	Fields.xaml:542	TextBox has no readable name.
+WT001	high	Fields.xaml:567	TextBox has no AutomationId.
+WT008	low	Fields.xaml:567	TextBox has no readable name.
+WT001	high	Fields.xaml:573	TextBox has no AutomationId.
+WT008	low	Fields.xaml:573	TextBox has no readable name.
+WT001	high	Fields.xaml:579	TextBox has no AutomationId.
+WT008	low	Fields.xaml:579	TextBox has no readable name.
+WT001	high	Fields.xaml:586	TextBox has no AutomationId.
+WT008	low	Fields.xaml:586	TextBox has no readable name.
+WT001	high	Fields.xaml:609	TextBox has no AutomationId.
+WT008	low	Fields.xaml:609	TextBox has no readable name.
+WT001	high	Fields.xaml:625	TextBox has no AutomationId.
+WT008	low	Fields.xaml:625	TextBox has no readable name.
+WT001	high	Fields.xaml:642	TextBox has no AutomationId.
+WT008	low	Fields.xaml:642	TextBox has no readable name.
+WT001	high	Fields.xaml:655	TextBox has no AutomationId.
+WT008	low	Fields.xaml:655	TextBox has no readable name.
+WT001	high	Fields.xaml:669	TextBox has no AutomationId.
+WT008	low	Fields.xaml:669	TextBox has no readable name.
+WT001	high	Fields.xaml:684	TextBox has no AutomationId.
+WT008	low	Fields.xaml:684	TextBox has no readable name.
+WT001	high	Fields.xaml:701	TextBox has no AutomationId.
+WT008	low	Fields.xaml:701	TextBox has no readable name.
+WT002	low	Fields.xaml:718	CheckBox "ShowSuggestionsOnFocus" gets its ID "cbShowSuggestionsOnFocus" from x:Name.
+WT001	medium	Fields.xaml:833	Button (inside a list row template) has no AutomationId.
+WT008	low	Fields.xaml:833	Button has no readable name.
+WT002	low	FieldsLineUp.xaml:46	Slider [FontSizeSlider] gets its ID "FontSizeSlider" from x:Name.
+WT008	low	FieldsLineUp.xaml:46	Slider [FontSizeSlider] has no readable name.
+WT002	low	FieldsLineUp.xaml:56	Slider [HorizontalPaddingSlider] gets its ID "HorizontalPaddingSlider" from x:Name.
+WT008	low	FieldsLineUp.xaml:56	Slider [HorizontalPaddingSlider] has no readable name.
+WT002	low	FieldsLineUp.xaml:66	Slider [VerticalPaddingSlider] gets its ID "VerticalPaddingSlider" from x:Name.
+WT008	low	FieldsLineUp.xaml:66	Slider [VerticalPaddingSlider] has no readable name.
+WT002	low	FieldsLineUp.xaml:76	Slider [HorizontalTextBoxViewMarginSlider] gets its ID "HorizontalTextBoxViewMarginSlider" from x:Name.
+WT008	low	FieldsLineUp.xaml:76	Slider [HorizontalTextBoxViewMarginSlider] has no readable name.
+WT002	low	FieldsLineUp.xaml:92	TextBox [HintTextBox] gets its ID "HintTextBox" from x:Name.
+WT008	low	FieldsLineUp.xaml:92	TextBox [HintTextBox] has no readable name.
+WT002	low	FieldsLineUp.xaml:95	TextBox [HelperTextBox] gets its ID "HelperTextBox" from x:Name.
+WT008	low	FieldsLineUp.xaml:95	TextBox [HelperTextBox] has no readable name.
+WT002	low	FieldsLineUp.xaml:96	TextBox [ValidationErrorTextBox] gets its ID "ValidationErrorTextBox" from x:Name.
+WT008	low	FieldsLineUp.xaml:96	TextBox [ValidationErrorTextBox] has no readable name.
+WT002	low	FieldsLineUp.xaml:97	TextBox [PrefixTextBox] gets its ID "PrefixTextBox" from x:Name.
+WT008	low	FieldsLineUp.xaml:97	TextBox [PrefixTextBox] has no readable name.
+WT002	low	FieldsLineUp.xaml:98	TextBox [SuffixTextBox] gets its ID "SuffixTextBox" from x:Name.
+WT008	low	FieldsLineUp.xaml:98	TextBox [SuffixTextBox] has no readable name.
+WT002	low	FieldsLineUp.xaml:108	CheckBox "IsEnabled" gets its ID "IsEnabledCheckBox" from x:Name.
+WT002	low	FieldsLineUp.xaml:111	CheckBox "TextBox.IsReadOnly" gets its ID "IsReadOnlyCheckBox" from x:Name.
+WT002	low	FieldsLineUp.xaml:112	CheckBox "TextFieldAssist.HasClearButton" gets its ID "HasClearButtonCheckBox" from x:Name.
+WT002	low	FieldsLineUp.xaml:113	CheckBox "ComboBox.IsEditable" gets its ID "IsEditableCheckBox" from x:Name.
+WT001	high	FieldsLineUp.xaml:212	TextBox has no AutomationId.
+WT008	low	FieldsLineUp.xaml:212	TextBox has no readable name.
+WT001	high	FieldsLineUp.xaml:213	TextBox has no AutomationId.
+WT008	low	FieldsLineUp.xaml:213	TextBox has no readable name.
+WT001	high	FieldsLineUp.xaml:216	TextBox has no AutomationId.
+WT008	low	FieldsLineUp.xaml:216	TextBox has no readable name.
+WT001	high	FieldsLineUp.xaml:219	TextBox has no AutomationId.
+WT008	low	FieldsLineUp.xaml:219	TextBox has no readable name.
+WT001	high	FieldsLineUp.xaml:223	PasswordBox has no AutomationId.
+WT008	low	FieldsLineUp.xaml:223	PasswordBox has no readable name.
+WT001	high	FieldsLineUp.xaml:224	PasswordBox has no AutomationId.
+WT008	low	FieldsLineUp.xaml:224	PasswordBox has no readable name.
+WT001	high	FieldsLineUp.xaml:227	PasswordBox has no AutomationId.
+WT008	low	FieldsLineUp.xaml:227	PasswordBox has no readable name.
+WT001	high	FieldsLineUp.xaml:230	PasswordBox has no AutomationId.
+WT008	low	FieldsLineUp.xaml:230	PasswordBox has no readable name.
+WT001	high	FieldsLineUp.xaml:234	ComboBox has no AutomationId.
+WT005	medium	FieldsLineUp.xaml:234	Rows in ComboBox have no unique ID.
+WT008	low	FieldsLineUp.xaml:234	ComboBox has no readable name.
+WT001	high	FieldsLineUp.xaml:235	ComboBox has no AutomationId.
+WT005	medium	FieldsLineUp.xaml:235	Rows in ComboBox have no unique ID.
+WT008	low	FieldsLineUp.xaml:235	ComboBox has no readable name.
+WT001	high	FieldsLineUp.xaml:238	ComboBox has no AutomationId.
+WT005	medium	FieldsLineUp.xaml:238	Rows in ComboBox have no unique ID.
+WT008	low	FieldsLineUp.xaml:238	ComboBox has no readable name.
+WT001	high	FieldsLineUp.xaml:241	ComboBox has no AutomationId.
+WT005	medium	FieldsLineUp.xaml:241	Rows in ComboBox have no unique ID.
+WT008	low	FieldsLineUp.xaml:241	ComboBox has no readable name.
+WT001	high	FieldsLineUp.xaml:245	DatePicker has no AutomationId.
+WT008	low	FieldsLineUp.xaml:245	DatePicker has no readable name.
+WT001	high	FieldsLineUp.xaml:246	DatePicker has no AutomationId.
+WT008	low	FieldsLineUp.xaml:246	DatePicker has no readable name.
+WT001	high	FieldsLineUp.xaml:249	DatePicker has no AutomationId.
+WT008	low	FieldsLineUp.xaml:249	DatePicker has no readable name.
+WT001	high	FieldsLineUp.xaml:252	DatePicker has no AutomationId.
+WT008	low	FieldsLineUp.xaml:252	DatePicker has no readable name.
+WT001	high	Home.xaml:49	Button "EXPLORE (Ctrl+K)" has no AutomationId.
+WT002	low	Home.xaml:109	Button "GitHub" gets its ID "GitHubButton" from x:Name.
+WT002	low	Home.xaml:121	Button "Twitter" gets its ID "TwitterButton" from x:Name.
+WT002	low	Home.xaml:140	Button "Chat" gets its ID "ChatButton" from x:Name.
+WT002	low	Home.xaml:152	Button "Email" gets its ID "EmailButton" from x:Name.
+WT002	low	Home.xaml:206	Button "Donate" gets its ID "DonateButton" from x:Name.
+WT001	high	Home.xaml:237	Button "{materialDesign:PackIcon Kind=Github,  …" has no AutomationId.
+WT001	high	Home.xaml:242	Button "{materialDesign:PackIcon Kind=Twitter, …" has no AutomationId.
+WT001	high	Home.xaml:249	Button "{materialDesign:PackIcon Kind=Message, …" has no AutomationId.
+WT001	high	Home.xaml:263	Button "{materialDesign:PackIcon Kind=Email,   …" has no AutomationId.
+WT001	high	Home.xaml:270	Button "{materialDesign:PackIcon Kind=Gift,    …" has no AutomationId.
+WT001	high	IconPack.xaml:45	Hyperlink "materialdesignicons.com" has no AutomationId.
+WT001	high	IconPack.xaml:49	ListBox has no AutomationId.
+WT005	medium	IconPack.xaml:49	Rows in ListBox have no unique ID.
+WT008	low	IconPack.xaml:49	ListBox has no readable name.
+WT002	low	IconPack.xaml:99	Button [SearchButton] gets its ID "SearchButton" from x:Name.
+WT008	low	IconPack.xaml:99	Button [SearchButton] has no readable name.
+WT002	low	IconPack.xaml:108	TextBox [SearchBox] gets its ID "SearchBox" from x:Name.
+WT008	low	IconPack.xaml:108	TextBox [SearchBox] has no readable name.
+WT001	high	IconPack.xaml:129	TextBox has no AutomationId.
+WT008	low	IconPack.xaml:129	TextBox has no readable name.
+WT001	high	IconPack.xaml:142	Button "Copy To Clipboard" has no AutomationId.
+WT002	low	IconPack.xaml:187	RadioButton "Foreground" gets its ID "IconForeground" from x:Name.
+WT001	high	IconPack.xaml:190	RadioButton "Background" has no AutomationId.
+WT002	low	IconPack.xaml:216	CheckBox "Use Transparent" gets its ID "UseTransparent" from x:Name.
+WT001	high	IconPack.xaml:228	Button "Save" has no AutomationId.
+WT006	high	InputElementContentControl.cs:6	InputElementContentControl derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 96 time(s) in XAML.
+WT001	high	Lists.xaml:30	ListBox has no AutomationId.
+WT008	low	Lists.xaml:30	ListBox has no readable name.
+WT002	low	Lists.xaml:49	CheckBox "Enabled" gets its ID "EnableListBox" from x:Name.
+WT001	high	Lists.xaml:56	ListBox has no AutomationId.
+WT008	low	Lists.xaml:56	ListBox has no readable name.
+WT005	medium	Lists.xaml:76	Rows in ItemsControl have no unique ID.
+WT001	medium	Lists.xaml:85	CheckBox (inside a list row template) has no AutomationId.
+WT008	low	Lists.xaml:85	CheckBox has no readable name.
+WT005	medium	Lists.xaml:106	Rows in ItemsControl have no unique ID.
+WT001	medium	Lists.xaml:119	ToggleButton "{Binding Code}" (inside a list row template) has no AutomationId.
+WT001	high	Lists.xaml:145	ListView has no AutomationId.
+WT008	low	Lists.xaml:145	ListView has no readable name.
+WT001	high	Lists.xaml:156	ListView has no AutomationId.
+WT005	medium	Lists.xaml:156	Rows in ListView have no unique ID.
+WT008	low	Lists.xaml:156	ListView has no readable name.
+WT001	medium	Lists.xaml:165	ComboBox (inside a list row template) has no AutomationId.
+WT008	low	Lists.xaml:165	ComboBox has no readable name.
+WT001	high	MainWindow.xaml:59	ToggleButton has no AutomationId.
+WT008	low	MainWindow.xaml:59	ToggleButton has no readable name.
+WT002	low	MainWindow.xaml:65	TextBox [DemoItemsSearchBox] gets its ID "DemoItemsSearchBox" from x:Name.
+WT008	low	MainWindow.xaml:65	TextBox [DemoItemsSearchBox] has no readable name.
+WT002	low	MainWindow.xaml:75	ListBox "DemoPagesListBox" gets its ID "DemoItemsListBox" from x:Name.
+WT005	medium	MainWindow.xaml:75	Rows in ListBox "DemoPagesListBox" have no unique ID.
+WT002	low	MainWindow.xaml:104	ToggleButton "HamburgerToggleButton" gets its ID "MenuToggleButton" from x:Name.
+WT001	high	MainWindow.xaml:110	Button "{materialDesign:PackIcon Kind=ArrowLeft…" has no AutomationId.
+WT001	high	MainWindow.xaml:119	Button "{materialDesign:PackIcon Kind=ArrowRigh…" has no AutomationId.
+WT001	high	MainWindow.xaml:128	Button "{materialDesign:PackIcon Kind=Home,    …" has no AutomationId.
+WT002	low	MainWindow.xaml:155	ToggleButton [DarkModeToggleButton] gets its ID "DarkModeToggleButton" from x:Name.
+WT008	low	MainWindow.xaml:155	ToggleButton [DarkModeToggleButton] has no readable name.
+WT002	low	MainWindow.xaml:164	ToggleButton [ControlsEnabledToggleButton] gets its ID "ControlsEnabledToggleButton" from x:Name.
+WT008	low	MainWindow.xaml:164	ToggleButton [ControlsEnabledToggleButton] has no readable name.
+WT002	low	MainWindow.xaml:173	ToggleButton [FlowDirectionToggleButton] gets its ID "FlowDirectionToggleButton" from x:Name.
+WT008	low	MainWindow.xaml:173	ToggleButton [FlowDirectionToggleButton] has no readable name.
+WT001	high	MainWindow.xaml:186	Button "Hello World" has no AutomationId.
+WT001	high	MainWindow.xaml:188	Button "Nice Popup" has no AutomationId.
+WT001	high	MainWindow.xaml:190	Button "Can't Touch This" has no AutomationId.
+WT001	high	MainWindow.xaml:194	Button "Goodbye" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:17	MenuItem "File" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:22	MenuItem "Save" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:24	MenuItem "Save As.." has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:26	MenuItem "Exit" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:32	MenuItem "Excellent" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:36	MenuItem "Rubbish" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:38	MenuItem "Dig Deeper" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:39	MenuItem "Enlightenment?" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:40	MenuItem "Disappointment" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:43	MenuItem "Look Deeper" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:44	MenuItem "Plain" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:45	MenuItem "Ice Cream" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:49	MenuItem "Edit" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:50	MenuItem "Cut" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:54	MenuItem "Copy" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:58	MenuItem "Paste" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:70	MenuItem "File" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:75	MenuItem "Save" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:77	MenuItem "Save As.." has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:79	MenuItem "Exit" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:85	MenuItem "Excellent" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:89	MenuItem "Rubbish" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:91	MenuItem "Dig Deeper" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:92	MenuItem "Enlightenment?" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:93	MenuItem "Disappointment" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:96	MenuItem "Look Deeper" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:97	MenuItem "Plain" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:98	MenuItem "Ice Cream" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:102	MenuItem "Edit" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:103	MenuItem "Cut" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:107	MenuItem "Copy" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:111	MenuItem "Paste" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:125	MenuItem "Very" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:126	MenuItem "Item 1" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:127	MenuItem "Item 2" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:128	MenuItem "Item 3" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:130	MenuItem "Small" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:131	MenuItem "Item 1" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:132	MenuItem "Item 2" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:133	MenuItem "Item 3" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:135	MenuItem "Menu" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:141	MenuItem "Very" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:142	MenuItem "Item 1" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:143	MenuItem "Item 2" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:144	MenuItem "Item 3" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:146	MenuItem "Big" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:147	MenuItem "Item 1" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:148	MenuItem "Item 2" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:149	MenuItem "Item 3" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:151	MenuItem "Menu" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:170	MenuItem "File" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:171	MenuItem "Item 1" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:172	MenuItem "Item 2" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:173	MenuItem "Item 3" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:175	MenuItem "Edit" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:176	MenuItem "Item 1" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:177	MenuItem "Item 2" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:178	MenuItem "Item 3" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:180	MenuItem "About" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:201	MenuItem "Menu" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:202	MenuItem "Item 1" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:203	MenuItem "Item 2" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:204	MenuItem "Item 3" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:206	MenuItem "In Color" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:209	MenuItem "Item 1" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:212	MenuItem "Item 2" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:215	MenuItem "Item 3" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:219	MenuItem "(1) Important" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:220	MenuItem "Item 1" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:221	MenuItem "(1) This is important" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:222	MenuItem "Nothing here" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:233	Button "{materialDesign:PackIcon Kind=Twitter}" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:237	Button "{materialDesign:PackIcon Kind=ContentSa…" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:241	Button "{materialDesign:PackIcon Kind=ContentCu…" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:246	Button "{materialDesign:PackIcon Kind=ContentCo…" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:253	Button "{materialDesign:PackIcon Kind=ContentPa…" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:265	Button "{materialDesign:PackIcon Kind=AirplaneT…" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:272	ListBox has no AutomationId.
+WT008	low	MenusAndToolBars.xaml:272	ListBox has no readable name.
+WT001	high	MenusAndToolBars.xaml:280	ListBox has no AutomationId.
+WT008	low	MenusAndToolBars.xaml:280	ListBox has no readable name.
+WT001	high	MenusAndToolBars.xaml:297	ListBox has no AutomationId.
+WT008	low	MenusAndToolBars.xaml:297	ListBox has no readable name.
+WT001	high	MenusAndToolBars.xaml:315	ComboBox has no AutomationId.
+WT008	low	MenusAndToolBars.xaml:315	ComboBox has no readable name.
+WT001	high	MenusAndToolBars.xaml:322	CheckBox "Check" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:324	Button "{materialDesign:PackIcon Kind=Hotel}" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:328	RadioButton "Radio" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:330	RadioButton "Ga Ga" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:334	RadioButton "{materialDesign:PackIcon Kind=Radio}" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:338	RadioButton "{materialDesign:PackIcon Kind=EmoticonP…" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:344	ToggleButton "{materialDesign:PackIcon Kind=FormatStr…" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:355	MenuItem "Nested menu" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:356	MenuItem "Item 1" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:357	MenuItem "Item 2" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:363	ComboBox has no AutomationId.
+WT008	low	MenusAndToolBars.xaml:363	ComboBox has no readable name.
+WT001	high	MenusAndToolBars.xaml:374	TextBox has no AutomationId.
+WT008	low	MenusAndToolBars.xaml:374	TextBox has no readable name.
+WT001	high	MenusAndToolBars.xaml:388	Button "{materialDesign:PackIcon Kind=ContentSa…" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:389	Button "{materialDesign:PackIcon Kind=ContentCu…" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:390	Button "{materialDesign:PackIcon Kind=ContentCo…" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:391	Button "{materialDesign:PackIcon Kind=ContentPa…" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:392	Button "{materialDesign:PackIcon Kind=FormatBol…" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:393	Button "{materialDesign:PackIcon Kind=FormatIta…" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:394	Button "{materialDesign:PackIcon Kind=FormatUnd…" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:404	TextBox has no AutomationId.
+WT008	low	MenusAndToolBars.xaml:404	TextBox has no readable name.
+WT001	high	MenusAndToolBars.xaml:408	TextBox has no AutomationId.
+WT008	low	MenusAndToolBars.xaml:408	TextBox has no readable name.
+WT001	high	MenusAndToolBars.xaml:411	MenuItem "Hello World" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:412	MenuItem "Clickety Click" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:413	MenuItem "Clackety Clack" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:421	TextBox has no AutomationId.
+WT008	low	MenusAndToolBars.xaml:421	TextBox has no readable name.
+WT001	high	MenusAndToolBars.xaml:424	MenuItem "Hello World" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:425	MenuItem "Clickety Click" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:426	MenuItem "Clackety Clack 1" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:427	MenuItem "Clackety Clack 2" has no AutomationId.
+WT001	high	MenusAndToolBars.xaml:428	MenuItem "Clackety Clack 3" has no AutomationId.
+WT001	high	NavigationRail.xaml:18	TabControl has no AutomationId.
+WT001	high	NavigationRail.xaml:23	Button "{materialDesign:PackIcon Kind=Plus}" has no AutomationId.
+WT001	high	NavigationRail.xaml:27	TabItem "All Files" has no AutomationId.
+WT001	high	NavigationRail.xaml:54	TabItem "Recent" has no AutomationId.
+WT001	high	NavigationRail.xaml:80	TabItem "Photos" has no AutomationId.
+WT001	high	NavigationRail.xaml:106	TabItem "Sounds" has no AutomationId.
+WT001	high	NavigationRail.xaml:136	TabControl has no AutomationId.
+WT001	high	NavigationRail.xaml:143	TabItem "Recent" has no AutomationId.
+WT001	high	NavigationRail.xaml:168	TabItem "Photos" has no AutomationId.
+WT001	high	NavigationRail.xaml:195	TabItem "Sounds" has no AutomationId.
+WT001	high	NavigationRail.xaml:225	TabControl has no AutomationId.
+WT001	high	NavigationRail.xaml:226	TabItem "All Files" has no AutomationId.
+WT001	high	NavigationRail.xaml:253	TabItem "Recent" has no AutomationId.
+WT001	high	NavigationRail.xaml:279	TabItem "Photos" has no AutomationId.
+WT001	high	NavigationRail.xaml:303	TabItem "Sounds" has no AutomationId.
+WT001	high	NavigationRail.xaml:332	TabControl has no AutomationId.
+WT001	high	NavigationRail.xaml:335	TabItem "All Files" has no AutomationId.
+WT001	high	NavigationRail.xaml:362	TabItem "Recent" has no AutomationId.
+WT001	high	NavigationRail.xaml:388	TabItem "Photos" has no AutomationId.
+WT001	high	NavigationRail.xaml:412	TabItem "Sounds" has no AutomationId.
+WT001	high	NavigationRail.xaml:446	TabControl has no AutomationId.
+WT001	high	NavigationRail.xaml:453	Button has no AutomationId.
+WT008	low	NavigationRail.xaml:453	Button has no readable name.
+WT001	high	NavigationRail.xaml:460	TabItem "All Files" has no AutomationId.
+WT001	high	NavigationRail.xaml:486	TabItem "Recent" has no AutomationId.
+WT001	high	NavigationRail.xaml:513	TabItem "Photos" has no AutomationId.
+WT001	high	NavigationRail.xaml:536	TabItem "Sounds" has no AutomationId.
+WT001	high	NavigationRail.xaml:569	TabControl has no AutomationId.
+WT001	high	NavigationRail.xaml:572	TabItem "All Files" has no AutomationId.
+WT001	high	NavigationRail.xaml:585	TabItem "Recent" has no AutomationId.
+WT001	high	NavigationRail.xaml:597	TabItem "Photos" has no AutomationId.
+WT001	high	NavigationRail.xaml:609	TabItem "Sounds" has no AutomationId.
+WT001	high	NavigationRail.xaml:626	TabControl has no AutomationId.
+WT001	high	NavigationRail.xaml:629	TabItem "All Files" has no AutomationId.
+WT001	high	NavigationRail.xaml:642	TabItem "Recent" has no AutomationId.
+WT001	high	NavigationRail.xaml:654	TabItem "Photos" has no AutomationId.
+WT001	high	NavigationRail.xaml:666	TabItem "Sounds" has no AutomationId.
+WT001	high	NavigationRail.xaml:683	TabControl has no AutomationId.
+WT001	high	NavigationRail.xaml:686	TabItem "All Files" has no AutomationId.
+WT001	high	NavigationRail.xaml:699	TabItem "Recent" has no AutomationId.
+WT001	high	NavigationRail.xaml:711	TabItem "Photos" has no AutomationId.
+WT001	high	NavigationRail.xaml:723	TabItem "Sounds" has no AutomationId.
+WT001	high	NavigationRail.xaml:740	TabControl has no AutomationId.
+WT001	high	NavigationRail.xaml:743	TabItem "All Files" has no AutomationId.
+WT001	high	NavigationRail.xaml:756	TabItem "Recent" has no AutomationId.
+WT001	high	NavigationRail.xaml:768	TabItem "Photos" has no AutomationId.
+WT001	high	NavigationRail.xaml:780	TabItem "Sounds" has no AutomationId.
+WT001	high	NavigationRail.xaml:802	TabControl has no AutomationId.
+WT001	high	NavigationRail.xaml:809	Button "{materialDesign:PackIcon Kind=Person}" has no AutomationId.
+WT001	high	NavigationRail.xaml:813	Button "{materialDesign:PackIcon Kind=Cog}" has no AutomationId.
+WT001	high	NavigationRail.xaml:818	TabItem "All Files" has no AutomationId.
+WT001	high	NavigationRail.xaml:833	TabItem "Recent" has no AutomationId.
+WT001	medium	PaletteSelector.xaml:62	Button "Primary" (inside a list row template) has no AutomationId.
+WT001	medium	PaletteSelector.xaml:82	Button "Secondary" (inside a list row template) has no AutomationId.
+WT005	medium	PaletteSelector.xaml:121	Rows in ItemsControl have no unique ID.
+WT001	high	Pickers.xaml:24	DatePicker has no AutomationId.
+WT008	low	Pickers.xaml:24	DatePicker has no readable name.
+WT001	high	Pickers.xaml:33	DatePicker has no AutomationId.
+WT008	low	Pickers.xaml:33	DatePicker has no readable name.
+WT002	low	Pickers.xaml:67	DatePicker [FutureDatePicker] gets its ID "FutureDatePicker" from x:Name.
+WT008	low	Pickers.xaml:67	DatePicker [FutureDatePicker] has no readable name.
+WT001	high	Pickers.xaml:84	DatePicker has no AutomationId.
+WT008	low	Pickers.xaml:84	DatePicker has no readable name.
+WT002	low	Pickers.xaml:92	ComboBox [LocaleCombo] gets its ID "LocaleCombo" from x:Name.
+WT005	medium	Pickers.xaml:92	Rows in ComboBox [LocaleCombo] have no unique ID.
+WT008	low	Pickers.xaml:92	ComboBox [LocaleCombo] has no readable name.
+WT002	low	Pickers.xaml:104	DatePicker [LocaleDatePicker] gets its ID "LocaleDatePicker" from x:Name.
+WT008	low	Pickers.xaml:104	DatePicker [LocaleDatePicker] has no readable name.
+WT002	low	Pickers.xaml:112	DatePicker [LocaleDatePickerRTL] gets its ID "LocaleDatePickerRTL" from x:Name.
+WT008	low	Pickers.xaml:112	DatePicker [LocaleDatePickerRTL] has no readable name.
+WT001	high	Pickers.xaml:142	DatePicker has no AutomationId.
+WT008	low	Pickers.xaml:142	DatePicker has no readable name.
+WT001	high	Pickers.xaml:151	DatePicker has no AutomationId.
+WT008	low	Pickers.xaml:151	DatePicker has no readable name.
+WT001	high	Pickers.xaml:160	DatePicker has no AutomationId.
+WT008	low	Pickers.xaml:160	DatePicker has no readable name.
+WT001	high	Pickers.xaml:170	DatePicker has no AutomationId.
+WT008	low	Pickers.xaml:170	DatePicker has no readable name.
+WT002	low	Pickers.xaml:220	CheckBox "Show clock button" gets its ID "IsClockButtonVisible" from x:Name.
+WT002	low	Pickers.xaml:243	CheckBox "Is 24 Hour" gets its ID "Is24HourCheckbox" from x:Name.
+WT001	high	Pickers.xaml:279	Button "..." has no AutomationId.
+WT002	low	Pickers.xaml:291	Calendar [Calendar] gets its ID "Calendar" from x:Name.
+WT008	low	Pickers.xaml:291	Calendar [Calendar] has no readable name.
+WT001	high	Pickers.xaml:299	Button "CANCEL" has no AutomationId.
+WT001	high	Pickers.xaml:304	Button "OK" has no AutomationId.
+WT001	high	Pickers.xaml:325	Button "..." has no AutomationId.
+WT001	high	Pickers.xaml:342	Button "CANCEL" has no AutomationId.
+WT001	high	Pickers.xaml:347	Button "OK" has no AutomationId.
+WT001	high	Pickers.xaml:367	Button "..." has no AutomationId.
+WT002	low	Pickers.xaml:380	Calendar [CombinedCalendar] gets its ID "CombinedCalendar" from x:Name.
+WT008	low	Pickers.xaml:380	Calendar [CombinedCalendar] has no readable name.
+WT001	high	Pickers.xaml:391	Button "CANCEL" has no AutomationId.
+WT001	high	Pickers.xaml:396	Button "OK" has no AutomationId.
+WT001	high	Pickers.xaml:417	Calendar has no AutomationId.
+WT008	low	Pickers.xaml:417	Calendar has no readable name.
+WT001	high	Pickers.xaml:439	Calendar has no AutomationId.
+WT008	low	Pickers.xaml:439	Calendar has no readable name.
+WT001	high	Pickers.xaml:468	Calendar has no AutomationId.
+WT008	low	Pickers.xaml:468	Calendar has no readable name.
+WT001	high	Pickers.xaml:482	Calendar has no AutomationId.
+WT008	low	Pickers.xaml:482	Calendar has no readable name.
+WT001	high	Pickers.xaml:489	Calendar has no AutomationId.
+WT008	low	Pickers.xaml:489	Calendar has no readable name.
+WT001	high	Pickers.xaml:563	ComboBox has no AutomationId.
+WT005	medium	Pickers.xaml:563	Rows in ComboBox have no unique ID.
+WT008	low	Pickers.xaml:563	ComboBox has no readable name.
+WT002	low	PopupBox.xaml:115	ComboBox [StyleComboBox] gets its ID "StyleComboBox" from x:Name.
+WT008	low	PopupBox.xaml:115	ComboBox [StyleComboBox] has no readable name.
+WT002	low	PopupBox.xaml:123	ComboBox [ElevationComboBox] gets its ID "ElevationComboBox" from x:Name.
+WT008	low	PopupBox.xaml:123	ComboBox [ElevationComboBox] has no readable name.
+WT002	low	PopupBox.xaml:141	ComboBox [UniformCornerRadiusComboBox] gets its ID "UniformCornerRadiusComboBox" from x:Name.
+WT008	low	PopupBox.xaml:141	ComboBox [UniformCornerRadiusComboBox] has no readable name.
+WT002	low	PopupBox.xaml:154	ComboBox [HorizontalOffsetComboBox] gets its ID "HorizontalOffsetComboBox" from x:Name.
+WT008	low	PopupBox.xaml:154	ComboBox [HorizontalOffsetComboBox] has no readable name.
+WT002	low	PopupBox.xaml:181	ComboBox [VerticalOffsetComboBox] gets its ID "VerticalOffsetComboBox" from x:Name.
+WT008	low	PopupBox.xaml:181	ComboBox [VerticalOffsetComboBox] has no readable name.
+WT002	low	PopupBox.xaml:208	ComboBox [PopupBoxPlacementModeComboBox] gets its ID "PopupBoxPlacementModeComboBox" from x:Name.
+WT008	low	PopupBox.xaml:208	ComboBox [PopupBoxPlacementModeComboBox] has no readable name.
+WT002	low	PopupBox.xaml:230	ComboBox [ContentComboBox] gets its ID "ContentComboBox" from x:Name.
+WT005	medium	PopupBox.xaml:230	Rows in ComboBox [ContentComboBox] have no unique ID.
+WT008	low	PopupBox.xaml:230	ComboBox [ContentComboBox] has no readable name.
+WT001	high	Sliders.xaml:31	Slider has no AutomationId.
+WT008	low	Sliders.xaml:31	Slider has no readable name.
+WT001	high	Sliders.xaml:37	Slider has no AutomationId.
+WT008	low	Sliders.xaml:37	Slider has no readable name.
+WT001	high	Sliders.xaml:49	Slider has no AutomationId.
+WT008	low	Sliders.xaml:49	Slider has no readable name.
+WT001	high	Sliders.xaml:56	Slider has no AutomationId.
+WT008	low	Sliders.xaml:56	Slider has no readable name.
+WT001	high	Sliders.xaml:63	Slider has no AutomationId.
+WT008	low	Sliders.xaml:63	Slider has no readable name.
+WT001	high	Sliders.xaml:76	TextBox has no AutomationId.
+WT008	low	Sliders.xaml:76	TextBox has no readable name.
+WT001	high	Sliders.xaml:80	TextBox has no AutomationId.
+WT008	low	Sliders.xaml:80	TextBox has no readable name.
+WT001	high	Sliders.xaml:90	Slider has no AutomationId.
+WT008	low	Sliders.xaml:90	Slider has no readable name.
+WT001	high	Sliders.xaml:99	Slider has no AutomationId.
+WT008	low	Sliders.xaml:99	Slider has no readable name.
+WT001	high	Sliders.xaml:111	Slider has no AutomationId.
+WT008	low	Sliders.xaml:111	Slider has no readable name.
+WT001	high	Sliders.xaml:120	Slider has no AutomationId.
+WT008	low	Sliders.xaml:120	Slider has no readable name.
+WT001	high	Sliders.xaml:130	Slider has no AutomationId.
+WT008	low	Sliders.xaml:130	Slider has no readable name.
+WT001	high	Sliders.xaml:146	Slider has no AutomationId.
+WT008	low	Sliders.xaml:146	Slider has no readable name.
+WT001	high	Sliders.xaml:153	Slider has no AutomationId.
+WT008	low	Sliders.xaml:153	Slider has no readable name.
+WT001	high	Sliders.xaml:163	Slider has no AutomationId.
+WT008	low	Sliders.xaml:163	Slider has no readable name.
+WT001	high	Sliders.xaml:171	Slider has no AutomationId.
+WT008	low	Sliders.xaml:171	Slider has no readable name.
+WT001	high	Sliders.xaml:181	Slider has no AutomationId.
+WT008	low	Sliders.xaml:181	Slider has no readable name.
+WT001	high	Sliders.xaml:194	TextBox has no AutomationId.
+WT008	low	Sliders.xaml:194	TextBox has no readable name.
+WT001	high	Sliders.xaml:198	TextBox has no AutomationId.
+WT008	low	Sliders.xaml:198	TextBox has no readable name.
+WT001	high	Sliders.xaml:208	Slider has no AutomationId.
+WT008	low	Sliders.xaml:208	Slider has no readable name.
+WT001	high	Sliders.xaml:218	Slider has no AutomationId.
+WT008	low	Sliders.xaml:218	Slider has no readable name.
+WT001	high	Sliders.xaml:231	Slider has no AutomationId.
+WT008	low	Sliders.xaml:231	Slider has no readable name.
+WT001	high	Sliders.xaml:241	Slider has no AutomationId.
+WT008	low	Sliders.xaml:241	Slider has no readable name.
+WT001	high	Sliders.xaml:252	Slider has no AutomationId.
+WT008	low	Sliders.xaml:252	Slider has no readable name.
+WT001	high	Sliders.xaml:263	Slider has no AutomationId.
+WT008	low	Sliders.xaml:263	Slider has no readable name.
+WT001	high	Sliders.xaml:274	Slider has no AutomationId.
+WT008	low	Sliders.xaml:274	Slider has no readable name.
+WT001	high	SmartHint.xaml:76	CheckBox "IsFloating" has no AutomationId.
+WT001	high	SmartHint.xaml:80	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:80	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:80	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:87	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:87	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:87	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:94	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:94	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:94	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:102	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:102	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:102	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:107	CheckBox "HasClearButton" has no AutomationId.
+WT001	high	SmartHint.xaml:110	CheckBox "HasErrors" has no AutomationId.
+WT001	high	SmartHint.xaml:118	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:118	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:118	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:126	TextBox has no AutomationId.
+WT008	low	SmartHint.xaml:126	TextBox has no readable name.
+WT001	high	SmartHint.xaml:130	TextBox has no AutomationId.
+WT008	low	SmartHint.xaml:130	TextBox has no readable name.
+WT002	low	SmartHint.xaml:135	CheckBox "HasLeadingIcon" gets its ID "CheckBoxLeadingIcon" from x:Name.
+WT001	high	SmartHint.xaml:142	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:142	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:142	ComboBox has no readable name.
+WT002	low	SmartHint.xaml:147	CheckBox "HasTrailingIcon" gets its ID "CheckBoxTrailingIcon" from x:Name.
+WT001	high	SmartHint.xaml:154	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:154	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:154	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:162	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:162	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:162	ComboBox has no readable name.
+WT002	low	SmartHint.xaml:166	CheckBox "CharacterCounter" gets its ID "CheckBoxCharacterCounter" from x:Name.
+WT002	low	SmartHint.xaml:180	CheckBox "Enabled" gets its ID "IsEnabledCheckBox" from x:Name.
+WT002	low	SmartHint.xaml:183	CheckBox "RippleOnFocus" gets its ID "RippleOnFocusCheckBox" from x:Name.
+WT002	low	SmartHint.xaml:187	CheckBox "Custom Padding" gets its ID "CustomPaddingCheckBox" from x:Name.
+WT001	high	SmartHint.xaml:191	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:191	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:191	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:199	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:199	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:199	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:207	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:207	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:207	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:214	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:214	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:214	ComboBox has no readable name.
+WT002	low	SmartHint.xaml:220	CheckBox "NewSpecHighlightingEnabled" gets its ID "NewSpecHighlightEnabledCheckBox" from x:Name.
+WT001	high	SmartHint.xaml:226	TextBox has no AutomationId.
+WT008	low	SmartHint.xaml:226	TextBox has no readable name.
+WT001	high	SmartHint.xaml:234	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:234	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:234	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:242	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:242	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:242	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:250	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:250	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:250	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:257	TextBox has no AutomationId.
+WT008	low	SmartHint.xaml:257	TextBox has no readable name.
+WT001	high	SmartHint.xaml:265	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:265	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:265	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:273	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:273	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:273	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:281	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:281	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:281	ComboBox has no readable name.
+WT002	low	SmartHint.xaml:327	TextBox [MaterialDesignFloatingHintTextBoxDefaults] gets its ID "MaterialDesignFloatingHintTextBoxDefaults" from x:Name.
+WT008	low	SmartHint.xaml:327	TextBox [MaterialDesignFloatingHintTextBoxDefaults] has no readable name.
+WT002	low	SmartHint.xaml:328	TextBox [MaterialDesignFilledTextBoxDefaults] gets its ID "MaterialDesignFilledTextBoxDefaults" from x:Name.
+WT008	low	SmartHint.xaml:328	TextBox [MaterialDesignFilledTextBoxDefaults] has no readable name.
+WT002	low	SmartHint.xaml:329	TextBox [MaterialDesignOutlinedTextBoxDefaults] gets its ID "MaterialDesignOutlinedTextBoxDefaults" from x:Name.
+WT008	low	SmartHint.xaml:329	TextBox [MaterialDesignOutlinedTextBoxDefaults] has no readable name.
+WT002	low	SmartHint.xaml:330	RichTextBox [MaterialDesignFloatingHintRichTextBoxDefaults] gets its ID "MaterialDesignFloatingHintRichTextBoxDefaults" from x:Name.
+WT008	low	SmartHint.xaml:330	RichTextBox [MaterialDesignFloatingHintRichTextBoxDefaults] has no readable name.
+WT002	low	SmartHint.xaml:331	RichTextBox [MaterialDesignFilledRichTextBoxDefaults] gets its ID "MaterialDesignFilledRichTextBoxDefaults" from x:Name.
+WT008	low	SmartHint.xaml:331	RichTextBox [MaterialDesignFilledRichTextBoxDefaults] has no readable name.
+WT002	low	SmartHint.xaml:332	RichTextBox [MaterialDesignOutlinedRichTextBoxDefaults] gets its ID "MaterialDesignOutlinedRichTextBoxDefaults" from x:Name.
+WT008	low	SmartHint.xaml:332	RichTextBox [MaterialDesignOutlinedRichTextBoxDefaults] has no readable name.
+WT002	low	SmartHint.xaml:333	PasswordBox [MaterialDesignFloatingHintPasswordBoxDefaults] gets its ID "MaterialDesignFloatingHintPasswordBoxDefaults" from x:Name.
+WT008	low	SmartHint.xaml:333	PasswordBox [MaterialDesignFloatingHintPasswordBoxDefaults] has no readable name.
+WT002	low	SmartHint.xaml:334	PasswordBox [MaterialDesignFilledPasswordBoxDefaults] gets its ID "MaterialDesignFilledPasswordBoxDefaults" from x:Name.
+WT008	low	SmartHint.xaml:334	PasswordBox [MaterialDesignFilledPasswordBoxDefaults] has no readable name.
+WT002	low	SmartHint.xaml:335	PasswordBox [MaterialDesignOutlinedPasswordBoxDefaults] gets its ID "MaterialDesignOutlinedPasswordBoxDefaults" from x:Name.
+WT008	low	SmartHint.xaml:335	PasswordBox [MaterialDesignOutlinedPasswordBoxDefaults] has no readable name.
+WT002	low	SmartHint.xaml:336	PasswordBox [MaterialDesignFloatingHintRevealPasswordBoxDefaults] gets its ID "MaterialDesignFloatingHintRevealPasswordBoxDefaults" from x:Name.
+WT008	low	SmartHint.xaml:336	PasswordBox [MaterialDesignFloatingHintRevealPasswordBoxDefaults] has no readable name.
+WT002	low	SmartHint.xaml:337	PasswordBox [MaterialDesignFilledRevealPasswordBoxDefaults] gets its ID "MaterialDesignFilledRevealPasswordBoxDefaults" from x:Name.
+WT008	low	SmartHint.xaml:337	PasswordBox [MaterialDesignFilledRevealPasswordBoxDefaults] has no readable name.
+WT002	low	SmartHint.xaml:338	PasswordBox [MaterialDesignOutlinedRevealPasswordBoxDefaults] gets its ID "MaterialDesignOutlinedRevealPasswordBoxDefaults" from x:Name.
+WT008	low	SmartHint.xaml:338	PasswordBox [MaterialDesignOutlinedRevealPasswordBoxDefaults] has no readable name.
+WT002	low	SmartHint.xaml:339	ComboBox [MaterialDesignFloatingHintComboBoxDefaults] gets its ID "MaterialDesignFloatingHintComboBoxDefaults" from x:Name.
+WT005	medium	SmartHint.xaml:339	Rows in ComboBox [MaterialDesignFloatingHintComboBoxDefaults] have no unique ID.
+WT008	low	SmartHint.xaml:339	ComboBox [MaterialDesignFloatingHintComboBoxDefaults] has no readable name.
+WT002	low	SmartHint.xaml:340	ComboBox [MaterialDesignFilledComboBoxDefaults] gets its ID "MaterialDesignFilledComboBoxDefaults" from x:Name.
+WT005	medium	SmartHint.xaml:340	Rows in ComboBox [MaterialDesignFilledComboBoxDefaults] have no unique ID.
+WT008	low	SmartHint.xaml:340	ComboBox [MaterialDesignFilledComboBoxDefaults] has no readable name.
+WT002	low	SmartHint.xaml:341	ComboBox [MaterialDesignOutlinedComboBoxDefaults] gets its ID "MaterialDesignOutlinedComboBoxDefaults" from x:Name.
+WT005	medium	SmartHint.xaml:341	Rows in ComboBox [MaterialDesignOutlinedComboBoxDefaults] have no unique ID.
+WT008	low	SmartHint.xaml:341	ComboBox [MaterialDesignOutlinedComboBoxDefaults] has no readable name.
+WT002	low	SmartHint.xaml:342	DatePicker [MaterialDesignFloatingHintDatePickerDefaults] gets its ID "MaterialDesignFloatingHintDatePickerDefaults" from x:Name.
+WT008	low	SmartHint.xaml:342	DatePicker [MaterialDesignFloatingHintDatePickerDefaults] has no readable name.
+WT002	low	SmartHint.xaml:343	DatePicker [MaterialDesignFilledDatePickerDefaults] gets its ID "MaterialDesignFilledDatePickerDefaults" from x:Name.
+WT008	low	SmartHint.xaml:343	DatePicker [MaterialDesignFilledDatePickerDefaults] has no readable name.
+WT002	low	SmartHint.xaml:344	DatePicker [MaterialDesignOutlinedDatePickerDefaults] gets its ID "MaterialDesignOutlinedDatePickerDefaults" from x:Name.
+WT008	low	SmartHint.xaml:344	DatePicker [MaterialDesignOutlinedDatePickerDefaults] has no readable name.
+WT001	high	SmartHint.xaml:365	CheckBox "AcceptsReturn" has no AutomationId.
+WT001	high	SmartHint.xaml:368	CheckBox "IsReadOnly" has no AutomationId.
+WT001	high	SmartHint.xaml:375	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:375	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:375	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:383	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:383	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:383	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:391	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:391	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:391	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:398	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:398	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:398	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:456	TextBox has no AutomationId.
+WT008	low	SmartHint.xaml:456	TextBox has no readable name.
+WT001	high	SmartHint.xaml:459	TextBox has no AutomationId.
+WT008	low	SmartHint.xaml:459	TextBox has no readable name.
+WT001	high	SmartHint.xaml:462	TextBox has no AutomationId.
+WT008	low	SmartHint.xaml:462	TextBox has no readable name.
+WT001	high	SmartHint.xaml:465	TextBox has no AutomationId.
+WT008	low	SmartHint.xaml:465	TextBox has no readable name.
+WT001	high	SmartHint.xaml:521	TextBox has no AutomationId.
+WT008	low	SmartHint.xaml:521	TextBox has no readable name.
+WT001	high	SmartHint.xaml:524	TextBox has no AutomationId.
+WT008	low	SmartHint.xaml:524	TextBox has no readable name.
+WT001	high	SmartHint.xaml:527	TextBox has no AutomationId.
+WT008	low	SmartHint.xaml:527	TextBox has no readable name.
+WT001	high	SmartHint.xaml:530	TextBox has no AutomationId.
+WT008	low	SmartHint.xaml:530	TextBox has no readable name.
+WT001	high	SmartHint.xaml:587	TextBox has no AutomationId.
+WT008	low	SmartHint.xaml:587	TextBox has no readable name.
+WT001	high	SmartHint.xaml:590	TextBox has no AutomationId.
+WT008	low	SmartHint.xaml:590	TextBox has no readable name.
+WT001	high	SmartHint.xaml:593	TextBox has no AutomationId.
+WT008	low	SmartHint.xaml:593	TextBox has no readable name.
+WT001	high	SmartHint.xaml:596	TextBox has no AutomationId.
+WT008	low	SmartHint.xaml:596	TextBox has no readable name.
+WT001	high	SmartHint.xaml:859	RichTextBox has no AutomationId.
+WT008	low	SmartHint.xaml:859	RichTextBox has no readable name.
+WT001	high	SmartHint.xaml:862	RichTextBox has no AutomationId.
+WT008	low	SmartHint.xaml:862	RichTextBox has no readable name.
+WT001	high	SmartHint.xaml:865	RichTextBox has no AutomationId.
+WT008	low	SmartHint.xaml:865	RichTextBox has no readable name.
+WT001	high	SmartHint.xaml:868	RichTextBox has no AutomationId.
+WT008	low	SmartHint.xaml:868	RichTextBox has no readable name.
+WT001	high	SmartHint.xaml:923	RichTextBox has no AutomationId.
+WT008	low	SmartHint.xaml:923	RichTextBox has no readable name.
+WT001	high	SmartHint.xaml:926	RichTextBox has no AutomationId.
+WT008	low	SmartHint.xaml:926	RichTextBox has no readable name.
+WT001	high	SmartHint.xaml:929	RichTextBox has no AutomationId.
+WT008	low	SmartHint.xaml:929	RichTextBox has no readable name.
+WT001	high	SmartHint.xaml:932	RichTextBox has no AutomationId.
+WT008	low	SmartHint.xaml:932	RichTextBox has no readable name.
+WT001	high	SmartHint.xaml:987	RichTextBox has no AutomationId.
+WT008	low	SmartHint.xaml:987	RichTextBox has no readable name.
+WT001	high	SmartHint.xaml:990	RichTextBox has no AutomationId.
+WT008	low	SmartHint.xaml:990	RichTextBox has no readable name.
+WT001	high	SmartHint.xaml:993	RichTextBox has no AutomationId.
+WT008	low	SmartHint.xaml:993	RichTextBox has no readable name.
+WT001	high	SmartHint.xaml:996	RichTextBox has no AutomationId.
+WT008	low	SmartHint.xaml:996	RichTextBox has no readable name.
+WT001	high	SmartHint.xaml:1052	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1052	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1055	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1055	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1058	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1058	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1061	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1061	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1112	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1112	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1115	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1115	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1118	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1118	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1121	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1121	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1173	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1173	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1176	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1176	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1179	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1179	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1182	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1182	PasswordBox has no readable name.
+WT002	low	SmartHint.xaml:1189	CheckBox "IsPasswordRevealed" gets its ID "PasswordBoxesRevealedCheckBox" from x:Name.
+WT001	high	SmartHint.xaml:1243	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1243	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1246	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1246	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1249	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1249	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1252	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1252	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1304	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1304	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1307	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1307	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1310	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1310	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1313	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1313	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1366	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1366	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1369	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1369	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1372	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1372	PasswordBox has no readable name.
+WT001	high	SmartHint.xaml:1375	PasswordBox has no AutomationId.
+WT008	low	SmartHint.xaml:1375	PasswordBox has no readable name.
+WT002	low	SmartHint.xaml:1382	CheckBox "IsEditable" gets its ID "ComboBoxesEditableCheckBox" from x:Name.
+WT001	high	SmartHint.xaml:1434	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:1434	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:1434	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:1437	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:1437	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:1437	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:1440	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:1440	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:1440	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:1443	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:1443	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:1443	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:1494	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:1494	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:1494	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:1497	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:1497	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:1497	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:1500	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:1500	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:1500	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:1503	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:1503	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:1503	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:1555	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:1555	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:1555	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:1558	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:1558	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:1558	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:1561	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:1561	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:1561	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:1564	ComboBox has no AutomationId.
+WT005	medium	SmartHint.xaml:1564	Rows in ComboBox have no unique ID.
+WT008	low	SmartHint.xaml:1564	ComboBox has no readable name.
+WT001	high	SmartHint.xaml:1618	DatePicker has no AutomationId.
+WT008	low	SmartHint.xaml:1618	DatePicker has no readable name.
+WT001	high	SmartHint.xaml:1621	DatePicker has no AutomationId.
+WT008	low	SmartHint.xaml:1621	DatePicker has no readable name.
+WT001	high	SmartHint.xaml:1624	DatePicker has no AutomationId.
+WT008	low	SmartHint.xaml:1624	DatePicker has no readable name.
+WT001	high	SmartHint.xaml:1627	DatePicker has no AutomationId.
+WT008	low	SmartHint.xaml:1627	DatePicker has no readable name.
+WT001	high	SmartHint.xaml:1676	DatePicker has no AutomationId.
+WT008	low	SmartHint.xaml:1676	DatePicker has no readable name.
+WT001	high	SmartHint.xaml:1679	DatePicker has no AutomationId.
+WT008	low	SmartHint.xaml:1679	DatePicker has no readable name.
+WT001	high	SmartHint.xaml:1682	DatePicker has no AutomationId.
+WT008	low	SmartHint.xaml:1682	DatePicker has no readable name.
+WT001	high	SmartHint.xaml:1685	DatePicker has no AutomationId.
+WT008	low	SmartHint.xaml:1685	DatePicker has no readable name.
+WT001	high	SmartHint.xaml:1735	DatePicker has no AutomationId.
+WT008	low	SmartHint.xaml:1735	DatePicker has no readable name.
+WT001	high	SmartHint.xaml:1738	DatePicker has no AutomationId.
+WT008	low	SmartHint.xaml:1738	DatePicker has no readable name.
+WT001	high	SmartHint.xaml:1741	DatePicker has no AutomationId.
+WT008	low	SmartHint.xaml:1741	DatePicker has no readable name.
+WT001	high	SmartHint.xaml:1744	DatePicker has no AutomationId.
+WT008	low	SmartHint.xaml:1744	DatePicker has no readable name.
+WT001	high	Snackbars.xaml:41	ToggleButton has no AutomationId.
+WT008	low	Snackbars.xaml:41	ToggleButton has no readable name.
+WT001	high	Snackbars.xaml:73	ToggleButton has no AutomationId.
+WT008	low	Snackbars.xaml:73	ToggleButton has no readable name.
+WT002	low	Snackbars.xaml:134	TextBox [MessageTextBox] gets its ID "MessageTextBox" from x:Name.
+WT008	low	Snackbars.xaml:134	TextBox [MessageTextBox] has no readable name.
+WT001	high	Snackbars.xaml:139	Button "Send" has no AutomationId.
+WT002	low	Snackbars.xaml:174	CheckBox "Discard duplicates" gets its ID "DiscardDuplicateCheckBox" from x:Name.
+WT002	low	Snackbars.xaml:184	TextBox [ExampleFourTextBox] gets its ID "ExampleFourTextBox" from x:Name.
+WT008	low	Snackbars.xaml:184	TextBox [ExampleFourTextBox] has no readable name.
+WT001	high	Snackbars.xaml:191	Button "Send" has no AutomationId.
+WT001	high	Snackbars.xaml:195	Button "Clear" has no AutomationId.
+WT001	high	Snackbars.xaml:230	ToggleButton has no AutomationId.
+WT008	low	Snackbars.xaml:230	ToggleButton has no readable name.
+WT002	low	Snackbars.xaml:338	Slider [MessageDurationOverrideSlider] gets its ID "MessageDurationOverrideSlider" from x:Name.
+WT008	low	Snackbars.xaml:338	Slider [MessageDurationOverrideSlider] has no readable name.
+WT001	high	Snackbars.xaml:351	Button "Send" has no AutomationId.
+WT001	high	Tabs.xaml:26	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:27	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:31	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:41	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:43	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:47	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:56	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:58	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:62	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:71	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:73	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:77	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:88	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:90	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:94	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:103	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:105	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:109	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:118	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:120	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:124	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:141	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:144	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:148	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:159	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:162	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:166	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:177	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:180	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:184	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:198	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:201	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:205	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:216	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:219	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:223	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:234	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:237	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:241	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:259	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:264	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:268	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:278	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:283	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:287	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:297	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:302	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:306	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:319	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:322	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:326	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:336	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:339	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:343	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:353	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:356	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:360	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:373	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:377	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:381	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:397	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:399	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:407	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:409	TextBox has no AutomationId.
+WT008	low	Tabs.xaml:409	TextBox has no readable name.
+WT001	high	Tabs.xaml:429	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:432	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:436	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:445	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:448	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:452	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:461	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:464	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:468	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:480	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:484	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:488	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:492	TabItem "TAB 3 Diff Width" has no AutomationId.
+WT001	high	Tabs.xaml:496	TabItem "TAB 4 Looong" has no AutomationId.
+WT001	high	Tabs.xaml:500	TabItem "TABB 5" has no AutomationId.
+WT001	high	Tabs.xaml:511	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:515	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:519	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:530	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:534	TabItem "TAB 1" has no AutomationId.
+WT001	high	Tabs.xaml:538	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:556	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:557	TabItem "TAB1" has no AutomationId.
+WT001	high	Tabs.xaml:561	TabItem "TAB 2 Wide" has no AutomationId.
+WT001	high	Tabs.xaml:565	TabItem "TAB 3 Extremely Wide" has no AutomationId.
+WT001	high	Tabs.xaml:569	TabItem "TAB 4" has no AutomationId.
+WT001	high	Tabs.xaml:579	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:581	TabItem "TAB1" has no AutomationId.
+WT001	high	Tabs.xaml:585	TabItem "TAB 2 Wide" has no AutomationId.
+WT001	high	Tabs.xaml:589	TabItem "TAB 3 Extremely Wide" has no AutomationId.
+WT001	high	Tabs.xaml:593	TabItem "TAB 4" has no AutomationId.
+WT001	high	Tabs.xaml:603	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:605	TabItem "TAB1" has no AutomationId.
+WT001	high	Tabs.xaml:609	TabItem "TAB 2 Wide" has no AutomationId.
+WT001	high	Tabs.xaml:613	TabItem "TAB 3 Extremely Wide" has no AutomationId.
+WT001	high	Tabs.xaml:617	TabItem "TAB 4" has no AutomationId.
+WT001	high	Tabs.xaml:627	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:629	TabItem "TAB1" has no AutomationId.
+WT001	high	Tabs.xaml:633	TabItem "TAB 2 Wide" has no AutomationId.
+WT001	high	Tabs.xaml:637	TabItem "TAB 3 Extremely Wide" has no AutomationId.
+WT001	high	Tabs.xaml:641	TabItem "TAB 4" has no AutomationId.
+WT001	high	Tabs.xaml:652	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:654	TabItem "TAB1" has no AutomationId.
+WT001	high	Tabs.xaml:658	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:662	TabItem "TAB 3333" has no AutomationId.
+WT001	high	Tabs.xaml:666	TabItem "TAB4 Wide" has no AutomationId.
+WT001	high	Tabs.xaml:670	TabItem "TABbbbbbbbbbbxxxxx 5" has no AutomationId.
+WT001	high	Tabs.xaml:674	TabItem "TAB 6 Different Width" has no AutomationId.
+WT001	high	Tabs.xaml:678	TabItem "TAB 7 Looooong" has no AutomationId.
+WT001	high	Tabs.xaml:682	TabItem "TAB 8 Width" has no AutomationId.
+WT001	high	Tabs.xaml:686	TabItem "TAAX999" has no AutomationId.
+WT001	high	Tabs.xaml:690	TabItem "Tab10" has no AutomationId.
+WT001	high	Tabs.xaml:701	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:704	TabItem "TAB1" has no AutomationId.
+WT001	high	Tabs.xaml:708	TabItem "TAB 2" has no AutomationId.
+WT001	high	Tabs.xaml:725	TabControl has no AutomationId.
+WT001	medium	Tabs.xaml:736	Button (inside a list row template) has no AutomationId.
+WT008	low	Tabs.xaml:736	Button has no readable name.
+WT001	high	Tabs.xaml:790	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:819	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:873	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:903	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:907	Button "{materialDesign:PackIcon Kind=Plus}" has no AutomationId.
+WT001	high	Tabs.xaml:960	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:991	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:1048	TabControl has no AutomationId.
+WT001	high	Tabs.xaml:1079	TabControl has no AutomationId.
+WT001	high	ThemeSettings.xaml:14	ToggleButton has no AutomationId.
+WT008	low	ThemeSettings.xaml:14	ToggleButton has no readable name.
+WT001	high	ThemeSettings.xaml:22	ToggleButton has no AutomationId.
+WT008	low	ThemeSettings.xaml:22	ToggleButton has no readable name.
+WT001	high	ThemeSettings.xaml:43	Slider has no AutomationId.
+WT008	low	ThemeSettings.xaml:43	Slider has no readable name.
+WT001	high	ThemeSettings.xaml:65	ComboBox has no AutomationId.
+WT005	medium	ThemeSettings.xaml:65	Rows in ComboBox have no unique ID.
+WT008	low	ThemeSettings.xaml:65	ComboBox has no readable name.
+WT001	high	ThemeSettings.xaml:75	ComboBox has no AutomationId.
+WT005	medium	ThemeSettings.xaml:75	Rows in ComboBox have no unique ID.
+WT008	low	ThemeSettings.xaml:75	ComboBox has no readable name.
+WT001	high	Toggles.xaml:21	ToggleButton "C" has no AutomationId.
+WT001	high	Toggles.xaml:28	ToggleButton "H" has no AutomationId.
+WT001	high	Toggles.xaml:36	CheckBox "E" has no AutomationId.
+WT001	high	Toggles.xaml:42	ToggleButton "C" has no AutomationId.
+WT001	high	Toggles.xaml:49	ToggleButton "K" has no AutomationId.
+WT001	high	Toggles.xaml:56	ToggleButton has no AutomationId.
+WT008	low	Toggles.xaml:56	ToggleButton has no readable name.
+WT001	high	Toggles.xaml:66	ToggleButton "{materialDesign:PackIcon Kind=EmoticonS…" has no AutomationId.
+WT001	high	Toggles.xaml:77	ToggleButton has no AutomationId.
+WT008	low	Toggles.xaml:77	ToggleButton has no readable name.
+WT001	high	Toggles.xaml:87	ToggleButton "{materialDesign:PackIcon Kind=Heart,   …" has no AutomationId.
+WT001	high	Toggles.xaml:97	ToggleButton "{materialDesign:PackIcon Kind=Heart,   …" has no AutomationId.
+WT001	high	Toggles.xaml:114	ListBox has no AutomationId.
+WT008	low	Toggles.xaml:114	ListBox has no readable name.
+WT001	high	Toggles.xaml:133	ListBox has no AutomationId.
+WT008	low	Toggles.xaml:133	ListBox has no readable name.
+WT001	high	Toggles.xaml:152	ListBox has no AutomationId.
+WT008	low	Toggles.xaml:152	ListBox has no readable name.
+WT001	high	Toggles.xaml:175	RadioButton "Radio" has no AutomationId.
+WT001	high	Toggles.xaml:191	RadioButton "Ga Ga" has no AutomationId.
+WT001	high	Toggles.xaml:197	RadioButton "Disabled" has no AutomationId.
+WT001	high	Toggles.xaml:203	RadioButton "Light" has no AutomationId.
+WT001	high	Toggles.xaml:209	RadioButton "Dark" has no AutomationId.
+WT001	high	Toggles.xaml:215	RadioButton "Secondary" has no AutomationId.
+WT001	high	Toggles.xaml:224	RadioButton "Custom RadioButton Size" has no AutomationId.
+WT001	high	Toggles.xaml:237	CheckBox "Check" has no AutomationId.
+WT001	high	Toggles.xaml:243	CheckBox "Mate" has no AutomationId.
+WT001	high	Toggles.xaml:259	CheckBox "Disabled" has no AutomationId.
+WT001	high	Toggles.xaml:266	CheckBox "Light" has no AutomationId.
+WT001	high	Toggles.xaml:272	CheckBox "Dark" has no AutomationId.
+WT001	high	Toggles.xaml:278	CheckBox "Secondary" has no AutomationId.
+WT001	high	Toggles.xaml:286	CheckBox "Custom Size" has no AutomationId.
+WT001	high	Toggles.xaml:290	CheckBox "Ripple disabled" has no AutomationId.
+WT001	high	Toggles.xaml:305	ToggleButton has no AutomationId.
+WT008	low	Toggles.xaml:305	ToggleButton has no readable name.
+WT001	high	Toggles.xaml:311	ToggleButton has no AutomationId.
+WT008	low	Toggles.xaml:311	ToggleButton has no readable name.
+WT001	high	Toggles.xaml:317	ToggleButton has no AutomationId.
+WT008	low	Toggles.xaml:317	ToggleButton has no readable name.
+WT001	high	Toggles.xaml:325	ToggleButton has no AutomationId.
+WT008	low	Toggles.xaml:325	ToggleButton has no readable name.
+WT001	high	Toggles.xaml:333	ToggleButton has no AutomationId.
+WT008	low	Toggles.xaml:333	ToggleButton has no readable name.
+WT001	high	Toggles.xaml:341	ToggleButton has no AutomationId.
+WT008	low	Toggles.xaml:341	ToggleButton has no readable name.
+WT001	high	Toggles.xaml:349	ToggleButton has no AutomationId.
+WT008	low	Toggles.xaml:349	ToggleButton has no readable name.
+WT001	high	Toggles.xaml:365	ToggleButton has no AutomationId.
+WT008	low	Toggles.xaml:365	ToggleButton has no readable name.
+WT001	high	Toggles.xaml:381	ToggleButton "{materialDesign:PackIcon Kind=Heart,   …" has no AutomationId.
+WT001	high	Toggles.xaml:391	ToggleButton "{materialDesign:PackIcon Kind=Heart,   …" has no AutomationId.
+WT001	high	Toggles.xaml:407	ListBox has no AutomationId.
+WT008	low	Toggles.xaml:407	ListBox has no readable name.
+WT001	high	Toggles.xaml:424	ListBox has no AutomationId.
+WT008	low	Toggles.xaml:424	ListBox has no readable name.
+WT001	high	Toggles.xaml:447	ListBox has no AutomationId.
+WT008	low	Toggles.xaml:447	ListBox has no readable name.
+WT001	high	Toggles.xaml:463	ListBox has no AutomationId.
+WT008	low	Toggles.xaml:463	ListBox has no readable name.
+WT001	high	Toggles.xaml:472	ListBox has no AutomationId.
+WT008	low	Toggles.xaml:472	ListBox has no readable name.
+WT001	high	Toggles.xaml:490	ListBox has no AutomationId.
+WT008	low	Toggles.xaml:490	ListBox has no readable name.
+WT001	high	Toggles.xaml:530	RadioButton "FIRST" has no AutomationId.
+WT001	high	Toggles.xaml:535	RadioButton "SECOND" has no AutomationId.
+WT001	high	Toggles.xaml:540	RadioButton "THIRD" has no AutomationId.
+WT001	high	Toggles.xaml:551	RadioButton "FIRST" has no AutomationId.
+WT001	high	Toggles.xaml:556	RadioButton "SECOND" has no AutomationId.
+WT001	high	Toggles.xaml:561	RadioButton "THIRD" has no AutomationId.
+WT001	high	Toggles.xaml:574	RadioButton "FIRST" has no AutomationId.
+WT001	high	Toggles.xaml:580	RadioButton "SECOND" has no AutomationId.
+WT001	high	Toggles.xaml:586	RadioButton "THIRD" has no AutomationId.
+WT001	high	Toggles.xaml:598	RadioButton "FIRST" has no AutomationId.
+WT001	high	Toggles.xaml:604	RadioButton "SECOND" has no AutomationId.
+WT001	high	Toggles.xaml:610	RadioButton "THIRD" has no AutomationId.
+WT001	high	Toggles.xaml:626	RadioButton "FIRST" has no AutomationId.
+WT001	high	Toggles.xaml:635	RadioButton "SECOND" has no AutomationId.
+WT001	high	Toggles.xaml:644	RadioButton "THIRD" has no AutomationId.
+WT001	high	Toggles.xaml:657	RadioButton "FIRST" has no AutomationId.
+WT001	high	Toggles.xaml:666	RadioButton "SECOND" has no AutomationId.
+WT001	high	Toggles.xaml:675	RadioButton "THIRD" has no AutomationId.
+WT001	high	Toggles.xaml:692	RadioButton "FIRST" has no AutomationId.
+WT001	high	Toggles.xaml:697	RadioButton "SECOND" has no AutomationId.
+WT001	high	Toggles.xaml:702	RadioButton "THIRD" has no AutomationId.
+WT001	high	Toggles.xaml:714	RadioButton "FIRST" has no AutomationId.
+WT001	high	Toggles.xaml:719	RadioButton "SECOND" has no AutomationId.
+WT001	high	Toggles.xaml:724	RadioButton "THIRD" has no AutomationId.
+WT001	high	Toggles.xaml:737	RadioButton "FIRST" has no AutomationId.
+WT001	high	Toggles.xaml:742	RadioButton "SECOND" has no AutomationId.
+WT001	high	Toggles.xaml:747	RadioButton "THIRD" has no AutomationId.
+WT001	high	Toggles.xaml:757	RadioButton "FIRST" has no AutomationId.
+WT001	high	Toggles.xaml:762	RadioButton "SECOND" has no AutomationId.
+WT001	high	Toggles.xaml:767	RadioButton "THIRD" has no AutomationId.
+WT001	high	ToolTips.xaml:29	Button "Example" has no AutomationId.
+WT001	high	ToolTips.xaml:82	Button "Action 1" has no AutomationId.
+WT001	high	ToolTips.xaml:83	Button "Action 2" has no AutomationId.
+WT001	high	ToolTips.xaml:104	Button "{materialDesign:PackIcon Kind=Reload}" has no AutomationId.
+WT001	high	ToolTips.xaml:109	ToggleButton has no AutomationId.
+WT008	low	ToolTips.xaml:109	ToggleButton has no readable name.
+WT001	high	ToolTips.xaml:115	ComboBox has no AutomationId.
+WT005	medium	ToolTips.xaml:115	Rows in ComboBox have no unique ID.
+WT008	low	ToolTips.xaml:115	ComboBox has no readable name.
+WT001	high	ToolTips.xaml:145	ComboBox has no AutomationId.
+WT005	medium	ToolTips.xaml:145	Rows in ComboBox have no unique ID.
+WT008	low	ToolTips.xaml:145	ComboBox has no readable name.
+WT001	high	ToolTips.xaml:151	ComboBox has no AutomationId.
+WT005	medium	ToolTips.xaml:151	Rows in ComboBox have no unique ID.
+WT008	low	ToolTips.xaml:151	ComboBox has no readable name.
+WT001	high	ToolTips.xaml:157	ComboBox has no AutomationId.
+WT005	medium	ToolTips.xaml:157	Rows in ComboBox have no unique ID.
+WT008	low	ToolTips.xaml:157	ComboBox has no readable name.
+WT002	low	TransitionsDemo/Slide1_Intro.xaml:16	TextBox [UserName] gets its ID "UserName" from x:Name.
+WT008	low	TransitionsDemo/Slide1_Intro.xaml:16	TextBox [UserName] has no readable name.
+WT001	high	TransitionsDemo/Slide1_Intro.xaml:33	Button has no AutomationId.
+WT008	low	TransitionsDemo/Slide1_Intro.xaml:33	Button has no readable name.
+WT001	high	TransitionsDemo/Slide2_Intro.xaml:28	Button has no AutomationId.
+WT008	low	TransitionsDemo/Slide2_Intro.xaml:28	Button has no readable name.
+WT001	high	TransitionsDemo/Slide2_Intro.xaml:34	Button has no AutomationId.
+WT008	low	TransitionsDemo/Slide2_Intro.xaml:34	Button has no readable name.
+WT001	high	TransitionsDemo/Slide3_Intro.xaml:23	Button has no AutomationId.
+WT008	low	TransitionsDemo/Slide3_Intro.xaml:23	Button has no readable name.
+WT001	high	TransitionsDemo/Slide3_Intro.xaml:29	Button has no AutomationId.
+WT008	low	TransitionsDemo/Slide3_Intro.xaml:29	Button has no readable name.
+WT001	high	TransitionsDemo/Slide4_CombineTransitions.xaml:26	Button has no AutomationId.
+WT008	low	TransitionsDemo/Slide4_CombineTransitions.xaml:26	Button has no readable name.
+WT001	high	TransitionsDemo/Slide4_CombineTransitions.xaml:33	Button has no AutomationId.
+WT008	low	TransitionsDemo/Slide4_CombineTransitions.xaml:33	Button has no readable name.
+WT001	high	TransitionsDemo/Slide5_TransitioningContent.xaml:134	Button has no AutomationId.
+WT008	low	TransitionsDemo/Slide5_TransitioningContent.xaml:134	Button has no readable name.
+WT001	high	TransitionsDemo/Slide5_TransitioningContent.xaml:141	Button has no AutomationId.
+WT008	low	TransitionsDemo/Slide5_TransitioningContent.xaml:141	Button has no readable name.
+WT001	high	TransitionsDemo/Slide6_Origins.xaml:41	Button "First" has no AutomationId.
+WT001	high	TransitionsDemo/Slide6_Origins.xaml:42	Button "Second" has no AutomationId.
+WT001	high	TransitionsDemo/Slide6_Origins.xaml:49	Button has no AutomationId.
+WT008	low	TransitionsDemo/Slide6_Origins.xaml:49	Button has no readable name.
+WT001	high	TransitionsDemo/Slide6_Origins.xaml:52	Button has no AutomationId.
+WT008	low	TransitionsDemo/Slide6_Origins.xaml:52	Button has no readable name.
+WT001	high	TransitionsDemo/Slide7_MVVM.xaml:29	Button has no AutomationId.
+WT008	low	TransitionsDemo/Slide7_MVVM.xaml:29	Button has no readable name.
+WT001	high	Trees.xaml:51	TreeView has no AutomationId.
+WT008	low	Trees.xaml:51	TreeView has no readable name.
+WT001	high	Trees.xaml:151	TreeView has no AutomationId.
+WT005	medium	Trees.xaml:151	Rows in TreeView have no unique ID.
+WT008	low	Trees.xaml:151	TreeView has no readable name.
+WT001	high	Trees.xaml:186	Button has no AutomationId.
+WT008	low	Trees.xaml:186	Button has no readable name.
+WT001	high	Trees.xaml:195	Button has no AutomationId.
+WT008	low	Trees.xaml:195	Button has no readable name.
+WT001	high	Trees.xaml:218	materialDesign:TreeListView has no AutomationId.
+WT005	medium	Trees.xaml:218	Rows in materialDesign:TreeListView have no unique ID.
+WT008	low	Trees.xaml:218	materialDesign:TreeListView has no readable name.
+WT001	high	Trees.xaml:254	Button "{materialDesign:PackIcon Kind=Add}" has no AutomationId.
+WT001	high	Trees.xaml:258	Button "{materialDesign:PackIcon Kind=Remove}" has no AutomationId.
+WT001	high	Trees.xaml:277	materialDesign:TreeListView has no AutomationId.
+WT005	medium	Trees.xaml:277	Rows in materialDesign:TreeListView have no unique ID.
+WT008	low	Trees.xaml:277	materialDesign:TreeListView has no readable name.
+WT001	high	Trees.xaml:338	Button "{materialDesign:PackIcon Kind=Add}" has no AutomationId.
+WT001	high	Trees.xaml:342	Button "{materialDesign:PackIcon Kind=Remove}" has no AutomationId.
+WT001	high	Trees.xaml:356	TreeView has no AutomationId.
+WT008	low	Trees.xaml:356	TreeView has no readable name.
+WT001	high	Trees.xaml:407	TreeView has no AutomationId.
+WT008	low	Trees.xaml:407	TreeView has no readable name.
+WT001	high	Trees.xaml:417	Button "{materialDesign:PackIcon Kind=Search}" has no AutomationId.
+WT001	high	Trees.xaml:457	TreeView has no AutomationId.
+WT008	low	Trees.xaml:457	TreeView has no readable name.
+WT001	high	Trees.xaml:477	Button "{materialDesign:PackIcon Kind=Search}" has no AutomationId.
+WT001	high	Typography.xaml:19	ComboBox has no AutomationId.
+WT005	medium	Typography.xaml:19	Rows in ComboBox have no unique ID.
+WT008	low	Typography.xaml:19	ComboBox has no readable name.
+WT001	high	Typography.xaml:71	Hyperlink "Light 96sp (Disabled)" has no AutomationId.
+WT001	high	Typography.xaml:108	Hyperlink "Light 60sp" has no AutomationId.
+WT001	high	Typography.xaml:145	Hyperlink "Regular 48sp" has no AutomationId.
+WT001	high	Typography.xaml:182	Hyperlink "Regular 34sp" has no AutomationId.
+WT001	high	Typography.xaml:219	Hyperlink "Regular 24sp (Disabled)" has no AutomationId.
+WT001	high	Typography.xaml:256	Hyperlink "Medium 20sp (Disabled)" has no AutomationId.
+WT001	high	Typography.xaml:293	Hyperlink "Regular 16sp" has no AutomationId.
+WT001	high	Typography.xaml:330	Hyperlink "Medium 14sp" has no AutomationId.
+WT001	high	Typography.xaml:367	Hyperlink "Regular 16sp (Disabled)" has no AutomationId.
+WT001	high	Typography.xaml:404	Hyperlink "Regular 14sp" has no AutomationId.
+WT001	high	Typography.xaml:441	Hyperlink "Regular 12sp" has no AutomationId.
+WT001	high	Typography.xaml:478	Hyperlink "REGULAR (ALL CAPS) 10sp" has no AutomationId.

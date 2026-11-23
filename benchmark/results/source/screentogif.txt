@@ -1,0 +1,1417 @@
+# ScreenToGif @ a4d0a67c21, scan path: ScreenToGif
+score 69  grade C  elements 1716  controls 1091  screens 61
+check coverage      51.1%  557 of 1091 controls have an AutomationId.
+check quality         70%  557 borrowed from x:Name.
+check uniqueness    95.7%  0 ID(s) used more than once; 0 of 34 data lists have identifiable rows.
+check stability      n/a%  Not measured. Run again with --baseline <previous report.json> to compare.
+check visibility    83.2%  185 invisible control(s), 0 opaque area(s).
+check names         53.4%  490 of 918 controls have a readable name.
+problems WT001=362  WT002=557  WT005=34  WT006=13  WT007=13  WT008=428
+
+WT006	medium	Controls/AdornerControl.cs:13	AdornedControl derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	high	Controls/ColorBox.cs:8	ColorBox derives from ButtonBase and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 48 time(s) in XAML.
+WT006	high	Controls/DisplayTimer.cs:9	DisplayTimer derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 1 time(s) in XAML.
+WT006	high	Controls/DrawingCanvas.cs:17	DrawingCanvas derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 1 time(s) in XAML.
+WT006	medium	Controls/FrameViewer.cs:11	FrameViewer derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	high	Controls/KeyBox.cs:10	KeyBox derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 13 time(s) in XAML.
+WT006	high	Controls/LabelSeparator.cs:6	LabelSeparator derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 85 time(s) in XAML.
+WT006	high	Controls/MoveResizeControl.cs:10	MoveResizeControl derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 2 time(s) in XAML.
+WT006	high	Controls/RangeSlider.cs:12	RangeSlider derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 2 time(s) in XAML.
+WT006	high	Controls/SelectControl.cs:21	SelectControl derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 1 time(s) in XAML.
+WT006	high	Controls/SelectControlOld.cs:23	SelectControlOld derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 1 time(s) in XAML.
+WT006	high	Controls/StatusBand.cs:13	StatusBand derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 17 time(s) in XAML.
+WT006	high	Controls/ZoomBox.cs:20	ZoomBox derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 1 time(s) in XAML.
+WT002	low	UserControls/BorderPanel.xaml:55	n:IntegerUpDown [BorderTopThicknessNumericUpDown] gets its ID "BorderTopThicknessNumericUpDown" from x:Name.
+WT008	low	UserControls/BorderPanel.xaml:55	n:IntegerUpDown [BorderTopThicknessNumericUpDown] has no readable name.
+WT002	low	UserControls/BorderPanel.xaml:60	n:IntegerUpDown [BorderLeftThicknessNumericUpDown] gets its ID "BorderLeftThicknessNumericUpDown" from x:Name.
+WT008	low	UserControls/BorderPanel.xaml:60	n:IntegerUpDown [BorderLeftThicknessNumericUpDown] has no readable name.
+WT002	low	UserControls/BorderPanel.xaml:64	n:IntegerUpDown [BorderRightThicknessNumericUpDown] gets its ID "BorderRightThicknessNumericUpDown" from x:Name.
+WT008	low	UserControls/BorderPanel.xaml:64	n:IntegerUpDown [BorderRightThicknessNumericUpDown] has no readable name.
+WT002	low	UserControls/BorderPanel.xaml:74	n:IntegerUpDown [BorderBottomThicknessNumericUpDown] gets its ID "BorderBottomThicknessNumericUpDown" from x:Name.
+WT008	low	UserControls/BorderPanel.xaml:74	n:IntegerUpDown [BorderBottomThicknessNumericUpDown] has no readable name.
+WT002	low	UserControls/DelayPanel.xaml:30	ComboBox [TypeComboBox] gets its ID "TypeComboBox" from x:Name.
+WT008	low	UserControls/DelayPanel.xaml:30	ComboBox [TypeComboBox] has no readable name.
+WT002	low	UserControls/DelayPanel.xaml:39	n:IntegerUpDown [NewDelayIntegerUpDown] gets its ID "NewDelayIntegerUpDown" from x:Name.
+WT008	low	UserControls/DelayPanel.xaml:39	n:IntegerUpDown [NewDelayIntegerUpDown] has no readable name.
+WT002	low	UserControls/DelayPanel.xaml:45	n:IntegerUpDown [IncreaseDecreaseDelayIntegerUpDown] gets its ID "IncreaseDecreaseDelayIntegerUpDown" from x:Name.
+WT008	low	UserControls/DelayPanel.xaml:45	n:IntegerUpDown [IncreaseDecreaseDelayIntegerUpDown] has no readable name.
+WT002	low	UserControls/DelayPanel.xaml:51	n:DoubleUpDown [ScalePercentageDoubleUpDown] gets its ID "ScalePercentageDoubleUpDown" from x:Name.
+WT008	low	UserControls/DelayPanel.xaml:51	n:DoubleUpDown [ScalePercentageDoubleUpDown] has no readable name.
+WT001	high	UserControls/ExportPanel.xaml:87	Expander "{DynamicResource S.SaveAs.Type}" has no AutomationId.
+WT002	low	UserControls/ExportPanel.xaml:95	ComboBox [TypeComboBox] gets its ID "TypeComboBox" from x:Name.
+WT005	medium	UserControls/ExportPanel.xaml:95	Rows in ComboBox [TypeComboBox] have no unique ID.
+WT008	low	UserControls/ExportPanel.xaml:95	ComboBox [TypeComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:111	ComboBox [PresetComboBox] gets its ID "PresetComboBox" from x:Name.
+WT005	medium	UserControls/ExportPanel.xaml:111	Rows in ComboBox [PresetComboBox] have no unique ID.
+WT008	low	UserControls/ExportPanel.xaml:111	ComboBox [PresetComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:129	n:ExtendedButton [AddPresetButton] gets its ID "AddPresetButton" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:129	n:ExtendedButton [AddPresetButton] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:132	n:ExtendedButton [SavePresetButton] gets its ID "SavePresetButton" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:132	n:ExtendedButton [SavePresetButton] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:136	n:ExtendedButton [EditPresetButton] gets its ID "EditPresetButton" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:136	n:ExtendedButton [EditPresetButton] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:139	n:ExtendedButton [RemovePresetButton] gets its ID "RemovePresetButton" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:139	n:ExtendedButton [RemovePresetButton] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:143	n:ExtendedButton [ResetPresetButton] gets its ID "ResetPresetButton" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:143	n:ExtendedButton [ResetPresetButton] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:151	Expander "{DynamicResource S.SaveAs.Encoder}" gets its ID "EncoderExpander" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:158	ComboBox [EncoderComboBox] gets its ID "EncoderComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:158	ComboBox [EncoderComboBox] has no readable name.
+WT007	medium	UserControls/ExportPanel.xaml:170	i:GenericItem [EncoderScreenToGifItem] has the ID "EncoderScreenToGifItem", but this element type isn't visible to UI Automation.
+WT007	medium	UserControls/ExportPanel.xaml:173	i:GenericItem [EncoderKGySoftItem] has the ID "EncoderKGySoftItem", but this element type isn't visible to UI Automation.
+WT007	medium	UserControls/ExportPanel.xaml:176	i:GenericItem [EncoderFfmpegItem] has the ID "EncoderFfmpegItem", but this element type isn't visible to UI Automation.
+WT007	medium	UserControls/ExportPanel.xaml:179	i:GenericItem [EncoderGifskiItem] has the ID "EncoderGifskiItem", but this element type isn't visible to UI Automation.
+WT007	medium	UserControls/ExportPanel.xaml:182	i:GenericItem [EncoderSystemItem] has the ID "EncoderSystemItem", but this element type isn't visible to UI Automation.
+WT002	low	UserControls/ExportPanel.xaml:186	ComboBox [QuantizerComboBox] gets its ID "QuantizerComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:186	ComboBox [QuantizerComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:208	Expander "{DynamicResource S.SaveAs.Encoder.Optio…" gets its ID "EncoderOptionsExpander" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:222	n:ExtendedCheckBox "{DynamicResource S.SaveAs.ApngOptions.L…" gets its ID "ApngLoopedCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:235	n:ExtendedCheckBox "{DynamicResource S.SaveAs.GifOptions.Re…" gets its ID "ApngRepeatForeverCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:238	n:IntegerUpDown [RepeatCountApngIntegerUpDown] gets its ID "RepeatCountApngIntegerUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:238	n:IntegerUpDown [RepeatCountApngIntegerUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:244	n:ExtendedCheckBox "{DynamicResource S.SaveAs.ApngOptions.D…" gets its ID "ApngDetectCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:247	n:ExtendedCheckBox "{DynamicResource S.SaveAs.ApngOptions.P…" gets its ID "ApngPaintTransparentCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:265	ComboBox [FfmpegApngModeComboBox] gets its ID "FfmpegApngModeComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:265	ComboBox [FfmpegApngModeComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:283	n:ExtendedTextBox [FfmpegApngParameterTextBox] gets its ID "FfmpegApngParameterTextBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:283	n:ExtendedTextBox [FfmpegApngParameterTextBox] has no readable name.
+WT001	high	UserControls/ExportPanel.xaml:287	Hyperlink "{DynamicResource S.SaveAs.Ffmpeg.Previe…" has no AutomationId.
+WT001	high	UserControls/ExportPanel.xaml:291	Hyperlink "{DynamicResource S.SaveAs.Ffmpeg.Help.F…" has no AutomationId.
+WT002	low	UserControls/ExportPanel.xaml:315	ComboBox [FfmpegApngPreditionComboBox] gets its ID "FfmpegApngPreditionComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:315	ComboBox [FfmpegApngPreditionComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:323	n:ExtendedButton [PredictionHelpButton] gets its ID "PredictionHelpButton" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:323	n:ExtendedButton [PredictionHelpButton] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:328	ComboBox [FfmpegApngPixelFormatComboBox] gets its ID "FfmpegApngPixelFormatComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:328	ComboBox [FfmpegApngPixelFormatComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:344	ComboBox [FfmpegApngFramerateComboBox] gets its ID "FfmpegApngFramerateComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:344	ComboBox [FfmpegApngFramerateComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:353	n:DoubleUpDown [FfmpegApngFramerateIntegerUpDown] gets its ID "FfmpegApngFramerateIntegerUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:353	n:DoubleUpDown [FfmpegApngFramerateIntegerUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:359	n:ExtendedCheckBox "{DynamicResource S.SaveAs.ApngOptions.L…" gets its ID "FfmpegApngLoopedCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:372	n:ExtendedCheckBox "{DynamicResource S.SaveAs.GifOptions.Re…" gets its ID "FfmpegApngRepeatForeverCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:375	n:IntegerUpDown [FfmpegRepeatCountApngIntegerUpDown] gets its ID "FfmpegRepeatCountApngIntegerUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:375	n:IntegerUpDown [FfmpegRepeatCountApngIntegerUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:406	Slider [SamplingFactorSlider] gets its ID "SamplingFactorSlider" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:406	Slider [SamplingFactorSlider] has no readable name.
+WT001	high	UserControls/ExportPanel.xaml:433	n:IntegerUpDown has no AutomationId.
+WT008	low	UserControls/ExportPanel.xaml:433	n:IntegerUpDown has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:437	n:ExtendedCheckBox "{DynamicResource S.SaveAs.GifOptions.Gl…" gets its ID "GlobalColorTableCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:448	n:ExtendedCheckBox "{DynamicResource S.SaveAs.GifOptions.Lo…" gets its ID "LoopedCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:460	n:ExtendedCheckBox "{DynamicResource S.SaveAs.GifOptions.Re…" gets its ID "RepeatForeverCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:463	n:IntegerUpDown [RepeatCountNumericUpDown] gets its ID "RepeatCountNumericUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:463	n:IntegerUpDown [RepeatCountNumericUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:470	n:ExtendedCheckBox "{DynamicResource S.SaveAs.GifOptions.Tr…" gets its ID "EnableTransparencyCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:484	n:ExtendedCheckBox "{DynamicResource S.SaveAs.GifOptions.Tr…" gets its ID "SelectTransparentColorCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:495	n:ExtendedCheckBox "{DynamicResource S.SaveAs.GifOptions.De…" gets its ID "DetectCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:510	n:ExtendedCheckBox "{DynamicResource S.SaveAs.GifOptions.Pa…" gets its ID "PaintWithChromaCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:538	ComboBox [FfmpegGifModeComboBox] gets its ID "FfmpegGifModeComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:538	ComboBox [FfmpegGifModeComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:557	n:ExtendedTextBox [FfmpegGifParameterTextBox] gets its ID "FfmpegGifParameterTextBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:557	n:ExtendedTextBox [FfmpegGifParameterTextBox] has no readable name.
+WT001	high	UserControls/ExportPanel.xaml:561	Hyperlink "{DynamicResource S.SaveAs.Ffmpeg.Previe…" has no AutomationId.
+WT001	high	UserControls/ExportPanel.xaml:565	Hyperlink "{DynamicResource S.SaveAs.Ffmpeg.Help.F…" has no AutomationId.
+WT001	high	UserControls/ExportPanel.xaml:569	Hyperlink "{DynamicResource S.SaveAs.Ffmpeg.Help.F…" has no AutomationId.
+WT002	low	UserControls/ExportPanel.xaml:595	ComboBox [FfmpegGifDitherComboBox] gets its ID "FfmpegGifDitherComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:595	ComboBox [FfmpegGifDitherComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:606	n:IntegerUpDown [BayerScaleUpDown] gets its ID "BayerScaleUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:606	n:IntegerUpDown [BayerScaleUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:612	ComboBox [FfmpegGifPixelFormatComboBox] gets its ID "FfmpegGifPixelFormatComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:612	ComboBox [FfmpegGifPixelFormatComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:624	ComboBox [FfmpegGifVsyncComboBox] gets its ID "FfmpegGifVsyncComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:624	ComboBox [FfmpegGifVsyncComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:636	ComboBox [FfmpegGifFramerateComboBox] gets its ID "FfmpegGifFramerateComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:636	ComboBox [FfmpegGifFramerateComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:645	n:DoubleUpDown [FfmpegGifFramerateIntegerUpDown] gets its ID "FfmpegGifFramerateIntegerUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:645	n:DoubleUpDown [FfmpegGifFramerateIntegerUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:651	n:ExtendedCheckBox "{DynamicResource S.SaveAs.GifOptions.Gl…" gets its ID "FfmpegGifGlobalColorTableCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:654	n:ExtendedCheckBox "{DynamicResource S.SaveAs.GifOptions.Lo…" gets its ID "FfmpegGifLoopedCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:667	n:ExtendedCheckBox "{DynamicResource S.SaveAs.GifOptions.Re…" gets its ID "FfmpegGifRepeatForeverCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:670	n:IntegerUpDown [FfmpegRepeatCountGifIntegerUpDown] gets its ID "FfmpegRepeatCountGifIntegerUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:670	n:IntegerUpDown [FfmpegRepeatCountGifIntegerUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:694	Slider [GifskiQualitySlider] gets its ID "GifskiQualitySlider" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:694	Slider [GifskiQualitySlider] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:718	n:ExtendedCheckBox "{DynamicResource S.SaveAs.GifOptions.Gi…" gets its ID "GifskiFastCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:722	n:ExtendedCheckBox "{DynamicResource S.SaveAs.GifOptions.Re…" gets its ID "GifskiRepeatForeverCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:733	n:ExtendedCheckBox "{DynamicResource S.SaveAs.GifOptions.Lo…" gets its ID "SystemGifLoopedCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:746	n:ExtendedCheckBox "{DynamicResource S.SaveAs.GifOptions.Re…" gets its ID "SystemGifRepeatForeverCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:749	n:IntegerUpDown [SystemGifRepeatCountNumericUpDown] gets its ID "SystemGifRepeatCountNumericUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:749	n:IntegerUpDown [SystemGifRepeatCountNumericUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:771	ComboBox [FfmpegWebpModeComboBox] gets its ID "FfmpegWebpModeComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:771	ComboBox [FfmpegWebpModeComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:789	n:ExtendedTextBox [FfmpegWebpParameterTextBox] gets its ID "FfmpegWebpParameterTextBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:789	n:ExtendedTextBox [FfmpegWebpParameterTextBox] has no readable name.
+WT001	high	UserControls/ExportPanel.xaml:793	Hyperlink "{DynamicResource S.SaveAs.Ffmpeg.Previe…" has no AutomationId.
+WT001	high	UserControls/ExportPanel.xaml:797	Hyperlink "{DynamicResource S.SaveAs.Ffmpeg.Help.F…" has no AutomationId.
+WT001	high	UserControls/ExportPanel.xaml:801	Hyperlink "{DynamicResource S.SaveAs.Ffmpeg.Help.F…" has no AutomationId.
+WT002	low	UserControls/ExportPanel.xaml:829	ComboBox [FfmpegWebpPresetComboBox] gets its ID "FfmpegWebpPresetComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:829	ComboBox [FfmpegWebpPresetComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:841	ComboBox [FfmpegWebpPixelFormatComboBox] gets its ID "FfmpegWebpPixelFormatComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:841	ComboBox [FfmpegWebpPixelFormatComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:850	ComboBox [FfmpegWebpVsyncComboBox] gets its ID "FfmpegWebpVsyncComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:850	ComboBox [FfmpegWebpVsyncComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:862	ComboBox [FfmpegWebpFramerateComboBox] gets its ID "FfmpegWebpFramerateComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:862	ComboBox [FfmpegWebpFramerateComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:871	n:DoubleUpDown [FfmpegWebpFramerateIntegerUpDown] gets its ID "FfmpegWebpFramerateIntegerUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:871	n:DoubleUpDown [FfmpegWebpFramerateIntegerUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:880	Slider [WebpQualitySlider] gets its ID "WebpQualitySlider" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:880	Slider [WebpQualitySlider] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:904	n:ExtendedCheckBox "{DynamicResource S.SaveAs.WebpOptions.L…" gets its ID "FfmpegWebpLosslessCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:908	n:ExtendedCheckBox "{DynamicResource S.SaveAs.GifOptions.Lo…" gets its ID "FfmpegWebpLoopedCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:921	n:ExtendedCheckBox "{DynamicResource S.SaveAs.GifOptions.Re…" gets its ID "FfmpegWebpRepeatForeverCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:924	n:IntegerUpDown [FfmpegRepeatCountWebpIntegerUpDown] gets its ID "FfmpegRepeatCountWebpIntegerUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:924	n:IntegerUpDown [FfmpegRepeatCountWebpIntegerUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:947	ComboBox [FfmpegAvifModeComboBox] gets its ID "FfmpegAvifModeComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:947	ComboBox [FfmpegAvifModeComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:965	n:ExtendedTextBox [FfmpegAvifParameterTextBox] gets its ID "FfmpegAvifParameterTextBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:965	n:ExtendedTextBox [FfmpegAvifParameterTextBox] has no readable name.
+WT001	high	UserControls/ExportPanel.xaml:969	Hyperlink "{DynamicResource S.SaveAs.Ffmpeg.Previe…" has no AutomationId.
+WT001	high	UserControls/ExportPanel.xaml:973	Hyperlink "{DynamicResource S.SaveAs.Ffmpeg.Help.F…" has no AutomationId.
+WT001	high	UserControls/ExportPanel.xaml:977	Hyperlink "{DynamicResource S.SaveAs.Ffmpeg.Help.F…" has no AutomationId.
+WT002	low	UserControls/ExportPanel.xaml:1006	ComboBox [FfmpegAvifCodecComboBox] gets its ID "FfmpegAvifCodecComboBox" from x:Name.
+WT005	medium	UserControls/ExportPanel.xaml:1006	Rows in ComboBox [FfmpegAvifCodecComboBox] have no unique ID.
+WT008	low	UserControls/ExportPanel.xaml:1006	ComboBox [FfmpegAvifCodecComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1012	ComboBox [FfmpegAvifAccelerationComboBox] gets its ID "FfmpegAvifAccelerationComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1012	ComboBox [FfmpegAvifAccelerationComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1024	ComboBox [FfmpegAvifPixelFormatComboBox] gets its ID "FfmpegAvifPixelFormatComboBox" from x:Name.
+WT005	medium	UserControls/ExportPanel.xaml:1024	Rows in ComboBox [FfmpegAvifPixelFormatComboBox] have no unique ID.
+WT008	low	UserControls/ExportPanel.xaml:1024	ComboBox [FfmpegAvifPixelFormatComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1028	ComboBox [FfmpegAvifVsyncComboBox] gets its ID "FfmpegAvifVsyncComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1028	ComboBox [FfmpegAvifVsyncComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1040	ComboBox [FfmpegAvifFramerateComboBox] gets its ID "FfmpegAvifFramerateComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1040	ComboBox [FfmpegAvifFramerateComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1049	n:DoubleUpDown [FfmpegAvifFramerateIntegerUpDown] gets its ID "FfmpegAvifFramerateIntegerUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1049	n:DoubleUpDown [FfmpegAvifFramerateIntegerUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1058	Slider [AvifQualitySlider] gets its ID "AvifQualitySlider" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1058	Slider [AvifQualitySlider] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1082	n:ExtendedCheckBox "{DynamicResource S.SaveAs.GifOptions.Lo…" gets its ID "FfmpegAvifLoopedCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:1095	n:ExtendedCheckBox "{DynamicResource S.SaveAs.GifOptions.Re…" gets its ID "FfmpegAvifRepeatForeverCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:1098	n:IntegerUpDown [FfmpegRepeatCountAvifIntegerUpDown] gets its ID "FfmpegRepeatCountAvifIntegerUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1098	n:IntegerUpDown [FfmpegRepeatCountAvifIntegerUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1121	ComboBox [FfmpegVideoModeComboBox] gets its ID "FfmpegVideoModeComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1121	ComboBox [FfmpegVideoModeComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1141	n:ExtendedTextBox [FfmpegVideoParameterTextBox] gets its ID "FfmpegVideoParameterTextBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1141	n:ExtendedTextBox [FfmpegVideoParameterTextBox] has no readable name.
+WT001	high	UserControls/ExportPanel.xaml:1145	Hyperlink "{DynamicResource S.SaveAs.Ffmpeg.Previe…" has no AutomationId.
+WT001	high	UserControls/ExportPanel.xaml:1149	Hyperlink "{DynamicResource S.SaveAs.Ffmpeg.Help.F…" has no AutomationId.
+WT001	high	UserControls/ExportPanel.xaml:1153	Hyperlink "{DynamicResource S.SaveAs.Ffmpeg.Help.F…" has no AutomationId.
+WT002	low	UserControls/ExportPanel.xaml:1195	ComboBox [FfmpegCodecComboBox] gets its ID "FfmpegCodecComboBox" from x:Name.
+WT005	medium	UserControls/ExportPanel.xaml:1195	Rows in ComboBox [FfmpegCodecComboBox] have no unique ID.
+WT008	low	UserControls/ExportPanel.xaml:1195	ComboBox [FfmpegCodecComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1201	ComboBox [FfmpegVideoPresetComboBox] gets its ID "FfmpegVideoPresetComboBox" from x:Name.
+WT005	medium	UserControls/ExportPanel.xaml:1201	Rows in ComboBox [FfmpegVideoPresetComboBox] have no unique ID.
+WT008	low	UserControls/ExportPanel.xaml:1201	ComboBox [FfmpegVideoPresetComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1208	ComboBox [FfmpegAccelerationComboBox] gets its ID "FfmpegAccelerationComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1208	ComboBox [FfmpegAccelerationComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1218	ComboBox [FfmpegPixelFormatComboBox] gets its ID "FfmpegPixelFormatComboBox" from x:Name.
+WT005	medium	UserControls/ExportPanel.xaml:1218	Rows in ComboBox [FfmpegPixelFormatComboBox] have no unique ID.
+WT008	low	UserControls/ExportPanel.xaml:1218	ComboBox [FfmpegPixelFormatComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1224	ComboBox [FfmpegVsyncComboBox] gets its ID "FfmpegVsyncComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1224	ComboBox [FfmpegVsyncComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1237	ComboBox [FfmpegFramerateComboBox] gets its ID "FfmpegFramerateComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1237	ComboBox [FfmpegFramerateComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1247	n:DecimalUpDown [FfmpegFramerateDoubleUpDown] gets its ID "FfmpegFramerateDoubleUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1247	n:DecimalUpDown [FfmpegFramerateDoubleUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1255	n:IntegerUpDown [FfmpegPassIntegerUpDown] gets its ID "FfmpegPassIntegerUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1255	n:IntegerUpDown [FfmpegPassIntegerUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1261	n:NullableIntegerUpDown [FfmpegCrfDecimalUpDown] gets its ID "FfmpegCrfDecimalUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1261	n:NullableIntegerUpDown [FfmpegCrfDecimalUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1269	ComboBox [FfmpegBitrateComboBox] gets its ID "FfmpegBitrateComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1269	ComboBox [FfmpegBitrateComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1278	n:IntegerUpDown [FfmpegQualityLevelIntegerUpDown] gets its ID "FfmpegQualityLevelIntegerUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1278	n:IntegerUpDown [FfmpegQualityLevelIntegerUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1285	n:DecimalUpDown [FfmpegBitrateDecimalUpDown] gets its ID "FfmpegBitrateDecimalUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1285	n:DecimalUpDown [FfmpegBitrateDecimalUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1288	ComboBox [FfmpegBitrateUnitComboBox] gets its ID "FfmpegBitrateUnitComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1288	ComboBox [FfmpegBitrateUnitComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1298	n:DecimalUpDown [FfmpegMinBitrateDecimalUpDown] gets its ID "FfmpegMinBitrateDecimalUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1298	n:DecimalUpDown [FfmpegMinBitrateDecimalUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1301	ComboBox [FfmpegMinBitrateUnitComboBox] gets its ID "FfmpegMinBitrateUnitComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1301	ComboBox [FfmpegMinBitrateUnitComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1310	n:DecimalUpDown [FfmpegMaxBitrateDecimalUpDown] gets its ID "FfmpegMaxBitrateDecimalUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1310	n:DecimalUpDown [FfmpegMaxBitrateDecimalUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1313	ComboBox [FfmpegMaxBitrateUnitComboBox] gets its ID "FfmpegMaxBitrateUnitComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1313	ComboBox [FfmpegMaxBitrateUnitComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1322	n:DecimalUpDown [FfmpegBufferBitrateDecimalUpDown] gets its ID "FfmpegBufferBitrateDecimalUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1322	n:DecimalUpDown [FfmpegBufferBitrateDecimalUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1325	ComboBox [FfmpegBufferBitrateUnitComboBox] gets its ID "FfmpegBufferBitrateUnitComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1325	ComboBox [FfmpegBufferBitrateUnitComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1336	n:ExtendedCheckBox "{DynamicResource S.SaveAs.ImageOptions.…" gets its ID "ImagesZipCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:1348	ComboBox [ProjectCompressionComboBox] gets its ID "ProjectCompressionComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1348	ComboBox [ProjectCompressionComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1358	n:ExtendedCheckBox "{DynamicResource S.SaveAs.PsdOptions.Co…" gets its ID "PsdCompressImageCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:1364	Expander "{DynamicResource S.SaveAs.SaveOptions}" gets its ID "SaveOptionsExpander" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:1377	n:ExtendedCheckBox "{DynamicResource S.SaveAs.SaveOptions.P…" gets its ID "PartialExportCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:1380	n:ExtendedCheckBox "{DynamicResource S.SaveAs.SaveOptions.P…" gets its ID "SaveFileCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:1394	n:ExtendedRadioButton "{DynamicResource S.SaveAs.SaveOptions.O…" gets its ID "OverwriteWarnRadioButton" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:1398	n:ExtendedRadioButton "{DynamicResource S.SaveAs.SaveOptions.O…" gets its ID "OverwritePromptRadioButton" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:1402	n:ExtendedRadioButton "{DynamicResource S.SaveAs.SaveOptions.O…" gets its ID "OverwriteAllowRadioButton" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:1408	n:ExtendedCheckBox "{DynamicResource S.SaveAs.SaveOptions.P…" gets its ID "SaveAsProjectTooCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:1412	n:ExtendedCheckBox "{DynamicResource S.SaveAs.SaveOptions.U…" gets its ID "UploadFileCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:1415	n:ExtendedCheckBox "{DynamicResource S.SaveAs.SaveOptions.C…" gets its ID "CopyFileCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:1419	n:ExtendedRadioButton "{DynamicResource S.SaveAs.SaveOptions.C…" gets its ID "CopyFileRadioButton" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:1423	n:ExtendedRadioButton "{DynamicResource S.SaveAs.SaveOptions.C…" gets its ID "CopyFolderPathRadioButton" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:1427	n:ExtendedRadioButton "{DynamicResource S.SaveAs.SaveOptions.C…" gets its ID "CopyFilePathRadioButton" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:1431	n:ExtendedRadioButton "{DynamicResource S.SaveAs.SaveOptions.C…" gets its ID "CopyLinkRadioButton" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:1437	n:ExtendedCheckBox "{DynamicResource S.SaveAs.SaveOptions.E…" gets its ID "CustomCommandsCheckBox" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:1440	n:ExtendedTextBox [CustomCommandsTextBox] gets its ID "CustomCommandsTextBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1440	n:ExtendedTextBox [CustomCommandsTextBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1447	Expander "{DynamicResource S.SaveAs.Partial}" gets its ID "PartialExportExpander" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:1455	ComboBox [PartialExportComboBox] gets its ID "PartialExportComboBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1455	ComboBox [PartialExportComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1493	n:IntegerUpDown [FrameRangeStartIntegerUpDown] gets its ID "FrameRangeStartIntegerUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1493	n:IntegerUpDown [FrameRangeStartIntegerUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1497	n:IntegerUpDown [FrameRangeEndIntegerUpDown] gets its ID "FrameRangeEndIntegerUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1497	n:IntegerUpDown [FrameRangeEndIntegerUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1515	n:TimeBox [TimeRangeStartIntegerUpDown] gets its ID "TimeRangeStartIntegerUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1515	n:TimeBox [TimeRangeStartIntegerUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1519	n:TimeBox [TimeRangeEndIntegerUpDown] gets its ID "TimeRangeEndIntegerUpDown" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1519	n:TimeBox [TimeRangeEndIntegerUpDown] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1530	n:ExtendedTextBox [FrameRangeTextBox] gets its ID "FrameRangeTextBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1530	n:ExtendedTextBox [FrameRangeTextBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1536	Expander "{DynamicResource S.SaveAs.File}" gets its ID "OutputExpander" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:1552	n:ExtendedTextBox [FolderTextBox] gets its ID "FolderTextBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1552	n:ExtendedTextBox [FolderTextBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1556	n:ExtendedButton [ChooseLocatioButton] gets its ID "ChooseLocatioButton" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1556	n:ExtendedButton [ChooseLocatioButton] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1569	n:ExtendedTextBox [FilenameTextBox] gets its ID "FilenameTextBox" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1569	n:ExtendedTextBox [FilenameTextBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1573	ComboBox [ExtensionComboBox] gets its ID "ExtensionComboBox" from x:Name.
+WT005	medium	UserControls/ExportPanel.xaml:1573	Rows in ComboBox [ExtensionComboBox] have no unique ID.
+WT008	low	UserControls/ExportPanel.xaml:1573	ComboBox [ExtensionComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1576	n:ExtendedButton [IncreaseCountButton] gets its ID "IncreaseCountButton" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1576	n:ExtendedButton [IncreaseCountButton] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1579	n:ExtendedButton [DecreaseCountButton] gets its ID "DecreaseCountButton" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1579	n:ExtendedButton [DecreaseCountButton] has no readable name.
+WT001	high	UserControls/ExportPanel.xaml:1592	Hyperlink "{DynamicResource S.SaveAs.File.Exists}" has no AutomationId.
+WT002	low	UserControls/ExportPanel.xaml:1600	Expander "{DynamicResource S.SaveAs.Upload}" gets its ID "UploadExpander" from x:Name.
+WT002	low	UserControls/ExportPanel.xaml:1608	n:ExtendedComboBox [UploadPresetComboBox] gets its ID "UploadPresetComboBox" from x:Name.
+WT005	medium	UserControls/ExportPanel.xaml:1608	Rows in n:ExtendedComboBox [UploadPresetComboBox] have no unique ID.
+WT008	low	UserControls/ExportPanel.xaml:1608	n:ExtendedComboBox [UploadPresetComboBox] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1650	n:ExtendedButton [AddUploadPresetButton] gets its ID "AddUploadPresetButton" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1650	n:ExtendedButton [AddUploadPresetButton] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1653	n:ExtendedButton [EditUploadPresetButton] gets its ID "EditUploadPresetButton" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1653	n:ExtendedButton [EditUploadPresetButton] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1657	n:ExtendedButton [HistoryUploadPresetButton] gets its ID "HistoryUploadPresetButton" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1657	n:ExtendedButton [HistoryUploadPresetButton] has no readable name.
+WT002	low	UserControls/ExportPanel.xaml:1661	n:ExtendedButton [RemoveUploadPresetButton] gets its ID "RemoveUploadPresetButton" from x:Name.
+WT008	low	UserControls/ExportPanel.xaml:1661	n:ExtendedButton [RemoveUploadPresetButton] has no readable name.
+WT001	high	UserControls/ImgurPanel.xaml:21	Expander "{DynamicResource S.Options.Upload.Prese…" has no AutomationId.
+WT002	low	UserControls/ImgurPanel.xaml:34	n:ExtendedTextBox [NameTextBox] gets its ID "NameTextBox" from x:Name.
+WT008	low	UserControls/ImgurPanel.xaml:34	n:ExtendedTextBox [NameTextBox] has no readable name.
+WT001	high	UserControls/ImgurPanel.xaml:37	n:ExtendedTextBox has no AutomationId.
+WT008	low	UserControls/ImgurPanel.xaml:37	n:ExtendedTextBox has no readable name.
+WT001	high	UserControls/ImgurPanel.xaml:40	ComboBox has no AutomationId.
+WT008	low	UserControls/ImgurPanel.xaml:40	ComboBox has no readable name.
+WT001	high	UserControls/ImgurPanel.xaml:47	Expander "{DynamicResource S.Options.Upload.Prese…" has no AutomationId.
+WT001	high	UserControls/ImgurPanel.xaml:59	Hyperlink "{DynamicResource S.Options.Upload.Prese…" has no AutomationId.
+WT001	high	UserControls/ImgurPanel.xaml:66	n:ExtendedTextBox has no AutomationId.
+WT008	low	UserControls/ImgurPanel.xaml:66	n:ExtendedTextBox has no readable name.
+WT001	high	UserControls/ImgurPanel.xaml:71	n:ExtendedButton "{DynamicResource S.Options.Upload.Prese…" has no AutomationId.
+WT001	high	UserControls/ImgurPanel.xaml:79	Expander "{DynamicResource S.Options.Upload.Prese…" has no AutomationId.
+WT001	high	UserControls/ImgurPanel.xaml:87	n:ExtendedCheckBox "{DynamicResource S.Options.Upload.Prese…" has no AutomationId.
+WT001	high	UserControls/ImgurPanel.xaml:89	n:ExtendedCheckBox "{DynamicResource S.Options.Upload.Prese…" has no AutomationId.
+WT001	high	UserControls/ImgurPanel.xaml:91	n:ExtendedCheckBox "{DynamicResource S.Options.Upload.Prese…" has no AutomationId.
+WT001	high	UserControls/ImgurPanel.xaml:97	Expander "{DynamicResource S.Options.Upload.Prese…" has no AutomationId.
+WT002	low	UserControls/ImgurPanel.xaml:111	ComboBox [AlbumComboBox] gets its ID "AlbumComboBox" from x:Name.
+WT005	medium	UserControls/ImgurPanel.xaml:111	Rows in ComboBox [AlbumComboBox] have no unique ID.
+WT008	low	UserControls/ImgurPanel.xaml:111	ComboBox [AlbumComboBox] has no readable name.
+WT001	high	UserControls/ImgurPanel.xaml:135	n:ExtendedButton has no AutomationId.
+WT008	low	UserControls/ImgurPanel.xaml:135	n:ExtendedButton has no readable name.
+WT001	high	UserControls/KeyStrokesPanel.xaml:37	Expander "{DynamicResource S.KeyStrokes.Keys}" has no AutomationId.
+WT001	high	UserControls/KeyStrokesPanel.xaml:56	n:ExtendedCheckBox "{DynamicResource S.KeyStrokes.IgnoreMod…" has no AutomationId.
+WT001	high	UserControls/KeyStrokesPanel.xaml:60	n:ExtendedCheckBox "{DynamicResource S.KeyStrokes.IgnoreInj…" has no AutomationId.
+WT001	high	UserControls/KeyStrokesPanel.xaml:64	n:ExtendedCheckBox "{DynamicResource S.KeyStrokes.Translate}" has no AutomationId.
+WT001	high	UserControls/KeyStrokesPanel.xaml:68	n:ExtendedCheckBox "{DynamicResource S.KeyStrokes.Extend}" has no AutomationId.
+WT001	high	UserControls/KeyStrokesPanel.xaml:74	n:IntegerUpDown has no AutomationId.
+WT008	low	UserControls/KeyStrokesPanel.xaml:74	n:IntegerUpDown has no readable name.
+WT001	high	UserControls/KeyStrokesPanel.xaml:77	n:ExtendedCheckBox "{DynamicResource S.KeyStrokes.Earlier}" has no AutomationId.
+WT001	high	UserControls/KeyStrokesPanel.xaml:83	n:IntegerUpDown has no AutomationId.
+WT008	low	UserControls/KeyStrokesPanel.xaml:83	n:IntegerUpDown has no readable name.
+WT001	high	UserControls/KeyStrokesPanel.xaml:87	n:ExtendedTextBox has no AutomationId.
+WT008	low	UserControls/KeyStrokesPanel.xaml:87	n:ExtendedTextBox has no readable name.
+WT001	high	UserControls/KeyStrokesPanel.xaml:91	Expander "{DynamicResource S.Caption.Font}" has no AutomationId.
+WT001	high	UserControls/KeyStrokesPanel.xaml:107	ComboBox has no AutomationId.
+WT005	medium	UserControls/KeyStrokesPanel.xaml:107	Rows in ComboBox have no unique ID.
+WT008	low	UserControls/KeyStrokesPanel.xaml:107	ComboBox has no readable name.
+WT001	high	UserControls/KeyStrokesPanel.xaml:121	ComboBox has no AutomationId.
+WT008	low	UserControls/KeyStrokesPanel.xaml:121	ComboBox has no readable name.
+WT001	high	UserControls/KeyStrokesPanel.xaml:137	ComboBox has no AutomationId.
+WT008	low	UserControls/KeyStrokesPanel.xaml:137	ComboBox has no readable name.
+WT001	high	UserControls/KeyStrokesPanel.xaml:166	n:IntegerUpDown has no AutomationId.
+WT008	low	UserControls/KeyStrokesPanel.xaml:166	n:IntegerUpDown has no readable name.
+WT001	high	UserControls/KeyStrokesPanel.xaml:174	Expander "{DynamicResource S.Caption.Outline}" has no AutomationId.
+WT001	high	UserControls/KeyStrokesPanel.xaml:188	n:IntegerUpDown has no AutomationId.
+WT008	low	UserControls/KeyStrokesPanel.xaml:188	n:IntegerUpDown has no readable name.
+WT001	high	UserControls/KeyStrokesPanel.xaml:199	Expander "{DynamicResource S.Caption.Layout}" has no AutomationId.
+WT001	high	UserControls/KeyStrokesPanel.xaml:214	ComboBox has no AutomationId.
+WT008	low	UserControls/KeyStrokesPanel.xaml:214	ComboBox has no readable name.
+WT001	high	UserControls/KeyStrokesPanel.xaml:224	ComboBox has no AutomationId.
+WT008	low	UserControls/KeyStrokesPanel.xaml:224	ComboBox has no readable name.
+WT001	high	UserControls/KeyStrokesPanel.xaml:234	n:IntegerUpDown has no AutomationId.
+WT008	low	UserControls/KeyStrokesPanel.xaml:234	n:IntegerUpDown has no readable name.
+WT001	high	UserControls/KeyStrokesPanel.xaml:238	n:IntegerUpDown has no AutomationId.
+WT008	low	UserControls/KeyStrokesPanel.xaml:238	n:IntegerUpDown has no readable name.
+WT001	high	UserControls/KeyStrokesPanel.xaml:242	n:IntegerUpDown has no AutomationId.
+WT008	low	UserControls/KeyStrokesPanel.xaml:242	n:IntegerUpDown has no readable name.
+WT002	low	UserControls/KGySoftGifOptionsPanel.xaml:18	ComboBox [QuantizersComboBox] gets its ID "QuantizersComboBox" from x:Name.
+WT005	medium	UserControls/KGySoftGifOptionsPanel.xaml:18	Rows in ComboBox [QuantizersComboBox] have no unique ID.
+WT008	low	UserControls/KGySoftGifOptionsPanel.xaml:18	ComboBox [QuantizersComboBox] has no readable name.
+WT001	high	UserControls/KGySoftGifOptionsPanel.xaml:47	Slider has no AutomationId.
+WT008	low	UserControls/KGySoftGifOptionsPanel.xaml:47	Slider has no readable name.
+WT001	high	UserControls/KGySoftGifOptionsPanel.xaml:55	Slider has no AutomationId.
+WT008	low	UserControls/KGySoftGifOptionsPanel.xaml:55	Slider has no readable name.
+WT001	high	UserControls/KGySoftGifOptionsPanel.xaml:60	c:ExtendedCheckBox "{DynamicResource S.SaveAs.KGySoft.Quant…" has no AutomationId.
+WT001	high	UserControls/KGySoftGifOptionsPanel.xaml:68	c:IntegerUpDown has no AutomationId.
+WT008	low	UserControls/KGySoftGifOptionsPanel.xaml:68	c:IntegerUpDown has no readable name.
+WT001	high	UserControls/KGySoftGifOptionsPanel.xaml:73	c:ExtendedCheckBox "{DynamicResource S.SaveAs.KGySoft.Quant…" has no AutomationId.
+WT001	high	UserControls/KGySoftGifOptionsPanel.xaml:76	Slider has no AutomationId.
+WT008	low	UserControls/KGySoftGifOptionsPanel.xaml:76	Slider has no readable name.
+WT001	high	UserControls/KGySoftGifOptionsPanel.xaml:88	c:ExtendedCheckBox "{DynamicResource S.SaveAs.KGySoft.Quant…" has no AutomationId.
+WT001	high	UserControls/KGySoftGifOptionsPanel.xaml:100	c:ExtendedCheckBox "{DynamicResource S.SaveAs.KGySoft.Dithe…" has no AutomationId.
+WT002	low	UserControls/KGySoftGifOptionsPanel.xaml:105	ComboBox [DithererComboBox] gets its ID "DithererComboBox" from x:Name.
+WT005	medium	UserControls/KGySoftGifOptionsPanel.xaml:105	Rows in ComboBox [DithererComboBox] have no unique ID.
+WT008	low	UserControls/KGySoftGifOptionsPanel.xaml:105	ComboBox [DithererComboBox] has no readable name.
+WT001	high	UserControls/KGySoftGifOptionsPanel.xaml:125	Slider has no AutomationId.
+WT008	low	UserControls/KGySoftGifOptionsPanel.xaml:125	Slider has no readable name.
+WT001	high	UserControls/KGySoftGifOptionsPanel.xaml:136	c:NullableIntegerBox has no AutomationId.
+WT008	low	UserControls/KGySoftGifOptionsPanel.xaml:136	c:NullableIntegerBox has no readable name.
+WT001	high	UserControls/KGySoftGifOptionsPanel.xaml:140	c:ExtendedCheckBox "{DynamicResource S.SaveAs.KGySoft.Dithe…" has no AutomationId.
+WT001	high	UserControls/KGySoftGifOptionsPanel.xaml:155	c:ExtendedCheckBox "{DynamicResource S.SaveAs.KGySoft.Previ…" has no AutomationId.
+WT001	high	UserControls/KGySoftGifOptionsPanel.xaml:195	c:ExtendedCheckBox "{DynamicResource S.SaveAs.KGySoft.Anima…" has no AutomationId.
+WT001	high	UserControls/KGySoftGifOptionsPanel.xaml:197	c:ExtendedCheckBox "{DynamicResource S.SaveAs.KGySoft.Anima…" has no AutomationId.
+WT001	high	UserControls/KGySoftGifOptionsPanel.xaml:204	c:IntegerUpDown has no AutomationId.
+WT008	low	UserControls/KGySoftGifOptionsPanel.xaml:204	c:IntegerUpDown has no readable name.
+WT001	high	UserControls/KGySoftGifOptionsPanel.xaml:208	c:ExtendedCheckBox "{DynamicResource S.SaveAs.KGySoft.Anima…" has no AutomationId.
+WT001	high	UserControls/KGySoftGifOptionsPanel.xaml:214	Slider has no AutomationId.
+WT008	low	UserControls/KGySoftGifOptionsPanel.xaml:214	Slider has no readable name.
+WT001	high	UserControls/KGySoftGifOptionsPanel.xaml:223	c:ExtendedCheckBox "{DynamicResource S.SaveAs.KGySoft.Anima…" has no AutomationId.
+WT002	low	UserControls/MouseClicksPanel.xaml:52	n:DoubleUpDown [ClickWidthDoubleUpDown] gets its ID "ClickWidthDoubleUpDown" from x:Name.
+WT008	low	UserControls/MouseClicksPanel.xaml:52	n:DoubleUpDown [ClickWidthDoubleUpDown] has no readable name.
+WT002	low	UserControls/MouseClicksPanel.xaml:56	n:DoubleUpDown [ClickHeightDoubleUpDown] gets its ID "ClickHeightDoubleUpDown" from x:Name.
+WT008	low	UserControls/MouseClicksPanel.xaml:56	n:DoubleUpDown [ClickHeightDoubleUpDown] has no readable name.
+WT002	low	UserControls/ProgressPanel.xaml:52	n:ExtendedRadioButton "{DynamicResource S.Progress.Type.Bar}" gets its ID "BarRadioButton" from x:Name.
+WT002	low	UserControls/ProgressPanel.xaml:55	n:ExtendedRadioButton "{StaticResource S.Progress.Type.Text}" gets its ID "TextRadioButton" from x:Name.
+WT001	high	UserControls/ProgressPanel.xaml:59	Expander "{DynamicResource S.Caption.Font}" has no AutomationId.
+WT002	low	UserControls/ProgressPanel.xaml:75	ComboBox [ProgressFontComboBox] gets its ID "ProgressFontComboBox" from x:Name.
+WT005	medium	UserControls/ProgressPanel.xaml:75	Rows in ComboBox [ProgressFontComboBox] have no unique ID.
+WT008	low	UserControls/ProgressPanel.xaml:75	ComboBox [ProgressFontComboBox] has no readable name.
+WT002	low	UserControls/ProgressPanel.xaml:89	ComboBox [ProgressFontStyleComboBox] gets its ID "ProgressFontStyleComboBox" from x:Name.
+WT008	low	UserControls/ProgressPanel.xaml:89	ComboBox [ProgressFontStyleComboBox] has no readable name.
+WT002	low	UserControls/ProgressPanel.xaml:105	ComboBox [ProgressFontWeightComboBox] gets its ID "ProgressFontWeightComboBox" from x:Name.
+WT008	low	UserControls/ProgressPanel.xaml:105	ComboBox [ProgressFontWeightComboBox] has no readable name.
+WT002	low	UserControls/ProgressPanel.xaml:134	n:IntegerUpDown [ProgressFontSizeNumericUpDown] gets its ID "ProgressFontSizeNumericUpDown" from x:Name.
+WT008	low	UserControls/ProgressPanel.xaml:134	n:IntegerUpDown [ProgressFontSizeNumericUpDown] has no readable name.
+WT002	low	UserControls/ProgressPanel.xaml:163	ComboBox [ProgressPrecisionComboBox] gets its ID "ProgressPrecisionComboBox" from x:Name.
+WT008	low	UserControls/ProgressPanel.xaml:163	ComboBox [ProgressPrecisionComboBox] has no readable name.
+WT001	high	UserControls/ProgressPanel.xaml:174	n:ExtendedCheckBox "{DynamicResource S.Progress.Precision.S…" has no AutomationId.
+WT002	low	UserControls/ProgressPanel.xaml:185	n:ExtendedTextBox [CustomProgressTextBox] gets its ID "CustomProgressTextBox" from x:Name.
+WT008	low	UserControls/ProgressPanel.xaml:185	n:ExtendedTextBox [CustomProgressTextBox] has no readable name.
+WT002	low	UserControls/ProgressPanel.xaml:224	n:IntegerUpDown [ProgressStartNumberIntegerUpDown] gets its ID "ProgressStartNumberIntegerUpDown" from x:Name.
+WT008	low	UserControls/ProgressPanel.xaml:224	n:IntegerUpDown [ProgressStartNumberIntegerUpDown] has no readable name.
+WT002	low	UserControls/ProgressPanel.xaml:235	n:ExtendedTextBox [CustomProgressDateTextBox] gets its ID "CustomProgressDateTextBox" from x:Name.
+WT008	low	UserControls/ProgressPanel.xaml:235	n:ExtendedTextBox [CustomProgressDateTextBox] has no readable name.
+WT001	high	UserControls/ProgressPanel.xaml:242	Hyperlink "{DynamicResource S.Progress.Format.Date…" has no AutomationId.
+WT001	high	UserControls/ProgressPanel.xaml:246	Hyperlink "{DynamicResource  S.Progress.Format.Dat…" has no AutomationId.
+WT002	low	UserControls/ProgressPanel.xaml:253	n:IntegerUpDown [ProgressThicknessNumericUpDown] gets its ID "ProgressThicknessNumericUpDown" from x:Name.
+WT008	low	UserControls/ProgressPanel.xaml:253	n:IntegerUpDown [ProgressThicknessNumericUpDown] has no readable name.
+WT002	low	UserControls/ProgressPanel.xaml:270	ComboBox [ProgressVerticalComboBox] gets its ID "ProgressVerticalComboBox" from x:Name.
+WT008	low	UserControls/ProgressPanel.xaml:270	ComboBox [ProgressVerticalComboBox] has no readable name.
+WT002	low	UserControls/ProgressPanel.xaml:279	ComboBox [ProgressHorizontalComboBox] gets its ID "ProgressHorizontalComboBox" from x:Name.
+WT008	low	UserControls/ProgressPanel.xaml:279	ComboBox [ProgressHorizontalComboBox] has no readable name.
+WT002	low	UserControls/ProgressPanel.xaml:289	ComboBox [ProgressOrientationComboBox] gets its ID "ProgressOrientationComboBox" from x:Name.
+WT008	low	UserControls/ProgressPanel.xaml:289	ComboBox [ProgressOrientationComboBox] has no readable name.
+WT001	high	UserControls/ResizePanel.xaml:17	Expander "{DynamicResource S.Resize.Difference}" has no AutomationId.
+WT001	high	UserControls/ResizePanel.xaml:75	Expander "{DynamicResource S.Resize.Options}" has no AutomationId.
+WT002	low	UserControls/ResizePanel.xaml:96	n:IntegerUpDown [WidthResizeIntegerUpDown] gets its ID "WidthResizeIntegerUpDown" from x:Name.
+WT008	low	UserControls/ResizePanel.xaml:96	n:IntegerUpDown [WidthResizeIntegerUpDown] has no readable name.
+WT002	low	UserControls/ResizePanel.xaml:98	n:DecimalUpDown [WidthResizeDecimalUpDown] gets its ID "WidthResizeDecimalUpDown" from x:Name.
+WT008	low	UserControls/ResizePanel.xaml:98	n:DecimalUpDown [WidthResizeDecimalUpDown] has no readable name.
+WT001	high	UserControls/ResizePanel.xaml:101	ComboBox has no AutomationId.
+WT008	low	UserControls/ResizePanel.xaml:101	ComboBox has no readable name.
+WT002	low	UserControls/ResizePanel.xaml:107	n:IntegerUpDown [HeightResizeIntegerUpDown] gets its ID "HeightResizeIntegerUpDown" from x:Name.
+WT008	low	UserControls/ResizePanel.xaml:107	n:IntegerUpDown [HeightResizeIntegerUpDown] has no readable name.
+WT002	low	UserControls/ResizePanel.xaml:109	n:DecimalUpDown [HeightResizeDecimalUpDown] gets its ID "HeightResizeDecimalUpDown" from x:Name.
+WT008	low	UserControls/ResizePanel.xaml:109	n:DecimalUpDown [HeightResizeDecimalUpDown] has no readable name.
+WT001	high	UserControls/ResizePanel.xaml:113	ComboBox has no AutomationId.
+WT008	low	UserControls/ResizePanel.xaml:113	ComboBox has no readable name.
+WT002	low	UserControls/ResizePanel.xaml:118	n:ExtendedCheckBox "{DynamicResource S.Resize.KeepAspect}" gets its ID "KeepAspectCheckBox" from x:Name.
+WT002	low	UserControls/ResizePanel.xaml:122	n:IntegerUpDown [DpiNumericUpDown] gets its ID "DpiNumericUpDown" from x:Name.
+WT008	low	UserControls/ResizePanel.xaml:122	n:IntegerUpDown [DpiNumericUpDown] has no readable name.
+WT002	low	UserControls/ResizePanel.xaml:126	ComboBox [ResizeScalingQualityComboBox] gets its ID "ResizeScalingQualityComboBox" from x:Name.
+WT008	low	UserControls/ResizePanel.xaml:126	ComboBox [ResizeScalingQualityComboBox] has no readable name.
+WT001	high	UserControls/ShadowPanel.xaml:44	n:DoubleUpDown has no AutomationId.
+WT008	low	UserControls/ShadowPanel.xaml:44	n:DoubleUpDown has no readable name.
+WT001	high	UserControls/ShadowPanel.xaml:47	n:DoubleUpDown has no AutomationId.
+WT008	low	UserControls/ShadowPanel.xaml:47	n:DoubleUpDown has no readable name.
+WT001	high	UserControls/ShadowPanel.xaml:50	n:DoubleUpDown has no AutomationId.
+WT008	low	UserControls/ShadowPanel.xaml:50	n:DoubleUpDown has no readable name.
+WT001	high	UserControls/ShadowPanel.xaml:54	n:DoubleUpDown has no AutomationId.
+WT008	low	UserControls/ShadowPanel.xaml:54	n:DoubleUpDown has no readable name.
+WT001	high	UserControls/YandexPanel.xaml:19	Expander "{DynamicResource S.Options.Upload.Prese…" has no AutomationId.
+WT002	low	UserControls/YandexPanel.xaml:31	n:ExtendedTextBox [NameTextBox] gets its ID "NameTextBox" from x:Name.
+WT008	low	UserControls/YandexPanel.xaml:31	n:ExtendedTextBox [NameTextBox] has no readable name.
+WT001	high	UserControls/YandexPanel.xaml:34	n:ExtendedTextBox has no AutomationId.
+WT008	low	UserControls/YandexPanel.xaml:34	n:ExtendedTextBox has no readable name.
+WT001	high	UserControls/YandexPanel.xaml:38	Expander "{DynamicResource S.Options.Upload.Prese…" has no AutomationId.
+WT001	high	UserControls/YandexPanel.xaml:47	Hyperlink "{DynamicResource S.Options.Upload.Prese…" has no AutomationId.
+WT002	low	UserControls/YandexPanel.xaml:54	n:ExtendedTextBox [TokenTextBox] gets its ID "TokenTextBox" from x:Name.
+WT008	low	UserControls/YandexPanel.xaml:54	n:ExtendedTextBox [TokenTextBox] has no readable name.
+WT001	high	Views/Settings/AboutSettings.xaml:34	Hyperlink "{DynamicResource S.Options.About.Update…" has no AutomationId.
+WT001	high	Views/Settings/AboutSettings.xaml:41	Hyperlink "screentogif.com" has no AutomationId.
+WT001	high	Views/Settings/AboutSettings.xaml:69	Hyperlink "nicke@outlook.com.br" has no AutomationId.
+WT001	high	Views/Settings/AboutSettings.xaml:76	Hyperlink "{StaticResource S.Options.About.Contact…" has no AutomationId.
+WT001	high	Views/Settings/AboutSettings.xaml:83	Hyperlink "/r/ScreenToGif/" has no AutomationId.
+WT001	high	Views/Settings/AboutSettings.xaml:90	Hyperlink "{StaticResource S.Options.About.Contact…" has no AutomationId.
+WT001	high	Views/Settings/AboutSettings.xaml:97	Hyperlink "@NickeManarin" has no AutomationId.
+WT001	high	Views/Settings/AboutSettings.xaml:125	Hyperlink "MS-PL" has no AutomationId.
+WT001	high	Views/Settings/AboutSettings.xaml:130	Hyperlink "TL;DR Legal" has no AutomationId.
+WT001	high	Views/Settings/AboutSettings.xaml:140	Hyperlink "github.com/NickeManarin/ScreenToGif" has no AutomationId.
+WT001	high	Views/Settings/AboutSettings.xaml:149	Hyperlink "screentogif.com/privacy-terms" has no AutomationId.
+WT001	high	Views/Settings/AboutSettings.xaml:170	Hyperlink "visualstudio.microsoft.com" has no AutomationId.
+WT001	high	Views/Settings/ApplicationSettings.xaml:26	Expander "{DynamicResource S.Options.App.Startup}" has no AutomationId.
+WT002	low	Views/Settings/ApplicationSettings.xaml:35	c:ExtendedRadioButton "{DynamicResource S.Options.App.Startup.…" gets its ID "StartManuallyCheckBox" from x:Name.
+WT002	low	Views/Settings/ApplicationSettings.xaml:38	c:ExtendedRadioButton "{DynamicResource S.Options.App.Startup.…" gets its ID "StartAutomaticallyCheckBox" from x:Name.
+WT001	high	Views/Settings/ApplicationSettings.xaml:51	c:ExtendedRadioButton "{DynamicResource S.Options.App.Startup.…" has no AutomationId.
+WT001	high	Views/Settings/ApplicationSettings.xaml:54	c:ExtendedRadioButton "{DynamicResource S.Options.App.Startup.…" has no AutomationId.
+WT001	high	Views/Settings/ApplicationSettings.xaml:60	c:ExtendedCheckBox "{DynamicResource S.Options.App.Startup.…" has no AutomationId.
+WT001	high	Views/Settings/ApplicationSettings.xaml:71	ComboBox has no AutomationId.
+WT008	low	Views/Settings/ApplicationSettings.xaml:71	ComboBox has no readable name.
+WT001	high	Views/Settings/ApplicationSettings.xaml:85	Expander "{DynamicResource S.Options.App.Theme}" has no AutomationId.
+WT002	low	Views/Settings/ApplicationSettings.xaml:93	ComboBox [AppThemeComboBox] gets its ID "AppThemeComboBox" from x:Name.
+WT008	low	Views/Settings/ApplicationSettings.xaml:93	ComboBox [AppThemeComboBox] has no readable name.
+WT001	high	Views/Settings/ApplicationSettings.xaml:215	Expander "{DynamicResource S.Options.App.Tray}" has no AutomationId.
+WT001	high	Views/Settings/ApplicationSettings.xaml:217	c:ExtendedCheckBox "{DynamicResource S.Options.App.Tray.Sho…" has no AutomationId.
+WT001	high	Views/Settings/ApplicationSettings.xaml:219	c:ExtendedCheckBox "{DynamicResource S.Options.App.Tray.Lea…" has no AutomationId.
+WT001	high	Views/Settings/ApplicationSettings.xaml:238	ComboBox has no AutomationId.
+WT008	low	Views/Settings/ApplicationSettings.xaml:238	ComboBox has no readable name.
+WT001	high	Views/Settings/ApplicationSettings.xaml:251	ComboBox has no AutomationId.
+WT008	low	Views/Settings/ApplicationSettings.xaml:251	ComboBox has no readable name.
+WT001	high	Views/Settings/ApplicationSettings.xaml:262	ComboBox has no AutomationId.
+WT008	low	Views/Settings/ApplicationSettings.xaml:262	ComboBox has no readable name.
+WT001	high	Views/Settings/ApplicationSettings.xaml:275	ComboBox has no AutomationId.
+WT008	low	Views/Settings/ApplicationSettings.xaml:275	ComboBox has no readable name.
+WT001	high	Views/Settings/ApplicationSettings.xaml:286	ComboBox has no AutomationId.
+WT008	low	Views/Settings/ApplicationSettings.xaml:286	ComboBox has no readable name.
+WT001	high	Views/Settings/ApplicationSettings.xaml:299	ComboBox has no AutomationId.
+WT008	low	Views/Settings/ApplicationSettings.xaml:299	ComboBox has no readable name.
+WT001	high	Views/Settings/ApplicationSettings.xaml:311	Expander "{DynamicResource S.Options.App.General}" has no AutomationId.
+WT001	high	Views/Settings/ApplicationSettings.xaml:313	c:ExtendedCheckBox "{DynamicResource S.Options.App.General.…" has no AutomationId.
+WT001	high	Views/Settings/ApplicationSettings.xaml:315	c:ExtendedCheckBox "{DynamicResource S.Options.App.General.…" has no AutomationId.
+WT001	high	Views/Settings/ApplicationSettings.xaml:316	c:ExtendedCheckBox "{DynamicResource S.Options.App.General.…" has no AutomationId.
+WT001	high	Views/Settings/ApplicationSettings.xaml:318	c:ExtendedCheckBox "{DynamicResource S.Options.App.General.…" has no AutomationId.
+WT002	low	Views/Settings/ApplicationSettings.xaml:321	c:ExtendedCheckBox "{DynamicResource S.Options.App.General.…" gets its ID "UpdatesCheckBox" from x:Name.
+WT002	low	Views/Settings/ApplicationSettings.xaml:323	c:ExtendedCheckBox "{DynamicResource S.Options.App.General.…" gets its ID "PortableUpdateCheckBox" from x:Name.
+WT002	low	Views/Settings/ApplicationSettings.xaml:325	c:ExtendedCheckBox "{DynamicResource S.Options.App.General.…" gets its ID "AdminUpdateCheckBox" from x:Name.
+WT001	high	Views/Settings/ApplicationSettings.xaml:326	c:ExtendedCheckBox "{DynamicResource S.Options.App.General.…" has no AutomationId.
+WT001	high	Views/Settings/ApplicationSettings.xaml:327	c:ExtendedCheckBox "{DynamicResource S.Options.App.General.…" has no AutomationId.
+WT002	low	Views/Settings/ApplicationSettings.xaml:329	c:ExtendedCheckBox "{DynamicResource S.Options.App.General.…" gets its ID "DownloadWithMeteredNetworkCheckBox" from x:Name.
+WT002	low	Views/Settings/DonateSettings.xaml:44	c:ExtendedButton "{DynamicResource S.Options.Donate.Donat…" gets its ID "DonateButton" from x:Name.
+WT002	low	Views/Settings/DonateSettings.xaml:50	c:ExtendedButton "{DynamicResource S.Options.Donate.Donat…" gets its ID "DonateEuroButton" from x:Name.
+WT002	low	Views/Settings/DonateSettings.xaml:56	c:ExtendedButton "{DynamicResource S.Options.Donate.Donat…" gets its ID "DonateOtherButton" from x:Name.
+WT002	low	Views/Settings/DonateSettings.xaml:65	ComboBox [CurrencyComboBox] gets its ID "CurrencyComboBox" from x:Name.
+WT008	low	Views/Settings/DonateSettings.xaml:65	ComboBox [CurrencyComboBox] has no readable name.
+WT002	low	Views/Settings/DonateSettings.xaml:101	c:ExtendedButton "{DynamicResource S.Options.Donate.Subsc…" gets its ID "PatreonButton" from x:Name.
+WT002	low	Views/Settings/DonateSettings.xaml:118	c:ExtendedButton "{DynamicResource S.Options.Donate.Donat…" gets its ID "StripeButton" from x:Name.
+WT002	low	Views/Settings/DonateSettings.xaml:135	c:ExtendedButton "{DynamicResource S.Options.Donate.Gift}" gets its ID "SteamButton" from x:Name.
+WT002	low	Views/Settings/DonateSettings.xaml:156	c:ExtendedButton "{DynamicResource S.Options.Donate.Gift}" gets its ID "GogButton" from x:Name.
+WT002	low	Views/Settings/DonateSettings.xaml:177	c:ExtendedButton "{DynamicResource S.Options.Donate.Donat…" gets its ID "KofiButton" from x:Name.
+WT002	low	Views/Settings/DonateSettings.xaml:194	c:ExtendedButton "{DynamicResource S.Editor.Home.Copy}" gets its ID "CryptoButton" from x:Name.
+WT002	low	Views/Settings/DonateSettings.xaml:214	c:ExtendedButton "screentogif.com/donate" gets its ID "SupportButton" from x:Name.
+WT001	high	Views/Settings/EditorSettings.xaml:10	Expander "{DynamicResource S.Options.Editor.Previ…" has no AutomationId.
+WT002	low	Views/Settings/EditorSettings.xaml:24	ComboBox [ColorSchemesComboBox] gets its ID "ColorSchemesComboBox" from x:Name.
+WT005	medium	Views/Settings/EditorSettings.xaml:24	Rows in ComboBox [ColorSchemesComboBox] have no unique ID.
+WT008	low	Views/Settings/EditorSettings.xaml:24	ComboBox [ColorSchemesComboBox] has no readable name.
+WT002	low	Views/Settings/EditorSettings.xaml:67	ComboBox [GridSizeComboBox] gets its ID "GridSizeComboBox" from x:Name.
+WT005	medium	Views/Settings/EditorSettings.xaml:67	Rows in ComboBox [GridSizeComboBox] have no unique ID.
+WT008	low	Views/Settings/EditorSettings.xaml:67	ComboBox [GridSizeComboBox] has no readable name.
+WT002	low	Views/Settings/EditorSettings.xaml:148	c:IntegerUpDown [GridHeightIntegerUpDown] gets its ID "GridHeightIntegerUpDown" from x:Name.
+WT008	low	Views/Settings/EditorSettings.xaml:148	c:IntegerUpDown [GridHeightIntegerUpDown] has no readable name.
+WT002	low	Views/Settings/EditorSettings.xaml:151	c:IntegerUpDown [GridWidthIntegerUpDown] gets its ID "GridWidthIntegerUpDown" from x:Name.
+WT008	low	Views/Settings/EditorSettings.xaml:151	c:IntegerUpDown [GridWidthIntegerUpDown] has no readable name.
+WT001	high	Views/Settings/EditorSettings.xaml:153	c:ExtendedButton "{DynamicResource S.Options.Editor.Previ…" has no AutomationId.
+WT001	high	Views/Settings/EditorSettings.xaml:155	c:ExtendedButton "{DynamicResource S.Cancel}" has no AutomationId.
+WT001	high	Views/Settings/EditorSettings.xaml:161	Expander "{DynamicResource S.Options.Recorder.Int…" has no AutomationId.
+WT001	high	Views/Settings/EditorSettings.xaml:163	c:ExtendedCheckBox "{DynamicResource S.Options.Editor.Inter…" has no AutomationId.
+WT001	high	Views/Settings/EditorSettings.xaml:164	c:ExtendedCheckBox "{DynamicResource S.Options.Editor.Inter…" has no AutomationId.
+WT001	high	Views/Settings/EditorSettings.xaml:165	c:ExtendedCheckBox "{DynamicResource S.Options.Editor.Inter…" has no AutomationId.
+WT001	high	Views/Settings/EditorSettings.xaml:166	c:ExtendedCheckBox "{DynamicResource S.Options.Editor.Inter…" has no AutomationId.
+WT001	high	Views/Settings/EditorSettings.xaml:170	Expander "{DynamicResource S.Options.App.General}" has no AutomationId.
+WT001	high	Views/Settings/EditorSettings.xaml:172	c:ExtendedCheckBox "{DynamicResource S.Options.Editor.Gener…" has no AutomationId.
+WT001	high	Views/Settings/EditorSettings.xaml:173	c:ExtendedCheckBox "{DynamicResource S.Options.Editor.Gener…" has no AutomationId.
+WT001	high	Views/Settings/EditorSettings.xaml:174	c:ExtendedCheckBox "{DynamicResource S.Options.Editor.Gener…" has no AutomationId.
+WT001	high	Views/Settings/EditorSettings.xaml:175	c:ExtendedCheckBox "{DynamicResource S.Options.Editor.Gener…" has no AutomationId.
+WT001	high	Views/Settings/EditorSettings.xaml:176	c:ExtendedCheckBox "{DynamicResource S.Options.Editor.Gener…" has no AutomationId.
+WT001	high	Views/Settings/EditorSettings.xaml:177	c:ExtendedCheckBox "{DynamicResource S.Options.Editor.Gener…" has no AutomationId.
+WT001	high	Views/Settings/EditorSettings.xaml:180	c:ExtendedCheckBox "{DynamicResource S.Options.Editor.Gener…" has no AutomationId.
+WT001	high	Views/Settings/EditorSettings.xaml:184	c:IntegerUpDown has no AutomationId.
+WT008	low	Views/Settings/EditorSettings.xaml:184	c:IntegerUpDown has no readable name.
+WT001	high	Views/Settings/EditorSettings.xaml:189	c:ExtendedCheckBox "{DynamicResource S.Options.Editor.Gener…" has no AutomationId.
+WT001	high	Views/Settings/EditorSettings.xaml:193	c:ExtendedCheckBox "{DynamicResource S.Options.Editor.Gener…" has no AutomationId.
+WT001	high	Views/Settings/EditorSettings.xaml:196	c:ExtendedCheckBox "{DynamicResource S.Options.Editor.Gener…" has no AutomationId.
+WT002	low	Views/Settings/LanguageSettings.xaml:19	ListBox [LanguagePanel] gets its ID "LanguagePanel" from x:Name.
+WT008	low	Views/Settings/LanguageSettings.xaml:19	ListBox [LanguagePanel] has no readable name.
+WT001	high	Views/Settings/LanguageSettings.xaml:135	Hyperlink "{DynamicResource S.Options.Language.App…" has no AutomationId.
+WT001	high	Views/Settings/LanguageSettings.xaml:140	Hyperlink "{DynamicResource S.Options.Language.App…" has no AutomationId.
+WT001	high	Views/Settings/LanguageSettings.xaml:146	Hyperlink "{DynamicResource S.Options.Language.App…" has no AutomationId.
+WT001	high	Views/Settings/PluginSettings.xaml:33	c:ExtendedButton "{DynamicResource S.Updater.Download}" has no AutomationId.
+WT001	high	Views/Settings/PluginSettings.xaml:34	c:ExtendedButton "{DynamicResource S.Clipboard.Remove}" has no AutomationId.
+WT001	high	Views/Settings/PluginSettings.xaml:43	c:ExtendedTextBox has no AutomationId.
+WT008	low	Views/Settings/PluginSettings.xaml:43	c:ExtendedTextBox has no readable name.
+WT001	high	Views/Settings/PluginSettings.xaml:45	c:ExtendedButton has no AutomationId.
+WT008	low	Views/Settings/PluginSettings.xaml:45	c:ExtendedButton has no readable name.
+WT001	high	Views/Settings/PluginSettings.xaml:48	c:ExtendedButton has no AutomationId.
+WT008	low	Views/Settings/PluginSettings.xaml:48	c:ExtendedButton has no readable name.
+WT001	high	Views/Settings/PluginSettings.xaml:55	c:ExtendedButton "{DynamicResource S.Updater.Download}" has no AutomationId.
+WT001	high	Views/Settings/PluginSettings.xaml:56	c:ExtendedButton "{DynamicResource S.Clipboard.Remove}" has no AutomationId.
+WT001	high	Views/Settings/PluginSettings.xaml:65	c:ExtendedTextBox has no AutomationId.
+WT008	low	Views/Settings/PluginSettings.xaml:65	c:ExtendedTextBox has no readable name.
+WT001	high	Views/Settings/PluginSettings.xaml:67	c:ExtendedButton has no AutomationId.
+WT008	low	Views/Settings/PluginSettings.xaml:67	c:ExtendedButton has no readable name.
+WT001	high	Views/Settings/PluginSettings.xaml:70	c:ExtendedButton has no AutomationId.
+WT008	low	Views/Settings/PluginSettings.xaml:70	c:ExtendedButton has no readable name.
+WT001	high	Views/Settings/PluginSettings.xaml:80	Hyperlink "{DynamicResource S.Options.Extras.Licen…" has no AutomationId.
+WT001	high	Views/Settings/PluginSettings.xaml:86	Hyperlink "{DynamicResource S.Options.Extras.Licen…" has no AutomationId.
+WT001	high	Views/Settings/PluginSettings.xaml:92	Hyperlink "{DynamicResource S.Options.Extras.Licen…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:24	Expander "{DynamicResource S.Options.Recorder.Int…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:40	c:ExtendedRadioButton "{DynamicResource S.Options.Recorder.Int…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:43	c:ExtendedRadioButton "{DynamicResource S.Options.Recorder.Int…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:46	c:ExtendedCheckBox "{DynamicResource S.Options.Recorder.Hid…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:49	c:ExtendedCheckBox "{DynamicResource S.Options.Recorder.Mag…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:53	c:ExtendedCheckBox "{DynamicResource S.Options.Recorder.Ani…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:57	c:ExtendedCheckBox "{DynamicResource S.Options.Recorder.Sel…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:61	c:ExtendedCheckBox "{DynamicResource S.Options.Recorder.Com…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:65	c:ExtendedCheckBox "{DynamicResource S.Options.Recorder.Dis…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:68	c:ExtendedCheckBox "{DynamicResource S.Options.Recorder.Sel…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:74	Expander "{DynamicResource S.Options.Recorder.Fre…" has no AutomationId.
+WT002	low	Views/Settings/RecorderSettings.xaml:91	c:ExtendedRadioButton "{DynamicResource S.Options.Recorder.Fre…" gets its ID "ManualRadioButton" from x:Name.
+WT002	low	Views/Settings/RecorderSettings.xaml:96	c:ExtendedRadioButton "{DynamicResource S.Options.Recorder.Fre…" gets its ID "InteractionRadioButton" from x:Name.
+WT002	low	Views/Settings/RecorderSettings.xaml:101	c:ExtendedRadioButton "{DynamicResource S.Options.Recorder.Fre…" gets its ID "PerSecondRadioButton" from x:Name.
+WT002	low	Views/Settings/RecorderSettings.xaml:106	c:ExtendedRadioButton "{DynamicResource S.Options.Recorder.Fre…" gets its ID "PerMinuteRadioButton" from x:Name.
+WT002	low	Views/Settings/RecorderSettings.xaml:111	c:ExtendedRadioButton "{DynamicResource S.Options.Recorder.Fre…" gets its ID "PerHourRadioButton" from x:Name.
+WT001	high	Views/Settings/RecorderSettings.xaml:118	c:IntegerUpDown has no AutomationId.
+WT008	low	Views/Settings/RecorderSettings.xaml:118	c:IntegerUpDown has no readable name.
+WT001	high	Views/Settings/RecorderSettings.xaml:119	c:IntegerUpDown has no AutomationId.
+WT008	low	Views/Settings/RecorderSettings.xaml:119	c:IntegerUpDown has no readable name.
+WT001	high	Views/Settings/RecorderSettings.xaml:120	c:IntegerUpDown has no AutomationId.
+WT008	low	Views/Settings/RecorderSettings.xaml:120	c:IntegerUpDown has no readable name.
+WT001	high	Views/Settings/RecorderSettings.xaml:121	c:IntegerUpDown has no AutomationId.
+WT008	low	Views/Settings/RecorderSettings.xaml:121	c:IntegerUpDown has no readable name.
+WT001	high	Views/Settings/RecorderSettings.xaml:128	c:IntegerUpDown has no AutomationId.
+WT008	low	Views/Settings/RecorderSettings.xaml:128	c:IntegerUpDown has no readable name.
+WT001	high	Views/Settings/RecorderSettings.xaml:136	c:IntegerUpDown has no AutomationId.
+WT008	low	Views/Settings/RecorderSettings.xaml:136	c:IntegerUpDown has no readable name.
+WT001	high	Views/Settings/RecorderSettings.xaml:141	c:ExtendedCheckBox "{DynamicResource S.Options.Recorder.Fix…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:154	c:ExtendedCheckBox "{DynamicResource S.Options.Recorder.Cap…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:161	Expander "{DynamicResource S.Options.Recorder.Mod…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:170	c:ExtendedRadioButton "BitBlt" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:173	c:ExtendedRadioButton "DirectX" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:185	c:ExtendedRadioButton "{DynamicResource S.Options.Recorder.Fil…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:187	c:ExtendedRadioButton "{DynamicResource S.Options.Recorder.Cac…" has no AutomationId.
+WT002	low	Views/Settings/RecorderSettings.xaml:194	ComboBox [CompressionComboBox] gets its ID "CompressionComboBox" from x:Name.
+WT008	low	Views/Settings/RecorderSettings.xaml:194	ComboBox [CompressionComboBox] has no readable name.
+WT001	high	Views/Settings/RecorderSettings.xaml:211	c:DoubleUpDown has no AutomationId.
+WT008	low	Views/Settings/RecorderSettings.xaml:211	c:DoubleUpDown has no readable name.
+WT001	high	Views/Settings/RecorderSettings.xaml:215	c:ExtendedCheckBox "{DynamicResource S.Options.Recorder.Pre…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:225	c:ExtendedCheckBox "{DynamicResource S.Options.Recorder.Rec…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:227	c:ExtendedCheckBox "{DynamicResource S.Options.Recorder.For…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:230	c:ExtendedCheckBox "{DynamicResource S.Options.Recorder.Rem…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:235	Expander "{DynamicResource S.Options.Recorder.Gui…" has no AutomationId.
+WT002	low	Views/Settings/RecorderSettings.xaml:247	c:ExtendedToggleButton "{DynamicResource S.Options.Recorder.Gui…" gets its ID "GuidelineThirdsToggleButton" from x:Name.
+WT001	high	Views/Settings/RecorderSettings.xaml:263	c:DoubleUpDown has no AutomationId.
+WT008	low	Views/Settings/RecorderSettings.xaml:263	c:DoubleUpDown has no readable name.
+WT001	high	Views/Settings/RecorderSettings.xaml:270	c:ExtendedTextBox has no AutomationId.
+WT008	low	Views/Settings/RecorderSettings.xaml:270	c:ExtendedTextBox has no readable name.
+WT002	low	Views/Settings/RecorderSettings.xaml:279	c:ExtendedToggleButton "{DynamicResource S.Options.Recorder.Gui…" gets its ID "GuidelineCrosshairToggleButton" from x:Name.
+WT001	high	Views/Settings/RecorderSettings.xaml:295	c:DoubleUpDown has no AutomationId.
+WT008	low	Views/Settings/RecorderSettings.xaml:295	c:DoubleUpDown has no readable name.
+WT001	high	Views/Settings/RecorderSettings.xaml:302	c:ExtendedTextBox has no AutomationId.
+WT008	low	Views/Settings/RecorderSettings.xaml:302	c:ExtendedTextBox has no readable name.
+WT001	high	Views/Settings/RecorderSettings.xaml:319	Expander "{DynamicResource S.Options.Other}" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:321	c:ExtendedCheckBox "{DynamicResource S.Options.Recorder.Rem…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:322	c:ExtendedCheckBox "{DynamicResource S.Options.Recorder.Rem…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:325	c:ExtendedCheckBox "{DynamicResource S.Options.Recorder.Pre…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:327	c:IntegerUpDown has no AutomationId.
+WT008	low	Views/Settings/RecorderSettings.xaml:327	c:IntegerUpDown has no readable name.
+WT001	high	Views/Settings/RecorderSettings.xaml:331	c:ExtendedCheckBox "{DynamicResource S.Options.Recorder.Cur…" has no AutomationId.
+WT001	high	Views/Settings/RecorderSettings.xaml:335	c:IntegerUpDown has no AutomationId.
+WT008	low	Views/Settings/RecorderSettings.xaml:335	c:IntegerUpDown has no readable name.
+WT001	high	Views/Settings/RecorderSettings.xaml:339	c:IntegerUpDown has no AutomationId.
+WT008	low	Views/Settings/RecorderSettings.xaml:339	c:IntegerUpDown has no readable name.
+WT001	high	Views/Settings/RecorderSettings.xaml:343	c:ExtendedCheckBox "{DynamicResource S.Options.Recorder.Not…" has no AutomationId.
+WT001	high	Views/Settings/StorageSettings.xaml:31	Expander "{DynamicResource S.Options.Storage.Stat…" has no AutomationId.
+WT002	low	Views/Settings/StorageSettings.xaml:57	c:ExtendedButton [CheckCacheButton] gets its ID "CheckCacheButton" from x:Name.
+WT008	low	Views/Settings/StorageSettings.xaml:57	c:ExtendedButton [CheckCacheButton] has no readable name.
+WT001	high	Views/Settings/StorageSettings.xaml:59	c:ExtendedButton has no AutomationId.
+WT008	low	Views/Settings/StorageSettings.xaml:59	c:ExtendedButton has no readable name.
+WT001	high	Views/Settings/StorageSettings.xaml:76	Expander "{DynamicResource S.Options.Storage.Path…" has no AutomationId.
+WT002	low	Views/Settings/StorageSettings.xaml:90	c:ExtendedTextBox [CacheTextBox] gets its ID "CacheTextBox" from x:Name.
+WT008	low	Views/Settings/StorageSettings.xaml:90	c:ExtendedTextBox [CacheTextBox] has no readable name.
+WT001	high	Views/Settings/StorageSettings.xaml:93	c:ExtendedButton has no AutomationId.
+WT008	low	Views/Settings/StorageSettings.xaml:93	c:ExtendedButton has no readable name.
+WT001	high	Views/Settings/StorageSettings.xaml:95	c:ExtendedButton has no AutomationId.
+WT008	low	Views/Settings/StorageSettings.xaml:95	c:ExtendedButton has no readable name.
+WT001	high	Views/Settings/StorageSettings.xaml:99	c:ExtendedTextBox has no AutomationId.
+WT008	low	Views/Settings/StorageSettings.xaml:99	c:ExtendedTextBox has no readable name.
+WT001	high	Views/Settings/StorageSettings.xaml:101	c:ExtendedButton has no AutomationId.
+WT008	low	Views/Settings/StorageSettings.xaml:101	c:ExtendedButton has no readable name.
+WT001	high	Views/Settings/StorageSettings.xaml:103	c:ExtendedButton has no AutomationId.
+WT008	low	Views/Settings/StorageSettings.xaml:103	c:ExtendedButton has no readable name.
+WT001	high	Views/Settings/StorageSettings.xaml:108	Expander "{DynamicResource S.Options.Storage.Sett…" has no AutomationId.
+WT002	low	Views/Settings/StorageSettings.xaml:126	c:ExtendedButton [OpenAppDataButton] gets its ID "OpenAppDataButton" from x:Name.
+WT008	low	Views/Settings/StorageSettings.xaml:126	c:ExtendedButton [OpenAppDataButton] has no readable name.
+WT002	low	Views/Settings/StorageSettings.xaml:129	c:ExtendedButton [RemoveAppDataButton] gets its ID "RemoveAppDataButton" from x:Name.
+WT008	low	Views/Settings/StorageSettings.xaml:129	c:ExtendedButton [RemoveAppDataButton] has no readable name.
+WT002	low	Views/Settings/StorageSettings.xaml:135	c:ExtendedButton [CreateLocalButton] gets its ID "CreateLocalButton" from x:Name.
+WT008	low	Views/Settings/StorageSettings.xaml:135	c:ExtendedButton [CreateLocalButton] has no readable name.
+WT002	low	Views/Settings/StorageSettings.xaml:138	c:ExtendedButton [OpenLocalButton] gets its ID "OpenLocalButton" from x:Name.
+WT008	low	Views/Settings/StorageSettings.xaml:138	c:ExtendedButton [OpenLocalButton] has no readable name.
+WT002	low	Views/Settings/StorageSettings.xaml:141	c:ExtendedButton [RemoveLocalButton] gets its ID "RemoveLocalButton" from x:Name.
+WT008	low	Views/Settings/StorageSettings.xaml:141	c:ExtendedButton [RemoveLocalButton] has no readable name.
+WT001	high	Views/Settings/StorageSettings.xaml:149	Expander "{DynamicResource S.Options.Other}" has no AutomationId.
+WT001	high	Views/Settings/StorageSettings.xaml:151	c:ExtendedCheckBox "{DynamicResource S.Options.Storage.Dele…" has no AutomationId.
+WT001	high	Views/Settings/StorageSettings.xaml:154	c:ExtendedCheckBox "{DynamicResource S.Options.Storage.AskD…" has no AutomationId.
+WT001	high	Views/Settings/StorageSettings.xaml:158	c:ExtendedCheckBox "{DynamicResource S.Options.Storage.Auto…" has no AutomationId.
+WT001	high	Views/Settings/StorageSettings.xaml:163	c:IntegerUpDown has no AutomationId.
+WT008	low	Views/Settings/StorageSettings.xaml:163	c:IntegerUpDown has no readable name.
+WT002	low	Views/Settings/TasksSettings.xaml:34	DataGrid [TasksDataGrid] gets its ID "TasksDataGrid" from x:Name.
+WT005	medium	Views/Settings/TasksSettings.xaml:34	Rows in DataGrid [TasksDataGrid] have no unique ID.
+WT008	low	Views/Settings/TasksSettings.xaml:34	DataGrid [TasksDataGrid] has no readable name.
+WT001	medium	Views/Settings/TasksSettings.xaml:40	c:ExtendedCheckBox "{x:Null}" (inside a list row template) has no AutomationId.
+WT002	low	Views/Settings/TasksSettings.xaml:51	c:ExtendedButton [UpButton] gets its ID "UpButton" from x:Name.
+WT008	low	Views/Settings/TasksSettings.xaml:51	c:ExtendedButton [UpButton] has no readable name.
+WT002	low	Views/Settings/TasksSettings.xaml:56	c:ExtendedButton [DownButton] gets its ID "DownButton" from x:Name.
+WT008	low	Views/Settings/TasksSettings.xaml:56	c:ExtendedButton [DownButton] has no readable name.
+WT002	low	Views/Settings/TasksSettings.xaml:61	c:ExtendedButton [AddButton] gets its ID "AddButton" from x:Name.
+WT008	low	Views/Settings/TasksSettings.xaml:61	c:ExtendedButton [AddButton] has no readable name.
+WT002	low	Views/Settings/TasksSettings.xaml:66	c:ExtendedButton [EditButton] gets its ID "EditButton" from x:Name.
+WT008	low	Views/Settings/TasksSettings.xaml:66	c:ExtendedButton [EditButton] has no readable name.
+WT002	low	Views/Settings/TasksSettings.xaml:71	c:ExtendedButton [RemoveButton] gets its ID "RemoveButton" from x:Name.
+WT008	low	Views/Settings/TasksSettings.xaml:71	c:ExtendedButton [RemoveButton] has no readable name.
+WT001	high	Views/Settings/UploadSettings.xaml:27	Expander "{DynamicResource S.Options.Upload.Proxy}" has no AutomationId.
+WT001	high	Views/Settings/UploadSettings.xaml:41	ComboBox has no AutomationId.
+WT008	low	Views/Settings/UploadSettings.xaml:41	ComboBox has no readable name.
+WT002	low	Views/Settings/UploadSettings.xaml:49	c:ExtendedTextBox [ProxyHostTextBox] gets its ID "ProxyHostTextBox" from x:Name.
+WT008	low	Views/Settings/UploadSettings.xaml:49	c:ExtendedTextBox [ProxyHostTextBox] has no readable name.
+WT001	high	Views/Settings/UploadSettings.xaml:55	c:IntegerUpDown has no AutomationId.
+WT008	low	Views/Settings/UploadSettings.xaml:55	c:IntegerUpDown has no readable name.
+WT001	high	Views/Settings/UploadSettings.xaml:73	c:ExtendedTextBox has no AutomationId.
+WT008	low	Views/Settings/UploadSettings.xaml:73	c:ExtendedTextBox has no readable name.
+WT002	low	Views/Settings/UploadSettings.xaml:77	PasswordBox [ProxyPasswordBox] gets its ID "ProxyPasswordBox" from x:Name.
+WT008	low	Views/Settings/UploadSettings.xaml:77	PasswordBox [ProxyPasswordBox] has no readable name.
+WT002	low	Views/Settings/UploadSettings.xaml:96	DataGrid [UploadDataGrid] gets its ID "UploadDataGrid" from x:Name.
+WT005	medium	Views/Settings/UploadSettings.xaml:96	Rows in DataGrid [UploadDataGrid] have no unique ID.
+WT008	low	Views/Settings/UploadSettings.xaml:96	DataGrid [UploadDataGrid] has no readable name.
+WT001	medium	Views/Settings/UploadSettings.xaml:102	c:ExtendedCheckBox "{x:Null}" (inside a list row template) has no AutomationId.
+WT002	low	Views/Settings/UploadSettings.xaml:114	c:ExtendedButton [AddPresetButton] gets its ID "AddPresetButton" from x:Name.
+WT008	low	Views/Settings/UploadSettings.xaml:114	c:ExtendedButton [AddPresetButton] has no readable name.
+WT002	low	Views/Settings/UploadSettings.xaml:119	c:ExtendedButton [EditPresetButton] gets its ID "EditPresetButton" from x:Name.
+WT008	low	Views/Settings/UploadSettings.xaml:119	c:ExtendedButton [EditPresetButton] has no readable name.
+WT002	low	Views/Settings/UploadSettings.xaml:124	c:ExtendedButton [RemovePresetButton] gets its ID "RemovePresetButton" from x:Name.
+WT008	low	Views/Settings/UploadSettings.xaml:124	c:ExtendedButton [RemovePresetButton] has no readable name.
+WT002	low	Views/Settings/UploadSettings.xaml:129	c:ExtendedButton [HistoryPresetButton] gets its ID "HistoryPresetButton" from x:Name.
+WT008	low	Views/Settings/UploadSettings.xaml:129	c:ExtendedButton [HistoryPresetButton] has no readable name.
+WT001	high	Windows/Board.xaml:88	n:ExtendedRadioButton has no AutomationId.
+WT008	low	Windows/Board.xaml:88	n:ExtendedRadioButton has no readable name.
+WT001	high	Windows/Board.xaml:92	n:ExtendedRadioButton has no AutomationId.
+WT008	low	Windows/Board.xaml:92	n:ExtendedRadioButton has no readable name.
+WT001	high	Windows/Board.xaml:96	n:ExtendedRadioButton has no AutomationId.
+WT008	low	Windows/Board.xaml:96	n:ExtendedRadioButton has no readable name.
+WT001	high	Windows/Board.xaml:100	n:ExtendedRadioButton has no AutomationId.
+WT008	low	Windows/Board.xaml:100	n:ExtendedRadioButton has no readable name.
+WT001	high	Windows/Board.xaml:121	n:IntegerUpDown has no AutomationId.
+WT008	low	Windows/Board.xaml:121	n:IntegerUpDown has no readable name.
+WT001	high	Windows/Board.xaml:125	n:IntegerUpDown has no AutomationId.
+WT008	low	Windows/Board.xaml:125	n:IntegerUpDown has no readable name.
+WT001	high	Windows/Board.xaml:129	n:ExtendedRadioButton has no AutomationId.
+WT008	low	Windows/Board.xaml:129	n:ExtendedRadioButton has no readable name.
+WT001	high	Windows/Board.xaml:133	n:ExtendedRadioButton has no AutomationId.
+WT008	low	Windows/Board.xaml:133	n:ExtendedRadioButton has no readable name.
+WT001	high	Windows/Board.xaml:143	n:ExtendedCheckBox "{DynamicResource S.FreeDrawing.FitToCur…" has no AutomationId.
+WT001	high	Windows/Board.xaml:146	n:ExtendedCheckBox "{DynamicResource S.FreeDrawing.Highligh…" has no AutomationId.
+WT001	high	Windows/Board.xaml:163	n:IntegerUpDown has no AutomationId.
+WT008	low	Windows/Board.xaml:163	n:IntegerUpDown has no readable name.
+WT001	high	Windows/Board.xaml:167	n:IntegerUpDown has no AutomationId.
+WT008	low	Windows/Board.xaml:167	n:IntegerUpDown has no readable name.
+WT001	high	Windows/Board.xaml:171	n:ExtendedRadioButton has no AutomationId.
+WT008	low	Windows/Board.xaml:171	n:ExtendedRadioButton has no readable name.
+WT001	high	Windows/Board.xaml:175	n:ExtendedRadioButton has no AutomationId.
+WT008	low	Windows/Board.xaml:175	n:ExtendedRadioButton has no readable name.
+WT002	low	Windows/Board.xaml:207	n:ExtendedButton [CloseButton] gets its ID "CloseButton" from x:Name.
+WT008	low	Windows/Board.xaml:207	n:ExtendedButton [CloseButton] has no readable name.
+WT002	low	Windows/Board.xaml:218	n:ExtendedButton [OptionsButton] gets its ID "OptionsButton" from x:Name.
+WT008	low	Windows/Board.xaml:218	n:ExtendedButton [OptionsButton] has no readable name.
+WT002	low	Windows/Board.xaml:243	n:IntegerUpDown [FpsNumericUpDown] gets its ID "FpsNumericUpDown" from x:Name.
+WT008	low	Windows/Board.xaml:243	n:IntegerUpDown [FpsNumericUpDown] has no readable name.
+WT002	low	Windows/Board.xaml:254	n:IntegerBox [WidthIntegerBox] gets its ID "WidthIntegerBox" from x:Name.
+WT008	low	Windows/Board.xaml:254	n:IntegerBox [WidthIntegerBox] has no readable name.
+WT002	low	Windows/Board.xaml:260	n:IntegerBox [HeightIntegerBox] gets its ID "HeightIntegerBox" from x:Name.
+WT008	low	Windows/Board.xaml:260	n:IntegerBox [HeightIntegerBox] has no readable name.
+WT002	low	Windows/Board.xaml:268	n:ExtendedButton "{DynamicResource S.Recorder.Discard}" gets its ID "DiscardButton" from x:Name.
+WT002	low	Windows/Board.xaml:272	n:ExtendedToggleButton "{DynamicResource S.Board.AutoRecord}" gets its ID "AutoRecordToggleButton" from x:Name.
+WT002	low	Windows/Board.xaml:276	n:ExtendedButton "{DynamicResource S.Recorder.Stop}" gets its ID "StopButton" from x:Name.
+WT002	low	Windows/Editor.xaml:431	n:HideableTabControl [RibbonTabControl] gets its ID "RibbonTabControl" from x:Name.
+WT001	high	Windows/Editor.xaml:436	n:AwareTabItem "{DynamicResource S.Editor.File}" has no AutomationId.
+WT002	low	Windows/Editor.xaml:466	n:ExtendedButton "{DynamicResource S.Editor.File.New.Reco…" gets its ID "NewRecordingButton" from x:Name.
+WT002	low	Windows/Editor.xaml:471	n:ExtendedButton "{DynamicResource S.Editor.File.New.Webc…" gets its ID "NewWebcamRecordingButton" from x:Name.
+WT002	low	Windows/Editor.xaml:476	n:ExtendedButton "{DynamicResource S.Editor.File.New.Boar…" gets its ID "NewBoardRecordingButton" from x:Name.
+WT002	low	Windows/Editor.xaml:481	n:ExtendedButton "{DynamicResource S.Editor.File.Blank}" gets its ID "NewAnimationButton" from x:Name.
+WT002	low	Windows/Editor.xaml:505	n:ExtendedButton "{DynamicResource S.Editor.File.Insert.R…" gets its ID "InsertRecordingButton" from x:Name.
+WT002	low	Windows/Editor.xaml:510	n:ExtendedButton "{DynamicResource S.Editor.File.Insert.W…" gets its ID "InsertWebcamRecordingButton" from x:Name.
+WT002	low	Windows/Editor.xaml:515	n:ExtendedButton "{DynamicResource S.Editor.File.Insert.B…" gets its ID "InsertBoardRecordingButton" from x:Name.
+WT002	low	Windows/Editor.xaml:520	n:ExtendedButton "{DynamicResource S.Editor.File.Insert.M…" gets its ID "InsertImageButton" from x:Name.
+WT002	low	Windows/Editor.xaml:544	n:ExtendedButton "{DynamicResource S.Editor.File.Save}" gets its ID "SaveButton" from x:Name.
+WT002	low	Windows/Editor.xaml:550	n:ExtendedButton "{DynamicResource S.Editor.File.Load}" gets its ID "LoadButton" from x:Name.
+WT002	low	Windows/Editor.xaml:555	n:ExtendedButton "{DynamicResource S.Editor.File.LoadRece…" gets its ID "RecentButton" from x:Name.
+WT002	low	Windows/Editor.xaml:560	n:ExtendedButton "{DynamicResource S.Editor.File.Discard}" gets its ID "DiscardProjectButton" from x:Name.
+WT001	high	Windows/Editor.xaml:571	n:AwareTabItem "{DynamicResource S.Editor.Home}" has no AutomationId.
+WT002	low	Windows/Editor.xaml:600	n:ExtendedButton "{DynamicResource S.Editor.Home.Undo}" gets its ID "UndoButton" from x:Name.
+WT002	low	Windows/Editor.xaml:611	n:ExtendedButton "{DynamicResource S.Editor.Home.Reset}" gets its ID "ResetButton" from x:Name.
+WT002	low	Windows/Editor.xaml:616	n:ExtendedButton "{DynamicResource S.Editor.Home.Redo}" gets its ID "RedoButton" from x:Name.
+WT002	low	Windows/Editor.xaml:646	n:ExtendedButton [ShowClipboardButton] gets its ID "ShowClipboardButton" from x:Name.
+WT008	low	Windows/Editor.xaml:646	n:ExtendedButton [ShowClipboardButton] has no readable name.
+WT002	low	Windows/Editor.xaml:651	n:ExtendedButton "{DynamicResource S.Editor.Home.Paste}" gets its ID "PasteButton" from x:Name.
+WT002	low	Windows/Editor.xaml:662	n:ExtendedButton "{DynamicResource S.Editor.Home.Copy}" gets its ID "CopyButton" from x:Name.
+WT002	low	Windows/Editor.xaml:667	n:ExtendedButton "{DynamicResource S.Editor.Home.Cut}" gets its ID "CutButton" from x:Name.
+WT002	low	Windows/Editor.xaml:692	n:ExtendedButton "100%" gets its ID "Zoom100Button" from x:Name.
+WT002	low	Windows/Editor.xaml:697	n:ExtendedButton "{DynamicResource S.Editor.Home.SizeToCo…" gets its ID "FitOnContentButton" from x:Name.
+WT002	low	Windows/Editor.xaml:710	n:IntegerUpDown [ZoomNumericUpDown] gets its ID "ZoomNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:710	n:IntegerUpDown [ZoomNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:715	n:ExtendedButton "{DynamicResource S.Editor.Home.FitImage}" gets its ID "FitButton" from x:Name.
+WT002	low	Windows/Editor.xaml:741	n:ExtendedButton "{DynamicResource S.Editor.Home.SelectAl…" gets its ID "SelectAllButton" from x:Name.
+WT002	low	Windows/Editor.xaml:746	n:ExtendedButton "{DynamicResource S.Editor.Home.GoTo}" gets its ID "GoToButton" from x:Name.
+WT002	low	Windows/Editor.xaml:757	n:ExtendedButton "{DynamicResource S.Editor.Home.Inverse}" gets its ID "InverseSelectionButton" from x:Name.
+WT002	low	Windows/Editor.xaml:762	n:ExtendedButton "{DynamicResource S.Editor.Home.Deselect}" gets its ID "DeselectButton" from x:Name.
+WT001	high	Windows/Editor.xaml:773	n:AwareTabItem "{DynamicResource S.Editor.Playback}" has no AutomationId.
+WT002	low	Windows/Editor.xaml:800	n:ExtendedButton "{DynamicResource S.Editor.Playback.Firs…" gets its ID "FirstButton" from x:Name.
+WT002	low	Windows/Editor.xaml:805	n:ExtendedRepeatButton "{DynamicResource S.Editor.Playback.Prev…" gets its ID "PreviousButton" from x:Name.
+WT002	low	Windows/Editor.xaml:810	n:ExtendedButton "{DynamicResource S.Editor.Playback.Play}" gets its ID "PlayButton" from x:Name.
+WT002	low	Windows/Editor.xaml:815	n:ExtendedRepeatButton "{DynamicResource S.Editor.Playback.Next}" gets its ID "NextButton" from x:Name.
+WT002	low	Windows/Editor.xaml:820	n:ExtendedButton "{DynamicResource S.Editor.Playback.Last}" gets its ID "LastButton" from x:Name.
+WT002	low	Windows/Editor.xaml:839	n:ExtendedCheckBox "{DynamicResource S.Editor.PlaybackOptio…" gets its ID "LoopedPlaybackCheckBox" from x:Name.
+WT001	high	Windows/Editor.xaml:843	n:ExtendedCheckBox "{DynamicResource S.Options.Editor.Gener…" has no AutomationId.
+WT001	high	Windows/Editor.xaml:852	n:AwareTabItem "{DynamicResource S.Editor.Edit}" has no AutomationId.
+WT002	low	Windows/Editor.xaml:883	n:ExtendedButton "{DynamicResource S.Editor.Edit.Delete}" gets its ID "DeleteButton" from x:Name.
+WT002	low	Windows/Editor.xaml:888	n:ExtendedButton "{DynamicResource S.Editor.Edit.Frames.D…" gets its ID "DeleteDuplicatesButton" from x:Name.
+WT002	low	Windows/Editor.xaml:893	n:ExtendedButton "{DynamicResource S.Editor.Edit.Frames.R…" gets its ID "ReduceButton" from x:Name.
+WT002	low	Windows/Editor.xaml:898	n:ExtendedButton "{DynamicResource S.Editor.Edit.Frames.S…" gets its ID "SmoothLoopButton" from x:Name.
+WT002	low	Windows/Editor.xaml:909	n:ExtendedButton "{DynamicResource S.Editor.Edit.DeletePr…" gets its ID "DeleteBeforeButton" from x:Name.
+WT002	low	Windows/Editor.xaml:914	n:ExtendedButton "{DynamicResource S.Editor.Edit.DeleteNe…" gets its ID "DeleteAfterButton" from x:Name.
+WT002	low	Windows/Editor.xaml:944	n:ExtendedButton "{DynamicResource S.Editor.Edit.Reverse}" gets its ID "ReverseOrderButton" from x:Name.
+WT002	low	Windows/Editor.xaml:949	n:ExtendedButton "{DynamicResource S.Editor.Edit.Yoyo}" gets its ID "YoyoOrderButton" from x:Name.
+WT002	low	Windows/Editor.xaml:955	n:ExtendedButton "{DynamicResource S.Editor.Edit.MoveLeft}" gets its ID "MoveLeftButton" from x:Name.
+WT002	low	Windows/Editor.xaml:960	n:ExtendedButton "{DynamicResource S.Editor.Edit.MoveRigh…" gets its ID "MoveRightButton" from x:Name.
+WT002	low	Windows/Editor.xaml:983	n:ExtendedButton "{DynamicResource S.Editor.Edit.Delay.Ov…" gets its ID "OverrideDelayButton" from x:Name.
+WT002	low	Windows/Editor.xaml:988	n:ExtendedButton "{DynamicResource S.Editor.Edit.Delay.In…" gets its ID "ChangeDelayButton" from x:Name.
+WT002	low	Windows/Editor.xaml:993	n:ExtendedButton "{DynamicResource S.Editor.Edit.Delay.Sc…" gets its ID "ScaleDelayButton" from x:Name.
+WT001	high	Windows/Editor.xaml:1003	n:AwareTabItem "{DynamicResource S.Editor.Image}" has no AutomationId.
+WT002	low	Windows/Editor.xaml:1029	n:ExtendedButton "{DynamicResource S.Editor.Image.Resize}" gets its ID "ResizeButton" from x:Name.
+WT002	low	Windows/Editor.xaml:1040	n:ExtendedButton "{DynamicResource S.Editor.Image.Crop}" gets its ID "CropButton" from x:Name.
+WT002	low	Windows/Editor.xaml:1045	n:ExtendedButton "{DynamicResource S.Editor.Image.FlipRot…" gets its ID "FlipRotateButton" from x:Name.
+WT002	low	Windows/Editor.xaml:1069	n:ExtendedButton "{DynamicResource S.Editor.Image.Caption}" gets its ID "CaptionButton" from x:Name.
+WT002	low	Windows/Editor.xaml:1074	n:ExtendedButton "{DynamicResource S.Editor.Image.KeyStro…" gets its ID "KeypressButton" from x:Name.
+WT002	low	Windows/Editor.xaml:1085	n:ExtendedButton "{DynamicResource S.Editor.Image.FreeTex…" gets its ID "FreeTextButton" from x:Name.
+WT002	low	Windows/Editor.xaml:1090	n:ExtendedButton "{DynamicResource S.Editor.Image.TitleFr…" gets its ID "TitleFrameButton" from x:Name.
+WT002	low	Windows/Editor.xaml:1119	n:ExtendedButton "{DynamicResource S.Editor.Image.FreeDra…" gets its ID "FreeDrawButton" from x:Name.
+WT002	low	Windows/Editor.xaml:1124	n:ExtendedButton "{DynamicResource S.Editor.Image.Shape}" gets its ID "ShapesButton" from x:Name.
+WT002	low	Windows/Editor.xaml:1129	n:ExtendedButton "{DynamicResource S.Editor.Image.Progres…" gets its ID "ProgressButton" from x:Name.
+WT001	high	Windows/Editor.xaml:1134	n:ExtendedButton "{DynamicResource S.Editor.Image.MouseEv…" has no AutomationId.
+WT002	low	Windows/Editor.xaml:1139	n:ExtendedButton "{DynamicResource S.Editor.Image.Border}" gets its ID "BorderButton" from x:Name.
+WT002	low	Windows/Editor.xaml:1144	n:ExtendedButton "{DynamicResource S.Editor.Image.Shadow}" gets its ID "ShadowButton" from x:Name.
+WT002	low	Windows/Editor.xaml:1149	n:ExtendedButton "{DynamicResource S.Editor.Image.Obfusca…" gets its ID "ObfuscateButton" from x:Name.
+WT002	low	Windows/Editor.xaml:1160	n:ExtendedButton "{DynamicResource S.Editor.Image.Waterma…" gets its ID "WatermarkButton" from x:Name.
+WT002	low	Windows/Editor.xaml:1165	n:ExtendedButton "{DynamicResource S.Editor.Image.Cinemag…" gets its ID "CinemagraphButton" from x:Name.
+WT001	high	Windows/Editor.xaml:1176	n:AwareTabItem "{DynamicResource S.Editor.Transitions}" has no AutomationId.
+WT002	low	Windows/Editor.xaml:1198	n:ExtendedButton "{DynamicResource S.Editor.Transitions.F…" gets its ID "FadeTransitionButton" from x:Name.
+WT002	low	Windows/Editor.xaml:1203	n:ExtendedButton "{DynamicResource S.Editor.Transitions.S…" gets its ID "SlideTransitionButton" from x:Name.
+WT001	high	Windows/Editor.xaml:1213	n:AwareTabItem "{DynamicResource S.Editor.Statistics}" has no AutomationId.
+WT007	medium	Windows/Editor.xaml:1342	n:StatusList [StatusList] has the ID "StatusList", but this element type isn't visible to UI Automation.
+WT002	low	Windows/Editor.xaml:1388	n:ExtendedMenuItem "{DynamicResource S.Editor.Playback.Play}" gets its ID "PlayMenuItem" from x:Name.
+WT001	high	Windows/Editor.xaml:1391	n:ExtendedMenuItem "{DynamicResource S.Editor.Home.Undo}" has no AutomationId.
+WT001	high	Windows/Editor.xaml:1392	n:ExtendedMenuItem "{DynamicResource S.Editor.Home.Redo}" has no AutomationId.
+WT001	high	Windows/Editor.xaml:1394	n:ExtendedMenuItem "{DynamicResource S.Context.SaveAs}" has no AutomationId.
+WT001	high	Windows/Editor.xaml:1395	n:ExtendedMenuItem "{DynamicResource S.Recorder.Discard}" has no AutomationId.
+WT001	high	Windows/Editor.xaml:1397	n:ExtendedMenuItem "{DynamicResource S.Context.RemoveFrames}" has no AutomationId.
+WT007	medium	Windows/Editor.xaml:1419	n:TextPath [CaptionOverlayLabel] has the ID "CaptionOverlayLabel", but this element type isn't visible to UI Automation.
+WT007	medium	Windows/Editor.xaml:1506	n:TextPath [KeyStrokesLabel] has the ID "KeyStrokesLabel", but this element type isn't visible to UI Automation.
+WT001	high	Windows/Editor.xaml:1642	n:ExtendedMenuItem "{DynamicResource S.Context.NewRecording}" has no AutomationId.
+WT001	high	Windows/Editor.xaml:1643	n:ExtendedMenuItem "{DynamicResource S.Context.NewWebcamRec…" has no AutomationId.
+WT001	high	Windows/Editor.xaml:1644	n:ExtendedMenuItem "{DynamicResource S.Context.NewBoardReco…" has no AutomationId.
+WT001	high	Windows/Editor.xaml:1645	n:ExtendedMenuItem "{DynamicResource S.Context.NewBlankAnim…" has no AutomationId.
+WT001	high	Windows/Editor.xaml:1646	n:ExtendedMenuItem "{DynamicResource S.Context.NewFromMedia…" has no AutomationId.
+WT001	high	Windows/Editor.xaml:1674	Hyperlink "{DynamicResource S.Editor.UpdateAvailab…" has no AutomationId.
+WT002	low	Windows/Editor.xaml:1709	n:ExtendedButton [HideButton] gets its ID "HideButton" from x:Name.
+WT008	low	Windows/Editor.xaml:1709	n:ExtendedButton [HideButton] has no readable name.
+WT002	low	Windows/Editor.xaml:1739	n:IntegerUpDown [NewImageWidthNumericUpDown] gets its ID "NewImageWidthNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:1739	n:IntegerUpDown [NewImageWidthNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:1743	n:IntegerUpDown [NewImageHeightNumericUpDown] gets its ID "NewImageHeightNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:1743	n:IntegerUpDown [NewImageHeightNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:1774	DataGrid [RecentDataGrid] gets its ID "RecentDataGrid" from x:Name.
+WT005	medium	Windows/Editor.xaml:1774	Rows in DataGrid [RecentDataGrid] have no unique ID.
+WT008	low	Windows/Editor.xaml:1774	DataGrid [RecentDataGrid] has no readable name.
+WT002	low	Windows/Editor.xaml:1793	ListBox [ClipboardListBox] gets its ID "ClipboardListBox" from x:Name.
+WT005	medium	Windows/Editor.xaml:1793	Rows in ListBox [ClipboardListBox] have no unique ID.
+WT008	low	Windows/Editor.xaml:1793	ListBox [ClipboardListBox] has no readable name.
+WT002	low	Windows/Editor.xaml:1811	RadioButton "{DynamicResource S.Clipboard.Before}" gets its ID "PasteBeforeRadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:1813	RadioButton "{DynamicResource S.Clipboard.After}" gets its ID "PasteAfterRadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:1846	n:IntegerUpDown [TopCropNumericUpDown] gets its ID "TopCropNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:1846	n:IntegerUpDown [TopCropNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:1858	n:IntegerUpDown [LeftCropNumericUpDown] gets its ID "LeftCropNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:1858	n:IntegerUpDown [LeftCropNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:1870	n:IntegerUpDown [BottomCropNumericUpDown] gets its ID "BottomCropNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:1870	n:IntegerUpDown [BottomCropNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:1882	n:IntegerUpDown [RightCropNumericUpDown] gets its ID "RightCropNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:1882	n:IntegerUpDown [RightCropNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:1910	n:ExtendedRadioButton "{DynamicResource S.FlipRotate.FlipHoriz…" gets its ID "FlipHorizontalRadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:1914	n:ExtendedRadioButton "{DynamicResource S.FlipRotate.FlipVerti…" gets its ID "FlipVerticalRadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:1918	n:ExtendedRadioButton "{DynamicResource S.FlipRotate.RotateLef…" gets its ID "RotateLeftRadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:1922	n:ExtendedRadioButton "{DynamicResource S.FlipRotate.RotateRig…" gets its ID "RotateRightRadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:1937	n:ExtendedTextBox [CaptionTextBox] gets its ID "CaptionTextBox" from x:Name.
+WT008	low	Windows/Editor.xaml:1937	n:ExtendedTextBox [CaptionTextBox] has no readable name.
+WT001	high	Windows/Editor.xaml:1940	Expander "{DynamicResource S.Caption.Font}" has no AutomationId.
+WT002	low	Windows/Editor.xaml:1956	ComboBox [CaptionFontComboBox] gets its ID "CaptionFontComboBox" from x:Name.
+WT005	medium	Windows/Editor.xaml:1956	Rows in ComboBox [CaptionFontComboBox] have no unique ID.
+WT008	low	Windows/Editor.xaml:1956	ComboBox [CaptionFontComboBox] has no readable name.
+WT002	low	Windows/Editor.xaml:1970	ComboBox [CaptionFontStyleComboBox] gets its ID "CaptionFontStyleComboBox" from x:Name.
+WT008	low	Windows/Editor.xaml:1970	ComboBox [CaptionFontStyleComboBox] has no readable name.
+WT002	low	Windows/Editor.xaml:1986	ComboBox [CaptionFontWeightComboBox] gets its ID "CaptionFontWeightComboBox" from x:Name.
+WT008	low	Windows/Editor.xaml:1986	ComboBox [CaptionFontWeightComboBox] has no readable name.
+WT002	low	Windows/Editor.xaml:2015	n:IntegerUpDown [CaptionFontSizeNumericUpDown] gets its ID "CaptionFontSizeNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:2015	n:IntegerUpDown [CaptionFontSizeNumericUpDown] has no readable name.
+WT001	high	Windows/Editor.xaml:2024	Expander "{DynamicResource S.Caption.Outline}" has no AutomationId.
+WT002	low	Windows/Editor.xaml:2037	n:IntegerUpDown [CaptionOutlineThicknessNumericUpDown] gets its ID "CaptionOutlineThicknessNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:2037	n:IntegerUpDown [CaptionOutlineThicknessNumericUpDown] has no readable name.
+WT001	high	Windows/Editor.xaml:2046	Expander "{DynamicResource S.Caption.Layout}" has no AutomationId.
+WT002	low	Windows/Editor.xaml:2059	ComboBox [CaptionVerticalAligmentComboBox] gets its ID "CaptionVerticalAligmentComboBox" from x:Name.
+WT008	low	Windows/Editor.xaml:2059	ComboBox [CaptionVerticalAligmentComboBox] has no readable name.
+WT002	low	Windows/Editor.xaml:2068	ComboBox [CaptionHorizontalAligmentComboBox] gets its ID "CaptionHorizontalAligmentComboBox" from x:Name.
+WT008	low	Windows/Editor.xaml:2068	ComboBox [CaptionHorizontalAligmentComboBox] has no readable name.
+WT002	low	Windows/Editor.xaml:2077	n:IntegerUpDown [CaptionMarginNumericUpDown] gets its ID "CaptionMarginNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:2077	n:IntegerUpDown [CaptionMarginNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:2094	n:ExtendedTextBox [FreeTextTextBox] gets its ID "FreeTextTextBox" from x:Name.
+WT008	low	Windows/Editor.xaml:2094	n:ExtendedTextBox [FreeTextTextBox] has no readable name.
+WT001	high	Windows/Editor.xaml:2098	Expander "{DynamicResource S.Caption.Font}" has no AutomationId.
+WT002	low	Windows/Editor.xaml:2115	ComboBox [FreeTextFontComboBox] gets its ID "FreeTextFontComboBox" from x:Name.
+WT005	medium	Windows/Editor.xaml:2115	Rows in ComboBox [FreeTextFontComboBox] have no unique ID.
+WT008	low	Windows/Editor.xaml:2115	ComboBox [FreeTextFontComboBox] has no readable name.
+WT002	low	Windows/Editor.xaml:2130	ComboBox [FreeTextFontStyleComboBox] gets its ID "FreeTextFontStyleComboBox" from x:Name.
+WT008	low	Windows/Editor.xaml:2130	ComboBox [FreeTextFontStyleComboBox] has no readable name.
+WT002	low	Windows/Editor.xaml:2146	ComboBox [FreeTextFontWeightComboBox] gets its ID "FreeTextFontWeightComboBox" from x:Name.
+WT008	low	Windows/Editor.xaml:2146	ComboBox [FreeTextFontWeightComboBox] has no readable name.
+WT002	low	Windows/Editor.xaml:2175	n:IntegerUpDown [FreeTextFontSizeNumericUpDown] gets its ID "FreeTextFontSizeNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:2175	n:IntegerUpDown [FreeTextFontSizeNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:2187	ComboBox [FreeTextTextDecorationComboBox] gets its ID "FreeTextTextDecorationComboBox" from x:Name.
+WT008	low	Windows/Editor.xaml:2187	ComboBox [FreeTextTextDecorationComboBox] has no readable name.
+WT001	high	Windows/Editor.xaml:2206	Expander "{DynamicResource S.Editor.Image.Shadow}" has no AutomationId.
+WT001	high	Windows/Editor.xaml:2227	n:DoubleUpDown has no AutomationId.
+WT008	low	Windows/Editor.xaml:2227	n:DoubleUpDown has no readable name.
+WT001	high	Windows/Editor.xaml:2230	n:DoubleUpDown has no AutomationId.
+WT008	low	Windows/Editor.xaml:2230	n:DoubleUpDown has no readable name.
+WT001	high	Windows/Editor.xaml:2233	n:DoubleUpDown has no AutomationId.
+WT008	low	Windows/Editor.xaml:2233	n:DoubleUpDown has no readable name.
+WT001	high	Windows/Editor.xaml:2236	n:DoubleUpDown has no AutomationId.
+WT008	low	Windows/Editor.xaml:2236	n:DoubleUpDown has no readable name.
+WT002	low	Windows/Editor.xaml:2254	n:IntegerUpDown [FreeTextPositionXNumericUpDown] gets its ID "FreeTextPositionXNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:2254	n:IntegerUpDown [FreeTextPositionXNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:2259	n:IntegerUpDown [FreeTextPositionYNumericUpDown] gets its ID "FreeTextPositionYNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:2259	n:IntegerUpDown [FreeTextPositionYNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:2264	ComboBox [FreeTextTextAlignmentComboBox] gets its ID "FreeTextTextAlignmentComboBox" from x:Name.
+WT008	low	Windows/Editor.xaml:2264	ComboBox [FreeTextTextAlignmentComboBox] has no readable name.
+WT002	low	Windows/Editor.xaml:2281	n:IntegerUpDown [FreeTextWidthNumericUpDown] gets its ID "FreeTextWidthNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:2281	n:IntegerUpDown [FreeTextWidthNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:2314	n:ExtendedTextBox [TitleFrameTextBox] gets its ID "TitleFrameTextBox" from x:Name.
+WT008	low	Windows/Editor.xaml:2314	n:ExtendedTextBox [TitleFrameTextBox] has no readable name.
+WT001	high	Windows/Editor.xaml:2317	Expander "{DynamicResource S.Caption.Font}" has no AutomationId.
+WT002	low	Windows/Editor.xaml:2332	ComboBox [TitleFrameFontComboBox] gets its ID "TitleFrameFontComboBox" from x:Name.
+WT005	medium	Windows/Editor.xaml:2332	Rows in ComboBox [TitleFrameFontComboBox] have no unique ID.
+WT008	low	Windows/Editor.xaml:2332	ComboBox [TitleFrameFontComboBox] has no readable name.
+WT002	low	Windows/Editor.xaml:2345	ComboBox [TitleFrameFontStyleComboBox] gets its ID "TitleFrameFontStyleComboBox" from x:Name.
+WT008	low	Windows/Editor.xaml:2345	ComboBox [TitleFrameFontStyleComboBox] has no readable name.
+WT002	low	Windows/Editor.xaml:2361	ComboBox [TitleFrameFontWeightComboBox] gets its ID "TitleFrameFontWeightComboBox" from x:Name.
+WT008	low	Windows/Editor.xaml:2361	ComboBox [TitleFrameFontWeightComboBox] has no readable name.
+WT002	low	Windows/Editor.xaml:2390	n:IntegerUpDown [TitleFrameFontSizeNumericUpDown] gets its ID "TitleFrameFontSizeNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:2390	n:IntegerUpDown [TitleFrameFontSizeNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:2407	n:IntegerUpDown [TitleFrameDelayIntegerUpDown] gets its ID "TitleFrameDelayIntegerUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:2407	n:IntegerUpDown [TitleFrameDelayIntegerUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:2424	ComboBox [TitleFrameVerticalAligmentComboBox] gets its ID "TitleFrameVerticalAligmentComboBox" from x:Name.
+WT008	low	Windows/Editor.xaml:2424	ComboBox [TitleFrameVerticalAligmentComboBox] has no readable name.
+WT002	low	Windows/Editor.xaml:2433	ComboBox [TitleFrameHorizontalAligmentComboBox] gets its ID "TitleFrameHorizontalAligmentComboBox" from x:Name.
+WT008	low	Windows/Editor.xaml:2433	ComboBox [TitleFrameHorizontalAligmentComboBox] has no readable name.
+WT002	low	Windows/Editor.xaml:2442	n:IntegerUpDown [TitleFrameMarginNumericUpDown] gets its ID "TitleFrameMarginNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:2442	n:IntegerUpDown [TitleFrameMarginNumericUpDown] has no readable name.
+WT001	high	Windows/Editor.xaml:2470	Expander "{DynamicResource S.KeyStrokes.Keys}" has no AutomationId.
+WT001	high	Windows/Editor.xaml:2489	n:ExtendedButton "{DynamicResource S.KeyStrokes.Edit}" has no AutomationId.
+WT001	high	Windows/Editor.xaml:2492	n:ExtendedCheckBox "{DynamicResource S.KeyStrokes.IgnoreMod…" has no AutomationId.
+WT001	high	Windows/Editor.xaml:2496	n:ExtendedCheckBox "{DynamicResource S.KeyStrokes.IgnoreInj…" has no AutomationId.
+WT001	high	Windows/Editor.xaml:2500	n:ExtendedCheckBox "{DynamicResource S.KeyStrokes.Translate}" has no AutomationId.
+WT001	high	Windows/Editor.xaml:2504	n:ExtendedCheckBox "{DynamicResource S.KeyStrokes.Extend}" has no AutomationId.
+WT001	high	Windows/Editor.xaml:2510	n:IntegerUpDown has no AutomationId.
+WT008	low	Windows/Editor.xaml:2510	n:IntegerUpDown has no readable name.
+WT001	high	Windows/Editor.xaml:2513	n:ExtendedCheckBox "{DynamicResource S.KeyStrokes.Earlier}" has no AutomationId.
+WT001	high	Windows/Editor.xaml:2519	n:IntegerUpDown has no AutomationId.
+WT008	low	Windows/Editor.xaml:2519	n:IntegerUpDown has no readable name.
+WT001	high	Windows/Editor.xaml:2523	n:ExtendedTextBox has no AutomationId.
+WT008	low	Windows/Editor.xaml:2523	n:ExtendedTextBox has no readable name.
+WT001	high	Windows/Editor.xaml:2528	Expander "{DynamicResource S.Caption.Font}" has no AutomationId.
+WT001	high	Windows/Editor.xaml:2544	ComboBox has no AutomationId.
+WT005	medium	Windows/Editor.xaml:2544	Rows in ComboBox have no unique ID.
+WT008	low	Windows/Editor.xaml:2544	ComboBox has no readable name.
+WT001	high	Windows/Editor.xaml:2558	ComboBox has no AutomationId.
+WT008	low	Windows/Editor.xaml:2558	ComboBox has no readable name.
+WT001	high	Windows/Editor.xaml:2574	ComboBox has no AutomationId.
+WT008	low	Windows/Editor.xaml:2574	ComboBox has no readable name.
+WT001	high	Windows/Editor.xaml:2603	n:IntegerUpDown has no AutomationId.
+WT008	low	Windows/Editor.xaml:2603	n:IntegerUpDown has no readable name.
+WT001	high	Windows/Editor.xaml:2611	Expander "{DynamicResource S.Caption.Outline}" has no AutomationId.
+WT001	high	Windows/Editor.xaml:2625	n:IntegerUpDown has no AutomationId.
+WT008	low	Windows/Editor.xaml:2625	n:IntegerUpDown has no readable name.
+WT001	high	Windows/Editor.xaml:2636	Expander "{DynamicResource S.Caption.Layout}" has no AutomationId.
+WT001	high	Windows/Editor.xaml:2651	ComboBox has no AutomationId.
+WT008	low	Windows/Editor.xaml:2651	ComboBox has no readable name.
+WT001	high	Windows/Editor.xaml:2661	ComboBox has no AutomationId.
+WT008	low	Windows/Editor.xaml:2661	ComboBox has no readable name.
+WT001	high	Windows/Editor.xaml:2671	n:IntegerUpDown has no AutomationId.
+WT008	low	Windows/Editor.xaml:2671	n:IntegerUpDown has no readable name.
+WT001	high	Windows/Editor.xaml:2675	n:IntegerUpDown has no AutomationId.
+WT008	low	Windows/Editor.xaml:2675	n:IntegerUpDown has no readable name.
+WT001	high	Windows/Editor.xaml:2679	n:IntegerUpDown has no AutomationId.
+WT008	low	Windows/Editor.xaml:2679	n:IntegerUpDown has no readable name.
+WT001	high	Windows/Editor.xaml:2706	n:ExtendedRadioButton "{DynamicResource S.FreeDrawing.Pen}" has no AutomationId.
+WT001	high	Windows/Editor.xaml:2708	n:ExtendedRadioButton "{DynamicResource S.FreeDrawing.Eraser}" has no AutomationId.
+WT001	high	Windows/Editor.xaml:2711	n:ExtendedRadioButton "{DynamicResource S.FreeDrawing.Select}" has no AutomationId.
+WT001	high	Windows/Editor.xaml:2713	n:ExtendedRadioButton "{DynamicResource S.FreeDrawing.StrokeEr…" has no AutomationId.
+WT002	low	Windows/Editor.xaml:2734	n:IntegerUpDown [FreeDrawingWidthNumericUpDown] gets its ID "FreeDrawingWidthNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:2734	n:IntegerUpDown [FreeDrawingWidthNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:2738	n:IntegerUpDown [FreeDrawingHeightNumericUpDown] gets its ID "FreeDrawingHeightNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:2738	n:IntegerUpDown [FreeDrawingHeightNumericUpDown] has no readable name.
+WT001	high	Windows/Editor.xaml:2752	n:ExtendedRadioButton "{DynamicResource S.FreeDrawing.Rectangl…" has no AutomationId.
+WT001	high	Windows/Editor.xaml:2755	n:ExtendedRadioButton "{DynamicResource S.FreeDrawing.Ellipse}" has no AutomationId.
+WT001	high	Windows/Editor.xaml:2760	n:ExtendedCheckBox "{DynamicResource S.FreeDrawing.Highligh…" has no AutomationId.
+WT001	high	Windows/Editor.xaml:2763	n:ExtendedCheckBox "{DynamicResource S.FreeDrawing.FitToCur…" has no AutomationId.
+WT001	high	Windows/Editor.xaml:2781	n:IntegerUpDown has no AutomationId.
+WT008	low	Windows/Editor.xaml:2781	n:IntegerUpDown has no readable name.
+WT001	high	Windows/Editor.xaml:2785	n:IntegerUpDown has no AutomationId.
+WT008	low	Windows/Editor.xaml:2785	n:IntegerUpDown has no readable name.
+WT001	high	Windows/Editor.xaml:2795	n:ExtendedRadioButton "{DynamicResource S.FreeDrawing.Rectangl…" has no AutomationId.
+WT001	high	Windows/Editor.xaml:2799	n:ExtendedRadioButton "{DynamicResource S.FreeDrawing.Ellipse}" has no AutomationId.
+WT002	low	Windows/Editor.xaml:2829	n:ExtendedRadioButton "{DynamicResource S.Shapes.Mode.Insert}" gets its ID "AddModeRadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:2832	n:ExtendedRadioButton "{DynamicResource S.FreeDrawing.Select}" gets its ID "SelectModeRadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:2838	ListBox [ShapesListBox] gets its ID "ShapesListBox" from x:Name.
+WT008	low	Windows/Editor.xaml:2838	ListBox [ShapesListBox] has no readable name.
+WT002	low	Windows/Editor.xaml:2869	n:DoubleUpDown [ShapeOutlineDoubleUpDown] gets its ID "ShapeOutlineDoubleUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:2869	n:DoubleUpDown [ShapeOutlineDoubleUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:2878	n:DoubleUpDown [ShapeRadiusDoubleUpDown] gets its ID "ShapeRadiusDoubleUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:2878	n:DoubleUpDown [ShapeRadiusDoubleUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:2976	n:DoubleUpDown [ClickWidthDoubleUpDown] gets its ID "ClickWidthDoubleUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:2976	n:DoubleUpDown [ClickWidthDoubleUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:2980	n:DoubleUpDown [ClickHeightDoubleUpDown] gets its ID "ClickHeightDoubleUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:2980	n:DoubleUpDown [ClickHeightDoubleUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3027	n:ExtendedButton "{DynamicResource S.FreeDrawing.Select}" gets its ID "SelectWatermarkButton" from x:Name.
+WT002	low	Windows/Editor.xaml:3044	n:IntegerUpDown [OpacityWatermarkNumericUpDown] gets its ID "OpacityWatermarkNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3044	n:IntegerUpDown [OpacityWatermarkNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3051	n:IntegerUpDown [SizeWatermarkNumericUpDown] gets its ID "SizeWatermarkNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3051	n:IntegerUpDown [SizeWatermarkNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3070	n:DoubleUpDown [TopWatermarkDoubleUpDown] gets its ID "TopWatermarkDoubleUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3070	n:DoubleUpDown [TopWatermarkDoubleUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3074	n:DoubleUpDown [LeftWatermarkDoubleUpDown] gets its ID "LeftWatermarkDoubleUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3074	n:DoubleUpDown [LeftWatermarkDoubleUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3124	n:IntegerUpDown [BorderTopThicknessNumericUpDown] gets its ID "BorderTopThicknessNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3124	n:IntegerUpDown [BorderTopThicknessNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3129	n:IntegerUpDown [BorderLeftThicknessNumericUpDown] gets its ID "BorderLeftThicknessNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3129	n:IntegerUpDown [BorderLeftThicknessNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3133	n:IntegerUpDown [BorderRightThicknessNumericUpDown] gets its ID "BorderRightThicknessNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3133	n:IntegerUpDown [BorderRightThicknessNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3143	n:IntegerUpDown [BorderBottomThicknessNumericUpDown] gets its ID "BorderBottomThicknessNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3143	n:IntegerUpDown [BorderBottomThicknessNumericUpDown] has no readable name.
+WT001	high	Windows/Editor.xaml:3243	n:DoubleUpDown has no AutomationId.
+WT008	low	Windows/Editor.xaml:3243	n:DoubleUpDown has no readable name.
+WT001	high	Windows/Editor.xaml:3247	n:DoubleUpDown has no AutomationId.
+WT008	low	Windows/Editor.xaml:3247	n:DoubleUpDown has no readable name.
+WT001	high	Windows/Editor.xaml:3251	n:DoubleUpDown has no AutomationId.
+WT008	low	Windows/Editor.xaml:3251	n:DoubleUpDown has no readable name.
+WT001	high	Windows/Editor.xaml:3255	n:DoubleUpDown has no AutomationId.
+WT008	low	Windows/Editor.xaml:3255	n:DoubleUpDown has no readable name.
+WT002	low	Windows/Editor.xaml:3282	n:ExtendedRadioButton "{DynamicResource S.Obfuscate.Type.Pixel…" gets its ID "PixelationRadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:3286	n:ExtendedRadioButton "{StaticResource S.Obfuscate.Type.Blur}" gets its ID "BlurRadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:3290	n:ExtendedRadioButton "{StaticResource S.Obfuscate.Type.Darken}" gets its ID "DarkenRadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:3294	n:ExtendedRadioButton "{StaticResource S.Obfuscate.Type.Lighte…" gets its ID "LightenRadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:3314	n:IntegerUpDown [PixelSizeIntegerUpDown] gets its ID "PixelSizeIntegerUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3314	n:IntegerUpDown [PixelSizeIntegerUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3320	n:IntegerUpDown [BlurSizeIntegerUpDown] gets its ID "BlurSizeIntegerUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3320	n:IntegerUpDown [BlurSizeIntegerUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3326	n:DoubleUpDown [DarknessDoubleUpDown] gets its ID "DarknessDoubleUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3326	n:DoubleUpDown [DarknessDoubleUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3332	n:DoubleUpDown [LightnessDoubleUpDown] gets its ID "LightnessDoubleUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3332	n:DoubleUpDown [LightnessDoubleUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3337	n:ExtendedCheckBox "{DynamicResource S.Obfuscate.UseAverage}" gets its ID "UseMedianCheckBox" from x:Name.
+WT001	high	Windows/Editor.xaml:3341	n:ExtendedCheckBox "{DynamicResource S.Obfuscate.Invert}" has no AutomationId.
+WT001	high	Windows/Editor.xaml:3358	n:IntegerUpDown has no AutomationId.
+WT008	low	Windows/Editor.xaml:3358	n:IntegerUpDown has no readable name.
+WT001	high	Windows/Editor.xaml:3363	n:DoubleUpDown has no AutomationId.
+WT008	low	Windows/Editor.xaml:3363	n:DoubleUpDown has no readable name.
+WT002	low	Windows/Editor.xaml:3403	n:ExtendedRadioButton "{DynamicResource S.Progress.Type.Bar}" gets its ID "BarRadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:3407	n:ExtendedRadioButton "{StaticResource S.Progress.Type.Text}" gets its ID "TextRadioButton" from x:Name.
+WT001	high	Windows/Editor.xaml:3412	Expander "{DynamicResource S.Caption.Font}" has no AutomationId.
+WT002	low	Windows/Editor.xaml:3428	ComboBox [ProgressFontComboBox] gets its ID "ProgressFontComboBox" from x:Name.
+WT005	medium	Windows/Editor.xaml:3428	Rows in ComboBox [ProgressFontComboBox] have no unique ID.
+WT008	low	Windows/Editor.xaml:3428	ComboBox [ProgressFontComboBox] has no readable name.
+WT002	low	Windows/Editor.xaml:3442	ComboBox [ProgressFontStyleComboBox] gets its ID "ProgressFontStyleComboBox" from x:Name.
+WT008	low	Windows/Editor.xaml:3442	ComboBox [ProgressFontStyleComboBox] has no readable name.
+WT002	low	Windows/Editor.xaml:3458	ComboBox [ProgressFontWeightComboBox] gets its ID "ProgressFontWeightComboBox" from x:Name.
+WT008	low	Windows/Editor.xaml:3458	ComboBox [ProgressFontWeightComboBox] has no readable name.
+WT002	low	Windows/Editor.xaml:3487	n:IntegerUpDown [ProgressFontSizeNumericUpDown] gets its ID "ProgressFontSizeNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3487	n:IntegerUpDown [ProgressFontSizeNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3516	ComboBox [ProgressPrecisionComboBox] gets its ID "ProgressPrecisionComboBox" from x:Name.
+WT008	low	Windows/Editor.xaml:3516	ComboBox [ProgressPrecisionComboBox] has no readable name.
+WT001	high	Windows/Editor.xaml:3529	n:ExtendedCheckBox "{DynamicResource S.Progress.Precision.S…" has no AutomationId.
+WT002	low	Windows/Editor.xaml:3542	n:ExtendedTextBox [CustomProgressTextBox] gets its ID "CustomProgressTextBox" from x:Name.
+WT008	low	Windows/Editor.xaml:3542	n:ExtendedTextBox [CustomProgressTextBox] has no readable name.
+WT002	low	Windows/Editor.xaml:3582	n:IntegerUpDown [ProgressStartNumberIntegerUpDown] gets its ID "ProgressStartNumberIntegerUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3582	n:IntegerUpDown [ProgressStartNumberIntegerUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3595	n:ExtendedTextBox [CustomProgressDateTextBox] gets its ID "CustomProgressDateTextBox" from x:Name.
+WT008	low	Windows/Editor.xaml:3595	n:ExtendedTextBox [CustomProgressDateTextBox] has no readable name.
+WT001	high	Windows/Editor.xaml:3603	Hyperlink "{DynamicResource S.Progress.Format.Date…" has no AutomationId.
+WT001	high	Windows/Editor.xaml:3607	Hyperlink "{DynamicResource  S.Progress.Format.Dat…" has no AutomationId.
+WT002	low	Windows/Editor.xaml:3614	n:IntegerUpDown [ProgressThicknessNumericUpDown] gets its ID "ProgressThicknessNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3614	n:IntegerUpDown [ProgressThicknessNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3632	ComboBox [ProgressVerticalComboBox] gets its ID "ProgressVerticalComboBox" from x:Name.
+WT008	low	Windows/Editor.xaml:3632	ComboBox [ProgressVerticalComboBox] has no readable name.
+WT002	low	Windows/Editor.xaml:3641	ComboBox [ProgressHorizontalComboBox] gets its ID "ProgressHorizontalComboBox" from x:Name.
+WT008	low	Windows/Editor.xaml:3641	ComboBox [ProgressHorizontalComboBox] has no readable name.
+WT002	low	Windows/Editor.xaml:3651	ComboBox [ProgressOrientationComboBox] gets its ID "ProgressOrientationComboBox" from x:Name.
+WT008	low	Windows/Editor.xaml:3651	ComboBox [ProgressOrientationComboBox] has no readable name.
+WT002	low	Windows/Editor.xaml:3690	n:ExtendedRadioButton "{DynamicResource S.FreeDrawing.Pen}" gets its ID "PenMode2RadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:3692	n:ExtendedRadioButton "{DynamicResource S.FreeDrawing.Eraser}" gets its ID "EraserMode2RadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:3695	n:ExtendedRadioButton "{DynamicResource S.FreeDrawing.Select}" gets its ID "SelectorMode2RadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:3697	n:ExtendedRadioButton "{DynamicResource S.FreeDrawing.StrokeEr…" gets its ID "EraserStrokeMode2RadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:3717	n:IntegerUpDown [CinemagraphWidthNumericUpDown] gets its ID "CinemagraphWidthNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3717	n:IntegerUpDown [CinemagraphWidthNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3721	n:IntegerUpDown [CinemagraphHeightNumericUpDown] gets its ID "CinemagraphHeightNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3721	n:IntegerUpDown [CinemagraphHeightNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3731	n:ExtendedRadioButton "{DynamicResource S.FreeDrawing.Rectangl…" gets its ID "Rectangle2RadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:3735	n:ExtendedRadioButton "{DynamicResource S.FreeDrawing.Ellipse}" gets its ID "Ellipse2RadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:3742	n:ExtendedCheckBox "{DynamicResource S.FreeDrawing.FitToCur…" gets its ID "FitToCurve2CheckBox" from x:Name.
+WT002	low	Windows/Editor.xaml:3761	n:IntegerUpDown [CinemagraphEraserWidthNumericUpDown] gets its ID "CinemagraphEraserWidthNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3761	n:IntegerUpDown [CinemagraphEraserWidthNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3765	n:IntegerUpDown [CinemagraphEraserHeightNumericUpDown] gets its ID "CinemagraphEraserHeightNumericUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3765	n:IntegerUpDown [CinemagraphEraserHeightNumericUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3775	n:ExtendedRadioButton "{DynamicResource S.FreeDrawing.Rectangl…" gets its ID "RectangleEraser2RadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:3779	n:ExtendedRadioButton "{DynamicResource S.FreeDrawing.Ellipse}" gets its ID "ElipseEraser2RadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:3814	n:IntegerUpDown [NewDelayIntegerUpDown] gets its ID "NewDelayIntegerUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3814	n:IntegerUpDown [NewDelayIntegerUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3847	n:IntegerUpDown [IncreaseDecreaseDelayIntegerUpDown] gets its ID "IncreaseDecreaseDelayIntegerUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3847	n:IntegerUpDown [IncreaseDecreaseDelayIntegerUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3880	n:IntegerUpDown [ScaleDelayIntegerUpDown] gets its ID "ScaleDelayIntegerUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3880	n:IntegerUpDown [ScaleDelayIntegerUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:3918	n:ExtendedRadioButton "{DynamicResource S.Transitions.FadeTo.F…" gets its ID "FadeToFrameRadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:3922	n:ExtendedRadioButton "{DynamicResource S.Transitions.FadeTo.C…" gets its ID "FadeToColorRadioButton" from x:Name.
+WT002	low	Windows/Editor.xaml:3940	Slider [FadeSlider] gets its ID "FadeSlider" from x:Name.
+WT008	low	Windows/Editor.xaml:3940	Slider [FadeSlider] has no readable name.
+WT002	low	Windows/Editor.xaml:3952	n:IntegerUpDown [FadeDelayIntegerUpDown] gets its ID "FadeDelayIntegerUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:3952	n:IntegerUpDown [FadeDelayIntegerUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:4024	Slider [SlideSlider] gets its ID "SlideSlider" from x:Name.
+WT008	low	Windows/Editor.xaml:4024	Slider [SlideSlider] has no readable name.
+WT002	low	Windows/Editor.xaml:4035	n:IntegerUpDown [SlideDelayIntegerUpDown] gets its ID "SlideDelayIntegerUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:4035	n:IntegerUpDown [SlideDelayIntegerUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:4136	n:IntegerUpDown [ReduceFactorIntegerUpDown] gets its ID "ReduceFactorIntegerUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:4136	n:IntegerUpDown [ReduceFactorIntegerUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:4140	n:IntegerUpDown [ReduceCountIntegerUpDown] gets its ID "ReduceCountIntegerUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:4140	n:IntegerUpDown [ReduceCountIntegerUpDown] has no readable name.
+WT001	high	Windows/Editor.xaml:4144	ComboBox has no AutomationId.
+WT008	low	Windows/Editor.xaml:4144	ComboBox has no readable name.
+WT001	high	Windows/Editor.xaml:4151	n:ExtendedCheckBox "{DynamicResource S.Reduce.ApplyToAll}" has no AutomationId.
+WT002	low	Windows/Editor.xaml:4197	n:DoubleUpDown [DuplicatesSimilarityDoubleUpDown] gets its ID "DuplicatesSimilarityDoubleUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:4197	n:DoubleUpDown [DuplicatesSimilarityDoubleUpDown] has no readable name.
+WT001	high	Windows/Editor.xaml:4201	ComboBox has no AutomationId.
+WT008	low	Windows/Editor.xaml:4201	ComboBox has no readable name.
+WT001	high	Windows/Editor.xaml:4208	ComboBox has no AutomationId.
+WT008	low	Windows/Editor.xaml:4208	ComboBox has no readable name.
+WT002	low	Windows/Editor.xaml:4256	n:DoubleUpDown [SmoothLoopSimilarityDoubleUpDown] gets its ID "SmoothLoopSimilarityDoubleUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:4256	n:DoubleUpDown [SmoothLoopSimilarityDoubleUpDown] has no readable name.
+WT002	low	Windows/Editor.xaml:4260	n:IntegerUpDown [SmoothLoopThresholdDoubleUpDown] gets its ID "SmoothLoopThresholdDoubleUpDown" from x:Name.
+WT008	low	Windows/Editor.xaml:4260	n:IntegerUpDown [SmoothLoopThresholdDoubleUpDown] has no readable name.
+WT001	high	Windows/Editor.xaml:4264	ComboBox has no AutomationId.
+WT008	low	Windows/Editor.xaml:4264	ComboBox has no readable name.
+WT002	low	Windows/Editor.xaml:4299	n:ExtendedButton "{DynamicResource S.Action.Apply}" gets its ID "ApplyButton" from x:Name.
+WT002	low	Windows/Editor.xaml:4302	n:ExtendedButton "{DynamicResource S.Action.Cancel}" gets its ID "CancelButton" from x:Name.
+WT002	low	Windows/Editor.xaml:4309	ListView [FrameListView] gets its ID "FrameListView" from x:Name.
+WT005	medium	Windows/Editor.xaml:4309	Rows in ListView [FrameListView] have no unique ID.
+WT008	low	Windows/Editor.xaml:4309	ListView [FrameListView] has no readable name.
+WT002	low	Windows/Editor.xaml:4402	n:ExtendedButton [CancelLoadingButton] gets its ID "CancelLoadingButton" from x:Name.
+WT008	low	Windows/Editor.xaml:4402	n:ExtendedButton [CancelLoadingButton] has no readable name.
+WT001	high	Windows/Editor.xaml:4419	n:IntegerUpDown has no AutomationId.
+WT008	low	Windows/Editor.xaml:4419	n:IntegerUpDown has no readable name.
+WT002	low	Windows/Editor.xaml:4453	n:ExtendedButton [FirstRepeatButton] gets its ID "FirstRepeatButton" from x:Name.
+WT008	low	Windows/Editor.xaml:4453	n:ExtendedButton [FirstRepeatButton] has no readable name.
+WT002	low	Windows/Editor.xaml:4457	n:ExtendedRepeatButton [PreviousRepeatButton] gets its ID "PreviousRepeatButton" from x:Name.
+WT008	low	Windows/Editor.xaml:4457	n:ExtendedRepeatButton [PreviousRepeatButton] has no readable name.
+WT002	low	Windows/Editor.xaml:4462	n:ExtendedButton [PlayPauseButton] gets its ID "PlayPauseButton" from x:Name.
+WT008	low	Windows/Editor.xaml:4462	n:ExtendedButton [PlayPauseButton] has no readable name.
+WT002	low	Windows/Editor.xaml:4467	n:ExtendedRepeatButton [NextRepeatButton] gets its ID "NextRepeatButton" from x:Name.
+WT008	low	Windows/Editor.xaml:4467	n:ExtendedRepeatButton [NextRepeatButton] has no readable name.
+WT002	low	Windows/Editor.xaml:4471	n:ExtendedButton [LastRepeatButton] gets its ID "LastRepeatButton" from x:Name.
+WT008	low	Windows/Editor.xaml:4471	n:ExtendedButton [LastRepeatButton] has no readable name.
+WT002	low	Windows/NewRecorder.xaml:122	n:ExtendedButton [MinimizeButton] gets its ID "MinimizeButton" from x:Name.
+WT008	low	Windows/NewRecorder.xaml:122	n:ExtendedButton [MinimizeButton] has no readable name.
+WT002	low	Windows/NewRecorder.xaml:124	n:ExtendedButton [CloseButton] gets its ID "CloseButton" from x:Name.
+WT008	low	Windows/NewRecorder.xaml:124	n:ExtendedButton [CloseButton] has no readable name.
+WT001	high	Windows/NewRecorder.xaml:147	n:ExtendedButton "{DynamicResource S.StartUp.Options}" has no AutomationId.
+WT002	low	Windows/NewRecorder.xaml:188	n:IntegerUpDown [FrequencyIntegerUpDown] gets its ID "FrequencyIntegerUpDown" from x:Name.
+WT008	low	Windows/NewRecorder.xaml:188	n:IntegerUpDown [FrequencyIntegerUpDown] has no readable name.
+WT001	high	Windows/NewRecorder.xaml:211	n:ExtendedMenuItem "{DynamicResource S.Options.Recorder.Fre…" has no AutomationId.
+WT001	high	Windows/NewRecorder.xaml:215	n:ExtendedMenuItem "{DynamicResource S.Options.Recorder.Fre…" has no AutomationId.
+WT001	high	Windows/NewRecorder.xaml:220	n:ExtendedMenuItem "{DynamicResource S.Options.Recorder.Fre…" has no AutomationId.
+WT001	high	Windows/NewRecorder.xaml:225	n:ExtendedMenuItem "{DynamicResource S.Options.Recorder.Fre…" has no AutomationId.
+WT001	high	Windows/NewRecorder.xaml:230	n:ExtendedMenuItem "{DynamicResource S.Options.Recorder.Fre…" has no AutomationId.
+WT001	high	Windows/NewRecorder.xaml:235	n:ExtendedMenuItem "{DynamicResource S.Options.Recorder.Fre…" has no AutomationId.
+WT002	low	Windows/NewRecorder.xaml:268	n:IntegerBox [WidthIntegerBox] gets its ID "WidthIntegerBox" from x:Name.
+WT008	low	Windows/NewRecorder.xaml:268	n:IntegerBox [WidthIntegerBox] has no readable name.
+WT002	low	Windows/NewRecorder.xaml:275	n:IntegerBox [HeightIntegerBox] gets its ID "HeightIntegerBox" from x:Name.
+WT008	low	Windows/NewRecorder.xaml:275	n:IntegerBox [HeightIntegerBox] has no readable name.
+WT001	high	Windows/NewRecorder.xaml:289	n:ExtendedMenuItem "{DynamicResource S.Recorder.Area.Select}" has no AutomationId.
+WT001	high	Windows/NewRecorder.xaml:290	n:ExtendedMenuItem "{DynamicResource S.Recorder.Window.Sele…" has no AutomationId.
+WT001	high	Windows/NewRecorder.xaml:291	n:ExtendedMenuItem "{DynamicResource S.Recorder.Screen.Sele…" has no AutomationId.
+WT002	low	Windows/NewRecorder.xaml:298	n:ExtendedButton "{DynamicResource S.Recorder.Snap}" gets its ID "SnapButton" from x:Name.
+WT002	low	Windows/NewRecorder.xaml:304	n:ExtendedButton "{DynamicResource S.Recorder.Record}" gets its ID "RecordButton" from x:Name.
+WT002	low	Windows/NewRecorder.xaml:310	n:ExtendedButton "{DynamicResource S.Recorder.Pause}" gets its ID "PauseButton" from x:Name.
+WT002	low	Windows/NewRecorder.xaml:316	n:ExtendedButton "{DynamicResource S.Recorder.Discard}" gets its ID "DiscardButton" from x:Name.
+WT002	low	Windows/NewRecorder.xaml:322	n:ExtendedButton "{DynamicResource S.Recorder.Stop}" gets its ID "StopLargeButton" from x:Name.
+WT002	low	Windows/NewRecorder.xaml:328	n:ExtendedButton "{DynamicResource S.Recorder.Stop}" gets its ID "StopSmallButton" from x:Name.
+WT002	low	Windows/NewRecorder.xaml:349	n:ExtendedButton [OptionsButton] gets its ID "OptionsButton" from x:Name.
+WT008	low	Windows/NewRecorder.xaml:349	n:ExtendedButton [OptionsButton] has no readable name.
+WT001	high	Windows/NewRecorder.xaml:368	n:IntegerUpDown has no AutomationId.
+WT008	low	Windows/NewRecorder.xaml:368	n:IntegerUpDown has no readable name.
+WT001	high	Windows/NewRecorder.xaml:373	n:ExtendedButton "{Binding ElementName=FrequencyTextBlock…" has no AutomationId.
+WT001	high	Windows/NewRecorder.xaml:379	n:ExtendedMenuItem "{DynamicResource S.Options.Recorder.Fre…" has no AutomationId.
+WT001	high	Windows/NewRecorder.xaml:382	n:ExtendedMenuItem "{DynamicResource S.Options.Recorder.Fre…" has no AutomationId.
+WT001	high	Windows/NewRecorder.xaml:387	n:ExtendedMenuItem "{DynamicResource S.Options.Recorder.Fre…" has no AutomationId.
+WT001	high	Windows/NewRecorder.xaml:392	n:ExtendedMenuItem "{DynamicResource S.Options.Recorder.Fre…" has no AutomationId.
+WT001	high	Windows/NewRecorder.xaml:397	n:ExtendedMenuItem "{DynamicResource S.Options.Recorder.Fre…" has no AutomationId.
+WT001	high	Windows/NewRecorder.xaml:402	n:ExtendedMenuItem "{DynamicResource S.Options.Recorder.Fre…" has no AutomationId.
+WT001	high	Windows/NewRecorder.xaml:416	n:ExtendedMenuItem "{DynamicResource S.Recorder.Area}" has no AutomationId.
+WT001	high	Windows/NewRecorder.xaml:417	n:ExtendedMenuItem "{DynamicResource S.Recorder.Window}" has no AutomationId.
+WT001	high	Windows/NewRecorder.xaml:418	n:ExtendedMenuItem "{DynamicResource S.Recorder.Screen}" has no AutomationId.
+WT001	high	Windows/NewRecorder.xaml:422	n:ExtendedButton has no AutomationId.
+WT008	low	Windows/NewRecorder.xaml:422	n:ExtendedButton has no readable name.
+WT001	high	Windows/NewRecorder.xaml:427	n:ExtendedButton has no AutomationId.
+WT008	low	Windows/NewRecorder.xaml:427	n:ExtendedButton has no readable name.
+WT001	high	Windows/NewRecorder.xaml:432	n:ExtendedButton has no AutomationId.
+WT008	low	Windows/NewRecorder.xaml:432	n:ExtendedButton has no readable name.
+WT001	high	Windows/NewRecorder.xaml:437	n:ExtendedButton has no AutomationId.
+WT008	low	Windows/NewRecorder.xaml:437	n:ExtendedButton has no readable name.
+WT001	high	Windows/NewRecorder.xaml:442	n:ExtendedButton has no AutomationId.
+WT008	low	Windows/NewRecorder.xaml:442	n:ExtendedButton has no readable name.
+WT002	low	Windows/Options.xaml:27	ListView [SectionsListView] gets its ID "SectionsListView" from x:Name.
+WT008	low	Windows/Options.xaml:27	ListView [SectionsListView] has no readable name.
+WT002	low	Windows/Options.xaml:63	c:ExtendedButton "{DynamicResource S.Ok}" gets its ID "OkButton" from x:Name.
+WT002	low	Windows/Other/AutomatedTask.xaml:41	ComboBox [TypeComboBox] gets its ID "TypeComboBox" from x:Name.
+WT008	low	Windows/Other/AutomatedTask.xaml:41	ComboBox [TypeComboBox] has no readable name.
+WT002	low	Windows/Other/AutomatedTask.xaml:105	n:ExtendedCheckBox "{DynamicResource S.Options.Tasks.Enable}" gets its ID "EnabledCheckBox" from x:Name.
+WT002	low	Windows/Other/AutomatedTask.xaml:108	n:ExtendedButton "{DynamicResource S.Ok}" gets its ID "OkButton" from x:Name.
+WT002	low	Windows/Other/AutomatedTask.xaml:110	n:ExtendedButton "{DynamicResource S.Cancel}" gets its ID "CancelButton" from x:Name.
+WT002	low	Windows/Other/CacheDialog.xaml:48	n:ExtendedCheckBox "{DynamicResource S.Options.Storage.Cach…" gets its ID "IgnoreRecentCheckBox" from x:Name.
+WT002	low	Windows/Other/CacheDialog.xaml:62	n:ExtendedButton "{DynamicResource S.Yes}" gets its ID "YesButton" from x:Name.
+WT002	low	Windows/Other/CacheDialog.xaml:64	n:ExtendedButton "{DynamicResource S.No}" gets its ID "CancelButton" from x:Name.
+WT002	low	Windows/Other/ColorSelector.xaml:171	n:SpectrumSlider [ColorSlider] gets its ID "ColorSlider" from x:Name.
+WT008	low	Windows/Other/ColorSelector.xaml:171	n:SpectrumSlider [ColorSlider] has no readable name.
+WT002	low	Windows/Other/ColorSelector.xaml:175	n:SpectrumSlider [AlphaSlider] gets its ID "AlphaSlider" from x:Name.
+WT008	low	Windows/Other/ColorSelector.xaml:175	n:SpectrumSlider [AlphaSlider] has no readable name.
+WT002	low	Windows/Other/ColorSelector.xaml:199	n:IntegerUpDown [RedIntegerUpDown] gets its ID "RedIntegerUpDown" from x:Name.
+WT008	low	Windows/Other/ColorSelector.xaml:199	n:IntegerUpDown [RedIntegerUpDown] has no readable name.
+WT002	low	Windows/Other/ColorSelector.xaml:203	n:IntegerUpDown [GreenIntegerUpDown] gets its ID "GreenIntegerUpDown" from x:Name.
+WT008	low	Windows/Other/ColorSelector.xaml:203	n:IntegerUpDown [GreenIntegerUpDown] has no readable name.
+WT002	low	Windows/Other/ColorSelector.xaml:207	n:IntegerUpDown [BlueIntegerUpDown] gets its ID "BlueIntegerUpDown" from x:Name.
+WT008	low	Windows/Other/ColorSelector.xaml:207	n:IntegerUpDown [BlueIntegerUpDown] has no readable name.
+WT002	low	Windows/Other/ColorSelector.xaml:211	n:IntegerUpDown [AlphaIntegerUpDown] gets its ID "AlphaIntegerUpDown" from x:Name.
+WT008	low	Windows/Other/ColorSelector.xaml:211	n:IntegerUpDown [AlphaIntegerUpDown] has no readable name.
+WT002	low	Windows/Other/ColorSelector.xaml:217	n:HexadecimalBox [ColorHexadecimalBox] gets its ID "ColorHexadecimalBox" from x:Name.
+WT008	low	Windows/Other/ColorSelector.xaml:217	n:HexadecimalBox [ColorHexadecimalBox] has no readable name.
+WT002	low	Windows/Other/ColorSelector.xaml:224	n:ExtendedButton "{DynamicResource S.ColorSelector.Sample}" gets its ID "EyeDropperButton" from x:Name.
+WT002	low	Windows/Other/ColorSelector.xaml:241	n:ExtendedButton "{DynamicResource S.Ok}" gets its ID "OkButton" from x:Name.
+WT002	low	Windows/Other/ColorSelector.xaml:243	n:ExtendedButton "{DynamicResource S.Cancel}" gets its ID "CancelButton" from x:Name.
+WT002	low	Windows/Other/CommandPreviewer.xaml:42	n:ExtendedTextBox [ParametersTextBox] gets its ID "ParametersTextBox" from x:Name.
+WT008	low	Windows/Other/CommandPreviewer.xaml:42	n:ExtendedTextBox [ParametersTextBox] has no readable name.
+WT002	low	Windows/Other/CommandPreviewer.xaml:52	n:ExtendedButton "{DynamicResource S.Ok}" gets its ID "OkButton" from x:Name.
+WT002	low	Windows/Other/Dialog.xaml:38	n:ExtendedButton "{DynamicResource S.Ok}" gets its ID "OkButton" from x:Name.
+WT002	low	Windows/Other/Dialog.xaml:40	n:ExtendedButton "{DynamicResource S.Cancel}" gets its ID "CancelButton" from x:Name.
+WT002	low	Windows/Other/Dialog.xaml:43	n:ExtendedButton "{DynamicResource S.Yes}" gets its ID "YesButton" from x:Name.
+WT002	low	Windows/Other/Dialog.xaml:45	n:ExtendedButton "{DynamicResource S.No}" gets its ID "NoButton" from x:Name.
+WT002	low	Windows/Other/DownloadDialog.xaml:63	n:ExtendedCheckBox "{DynamicResource S.Updater.RunAfter}" gets its ID "RunAfterwardsCheckBox" from x:Name.
+WT002	low	Windows/Other/DownloadDialog.xaml:65	n:ExtendedButton "{DynamicResource S.Updater.Download}" gets its ID "DownloadButton" from x:Name.
+WT002	low	Windows/Other/DownloadDialog.xaml:67	n:ExtendedButton "{DynamicResource S.Cancel}" gets its ID "CancelButton" from x:Name.
+WT002	low	Windows/Other/Downloader.xaml:44	n:ExtendedButton "{DynamicResource S.Recorder.Retry}" gets its ID "RetryButton" from x:Name.
+WT002	low	Windows/Other/Downloader.xaml:46	n:ExtendedButton "{DynamicResource S.Cancel}" gets its ID "CancelButton" from x:Name.
+WT002	low	Windows/Other/Encoder.xaml:45	c:ExtendedButton [ClearAllButton] gets its ID "ClearAllButton" from x:Name.
+WT008	low	Windows/Other/Encoder.xaml:45	c:ExtendedButton [ClearAllButton] has no readable name.
+WT005	medium	Windows/Other/Encoder.xaml:54	Rows in c:NotificationBox [NotificationBox] have no unique ID.
+WT002	low	Windows/Other/ErrorDialog.xaml:44	n:ExtendedButton "{DynamicResource S.Ok}" gets its ID "OkButton" from x:Name.
+WT002	low	Windows/Other/ErrorDialog.xaml:46	n:ExtendedButton "{DynamicResource S.Cancel}" gets its ID "CancelButton" from x:Name.
+WT002	low	Windows/Other/ErrorDialog.xaml:49	n:ExtendedButton "{DynamicResource S.Yes}" gets its ID "YesButton" from x:Name.
+WT002	low	Windows/Other/ErrorDialog.xaml:51	n:ExtendedButton "{DynamicResource S.No}" gets its ID "NoButton" from x:Name.
+WT002	low	Windows/Other/ErrorDialog.xaml:54	n:ExtendedButton "{DynamicResource S.Encoder.Details}" gets its ID "DetailsButton" from x:Name.
+WT002	low	Windows/Other/ErrorDialog.xaml:56	n:ExtendedButton "{DynamicResource S.ErrorDialog.Send}" gets its ID "SendButton" from x:Name.
+WT002	low	Windows/Other/ExceptionDialog.xaml:28	n:ExtendedButton "{DynamicResource S.Encoder.Details}" gets its ID "DetailsButton" from x:Name.
+WT002	low	Windows/Other/ExceptionDialog.xaml:53	n:ExtendedButton "{DynamicResource S.Ok}" gets its ID "OkButton" from x:Name.
+WT002	low	Windows/Other/ExceptionDialog.xaml:56	n:ExtendedButton "{DynamicResource S.ErrorDialog.Send}" gets its ID "SendButton" from x:Name.
+WT002	low	Windows/Other/ExceptionViewer.xaml:31	n:ExtendedButton "{DynamicResource S.ExceptionViewer.Open…" gets its ID "InnerButton" from x:Name.
+WT002	low	Windows/Other/ExceptionViewer.xaml:36	n:ExtendedTextBox [MessageTextBox] gets its ID "MessageTextBox" from x:Name.
+WT008	low	Windows/Other/ExceptionViewer.xaml:36	n:ExtendedTextBox [MessageTextBox] has no readable name.
+WT002	low	Windows/Other/ExceptionViewer.xaml:40	n:ExtendedTextBox [StackTextBox] gets its ID "StackTextBox" from x:Name.
+WT008	low	Windows/Other/ExceptionViewer.xaml:40	n:ExtendedTextBox [StackTextBox] has no readable name.
+WT002	low	Windows/Other/ExceptionViewer.xaml:43	n:ExtendedTextBox [SourceTextBox] gets its ID "SourceTextBox" from x:Name.
+WT008	low	Windows/Other/ExceptionViewer.xaml:43	n:ExtendedTextBox [SourceTextBox] has no readable name.
+WT002	low	Windows/Other/ExceptionViewer.xaml:52	n:ExtendedButton "{DynamicResource S.Ok}" gets its ID "OkButton" from x:Name.
+WT002	low	Windows/Other/Feedback.xaml:55	n:ExtendedTextBox [TitleTextBox] gets its ID "TitleTextBox" from x:Name.
+WT008	low	Windows/Other/Feedback.xaml:55	n:ExtendedTextBox [TitleTextBox] has no readable name.
+WT002	low	Windows/Other/Feedback.xaml:58	n:ExtendedTextBox [MessageTextBox] gets its ID "MessageTextBox" from x:Name.
+WT008	low	Windows/Other/Feedback.xaml:58	n:ExtendedTextBox [MessageTextBox] has no readable name.
+WT002	low	Windows/Other/Feedback.xaml:63	n:ExtendedCheckBox "{DynamicResource S.Feedback.IssueBug}" gets its ID "IssueCheckBox" from x:Name.
+WT002	low	Windows/Other/Feedback.xaml:64	n:ExtendedCheckBox "{DynamicResource S.Feedback.Suggestion}" gets its ID "SuggestionCheckBox" from x:Name.
+WT002	low	Windows/Other/Feedback.xaml:68	n:ExtendedTextBox [EmailTextBox] gets its ID "EmailTextBox" from x:Name.
+WT008	low	Windows/Other/Feedback.xaml:68	n:ExtendedTextBox [EmailTextBox] has no readable name.
+WT002	low	Windows/Other/Feedback.xaml:79	ListBox [AttachmentListBox] gets its ID "AttachmentListBox" from x:Name.
+WT005	medium	Windows/Other/Feedback.xaml:79	Rows in ListBox [AttachmentListBox] have no unique ID.
+WT008	low	Windows/Other/Feedback.xaml:79	ListBox [AttachmentListBox] has no readable name.
+WT002	low	Windows/Other/Feedback.xaml:173	n:ExtendedButton "{DynamicResource S.Feedback.AddAttachme…" gets its ID "AddAttachmentButton" from x:Name.
+WT002	low	Windows/Other/Feedback.xaml:175	n:ExtendedButton "{DynamicResource S.Feedback.RemoveAttac…" gets its ID "RemoveAllAttachmentButton" from x:Name.
+WT002	low	Windows/Other/Feedback.xaml:178	n:ExtendedButton "{DynamicResource S.Feedback.Send}" gets its ID "OkButton" from x:Name.
+WT002	low	Windows/Other/Feedback.xaml:180	n:ExtendedButton "{DynamicResource S.Feedback.Preview}" gets its ID "PreviewButton" from x:Name.
+WT002	low	Windows/Other/Feedback.xaml:182	n:ExtendedButton "{DynamicResource S.Cancel}" gets its ID "CancelButton" from x:Name.
+WT002	low	Windows/Other/FeedbackPreview.xaml:24	n:ExtendedButton "{DynamicResource S.Ok}" gets its ID "CancelButton" from x:Name.
+WT002	low	Windows/Other/GoTo.xaml:22	n:IntegerUpDown [NumberIntegerUpDown] gets its ID "NumberIntegerUpDown" from x:Name.
+WT008	low	Windows/Other/GoTo.xaml:22	n:IntegerUpDown [NumberIntegerUpDown] has no readable name.
+WT002	low	Windows/Other/GoTo.xaml:32	n:ExtendedButton "{DynamicResource S.Ok}" gets its ID "OkButton" from x:Name.
+WT002	low	Windows/Other/GoTo.xaml:35	n:ExtendedButton "{DynamicResource S.Cancel}" gets its ID "CancelButton" from x:Name.
+WT002	low	Windows/Other/GraphicsConfigurationDialog.xaml:28	n:ExtendedButton "{DynamicResource S.Encoder.Details}" gets its ID "DetailsButton" from x:Name.
+WT001	high	Windows/Other/GraphicsConfigurationDialog.xaml:56	Hyperlink "{DynamicResource S.Warning.Graphics.Swi…" has no AutomationId.
+WT002	low	Windows/Other/GraphicsConfigurationDialog.xaml:69	n:ExtendedButton "{DynamicResource S.Ok}" gets its ID "OkButton" from x:Name.
+WT002	low	Windows/Other/GraphicsConfigurationDialog.xaml:72	n:ExtendedButton "{DynamicResource S.ErrorDialog.Send}" gets its ID "SendButton" from x:Name.
+WT002	low	Windows/Other/Insert.xaml:66	n:ExtendedButton "{DynamicResource S.InsertFrames.FitCanv…" gets its ID "ResetCanvasButton" from x:Name.
+WT002	low	Windows/Other/Insert.xaml:146	n:ExtendedButton "{DynamicResource S.InsertFrames.ResetIm…" gets its ID "ResetLeftButton" from x:Name.
+WT002	low	Windows/Other/Insert.xaml:184	n:ExtendedButton "{DynamicResource S.InsertFrames.ResetIm…" gets its ID "ResetRightButton" from x:Name.
+WT002	low	Windows/Other/Insert.xaml:224	RadioButton "{DynamicResource S.InsertFrames.Before}" gets its ID "BeforeRadioButton" from x:Name.
+WT002	low	Windows/Other/Insert.xaml:225	RadioButton "{DynamicResource S.InsertFrames.After}" gets its ID "AfterRadioButton" from x:Name.
+WT002	low	Windows/Other/Insert.xaml:231	n:ExtendedButton "{DynamicResource S.InsertFrames.SelectC…" gets its ID "FillColorButton" from x:Name.
+WT002	low	Windows/Other/Insert.xaml:246	n:ExtendedButton "{DynamicResource S.Ok}" gets its ID "OkButton" from x:Name.
+WT002	low	Windows/Other/Insert.xaml:248	n:ExtendedButton "{DynamicResource S.Cancel}" gets its ID "CancelButton" from x:Name.
+WT002	low	Windows/Other/KeyStrokes.xaml:17	DataGrid [KeysDataGrid] gets its ID "KeysDataGrid" from x:Name.
+WT005	medium	Windows/Other/KeyStrokes.xaml:17	Rows in DataGrid [KeysDataGrid] have no unique ID.
+WT008	low	Windows/Other/KeyStrokes.xaml:17	DataGrid [KeysDataGrid] has no readable name.
+WT005	medium	Windows/Other/KeyStrokes.xaml:30	Rows in ItemsControl [MainItemsControl] have no unique ID.
+WT002	low	Windows/Other/KeyStrokes.xaml:37	n:ExtendedButton [RemoveButton] gets its ID "RemoveButton" from x:Name.
+WT008	low	Windows/Other/KeyStrokes.xaml:37	n:ExtendedButton [RemoveButton] has no readable name.
+WT002	low	Windows/Other/KeyStrokes.xaml:70	n:ExtendedButton "{DynamicResource S.Add}" gets its ID "AddButton" from x:Name.
+WT002	low	Windows/Other/KeyStrokes.xaml:97	n:ExtendedCheckBox "{DynamicResource S.KeyStrokes.Edit.Lowe…" gets its ID "LowercaseCheckBox" from x:Name.
+WT002	low	Windows/Other/KeyStrokes.xaml:100	n:ExtendedButton "{DynamicResource S.Ok}" gets its ID "OkButton" from x:Name.
+WT002	low	Windows/Other/KeyStrokes.xaml:103	n:ExtendedButton "{DynamicResource S.Cancel}" gets its ID "CancelButton" from x:Name.
+WT002	low	Windows/Other/Localization.xaml:40	ListBox [ResourceListBox] gets its ID "ResourceListBox" from x:Name.
+WT005	medium	Windows/Other/Localization.xaml:40	Rows in ListBox [ResourceListBox] have no unique ID.
+WT008	low	Windows/Other/Localization.xaml:40	ListBox [ResourceListBox] has no readable name.
+WT002	low	Windows/Other/Localization.xaml:42	c:ExtendedButton [UpButton] gets its ID "UpButton" from x:Name.
+WT008	low	Windows/Other/Localization.xaml:42	c:ExtendedButton [UpButton] has no readable name.
+WT002	low	Windows/Other/Localization.xaml:47	c:ExtendedButton [DownButton] gets its ID "DownButton" from x:Name.
+WT008	low	Windows/Other/Localization.xaml:47	c:ExtendedButton [DownButton] has no readable name.
+WT002	low	Windows/Other/Localization.xaml:52	c:ExtendedButton [AddButton] gets its ID "AddButton" from x:Name.
+WT008	low	Windows/Other/Localization.xaml:52	c:ExtendedButton [AddButton] has no readable name.
+WT002	low	Windows/Other/Localization.xaml:57	c:ExtendedButton [SaveButton] gets its ID "SaveButton" from x:Name.
+WT008	low	Windows/Other/Localization.xaml:57	c:ExtendedButton [SaveButton] has no readable name.
+WT002	low	Windows/Other/Localization.xaml:62	c:ExtendedButton [RemoveButton] gets its ID "RemoveButton" from x:Name.
+WT008	low	Windows/Other/Localization.xaml:62	c:ExtendedButton [RemoveButton] has no readable name.
+WT002	low	Windows/Other/Localization.xaml:79	c:ExtendedButton "{DynamicResource S.Ok}" gets its ID "OkButton" from x:Name.
+WT002	low	Windows/Other/PickAlbumDialog.xaml:33	DataGrid [MainDataGrid] gets its ID "MainDataGrid" from x:Name.
+WT005	medium	Windows/Other/PickAlbumDialog.xaml:33	Rows in DataGrid [MainDataGrid] have no unique ID.
+WT008	low	Windows/Other/PickAlbumDialog.xaml:33	DataGrid [MainDataGrid] has no readable name.
+WT002	low	Windows/Other/PickAlbumDialog.xaml:48	n:ExtendedButton "{DynamicResource S.Recorder.Accept}" gets its ID "OkButton" from x:Name.
+WT002	low	Windows/Other/PickAlbumDialog.xaml:50	n:ExtendedButton "{DynamicResource S.Cancel}" gets its ID "CancelButton" from x:Name.
+WT002	low	Windows/Other/Preset.xaml:55	ComboBox [EncoderComboBox] gets its ID "EncoderComboBox" from x:Name.
+WT008	low	Windows/Other/Preset.xaml:55	ComboBox [EncoderComboBox] has no readable name.
+WT007	medium	Windows/Other/Preset.xaml:67	i:GenericItem [EncoderScreenToGifItem] has the ID "EncoderScreenToGifItem", but this element type isn't visible to UI Automation.
+WT007	medium	Windows/Other/Preset.xaml:70	i:GenericItem [EncoderFfmpegItem] has the ID "EncoderFfmpegItem", but this element type isn't visible to UI Automation.
+WT007	medium	Windows/Other/Preset.xaml:73	i:GenericItem [EncoderGifskiItem] has the ID "EncoderGifskiItem", but this element type isn't visible to UI Automation.
+WT007	medium	Windows/Other/Preset.xaml:76	i:GenericItem [EncoderSystemItem] has the ID "EncoderSystemItem", but this element type isn't visible to UI Automation.
+WT007	medium	Windows/Other/Preset.xaml:79	i:GenericItem [EncoderKGySoftItem] has the ID "EncoderKGySoftItem", but this element type isn't visible to UI Automation.
+WT002	low	Windows/Other/Preset.xaml:84	n:ExtendedTextBox [TitleTextBox] gets its ID "TitleTextBox" from x:Name.
+WT008	low	Windows/Other/Preset.xaml:84	n:ExtendedTextBox [TitleTextBox] has no readable name.
+WT002	low	Windows/Other/Preset.xaml:87	n:ExtendedTextBox [DescriptionTextBox] gets its ID "DescriptionTextBox" from x:Name.
+WT008	low	Windows/Other/Preset.xaml:87	n:ExtendedTextBox [DescriptionTextBox] has no readable name.
+WT002	low	Windows/Other/Preset.xaml:90	n:ExtendedCheckBox "{DynamicResource S.Preset.AutoSave}" gets its ID "AutoSaveCheckBox" from x:Name.
+WT002	low	Windows/Other/Preset.xaml:111	n:ExtendedButton "{DynamicResource S.Ok}" gets its ID "OkButton" from x:Name.
+WT002	low	Windows/Other/Preset.xaml:113	n:ExtendedButton "{DynamicResource S.Cancel}" gets its ID "CancelButton" from x:Name.
+WT001	high	Windows/Other/Startup.xaml:39	Hyperlink "{DynamicResource S.StartUp.NewRelease}" has no AutomationId.
+WT001	high	Windows/Other/Startup.xaml:46	n:ExtendedButton "{DynamicResource S.StartUp.Options}" has no AutomationId.
+WT001	high	Windows/Other/Startup.xaml:59	n:ExtendedButton "{DynamicResource S.StartUp.Recorder}" has no AutomationId.
+WT001	high	Windows/Other/Startup.xaml:64	n:ExtendedButton "{DynamicResource S.StartUp.Webcam}" has no AutomationId.
+WT001	high	Windows/Other/Startup.xaml:69	n:ExtendedButton "{DynamicResource S.StartUp.Board}" has no AutomationId.
+WT001	high	Windows/Other/Startup.xaml:74	n:ExtendedButton "{DynamicResource S.StartUp.Editor}" has no AutomationId.
+WT002	low	Windows/Other/TextDialog.xaml:28	n:ExtendedTextBox [CommandTextBox] gets its ID "CommandTextBox" from x:Name.
+WT008	low	Windows/Other/TextDialog.xaml:28	n:ExtendedTextBox [CommandTextBox] has no readable name.
+WT002	low	Windows/Other/TextDialog.xaml:29	n:ExtendedTextBox [OutputTextBox] gets its ID "OutputTextBox" from x:Name.
+WT008	low	Windows/Other/TextDialog.xaml:29	n:ExtendedTextBox [OutputTextBox] has no readable name.
+WT002	low	Windows/Other/TextDialog.xaml:37	n:ExtendedButton "{DynamicResource S.Ok}" gets its ID "OkButton" from x:Name.
+WT002	low	Windows/Other/Troubleshoot.xaml:40	n:ExtendedRadioButton "{DynamicResource S.Troubleshoot.Windows…" gets its ID "NowRadioButton" from x:Name.
+WT002	low	Windows/Other/Troubleshoot.xaml:41	n:ExtendedRadioButton "{DynamicResource S.Troubleshoot.Windows…" gets its ID "LaterRadioButton" from x:Name.
+WT001	high	Windows/Other/Troubleshoot.xaml:55	Hyperlink "{DynamicResource S.Troubleshoot.Windows…" has no AutomationId.
+WT001	high	Windows/Other/Troubleshoot.xaml:61	Hyperlink "{DynamicResource S.Troubleshoot.Windows…" has no AutomationId.
+WT002	low	Windows/Other/Troubleshoot.xaml:73	n:ExtendedButton "{DynamicResource S.Ok}" gets its ID "OkButton" from x:Name.
+WT002	low	Windows/Other/Upload.xaml:43	ComboBox [TypeComboBox] gets its ID "TypeComboBox" from x:Name.
+WT008	low	Windows/Other/Upload.xaml:43	ComboBox [TypeComboBox] has no readable name.
+WT002	low	Windows/Other/Upload.xaml:115	n:ExtendedCheckBox "{DynamicResource S.Options.Upload.Prese…" gets its ID "EnabledCheckBox" from x:Name.
+WT002	low	Windows/Other/Upload.xaml:118	n:ExtendedButton "{DynamicResource S.Ok}" gets its ID "OkButton" from x:Name.
+WT002	low	Windows/Other/Upload.xaml:120	n:ExtendedButton "{DynamicResource S.Cancel}" gets its ID "CancelButton" from x:Name.
+WT002	low	Windows/Other/UploadHistory.xaml:40	DataGrid [DataGrid] gets its ID "DataGrid" from x:Name.
+WT005	medium	Windows/Other/UploadHistory.xaml:40	Rows in DataGrid [DataGrid] have no unique ID.
+WT008	low	Windows/Other/UploadHistory.xaml:40	DataGrid [DataGrid] has no readable name.
+WT002	low	Windows/Other/UploadHistory.xaml:55	n:ExtendedButton [DeleteButton] gets its ID "DeleteButton" from x:Name.
+WT008	low	Windows/Other/UploadHistory.xaml:55	n:ExtendedButton [DeleteButton] has no readable name.
+WT002	low	Windows/Other/UploadHistory.xaml:73	n:ExtendedButton "{DynamicResource S.Ok}" gets its ID "OkButton" from x:Name.
+WT002	low	Windows/Other/VideoSource.xaml:40	ComboBox [ImporterComboBox] gets its ID "ImporterComboBox" from x:Name.
+WT008	low	Windows/Other/VideoSource.xaml:40	ComboBox [ImporterComboBox] has no readable name.
+WT001	high	Windows/Other/VideoSource.xaml:93	c:IntegerUpDown has no AutomationId.
+WT008	low	Windows/Other/VideoSource.xaml:93	c:IntegerUpDown has no readable name.
+WT001	high	Windows/Other/VideoSource.xaml:113	c:IntegerUpDown has no AutomationId.
+WT008	low	Windows/Other/VideoSource.xaml:113	c:IntegerUpDown has no readable name.
+WT001	high	Windows/Other/VideoSource.xaml:123	c:IntegerUpDown has no AutomationId.
+WT008	low	Windows/Other/VideoSource.xaml:123	c:IntegerUpDown has no readable name.
+WT001	high	Windows/Other/VideoSource.xaml:132	c:IntegerUpDown has no AutomationId.
+WT008	low	Windows/Other/VideoSource.xaml:132	c:IntegerUpDown has no readable name.
+WT001	high	Windows/Other/VideoSource.xaml:161	c:ExtendedButton "{DynamicResource S.Ok}" has no AutomationId.
+WT001	high	Windows/Other/VideoSource.xaml:164	c:ExtendedButton "{DynamicResource S.Cancel}" has no AutomationId.
+WT002	low	Windows/Recorder.xaml:194	n:ExtendedButton [CloseButton] gets its ID "CloseButton" from x:Name.
+WT008	low	Windows/Recorder.xaml:194	n:ExtendedButton [CloseButton] has no readable name.
+WT002	low	Windows/Recorder.xaml:211	n:ExtendedButton [SnapWindowButton] gets its ID "SnapWindowButton" from x:Name.
+WT008	low	Windows/Recorder.xaml:211	n:ExtendedButton [SnapWindowButton] has no readable name.
+WT002	low	Windows/Recorder.xaml:216	n:ExtendedButton [OptionsButton] gets its ID "OptionsButton" from x:Name.
+WT008	low	Windows/Recorder.xaml:216	n:ExtendedButton [OptionsButton] has no readable name.
+WT002	low	Windows/Recorder.xaml:236	n:IntegerUpDown [FrequencyIntegerUpDown] gets its ID "FrequencyIntegerUpDown" from x:Name.
+WT008	low	Windows/Recorder.xaml:236	n:IntegerUpDown [FrequencyIntegerUpDown] has no readable name.
+WT002	low	Windows/Recorder.xaml:240	n:ExtendedButton "{DynamicResource S.Recorder.Fps.Short}" gets its ID "FrequencyButton" from x:Name.
+WT001	high	Windows/Recorder.xaml:246	n:ExtendedMenuItem "{DynamicResource S.Options.Recorder.Fre…" has no AutomationId.
+WT001	high	Windows/Recorder.xaml:249	n:ExtendedMenuItem "{DynamicResource S.Options.Recorder.Fre…" has no AutomationId.
+WT001	high	Windows/Recorder.xaml:254	n:ExtendedMenuItem "{DynamicResource S.Options.Recorder.Fre…" has no AutomationId.
+WT001	high	Windows/Recorder.xaml:259	n:ExtendedMenuItem "{DynamicResource S.Options.Recorder.Fre…" has no AutomationId.
+WT001	high	Windows/Recorder.xaml:264	n:ExtendedMenuItem "{DynamicResource S.Options.Recorder.Fre…" has no AutomationId.
+WT001	high	Windows/Recorder.xaml:269	n:ExtendedMenuItem "{DynamicResource S.Options.Recorder.Fre…" has no AutomationId.
+WT002	low	Windows/Recorder.xaml:294	n:IntegerBox [WidthIntegerBox] gets its ID "WidthIntegerBox" from x:Name.
+WT008	low	Windows/Recorder.xaml:294	n:IntegerBox [WidthIntegerBox] has no readable name.
+WT002	low	Windows/Recorder.xaml:302	n:IntegerBox [HeightIntegerBox] gets its ID "HeightIntegerBox" from x:Name.
+WT008	low	Windows/Recorder.xaml:302	n:IntegerBox [HeightIntegerBox] has no readable name.
+WT002	low	Windows/Recorder.xaml:314	n:ExtendedButton "{DynamicResource S.Recorder.Discard}" gets its ID "DiscardButton" from x:Name.
+WT002	low	Windows/Recorder.xaml:320	n:ExtendedButton "{DynamicResource S.Recorder.Snap}" gets its ID "SnapButton" from x:Name.
+WT002	low	Windows/Recorder.xaml:326	n:ExtendedButton "{DynamicResource S.Recorder.Record}" gets its ID "RecordButton" from x:Name.
+WT002	low	Windows/Recorder.xaml:332	n:ExtendedButton "{DynamicResource S.Recorder.Pause}" gets its ID "PauseButton" from x:Name.
+WT002	low	Windows/Recorder.xaml:338	n:ExtendedButton "{DynamicResource S.Recorder.Stop}" gets its ID "StopButton" from x:Name.
+WT002	low	Windows/Webcam.xaml:86	n:ExtendedButton [OptionsButton] gets its ID "OptionsButton" from x:Name.
+WT008	low	Windows/Webcam.xaml:86	n:ExtendedButton [OptionsButton] has no readable name.
+WT002	low	Windows/Webcam.xaml:93	n:ExtendedButton [ScaleButton] gets its ID "ScaleButton" from x:Name.
+WT008	low	Windows/Webcam.xaml:93	n:ExtendedButton [ScaleButton] has no readable name.
+WT002	low	Windows/Webcam.xaml:101	n:ExtendedButton [RefreshButton] gets its ID "RefreshButton" from x:Name.
+WT008	low	Windows/Webcam.xaml:101	n:ExtendedButton [RefreshButton] has no readable name.
+WT002	low	Windows/Webcam.xaml:108	ComboBox [VideoDevicesComboBox] gets its ID "VideoDevicesComboBox" from x:Name.
+WT005	medium	Windows/Webcam.xaml:108	Rows in ComboBox [VideoDevicesComboBox] have no unique ID.
+WT008	low	Windows/Webcam.xaml:108	ComboBox [VideoDevicesComboBox] has no readable name.
+WT002	low	Windows/Webcam.xaml:128	n:IntegerUpDown [FpsNumericUpDown] gets its ID "FpsNumericUpDown" from x:Name.
+WT008	low	Windows/Webcam.xaml:128	n:IntegerUpDown [FpsNumericUpDown] has no readable name.
+WT002	low	Windows/Webcam.xaml:139	n:ExtendedButton "{DynamicResource S.Recorder.Discard}" gets its ID "DiscardButton" from x:Name.
+WT002	low	Windows/Webcam.xaml:143	n:ExtendedButton "{Binding Path=Stage, ElementName=Webcam…" gets its ID "RecordPauseButton" from x:Name.
+WT002	low	Windows/Webcam.xaml:149	n:ExtendedButton "{DynamicResource S.Recorder.Stop}" gets its ID "StopButton" from x:Name.
+WT002	low	Windows/Webcam.xaml:164	Slider [ScaleSlider] gets its ID "ScaleSlider" from x:Name.
+WT008	low	Windows/Webcam.xaml:164	Slider [ScaleSlider] has no readable name.

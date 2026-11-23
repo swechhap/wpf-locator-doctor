@@ -1,0 +1,107 @@
+{
+  "app": "ScreenToGif",
+  "commit": "a4d0a67c2131cd048ceec86cd40afc2f1a06f2fd",
+  "scanPath": "ScreenToGif",
+  "labels": [
+    {
+      "finding": "WT001\thigh\tViews/Settings/AboutSettings.xaml:149\tHyperlink \"screentogif.com/privacy-terms\" has no AutomationId.",
+      "label": "real",
+      "why": "Hyperlink with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tViews/Settings/RecorderSettings.xaml:170\tc:ExtendedRadioButton \"BitBlt\" has no AutomationId.",
+      "label": "real",
+      "why": "ExtendedRadioButton derives from RadioButton and has no ID."
+    },
+    {
+      "finding": "WT001\thigh\tWindows/NewRecorder.xaml:230\tn:ExtendedMenuItem \"{DynamicResource S.Options.Recorder.Fre…\" has no AutomationId.",
+      "label": "real",
+      "why": "ExtendedMenuItem derives from MenuItem and has no ID."
+    },
+    {
+      "finding": "WT002\tlow\tUserControls/ExportPanel.xaml:1519\tn:TimeBox [TimeRangeEndIntegerUpDown] gets its ID \"TimeRangeEndIntegerUpDown\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from x:Name (TimeBox derives from TextBox, so it is visible)."
+    },
+    {
+      "finding": "WT002\tlow\tUserControls/ExportPanel.xaml:460\tn:ExtendedCheckBox \"{DynamicResource S.SaveAs.GifOptions.Re…\" gets its ID \"RepeatForeverCheckBox\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from x:Name."
+    },
+    {
+      "finding": "WT002\tlow\tUserControls/KGySoftGifOptionsPanel.xaml:18\tComboBox [QuantizersComboBox] gets its ID \"QuantizersComboBox\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from x:Name."
+    },
+    {
+      "finding": "WT002\tlow\tUserControls/ProgressPanel.xaml:253\tn:IntegerUpDown [ProgressThicknessNumericUpDown] gets its ID \"ProgressThicknessNumericUpDown\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from x:Name."
+    },
+    {
+      "finding": "WT002\tlow\tViews/Settings/UploadSettings.xaml:129\tc:ExtendedButton [HistoryPresetButton] gets its ID \"HistoryPresetButton\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from x:Name."
+    },
+    {
+      "finding": "WT002\tlow\tWindows/Board.xaml:260\tn:IntegerBox [HeightIntegerBox] gets its ID \"HeightIntegerBox\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from x:Name."
+    },
+    {
+      "finding": "WT002\tlow\tWindows/NewRecorder.xaml:268\tn:IntegerBox [WidthIntegerBox] gets its ID \"WidthIntegerBox\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from x:Name."
+    },
+    {
+      "finding": "WT002\tlow\tWindows/Other/Preset.xaml:90\tn:ExtendedCheckBox \"{DynamicResource S.Preset.AutoSave}\" gets its ID \"AutoSaveCheckBox\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from x:Name."
+    },
+    {
+      "finding": "WT002\tlow\tWindows/Other/Troubleshoot.xaml:40\tn:ExtendedRadioButton \"{DynamicResource S.Troubleshoot.Windows…\" gets its ID \"NowRadioButton\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from x:Name."
+    },
+    {
+      "finding": "WT007\tmedium\tUserControls/ExportPanel.xaml:182\ti:GenericItem [EncoderSystemItem] has the ID \"EncoderSystemItem\", but this element type isn't visible to UI Automation.",
+      "label": "real",
+      "why": "GenericItem derives from FrameworkElement, which has no automation peer, so the x:Name never reaches UI Automation."
+    },
+    {
+      "finding": "WT007\tmedium\tWindows/Other/Preset.xaml:76\ti:GenericItem [EncoderSystemItem] has the ID \"EncoderSystemItem\", but this element type isn't visible to UI Automation.",
+      "label": "real",
+      "why": "Same as above: GenericItem has no automation peer."
+    },
+    {
+      "finding": "WT008\tlow\tUserControls/ExportPanel.xaml:1325\tComboBox [FfmpegBufferBitrateUnitComboBox] has no readable name.",
+      "label": "real",
+      "why": "Unit combo box with no label or AutomationProperties.Name."
+    },
+    {
+      "finding": "WT008\tlow\tViews/Settings/ApplicationSettings.xaml:251\tComboBox has no readable name.",
+      "label": "real",
+      "why": "Combo box with no label; the text before it is a TextBlock, not a Label with Target."
+    },
+    {
+      "finding": "WT008\tlow\tWindows/Editor.xaml:2345\tComboBox [TitleFrameFontStyleComboBox] has no readable name.",
+      "label": "real",
+      "why": "The caption is a TextBlock, not a Label with Target, so the combo box gets no name."
+    },
+    {
+      "finding": "WT008\tlow\tWindows/Editor.xaml:3880\tn:IntegerUpDown [ScaleDelayIntegerUpDown] has no readable name.",
+      "label": "real",
+      "why": "The caption is a TextBlock, not a Label with Target."
+    },
+    {
+      "finding": "WT008\tlow\tWindows/Editor.xaml:710\tn:IntegerUpDown [ZoomNumericUpDown] has no readable name.",
+      "label": "real",
+      "why": "Zoom box next to an icon, with no name."
+    },
+    {
+      "finding": "WT008\tlow\tWindows/NewRecorder.xaml:437\tn:ExtendedButton has no readable name.",
+      "label": "real",
+      "why": "Icon-only button; the tooltip becomes help text, not a name."
+    }
+  ]
+}

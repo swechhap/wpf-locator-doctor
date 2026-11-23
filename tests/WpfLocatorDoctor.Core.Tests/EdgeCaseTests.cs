@@ -98,6 +98,23 @@ public sealed class EdgeCaseTests : IDisposable
     }
 
     [Fact]
+    public void Xaml_saved_in_a_windows_code_page_is_read()
+    {
+        // Found by the benchmark: three files in microsoft/WPF-Samples declare encoding="Windows-1252".
+        var xaml = "<?xml version=\"1.0\" encoding=\"Windows-1252\"?>\n" +
+                   Window("Demo.Legacy", "<Button Content=\"Café\" AutomationProperties.AutomationId=\"CafeButton\"/>");
+        var path = Path.Combine(_root, "Legacy.xaml");
+        File.WriteAllBytes(path, [.. xaml.Select(c => (byte)c)]); // every character here is one byte in Windows-1252
+
+        var scan = new XamlSourceScanner().Scan(_root);
+
+        Assert.Empty(scan.Notes);
+        var button = Assert.Single(scan.Screens.Single().Elements, e => e.Kind == "Button");
+        Assert.Equal("CafeButton", button.AutomationId);
+        Assert.Equal("Café", button.Name);
+    }
+
+    [Fact]
     public void A_folder_without_xaml_says_so()
     {
         Write("readme.txt", "hello");

@@ -1,0 +1,1167 @@
+# MahApps.Metro demo @ 9466e8acd9, scan path: src/MahApps.Metro.Samples/MahApps.Metro.Demo
+score 47.7  grade D  elements 909  controls 709  screens 38
+check coverage      10.9%  77 of 709 controls have an AutomationId.
+check quality         70%  77 borrowed from x:Name.
+check uniqueness    60.2%  0 ID(s) used more than once; 0 of 83 data lists have identifiable rows.
+check stability      n/a%  Not measured. Run again with --baseline <previous report.json> to compare.
+check visibility     100%  0 invisible control(s), 0 opaque area(s).
+check names         47.2%  326 of 690 controls have a readable name.
+problems WT001=632  WT002=77  WT005=83  WT006=1  WT008=364
+
+WT002	low	ExampleViews/AutoSuggestBoxExample.xaml:56	TextBox [Log] gets its ID "Log" from x:Name.
+WT008	low	ExampleViews/AutoSuggestBoxExample.xaml:56	TextBox [Log] has no readable name.
+WT001	high	ExampleViews/Badges.xaml:213	Button has no AutomationId.
+WT008	low	ExampleViews/Badges.xaml:213	Button has no readable name.
+WT001	high	ExampleViews/Badges.xaml:218	Button has no AutomationId.
+WT008	low	ExampleViews/Badges.xaml:218	Button has no readable name.
+WT001	high	ExampleViews/Badges.xaml:223	Button has no AutomationId.
+WT008	low	ExampleViews/Badges.xaml:223	Button has no readable name.
+WT001	high	ExampleViews/Badges.xaml:228	Button has no AutomationId.
+WT008	low	ExampleViews/Badges.xaml:228	Button has no readable name.
+WT001	high	ExampleViews/Badges.xaml:233	Button has no AutomationId.
+WT008	low	ExampleViews/Badges.xaml:233	Button has no readable name.
+WT001	high	ExampleViews/Badges.xaml:238	Button has no AutomationId.
+WT008	low	ExampleViews/Badges.xaml:238	Button has no readable name.
+WT001	high	ExampleViews/Badges.xaml:243	Button has no AutomationId.
+WT008	low	ExampleViews/Badges.xaml:243	Button has no readable name.
+WT001	high	ExampleViews/Badges.xaml:248	Button has no AutomationId.
+WT008	low	ExampleViews/Badges.xaml:248	Button has no readable name.
+WT001	high	ExampleViews/Badges.xaml:264	TabControl has no AutomationId.
+WT001	high	ExampleViews/Badges.xaml:271	TabItem "{StaticResource Inbox}" has no AutomationId.
+WT001	high	ExampleViews/Badges.xaml:284	TabItem "{StaticResource Drafts}" has no AutomationId.
+WT001	high	ExampleViews/Badges.xaml:294	TabItem "{StaticResource Sent}" has no AutomationId.
+WT001	high	ExampleViews/Badges.xaml:307	TabItem "{StaticResource Archive}" has no AutomationId.
+WT001	high	ExampleViews/Badges.xaml:345	Button has no AutomationId.
+WT008	low	ExampleViews/Badges.xaml:345	Button has no readable name.
+WT001	high	ExampleViews/Badges.xaml:388	Button has no AutomationId.
+WT008	low	ExampleViews/Badges.xaml:388	Button has no readable name.
+WT001	high	ExampleViews/Badges.xaml:397	Button has no AutomationId.
+WT008	low	ExampleViews/Badges.xaml:397	Button has no readable name.
+WT001	high	ExampleViews/Badges.xaml:406	Button has no AutomationId.
+WT008	low	ExampleViews/Badges.xaml:406	Button has no readable name.
+WT001	high	ExampleViews/Badges.xaml:415	Button has no AutomationId.
+WT008	low	ExampleViews/Badges.xaml:415	Button has no readable name.
+WT001	high	ExampleViews/Badges.xaml:420	Button has no AutomationId.
+WT008	low	ExampleViews/Badges.xaml:420	Button has no readable name.
+WT001	high	ExampleViews/Badges.xaml:425	Button has no AutomationId.
+WT008	low	ExampleViews/Badges.xaml:425	Button has no readable name.
+WT001	high	ExampleViews/Badges.xaml:438	Button has no AutomationId.
+WT008	low	ExampleViews/Badges.xaml:438	Button has no readable name.
+WT001	high	ExampleViews/Badges.xaml:443	Button has no AutomationId.
+WT008	low	ExampleViews/Badges.xaml:443	Button has no readable name.
+WT001	high	ExampleViews/Badges.xaml:457	Button has no AutomationId.
+WT008	low	ExampleViews/Badges.xaml:457	Button has no readable name.
+WT001	high	ExampleViews/Badges.xaml:460	Button "Drafts" has no AutomationId.
+WT001	high	ExampleViews/Badges.xaml:467	Button has no AutomationId.
+WT008	low	ExampleViews/Badges.xaml:467	Button has no readable name.
+WT001	high	ExampleViews/Badges.xaml:470	Button "Drafts" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:37	Button "Mail" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:43	Button "Print" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:55	Button "Click Me" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:57	Button "Enabled" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:60	Button "Disabled" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:68	Button "Enabled" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:72	Button "Disabled" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:77	Button "Enabled" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:81	Button "Disabled" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:86	Button "Enabled" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:90	Button "Disabled" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:99	ToggleButton "Enabled" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:102	ToggleButton "Disabled" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:106	ToggleButton "Enabled" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:110	ToggleButton "Disabled" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:115	ToggleButton "Disabled" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:125	ToggleButton has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:125	ToggleButton has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:133	ToggleButton has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:133	ToggleButton has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:146	ToggleButton has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:146	ToggleButton has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:159	ToggleButton has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:159	ToggleButton has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:178	Button "Flat" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:182	Button "Flat" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:187	Button "Flat Accent" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:191	Button "Flat Accent" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:198	Button "Content" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:202	Button "Content" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:207	Button "Accent" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:211	Button "Accent" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:235	Button has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:235	Button has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:243	Button has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:243	Button has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:252	Button has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:252	Button has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:271	Button has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:271	Button has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:279	Button has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:279	Button has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:292	Button has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:292	Button has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:305	Button has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:305	Button has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:369	CheckBox has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:369	CheckBox has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:372	CheckBox has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:372	CheckBox has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:373	CheckBox has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:373	CheckBox has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:374	CheckBox has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:374	CheckBox has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:375	CheckBox has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:375	CheckBox has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:376	CheckBox has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:376	CheckBox has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:394	CheckBox has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:394	CheckBox has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:395	CheckBox has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:395	CheckBox has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:396	CheckBox has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:396	CheckBox has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:397	CheckBox has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:397	CheckBox has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:398	CheckBox has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:398	CheckBox has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:399	CheckBox has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:399	CheckBox has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:422	RadioButton has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:422	RadioButton has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:425	RadioButton has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:425	RadioButton has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:428	RadioButton has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:428	RadioButton has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:431	RadioButton has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:431	RadioButton has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:451	RadioButton has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:451	RadioButton has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:454	RadioButton has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:454	RadioButton has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:457	RadioButton has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:457	RadioButton has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:460	RadioButton has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:460	RadioButton has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:484	mah:DropDownButton "Artists" has no AutomationId.
+WT001	high	ExampleViews/ButtonsExample.xaml:494	mah:DropDownButton "Genres" has no AutomationId.
+WT002	low	ExampleViews/ButtonsExample.xaml:513	mah:DropDownButton [DownButton] gets its ID "DownButton" from x:Name.
+WT008	low	ExampleViews/ButtonsExample.xaml:513	mah:DropDownButton [DownButton] has no readable name.
+WT002	low	ExampleViews/ButtonsExample.xaml:522	mah:DropDownButton "The Content" gets its ID "DownButton1" from x:Name.
+WT001	high	ExampleViews/ButtonsExample.xaml:540	mah:SplitButton has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:540	mah:SplitButton has no readable name.
+WT001	high	ExampleViews/ButtonsExample.xaml:552	mah:SplitButton has no AutomationId.
+WT008	low	ExampleViews/ButtonsExample.xaml:552	mah:SplitButton has no readable name.
+WT001	high	ExampleViews/ColorExample.xaml:12	DataGrid has no AutomationId.
+WT005	medium	ExampleViews/ColorExample.xaml:12	Rows in DataGrid have no unique ID.
+WT008	low	ExampleViews/ColorExample.xaml:12	DataGrid has no readable name.
+WT002	low	ExampleViews/ColorPickerExample.xaml:77	ComboBox [cmbColorHelper] gets its ID "cmbColorHelper" from x:Name.
+WT008	low	ExampleViews/ColorPickerExample.xaml:77	ComboBox [cmbColorHelper] has no readable name.
+WT001	high	ExampleViews/ColorPickerExample.xaml:83	TextBox has no AutomationId.
+WT008	low	ExampleViews/ColorPickerExample.xaml:83	TextBox has no readable name.
+WT001	high	ExampleViews/ColorPickerExample.xaml:86	TextBox has no AutomationId.
+WT008	low	ExampleViews/ColorPickerExample.xaml:86	TextBox has no readable name.
+WT001	high	ExampleViews/ColorPickerExample.xaml:89	TextBox has no AutomationId.
+WT008	low	ExampleViews/ColorPickerExample.xaml:89	TextBox has no readable name.
+WT001	high	ExampleViews/ColorPickerExample.xaml:92	TextBox has no AutomationId.
+WT008	low	ExampleViews/ColorPickerExample.xaml:92	TextBox has no readable name.
+WT001	high	ExampleViews/ColorPickerExample.xaml:95	TextBox has no AutomationId.
+WT008	low	ExampleViews/ColorPickerExample.xaml:95	TextBox has no readable name.
+WT002	low	ExampleViews/ColorPickerExample.xaml:103	ComboBox [cmbAddToRecentTrigger] gets its ID "cmbAddToRecentTrigger" from x:Name.
+WT008	low	ExampleViews/ColorPickerExample.xaml:103	ComboBox [cmbAddToRecentTrigger] has no readable name.
+WT006	medium	ExampleViews/CountedView.cs:14	CountedView derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT002	low	ExampleViews/CustomDialogExample.xaml:25	TextBox [FirstNameTextBox] gets its ID "FirstNameTextBox" from x:Name.
+WT008	low	ExampleViews/CustomDialogExample.xaml:25	TextBox [FirstNameTextBox] has no readable name.
+WT001	high	ExampleViews/CustomDialogExample.xaml:35	TextBox has no AutomationId.
+WT008	low	ExampleViews/CustomDialogExample.xaml:35	TextBox has no readable name.
+WT001	high	ExampleViews/CustomDialogExample.xaml:40	Button "OK" has no AutomationId.
+WT002	low	ExampleViews/DataGridExamples.xaml:181	DataGrid [MetroDataGrid] gets its ID "MetroDataGrid" from x:Name.
+WT005	medium	ExampleViews/DataGridExamples.xaml:181	Rows in DataGrid [MetroDataGrid] have no unique ID.
+WT008	low	ExampleViews/DataGridExamples.xaml:181	DataGrid [MetroDataGrid] has no readable name.
+WT002	low	ExampleViews/DataGridExamples.xaml:287	DataGrid [AzureDataGrid] gets its ID "AzureDataGrid" from x:Name.
+WT005	medium	ExampleViews/DataGridExamples.xaml:287	Rows in DataGrid [AzureDataGrid] have no unique ID.
+WT008	low	ExampleViews/DataGridExamples.xaml:287	DataGrid [AzureDataGrid] has no readable name.
+WT001	high	ExampleViews/DateExamples.xaml:46	DatePicker has no AutomationId.
+WT008	low	ExampleViews/DateExamples.xaml:46	DatePicker has no readable name.
+WT001	high	ExampleViews/DateExamples.xaml:56	DatePicker has no AutomationId.
+WT008	low	ExampleViews/DateExamples.xaml:56	DatePicker has no readable name.
+WT001	high	ExampleViews/DateExamples.xaml:64	DatePicker has no AutomationId.
+WT008	low	ExampleViews/DateExamples.xaml:64	DatePicker has no readable name.
+WT001	high	ExampleViews/DateExamples.xaml:72	DatePicker has no AutomationId.
+WT008	low	ExampleViews/DateExamples.xaml:72	DatePicker has no readable name.
+WT001	high	ExampleViews/DateExamples.xaml:80	DatePicker has no AutomationId.
+WT008	low	ExampleViews/DateExamples.xaml:80	DatePicker has no readable name.
+WT001	high	ExampleViews/DateExamples.xaml:86	DatePicker has no AutomationId.
+WT008	low	ExampleViews/DateExamples.xaml:86	DatePicker has no readable name.
+WT001	high	ExampleViews/DateExamples.xaml:93	DatePicker has no AutomationId.
+WT008	low	ExampleViews/DateExamples.xaml:93	DatePicker has no readable name.
+WT001	high	ExampleViews/DateExamples.xaml:111	DatePicker has no AutomationId.
+WT008	low	ExampleViews/DateExamples.xaml:111	DatePicker has no readable name.
+WT001	high	ExampleViews/DateExamples.xaml:119	DatePicker has no AutomationId.
+WT008	low	ExampleViews/DateExamples.xaml:119	DatePicker has no readable name.
+WT002	low	ExampleViews/DateExamples.xaml:130	CheckBox "IsTodayHighlighted" gets its ID "IsTodayHighlightedCheckBox" from x:Name.
+WT001	high	ExampleViews/DateExamples.xaml:136	Calendar has no AutomationId.
+WT008	low	ExampleViews/DateExamples.xaml:136	Calendar has no readable name.
+WT001	high	ExampleViews/DateExamples.xaml:143	Calendar has no AutomationId.
+WT008	low	ExampleViews/DateExamples.xaml:143	Calendar has no readable name.
+WT001	high	ExampleViews/DateExamples.xaml:149	Calendar has no AutomationId.
+WT008	low	ExampleViews/DateExamples.xaml:149	Calendar has no readable name.
+WT002	low	ExampleViews/DateExamples.xaml:165	CheckBox "ClearTextButton" gets its ID "DateTimePickerClearTextButton" from x:Name.
+WT002	low	ExampleViews/DateExamples.xaml:168	CheckBox "IsEnabled" gets its ID "DateTimePickerIsEnabled" from x:Name.
+WT002	low	ExampleViews/DateExamples.xaml:172	CheckBox "IsReadOnly" gets its ID "DateTimePickerIsReadOnly" from x:Name.
+WT002	low	ExampleViews/DateExamples.xaml:175	CheckBox "IsClockVisible" gets its ID "DateTimePickerIsClockVisible" from x:Name.
+WT002	low	ExampleViews/DateExamples.xaml:179	CheckBox "IsNowButtonVisible" gets its ID "DateTimePickerIsNowButtonVisible" from x:Name.
+WT002	low	ExampleViews/DateExamples.xaml:204	ComboBox [DateTimePickerOrientation] gets its ID "DateTimePickerOrientation" from x:Name.
+WT005	medium	ExampleViews/DateExamples.xaml:204	Rows in ComboBox [DateTimePickerOrientation] have no unique ID.
+WT008	low	ExampleViews/DateExamples.xaml:204	ComboBox [DateTimePickerOrientation] has no readable name.
+WT002	low	ExampleViews/DateExamples.xaml:221	ComboBox [DateTimePickerPickerVisibility] gets its ID "DateTimePickerPickerVisibility" from x:Name.
+WT005	medium	ExampleViews/DateExamples.xaml:221	Rows in ComboBox [DateTimePickerPickerVisibility] have no unique ID.
+WT008	low	ExampleViews/DateExamples.xaml:221	ComboBox [DateTimePickerPickerVisibility] has no readable name.
+WT002	low	ExampleViews/DateExamples.xaml:232	ComboBox [DateTimePickerHandVisibility] gets its ID "DateTimePickerHandVisibility" from x:Name.
+WT005	medium	ExampleViews/DateExamples.xaml:232	Rows in ComboBox [DateTimePickerHandVisibility] have no unique ID.
+WT008	low	ExampleViews/DateExamples.xaml:232	ComboBox [DateTimePickerHandVisibility] has no readable name.
+WT002	low	ExampleViews/DateExamples.xaml:243	ComboBox [DateTimePickerDateFormat] gets its ID "DateTimePickerDateFormat" from x:Name.
+WT005	medium	ExampleViews/DateExamples.xaml:243	Rows in ComboBox [DateTimePickerDateFormat] have no unique ID.
+WT008	low	ExampleViews/DateExamples.xaml:243	ComboBox [DateTimePickerDateFormat] has no readable name.
+WT002	low	ExampleViews/DateExamples.xaml:260	ComboBox [DateTimePickerTimeFormat] gets its ID "DateTimePickerTimeFormat" from x:Name.
+WT005	medium	ExampleViews/DateExamples.xaml:260	Rows in ComboBox [DateTimePickerTimeFormat] have no unique ID.
+WT008	low	ExampleViews/DateExamples.xaml:260	ComboBox [DateTimePickerTimeFormat] has no readable name.
+WT002	low	ExampleViews/DateExamples.xaml:277	ComboBox [DateTimePickerCornerRadius] gets its ID "DateTimePickerCornerRadius" from x:Name.
+WT005	medium	ExampleViews/DateExamples.xaml:277	Rows in ComboBox [DateTimePickerCornerRadius] have no unique ID.
+WT008	low	ExampleViews/DateExamples.xaml:277	ComboBox [DateTimePickerCornerRadius] has no readable name.
+WT002	low	ExampleViews/DateExamples.xaml:301	ComboBox [DateTimePickerCulture] gets its ID "DateTimePickerCulture" from x:Name.
+WT005	medium	ExampleViews/DateExamples.xaml:301	Rows in ComboBox [DateTimePickerCulture] have no unique ID.
+WT008	low	ExampleViews/DateExamples.xaml:301	ComboBox [DateTimePickerCulture] has no readable name.
+WT002	low	ExampleViews/DateExamples.xaml:328	TextBox [DateTimePickerDateTimeFormat] gets its ID "DateTimePickerDateTimeFormat" from x:Name.
+WT008	low	ExampleViews/DateExamples.xaml:328	TextBox [DateTimePickerDateTimeFormat] has no readable name.
+WT001	high	ExampleViews/HamburgerMenuCreatorsUpdate.xaml:93	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/HamburgerMenuCreatorsUpdate.xaml:93	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/HamburgerMenuCreatorsUpdate.xaml:93	ComboBox has no readable name.
+WT001	high	ExampleViews/HamburgerMenuCreatorsUpdate.xaml:100	Slider has no AutomationId.
+WT008	low	ExampleViews/HamburgerMenuCreatorsUpdate.xaml:100	Slider has no readable name.
+WT001	high	ExampleViews/HamburgerMenuCreatorsUpdate.xaml:107	Slider has no AutomationId.
+WT008	low	ExampleViews/HamburgerMenuCreatorsUpdate.xaml:107	Slider has no readable name.
+WT001	high	ExampleViews/HamburgerMenuCreatorsUpdate.xaml:114	Slider has no AutomationId.
+WT008	low	ExampleViews/HamburgerMenuCreatorsUpdate.xaml:114	Slider has no readable name.
+WT001	high	ExampleViews/HamburgerMenuCreatorsUpdate.xaml:121	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/HamburgerMenuCreatorsUpdate.xaml:121	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/HamburgerMenuCreatorsUpdate.xaml:121	ComboBox has no readable name.
+WT001	high	ExampleViews/HamburgerMenuCreatorsUpdate.xaml:129	Slider has no AutomationId.
+WT008	low	ExampleViews/HamburgerMenuCreatorsUpdate.xaml:129	Slider has no readable name.
+WT001	high	ExampleViews/HamburgerMenuCreatorsUpdate.xaml:134	Slider has no AutomationId.
+WT008	low	ExampleViews/HamburgerMenuCreatorsUpdate.xaml:134	Slider has no readable name.
+WT001	high	ExampleViews/HamburgerMenuDefault.xaml:118	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/HamburgerMenuDefault.xaml:118	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/HamburgerMenuDefault.xaml:118	ComboBox has no readable name.
+WT001	high	ExampleViews/HamburgerMenuDefault.xaml:125	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/HamburgerMenuDefault.xaml:125	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/HamburgerMenuDefault.xaml:125	ComboBox has no readable name.
+WT001	high	ExampleViews/HamburgerMenuDefault.xaml:132	Slider has no AutomationId.
+WT008	low	ExampleViews/HamburgerMenuDefault.xaml:132	Slider has no readable name.
+WT001	high	ExampleViews/HamburgerMenuDefault.xaml:139	Slider has no AutomationId.
+WT008	low	ExampleViews/HamburgerMenuDefault.xaml:139	Slider has no readable name.
+WT001	high	ExampleViews/HamburgerMenuDefault.xaml:146	Slider has no AutomationId.
+WT008	low	ExampleViews/HamburgerMenuDefault.xaml:146	Slider has no readable name.
+WT001	high	ExampleViews/HamburgerMenuDefault.xaml:153	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/HamburgerMenuDefault.xaml:153	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/HamburgerMenuDefault.xaml:153	ComboBox has no readable name.
+WT001	high	ExampleViews/HamburgerMenuDefault.xaml:161	Slider has no AutomationId.
+WT008	low	ExampleViews/HamburgerMenuDefault.xaml:161	Slider has no readable name.
+WT001	high	ExampleViews/HamburgerMenuDefault.xaml:166	Slider has no AutomationId.
+WT008	low	ExampleViews/HamburgerMenuDefault.xaml:166	Slider has no readable name.
+WT002	low	ExampleViews/HamburgerMenuSample.xaml:23	TabControl [HamburgerTabControl] gets its ID "HamburgerTabControl" from x:Name.
+WT001	high	ExampleViews/HamburgerMenuSample.xaml:26	TabItem "Default" has no AutomationId.
+WT001	high	ExampleViews/HamburgerMenuSample.xaml:29	TabItem "Creators Style" has no AutomationId.
+WT001	high	ExampleViews/HeaderExamples.xaml:243	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/HeaderExamples.xaml:243	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/HeaderExamples.xaml:243	ComboBox has no readable name.
+WT001	high	ExampleViews/HeaderExamples.xaml:250	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/HeaderExamples.xaml:250	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/HeaderExamples.xaml:250	ComboBox has no readable name.
+WT001	high	ExampleViews/HeaderExamples.xaml:257	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/HeaderExamples.xaml:257	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/HeaderExamples.xaml:257	ComboBox has no readable name.
+WT001	high	ExampleViews/HeaderExamples.xaml:264	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/HeaderExamples.xaml:264	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/HeaderExamples.xaml:264	ComboBox has no readable name.
+WT001	high	ExampleViews/HeaderExamples.xaml:271	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/HeaderExamples.xaml:271	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/HeaderExamples.xaml:271	ComboBox has no readable name.
+WT001	high	ExampleViews/HeaderExamples.xaml:278	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/HeaderExamples.xaml:278	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/HeaderExamples.xaml:278	ComboBox has no readable name.
+WT001	high	ExampleViews/HeaderExamples.xaml:291	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/HeaderExamples.xaml:291	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/HeaderExamples.xaml:291	ComboBox has no readable name.
+WT001	high	ExampleViews/HeaderExamples.xaml:298	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/HeaderExamples.xaml:298	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/HeaderExamples.xaml:298	ComboBox has no readable name.
+WT001	high	ExampleViews/HeaderExamples.xaml:305	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/HeaderExamples.xaml:305	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/HeaderExamples.xaml:305	ComboBox has no readable name.
+WT001	high	ExampleViews/HeaderExamples.xaml:320	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/HeaderExamples.xaml:320	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/HeaderExamples.xaml:320	ComboBox has no readable name.
+WT001	high	ExampleViews/HeaderExamples.xaml:339	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/HeaderExamples.xaml:339	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/HeaderExamples.xaml:339	ComboBox has no readable name.
+WT001	high	ExampleViews/HeaderExamples.xaml:345	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/HeaderExamples.xaml:345	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/HeaderExamples.xaml:345	ComboBox has no readable name.
+WT001	high	ExampleViews/HeaderExamples.xaml:351	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/HeaderExamples.xaml:351	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/HeaderExamples.xaml:351	ComboBox has no readable name.
+WT001	high	ExampleViews/HeaderExamples.xaml:371	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/HeaderExamples.xaml:371	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/HeaderExamples.xaml:371	ComboBox has no readable name.
+WT001	high	ExampleViews/HeaderExamples.xaml:377	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/HeaderExamples.xaml:377	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/HeaderExamples.xaml:377	ComboBox has no readable name.
+WT001	high	ExampleViews/HeaderExamples.xaml:409	Expander "Expander" has no AutomationId.
+WT001	high	ExampleViews/HeaderExamples.xaml:421	Expander "Expander" has no AutomationId.
+WT001	high	ExampleViews/HeaderExamples.xaml:429	Expander "Expander" has no AutomationId.
+WT001	high	ExampleViews/HeaderExamples.xaml:442	TextBox has no AutomationId.
+WT008	low	ExampleViews/HeaderExamples.xaml:442	TextBox has no readable name.
+WT001	high	ExampleViews/HeaderExamples.xaml:450	TabControl has no AutomationId.
+WT001	high	ExampleViews/HeaderExamples.xaml:453	TabItem "TabItem" has no AutomationId.
+WT001	high	ExampleViews/HeaderExamples.xaml:456	TabItem "Another one" has no AutomationId.
+WT001	high	ExampleViews/MultiSelectionComboBoxExample.xaml:108	TextBox has no AutomationId.
+WT008	low	ExampleViews/MultiSelectionComboBoxExample.xaml:108	TextBox has no readable name.
+WT001	high	ExampleViews/MultiSelectionComboBoxExample.xaml:111	TextBox has no AutomationId.
+WT008	low	ExampleViews/MultiSelectionComboBoxExample.xaml:111	TextBox has no readable name.
+WT001	high	ExampleViews/MultiSelectionComboBoxExample.xaml:123	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/MultiSelectionComboBoxExample.xaml:123	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/MultiSelectionComboBoxExample.xaml:123	ComboBox has no readable name.
+WT001	high	ExampleViews/MultiSelectionComboBoxExample.xaml:126	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/MultiSelectionComboBoxExample.xaml:126	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/MultiSelectionComboBoxExample.xaml:126	ComboBox has no readable name.
+WT001	high	ExampleViews/MultiSelectionComboBoxExample.xaml:129	TextBox has no AutomationId.
+WT008	low	ExampleViews/MultiSelectionComboBoxExample.xaml:129	TextBox has no readable name.
+WT001	high	ExampleViews/MultiSelectionComboBoxExample.xaml:132	TextBox has no AutomationId.
+WT008	low	ExampleViews/MultiSelectionComboBoxExample.xaml:132	TextBox has no readable name.
+WT001	high	ExampleViews/MultiSelectionComboBoxExample.xaml:140	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/MultiSelectionComboBoxExample.xaml:140	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/MultiSelectionComboBoxExample.xaml:140	ComboBox has no readable name.
+WT001	high	ExampleViews/MultiSelectionComboBoxExample.xaml:143	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/MultiSelectionComboBoxExample.xaml:143	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/MultiSelectionComboBoxExample.xaml:143	ComboBox has no readable name.
+WT001	high	ExampleViews/MultiSelectionComboBoxExample.xaml:146	ComboBox has no AutomationId.
+WT008	low	ExampleViews/MultiSelectionComboBoxExample.xaml:146	ComboBox has no readable name.
+WT001	high	ExampleViews/MultiSelectionComboBoxExample.xaml:152	ComboBox has no AutomationId.
+WT008	low	ExampleViews/MultiSelectionComboBoxExample.xaml:152	ComboBox has no readable name.
+WT002	low	ExampleViews/MultiSelectionComboBoxExample.xaml:174	ComboBox [CmbSelectStyle] gets its ID "CmbSelectStyle" from x:Name.
+WT008	low	ExampleViews/MultiSelectionComboBoxExample.xaml:174	ComboBox [CmbSelectStyle] has no readable name.
+WT002	low	ExampleViews/MultiSelectionComboBoxExample.xaml:184	ComboBox [Cmb_ItemContainerStyle] gets its ID "Cmb_ItemContainerStyle" from x:Name.
+WT008	low	ExampleViews/MultiSelectionComboBoxExample.xaml:184	ComboBox [Cmb_ItemContainerStyle] has no readable name.
+WT002	low	ExampleViews/MultiSelectionComboBoxExample.xaml:194	ComboBox [Cmb_SelectedItemContainerStyle] gets its ID "Cmb_SelectedItemContainerStyle" from x:Name.
+WT008	low	ExampleViews/MultiSelectionComboBoxExample.xaml:194	ComboBox [Cmb_SelectedItemContainerStyle] has no readable name.
+WT001	high	ExampleViews/MultiSelectionComboBoxExample.xaml:209	TextBox has no AutomationId.
+WT008	low	ExampleViews/MultiSelectionComboBoxExample.xaml:209	TextBox has no readable name.
+WT001	high	ExampleViews/MultiSelectionComboBoxExample.xaml:251	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/MultiSelectionComboBoxExample.xaml:251	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/MultiSelectionComboBoxExample.xaml:251	ComboBox has no readable name.
+WT001	high	ExampleViews/MultiSelectionComboBoxExample.xaml:254	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/MultiSelectionComboBoxExample.xaml:254	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/MultiSelectionComboBoxExample.xaml:254	ComboBox has no readable name.
+WT001	high	ExampleViews/MultiSelectionComboBoxExample.xaml:257	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/MultiSelectionComboBoxExample.xaml:257	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/MultiSelectionComboBoxExample.xaml:257	ComboBox has no readable name.
+WT001	high	ExampleViews/MultiSelectionComboBoxExample.xaml:260	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/MultiSelectionComboBoxExample.xaml:260	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/MultiSelectionComboBoxExample.xaml:260	ComboBox has no readable name.
+WT001	high	ExampleViews/MultiSelectionComboBoxExample.xaml:263	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/MultiSelectionComboBoxExample.xaml:263	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/MultiSelectionComboBoxExample.xaml:263	ComboBox has no readable name.
+WT002	low	ExampleViews/MultiSelectionComboBoxExample.xaml:288	mah:MultiSelectionComboBox [mscb_Example] gets its ID "mscb_Example" from x:Name.
+WT005	medium	ExampleViews/MultiSelectionComboBoxExample.xaml:288	Rows in mah:MultiSelectionComboBox [mscb_Example] have no unique ID.
+WT008	low	ExampleViews/MultiSelectionComboBoxExample.xaml:288	mah:MultiSelectionComboBox [mscb_Example] has no readable name.
+WT001	high	ExampleViews/MultiSelectionComboBoxExample.xaml:313	ListBox has no AutomationId.
+WT005	medium	ExampleViews/MultiSelectionComboBoxExample.xaml:313	Rows in ListBox have no unique ID.
+WT008	low	ExampleViews/MultiSelectionComboBoxExample.xaml:313	ListBox has no readable name.
+WT001	high	ExampleViews/NumericUpDownExamples.xaml:237	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/NumericUpDownExamples.xaml:237	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/NumericUpDownExamples.xaml:237	ComboBox has no readable name.
+WT001	high	ExampleViews/NumericUpDownExamples.xaml:259	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/NumericUpDownExamples.xaml:259	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/NumericUpDownExamples.xaml:259	ComboBox has no readable name.
+WT001	high	ExampleViews/NumericUpDownExamples.xaml:265	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/NumericUpDownExamples.xaml:265	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/NumericUpDownExamples.xaml:265	ComboBox has no readable name.
+WT002	low	ExampleViews/NumericUpDownExamples.xaml:273	ComboBox [TheCulture] gets its ID "TheCulture" from x:Name.
+WT005	medium	ExampleViews/NumericUpDownExamples.xaml:273	Rows in ComboBox [TheCulture] have no unique ID.
+WT008	low	ExampleViews/NumericUpDownExamples.xaml:273	ComboBox [TheCulture] has no readable name.
+WT001	high	ExampleViews/NumericUpDownExamples.xaml:295	TextBox has no AutomationId.
+WT008	low	ExampleViews/NumericUpDownExamples.xaml:295	TextBox has no readable name.
+WT001	high	ExampleViews/NumericUpDownExamples.xaml:301	TextBox has no AutomationId.
+WT008	low	ExampleViews/NumericUpDownExamples.xaml:301	TextBox has no readable name.
+WT001	high	ExampleViews/NumericUpDownExamples.xaml:307	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/NumericUpDownExamples.xaml:307	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/NumericUpDownExamples.xaml:307	ComboBox has no readable name.
+WT001	high	ExampleViews/NumericUpDownExamples.xaml:313	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/NumericUpDownExamples.xaml:313	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/NumericUpDownExamples.xaml:313	ComboBox has no readable name.
+WT001	high	ExampleViews/NumericUpDownExamples.xaml:319	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/NumericUpDownExamples.xaml:319	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/NumericUpDownExamples.xaml:319	ComboBox has no readable name.
+WT001	high	ExampleViews/NumericUpDownExamples.xaml:325	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/NumericUpDownExamples.xaml:325	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/NumericUpDownExamples.xaml:325	ComboBox has no readable name.
+WT001	high	ExampleViews/NumericUpDownExamples.xaml:331	TextBox has no AutomationId.
+WT008	low	ExampleViews/NumericUpDownExamples.xaml:331	TextBox has no readable name.
+WT001	high	ExampleViews/NumericUpDownExamples.xaml:383	TextBox has no AutomationId.
+WT008	low	ExampleViews/NumericUpDownExamples.xaml:383	TextBox has no readable name.
+WT001	high	ExampleViews/NumericUpDownExamples.xaml:387	TextBox has no AutomationId.
+WT008	low	ExampleViews/NumericUpDownExamples.xaml:387	TextBox has no readable name.
+WT001	high	ExampleViews/NumericUpDownExamples.xaml:423	TextBox has no AutomationId.
+WT008	low	ExampleViews/NumericUpDownExamples.xaml:423	TextBox has no readable name.
+WT001	high	ExampleViews/NumericUpDownExamples.xaml:427	TextBox has no AutomationId.
+WT008	low	ExampleViews/NumericUpDownExamples.xaml:427	TextBox has no readable name.
+WT001	high	ExampleViews/NumericUpDownExamples.xaml:463	TextBox has no AutomationId.
+WT008	low	ExampleViews/NumericUpDownExamples.xaml:463	TextBox has no readable name.
+WT001	high	ExampleViews/NumericUpDownExamples.xaml:467	TextBox has no AutomationId.
+WT008	low	ExampleViews/NumericUpDownExamples.xaml:467	TextBox has no readable name.
+WT001	high	ExampleViews/NumericUpDownExamples.xaml:503	TextBox has no AutomationId.
+WT008	low	ExampleViews/NumericUpDownExamples.xaml:503	TextBox has no readable name.
+WT001	high	ExampleViews/NumericUpDownExamples.xaml:507	TextBox has no AutomationId.
+WT008	low	ExampleViews/NumericUpDownExamples.xaml:507	TextBox has no readable name.
+WT001	high	ExampleViews/OtherExamples.xaml:72	MenuItem "Cut" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:77	MenuItem "Copy" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:82	MenuItem "Paste" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:88	MenuItem "Show line numbers" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:91	MenuItem "Word wrap" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:93	MenuItem "Open with" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:94	MenuItem "Editor" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:95	MenuItem "Browser" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:97	MenuItem "Choose another app" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:100	MenuItem "Delete" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:107	MenuItem "Properties" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:135	MenuItem "Cut" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:140	MenuItem "Copy" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:145	MenuItem "Paste" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:151	MenuItem "Show line numbers" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:154	MenuItem "Word wrap" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:156	MenuItem "Open with" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:157	MenuItem "Editor" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:158	MenuItem "Browser" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:160	MenuItem "Choose another app" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:163	MenuItem "Delete" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:170	MenuItem "Properties" has no AutomationId.
+WT001	high	ExampleViews/OtherExamples.xaml:193	TextBox has no AutomationId.
+WT008	low	ExampleViews/OtherExamples.xaml:193	TextBox has no readable name.
+WT002	low	ExampleViews/OtherExamples.xaml:201	CheckBox "Show Banner" gets its ID "ShowBannerCheckBox" from x:Name.
+WT002	low	ExampleViews/OtherExamples.xaml:205	CheckBox "MouseOver Border" gets its ID "ShowMouseOverCheckBox" from x:Name.
+WT002	low	ExampleViews/OtherExamples.xaml:209	CheckBox "Circular Navi" gets its ID "CircularNaviCheckBox" from x:Name.
+WT002	low	ExampleViews/OtherExamples.xaml:213	CheckBox "Show Navi Buttons" gets its ID "ShowNaviCheckBox" from x:Name.
+WT002	low	ExampleViews/OtherExamples.xaml:217	CheckBox "Show Navi Index" gets its ID "ShowIndexCheckBox" from x:Name.
+WT002	low	ExampleViews/OtherExamples.xaml:244	ComboBox [Orientation] gets its ID "Orientation" from x:Name.
+WT005	medium	ExampleViews/OtherExamples.xaml:244	Rows in ComboBox [Orientation] have no unique ID.
+WT008	low	ExampleViews/OtherExamples.xaml:244	ComboBox [Orientation] has no readable name.
+WT002	low	ExampleViews/OtherExamples.xaml:255	ComboBox [NaviButtonsPosition] gets its ID "NaviButtonsPosition" from x:Name.
+WT005	medium	ExampleViews/OtherExamples.xaml:255	Rows in ComboBox [NaviButtonsPosition] have no unique ID.
+WT008	low	ExampleViews/OtherExamples.xaml:255	ComboBox [NaviButtonsPosition] has no readable name.
+WT002	low	ExampleViews/OtherExamples.xaml:266	ComboBox [IndexPlacement] gets its ID "IndexPlacement" from x:Name.
+WT005	medium	ExampleViews/OtherExamples.xaml:266	Rows in ComboBox [IndexPlacement] have no unique ID.
+WT008	low	ExampleViews/OtherExamples.xaml:266	ComboBox [IndexPlacement] has no readable name.
+WT002	low	ExampleViews/OtherExamples.xaml:277	ComboBox [IndexHorizontalAlignment] gets its ID "IndexHorizontalAlignment" from x:Name.
+WT005	medium	ExampleViews/OtherExamples.xaml:277	Rows in ComboBox [IndexHorizontalAlignment] have no unique ID.
+WT008	low	ExampleViews/OtherExamples.xaml:277	ComboBox [IndexHorizontalAlignment] has no readable name.
+WT002	low	ExampleViews/OtherExamples.xaml:289	ComboBox [IndexVerticalAlignment] gets its ID "IndexVerticalAlignment" from x:Name.
+WT005	medium	ExampleViews/OtherExamples.xaml:289	Rows in ComboBox [IndexVerticalAlignment] have no unique ID.
+WT008	low	ExampleViews/OtherExamples.xaml:289	ComboBox [IndexVerticalAlignment] has no readable name.
+WT002	low	ExampleViews/OtherExamples.xaml:301	ComboBox [LeftTransition] gets its ID "LeftTransition" from x:Name.
+WT005	medium	ExampleViews/OtherExamples.xaml:301	Rows in ComboBox [LeftTransition] have no unique ID.
+WT008	low	ExampleViews/OtherExamples.xaml:301	ComboBox [LeftTransition] has no readable name.
+WT002	low	ExampleViews/OtherExamples.xaml:313	ComboBox [RightTransition] gets its ID "RightTransition" from x:Name.
+WT005	medium	ExampleViews/OtherExamples.xaml:313	Rows in ComboBox [RightTransition] have no unique ID.
+WT008	low	ExampleViews/OtherExamples.xaml:313	ComboBox [RightTransition] has no readable name.
+WT002	low	ExampleViews/OtherExamples.xaml:325	ComboBox [DownTransition] gets its ID "DownTransition" from x:Name.
+WT005	medium	ExampleViews/OtherExamples.xaml:325	Rows in ComboBox [DownTransition] have no unique ID.
+WT008	low	ExampleViews/OtherExamples.xaml:325	ComboBox [DownTransition] has no readable name.
+WT002	low	ExampleViews/OtherExamples.xaml:337	ComboBox [UpTransition] gets its ID "UpTransition" from x:Name.
+WT005	medium	ExampleViews/OtherExamples.xaml:337	Rows in ComboBox [UpTransition] have no unique ID.
+WT008	low	ExampleViews/OtherExamples.xaml:337	ComboBox [UpTransition] has no readable name.
+WT002	low	ExampleViews/ProgressBars.xaml:43	Slider [ProgressValueSlider01] gets its ID "ProgressValueSlider01" from x:Name.
+WT008	low	ExampleViews/ProgressBars.xaml:43	Slider [ProgressValueSlider01] has no readable name.
+WT002	low	ExampleViews/ProgressBars.xaml:67	CheckBox "IsVisible" gets its ID "IsVisibleCheckBox01" from x:Name.
+WT002	low	ExampleViews/ProgressBars.xaml:72	CheckBox "IsIndeterminate" gets its ID "IsIndeterminateCheckBox01" from x:Name.
+WT002	low	ExampleViews/ProgressBars.xaml:122	Slider [ProgressValueSlider02] gets its ID "ProgressValueSlider02" from x:Name.
+WT008	low	ExampleViews/ProgressBars.xaml:122	Slider [ProgressValueSlider02] has no readable name.
+WT002	low	ExampleViews/ProgressBars.xaml:146	CheckBox "IsVisible" gets its ID "IsVisibleCheckBox02" from x:Name.
+WT002	low	ExampleViews/ProgressBars.xaml:151	CheckBox "IsIndeterminate" gets its ID "IsIndeterminateCheckBox02" from x:Name.
+WT002	low	ExampleViews/ProgressBars.xaml:199	CheckBox "IsActive" gets its ID "IsActiveCheckBox" from x:Name.
+WT002	low	ExampleViews/ProgressBars.xaml:204	CheckBox "IsLarge" gets its ID "IsLargeCheckBox" from x:Name.
+WT002	low	ExampleViews/ProgressBars.xaml:209	CheckBox "IsVisible" gets its ID "IsVisibleCheckBox03" from x:Name.
+WT001	high	ExampleViews/SelectionExamples.xaml:17	TabControl has no AutomationId.
+WT001	high	ExampleViews/SelectionExamples.xaml:18	TabItem "ListBox" has no AutomationId.
+WT001	high	ExampleViews/SelectionExamples.xaml:20	ListBox has no AutomationId.
+WT005	medium	ExampleViews/SelectionExamples.xaml:20	Rows in ListBox have no unique ID.
+WT008	low	ExampleViews/SelectionExamples.xaml:20	ListBox has no readable name.
+WT001	high	ExampleViews/SelectionExamples.xaml:52	ListBox has no AutomationId.
+WT005	medium	ExampleViews/SelectionExamples.xaml:52	Rows in ListBox have no unique ID.
+WT008	low	ExampleViews/SelectionExamples.xaml:52	ListBox has no readable name.
+WT001	high	ExampleViews/SelectionExamples.xaml:73	ListBox has no AutomationId.
+WT008	low	ExampleViews/SelectionExamples.xaml:73	ListBox has no readable name.
+WT001	high	ExampleViews/SelectionExamples.xaml:78	ListBox has no AutomationId.
+WT008	low	ExampleViews/SelectionExamples.xaml:78	ListBox has no readable name.
+WT001	high	ExampleViews/SelectionExamples.xaml:88	TabItem "List/GridView" has no AutomationId.
+WT001	high	ExampleViews/SelectionExamples.xaml:90	ListView has no AutomationId.
+WT005	medium	ExampleViews/SelectionExamples.xaml:90	Rows in ListView have no unique ID.
+WT008	low	ExampleViews/SelectionExamples.xaml:90	ListView has no readable name.
+WT001	high	ExampleViews/SelectionExamples.xaml:103	ListView has no AutomationId.
+WT005	medium	ExampleViews/SelectionExamples.xaml:103	Rows in ListView have no unique ID.
+WT008	low	ExampleViews/SelectionExamples.xaml:103	ListView has no readable name.
+WT001	high	ExampleViews/SelectionExamples.xaml:117	ListView has no AutomationId.
+WT008	low	ExampleViews/SelectionExamples.xaml:117	ListView has no readable name.
+WT001	high	ExampleViews/SelectionExamples.xaml:125	ListView has no AutomationId.
+WT008	low	ExampleViews/SelectionExamples.xaml:125	ListView has no readable name.
+WT001	high	ExampleViews/SelectionExamples.xaml:137	TabItem "TreeView" has no AutomationId.
+WT001	high	ExampleViews/SelectionExamples.xaml:139	TreeView has no AutomationId.
+WT005	medium	ExampleViews/SelectionExamples.xaml:139	Rows in TreeView have no unique ID.
+WT008	low	ExampleViews/SelectionExamples.xaml:139	TreeView has no readable name.
+WT001	high	ExampleViews/SelectionExamples.xaml:154	TreeView has no AutomationId.
+WT005	medium	ExampleViews/SelectionExamples.xaml:154	Rows in TreeView have no unique ID.
+WT008	low	ExampleViews/SelectionExamples.xaml:154	TreeView has no readable name.
+WT001	high	ExampleViews/SelectionExamples.xaml:171	TreeView has no AutomationId.
+WT008	low	ExampleViews/SelectionExamples.xaml:171	TreeView has no readable name.
+WT001	high	ExampleViews/SelectionExamples.xaml:192	TreeView has no AutomationId.
+WT008	low	ExampleViews/SelectionExamples.xaml:192	TreeView has no readable name.
+WT001	high	ExampleViews/SelectionExamples.xaml:216	TabItem "ComboBox" has no AutomationId.
+WT001	high	ExampleViews/SelectionExamples.xaml:221	ComboBox has no AutomationId.
+WT008	low	ExampleViews/SelectionExamples.xaml:221	ComboBox has no readable name.
+WT001	high	ExampleViews/SelectionExamples.xaml:228	MenuItem "Test" has no AutomationId.
+WT001	high	ExampleViews/SelectionExamples.xaml:237	ComboBox has no AutomationId.
+WT008	low	ExampleViews/SelectionExamples.xaml:237	ComboBox has no readable name.
+WT001	high	ExampleViews/SelectionExamples.xaml:244	MenuItem "Test" has no AutomationId.
+WT001	high	ExampleViews/SelectionExamples.xaml:254	ComboBox has no AutomationId.
+WT008	low	ExampleViews/SelectionExamples.xaml:254	ComboBox has no readable name.
+WT001	high	ExampleViews/SelectionExamples.xaml:275	ComboBox has no AutomationId.
+WT008	low	ExampleViews/SelectionExamples.xaml:275	ComboBox has no readable name.
+WT001	high	ExampleViews/SelectionExamples.xaml:280	MenuItem "Test" has no AutomationId.
+WT001	high	ExampleViews/SelectionExamples.xaml:289	ComboBox has no AutomationId.
+WT008	low	ExampleViews/SelectionExamples.xaml:289	ComboBox has no readable name.
+WT001	high	ExampleViews/SelectionExamples.xaml:297	MenuItem "Test" has no AutomationId.
+WT001	high	ExampleViews/SelectionExamples.xaml:306	ComboBox has no AutomationId.
+WT008	low	ExampleViews/SelectionExamples.xaml:306	ComboBox has no readable name.
+WT001	high	ExampleViews/SelectionExamples.xaml:322	TextBox has no AutomationId.
+WT008	low	ExampleViews/SelectionExamples.xaml:322	TextBox has no readable name.
+WT001	high	ExampleViews/SelectionExamples.xaml:327	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/SelectionExamples.xaml:327	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/SelectionExamples.xaml:327	ComboBox has no readable name.
+WT002	low	ExampleViews/SelectionExamples.xaml:338	ComboBox [groupingComboBox] gets its ID "groupingComboBox" from x:Name.
+WT005	medium	ExampleViews/SelectionExamples.xaml:338	Rows in ComboBox [groupingComboBox] have no unique ID.
+WT008	low	ExampleViews/SelectionExamples.xaml:338	ComboBox [groupingComboBox] has no readable name.
+WT001	high	ExampleViews/SelectionExamples.xaml:359	ComboBox has no AutomationId.
+WT008	low	ExampleViews/SelectionExamples.xaml:359	ComboBox has no readable name.
+WT001	high	ExampleViews/SelectionExamples.xaml:368	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/SelectionExamples.xaml:368	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/SelectionExamples.xaml:368	ComboBox has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:251	Slider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:251	Slider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:256	Slider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:256	Slider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:261	Slider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:261	Slider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:269	Slider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:269	Slider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:274	Slider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:274	Slider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:279	Slider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:279	Slider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:292	Slider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:292	Slider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:295	Slider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:295	Slider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:300	Slider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:300	Slider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:305	Slider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:305	Slider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:310	Slider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:310	Slider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:316	Slider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:316	Slider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:322	Slider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:322	Slider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:338	Slider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:338	Slider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:344	Slider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:344	Slider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:351	Slider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:351	Slider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:365	mah:RangeSlider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:365	mah:RangeSlider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:370	mah:RangeSlider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:370	mah:RangeSlider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:378	mah:RangeSlider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:378	mah:RangeSlider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:383	mah:RangeSlider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:383	mah:RangeSlider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:396	mah:RangeSlider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:396	mah:RangeSlider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:399	mah:RangeSlider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:399	mah:RangeSlider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:404	mah:RangeSlider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:404	mah:RangeSlider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:409	mah:RangeSlider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:409	mah:RangeSlider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:416	mah:RangeSlider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:416	mah:RangeSlider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:422	mah:RangeSlider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:422	mah:RangeSlider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:430	mah:RangeSlider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:430	mah:RangeSlider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:444	mah:RangeSlider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:444	mah:RangeSlider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:450	mah:RangeSlider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:450	mah:RangeSlider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:457	mah:RangeSlider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:457	mah:RangeSlider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:463	mah:RangeSlider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:463	mah:RangeSlider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:469	mah:RangeSlider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:469	mah:RangeSlider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:483	Slider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:483	Slider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:486	Slider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:486	Slider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:491	mah:RangeSlider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:491	mah:RangeSlider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:507	mah:RangeSlider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:507	mah:RangeSlider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:523	Slider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:523	Slider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:541	Slider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:541	Slider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:549	Slider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:549	Slider has no readable name.
+WT001	high	ExampleViews/Sliders.xaml:560	mah:RangeSlider has no AutomationId.
+WT008	low	ExampleViews/Sliders.xaml:560	mah:RangeSlider has no readable name.
+WT002	low	ExampleViews/SplitViewExamples.xaml:127	Slider [sliderTest] gets its ID "sliderTest" from x:Name.
+WT008	low	ExampleViews/SplitViewExamples.xaml:127	Slider [sliderTest] has no readable name.
+WT001	high	ExampleViews/TabControlExamples.xaml:132	Expander "Colours of a tab strip" has no AutomationId.
+WT002	low	ExampleViews/TabControlExamples.xaml:146	mah:MetroTabControl [ColouredTabControl] gets its ID "ColouredTabControl" from x:Name.
+WT001	high	ExampleViews/TabControlExamples.xaml:158	mah:MetroTabItem "Overview" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:172	mah:MetroTabItem "Activity" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:186	mah:MetroTabItem "Settings" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:306	Expander "Default TabControl" has no AutomationId.
+WT002	low	ExampleViews/TabControlExamples.xaml:312	TabControl [DefaultTabControl] gets its ID "DefaultTabControl" from x:Name.
+WT001	high	ExampleViews/TabControlExamples.xaml:316	TabItem "Item 1" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:319	TabItem "Item 2" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:322	TabItem "Item 3" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:325	TabItem "Item 4" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:328	TabItem "Item 5" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:331	TabItem "Item 6" has no AutomationId.
+WT002	low	ExampleViews/TabControlExamples.xaml:341	TabControl [AnimatedTabControl] gets its ID "AnimatedTabControl" from x:Name.
+WT001	high	ExampleViews/TabControlExamples.xaml:344	TabItem "this tabcontrol" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:347	mah:MetroTabItem "animates its content" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:350	mah:MetroTabItem "with a transition" has no AutomationId.
+WT002	low	ExampleViews/TabControlExamples.xaml:361	TabControl [AnimatedSingleRowTabControl] gets its ID "AnimatedSingleRowTabControl" from x:Name.
+WT001	high	ExampleViews/TabControlExamples.xaml:364	TabItem "these tabs" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:367	mah:MetroTabItem "appear only on a single line" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:370	mah:MetroTabItem "if they are overflowing" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:373	TabItem "instead of wrapping them" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:382	Expander "Generic theme TabControls" has no AutomationId.
+WT002	low	ExampleViews/TabControlExamples.xaml:388	mah:MetroAnimatedTabControl [MetroAnimatedTabControl] gets its ID "MetroAnimatedTabControl" from x:Name.
+WT001	high	ExampleViews/TabControlExamples.xaml:389	TabItem "this tabcontrol" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:392	mah:MetroTabItem "animates its content" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:395	mah:MetroTabItem "with a transition" has no AutomationId.
+WT002	low	ExampleViews/TabControlExamples.xaml:404	mah:MetroAnimatedSingleRowTabControl [MetroAnimatedSingleRowTabControl] gets its ID "MetroAnimatedSingleRowTabControl" from x:Name.
+WT001	high	ExampleViews/TabControlExamples.xaml:405	TabItem "these tabs" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:408	mah:MetroTabItem "appear only on a single line" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:411	mah:MetroTabItem "if they are overflowing" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:414	TabItem "instead of wrapping them" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:424	mah:MetroAnimatedSingleRowTabControl has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:440	TabItem "Test1" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:443	TabItem "Test2" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:446	TabItem "Test3" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:450	mah:MetroAnimatedSingleRowTabControl has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:468	TabItem "Test1" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:471	TabItem "Test2" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:474	TabItem "Test3" has no AutomationId.
+WT002	low	ExampleViews/TabControlExamples.xaml:484	mah:MetroTabControl [MetroTabControlClosable] gets its ID "MetroTabControlClosable" from x:Name.
+WT001	high	ExampleViews/TabControlExamples.xaml:485	mah:MetroTabItem "headers" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:492	mah:MetroTabItem "can" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:499	mah:MetroTabItem "have" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:504	mah:MetroTabItem "different" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:509	mah:MetroTabItem "font" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:514	mah:MetroTabItem "sizes" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:519	mah:MetroTabItem "close button" has no AutomationId.
+WT002	low	ExampleViews/TabControlExamples.xaml:530	mah:MetroTabControl [MetroTabControl] gets its ID "MetroTabControl" from x:Name.
+WT001	high	ExampleViews/TabControlExamples.xaml:533	mah:MetroTabItem "item 1" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:541	mah:MetroTabItem "item 2 more" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:544	mah:MetroTabItem "item 3 header here" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:547	mah:MetroTabItem "item 4" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:550	mah:MetroTabItem "item 5" has no AutomationId.
+WT001	high	ExampleViews/TabControlExamples.xaml:555	mah:MetroTabItem "item 6" has no AutomationId.
+WT001	high	ExampleViews/TextExamples.xaml:116	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:116	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:122	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:122	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:128	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:128	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:141	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:141	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:146	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:146	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:151	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:151	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:163	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:163	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:169	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:169	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:175	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:175	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:188	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:188	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:194	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:194	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:200	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:200	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:222	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:222	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:228	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:228	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:234	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:234	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:241	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:241	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:248	PasswordBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:248	PasswordBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:254	RichTextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:254	RichTextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:273	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:273	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:276	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:276	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:281	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:281	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:284	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:284	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:291	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:291	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:305	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:305	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:314	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:314	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:317	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:317	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:324	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:324	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:330	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:330	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:337	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:337	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:343	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:343	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:351	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:351	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:357	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:357	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:366	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:366	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:387	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:387	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:393	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:393	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:396	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:396	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:399	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:399	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:404	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:404	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:415	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:415	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:418	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:418	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:423	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:423	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:426	MenuItem "Something of my own" has no AutomationId.
+WT001	high	ExampleViews/TextExamples.xaml:428	MenuItem has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:428	MenuItem has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:429	MenuItem has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:429	MenuItem has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:430	MenuItem has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:430	MenuItem has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:436	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:436	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:439	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:439	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:456	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:456	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:457	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:457	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:469	PasswordBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:469	PasswordBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:474	PasswordBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:474	PasswordBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:482	PasswordBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:482	PasswordBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:490	PasswordBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:490	PasswordBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:498	PasswordBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:498	PasswordBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:504	PasswordBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:504	PasswordBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:521	PasswordBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:521	PasswordBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:522	PasswordBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:522	PasswordBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:535	RichTextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:535	RichTextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:542	RichTextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:542	RichTextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:550	RichTextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:550	RichTextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:563	RichTextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:563	RichTextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:574	RichTextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:574	RichTextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:579	Hyperlink "MahApps.Metro" has no AutomationId.
+WT001	high	ExampleViews/TextExamples.xaml:587	RichTextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:587	RichTextBox has no readable name.
+WT002	low	ExampleViews/TextExamples.xaml:610	CheckBox "AreModifierKeysRequired" gets its ID "ModifierKeysRequired" from x:Name.
+WT001	high	ExampleViews/TextExamples.xaml:633	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:633	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:636	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:636	TextBox has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:641	TextBox has no AutomationId.
+WT008	low	ExampleViews/TextExamples.xaml:641	TextBox has no readable name.
+WT001	high	ExampleViews/TransitionExamples.xaml:98	ComboBox has no AutomationId.
+WT005	medium	ExampleViews/TransitionExamples.xaml:98	Rows in ComboBox have no unique ID.
+WT008	low	ExampleViews/TransitionExamples.xaml:98	ComboBox has no readable name.
+WT001	high	ExampleViews/TransitionExamples.xaml:106	CheckBox "RestartTransitionOnContentChange" has no AutomationId.
+WT001	high	ExampleViews/TransitionExamples.xaml:143	Button "Change content" has no AutomationId.
+WT001	high	ExampleViews/TransitionExamples.xaml:147	Button "ReloadTransition" has no AutomationId.
+WT001	high	ExampleViews/TransitionExamples.xaml:151	Button "AbortTransition" has no AutomationId.
+WT001	high	ExampleViews/TransitionExamples.xaml:254	Button "Change content" has no AutomationId.
+WT002	low	ExampleViews/TransitionExamples.xaml:274	ComboBox [InheritedTransitionComboBox] gets its ID "InheritedTransitionComboBox" from x:Name.
+WT005	medium	ExampleViews/TransitionExamples.xaml:274	Rows in ComboBox [InheritedTransitionComboBox] have no unique ID.
+WT008	low	ExampleViews/TransitionExamples.xaml:274	ComboBox [InheritedTransitionComboBox] has no readable name.
+WT005	medium	ExampleViews/TransitionExamples.xaml:308	Rows in ItemsControl have no unique ID.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:44	Button "Test" has no AutomationId.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:50	Button "Another Test" has no AutomationId.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:51	ToggleButton "ToggleButton" has no AutomationId.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:71	TextBox has no AutomationId.
+WT008	low	ExampleWindows/CleanWindowDemo.xaml:71	TextBox has no readable name.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:72	TextBox has no AutomationId.
+WT008	low	ExampleWindows/CleanWindowDemo.xaml:72	TextBox has no readable name.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:73	TextBox has no AutomationId.
+WT008	low	ExampleWindows/CleanWindowDemo.xaml:73	TextBox has no readable name.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:74	TextBox has no AutomationId.
+WT008	low	ExampleWindows/CleanWindowDemo.xaml:74	TextBox has no readable name.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:75	TextBox has no AutomationId.
+WT008	low	ExampleWindows/CleanWindowDemo.xaml:75	TextBox has no readable name.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:76	TextBox has no AutomationId.
+WT008	low	ExampleWindows/CleanWindowDemo.xaml:76	TextBox has no readable name.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:77	TextBox has no AutomationId.
+WT008	low	ExampleWindows/CleanWindowDemo.xaml:77	TextBox has no readable name.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:78	TextBox has no AutomationId.
+WT008	low	ExampleWindows/CleanWindowDemo.xaml:78	TextBox has no readable name.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:79	TextBox has no AutomationId.
+WT008	low	ExampleWindows/CleanWindowDemo.xaml:79	TextBox has no readable name.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:80	TextBox has no AutomationId.
+WT008	low	ExampleWindows/CleanWindowDemo.xaml:80	TextBox has no readable name.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:87	Button "Create" has no AutomationId.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:90	Button "Cancel" has no AutomationId.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:115	MenuItem "Some menu option" has no AutomationId.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:119	TextBox has no AutomationId.
+WT008	low	ExampleWindows/CleanWindowDemo.xaml:119	TextBox has no readable name.
+WT002	low	ExampleWindows/CleanWindowDemo.xaml:141	ListBox [artist] gets its ID "artist" from x:Name.
+WT005	medium	ExampleWindows/CleanWindowDemo.xaml:141	Rows in ListBox [artist] have no unique ID.
+WT008	low	ExampleWindows/CleanWindowDemo.xaml:141	ListBox [artist] has no readable name.
+WT002	low	ExampleWindows/CleanWindowDemo.xaml:159	mah:MetroTabControl [TC] gets its ID "TC" from x:Name.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:160	mah:MetroTabItem "artist" has no AutomationId.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:166	mah:MetroTabItem "albums" has no AutomationId.
+WT002	low	ExampleWindows/CleanWindowDemo.xaml:167	DataGrid [albums] gets its ID "albums" from x:Name.
+WT005	medium	ExampleWindows/CleanWindowDemo.xaml:167	Rows in DataGrid [albums] have no unique ID.
+WT008	low	ExampleWindows/CleanWindowDemo.xaml:167	DataGrid [albums] has no readable name.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:201	Button "Flyout" has no AutomationId.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:205	Button "Dialog" has no AutomationId.
+WT001	high	ExampleWindows/CleanWindowDemo.xaml:209	ComboBox has no AutomationId.
+WT005	medium	ExampleWindows/CleanWindowDemo.xaml:209	Rows in ComboBox have no unique ID.
+WT008	low	ExampleWindows/CleanWindowDemo.xaml:209	ComboBox has no readable name.
+WT002	low	ExampleWindows/DynamicFlyout.xaml:23	TextBox [firstTB] gets its ID "firstTB" from x:Name.
+WT008	low	ExampleWindows/DynamicFlyout.xaml:23	TextBox [firstTB] has no readable name.
+WT001	high	ExampleWindows/DynamicFlyout.xaml:24	PasswordBox has no AutomationId.
+WT008	low	ExampleWindows/DynamicFlyout.xaml:24	PasswordBox has no readable name.
+WT002	low	ExampleWindows/DynamicFlyout.xaml:25	Slider [TheSlider] gets its ID "TheSlider" from x:Name.
+WT008	low	ExampleWindows/DynamicFlyout.xaml:25	Slider [TheSlider] has no readable name.
+WT001	high	ExampleWindows/DynamicFlyout.xaml:42	Button "OK" has no AutomationId.
+WT001	high	ExampleWindows/DynamicFlyout.xaml:46	Button "Cancel" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:65	Button "Click Me..." has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:75	Button "A" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:83	Button "B" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:86	Button "C" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:120	TabControl has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:121	TabItem "Settings" has no AutomationId.
+WT002	low	ExampleWindows/FlyoutDemo.xaml:124	TextBox [firstTB] gets its ID "firstTB" from x:Name.
+WT008	low	ExampleWindows/FlyoutDemo.xaml:124	TextBox [firstTB] has no readable name.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:125	TextBox has no AutomationId.
+WT008	low	ExampleWindows/FlyoutDemo.xaml:125	TextBox has no readable name.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:126	TextBox has no AutomationId.
+WT008	low	ExampleWindows/FlyoutDemo.xaml:126	TextBox has no readable name.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:127	TextBox has no AutomationId.
+WT008	low	ExampleWindows/FlyoutDemo.xaml:127	TextBox has no readable name.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:128	TextBox has no AutomationId.
+WT008	low	ExampleWindows/FlyoutDemo.xaml:128	TextBox has no readable name.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:129	TextBox has no AutomationId.
+WT008	low	ExampleWindows/FlyoutDemo.xaml:129	TextBox has no readable name.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:130	TextBox has no AutomationId.
+WT008	low	ExampleWindows/FlyoutDemo.xaml:130	TextBox has no readable name.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:131	TextBox has no AutomationId.
+WT008	low	ExampleWindows/FlyoutDemo.xaml:131	TextBox has no readable name.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:132	TextBox has no AutomationId.
+WT008	low	ExampleWindows/FlyoutDemo.xaml:132	TextBox has no readable name.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:133	TextBox has no AutomationId.
+WT008	low	ExampleWindows/FlyoutDemo.xaml:133	TextBox has no readable name.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:137	TabItem "Empty" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:142	Button "Create" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:145	Button "Cancel" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:159	Button "create" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:162	Button "cancel" has no AutomationId.
+WT002	low	ExampleWindows/FlyoutDemo.xaml:207	ComboBox [flyoutSettingsComboboxDownloadlanguage] gets its ID "flyoutSettingsComboboxDownloadlanguage" from x:Name.
+WT005	medium	ExampleWindows/FlyoutDemo.xaml:207	Rows in ComboBox [flyoutSettingsComboboxDownloadlanguage] have no unique ID.
+WT008	low	ExampleWindows/FlyoutDemo.xaml:207	ComboBox [flyoutSettingsComboboxDownloadlanguage] has no readable name.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:217	CheckBox "Animate" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:218	Button "Left" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:223	Button "Right" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:252	CheckBox "a simple checkbox" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:261	CheckBox "a simple checkbox" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:262	RadioButton "a simple RadioButton" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:263	ComboBox has no AutomationId.
+WT008	low	ExampleWindows/FlyoutDemo.xaml:263	ComboBox has no readable name.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:289	Button "Save" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:294	Button "Close" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:314	Button has no AutomationId.
+WT008	low	ExampleWindows/FlyoutDemo.xaml:314	Button has no readable name.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:329	Button has no AutomationId.
+WT008	low	ExampleWindows/FlyoutDemo.xaml:329	Button has no readable name.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:368	CheckBox "AutoClose Enabled" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:371	Slider has no AutomationId.
+WT008	low	ExampleWindows/FlyoutDemo.xaml:371	Slider has no readable name.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:414	Button "Show 1" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:418	Button "Show 2" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:422	Button "Show 3" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:426	Button "Inverse" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:430	Button "Adapt" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:434	Button "Settings" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:438	Button "Modal" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:442	Button "AppBar" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:446	Button "Dynamic" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:449	Button "AutoClose" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:461	TextBox has no AutomationId.
+WT008	low	ExampleWindows/FlyoutDemo.xaml:461	TextBox has no readable name.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:480	ComboBox has no AutomationId.
+WT005	medium	ExampleWindows/FlyoutDemo.xaml:480	Rows in ComboBox have no unique ID.
+WT008	low	ExampleWindows/FlyoutDemo.xaml:480	ComboBox has no readable name.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:497	ComboBox has no AutomationId.
+WT005	medium	ExampleWindows/FlyoutDemo.xaml:497	Rows in ComboBox have no unique ID.
+WT008	low	ExampleWindows/FlyoutDemo.xaml:497	ComboBox has no readable name.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:514	ComboBox has no AutomationId.
+WT005	medium	ExampleWindows/FlyoutDemo.xaml:514	Rows in ComboBox have no unique ID.
+WT008	low	ExampleWindows/FlyoutDemo.xaml:514	ComboBox has no readable name.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:531	ComboBox has no AutomationId.
+WT005	medium	ExampleWindows/FlyoutDemo.xaml:531	Rows in ComboBox have no unique ID.
+WT008	low	ExampleWindows/FlyoutDemo.xaml:531	ComboBox has no readable name.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:539	CheckBox "ShowTitleBar" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:542	CheckBox "IsWindowDraggable" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:545	CheckBox "ShowFlyoutsOverDialogs" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:549	Button "Show Left" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:553	Button "Show Shadow" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:557	Button "Show Custom Top" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:561	Button "Show Top" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:565	Button "Show Bottom" has no AutomationId.
+WT001	high	ExampleWindows/FlyoutDemo.xaml:569	Button "Close" has no AutomationId.
+WT001	high	ExampleWindows/ShowcaseFlyout.xaml:52	ComboBox has no AutomationId.
+WT005	medium	ExampleWindows/ShowcaseFlyout.xaml:52	Rows in ComboBox have no unique ID.
+WT008	low	ExampleWindows/ShowcaseFlyout.xaml:52	ComboBox has no readable name.
+WT001	high	ExampleWindows/ShowcaseFlyout.xaml:58	CheckBox "Can close Flyout" has no AutomationId.
+WT001	high	ExampleWindows/ShowcaseFlyout.xaml:80	mah:MetroAnimatedTabControl has no AutomationId.
+WT001	high	ExampleWindows/ShowcaseFlyout.xaml:83	TabItem "Artists" has no AutomationId.
+WT001	high	ExampleWindows/ShowcaseFlyout.xaml:84	ListView has no AutomationId.
+WT005	medium	ExampleWindows/ShowcaseFlyout.xaml:84	Rows in ListView have no unique ID.
+WT008	low	ExampleWindows/ShowcaseFlyout.xaml:84	ListView has no readable name.
+WT001	high	ExampleWindows/ShowcaseFlyout.xaml:97	TabItem "Albums" has no AutomationId.
+WT001	high	ExampleWindows/ShowcaseFlyout.xaml:98	ListBox has no AutomationId.
+WT005	medium	ExampleWindows/ShowcaseFlyout.xaml:98	Rows in ListBox have no unique ID.
+WT008	low	ExampleWindows/ShowcaseFlyout.xaml:98	ListBox has no readable name.
+WT001	high	ExampleWindows/ShowcaseFlyout.xaml:105	TabItem "Slider" has no AutomationId.
+WT002	low	ExampleWindows/ShowcaseFlyout.xaml:107	Slider [TheSlider] gets its ID "TheSlider" from x:Name.
+WT008	low	ExampleWindows/ShowcaseFlyout.xaml:107	Slider [TheSlider] has no readable name.
+WT001	high	ExampleWindows/ShowcaseFlyout.xaml:115	Slider has no AutomationId.
+WT008	low	ExampleWindows/ShowcaseFlyout.xaml:115	Slider has no readable name.
+WT001	high	ExampleWindows/ShowcaseFlyout.xaml:126	TextBox has no AutomationId.
+WT008	low	ExampleWindows/ShowcaseFlyout.xaml:126	TextBox has no readable name.
+WT001	high	ExampleWindows/ShowcaseFlyout.xaml:129	TextBox has no AutomationId.
+WT008	low	ExampleWindows/ShowcaseFlyout.xaml:129	TextBox has no readable name.
+WT001	high	ExampleWindows/ShowcaseFlyout.xaml:132	TabItem "Calendar" has no AutomationId.
+WT002	low	ExampleWindows/ShowcaseFlyout.xaml:134	CheckBox "IsTodayHighlighted" gets its ID "IsTodayHighlightedCheckBox" from x:Name.
+WT001	high	ExampleWindows/ShowcaseFlyout.xaml:137	Calendar has no AutomationId.
+WT008	low	ExampleWindows/ShowcaseFlyout.xaml:137	Calendar has no readable name.
+WT001	high	ExampleWindows/VSDemo.xaml:31	Button has no AutomationId.
+WT008	low	ExampleWindows/VSDemo.xaml:31	Button has no readable name.
+WT002	low	ExampleWindows/VSDemo.xaml:36	TextBox [QuickLaunchBar] gets its ID "QuickLaunchBar" from x:Name.
+WT008	low	ExampleWindows/VSDemo.xaml:36	TextBox [QuickLaunchBar] has no readable name.
+WT001	high	ExampleWindows/VSDemo.xaml:47	MenuItem "ROCKETS" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:48	MenuItem "Rocket slot 1" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:49	MenuItem "Fire slot" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:51	MenuItem "Reload slot" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:52	MenuItem "Report damage to control room" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:56	MenuItem "Rocket slot 2" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:57	MenuItem "damaged .. being repaired" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:60	MenuItem "NAVIGATION" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:61	MenuItem "Left engine" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:62	MenuItem "Full speed ahead" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:63	MenuItem "2/3 speed" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:64	MenuItem "1/3 speed" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:65	MenuItem "Stop engine" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:67	MenuItem "Right engine" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:68	MenuItem "Full speed ahead" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:69	MenuItem "2/3 speed" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:70	MenuItem "1/3 speed" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:71	MenuItem "Stop engine" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:89	TabControl has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:90	TabItem "Start" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:170	Expander "Hidden Stuff" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:176	Expander "Second Hidden Stuff" has no AutomationId.
+WT002	low	ExampleWindows/VSDemo.xaml:185	Button "Beam me up..." gets its ID "TestButton1" from x:Name.
+WT002	low	ExampleWindows/VSDemo.xaml:189	Button "...Scotty!" gets its ID "TestButton2" from x:Name.
+WT001	high	ExampleWindows/VSDemo.xaml:197	TabItem "Demo" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:199	Button "This button has a context menu" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:205	MenuItem "Item One" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:206	MenuItem "Item Two" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:207	MenuItem "Rockets" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:208	MenuItem "Rocket slot 1" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:209	MenuItem "Fire slot" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:211	MenuItem "Reload slot" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:212	MenuItem "Report damage to control room" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:214	MenuItem "Rocket slot 2" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:215	MenuItem "damaged .. being repaired" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:223	TabItem "Manage Rockets" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:225	Button "Add rocket" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:231	ListBox has no AutomationId.
+WT008	low	ExampleWindows/VSDemo.xaml:231	ListBox has no readable name.
+WT001	high	ExampleWindows/VSDemo.xaml:267	TabItem "Communication" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:284	TextBox has no AutomationId.
+WT008	low	ExampleWindows/VSDemo.xaml:284	TextBox has no readable name.
+WT001	high	ExampleWindows/VSDemo.xaml:295	TextBox has no AutomationId.
+WT008	low	ExampleWindows/VSDemo.xaml:295	TextBox has no readable name.
+WT001	high	ExampleWindows/VSDemo.xaml:300	TextBox has no AutomationId.
+WT008	low	ExampleWindows/VSDemo.xaml:300	TextBox has no readable name.
+WT001	high	ExampleWindows/VSDemo.xaml:311	Button "Send" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:316	Button "Save as draft" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:324	TabItem "Crew" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:325	ListBox has no AutomationId.
+WT008	low	ExampleWindows/VSDemo.xaml:325	ListBox has no readable name.
+WT001	high	ExampleWindows/VSDemo.xaml:472	TabItem "Crew Horizontal" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:473	ListBox has no AutomationId.
+WT008	low	ExampleWindows/VSDemo.xaml:473	ListBox has no readable name.
+WT001	high	ExampleWindows/VSDemo.xaml:632	Button "Fire rocket..." has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:636	Button "Throw something over board..." has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:646	Button "blastallenemies.cmd" has no AutomationId.
+WT001	high	ExampleWindows/VSDemo.xaml:650	Button "verysecretmessage.txt" has no AutomationId.
+WT001	high	HamburgerMenuRipple/HamburgerMenuRipple.xaml:223	ComboBox has no AutomationId.
+WT005	medium	HamburgerMenuRipple/HamburgerMenuRipple.xaml:223	Rows in ComboBox have no unique ID.
+WT008	low	HamburgerMenuRipple/HamburgerMenuRipple.xaml:223	ComboBox has no readable name.
+WT001	high	HamburgerMenuRipple/HamburgerMenuRipple.xaml:230	Slider has no AutomationId.
+WT008	low	HamburgerMenuRipple/HamburgerMenuRipple.xaml:230	Slider has no readable name.
+WT001	high	HamburgerMenuRipple/HamburgerMenuRipple.xaml:237	Slider has no AutomationId.
+WT008	low	HamburgerMenuRipple/HamburgerMenuRipple.xaml:237	Slider has no readable name.
+WT001	high	HamburgerMenuRipple/HamburgerMenuRipple.xaml:244	Slider has no AutomationId.
+WT008	low	HamburgerMenuRipple/HamburgerMenuRipple.xaml:244	Slider has no readable name.
+WT001	high	HamburgerMenuRipple/HamburgerMenuRipple.xaml:251	ComboBox has no AutomationId.
+WT005	medium	HamburgerMenuRipple/HamburgerMenuRipple.xaml:251	Rows in ComboBox have no unique ID.
+WT008	low	HamburgerMenuRipple/HamburgerMenuRipple.xaml:251	ComboBox has no readable name.
+WT001	high	HamburgerMenuRipple/HamburgerMenuRipple.xaml:259	Slider has no AutomationId.
+WT008	low	HamburgerMenuRipple/HamburgerMenuRipple.xaml:259	Slider has no readable name.
+WT001	high	HamburgerMenuRipple/HamburgerMenuRipple.xaml:264	Slider has no AutomationId.
+WT008	low	HamburgerMenuRipple/HamburgerMenuRipple.xaml:264	Slider has no readable name.
+WT001	high	MainWindow.xaml:128	Button has no AutomationId.
+WT008	low	MainWindow.xaml:128	Button has no readable name.
+WT001	high	MainWindow.xaml:138	Button "Flyouts" has no AutomationId.
+WT001	high	MainWindow.xaml:141	Button "IconPacks" has no AutomationId.
+WT001	high	MainWindow.xaml:144	Button "VS" has no AutomationId.
+WT001	high	MainWindow.xaml:147	Button "Clean" has no AutomationId.
+WT001	high	MainWindow.xaml:150	Button "Style sets" has no AutomationId.
+WT001	high	MainWindow.xaml:153	Button "Interop" has no AutomationId.
+WT001	high	MainWindow.xaml:156	Button "Navigation" has no AutomationId.
+WT001	high	MainWindow.xaml:159	ToggleButton "Confirm quit" has no AutomationId.
+WT001	high	MainWindow.xaml:176	MenuItem "Theme" has no AutomationId.
+WT001	high	MainWindow.xaml:179	MenuItem "Accent" has no AutomationId.
+WT001	high	MainWindow.xaml:182	MenuItem "ThemeManager" has no AutomationId.
+WT001	high	MainWindow.xaml:183	MenuItem "SyncMode" has no AutomationId.
+WT001	high	MainWindow.xaml:186	MenuItem "Use HSL colors?" has no AutomationId.
+WT001	high	MainWindow.xaml:190	MenuItem "Sync now" has no AutomationId.
+WT001	high	MainWindow.xaml:192	MenuItem "Dialogs" has no AutomationId.
+WT001	high	MainWindow.xaml:193	MenuItem "Use Accent?" has no AutomationId.
+WT001	high	MainWindow.xaml:196	MenuItem "Use Invert?" has no AutomationId.
+WT001	high	MainWindow.xaml:199	MenuItem "Show Icon?" has no AutomationId.
+WT001	high	MainWindow.xaml:202	MenuItem "Show Dialogs over TitleBar" has no AutomationId.
+WT001	high	MainWindow.xaml:206	MenuItem "Show InputDialog" has no AutomationId.
+WT001	high	MainWindow.xaml:207	MenuItem "Show InputDialog (with custom button fo…" has no AutomationId.
+WT001	high	MainWindow.xaml:208	MenuItem "Show InputDialog (with a check on the i…" has no AutomationId.
+WT001	high	MainWindow.xaml:209	MenuItem "Show LoginDialog" has no AutomationId.
+WT001	high	MainWindow.xaml:210	MenuItem "Show Password Preview LoginDialog" has no AutomationId.
+WT001	high	MainWindow.xaml:211	MenuItem "Show LoginDialog (Only Password)" has no AutomationId.
+WT001	high	MainWindow.xaml:212	MenuItem "Show LoginDialog (With Remember CheckBo…" has no AutomationId.
+WT001	high	MainWindow.xaml:213	MenuItem "Show MessageDialog" has no AutomationId.
+WT001	high	MainWindow.xaml:214	MenuItem "Show MessageDialog (Limited Size)" has no AutomationId.
+WT001	high	MainWindow.xaml:215	MenuItem "Show MessageDialog (with a coloured mes…" has no AutomationId.
+WT001	high	MainWindow.xaml:216	MenuItem "Show ProgressDialog" has no AutomationId.
+WT001	high	MainWindow.xaml:217	MenuItem "Show CustomDialog" has no AutomationId.
+WT001	high	MainWindow.xaml:218	MenuItem "Await CustomDialog" has no AutomationId.
+WT001	high	MainWindow.xaml:220	MenuItem "Show ShowInputDialog Externally" has no AutomationId.
+WT001	high	MainWindow.xaml:221	MenuItem "Show ShowLoginDialog Externally" has no AutomationId.
+WT001	high	MainWindow.xaml:222	MenuItem "Show ShowMessageDialog Externally" has no AutomationId.
+WT001	high	MainWindow.xaml:224	MenuItem "Show InputDialog via VM" has no AutomationId.
+WT001	high	MainWindow.xaml:225	MenuItem "Show LoginDialog via VM ..." has no AutomationId.
+WT001	high	MainWindow.xaml:226	MenuItem "Show MessageDialog via VM" has no AutomationId.
+WT001	high	MainWindow.xaml:227	MenuItem "... from Main Thread" has no AutomationId.
+WT001	high	MainWindow.xaml:230	MenuItem "... from Background Thread" has no AutomationId.
+WT001	high	MainWindow.xaml:235	MenuItem "Show ProgressDialog via VM" has no AutomationId.
+WT001	high	MainWindow.xaml:236	MenuItem "Show CustomDialog via VM" has no AutomationId.
+WT001	high	MainWindow.xaml:238	MenuItem "Window" has no AutomationId.
+WT001	high	MainWindow.xaml:239	MenuItem "Chrome" has no AutomationId.
+WT001	high	MainWindow.xaml:240	MenuItem has no AutomationId.
+WT008	low	MainWindow.xaml:240	MenuItem has no readable name.
+WT001	high	MainWindow.xaml:252	MenuItem has no AutomationId.
+WT008	low	MainWindow.xaml:252	MenuItem has no readable name.
+WT001	high	MainWindow.xaml:265	MenuItem "Glow" has no AutomationId.
+WT001	high	MainWindow.xaml:266	MenuItem "PreferDWMBorderColor" has no AutomationId.
+WT001	high	MainWindow.xaml:269	MenuItem "DWMSupportsBorderColor" has no AutomationId.
+WT001	high	MainWindow.xaml:274	MenuItem "ShowTitleBar" has no AutomationId.
+WT001	high	MainWindow.xaml:277	MenuItem "ShowInTaskbar" has no AutomationId.
+WT001	high	MainWindow.xaml:280	MenuItem "Topmost" has no AutomationId.
+WT001	high	MainWindow.xaml:283	MenuItem "Ignore taskbar on maximize" has no AutomationId.
+WT001	high	MainWindow.xaml:286	MenuItem "Toggle FullScreen (no taskbar, window s…" has no AutomationId.
+WT001	high	MainWindow.xaml:290	MenuItem "Window with Glow" has no AutomationId.
+WT001	high	MainWindow.xaml:291	MenuItem "Window with Glow and Border" has no AutomationId.
+WT001	high	MainWindow.xaml:292	MenuItem "Window without Glow but with rounded Bo…" has no AutomationId.
+WT001	high	MainWindow.xaml:293	MenuItem "Window with SizeToContent" has no AutomationId.
+WT002	low	MainWindow.xaml:295	MenuItem "ShowSeparators (RightWindowCommands)" gets its ID "ShowSeparatorsMI" from x:Name.
+WT001	high	MainWindow.xaml:299	MenuItem "ShowLastSeparator in (RightWindowComman…" has no AutomationId.
+WT001	high	MainWindow.xaml:304	MenuItem "Window icon: scale down larger frame" has no AutomationId.
+WT001	high	MainWindow.xaml:309	MenuItem "Window icon: no scale, smaller frame" has no AutomationId.
+WT001	high	MainWindow.xaml:315	MenuItem "ShowSystemMenu" has no AutomationId.
+WT001	high	MainWindow.xaml:318	MenuItem "ShowSystemMenuOnRightClick" has no AutomationId.
+WT002	low	MainWindow.xaml:324	mah:MetroAnimatedSingleRowTabControl [MainTabControl] gets its ID "MainTabControl" from x:Name.
+WT001	high	MainWindow.xaml:325	TabItem "buttons" has no AutomationId.
+WT001	high	MainWindow.xaml:332	TabItem "text" has no AutomationId.
+WT001	high	MainWindow.xaml:339	TabItem "up-down" has no AutomationId.
+WT001	high	MainWindow.xaml:346	TabItem "dates" has no AutomationId.
+WT001	high	MainWindow.xaml:353	TabItem "selection" has no AutomationId.
+WT001	high	MainWindow.xaml:356	TabItem "sliders" has no AutomationId.
+WT001	high	MainWindow.xaml:364	TabItem "badges" has no AutomationId.
+WT001	high	MainWindow.xaml:371	TabItem "progress" has no AutomationId.
+WT001	high	MainWindow.xaml:378	TabItem "splitview" has no AutomationId.
+WT001	high	MainWindow.xaml:383	TabItem "hamburger" has no AutomationId.
+WT001	high	MainWindow.xaml:386	TabItem "tabcontrol" has no AutomationId.
+WT001	high	MainWindow.xaml:393	TabItem "datagrid" has no AutomationId.
+WT001	high	MainWindow.xaml:396	TabItem "tiles" has no AutomationId.
+WT001	high	MainWindow.xaml:404	TabItem "colors" has no AutomationId.
+WT001	high	MainWindow.xaml:408	TabItem "ColorPicker" has no AutomationId.
+WT001	high	MainWindow.xaml:412	TabItem "MultiSelectionComboBox" has no AutomationId.
+WT001	high	MainWindow.xaml:416	TabItem "AutoSuggestBox" has no AutomationId.
+WT001	high	MainWindow.xaml:420	TabItem "transitions" has no AutomationId.
+WT001	high	MainWindow.xaml:428	TabItem "header" has no AutomationId.
+WT001	high	MainWindow.xaml:432	TabItem "others" has no AutomationId.
+WT001	high	Navigation/HomePage.xaml:15	Hyperlink "link" has no AutomationId.
+WT001	high	Navigation/HomePage.xaml:17	TextBox has no AutomationId.
+WT008	low	Navigation/HomePage.xaml:17	TextBox has no readable name.

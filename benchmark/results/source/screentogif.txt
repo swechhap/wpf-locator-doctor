@@ -1,8 +1,8 @@
 # ScreenToGif @ a4d0a67c21, scan path: ScreenToGif
-score 69  grade C  elements 1716  controls 1091  screens 61
+score 69  grade C  elements 1695  controls 1091  screens 61
 check coverage      51.1%  557 of 1091 controls have an AutomationId.
 check quality         70%  557 borrowed from x:Name.
-check uniqueness    95.7%  0 ID(s) used more than once; 0 of 34 data lists have identifiable rows.
+check uniqueness    95.6%  0 ID(s) used more than once; 0 of 34 data lists have identifiable rows.
 check stability      n/a%  Not measured. Run again with --baseline <previous report.json> to compare.
 check visibility    83.2%  185 invisible control(s), 0 opaque area(s).
 check names         53.4%  490 of 918 controls have a readable name.

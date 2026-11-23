@@ -1,12 +1,12 @@
 # NuGet Package Explorer @ e2b0d9c8e0, scan path: PackageExplorer
-score 60.1  grade C  elements 334  controls 261  screens 24
+score 61.7  grade C  elements 334  controls 261  screens 24
 check coverage      27.6%  72 of 261 controls have an AutomationId.
 check quality         70%  72 borrowed from x:Name.
 check uniqueness    75.6%  0 ID(s) used more than once; 0 of 31 data lists have identifiable rows.
 check stability      n/a%  Not measured. Run again with --baseline <previous report.json> to compare.
 check visibility     100%  0 invisible control(s), 0 opaque area(s).
-check names         71.6%  187 of 261 controls have a readable name.
-problems WT001=189  WT002=72  WT005=31  WT008=74
+check names         85.8%  224 of 261 controls have a readable name.
+problems WT001=189  WT002=72  WT005=31  WT008=37
 
 WT001	high	AboutWindow.xaml:21	Button "OK" has no AutomationId.
 WT002	low	AboutWindow.xaml:27	TextBox [ProductTitle] gets its ID "ProductTitle" from x:Name.
@@ -56,18 +56,12 @@ WT001	high	FileEditor.xaml:10	MenuItem "File" has no AutomationId.
 WT001	high	FileEditor.xaml:11	self:GrayscaleMenuItem "Save" has no AutomationId.
 WT001	high	FileEditor.xaml:17	MenuItem "Return to Package" has no AutomationId.
 WT001	high	FileEditor.xaml:20	self:GrayscaleMenuItem "Edit" has no AutomationId.
-WT001	high	FileEditor.xaml:21	self:GrayscaleMenuItem has no AutomationId.
-WT008	low	FileEditor.xaml:21	self:GrayscaleMenuItem has no readable name.
-WT001	high	FileEditor.xaml:26	self:GrayscaleMenuItem has no AutomationId.
-WT008	low	FileEditor.xaml:26	self:GrayscaleMenuItem has no readable name.
-WT001	high	FileEditor.xaml:32	self:GrayscaleMenuItem has no AutomationId.
-WT008	low	FileEditor.xaml:32	self:GrayscaleMenuItem has no readable name.
-WT001	high	FileEditor.xaml:37	self:GrayscaleMenuItem has no AutomationId.
-WT008	low	FileEditor.xaml:37	self:GrayscaleMenuItem has no readable name.
-WT001	high	FileEditor.xaml:42	self:GrayscaleMenuItem has no AutomationId.
-WT008	low	FileEditor.xaml:42	self:GrayscaleMenuItem has no readable name.
-WT001	high	FileEditor.xaml:48	self:GrayscaleMenuItem has no AutomationId.
-WT008	low	FileEditor.xaml:48	self:GrayscaleMenuItem has no readable name.
+WT001	high	FileEditor.xaml:21	self:GrayscaleMenuItem "Undo" has no AutomationId.
+WT001	high	FileEditor.xaml:26	self:GrayscaleMenuItem "Redo" has no AutomationId.
+WT001	high	FileEditor.xaml:32	self:GrayscaleMenuItem "Cut" has no AutomationId.
+WT001	high	FileEditor.xaml:37	self:GrayscaleMenuItem "Copy" has no AutomationId.
+WT001	high	FileEditor.xaml:42	self:GrayscaleMenuItem "Paste" has no AutomationId.
+WT001	high	FileEditor.xaml:48	self:GrayscaleMenuItem "Find" has no AutomationId.
 WT001	high	FileEditor.xaml:55	MenuItem "View" has no AutomationId.
 WT002	low	FileEditor.xaml:56	MenuItem "Text Size" gets its ID "FontSizeMenuItem" from x:Name.
 WT001	high	FileEditor.xaml:60	self:GrayscaleMenuItem "Normal" has no AutomationId.
@@ -86,20 +80,16 @@ WT001	high	FileEditor.xaml:99	self:GrayscaleButton "{StaticResource CopyIcon}" h
 WT001	high	FileEditor.xaml:104	self:GrayscaleButton "{StaticResource PasteIcon}" has no AutomationId.
 WT001	high	FileEditor.xaml:111	self:GrayscaleButton "{StaticResource UndoIcon}" has no AutomationId.
 WT001	high	FileEditor.xaml:116	self:GrayscaleButton "{StaticResource RedoIcon}" has no AutomationId.
-WT002	low	FileEditor.xaml:124	ComboBox [SyntaxDefinitions] gets its ID "SyntaxDefinitions" from x:Name.
-WT005	medium	FileEditor.xaml:124	Rows in ComboBox [SyntaxDefinitions] have no unique ID.
-WT008	low	FileEditor.xaml:124	ComboBox [SyntaxDefinitions] has no readable name.
+WT002	low	FileEditor.xaml:124	ComboBox "Syntax Scheme" gets its ID "SyntaxDefinitions" from x:Name.
+WT005	medium	FileEditor.xaml:124	Rows in ComboBox "Syntax Scheme" have no unique ID.
 WT001	high	FileEditor.xaml:126	ToggleButton "{StaticResource WordWrapIcon}" has no AutomationId.
-WT002	low	FileEditor.xaml:137	ComboBox [FontChoice] gets its ID "FontChoice" from x:Name.
-WT005	medium	FileEditor.xaml:137	Rows in ComboBox [FontChoice] have no unique ID.
-WT008	low	FileEditor.xaml:137	ComboBox [FontChoice] has no readable name.
+WT002	low	FileEditor.xaml:137	ComboBox "Font" gets its ID "FontChoice" from x:Name.
+WT005	medium	FileEditor.xaml:137	Rows in ComboBox "Font" have no unique ID.
 WT001	high	FrameworkReferencesEditor.xaml:47	Button "{StaticResource AddIcon}" has no AutomationId.
 WT001	high	FrameworkReferencesEditor.xaml:48	self:GrayscaleButton "{StaticResource RemoveIcon}" has no AutomationId.
-WT002	low	FrameworkReferencesEditor.xaml:54	ListBox [ReferenceGroupList] gets its ID "ReferenceGroupList" from x:Name.
-WT005	medium	FrameworkReferencesEditor.xaml:54	Rows in ListBox [ReferenceGroupList] have no unique ID.
-WT008	low	FrameworkReferencesEditor.xaml:54	ListBox [ReferenceGroupList] has no readable name.
-WT002	low	FrameworkReferencesEditor.xaml:80	TextBox [TargetFrameworkBox] gets its ID "TargetFrameworkBox" from x:Name.
-WT008	low	FrameworkReferencesEditor.xaml:80	TextBox [TargetFrameworkBox] has no readable name.
+WT002	low	FrameworkReferencesEditor.xaml:54	ListBox "Groups" gets its ID "ReferenceGroupList" from x:Name.
+WT005	medium	FrameworkReferencesEditor.xaml:54	Rows in ListBox "Groups" have no unique ID.
+WT002	low	FrameworkReferencesEditor.xaml:80	TextBox "Target framework" gets its ID "TargetFrameworkBox" from x:Name.
 WT002	low	FrameworkReferencesEditor.xaml:83	ListView [ReferenceList] gets its ID "ReferenceList" from x:Name.
 WT005	medium	FrameworkReferencesEditor.xaml:83	Rows in ListView [ReferenceList] have no unique ID.
 WT008	low	FrameworkReferencesEditor.xaml:83	ListView [ReferenceList] has no readable name.
@@ -128,12 +118,9 @@ WT001	high	MainWindow.xaml:120	self:GrayscaleMenuItem "Edit Metadata" has no Aut
 WT001	high	MainWindow.xaml:126	self:GrayscaleMenuItem "Edit Metadata Source" has no AutomationId.
 WT001	high	MainWindow.xaml:134	self:GrayscaleMenuItem "Remove Package Signatures" has no AutomationId.
 WT001	high	MainWindow.xaml:138	MenuItem "{Binding SelectedItem.Name, Mode=OneWay…" has no AutomationId.
-WT001	high	MainWindow.xaml:145	self:GrayscaleMenuItem has no AutomationId.
-WT008	low	MainWindow.xaml:145	self:GrayscaleMenuItem has no readable name.
-WT001	high	MainWindow.xaml:150	self:GrayscaleMenuItem has no AutomationId.
-WT008	low	MainWindow.xaml:150	self:GrayscaleMenuItem has no readable name.
-WT001	high	MainWindow.xaml:155	self:GrayscaleMenuItem has no AutomationId.
-WT008	low	MainWindow.xaml:155	self:GrayscaleMenuItem has no readable name.
+WT001	high	MainWindow.xaml:145	self:GrayscaleMenuItem "Cut" has no AutomationId.
+WT001	high	MainWindow.xaml:150	self:GrayscaleMenuItem "Copy" has no AutomationId.
+WT001	high	MainWindow.xaml:155	self:GrayscaleMenuItem "Paste" has no AutomationId.
 WT001	high	MainWindow.xaml:162	MenuItem "View" has no AutomationId.
 WT002	low	MainWindow.xaml:163	MenuItem "Text Size" gets its ID "FontSizeMenuItem" from x:Name.
 WT001	high	MainWindow.xaml:165	self:GrayscaleMenuItem "Normal" has no AutomationId.
@@ -202,11 +189,9 @@ WT001	high	PackageChooser/PackageDetailControl.xaml:122	Hyperlink "{Binding Sele
 WT001	high	PackageChooser/PackageDetailControl.xaml:130	Hyperlink "{Binding SelectedPackage.ReportAbuseUrl}" has no AutomationId.
 WT001	high	PackageDependencyEditor.xaml:50	Button "{StaticResource AddIcon}" has no AutomationId.
 WT001	high	PackageDependencyEditor.xaml:51	self:GrayscaleButton "{StaticResource RemoveIcon}" has no AutomationId.
-WT002	low	PackageDependencyEditor.xaml:57	ListBox [DependencyGroupList] gets its ID "DependencyGroupList" from x:Name.
-WT005	medium	PackageDependencyEditor.xaml:57	Rows in ListBox [DependencyGroupList] have no unique ID.
-WT008	low	PackageDependencyEditor.xaml:57	ListBox [DependencyGroupList] has no readable name.
-WT002	low	PackageDependencyEditor.xaml:89	TextBox [TargetFrameworkBox] gets its ID "TargetFrameworkBox" from x:Name.
-WT008	low	PackageDependencyEditor.xaml:89	TextBox [TargetFrameworkBox] has no readable name.
+WT002	low	PackageDependencyEditor.xaml:57	ListBox "Groups" gets its ID "DependencyGroupList" from x:Name.
+WT005	medium	PackageDependencyEditor.xaml:57	Rows in ListBox "Groups" have no unique ID.
+WT002	low	PackageDependencyEditor.xaml:89	TextBox "Target framework" gets its ID "TargetFrameworkBox" from x:Name.
 WT002	low	PackageDependencyEditor.xaml:92	ListView [DependencyList] gets its ID "DependencyList" from x:Name.
 WT005	medium	PackageDependencyEditor.xaml:92	Rows in ListView [DependencyList] have no unique ID.
 WT008	low	PackageDependencyEditor.xaml:92	ListView [DependencyList] has no readable name.
@@ -220,51 +205,31 @@ WT001	high	PackageDependencyEditor.xaml:148	self:GrayscaleButton "{StaticResourc
 WT001	high	PackageDependencyEditor.xaml:161	Button "OK" has no AutomationId.
 WT001	high	PackageDependencyEditor.xaml:162	Button "Cancel" has no AutomationId.
 WT001	medium	PackageMetadataEditor.xaml:46	Button "{StaticResource RemoveIcon}" (inside a list row template) has no AutomationId.
-WT002	low	PackageMetadataEditor.xaml:97	TextBox [IdBox] gets its ID "IdBox" from x:Name.
-WT008	low	PackageMetadataEditor.xaml:97	TextBox [IdBox] has no readable name.
-WT002	low	PackageMetadataEditor.xaml:101	TextBox [VersionBox] gets its ID "VersionBox" from x:Name.
-WT008	low	PackageMetadataEditor.xaml:101	TextBox [VersionBox] has no readable name.
-WT002	low	PackageMetadataEditor.xaml:113	TextBox [TitleBox] gets its ID "TitleBox" from x:Name.
-WT008	low	PackageMetadataEditor.xaml:113	TextBox [TitleBox] has no readable name.
-WT002	low	PackageMetadataEditor.xaml:117	TextBox [AuthorsBox] gets its ID "AuthorsBox" from x:Name.
-WT008	low	PackageMetadataEditor.xaml:117	TextBox [AuthorsBox] has no readable name.
-WT002	low	PackageMetadataEditor.xaml:121	TextBox [OwnersBox] gets its ID "OwnersBox" from x:Name.
-WT008	low	PackageMetadataEditor.xaml:121	TextBox [OwnersBox] has no readable name.
-WT002	low	PackageMetadataEditor.xaml:125	TextBox [MinVersionBox] gets its ID "MinVersionBox" from x:Name.
-WT008	low	PackageMetadataEditor.xaml:125	TextBox [MinVersionBox] has no readable name.
+WT002	low	PackageMetadataEditor.xaml:97	TextBox "Id" gets its ID "IdBox" from x:Name.
+WT002	low	PackageMetadataEditor.xaml:101	TextBox "Version" gets its ID "VersionBox" from x:Name.
+WT002	low	PackageMetadataEditor.xaml:113	TextBox "Title" gets its ID "TitleBox" from x:Name.
+WT002	low	PackageMetadataEditor.xaml:117	TextBox "Authors" gets its ID "AuthorsBox" from x:Name.
+WT002	low	PackageMetadataEditor.xaml:121	TextBox "Owners" gets its ID "OwnersBox" from x:Name.
+WT002	low	PackageMetadataEditor.xaml:125	TextBox "Min client version" gets its ID "MinVersionBox" from x:Name.
 WT001	high	PackageMetadataEditor.xaml:136	CheckBox "Development Dependency" has no AutomationId.
-WT002	low	PackageMetadataEditor.xaml:140	ComboBox [IconBox] gets its ID "IconBox" from x:Name.
-WT005	medium	PackageMetadataEditor.xaml:140	Rows in ComboBox [IconBox] have no unique ID.
-WT008	low	PackageMetadataEditor.xaml:140	ComboBox [IconBox] has no readable name.
-WT002	low	PackageMetadataEditor.xaml:144	ComboBox [ReadmeBox] gets its ID "ReadmeBox" from x:Name.
-WT005	medium	PackageMetadataEditor.xaml:144	Rows in ComboBox [ReadmeBox] have no unique ID.
-WT008	low	PackageMetadataEditor.xaml:144	ComboBox [ReadmeBox] has no readable name.
-WT002	low	PackageMetadataEditor.xaml:148	TextBox [ProjectUrlBox] gets its ID "ProjectUrlBox" from x:Name.
-WT008	low	PackageMetadataEditor.xaml:148	TextBox [ProjectUrlBox] has no readable name.
-WT002	low	PackageMetadataEditor.xaml:152	TextBox [RepositoryTypeBox] gets its ID "RepositoryTypeBox" from x:Name.
-WT008	low	PackageMetadataEditor.xaml:152	TextBox [RepositoryTypeBox] has no readable name.
-WT002	low	PackageMetadataEditor.xaml:156	TextBox [RepositoryUrlBox] gets its ID "RepositoryUrlBox" from x:Name.
-WT008	low	PackageMetadataEditor.xaml:156	TextBox [RepositoryUrlBox] has no readable name.
-WT002	low	PackageMetadataEditor.xaml:160	TextBox [RepositoryBranchBox] gets its ID "RepositoryBranchBox" from x:Name.
-WT008	low	PackageMetadataEditor.xaml:160	TextBox [RepositoryBranchBox] has no readable name.
-WT002	low	PackageMetadataEditor.xaml:164	TextBox [RepositoryCommitBox] gets its ID "RepositoryCommitBox" from x:Name.
-WT008	low	PackageMetadataEditor.xaml:164	TextBox [RepositoryCommitBox] has no readable name.
+WT002	low	PackageMetadataEditor.xaml:140	ComboBox "Icon" gets its ID "IconBox" from x:Name.
+WT005	medium	PackageMetadataEditor.xaml:140	Rows in ComboBox "Icon" have no unique ID.
+WT002	low	PackageMetadataEditor.xaml:144	ComboBox "Readme" gets its ID "ReadmeBox" from x:Name.
+WT005	medium	PackageMetadataEditor.xaml:144	Rows in ComboBox "Readme" have no unique ID.
+WT002	low	PackageMetadataEditor.xaml:148	TextBox "Project Url" gets its ID "ProjectUrlBox" from x:Name.
+WT002	low	PackageMetadataEditor.xaml:152	TextBox "Repository Type" gets its ID "RepositoryTypeBox" from x:Name.
+WT002	low	PackageMetadataEditor.xaml:156	TextBox "Repository Url" gets its ID "RepositoryUrlBox" from x:Name.
+WT002	low	PackageMetadataEditor.xaml:160	TextBox "Repository Branch" gets its ID "RepositoryBranchBox" from x:Name.
+WT002	low	PackageMetadataEditor.xaml:164	TextBox "Repository Commit" gets its ID "RepositoryCommitBox" from x:Name.
 WT001	high	PackageMetadataEditor.xaml:167	CheckBox "Requires License Acceptance" has no AutomationId.
-WT002	low	PackageMetadataEditor.xaml:171	TextBox [LicenseUrlBox] gets its ID "LicenseUrlBox" from x:Name.
-WT008	low	PackageMetadataEditor.xaml:171	TextBox [LicenseUrlBox] has no readable name.
-WT002	low	PackageMetadataEditor.xaml:175	TextBox [SummaryBox] gets its ID "SummaryBox" from x:Name.
-WT008	low	PackageMetadataEditor.xaml:175	TextBox [SummaryBox] has no readable name.
-WT002	low	PackageMetadataEditor.xaml:179	TextBox [DescriptionBox] gets its ID "DescriptionBox" from x:Name.
-WT008	low	PackageMetadataEditor.xaml:179	TextBox [DescriptionBox] has no readable name.
-WT002	low	PackageMetadataEditor.xaml:183	TextBox [ReleaseNotesBox] gets its ID "ReleaseNotesBox" from x:Name.
-WT008	low	PackageMetadataEditor.xaml:183	TextBox [ReleaseNotesBox] has no readable name.
-WT002	low	PackageMetadataEditor.xaml:187	TextBox [CopyrightBox] gets its ID "CopyrightBox" from x:Name.
-WT008	low	PackageMetadataEditor.xaml:187	TextBox [CopyrightBox] has no readable name.
-WT002	low	PackageMetadataEditor.xaml:191	ComboBox [LanguageBox] gets its ID "LanguageBox" from x:Name.
-WT005	medium	PackageMetadataEditor.xaml:191	Rows in ComboBox [LanguageBox] have no unique ID.
-WT008	low	PackageMetadataEditor.xaml:191	ComboBox [LanguageBox] has no readable name.
-WT002	low	PackageMetadataEditor.xaml:195	TextBox [TagsBox] gets its ID "TagsBox" from x:Name.
-WT008	low	PackageMetadataEditor.xaml:195	TextBox [TagsBox] has no readable name.
+WT002	low	PackageMetadataEditor.xaml:171	TextBox "License Url" gets its ID "LicenseUrlBox" from x:Name.
+WT002	low	PackageMetadataEditor.xaml:175	TextBox "Summary" gets its ID "SummaryBox" from x:Name.
+WT002	low	PackageMetadataEditor.xaml:179	TextBox "Description" gets its ID "DescriptionBox" from x:Name.
+WT002	low	PackageMetadataEditor.xaml:183	TextBox "Release Notes" gets its ID "ReleaseNotesBox" from x:Name.
+WT002	low	PackageMetadataEditor.xaml:187	TextBox "Copyright" gets its ID "CopyrightBox" from x:Name.
+WT002	low	PackageMetadataEditor.xaml:191	ComboBox "Language" gets its ID "LanguageBox" from x:Name.
+WT005	medium	PackageMetadataEditor.xaml:191	Rows in ComboBox "Language" have no unique ID.
+WT002	low	PackageMetadataEditor.xaml:195	TextBox "Tags" gets its ID "TagsBox" from x:Name.
 WT001	high	PackageMetadataEditor.xaml:198	CheckBox "Serviceable" has no AutomationId.
 WT005	medium	PackageMetadataEditor.xaml:225	Rows in ItemsControl [FrameworkAssembliesList] have no unique ID.
 WT002	low	PackageMetadataEditor.xaml:227	ComboBox [NewAssemblyName] gets its ID "NewAssemblyName" from x:Name.
@@ -278,11 +243,9 @@ WT001	high	PackageMetadataEditor.xaml:247	Button "Edit framework references" has
 WT001	high	PackageMetadataEditor.xaml:250	Button "Edit assembly references" has no AutomationId.
 WT001	high	PackageReferencesEditor.xaml:47	Button "{StaticResource AddIcon}" has no AutomationId.
 WT001	high	PackageReferencesEditor.xaml:48	self:GrayscaleButton "{StaticResource RemoveIcon}" has no AutomationId.
-WT002	low	PackageReferencesEditor.xaml:54	ListBox [ReferenceGroupList] gets its ID "ReferenceGroupList" from x:Name.
-WT005	medium	PackageReferencesEditor.xaml:54	Rows in ListBox [ReferenceGroupList] have no unique ID.
-WT008	low	PackageReferencesEditor.xaml:54	ListBox [ReferenceGroupList] has no readable name.
-WT002	low	PackageReferencesEditor.xaml:80	TextBox [TargetFrameworkBox] gets its ID "TargetFrameworkBox" from x:Name.
-WT008	low	PackageReferencesEditor.xaml:80	TextBox [TargetFrameworkBox] has no readable name.
+WT002	low	PackageReferencesEditor.xaml:54	ListBox "Groups" gets its ID "ReferenceGroupList" from x:Name.
+WT005	medium	PackageReferencesEditor.xaml:54	Rows in ListBox "Groups" have no unique ID.
+WT002	low	PackageReferencesEditor.xaml:80	TextBox "Target framework" gets its ID "TargetFrameworkBox" from x:Name.
 WT002	low	PackageReferencesEditor.xaml:83	ListView [ReferenceList] gets its ID "ReferenceList" from x:Name.
 WT005	medium	PackageReferencesEditor.xaml:83	Rows in ListView [ReferenceList] have no unique ID.
 WT008	low	PackageReferencesEditor.xaml:83	ListView [ReferenceList] has no readable name.

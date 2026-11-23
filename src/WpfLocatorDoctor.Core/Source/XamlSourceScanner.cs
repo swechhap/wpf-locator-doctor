@@ -73,6 +73,32 @@ public sealed partial class XamlSourceScanner
     [GeneratedRegex(@"^\{\s*x:Type\s+(?:\w+:)?(\w+)\s*\}$")]
     private static partial Regex XTypeReference();
 
+    [GeneratedRegex(@"^\{\s*x:Static\s+(?:Member\s*=\s*)?([^\s}]+)\s*\}$")]
+    private static partial Regex XStaticReference();
+
+    [GeneratedRegex(@"^[A-Za-z_]\w*$")]
+    private static partial Regex PlainName();
+
+    [GeneratedRegex(@"(?<=[a-z])(?=[A-Z])")]
+    private static partial Regex WordBoundary();
+
+    /// <summary>
+    /// Content elements (text and document parts such as Hyperlink and Run). WPF does not fall back to x:Uid or
+    /// x:Name for their AutomationId; only AutomationProperties.AutomationId counts.
+    /// </summary>
+    private static readonly HashSet<string> ContentElements = new(StringComparer.Ordinal)
+    {
+        "Hyperlink", "Run", "Span", "Bold", "Italic", "Underline", "LineBreak", "InlineUIContainer",
+        "Paragraph", "Section", "List", "ListItem", "Table", "TableRowGroup", "TableRow", "TableCell",
+        "Figure", "Floater", "BlockUIContainer",
+    };
+
+    /// <summary>The WPF classes whose commands are RoutedUICommands with display text, such as ApplicationCommands.Copy.</summary>
+    private static readonly HashSet<string> BuiltInCommandClasses = new(StringComparer.Ordinal)
+    {
+        "ApplicationCommands", "NavigationCommands", "MediaCommands", "ComponentCommands", "EditingCommands",
+    };
+
     private readonly record struct Ctx(
         string[] Path,
         bool Repeated,
@@ -260,10 +286,13 @@ public sealed partial class XamlSourceScanner
             var name = e.Attribute(XName.Get("Name", XamlNs))?.Value ?? e.Attribute("Name")?.Value;
             if (!string.IsNullOrEmpty(name)) namedText.TryAdd(name, text);
 
+            // WPF accepts Target="{Binding ElementName=Box}", Target="{x:Reference Box}" and plain Target="Box".
             if (e.Name.LocalName == "Label" && e.Attribute("Target")?.Value is { } target)
             {
                 var m = ElementReference().Match(target);
-                if (m.Success) labelTargets.TryAdd(m.Groups[1].Success ? m.Groups[1].Value : m.Groups[2].Value, text);
+                var targetName = m.Success ? (m.Groups[1].Success ? m.Groups[1].Value : m.Groups[2].Value)
+                    : PlainName().IsMatch(target.Trim()) ? target.Trim() : null;
+                if (targetName is not null) labelTargets.TryAdd(targetName, text);
             }
         }
 
@@ -429,7 +458,10 @@ public sealed partial class XamlSourceScanner
         return li.HasLineInfo() ? new SourceLocation(display, li.LineNumber, li.LinePosition) : new SourceLocation(display, 0, 0);
     }
 
-    /// <summary>WPF's own order: AutomationProperties.AutomationId, then x:Uid, then x:Name.</summary>
+    /// <summary>
+    /// WPF's own order: AutomationProperties.AutomationId, then x:Uid, then x:Name. Content elements such as
+    /// Hyperlink only use AutomationProperties.AutomationId.
+    /// </summary>
     internal static (string? Id, IdOrigin Origin) GetIdInfo(XElement el)
     {
         var explicitId = el.Attribute("AutomationProperties.AutomationId")?.Value;
@@ -440,6 +472,9 @@ public sealed partial class XamlSourceScanner
                 return (explicitId, explicitId.Contains("Binding", StringComparison.Ordinal) ? IdOrigin.DataBound : IdOrigin.Explicit);
             return (explicitId, IdHeuristics.LooksGenerated(explicitId) ? IdOrigin.GeneratedLooking : IdOrigin.Explicit);
         }
+
+        if (el.Name.NamespaceName == WpfNs && ContentElements.Contains(el.Name.LocalName))
+            return (null, IdOrigin.None);
 
         var uid = el.Attribute(XName.Get("Uid", XamlNs))?.Value;
         if (!string.IsNullOrWhiteSpace(uid))
@@ -524,7 +559,43 @@ public sealed partial class XamlSourceScanner
         }
 
         var found = FindText(el, 0);
-        return found is null ? null : IdHeuristics.CleanLabel(found);
+        if (found is not null) return IdHeuristics.CleanLabel(found);
+
+        // A menu item without a header shows the text of its command, when that is one of WPF's own commands.
+        return effective == "MenuItem" ? BuiltInCommandText(el.Attribute("Command")?.Value) : null;
+    }
+
+    /// <summary>
+    /// For Command="Copy", "ApplicationCommands.Copy" or "{x:Static ApplicationCommands.Copy}", the command's
+    /// display text, approximated from its name ("SelectAll" → "Select All"). Null for any other command,
+    /// such as a binding or the app's own commands, whose text can't be known from the XAML.
+    /// </summary>
+    internal static string? BuiltInCommandText(string? command)
+    {
+        if (string.IsNullOrWhiteSpace(command)) return null;
+        var value = command.Trim();
+        var xStatic = XStaticReference().Match(value);
+        if (xStatic.Success) value = xStatic.Groups[1].Value;
+        else if (value.StartsWith('{')) return null;
+
+        string member;
+        var dot = value.LastIndexOf('.');
+        if (dot >= 0)
+        {
+            var owner = value[..dot];
+            owner = owner[(owner.IndexOf(':') + 1)..];
+            if (!BuiltInCommandClasses.Contains(owner)) return null;
+            member = value[(dot + 1)..];
+        }
+        else
+        {
+            // A bare name is looked up in WPF's own command classes; {x:Static Name} is not.
+            if (xStatic.Success) return null;
+            member = value;
+        }
+
+        if (!PlainName().IsMatch(member) || member == "NotACommand") return null;
+        return WordBoundary().Replace(member, " ");
     }
 
     /// <summary>Controls whose readable name comes from what they display.</summary>

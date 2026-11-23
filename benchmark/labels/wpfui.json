@@ -59,6 +59,11 @@
       "why": "Drop-down button with no ID."
     },
     {
+      "finding": "WT001\thigh\tViews/Windows/SandboxWindow.xaml:114\tMenuItem \"Select Line\" has no AutomationId.",
+      "label": "real",
+      "why": "Menu item with no ID."
+    },
+    {
       "finding": "WT001\thigh\tViews/Windows/SandboxWindow.xaml:71\tMenuItem \"Select All\" has no AutomationId.",
       "label": "real",
       "why": "Menu item with no ID."
@@ -92,11 +97,6 @@
       "finding": "WT008\tlow\tViews/Pages/StatusAndInfo/InfoBarPage.xaml:48\tComboBox has no readable name.",
       "label": "real",
       "why": "Combo box with no label or AutomationProperties.Name."
-    },
-    {
-      "finding": "WT008\tlow\tViews/Windows/SandboxWindow.xaml:109\tMenuItem has no readable name.",
-      "label": "false alarm",
-      "why": "A MenuItem with Command=\"ApplicationCommands.Copy\" and no Header shows the command's text, so it is named \"Copy\" at runtime."
     },
     {
       "finding": "WT008\tlow\tViews/Windows/SandboxWindow.xaml:84\tui:MenuItem has no readable name.",

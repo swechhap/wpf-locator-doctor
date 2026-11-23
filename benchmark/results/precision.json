@@ -1,8 +1,8 @@
 {
   "overall": {
-    "real": 207,
-    "falseAlarm": 13,
-    "precision": 0.941
+    "real": 213,
+    "falseAlarm": 7,
+    "precision": 0.968
   },
   "byApp": {
     "ilspy": {
@@ -41,9 +41,9 @@
       "precision": 1.0
     },
     "wpfui": {
-      "real": 18,
-      "falseAlarm": 2,
-      "precision": 0.9
+      "real": 19,
+      "falseAlarm": 1,
+      "precision": 0.95
     },
     "wpfsamples": {
       "real": 19,
@@ -51,9 +51,9 @@
       "precision": 0.95
     },
     "npe": {
-      "real": 15,
-      "falseAlarm": 5,
-      "precision": 0.75
+      "real": 20,
+      "falseAlarm": 0,
+      "precision": 1.0
     },
     "playnite": {
       "real": 20,
@@ -63,12 +63,12 @@
   },
   "byRule": {
     "WT001": {
-      "real": 97,
+      "real": 106,
       "falseAlarm": 1,
-      "precision": 0.99
+      "precision": 0.991
     },
     "WT002": {
-      "real": 36,
+      "real": 33,
       "falseAlarm": 0,
       "precision": 1.0
     },
@@ -89,8 +89,8 @@
     },
     "WT008": {
       "real": 59,
-      "falseAlarm": 8,
-      "precision": 0.881
+      "falseAlarm": 2,
+      "precision": 0.967
     }
   }
 }

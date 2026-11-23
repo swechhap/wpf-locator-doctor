@@ -4,74 +4,69 @@
   "scanPath": ".",
   "labels": [
     {
-      "finding": "WT001\thigh\tGetting Started/Concepts/TOC.xaml:91\tHyperlink \"Control Properties Sample\" has no AutomationId.",
+      "finding": "WT001\thigh\tElements/HeightProperties/MainWindow.xaml:39\tListBox has no AutomationId.",
       "label": "real",
-      "why": "Hyperlink with no ID (and Hyperlink can't borrow one from x:Name or x:Uid either)."
+      "why": "List box with no ID."
     },
     {
-      "finding": "WT001\thigh\tGetting Started/Concepts/samps/animatesize_samp.xaml:90\tTabControl has no AutomationId.",
+      "finding": "WT001\thigh\tGetting Started/Concepts/TOC.xaml:109\tHyperlink \"Tool Tip Sample\" has no AutomationId.",
       "label": "real",
-      "why": "Nested tab control with no ID."
+      "why": "Hyperlink with no AutomationId."
     },
     {
-      "finding": "WT001\thigh\tGetting Started/Concepts/samps/binddptodp_samp.xaml:88\tTextBox has no AutomationId.",
+      "finding": "WT001\thigh\tGetting Started/Concepts/samps/animatesize_samp.xaml:101\tTabItem \"Preview Sample\" has no AutomationId.",
       "label": "real",
-      "why": "Code-sample text box with no ID."
+      "why": "Tab with no ID; TabStyle sets no AutomationId."
     },
     {
-      "finding": "WT001\thigh\tGetting Started/Concepts/samps/menus_samp.xaml:445\tMenuItem \"elete\" has no AutomationId.",
+      "finding": "WT001\thigh\tGetting Started/Concepts/samps/btncolor_samp.xaml:87\tTabItem \"C#\" has no AutomationId.",
       "label": "real",
-      "why": "Menu item with no ID. (The scan shows its name as \"elete\": it drops the AccessText \"D\"; the runtime name is \"Delete\".)"
+      "why": "Tab with no ID; TabStyle2 sets no AutomationId."
     },
     {
-      "finding": "WT001\thigh\tGraphics/BitmapEffectsGallery/SampleViewer.xaml:42\tTabControl has no AutomationId.",
-      "label": "real",
-      "why": "Nested tab control with no ID."
-    },
-    {
-      "finding": "WT001\thigh\tInput and Commands/ICommandSourceImplementation/MainWindow.xaml:56\tButton \"-\" has no AutomationId.",
+      "finding": "WT001\thigh\tGlobalization and Localization/Gradient/MainWindow.xaml:24\tButton \"Button2\" has no AutomationId.",
       "label": "real",
       "why": "Button with no ID."
     },
     {
-      "finding": "WT002\tlow\tGetting Started/Concepts/samps/btncolor_samp.xaml:18\tTabItem \"XAML\" gets its ID \"xaml\" from x:Name.",
+      "finding": "WT001\thigh\tGraphics/BitmapEffectsGallery/SampleViewer.xaml:57\tTabItem \"Basic Example\" has no AutomationId.",
       "label": "real",
-      "why": "The ID really comes from Name=\"xaml\"."
+      "why": "Tab with no ID."
     },
     {
-      "finding": "WT002\tlow\tGetting Started/Concepts/samps/multibinding_samp.xaml:188\tTabItem \"C#\" gets its ID \"csharp\" from x:Name.",
+      "finding": "WT001\thigh\tSample Applications/GraphingCalculatorDemo/MainWindow.xaml:493\tButton \"x\" has no AutomationId.",
+      "label": "real",
+      "why": "Calculator power button with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tSample Applications/WPFGallery/Views/DesignGuidance/IconsPage.xaml:178\tListView \"Icons\" has no AutomationId.",
+      "label": "real",
+      "why": "List view with a name but no ID."
+    },
+    {
+      "finding": "WT002\tlow\tGetting Started/Concepts/samps/binddptodp_samp.xaml:141\tTabItem \"C#\" gets its ID \"csharp\" from x:Name.",
       "label": "real",
       "why": "The ID really comes from Name=\"csharp\"."
     },
     {
-      "finding": "WT002\tlow\tGraphics/Matrix/MainWindow.xaml:63\tRadioButton \"Append a skew to Mmtrix1.  x=45 degrees…\" gets its ID \"rb21\" from x:Name.",
+      "finding": "WT002\tlow\tGetting Started/Concepts/samps/compositecollections_samp.xaml:157\tTabItem \"Visual Basic.NET\" gets its ID \"vb\" from x:Name.",
       "label": "real",
-      "why": "The ID really comes from Name=\"rb21\"."
+      "why": "The ID really comes from Name=\"vb\"."
     },
     {
-      "finding": "WT002\tlow\tPerMonitorDPI/TextFormatting/MainWindow.xaml:41\tToggleButton \"S\" gets its ID \"strikeButton\" from x:Name.",
+      "finding": "WT002\tlow\tGraphics/Matrix/MainWindow.xaml:69\tRadioButton \"Transform point1 by matrix1\" gets its ID \"rb27\" from x:Name.",
       "label": "real",
-      "why": "The ID really comes from Name=\"strikeButton\"."
+      "why": "The ID really comes from Name=\"rb27\"."
     },
     {
-      "finding": "WT002\tlow\tSample Applications/ExpenseIt/ExpenseItDemo/CreateExpenseReportDialogBox.xaml:66\tTextBox \"Employee Number\" gets its ID \"employeeNumberTextBox\" from x:Name.",
+      "finding": "WT002\tlow\tSample Applications/GeometryDesignerDemo/MainWindow.xaml:72\tTextBox [RectangleRadiusY] gets its ID \"RectangleRadiusY\" from x:Name.",
       "label": "real",
-      "why": "The ID really comes from Name=\"employeeNumberTextBox\"."
+      "why": "The ID really comes from Name=\"RectangleRadiusY\"."
     },
     {
-      "finding": "WT002\tlow\tSample Applications/GeometryDesignerDemo/MainWindow.xaml:66\tTextBox [RectangleWidth] gets its ID \"RectangleWidth\" from x:Name.",
+      "finding": "WT002\tlow\tSample Applications/GraphingCalculatorDemo/MainWindow.xaml:399\tTextBox [vMin] gets its ID \"vMin\" from x:Name.",
       "label": "real",
-      "why": "The ID really comes from Name=\"RectangleWidth\"."
-    },
-    {
-      "finding": "WT002\tlow\tSample Applications/GraphingCalculatorDemo/MainWindow.xaml:393\tTextBox [uMin] gets its ID \"uMin\" from x:Name.",
-      "label": "real",
-      "why": "The ID really comes from Name=\"uMin\"."
-    },
-    {
-      "finding": "WT002\tlow\tSample Applications/GraphingCalculatorDemo/MainWindow.xaml:436\tTextBox [immediate] gets its ID \"immediate\" from x:Name.",
-      "label": "real",
-      "why": "The ID really comes from Name=\"immediate\"."
+      "why": "The ID really comes from Name=\"vMin\"."
     },
     {
       "finding": "WT005\tmedium\tAccessibility/InvokePattern/Target/MainWindow.xaml:109\tRows in TreeView have no unique ID.",
@@ -79,29 +74,34 @@
       "why": "Tree rows come from XML data with no ID per row."
     },
     {
-      "finding": "WT005\tmedium\tGlobalization and Localization/GlobalizationRunDialog/MainWindow.xaml:54\tRows in ComboBox [ComboBox_1] have no unique ID.",
+      "finding": "WT005\tmedium\tPerMonitorDPI/TextFormatting/MainWindow.xaml:75\tRows in ComboBox have no unique ID.",
       "label": "false alarm",
-      "why": "The combo box has no items, no ItemsSource and no code that fills it, so there are no rows to tell apart."
+      "why": "Empty combo box with no name, no items and no ItemsSource, so nothing ever fills it and there are no rows to tell apart."
     },
     {
-      "finding": "WT008\tlow\tElements/ContextMenuOpening/Pane.xaml:38\tmy:MyButton has no readable name.",
+      "finding": "WT005\tmedium\tSample Applications/ExpenseIt/ExpenseItDemo/CreateExpenseReportDialogBox.xaml:117\tRows in DataGrid \"Expense Report\" have no unique ID.",
       "label": "real",
-      "why": "MyButton derives from Button and has no content or name."
+      "why": "Expense rows come from data with no ID per row; tests must find them by position or text."
     },
     {
-      "finding": "WT008\tlow\tGetting Started/Concepts/samps/compositecollections_samp.xaml:78\tTextBox has no readable name.",
+      "finding": "WT008\tlow\tGetting Started/Concepts/samps/menus_samp.xaml:468\tMenuItem has no readable name.",
       "label": "real",
-      "why": "Code-sample text box with no label."
+      "why": "Menu item whose header is only an image, with no AutomationProperties.Name."
     },
     {
-      "finding": "WT008\tlow\tSample Applications/GraphingCalculatorDemo/MainWindow.xaml:345\tTextBox [tMax2D] has no readable name.",
+      "finding": "WT008\tlow\tGetting Started/Concepts/samps/multibinding_samp.xaml:222\tListBox has no readable name.",
       "label": "real",
-      "why": "The label TextBlock's text is set in code and isn't linked with LabeledBy, so the box has no name."
+      "why": "List box with no Label Target or AutomationProperties.Name."
     },
     {
-      "finding": "WT008\tlow\tSample Applications/WPFGallery/Views/DesignGuidance/FillSection.xaml:158\tSlider has no readable name.",
+      "finding": "WT008\tlow\tInput and Commands/ICommandSourceImplementation/MainWindow.xaml:100\tTextBox [txtBoxTarget] has no readable name.",
       "label": "real",
-      "why": "Slider with no name."
+      "why": "Text box with no Label Target or AutomationProperties.Name."
+    },
+    {
+      "finding": "WT008\tlow\tSample Applications/GraphingCalculatorDemo/MainWindow.xaml:393\tTextBox [uMin] has no readable name.",
+      "label": "real",
+      "why": "The TextBlock beside it (uMinLabel) is not linked with LabeledBy, so the box has no name."
     }
   ]
 }

@@ -8,22 +8,22 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.8,
-        0.69
+        0.54,
+        0.51
       ],
       "deterministic": true,
-      "score": 54.7,
+      "score": 54.8,
       "grade": "D",
       "elements": 212,
       "controls": 89,
       "screens": 104,
-      "problems": 145,
+      "problems": 144,
       "problemsByRule": {
         "WT001": 69,
         "WT002": 20,
         "WT005": 22,
         "WT006": 5,
-        "WT008": 29
+        "WT008": 28
       },
       "checks": {
         "coverage": 22.5,
@@ -31,7 +31,7 @@
         "uniqueness": 62.7,
         "stability": null,
         "visibility": 100,
-        "names": 67
+        "names": 68.2
       },
       "notes": 0
     },
@@ -43,8 +43,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        3.86,
-        3.8
+        3.99,
+        3.55
       ],
       "deterministic": true,
       "score": 57.1,
@@ -78,13 +78,13 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        1.02,
-        1.02
+        0.78,
+        0.78
       ],
       "deterministic": true,
       "score": 69,
       "grade": "C",
-      "elements": 1716,
+      "elements": 1695,
       "controls": 1091,
       "screens": 61,
       "problems": 1407,
@@ -99,7 +99,7 @@
       "checks": {
         "coverage": 51.1,
         "quality": 70,
-        "uniqueness": 95.7,
+        "uniqueness": 95.6,
         "stability": null,
         "visibility": 83.2,
         "names": 53.4
@@ -114,8 +114,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.54,
-        0.53
+        0.39,
+        0.39
       ],
       "deterministic": true,
       "score": 65.2,
@@ -150,8 +150,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.41,
-        0.41
+        0.29,
+        0.3
       ],
       "deterministic": true,
       "score": 47.7,
@@ -159,13 +159,13 @@
       "elements": 909,
       "controls": 709,
       "screens": 38,
-      "problems": 1157,
+      "problems": 1154,
       "problemsByRule": {
         "WT001": 632,
         "WT002": 77,
         "WT005": 83,
         "WT006": 1,
-        "WT008": 364
+        "WT008": 361
       },
       "checks": {
         "coverage": 10.9,
@@ -173,7 +173,7 @@
         "uniqueness": 60.2,
         "stability": null,
         "visibility": 100,
-        "names": 47.2
+        "names": 47.7
       },
       "notes": 0
     },
@@ -185,8 +185,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.39,
-        0.4
+        0.3,
+        0.3
       ],
       "deterministic": true,
       "score": 49.8,
@@ -220,8 +220,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.43,
-        0.43
+        0.31,
+        0.33
       ],
       "deterministic": true,
       "score": 41.3,
@@ -254,22 +254,22 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.4,
-        0.4
+        0.29,
+        0.29
       ],
       "deterministic": true,
-      "score": 48.2,
+      "score": 48.4,
       "grade": "D",
       "elements": 584,
       "controls": 402,
       "screens": 82,
-      "problems": 358,
+      "problems": 353,
       "problemsByRule": {
         "WT001": 264,
         "WT002": 5,
         "WT005": 11,
         "WT006": 4,
-        "WT008": 74
+        "WT008": 69
       },
       "checks": {
         "coverage": 1.2,
@@ -277,7 +277,7 @@
         "uniqueness": 80.6,
         "stability": null,
         "visibility": 66.9,
-        "names": 72.4
+        "names": 74.3
       },
       "notes": 0
     },
@@ -289,32 +289,32 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        1.53,
-        1.51
+        1.23,
+        1.23
       ],
       "deterministic": true,
       "score": 68.7,
       "grade": "C",
-      "elements": 4629,
+      "elements": 4620,
       "controls": 2942,
       "screens": 506,
-      "problems": 3518,
+      "problems": 3512,
       "problemsByRule": {
-        "WT001": 1617,
+        "WT001": 1627,
         "WT002": 1145,
-        "WT003": 45,
+        "WT003": 35,
         "WT005": 136,
         "WT006": 6,
         "WT007": 2,
-        "WT008": 567
+        "WT008": 561
       },
       "checks": {
-        "coverage": 40.4,
-        "quality": 67.7,
-        "uniqueness": 93.5,
+        "coverage": 40.1,
+        "quality": 68.2,
+        "uniqueness": 93.4,
         "stability": null,
         "visibility": 95.3,
-        "names": 78.5
+        "names": 78.7
       },
       "notes": 1
     },
@@ -326,21 +326,21 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.41,
-        0.41
+        0.29,
+        0.3
       ],
       "deterministic": true,
-      "score": 60.1,
+      "score": 61.7,
       "grade": "C",
       "elements": 334,
       "controls": 261,
       "screens": 24,
-      "problems": 366,
+      "problems": 329,
       "problemsByRule": {
         "WT001": 189,
         "WT002": 72,
         "WT005": 31,
-        "WT008": 74
+        "WT008": 37
       },
       "checks": {
         "coverage": 27.6,
@@ -348,7 +348,7 @@
         "uniqueness": 75.6,
         "stability": null,
         "visibility": 100,
-        "names": 71.6
+        "names": 85.8
       },
       "notes": 0
     },
@@ -360,8 +360,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.58,
-        0.57
+        0.43,
+        0.42
       ],
       "deterministic": true,
       "score": 52.2,

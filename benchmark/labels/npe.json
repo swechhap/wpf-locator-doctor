@@ -9,34 +9,39 @@
       "why": "GrayscaleMenuItem derives from MenuItem and has no ID."
     },
     {
-      "finding": "WT001\thigh\tFileEditor.xaml:21\tself:GrayscaleMenuItem has no AutomationId.",
+      "finding": "WT001\thigh\tFileEditor.xaml:21\tself:GrayscaleMenuItem \"Undo\" has no AutomationId.",
       "label": "real",
-      "why": "Undo menu item with no ID."
+      "why": "Undo menu item (Command=\"Undo\") with no ID."
     },
     {
-      "finding": "WT001\thigh\tMainWindow.xaml:120\tself:GrayscaleMenuItem \"Edit Metadata\" has no AutomationId.",
+      "finding": "WT001\thigh\tFileEditor.xaml:37\tself:GrayscaleMenuItem \"Copy\" has no AutomationId.",
+      "label": "real",
+      "why": "Copy menu item (Command=\"Copy\") with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tMainWindow.xaml:119\tself:GrayscaleMenuItem \"Edit\" has no AutomationId.",
+      "label": "real",
+      "why": "Top-level Edit menu with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tMainWindow.xaml:166\tself:GrayscaleMenuItem \"Medium\" has no AutomationId.",
+      "label": "real",
+      "why": "Font size menu item with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tMainWindow.xaml:215\tself:GrayscaleMenuItem \"Add BuildTransitive Folder\" has no AutomationId.",
       "label": "real",
       "why": "Menu item with no ID."
     },
     {
-      "finding": "WT001\thigh\tMainWindow.xaml:210\tself:GrayscaleMenuItem \"Add BuildMultiTargeting Folder\" has no AutomationId.",
+      "finding": "WT001\thigh\tMainWindow.xaml:261\tMenuItem \"Nuspec Reference\" has no AutomationId.",
       "label": "real",
-      "why": "Menu item with no ID."
+      "why": "Help menu item with no ID."
     },
     {
-      "finding": "WT001\thigh\tMainWindow.xaml:74\tMenuItem \"Close\" has no AutomationId.",
+      "finding": "WT001\thigh\tMainWindow.xaml:69\tself:GrayscaleMenuItem \"File\" has no AutomationId.",
       "label": "real",
-      "why": "Menu item with no ID."
-    },
-    {
-      "finding": "WT001\thigh\tPackageChooser/PackageDetailActionsControl.xaml:31\tHyperlink has no AutomationId.",
-      "label": "real",
-      "why": "Hyperlink with no ID."
-    },
-    {
-      "finding": "WT001\thigh\tPackageChooser/PackageDetailControl.xaml:122\tHyperlink \"{Binding SelectedPackage.ProjectUrl}\" has no AutomationId.",
-      "label": "real",
-      "why": "Hyperlink with no ID."
+      "why": "Top-level File menu with no ID."
     },
     {
       "finding": "WT001\thigh\tPackageDependencyEditor.xaml:161\tButton \"OK\" has no AutomationId.",
@@ -44,64 +49,59 @@
       "why": "Dialog button with no ID."
     },
     {
-      "finding": "WT001\thigh\tPackageReferencesEditor.xaml:48\tself:GrayscaleButton \"{StaticResource RemoveIcon}\" has no AutomationId.",
+      "finding": "WT001\thigh\tPackageDependencyEditor.xaml:162\tButton \"Cancel\" has no AutomationId.",
       "label": "real",
-      "why": "Icon-only button with no ID. (The scan shows its name as \"{StaticResource RemoveIcon}\", taken from the icon, which is wrong; the real button has no name.)"
+      "why": "Dialog Cancel button with no ID."
     },
     {
-      "finding": "WT001\thigh\tPackageViewer.xaml:862\tself:GrayscaleMenuItem \"Add Content Folder\" has no AutomationId.",
+      "finding": "WT001\thigh\tPackageDependencyEditor.xaml:50\tButton \"{StaticResource AddIcon}\" has no AutomationId.",
       "label": "real",
-      "why": "Menu item with no ID."
+      "why": "Icon-only \"Add a new group\" button with no ID (the message shows the icon resource as its name)."
     },
     {
-      "finding": "WT002\tlow\tMainWindow.xaml:171\tMenuItem \"Show Status Bar\" gets its ID \"ShowStatusBarMenuItem\" from x:Name.",
+      "finding": "WT001\thigh\tSignPackageDialog.xaml:87\tButton \"{x:Static vm:Resources.Close}\" has no AutomationId.",
+      "label": "real",
+      "why": "Dialog Close button with no ID; its text is a translated resource."
+    },
+    {
+      "finding": "WT001\thigh\tTaskShortcut.xaml:38\tButton \"{StaticResource BlueArrowIcon}\" has no AutomationId.",
+      "label": "real",
+      "why": "\"Read NuGet documentation\" button with no ID (the message picks up the icon resource instead of the text)."
+    },
+    {
+      "finding": "WT002\tlow\tPackageMetadataEditor.xaml:152\tTextBox \"Repository Type\" gets its ID \"RepositoryTypeBox\" from x:Name.",
       "label": "real",
       "why": "The ID really comes from x:Name."
     },
     {
-      "finding": "WT002\tlow\tPackageDependencyEditor.xaml:57\tListBox [DependencyGroupList] gets its ID \"DependencyGroupList\" from x:Name.",
+      "finding": "WT002\tlow\tPackageMetadataEditor.xaml:183\tTextBox \"Release Notes\" gets its ID \"ReleaseNotesBox\" from x:Name.",
       "label": "real",
       "why": "The ID really comes from x:Name."
     },
     {
-      "finding": "WT005\tmedium\tPackageDependencyEditor.xaml:57\tRows in ListBox [DependencyGroupList] have no unique ID.",
+      "finding": "WT002\tlow\tPublishPackageWindow.xaml:49\tComboBox \"Publish Url\" gets its ID \"PublishUrl\" from x:Name.",
       "label": "real",
-      "why": "Dependency groups are data rows with no ID."
+      "why": "The ID really comes from x:Name."
     },
     {
-      "finding": "WT008\tlow\tFileEditor.xaml:26\tself:GrayscaleMenuItem has no readable name.",
-      "label": "false alarm",
-      "why": "Command=\"Redo\" with no Header: the menu item shows the command's text, so it is named \"Redo\" at runtime."
-    },
-    {
-      "finding": "WT008\tlow\tFrameworkReferencesEditor.xaml:80\tTextBox [TargetFrameworkBox] has no readable name.",
-      "label": "false alarm",
-      "why": "The Label has Target=\"TargetFrameworkBox\" (a plain name), which links it to the box, so the box is named \"Target framework\". The scan only understands Target=\"{Binding ElementName=...}\"."
-    },
-    {
-      "finding": "WT008\tlow\tPackageMetadataEditor.xaml:113\tTextBox [TitleBox] has no readable name.",
-      "label": "false alarm",
-      "why": "Label Target=\"TitleBox\" names the box \"Title\" (same parsing gap as above)."
-    },
-    {
-      "finding": "WT008\tlow\tPackageMetadataEditor.xaml:156\tTextBox [RepositoryUrlBox] has no readable name.",
-      "label": "false alarm",
-      "why": "Label Target=\"RepositoryUrlBox\" names the box (same parsing gap)."
-    },
-    {
-      "finding": "WT008\tlow\tPackageMetadataEditor.xaml:171\tTextBox [LicenseUrlBox] has no readable name.",
-      "label": "false alarm",
-      "why": "Label Target=\"LicenseUrlBox\" names the box (same parsing gap)."
-    },
-    {
-      "finding": "WT008\tlow\tPortableLibraryDialog.xaml:50\tCheckBox [NetCheckBox] has no readable name.",
+      "finding": "WT005\tmedium\tPackageReferencesEditor.xaml:54\tRows in ListBox \"Groups\" have no unique ID.",
       "label": "real",
-      "why": "Check box with no content or label; the combo box next to it doesn't name it."
+      "why": "Reference groups come from data through a template with no ID per row."
     },
     {
-      "finding": "WT008\tlow\tPortableLibraryDialog.xaml:59\tCheckBox [WindowsCheckBox] has no readable name.",
+      "finding": "WT008\tlow\tPackageDependencyEditor.xaml:145\tTextBox [NewDependencyId] has no readable name.",
       "label": "real",
-      "why": "Check box with no content or label."
+      "why": "New-dependency ID box with no Label Target or AutomationProperties.Name."
+    },
+    {
+      "finding": "WT008\tlow\tPackageReferencesEditor.xaml:116\tTextBox [NewReferenceFile] has no readable name.",
+      "label": "real",
+      "why": "New-reference file box with no Label Target or AutomationProperties.Name."
+    },
+    {
+      "finding": "WT008\tlow\tPackageViewer.xaml:923\tButton has no readable name.",
+      "label": "real",
+      "why": "Icon-only close button; its \"Close\" tooltip is help text, not a name."
     }
   ]
 }

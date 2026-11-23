@@ -22,6 +22,9 @@ See [docs/research-analysis.md](docs/research-analysis.md) for the research and 
 
 Works with any WPF app (.NET Framework or .NET). Built on Windows UI Automation and [FlaUI](https://github.com/FlaUI/FlaUI).
 
+**Why it matters:** the problems WPF automation testers face every day, how a score with exact fixes helps them agree with
+developers on what to change, and where the CLI and the MCP server fit: [docs/why-it-matters.md](docs/why-it-matters.md).
+
 ## What you get
 
 This is a real scan of the included practice app (shortened):
@@ -74,7 +77,7 @@ The full report (`testability-report.md`) tells you exactly what to add:
 Install from [NuGet](https://www.nuget.org/packages/wpf-locator-doctor). You need the [.NET SDK](https://dotnet.microsoft.com/download), version 10 or newer:
 
 ```bash
-dotnet tool install -g wpf-locator-doctor --prerelease
+dotnet tool install -g wpf-locator-doctor
 ```
 
 Then scan a project:
@@ -133,7 +136,8 @@ On Windows, point it at the downloaded server instead:
 claude mcp add wpf-locator-doctor -- C:\tools\wpf-locator-doctor-mcp\wpf-locator-doctor-mcp.exe
 ```
 
-The packages arrive with the first release that includes the MCP server; until then, build it from this repository (the guide shows how).
+If your shell can't find `dnx` (for example with .NET from Homebrew), use `dotnet dnx` instead.
+The server is also listed in the [MCP Registry](https://registry.modelcontextprotocol.io) as `io.github.swechhap/wpf-locator-doctor`.
 Full guide, with VS Code and Cursor setup, safety settings and example answers: [docs/mcp-server.md](docs/mcp-server.md).
 
 ## Using it in a build pipeline
@@ -187,6 +191,7 @@ src/WpfLocatorDoctor.Mcp      The MCP server for AI assistants. Only describes t
                               Built twice: cross-platform (source tools, NuGet) and Windows (adds the live tools).
 samples/PracticeApp           A small WPF app with one example of each problem (and good examples).
 tests/                        Automated tests (run with: dotnet test WpfLocatorDoctor.slnx).
+docs/why-it-matters.md        Why testability matters, for testers and the developers they work with.
 docs/mcp-server.md            How to set up and use the MCP server.
 docs/research-analysis.md     Research behind this project.
 ```

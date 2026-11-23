@@ -1,0 +1,1349 @@
+# dnSpyEx @ bb09d2c547, scan path: .
+score 57.1  grade D  elements 1106  controls 960  screens 113
+check coverage      23.5%  226 of 960 controls have an AutomationId.
+check quality         70%  226 borrowed from x:Name.
+check uniqueness    70.2%  0 ID(s) used more than once; 0 of 105 data lists have identifiable rows.
+check stability      n/a%  Not measured. Run again with --baseline <previous report.json> to compare.
+check visibility    98.6%  13 invisible control(s), 0 opaque area(s).
+check names         70.2%  654 of 931 controls have a readable name.
+problems WT001=721  WT002=226  WT005=105  WT006=10  WT008=277
+
+WT006	medium	dnSpy/dnSpy.Contracts.DnSpy/Controls/TextControl.cs:28	TextControl derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	dnSpy/dnSpy.Contracts.DnSpy/Controls/ToolWindows/EditValueProviderService.cs:106	UIControl derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT001	high	dnSpy/dnSpy.Contracts.DnSpy/MVVM/Dialogs/ProgressDlg.xaml:54	Button "{x:Static p:dnSpy_Contracts_DnSpy_Resou…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:52	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:52	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:56	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:56	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:59	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:59	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:63	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:63	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:66	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:66	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:70	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:70	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:73	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:73	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:77	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:77	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:80	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:80	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:83	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:83	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:87	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:87	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:90	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:90	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:94	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:94	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:98	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:98	Button has no readable name.
+WT002	low	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:104	TextBox [searchTextBox] gets its ID "searchTextBox" from x:Name.
+WT008	low	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:104	TextBox [searchTextBox] has no readable name.
+WT001	high	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:106	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:106	Button has no readable name.
+WT002	low	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:111	ListView [listView] gets its ID "listView" from x:Name.
+WT005	medium	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:111	Rows in ListView [listView] have no unique ID.
+WT008	low	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:111	ListView [listView] has no readable name.
+WT001	medium	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:141	CheckBox (inside a list row template) has no AutomationId.
+WT008	low	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:141	CheckBox has no readable name.
+WT001	high	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:186	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Bookmarks/ToolWindows/Bookmarks/BookmarksControl.xaml:186	Button has no readable name.
+WT006	medium	dnSpy/dnSpy/Controls/SysMenuButton.cs:25	SysMenuButton derives from ButtonBase and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	dnSpy/dnSpy/Controls/TabButton.cs:25	TabButton derives from ButtonBase and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	dnSpy/dnSpy/Controls/WinSysButton.cs:39	WinSysButton derives from ButtonBase and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT002	low	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:64	TextBox "{x:Static p:dnSpy_Resources.ExportToPro…" gets its ID "destDirTextBox" from x:Name.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:65	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:65	Button has no readable name.
+WT002	low	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:68	TextBox "{x:Static p:dnSpy_Resources.ExportToPro…" gets its ID "solutionTextBox" from x:Name.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:69	CheckBox has no AutomationId.
+WT008	low	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:69	CheckBox has no readable name.
+WT002	low	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:72	ComboBox "{x:Static p:dnSpy_Resources.ExportToPro…" gets its ID "versionComboBox" from x:Name.
+WT005	medium	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:72	Rows in ComboBox "{x:Static p:dnSpy_Resources.ExportToPro…" have no unique ID.
+WT002	low	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:75	ComboBox "{x:Static p:dnSpy_Resources.ExportToPro…" gets its ID "decompilerComboBox" from x:Name.
+WT005	medium	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:75	Rows in ComboBox "{x:Static p:dnSpy_Resources.ExportToPro…" have no unique ID.
+WT002	low	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:78	TextBox "{x:Static p:dnSpy_Resources.ExportToPro…" gets its ID "projectGuidTextBox" from x:Name.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:79	Button "{x:Static p:dnSpy_Resources.ExportToPro…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:81	CheckBox "{x:Static p:dnSpy_Resources.ExportToPro…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:82	CheckBox "{x:Static p:dnSpy_Resources.ExportToPro…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:83	CheckBox "{x:Static p:dnSpy_Resources.ExportToPro…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:84	CheckBox "{x:Static p:dnSpy_Resources.ExportToPro…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:85	CheckBox "{x:Static p:dnSpy_Resources.ExportToPro…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:97	TextBox has no AutomationId.
+WT008	low	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:97	TextBox has no readable name.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:120	Button "{x:Static p:dnSpy_Resources.ExportToPro…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:121	Button "{x:Static p:dnSpy_Resources.Button_Canc…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/ExportToProjectDlg.xaml:122	Button "{x:Static p:dnSpy_Resources.Button_Clos…" has no AutomationId.
+WT002	low	dnSpy/dnSpy/Documents/Tabs/Dialogs/OpenDocumentListDlg.xaml:47	TextBox "{x:Static p:dnSpy_Resources.OpenList_Se…" gets its ID "searchBox" from x:Name.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/OpenDocumentListDlg.xaml:48	CheckBox "{x:Static p:dnSpy_Resources.OpenList_Sa…" has no AutomationId.
+WT002	low	dnSpy/dnSpy/Documents/Tabs/Dialogs/OpenDocumentListDlg.xaml:50	ListView [listView] gets its ID "listView" from x:Name.
+WT005	medium	dnSpy/dnSpy/Documents/Tabs/Dialogs/OpenDocumentListDlg.xaml:50	Rows in ListView [listView] have no unique ID.
+WT008	low	dnSpy/dnSpy/Documents/Tabs/Dialogs/OpenDocumentListDlg.xaml:50	ListView [listView] has no readable name.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/OpenDocumentListDlg.xaml:93	Button "{x:Static p:dnSpy_Resources.OpenList_Re…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/OpenDocumentListDlg.xaml:94	Button "{x:Static p:dnSpy_Resources.OpenList_Ne…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/OpenDocumentListDlg.xaml:95	Button "{x:Static p:dnSpy_Resources.OpenList_Op…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/OpenDocumentListDlg.xaml:96	Button "{x:Static p:dnSpy_Resources.Button_Canc…" has no AutomationId.
+WT002	low	dnSpy/dnSpy/Documents/Tabs/Dialogs/OpenFromGACDlg.xaml:44	ListView [listView] gets its ID "listView" from x:Name.
+WT005	medium	dnSpy/dnSpy/Documents/Tabs/Dialogs/OpenFromGACDlg.xaml:44	Rows in ListView [listView] have no unique ID.
+WT008	low	dnSpy/dnSpy/Documents/Tabs/Dialogs/OpenFromGACDlg.xaml:44	ListView [listView] has no readable name.
+WT002	low	dnSpy/dnSpy/Documents/Tabs/Dialogs/OpenFromGACDlg.xaml:91	TextBox [searchBox] gets its ID "searchBox" from x:Name.
+WT008	low	dnSpy/dnSpy/Documents/Tabs/Dialogs/OpenFromGACDlg.xaml:91	TextBox [searchBox] has no readable name.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/OpenFromGACDlg.xaml:92	CheckBox "{x:Static p:dnSpy_Resources.OpenGAC_Sho…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/OpenFromGACDlg.xaml:114	Button "{x:Static p:dnSpy_Resources.Button_OK}" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/OpenFromGACDlg.xaml:115	Button "{x:Static p:dnSpy_Resources.Button_Canc…" has no AutomationId.
+WT002	low	dnSpy/dnSpy/Documents/Tabs/Dialogs/TabsDlg.xaml:36	ListView [listView] gets its ID "listView" from x:Name.
+WT005	medium	dnSpy/dnSpy/Documents/Tabs/Dialogs/TabsDlg.xaml:36	Rows in ListView [listView] have no unique ID.
+WT008	low	dnSpy/dnSpy/Documents/Tabs/Dialogs/TabsDlg.xaml:36	ListView [listView] has no readable name.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/TabsDlg.xaml:84	Button "{x:Static p:dnSpy_Resources.TabsDlg_Act…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/TabsDlg.xaml:85	Button "{Binding SaveText}" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Documents/Tabs/Dialogs/TabsDlg.xaml:86	Button "{x:Static p:dnSpy_Resources.TabsDlg_Clo…" has no AutomationId.
+WT002	low	dnSpy/dnSpy/Documents/Tabs/DocViewer/WaitAdorner.xaml:30	Button "{x:Static p:dnSpy_Resources.DecompileCa…" gets its ID "button" from x:Name.
+WT002	low	dnSpy/dnSpy/Hex/Commands/GoToMetadataDlg.xaml:52	TextBox "{x:Static p:dnSpy_Resources.GoToOffset_…" gets its ID "numberTextBox" from x:Name.
+WT001	high	dnSpy/dnSpy/Hex/Commands/GoToMetadataDlg.xaml:53	ComboBox has no AutomationId.
+WT005	medium	dnSpy/dnSpy/Hex/Commands/GoToMetadataDlg.xaml:53	Rows in ComboBox have no unique ID.
+WT008	low	dnSpy/dnSpy/Hex/Commands/GoToMetadataDlg.xaml:53	ComboBox has no readable name.
+WT001	high	dnSpy/dnSpy/Hex/Commands/GoToMetadataDlg.xaml:76	Button "{x:Static p:dnSpy_Resources.Button_OK}" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Hex/Commands/GoToMetadataDlg.xaml:77	Button "{x:Static p:dnSpy_Resources.Button_Canc…" has no AutomationId.
+WT002	low	dnSpy/dnSpy/Hex/Commands/GoToPositionDlg.xaml:50	TextBox "{x:Static p:dnSpy_Resources.GoToOffset_…" gets its ID "offsetTextBox" from x:Name.
+WT001	high	dnSpy/dnSpy/Hex/Commands/GoToPositionDlg.xaml:51	ComboBox has no AutomationId.
+WT005	medium	dnSpy/dnSpy/Hex/Commands/GoToPositionDlg.xaml:51	Rows in ComboBox have no unique ID.
+WT008	low	dnSpy/dnSpy/Hex/Commands/GoToPositionDlg.xaml:51	ComboBox has no readable name.
+WT001	high	dnSpy/dnSpy/Hex/Commands/GoToPositionDlg.xaml:74	CheckBox "{x:Static p:dnSpy_Resources.SelectToNew…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Hex/Commands/GoToPositionDlg.xaml:75	Button "{x:Static p:dnSpy_Resources.Button_OK}" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Hex/Commands/GoToPositionDlg.xaml:76	Button "{x:Static p:dnSpy_Resources.Button_Canc…" has no AutomationId.
+WT002	low	dnSpy/dnSpy/Hex/Commands/LocalSettingsDlg.xaml:58	TextBox "{x:Static p:dnSpy_Resources.LocalHexSet…" gets its ID "startPositionTextBox" from x:Name.
+WT002	low	dnSpy/dnSpy/Hex/Commands/LocalSettingsDlg.xaml:60	TextBox "{x:Static p:dnSpy_Resources.LocalHexSet…" gets its ID "endPositionTextBox" from x:Name.
+WT002	low	dnSpy/dnSpy/Hex/Commands/LocalSettingsDlg.xaml:62	TextBox "{x:Static p:dnSpy_Resources.LocalHexSet…" gets its ID "basePositionTextBox" from x:Name.
+WT002	low	dnSpy/dnSpy/Hex/Commands/LocalSettingsDlg.xaml:64	TextBox "{x:Static p:dnSpy_Resources.LocalHexSet…" gets its ID "offsetBitSizeTextBox" from x:Name.
+WT002	low	dnSpy/dnSpy/Hex/Commands/LocalSettingsDlg.xaml:66	TextBox "{x:Static p:dnSpy_Resources.LocalHexSet…" gets its ID "bytesPerLineTextBox" from x:Name.
+WT002	low	dnSpy/dnSpy/Hex/Commands/LocalSettingsDlg.xaml:68	ComboBox "{x:Static p:dnSpy_Resources.LocalHexSet…" gets its ID "hexValuesDisplayFormatComboBox" from x:Name.
+WT005	medium	dnSpy/dnSpy/Hex/Commands/LocalSettingsDlg.xaml:68	Rows in ComboBox "{x:Static p:dnSpy_Resources.LocalHexSet…" have no unique ID.
+WT001	high	dnSpy/dnSpy/Hex/Commands/LocalSettingsDlg.xaml:70	CheckBox "{x:Static p:dnSpy_Resources.LocalHexSet…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Hex/Commands/LocalSettingsDlg.xaml:71	CheckBox "{x:Static p:dnSpy_Resources.LocalHexSet…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Hex/Commands/LocalSettingsDlg.xaml:72	CheckBox "{x:Static p:dnSpy_Resources.LocalHexSet…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Hex/Commands/LocalSettingsDlg.xaml:73	CheckBox "{x:Static p:dnSpy_Resources.LocalHexSet…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Hex/Commands/LocalSettingsDlg.xaml:84	Button "{x:Static p:dnSpy_Resources.Button_Defa…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Hex/Commands/LocalSettingsDlg.xaml:85	Button "{x:Static p:dnSpy_Resources.Button_OK}" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Hex/Commands/LocalSettingsDlg.xaml:86	Button "{x:Static p:dnSpy_Resources.Button_Canc…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Hex/Commands/LocalSettingsDlg.xaml:87	Button "{x:Static p:dnSpy_Resources.Button_Rest…" has no AutomationId.
+WT002	low	dnSpy/dnSpy/Hex/Commands/SelectDlg.xaml:55	TextBox "{x:Static p:dnSpy_Resources.HexEditorSe…" gets its ID "startTextBox" from x:Name.
+WT002	low	dnSpy/dnSpy/Hex/Commands/SelectDlg.xaml:57	TextBox "{x:Static p:dnSpy_Resources.HexEditorSe…" gets its ID "endTextBox" from x:Name.
+WT001	high	dnSpy/dnSpy/Hex/Commands/SelectDlg.xaml:59	ComboBox has no AutomationId.
+WT005	medium	dnSpy/dnSpy/Hex/Commands/SelectDlg.xaml:59	Rows in ComboBox have no unique ID.
+WT008	low	dnSpy/dnSpy/Hex/Commands/SelectDlg.xaml:59	ComboBox has no readable name.
+WT001	high	dnSpy/dnSpy/Hex/Commands/SelectDlg.xaml:75	ComboBox has no AutomationId.
+WT005	medium	dnSpy/dnSpy/Hex/Commands/SelectDlg.xaml:75	Rows in ComboBox have no unique ID.
+WT008	low	dnSpy/dnSpy/Hex/Commands/SelectDlg.xaml:75	ComboBox has no readable name.
+WT001	high	dnSpy/dnSpy/Hex/Commands/SelectDlg.xaml:98	Button "{x:Static p:dnSpy_Resources.Button_OK}" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Hex/Commands/SelectDlg.xaml:99	Button "{x:Static p:dnSpy_Resources.Button_Canc…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:176	ToggleButton has no AutomationId.
+WT008	low	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:176	ToggleButton has no readable name.
+WT002	low	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:178	TextBox [searchStringTextBox] gets its ID "searchStringTextBox" from x:Name.
+WT008	low	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:178	TextBox [searchStringTextBox] has no readable name.
+WT001	high	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:179	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:179	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:199	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:199	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:219	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:219	Button has no readable name.
+WT002	low	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:224	TextBox [replaceStringTextBox] gets its ID "replaceStringTextBox" from x:Name.
+WT008	low	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:224	TextBox [replaceStringTextBox] has no readable name.
+WT001	high	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:225	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:225	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:247	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:247	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:283	CheckBox has no AutomationId.
+WT008	low	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:283	CheckBox has no readable name.
+WT001	high	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:304	CheckBox has no AutomationId.
+WT008	low	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:304	CheckBox has no readable name.
+WT001	high	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:321	ComboBox has no AutomationId.
+WT005	medium	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:321	Rows in ComboBox have no unique ID.
+WT008	low	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:321	ComboBox has no readable name.
+WT001	high	dnSpy/dnSpy/Hex/Intellisense/HexQuickInfoPresenterControl.xaml:30	ListBox has no AutomationId.
+WT005	medium	dnSpy/dnSpy/Hex/Intellisense/HexQuickInfoPresenterControl.xaml:30	Rows in ListBox have no unique ID.
+WT008	low	dnSpy/dnSpy/Hex/Intellisense/HexQuickInfoPresenterControl.xaml:30	ListBox has no readable name.
+WT002	low	dnSpy/dnSpy/Language/Intellisense/CompletionPresenterControl.xaml:40	ListBox [completionsListBox] gets its ID "completionsListBox" from x:Name.
+WT005	medium	dnSpy/dnSpy/Language/Intellisense/CompletionPresenterControl.xaml:40	Rows in ListBox [completionsListBox] have no unique ID.
+WT008	low	dnSpy/dnSpy/Language/Intellisense/CompletionPresenterControl.xaml:40	ListBox [completionsListBox] has no readable name.
+WT005	medium	dnSpy/dnSpy/Language/Intellisense/CompletionPresenterControl.xaml:74	Rows in ItemsControl have no unique ID.
+WT005	medium	dnSpy/dnSpy/Language/Intellisense/CompletionPresenterControl.xaml:91	Rows in ItemsControl have no unique ID.
+WT001	medium	dnSpy/dnSpy/Language/Intellisense/CompletionPresenterControl.xaml:108	CheckBox (inside a list row template) has no AutomationId.
+WT008	low	dnSpy/dnSpy/Language/Intellisense/CompletionPresenterControl.xaml:108	CheckBox has no readable name.
+WT001	high	dnSpy/dnSpy/Language/Intellisense/QuickInfoPresenterControl.xaml:30	ListBox has no AutomationId.
+WT005	medium	dnSpy/dnSpy/Language/Intellisense/QuickInfoPresenterControl.xaml:30	Rows in ListBox have no unique ID.
+WT008	low	dnSpy/dnSpy/Language/Intellisense/QuickInfoPresenterControl.xaml:30	ListBox has no readable name.
+WT001	high	dnSpy/dnSpy/Language/Intellisense/SignatureHelpPresenterControl.xaml:86	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Language/Intellisense/SignatureHelpPresenterControl.xaml:86	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Language/Intellisense/SignatureHelpPresenterControl.xaml:94	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Language/Intellisense/SignatureHelpPresenterControl.xaml:94	Button has no readable name.
+WT002	low	dnSpy/dnSpy/MainApp/AskDlg.xaml:45	TextBox "{Binding LabelMessage}" gets its ID "textBox" from x:Name.
+WT001	high	dnSpy/dnSpy/MainApp/AskDlg.xaml:53	Button "{x:Static p:dnSpy_Resources.Button_OK}" has no AutomationId.
+WT001	high	dnSpy/dnSpy/MainApp/AskDlg.xaml:54	Button "{x:Static p:dnSpy_Resources.Button_Canc…" has no AutomationId.
+WT005	medium	dnSpy/dnSpy/MainApp/InfoBar.xaml:25	Rows in ItemsControl have no unique ID.
+WT002	low	dnSpy/dnSpy/MainApp/InfoBar.xaml:36	Button [closeBtn] gets its ID "closeBtn" from x:Name.
+WT008	low	dnSpy/dnSpy/MainApp/InfoBar.xaml:36	Button [closeBtn] has no readable name.
+WT005	medium	dnSpy/dnSpy/MainApp/InfoBar.xaml:46	Rows in ItemsControl have no unique ID.
+WT001	high	dnSpy/dnSpy/MainApp/MsgBoxDlg.xaml:47	CheckBox "{x:Static p:dnSpy_Resources.MessageBoxD…" has no AutomationId.
+WT002	low	dnSpy/dnSpy/MainApp/MsgBoxDlg.xaml:48	Button "{x:Static p:dnSpy_Resources.Button_OK}" gets its ID "okButton" from x:Name.
+WT002	low	dnSpy/dnSpy/MainApp/MsgBoxDlg.xaml:49	Button "{x:Static p:dnSpy_Resources.Button_Yes}" gets its ID "yesButton" from x:Name.
+WT001	high	dnSpy/dnSpy/MainApp/MsgBoxDlg.xaml:50	Button "{x:Static p:dnSpy_Resources.Button_No}" has no AutomationId.
+WT001	high	dnSpy/dnSpy/MainApp/MsgBoxDlg.xaml:51	Button "{x:Static p:dnSpy_Resources.Button_Canc…" has no AutomationId.
+WT002	low	dnSpy/dnSpy/Output/OutputControl.xaml:49	ComboBox "{x:Static p:dnSpy_Resources.Output_Show…" gets its ID "categoriesComboBox" from x:Name.
+WT005	medium	dnSpy/dnSpy/Output/OutputControl.xaml:49	Rows in ComboBox "{x:Static p:dnSpy_Resources.Output_Show…" have no unique ID.
+WT001	high	dnSpy/dnSpy/Output/OutputControl.xaml:65	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Output/OutputControl.xaml:65	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Output/OutputControl.xaml:68	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Output/OutputControl.xaml:68	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Output/OutputControl.xaml:72	CheckBox has no AutomationId.
+WT008	low	dnSpy/dnSpy/Output/OutputControl.xaml:72	CheckBox has no readable name.
+WT002	low	dnSpy/dnSpy/Search/SearchControl.xaml:57	TextBox [searchTextBox] gets its ID "searchTextBox" from x:Name.
+WT008	low	dnSpy/dnSpy/Search/SearchControl.xaml:57	TextBox [searchTextBox] has no readable name.
+WT002	low	dnSpy/dnSpy/Search/SearchControl.xaml:58	Expander "{x:Static p:dnSpy_Resources.SearchWindo…" gets its ID "expander" from x:Name.
+WT001	high	dnSpy/dnSpy/Search/SearchControl.xaml:60	ComboBox has no AutomationId.
+WT005	medium	dnSpy/dnSpy/Search/SearchControl.xaml:60	Rows in ComboBox have no unique ID.
+WT008	low	dnSpy/dnSpy/Search/SearchControl.xaml:60	ComboBox has no readable name.
+WT001	high	dnSpy/dnSpy/Search/SearchControl.xaml:61	ComboBox has no AutomationId.
+WT005	medium	dnSpy/dnSpy/Search/SearchControl.xaml:61	Rows in ComboBox have no unique ID.
+WT008	low	dnSpy/dnSpy/Search/SearchControl.xaml:61	ComboBox has no readable name.
+WT001	high	dnSpy/dnSpy/Search/SearchControl.xaml:63	CheckBox "{x:Static p:dnSpy_Resources.SearchWindo…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Search/SearchControl.xaml:64	CheckBox "{x:Static p:dnSpy_Resources.SearchWindo…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Search/SearchControl.xaml:65	CheckBox "{x:Static p:dnSpy_Resources.SearchWindo…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Search/SearchControl.xaml:66	CheckBox "{x:Static p:dnSpy_Resources.SearchWindo…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Search/SearchControl.xaml:67	CheckBox "{x:Static p:dnSpy_Resources.SearchWindo…" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Search/SearchControl.xaml:68	CheckBox "{x:Static p:dnSpy_Resources.SearchWindo…" has no AutomationId.
+WT002	low	dnSpy/dnSpy/Search/SearchControl.xaml:72	ListBox [searchListBox] gets its ID "searchListBox" from x:Name.
+WT005	medium	dnSpy/dnSpy/Search/SearchControl.xaml:72	Rows in ListBox [searchListBox] have no unique ID.
+WT008	low	dnSpy/dnSpy/Search/SearchControl.xaml:72	ListBox [searchListBox] has no readable name.
+WT002	low	dnSpy/dnSpy/Settings/Dialog/AppSettingsDlg.xaml:356	TextBox [searchTextBox] gets its ID "searchTextBox" from x:Name.
+WT008	low	dnSpy/dnSpy/Settings/Dialog/AppSettingsDlg.xaml:356	TextBox [searchTextBox] has no readable name.
+WT001	high	dnSpy/dnSpy/Settings/Dialog/AppSettingsDlg.xaml:370	Button "{x:Static p:dnSpy_Resources.Button_OK}" has no AutomationId.
+WT001	high	dnSpy/dnSpy/Settings/Dialog/AppSettingsDlg.xaml:371	Button "{x:Static p:dnSpy_Resources.Button_Canc…" has no AutomationId.
+WT006	medium	dnSpy/dnSpy/Text/Editor/IntraTextAdornmentService.cs:282	ZoomingUIElement derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT001	high	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:169	ToggleButton has no AutomationId.
+WT008	low	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:169	ToggleButton has no readable name.
+WT002	low	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:171	TextBox [searchStringTextBox] gets its ID "searchStringTextBox" from x:Name.
+WT008	low	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:171	TextBox [searchStringTextBox] has no readable name.
+WT001	high	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:172	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:172	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:192	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:192	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:212	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:212	Button has no readable name.
+WT002	low	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:217	TextBox [replaceStringTextBox] gets its ID "replaceStringTextBox" from x:Name.
+WT008	low	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:217	TextBox [replaceStringTextBox] has no readable name.
+WT001	high	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:218	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:218	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:240	Button has no AutomationId.
+WT008	low	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:240	Button has no readable name.
+WT001	high	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:271	CheckBox has no AutomationId.
+WT008	low	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:271	CheckBox has no readable name.
+WT001	high	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:292	CheckBox has no AutomationId.
+WT008	low	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:292	CheckBox has no readable name.
+WT001	high	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:316	CheckBox has no AutomationId.
+WT008	low	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:316	CheckBox has no readable name.
+WT006	medium	dnSpy/dnSpy/Text/Editor/WpfTextViewHost.cs:35	WpfTextViewHost derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	dnSpy/Roslyn/dnSpy.Roslyn/Intellisense/Completions/CompletionToolTipProvider.cs:74	AsyncToolTipContent derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT001	high	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:44	TabControl has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:45	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:77	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.A…" gets its ID "nameTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:79	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.A…" gets its ID "cultureTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:88	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.A…" gets its ID "publicKeyTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:89	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:89	Button has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:106	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.A…" gets its ID "hashAlgorithmComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:106	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.A…" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:108	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.A…" gets its ID "processArchitectureComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:108	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.A…" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:110	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.A…" gets its ID "contentTypeComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:110	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.A…" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:112	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.A…" gets its ID "clrVersionComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:112	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.A…" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:131	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.A…" gets its ID "majorVersionTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:133	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:133	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:135	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:135	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:137	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:137	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:151	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.A…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:152	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.A…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:153	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.A…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:154	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.A…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:155	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.A…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:159	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:159	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:163	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.C…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:166	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.S…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:172	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:173	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Assembly/AssemblyOptionsDlg.xaml:174	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Compiler/EditCodeDlg.xaml:60	ListView [diagnosticsListView] gets its ID "diagnosticsListView" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Compiler/EditCodeDlg.xaml:60	Rows in ListView [diagnosticsListView] have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/Compiler/EditCodeDlg.xaml:60	ListView [diagnosticsListView] has no readable name.
+WT001	medium	Extensions/dnSpy.AsmEditor/Compiler/EditCodeDlg.xaml:90	Hyperlink "{Binding Code, Mode=OneWay}" (inside a list row template) has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Compiler/EditCodeDlg.xaml:133	ComboBox has no AutomationId.
+WT005	medium	Extensions/dnSpy.AsmEditor/Compiler/EditCodeDlg.xaml:133	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/Compiler/EditCodeDlg.xaml:133	ComboBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/Compiler/EditCodeDlg.xaml:134	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/Compiler/EditCodeDlg.xaml:134	Button has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/Compiler/EditCodeDlg.xaml:137	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/Compiler/EditCodeDlg.xaml:137	Button has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/Compiler/EditCodeDlg.xaml:140	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/Compiler/EditCodeDlg.xaml:140	Button has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/Compiler/EditCodeDlg.xaml:144	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Compiler/EditCodeDlg.xaml:145	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/CANamedArgumentControl.xaml:42	ComboBox has no AutomationId.
+WT005	medium	Extensions/dnSpy.AsmEditor/DnlibDialogs/CANamedArgumentControl.xaml:42	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/CANamedArgumentControl.xaml:42	ComboBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/CANamedArgumentControl.xaml:43	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/CANamedArgumentControl.xaml:43	Button has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/CANamedArgumentControl.xaml:45	ComboBox has no AutomationId.
+WT005	medium	Extensions/dnSpy.AsmEditor/DnlibDialogs/CANamedArgumentControl.xaml:45	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/CANamedArgumentControl.xaml:45	ComboBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/CANamedArgumentControl.xaml:48	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.C…" gets its ID "nameTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantControl.xaml:34	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.C…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:34	ComboBox has no AutomationId.
+WT005	medium	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:34	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:34	ComboBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:38	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:38	TextBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:41	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "booleanTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:43	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "charTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:45	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "sbyteTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:47	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "int16TextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:49	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "int32TextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:51	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "int64TextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:53	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "byteTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:55	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "uint16TextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:57	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "uint32TextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:59	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "uint64TextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:61	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "singleTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:63	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "doubleTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:65	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "stringTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:72	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "enumTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:73	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:73	Button has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:81	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "typeTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:82	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:82	Button has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:94	CheckBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:94	CheckBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:95	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "objectArrayTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:97	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:97	Button has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:98	Button "{x:Static p:dnSpy_AsmEditor_Resources.R…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:99	Button "{x:Static p:dnSpy_AsmEditor_Resources.C…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:107	CheckBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:107	CheckBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:108	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "booleanArrayTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:117	CheckBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:117	CheckBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:118	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "charArrayTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:127	CheckBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:127	CheckBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:128	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "sbyteArrayTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:137	CheckBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:137	CheckBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:138	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "int16ArrayTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:147	CheckBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:147	CheckBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:148	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "int32ArrayTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:157	CheckBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:157	CheckBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:158	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "int64ArrayTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:167	CheckBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:167	CheckBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:168	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "byteArrayTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:177	CheckBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:177	CheckBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:178	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "uint16ArrayTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:187	CheckBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:187	CheckBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:188	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "uint32ArrayTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:197	CheckBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:197	CheckBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:198	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "uint64ArrayTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:207	CheckBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:207	CheckBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:208	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "singleArrayTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:217	CheckBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:217	CheckBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:218	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "doubleArrayTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:227	CheckBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:227	CheckBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:228	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "stringArrayTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:238	CheckBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:238	CheckBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:239	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "enumArrayTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:241	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:241	Button has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:252	CheckBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:252	CheckBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:253	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.V…" gets its ID "typeArrayTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:255	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:255	Button has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:256	Button "{x:Static p:dnSpy_AsmEditor_Resources.R…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:257	Button "{x:Static p:dnSpy_AsmEditor_Resources.C…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeDlg.xaml:54	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeDlg.xaml:55	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/CreateTypeSigArrayControl.xaml:47	ListBox has no AutomationId.
+WT005	medium	Extensions/dnSpy.AsmEditor/DnlibDialogs/CreateTypeSigArrayControl.xaml:47	Rows in ListBox have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/CreateTypeSigArrayControl.xaml:47	ListBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/CreateTypeSigArrayControl.xaml:54	RepeatButton has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/CreateTypeSigArrayControl.xaml:54	RepeatButton has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/CreateTypeSigArrayControl.xaml:66	RepeatButton has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/CreateTypeSigArrayControl.xaml:66	RepeatButton has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/CreateTypeSigArrayDlg.xaml:57	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/CreateTypeSigArrayDlg.xaml:58	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/CreateTypeSigArrayDlg.xaml:59	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/CreateTypeSigArrayDlg.xaml:60	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/CustomAttributeControl.xaml:39	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/CustomAttributeControl.xaml:39	Button has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/CustomAttributeControl.xaml:40	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/CustomAttributeControl.xaml:40	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/CustomAttributeControl.xaml:47	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.R…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/CustomAttributeControl.xaml:48	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/CustomAttributeControl.xaml:48	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/CustomAttributeControl.xaml:51	ListBox has no AutomationId.
+WT005	medium	Extensions/dnSpy.AsmEditor/DnlibDialogs/CustomAttributeControl.xaml:51	Rows in ListBox have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/CustomAttributeControl.xaml:51	ListBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/CustomAttributeDlg.xaml:48	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/CustomAttributeDlg.xaml:49	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/CustomAttributeDlg.xaml:50	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/DeclSecurityControl.xaml:28	TabControl has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/DeclSecurityControl.xaml:29	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/DeclSecurityControl.xaml:41	ComboBox has no AutomationId.
+WT005	medium	Extensions/dnSpy.AsmEditor/DnlibDialogs/DeclSecurityControl.xaml:41	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/DeclSecurityControl.xaml:41	ComboBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/DeclSecurityControl.xaml:42	ComboBox has no AutomationId.
+WT005	medium	Extensions/dnSpy.AsmEditor/DnlibDialogs/DeclSecurityControl.xaml:42	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/DeclSecurityControl.xaml:42	ComboBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/DeclSecurityControl.xaml:50	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.X…" gets its ID "xmlTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/DeclSecurityControl.xaml:57	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.C…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/DeclSecurityDlg.xaml:46	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/DeclSecurityDlg.xaml:47	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/DeclSecurityDlg.xaml:48	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/GenericParamControl.xaml:25	TabControl has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/GenericParamControl.xaml:26	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/GenericParamControl.xaml:48	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.G…" gets its ID "nameTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/GenericParamControl.xaml:50	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.G…" gets its ID "seqTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/GenericParamControl.xaml:64	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.G…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/GenericParamControl.xaml:65	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.G…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/GenericParamControl.xaml:66	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.G…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/GenericParamControl.xaml:67	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.G…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/GenericParamControl.xaml:84	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.G…" gets its ID "varianceComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/DnlibDialogs/GenericParamControl.xaml:84	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.G…" have no unique ID.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/GenericParamControl.xaml:89	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.G…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/GenericParamControl.xaml:92	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.C…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/GenericParamControl.xaml:95	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.G…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/GenericParamDlg.xaml:46	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/GenericParamDlg.xaml:47	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/GenericParamDlg.xaml:48	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ImplMapControl.xaml:26	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.I…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ImplMapControl.xaml:43	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.I…" gets its ID "nameTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ImplMapControl.xaml:45	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.I…" gets its ID "moduleTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ImplMapControl.xaml:47	CheckBox "NoMangle" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ImplMapControl.xaml:48	CheckBox "SupportsLastError" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ImplMapControl.xaml:51	ComboBox "CharSet" gets its ID "charSetComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/DnlibDialogs/ImplMapControl.xaml:51	Rows in ComboBox "CharSet" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ImplMapControl.xaml:53	ComboBox "BestFit" gets its ID "bestFitComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/DnlibDialogs/ImplMapControl.xaml:53	Rows in ComboBox "BestFit" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ImplMapControl.xaml:56	ComboBox "ThrowOn..." gets its ID "throwOnComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/DnlibDialogs/ImplMapControl.xaml:56	Rows in ComboBox "ThrowOn..." have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ImplMapControl.xaml:58	ComboBox "CallConv" gets its ID "callConvComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/DnlibDialogs/ImplMapControl.xaml:58	Rows in ComboBox "CallConv" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ListVMControl.xaml:38	ListBox [listBox] gets its ID "listBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/DnlibDialogs/ListVMControl.xaml:38	Rows in ListBox [listBox] have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ListVMControl.xaml:38	ListBox [listBox] has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ListVMControl.xaml:51	RepeatButton has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ListVMControl.xaml:51	RepeatButton has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ListVMControl.xaml:60	RepeatButton has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ListVMControl.xaml:60	RepeatButton has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ListVMControl.xaml:70	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ListVMControl.xaml:71	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ListVMControl.xaml:72	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ListVMControl.xaml:73	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:41	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:43	ComboBox has no AutomationId.
+WT005	medium	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:43	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:43	ComboBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:47	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:47	TextBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:51	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "rawDataTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:55	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "fixedSysStrLenTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:59	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "safeArrayVTComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:59	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" have no unique ID.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:67	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:68	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:69	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:70	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:72	Expander "{Binding SafeArrayMarshalType_UserDefin…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:85	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "fixedArraySizeTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:87	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "fixedArrayElemTypeComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:87	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:91	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "arrayElemTypeComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:91	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:93	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "arrayParamNumTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:95	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "arrayNumElemsTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:97	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "arrayFlagsTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:101	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "customGuidTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:103	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "customNativeTypeNameTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:105	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "customCookieTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:106	Expander "{Binding CustomMarshalType_CustMarshale…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:119	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "ifaceIndexTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberPickerDlg.xaml:66	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.P…" gets its ID "searchTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberPickerDlg.xaml:67	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberPickerDlg.xaml:67	Button has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberPickerDlg.xaml:70	ComboBox has no AutomationId.
+WT005	medium	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberPickerDlg.xaml:70	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberPickerDlg.xaml:70	ComboBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberPickerDlg.xaml:73	ListBox [listBox] gets its ID "listBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberPickerDlg.xaml:73	Rows in ListBox [listBox] have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberPickerDlg.xaml:73	ListBox [listBox] has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberPickerDlg.xaml:90	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberPickerDlg.xaml:91	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberRefControl.xaml:28	TabControl has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberRefControl.xaml:29	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberRefControl.xaml:46	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "nameTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberRefControl.xaml:49	Button "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberRefControl.xaml:50	Button "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberRefControl.xaml:54	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberRefControl.xaml:67	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberRefControl.xaml:67	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberRefControl.xaml:77	Button "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberRefControl.xaml:78	Button "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberRefControl.xaml:79	Button "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberRefControl.xaml:80	Button "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberRefControl.xaml:84	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberRefControl.xaml:89	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberRefControl.xaml:94	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.C…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberRefDlg.xaml:46	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberRefDlg.xaml:47	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MemberRefDlg.xaml:48	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSigCreatorControl.xaml:42	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSigCreatorControl.xaml:42	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSigCreatorControl.xaml:56	CheckBox "HasThis" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSigCreatorControl.xaml:57	CheckBox "ExplicitThis" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSigCreatorControl.xaml:59	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "methodCallingConvComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSigCreatorControl.xaml:59	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" have no unique ID.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSigCreatorControl.xaml:60	Button "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSigCreatorControl.xaml:62	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "genericParameterCountTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSigCreatorControl.xaml:65	Expander "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSigCreatorControl.xaml:81	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSigCreatorControl.xaml:82	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSigCreatorControl.xaml:86	Expander "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSigCreatorControl.xaml:103	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSigCreatorControl.xaml:104	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSigCreatorDlg.xaml:56	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSigCreatorDlg.xaml:57	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSpecControl.xaml:25	TabControl has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSpecControl.xaml:26	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSpecControl.xaml:37	Button "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSpecControl.xaml:38	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSpecControl.xaml:38	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSpecControl.xaml:42	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSpecControl.xaml:56	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSpecControl.xaml:57	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSpecControl.xaml:62	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.C…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSpecDlg.xaml:46	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSpecDlg.xaml:47	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/MethodSpecDlg.xaml:48	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ParamDefControl.xaml:25	TabControl has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ParamDefControl.xaml:26	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ParamDefControl.xaml:48	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.P…" gets its ID "nameTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/ParamDefControl.xaml:50	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.P…" gets its ID "seqTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ParamDefControl.xaml:62	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.P…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ParamDefControl.xaml:63	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.P…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ParamDefControl.xaml:64	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.P…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ParamDefControl.xaml:65	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.P…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ParamDefControl.xaml:66	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.P…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ParamDefControl.xaml:74	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ParamDefControl.xaml:79	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.C…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ParamDefDlg.xaml:46	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ParamDefDlg.xaml:47	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/ParamDefDlg.xaml:48	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/SecurityAttributeControl.xaml:35	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/SecurityAttributeControl.xaml:35	Button has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/SecurityAttributeControl.xaml:36	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/SecurityAttributeControl.xaml:36	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/SecurityAttributeDlg.xaml:48	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/SecurityAttributeDlg.xaml:49	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/SecurityAttributeDlg.xaml:50	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeDefOrRefAndCAControl.xaml:25	TabControl has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeDefOrRefAndCAControl.xaml:26	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.T…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeDefOrRefAndCAControl.xaml:29	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.C…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeDefOrRefAndCADlg.xaml:45	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeDefOrRefAndCADlg.xaml:46	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeDefOrRefAndCADlg.xaml:47	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:48	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:48	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:58	Button "{x:Static p:dnSpy_AsmEditor_Resources.T…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:59	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:60	ComboBox has no AutomationId.
+WT005	medium	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:60	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:60	ComboBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:72	Button "{x:Static p:dnSpy_AsmEditor_Resources.T…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:73	Button "{x:Static p:dnSpy_AsmEditor_Resources.T…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:74	Button "{x:Static p:dnSpy_AsmEditor_Resources.T…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:81	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.T…" gets its ID "genVarNumberTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:83	Button "{x:Static p:dnSpy_AsmEditor_Resources.T…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:84	Button "{x:Static p:dnSpy_AsmEditor_Resources.T…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:95	Button "{x:Static p:dnSpy_AsmEditor_Resources.T…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:96	Button "{x:Static p:dnSpy_AsmEditor_Resources.T…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:97	Button "{x:Static p:dnSpy_AsmEditor_Resources.T…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:98	Button "{x:Static p:dnSpy_AsmEditor_Resources.T…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:99	Button "{x:Static p:dnSpy_AsmEditor_Resources.T…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:100	Button "{x:Static p:dnSpy_AsmEditor_Resources.T…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:115	Button "{x:Static p:dnSpy_AsmEditor_Resources.T…" gets its ID "arrayButton" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:117	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.T…" gets its ID "rankTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:126	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.T…" gets its ID "arraySizesTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorControl.xaml:128	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.T…" gets its ID "arrayLowerBoundsTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorDlg.xaml:45	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorDlg.xaml:46	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/DnlibDialogs/TypeSigCreatorDlg.xaml:47	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:43	TabControl has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:44	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:66	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.E…" gets its ID "nameTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:75	CheckBox "SpecialName" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:76	CheckBox "RTSpecialName" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:82	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.T…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:87	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:101	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:102	Button "{x:Static p:dnSpy_AsmEditor_Resources.E…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:103	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:103	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:105	Button "{x:Static p:dnSpy_AsmEditor_Resources.E…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:106	Button "{x:Static p:dnSpy_AsmEditor_Resources.E…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:107	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:107	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:109	Button "{x:Static p:dnSpy_AsmEditor_Resources.E…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:110	Button "{x:Static p:dnSpy_AsmEditor_Resources.E…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:111	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:111	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:114	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.O…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:117	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.C…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:123	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:124	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Event/EventOptionsDlg.xaml:125	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:43	TabControl has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:44	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:67	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.F…" gets its ID "nameTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:69	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.F…" gets its ID "accessComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:69	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.F…" have no unique ID.
+WT001	high	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:83	CheckBox "Static" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:84	CheckBox "InitOnly" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:85	CheckBox "Literal" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:86	CheckBox "NotSerialized" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:87	CheckBox "SpecialName" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:88	CheckBox "RTSpecialName" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:106	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.F…" gets its ID "fieldOffsetTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:107	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.F…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:110	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.F…" gets its ID "initialValueTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:112	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.F…" gets its ID "rvaTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:117	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.T…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:122	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:127	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.I…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:132	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.C…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:138	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:139	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Field/FieldOptionsDlg.xaml:140	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:43	TabControl has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:44	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:64	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "nameTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:79	CheckBox "ForwardRef" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:80	CheckBox "PreserveSig" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:81	CheckBox "InternalCall" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:82	CheckBox "Synchronized" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:83	CheckBox "NoInlining" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:84	CheckBox "AggressiveInlining" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:85	CheckBox "NoOptimization" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:86	CheckBox "AggressiveOptimization" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:87	CheckBox "SecurityMitigations" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:104	CheckBox "Static" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:105	CheckBox "Final" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:106	CheckBox "Virtual" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:107	CheckBox "HideBySig" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:108	CheckBox "CheckAccessOnOverride" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:109	CheckBox "Abstract" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:110	CheckBox "SpecialName" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:111	CheckBox "RTSpecialName" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:112	CheckBox "UnmanagedExport" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:113	CheckBox "RequireSecObject" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:130	ComboBox "CodeType" gets its ID "codeTypeComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:130	Rows in ComboBox "CodeType" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:132	ComboBox "ManagedType" gets its ID "managedTypeComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:132	Rows in ComboBox "ManagedType" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:135	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "accessComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:135	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:137	ComboBox "VtableLayout" gets its ID "vtableLayoutComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:137	Rows in ComboBox "VtableLayout" have no unique ID.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:142	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:147	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:150	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.G…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:153	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.I…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:158	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:161	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.C…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:164	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.S…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:170	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:171	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:172	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT006	high	Extensions/dnSpy.AsmEditor/MethodBody/InstructionOperandControl.cs:29	InstructionOperandControl derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 1 time(s) in XAML.
+WT001	high	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:44	TabControl has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:45	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.I…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:59	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "methodBodyTypeComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:59	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:61	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "codeTypeComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:61	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:73	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "rvaTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:93	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:94	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:96	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "rva2TextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:98	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "fileOffsetTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:100	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "maxStackTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:102	TextBox "LocalVarSigTok" gets its ID "localVarSigTokTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:107	ListView [instructionsListView] gets its ID "instructionsListView" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:107	Rows in ListView [instructionsListView] have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:107	ListView [instructionsListView] has no readable name.
+WT001	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:141	ComboBox (inside a list row template) has no AutomationId.
+WT005	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:141	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:141	ComboBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:187	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.L…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:188	ListView [localsListView] gets its ID "localsListView" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:188	Rows in ListView [localsListView] have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:188	ListView [localsListView] has no readable name.
+WT001	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:211	CheckBox (inside a list row template) has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:211	CheckBox has no readable name.
+WT001	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:218	CheckBox (inside a list row template) has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:218	CheckBox has no readable name.
+WT001	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:226	TextBox (inside a list row template) has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:226	TextBox has no readable name.
+WT001	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:233	mbody:FastClickButton "{Binding Type, Mode=OneWay, Converter={…" (inside a list row template) has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:241	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.E…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:242	ListView [ehListView] gets its ID "ehListView" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:242	Rows in ListView [ehListView] have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:242	ListView [ehListView] has no readable name.
+WT001	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:265	ComboBox (inside a list row template) has no AutomationId.
+WT005	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:265	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:265	ComboBox has no readable name.
+WT001	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:278	ComboBox (inside a list row template) has no AutomationId.
+WT005	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:278	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:278	ComboBox has no readable name.
+WT001	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:291	ComboBox (inside a list row template) has no AutomationId.
+WT005	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:291	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:291	ComboBox has no readable name.
+WT001	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:304	ComboBox (inside a list row template) has no AutomationId.
+WT005	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:304	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:304	ComboBox has no readable name.
+WT001	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:317	ComboBox (inside a list row template) has no AutomationId.
+WT005	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:317	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:317	ComboBox has no readable name.
+WT001	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:331	ComboBox (inside a list row template) has no AutomationId.
+WT005	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:331	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:331	ComboBox has no readable name.
+WT001	medium	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:345	mbody:FastClickButton "{Binding CatchType, Mode=OneWay, Conver…" (inside a list row template) has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyDlg.xaml:46	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyDlg.xaml:47	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/MethodBody/MethodBodyDlg.xaml:48	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/MethodBody/SwitchOperandControl.xaml:49	ComboBox has no AutomationId.
+WT005	medium	Extensions/dnSpy.AsmEditor/MethodBody/SwitchOperandControl.xaml:49	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/MethodBody/SwitchOperandControl.xaml:49	ComboBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/MethodBody/SwitchOperandControl.xaml:59	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/MethodBody/SwitchOperandControl.xaml:60	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/MethodBody/SwitchOperandControl.xaml:62	ListBox [listBox] gets its ID "listBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/MethodBody/SwitchOperandControl.xaml:62	Rows in ListBox [listBox] have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/MethodBody/SwitchOperandControl.xaml:62	ListBox [listBox] has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/MethodBody/SwitchOperandDlg.xaml:46	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/MethodBody/SwitchOperandDlg.xaml:47	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/MethodBody/SwitchOperandDlg.xaml:48	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:46	TabControl has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:47	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:59	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "nameTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:73	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "moduleKindComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:73	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:76	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "clrVersionComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:76	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:93	TextBox "Mvid" gets its ID "mvidTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:94	Button "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:97	TextBox "EncId" gets its ID "encIdTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:98	Button "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:101	TextBox "EncBaseId" gets its ID "encBaseIdTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:102	Button "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:116	RadioButton "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:117	RadioButton "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:118	Button "{Binding EntryPointName}" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:119	RadioButton "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:120	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:120	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:126	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:139	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "versionStringTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:141	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "headerVersionTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:146	TabItem "Cor20" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:159	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "runtimeVersionTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:173	CheckBox "ILOnly" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:174	CheckBox "ILLibrary" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:175	CheckBox "32BitRequired" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:176	CheckBox "32BitPreferred" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:177	CheckBox "TrackDebugData" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:178	CheckBox "StrongNameSigned" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:184	TabItem "PE" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:199	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" gets its ID "machineComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:199	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.M…" have no unique ID.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:218	CheckBox "Relocs Stripped" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:219	CheckBox "Executable Image" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:220	CheckBox "Line Nums Stripped" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:221	CheckBox "Local Syms Stripped" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:222	CheckBox "Aggressive WS Trim" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:223	CheckBox "Large Address Aware" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:224	CheckBox "Reserved 0040h" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:225	CheckBox "Bytes Reversed Lo" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:226	CheckBox "32-Bit Machine" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:227	CheckBox "Debug Stripped" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:228	CheckBox "Removable Run From Swap" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:229	CheckBox "Net Run From Swap" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:230	CheckBox "System" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:231	CheckBox "Dll" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:232	CheckBox "Up System Only" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:233	CheckBox "Bytes Reversed Hi" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:253	CheckBox "Reserved1" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:254	CheckBox "Reserved2" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:255	CheckBox "Reserved3" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:256	CheckBox "Reserved4" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:257	CheckBox "Reserved5" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:258	CheckBox "High Entropy VA" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:259	CheckBox "Dynamic Base" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:260	CheckBox "Force Integrity" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:261	CheckBox "NX Compat" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:262	CheckBox "No Isolation" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:263	CheckBox "No SEH" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:264	CheckBox "No Bind" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:265	CheckBox "AppContainer" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:266	CheckBox "WDM Driver" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:267	CheckBox "Guard CF" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:268	CheckBox "Terminal Server Aware" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:275	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.C…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:281	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:282	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:283	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Module/NetModuleOptionsDlg.xaml:56	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.N…" gets its ID "nameTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/Module/NetModuleOptionsDlg.xaml:59	TextBox "Mvid" gets its ID "mvidTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/NetModuleOptionsDlg.xaml:60	Button "{x:Static p:dnSpy_AsmEditor_Resources.N…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Module/NetModuleOptionsDlg.xaml:63	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.N…" gets its ID "clrVersionComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Module/NetModuleOptionsDlg.xaml:63	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.N…" have no unique ID.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/NetModuleOptionsDlg.xaml:68	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Module/NetModuleOptionsDlg.xaml:69	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Namespace/NamespaceDlg.xaml:52	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.N…" gets its ID "nameTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/Namespace/NamespaceDlg.xaml:56	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Namespace/NamespaceDlg.xaml:57	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Namespace/NamespaceDlg.xaml:58	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Property/PropertyOptionsDlg.xaml:43	TabControl has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Property/PropertyOptionsDlg.xaml:44	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Property/PropertyOptionsDlg.xaml:67	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.P…" gets its ID "nameTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/Property/PropertyOptionsDlg.xaml:76	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.P…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Property/PropertyOptionsDlg.xaml:77	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.P…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Property/PropertyOptionsDlg.xaml:85	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.P…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Property/PropertyOptionsDlg.xaml:90	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.P…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Property/PropertyOptionsDlg.xaml:93	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.P…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Property/PropertyOptionsDlg.xaml:96	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.P…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Property/PropertyOptionsDlg.xaml:99	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.C…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Property/PropertyOptionsDlg.xaml:105	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Property/PropertyOptionsDlg.xaml:106	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Property/PropertyOptionsDlg.xaml:107	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Resources/ImageListDlg.xaml:56	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.R…" gets its ID "nameTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/Resources/ImageListDlg.xaml:58	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.R…" gets its ID "colorDepthComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Resources/ImageListDlg.xaml:58	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.R…" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/Resources/ImageListDlg.xaml:60	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.R…" gets its ID "transpColorTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/Resources/ImageListDlg.xaml:70	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.R…" gets its ID "withTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/Resources/ImageListDlg.xaml:72	TextBox [heightTextBox] gets its ID "heightTextBox" from x:Name.
+WT008	low	Extensions/dnSpy.AsmEditor/Resources/ImageListDlg.xaml:72	TextBox [heightTextBox] has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/Resources/ImageListDlg.xaml:79	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Resources/ImageListDlg.xaml:80	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Resources/ImageListDlg.xaml:81	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Resources/ImageResourceElementControl.xaml:37	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.R…" gets its ID "nameTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/Resources/ImageResourceElementControl.xaml:39	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.R…" gets its ID "dataTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/Resources/ImageResourceElementControl.xaml:40	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/Resources/ImageResourceElementControl.xaml:40	Button has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/Resources/ImageResourceElementDlg.xaml:48	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Resources/ImageResourceElementDlg.xaml:49	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Resources/ImageResourceElementDlg.xaml:50	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Resources/ResourceControl.xaml:43	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.R…" gets its ID "nameTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/Resources/ResourceControl.xaml:45	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.E…" gets its ID "visibilityComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Resources/ResourceControl.xaml:45	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.E…" have no unique ID.
+WT001	high	Extensions/dnSpy.AsmEditor/Resources/ResourceControl.xaml:46	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Resources/ResourceControl.xaml:47	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/Resources/ResourceControl.xaml:47	TextBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/Resources/ResourceControl.xaml:49	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.E…" gets its ID "fileNameTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/Resources/ResourceControl.xaml:51	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.E…" gets its ID "fileHashValueTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/Resources/ResourceControl.xaml:52	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.E…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Resources/ResourceDlg.xaml:44	TabControl has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Resources/ResourceDlg.xaml:45	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Resources/ResourceDlg.xaml:48	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.C…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Resources/ResourceDlg.xaml:54	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Resources/ResourceDlg.xaml:55	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Resources/ResourceDlg.xaml:56	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Resources/ResourceElementControl.xaml:42	ComboBox [typeComboBox] gets its ID "typeComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Resources/ResourceElementControl.xaml:42	Rows in ComboBox [typeComboBox] have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/Resources/ResourceElementControl.xaml:42	ComboBox [typeComboBox] has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/Resources/ResourceElementControl.xaml:44	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.R…" gets its ID "nameTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/Resources/ResourceElementControl.xaml:46	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.R…" gets its ID "serTypeTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/Resources/ResourceElementControl.xaml:47	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/Resources/ResourceElementControl.xaml:47	Button has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/Resources/ResourceElementControl.xaml:49	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.R…" gets its ID "valueTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/Resources/ResourceElementControl.xaml:51	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.R…" gets its ID "rawBytesTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/Resources/ResourceElementControl.xaml:52	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/Resources/ResourceElementControl.xaml:52	Button has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/Resources/ResourceElementControl.xaml:54	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.R…" gets its ID "multiLineTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/Resources/ResourceElementDlg.xaml:46	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Resources/ResourceElementDlg.xaml:47	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Resources/ResourceElementDlg.xaml:48	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveHexOptionsDlg.xaml:55	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" gets its ID "filenameTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveHexOptionsDlg.xaml:56	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveHexOptionsDlg.xaml:56	Button has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveHexOptionsDlg.xaml:60	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveHexOptionsDlg.xaml:61	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:42	TabControl has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:43	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:55	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:56	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:57	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:62	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" gets its ID "moduleKindComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:62	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:76	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" gets its ID "filenameTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:77	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:77	Button has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:87	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:92	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:107	CheckBox "TypeRef" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:108	CheckBox "TypeDef" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:109	CheckBox "Field" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:110	CheckBox "Method" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:111	CheckBox "Param" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:112	CheckBox "MemberRef" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:113	CheckBox "StandAloneSig" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:114	CheckBox "Event" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:115	CheckBox "Property" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:116	CheckBox "TypeSpec" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:117	CheckBox "MethodSpec" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:122	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:134	CheckBox "#Strings" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:135	CheckBox "#US" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:136	CheckBox "#Blob" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:141	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:154	CheckBox "#Strings" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:155	CheckBox "#US" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:156	CheckBox "#Blob" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:157	CheckBox "#Guid" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:170	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:171	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:172	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:178	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:197	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" gets its ID "signatureTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:199	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" gets its ID "versionStringTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:201	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" gets its ID "majorVersionTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:203	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" gets its ID "minorVersionTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:205	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" gets its ID "reserved1TextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:207	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" gets its ID "reserved2TextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:209	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" gets its ID "storageFlagsTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:229	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" gets its ID "majorVersionTextBox2" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:231	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" gets its ID "minorVersionTextBox2" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:233	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" gets its ID "reserved1TextBox2" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:235	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" gets its ID "extraDataTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:237	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" gets its ID "log2RidTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:238	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:239	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:240	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:246	TabItem "Cor20" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:261	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" gets its ID "majorRuntimeVersionTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:263	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" gets its ID "minorRuntimeVersionTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:265	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" gets its ID "entryPointTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:279	CheckBox "ILOnly" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:280	CheckBox "ILLibrary" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:281	CheckBox "32BitRequired" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:282	CheckBox "32BitPreferred" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:283	CheckBox "TrackDebugData" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:284	CheckBox "StrongNameSigned" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:290	TabItem "PE" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:293	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:294	CheckBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:335	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" gets its ID "machineComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:335	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:338	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" gets its ID "subsystemComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:338	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.S…" have no unique ID.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:357	CheckBox "Relocs Stripped" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:358	CheckBox "Executable Image" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:359	CheckBox "Line Nums Stripped" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:360	CheckBox "Local Syms Stripped" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:361	CheckBox "Aggressive WS Trim" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:362	CheckBox "Large Address Aware" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:363	CheckBox "Reserved 0040h" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:364	CheckBox "Bytes Reversed Lo" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:365	CheckBox "32-Bit Machine" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:366	CheckBox "Debug Stripped" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:367	CheckBox "Removable Run From Swap" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:368	CheckBox "Net Run From Swap" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:369	CheckBox "System" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:370	CheckBox "Dll" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:371	CheckBox "Up System Only" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:372	CheckBox "Bytes Reversed Hi" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:392	CheckBox "Reserved1" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:393	CheckBox "Reserved2" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:394	CheckBox "Reserved3" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:395	CheckBox "Reserved4" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:396	CheckBox "Reserved5" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:397	CheckBox "High Entropy VA" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:398	CheckBox "Dynamic Base" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:399	CheckBox "Force Integrity" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:400	CheckBox "NX Compat" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:401	CheckBox "No Isolation" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:402	CheckBox "No SEH" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:403	CheckBox "No Bind" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:404	CheckBox "AppContainer" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:405	CheckBox "WDM Driver" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:406	CheckBox "Guard CF" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:407	CheckBox "Terminal Server Aware" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:412	TextBox "TimeDateStamp" gets its ID "timeDateStampTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:415	TextBox "PointerToSymbolTable" gets its ID "pointerToSymbolTableTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:418	TextBox "NumberOfSymbols" gets its ID "numberOfSymbolsTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:421	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:421	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:424	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:424	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:427	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:427	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:430	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:430	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:433	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:433	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:436	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:436	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:439	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:439	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:442	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:442	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:445	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:445	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:448	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:448	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:451	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:451	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:454	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:454	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:457	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:457	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:460	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:460	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:463	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:463	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:466	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:466	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:469	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:469	TextBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:472	TextBox "NumberOfRvaAndSizes" gets its ID "numberOfRvaAndSizesTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:479	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:480	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:481	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveMultiModuleDlg.xaml:57	ListBox [listBox] gets its ID "listBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/SaveModule/SaveMultiModuleDlg.xaml:57	Rows in ListBox [listBox] have no unique ID.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveMultiModuleDlg.xaml:57	ListBox [listBox] has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveMultiModuleDlg.xaml:71	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveMultiModuleDlg.xaml:71	TextBox has no readable name.
+WT002	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveMultiModuleDlg.xaml:141	Button "{x:Static p:dnSpy_AsmEditor_Resources.S…" gets its ID "optionsButton" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveMultiModuleDlg.xaml:149	Button "{x:Static p:dnSpy_AsmEditor_Resources.S…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveMultiModuleDlg.xaml:156	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveMultiModuleDlg.xaml:162	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveMultiModuleDlg.xaml:169	Button "{x:Static p:dnSpy_AsmEditor_Resources.S…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveSingleModuleDlg.xaml:58	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.AsmEditor/SaveModule/SaveSingleModuleDlg.xaml:58	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveSingleModuleDlg.xaml:98	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/SaveModule/SaveSingleModuleDlg.xaml:105	Button "{x:Static p:dnSpy_AsmEditor_Resources.S…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:43	TabControl has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:44	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.M…" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:69	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.T…" gets its ID "nsTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:71	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.T…" gets its ID "nameTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:73	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.T…" gets its ID "packingSizeTextBox" from x:Name.
+WT002	low	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:75	TextBox "{x:Static p:dnSpy_AsmEditor_Resources.T…" gets its ID "classSizeTextBox" from x:Name.
+WT001	high	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:90	CheckBox "Abstract" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:91	CheckBox "Sealed" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:92	CheckBox "Serializable" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:93	CheckBox "Import" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:94	CheckBox "SpecialName" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:95	CheckBox "RTSpecialName" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:96	CheckBox "WindowsRuntime" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:97	CheckBox "BeforeFieldInit" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:98	CheckBox "Forwarder" has no AutomationId.
+WT002	low	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:117	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.T…" gets its ID "typeKindComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:117	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.T…" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:119	ComboBox "{Binding VisibilityAccessbilityText}" gets its ID "visibilityComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:119	Rows in ComboBox "{Binding VisibilityAccessbilityText}" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:121	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.T…" gets its ID "layoutComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:121	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.T…" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:124	ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.T…" gets its ID "stringFormatComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:124	Rows in ComboBox "{x:Static p:dnSpy_AsmEditor_Resources.T…" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:126	ComboBox "Semantics" gets its ID "semanticsComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:126	Rows in ComboBox "Semantics" have no unique ID.
+WT002	low	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:128	ComboBox "Custom" gets its ID "customFormatComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:128	Rows in ComboBox "Custom" have no unique ID.
+WT001	high	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:133	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:138	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.G…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:141	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.I…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:144	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.C…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:147	TabItem "{x:Static p:dnSpy_AsmEditor_Resources.S…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:153	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:154	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.AsmEditor/Types/TypeOptionsDlg.xaml:155	Button "{x:Static p:dnSpy_AsmEditor_Resources.B…" has no AutomationId.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger.DotNet/Metadata/ModuleLoaderDlg.xaml:47	Button "{x:Static p:dnSpy_Debugger_DotNet_Resou…" has no AutomationId.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Breakpoints/Code/TextEditor/BreakpointGlyphPopupControl.xaml:75	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/Breakpoints/Code/TextEditor/BreakpointGlyphPopupControl.xaml:75	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Breakpoints/Code/TextEditor/BreakpointGlyphPopupControl.xaml:78	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/Breakpoints/Code/TextEditor/BreakpointGlyphPopupControl.xaml:78	Button has no readable name.
+WT002	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/AttachToProcess/AttachToProcessDlg.xaml:52	TextBox [searchTextBox] gets its ID "searchTextBox" from x:Name.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/AttachToProcess/AttachToProcessDlg.xaml:52	TextBox [searchTextBox] has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/AttachToProcess/AttachToProcessDlg.xaml:54	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/AttachToProcess/AttachToProcessDlg.xaml:54	Button has no readable name.
+WT002	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/AttachToProcess/AttachToProcessDlg.xaml:59	ListView [listView] gets its ID "listView" from x:Name.
+WT005	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/AttachToProcess/AttachToProcessDlg.xaml:59	Rows in ListView [listView] have no unique ID.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/AttachToProcess/AttachToProcessDlg.xaml:59	ListView [listView] has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/AttachToProcess/AttachToProcessDlg.xaml:139	Button "{x:Static p:dnSpy_Debugger_Resources.Bu…" has no AutomationId.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/AttachToProcess/AttachToProcessDlg.xaml:142	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/AttachToProcess/AttachToProcessDlg.xaml:142	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/AttachToProcess/AttachToProcessDlg.xaml:145	Button "{x:Static p:dnSpy_Debugger_Resources.Bu…" has no AutomationId.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/AttachToProcess/AttachToProcessDlg.xaml:146	Button "{x:Static p:dnSpy_Debugger_Resources.Bu…" has no AutomationId.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:54	CheckBox "{x:Static p:dnSpy_Debugger_Resources.Ed…" has no AutomationId.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:55	ComboBox has no AutomationId.
+WT005	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:55	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:55	ComboBox has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:56	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:56	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:58	CheckBox "{x:Static p:dnSpy_Debugger_Resources.Ed…" has no AutomationId.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:59	ComboBox has no AutomationId.
+WT005	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:59	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:59	ComboBox has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:60	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:60	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:62	CheckBox "{x:Static p:dnSpy_Debugger_Resources.Ed…" has no AutomationId.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:63	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:63	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:64	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:64	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:68	CheckBox "{x:Static p:dnSpy_Debugger_Resources.Ed…" has no AutomationId.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:69	CheckBox "{x:Static p:dnSpy_Debugger_Resources.Ed…" has no AutomationId.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:70	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:70	TextBox has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:71	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:71	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:83	Button "{x:Static p:dnSpy_Debugger_Resources.Bu…" has no AutomationId.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/CodeBreakpoints/ShowCodeBreakpointSettingsDlg.xaml:84	Button "{x:Static p:dnSpy_Debugger_Resources.Bu…" has no AutomationId.
+WT002	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/DebugProgram/DebugProgramDlg.xaml:53	ComboBox "{x:Static p:dnSpy_Debugger_Resources.Db…" gets its ID "debugEngineComboBox" from x:Name.
+WT005	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/DebugProgram/DebugProgramDlg.xaml:53	Rows in ComboBox "{x:Static p:dnSpy_Debugger_Resources.Db…" have no unique ID.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/DebugProgram/DebugProgramDlg.xaml:67	Button "{x:Static p:dnSpy_Debugger_Resources.Bu…" has no AutomationId.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/DebugProgram/DebugProgramDlg.xaml:68	Button "{x:Static p:dnSpy_Debugger_Resources.Bu…" has no AutomationId.
+WT002	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/EditEnvironment/EditEnvironmentDlg.xaml:44	ListView [listView] gets its ID "listView" from x:Name.
+WT005	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/EditEnvironment/EditEnvironmentDlg.xaml:44	Rows in ListView [listView] have no unique ID.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/EditEnvironment/EditEnvironmentDlg.xaml:44	ListView [listView] has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/EditEnvironment/EditEnvironmentDlg.xaml:81	Button "{x:Static p:dnSpy_Debugger_Resources.Ad…" has no AutomationId.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/EditEnvironment/EditEnvironmentDlg.xaml:82	Button "{x:Static p:dnSpy_Debugger_Resources.Ad…" has no AutomationId.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/EditEnvironment/EditEnvironmentDlg.xaml:83	Button "{x:Static p:dnSpy_Debugger_Resources.Re…" has no AutomationId.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/EditEnvironment/EditEnvironmentDlg.xaml:84	Button "{x:Static p:dnSpy_Debugger_Resources.Re…" has no AutomationId.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/EditEnvironment/EditEnvironmentDlg.xaml:94	Button "{x:Static p:dnSpy_Debugger_Resources.Bu…" has no AutomationId.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/Dialogs/EditEnvironment/EditEnvironmentDlg.xaml:95	Button "{x:Static p:dnSpy_Debugger_Resources.Bu…" has no AutomationId.
+WT002	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CallStack/CallStackControl.xaml:30	ListView [listView] gets its ID "listView" from x:Name.
+WT005	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CallStack/CallStackControl.xaml:30	Rows in ListView [listView] have no unique ID.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CallStack/CallStackControl.xaml:30	ListView [listView] has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:52	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:52	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:56	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:56	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:59	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:59	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:63	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:63	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:66	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:66	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:70	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:70	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:73	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:73	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:77	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:77	Button has no readable name.
+WT002	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:83	TextBox [searchTextBox] gets its ID "searchTextBox" from x:Name.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:83	TextBox [searchTextBox] has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:85	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:85	Button has no readable name.
+WT002	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:90	ListView [listView] gets its ID "listView" from x:Name.
+WT005	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:90	Rows in ListView [listView] have no unique ID.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:90	ListView [listView] has no readable name.
+WT001	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:120	CheckBox (inside a list row template) has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:120	CheckBox has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:186	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/CodeBreakpoints/CodeBreakpointsControl.xaml:186	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/AddExceptionControl.xaml:31	Button "{x:Static p:dnSpy_Debugger_Resources.Ad…" has no AutomationId.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/AddExceptionControl.xaml:32	ComboBox has no AutomationId.
+WT005	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/AddExceptionControl.xaml:32	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/AddExceptionControl.xaml:32	ComboBox has no readable name.
+WT002	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/AddExceptionControl.xaml:33	TextBox [nameCodeTextBox] gets its ID "nameCodeTextBox" from x:Name.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/AddExceptionControl.xaml:33	TextBox [nameCodeTextBox] has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/AddExceptionControl.xaml:34	TextBox has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/AddExceptionControl.xaml:34	TextBox has no readable name.
+WT005	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/EditExceptionConditionsDlg.xaml:44	Rows in ItemsControl have no unique ID.
+WT001	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/EditExceptionConditionsDlg.xaml:63	ComboBox (inside a list row template) has no AutomationId.
+WT005	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/EditExceptionConditionsDlg.xaml:63	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/EditExceptionConditionsDlg.xaml:63	ComboBox has no readable name.
+WT001	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/EditExceptionConditionsDlg.xaml:64	TextBox (inside a list row template) has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/EditExceptionConditionsDlg.xaml:64	TextBox has no readable name.
+WT001	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/EditExceptionConditionsDlg.xaml:65	Button (inside a list row template) has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/EditExceptionConditionsDlg.xaml:65	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/EditExceptionConditionsDlg.xaml:81	Button "{x:Static p:dnSpy_Debugger_Resources.Bu…" has no AutomationId.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/EditExceptionConditionsDlg.xaml:82	Button "{x:Static p:dnSpy_Debugger_Resources.Bu…" has no AutomationId.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/EditExceptionConditionsDlg.xaml:83	Button "{x:Static p:dnSpy_Debugger_Resources.Bu…" has no AutomationId.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:52	CheckBox has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:52	CheckBox has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:56	CheckBox has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:56	CheckBox has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:59	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:59	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:62	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:62	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:65	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:65	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:68	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:68	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:72	ComboBox has no AutomationId.
+WT005	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:72	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:72	ComboBox has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:74	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:74	Button has no readable name.
+WT002	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:80	TextBox [searchTextBox] gets its ID "searchTextBox" from x:Name.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:80	TextBox [searchTextBox] has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:82	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:82	Button has no readable name.
+WT002	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:88	ListView [listView] gets its ID "listView" from x:Name.
+WT005	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:88	Rows in ListView [listView] have no unique ID.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:88	ListView [listView] has no readable name.
+WT001	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:117	CheckBox (inside a list row template) has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:117	CheckBox has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:146	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:146	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:52	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:52	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:55	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:55	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:59	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:59	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:62	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:62	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:66	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:66	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:69	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:69	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:73	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:73	Button has no readable name.
+WT002	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:79	TextBox [searchTextBox] gets its ID "searchTextBox" from x:Name.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:79	TextBox [searchTextBox] has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:81	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:81	Button has no readable name.
+WT002	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:86	ListView [listView] gets its ID "listView" from x:Name.
+WT005	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:86	Rows in ListView [listView] have no unique ID.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:86	ListView [listView] has no readable name.
+WT001	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:110	CheckBox (inside a list row template) has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:110	CheckBox has no readable name.
+WT001	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:124	CheckBox (inside a list row template) has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:124	CheckBox has no readable name.
+WT001	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:131	CheckBox (inside a list row template) has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:131	CheckBox has no readable name.
+WT001	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:138	CheckBox (inside a list row template) has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:138	CheckBox has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:172	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/ModuleBreakpoints/ModuleBreakpointsControl.xaml:172	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Modules/ModulesControl.xaml:51	ComboBox has no AutomationId.
+WT005	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Modules/ModulesControl.xaml:51	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Modules/ModulesControl.xaml:51	ComboBox has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Modules/ModulesControl.xaml:53	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Modules/ModulesControl.xaml:53	Button has no readable name.
+WT002	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Modules/ModulesControl.xaml:59	TextBox [searchTextBox] gets its ID "searchTextBox" from x:Name.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Modules/ModulesControl.xaml:59	TextBox [searchTextBox] has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Modules/ModulesControl.xaml:61	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Modules/ModulesControl.xaml:61	Button has no readable name.
+WT002	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Modules/ModulesControl.xaml:66	ListView [listView] gets its ID "listView" from x:Name.
+WT005	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Modules/ModulesControl.xaml:66	Rows in ListView [listView] have no unique ID.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Modules/ModulesControl.xaml:66	ListView [listView] has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Modules/ModulesControl.xaml:189	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Modules/ModulesControl.xaml:189	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:50	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:50	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:53	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:53	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:57	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:57	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:60	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:60	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:63	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:63	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:67	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:67	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:70	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:70	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:74	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:74	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:78	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:78	Button has no readable name.
+WT002	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:84	TextBox [searchTextBox] gets its ID "searchTextBox" from x:Name.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:84	TextBox [searchTextBox] has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:86	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:86	Button has no readable name.
+WT002	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:91	ListView [listView] gets its ID "listView" from x:Name.
+WT005	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:91	Rows in ListView [listView] have no unique ID.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:91	ListView [listView] has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:186	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Processes/ProcessesControl.xaml:186	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Threads/ThreadsControl.xaml:53	ComboBox has no AutomationId.
+WT005	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Threads/ThreadsControl.xaml:53	Rows in ComboBox have no unique ID.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Threads/ThreadsControl.xaml:53	ComboBox has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Threads/ThreadsControl.xaml:55	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Threads/ThreadsControl.xaml:55	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Threads/ThreadsControl.xaml:58	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Threads/ThreadsControl.xaml:58	Button has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Threads/ThreadsControl.xaml:62	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Threads/ThreadsControl.xaml:62	Button has no readable name.
+WT002	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Threads/ThreadsControl.xaml:68	TextBox [searchTextBox] gets its ID "searchTextBox" from x:Name.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Threads/ThreadsControl.xaml:68	TextBox [searchTextBox] has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Threads/ThreadsControl.xaml:70	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Threads/ThreadsControl.xaml:70	Button has no readable name.
+WT002	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Threads/ThreadsControl.xaml:75	ListView [listView] gets its ID "listView" from x:Name.
+WT005	medium	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Threads/ThreadsControl.xaml:75	Rows in ListView [listView] have no unique ID.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Threads/ThreadsControl.xaml:75	ListView [listView] has no readable name.
+WT001	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Threads/ThreadsControl.xaml:217	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Threads/ThreadsControl.xaml:217	Button has no readable name.
+WT006	high	Extensions/dnSpy.Debugger/dnSpy.Debugger/UI/Wpf/SmartTextBlock.cs:28	SmartTextBlock derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 12 time(s) in XAML.
+WT001	high	Extensions/dnSpy.Scripting.Roslyn/Common/ScriptControl.xaml:41	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Scripting.Roslyn/Common/ScriptControl.xaml:41	Button has no readable name.
+WT001	high	Extensions/dnSpy.Scripting.Roslyn/Common/ScriptControl.xaml:44	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Scripting.Roslyn/Common/ScriptControl.xaml:44	Button has no readable name.
+WT001	high	Extensions/dnSpy.Scripting.Roslyn/Common/ScriptControl.xaml:47	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Scripting.Roslyn/Common/ScriptControl.xaml:47	Button has no readable name.
+WT001	high	Extensions/dnSpy.Scripting.Roslyn/Common/ScriptControl.xaml:50	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Scripting.Roslyn/Common/ScriptControl.xaml:50	Button has no readable name.
+WT001	high	Extensions/dnSpy.Scripting.Roslyn/Common/ScriptControl.xaml:54	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.Scripting.Roslyn/Common/ScriptControl.xaml:54	Button has no readable name.
+WT001	high	Extensions/dnSpy.Scripting.Roslyn/Common/ScriptControl.xaml:57	CheckBox has no AutomationId.
+WT008	low	Extensions/dnSpy.Scripting.Roslyn/Common/ScriptControl.xaml:57	CheckBox has no readable name.
+WT002	low	Extensions/dnSpy.StringSearcher/StringsControl.xaml:44	TextBox [searchTextBox] gets its ID "searchTextBox" from x:Name.
+WT008	low	Extensions/dnSpy.StringSearcher/StringsControl.xaml:44	TextBox [searchTextBox] has no readable name.
+WT002	low	Extensions/dnSpy.StringSearcher/StringsControl.xaml:45	Expander "{x:Static p:dnSpy_StringSearcher_Resour…" gets its ID "expander" from x:Name.
+WT001	high	Extensions/dnSpy.StringSearcher/StringsControl.xaml:51	Button has no AutomationId.
+WT008	low	Extensions/dnSpy.StringSearcher/StringsControl.xaml:51	Button has no readable name.
+WT001	high	Extensions/dnSpy.StringSearcher/StringsControl.xaml:65	CheckBox "{x:Static p:dnSpy_StringSearcher_Resour…" has no AutomationId.
+WT001	high	Extensions/dnSpy.StringSearcher/StringsControl.xaml:66	CheckBox "{x:Static p:dnSpy_StringSearcher_Resour…" has no AutomationId.
+WT001	high	Extensions/dnSpy.StringSearcher/StringsControl.xaml:67	CheckBox "{x:Static p:dnSpy_StringSearcher_Resour…" has no AutomationId.
+WT002	low	Extensions/dnSpy.StringSearcher/StringsControl.xaml:70	ListView [searchListView] gets its ID "searchListView" from x:Name.
+WT005	medium	Extensions/dnSpy.StringSearcher/StringsControl.xaml:70	Rows in ListView [searchListView] have no unique ID.
+WT008	low	Extensions/dnSpy.StringSearcher/StringsControl.xaml:70	ListView [searchListView] has no readable name.
+WT001	high	Extensions/Examples/Example1.Extension/MySettingsControl.xaml:5	CheckBox "Option #1" has no AutomationId.
+WT001	high	Extensions/Examples/Example1.Extension/MySettingsControl.xaml:6	CheckBox "Option #2" has no AutomationId.
+WT002	low	Extensions/Examples/Example2.Extension/ToolWindowControl.xaml:22	TextBox [option1TextBox] gets its ID "option1TextBox" from x:Name.
+WT008	low	Extensions/Examples/Example2.Extension/ToolWindowControl.xaml:22	TextBox [option1TextBox] has no readable name.
+WT001	high	Extensions/Examples/Example2.Extension/ToolWindowControl.xaml:24	TextBox has no AutomationId.
+WT008	low	Extensions/Examples/Example2.Extension/ToolWindowControl.xaml:24	TextBox has no readable name.
+WT001	high	Extensions/Examples/Example2.Extension/ToolWindowControl.xaml:26	TextBox has no AutomationId.
+WT008	low	Extensions/Examples/Example2.Extension/ToolWindowControl.xaml:26	TextBox has no readable name.
+WT001	high	Extensions/Examples/Example2.Extension/ToolWindowControl.xaml:28	TextBox has no AutomationId.
+WT008	low	Extensions/Examples/Example2.Extension/ToolWindowControl.xaml:28	TextBox has no readable name.

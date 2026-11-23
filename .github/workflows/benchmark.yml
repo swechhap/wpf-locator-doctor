@@ -1,0 +1,90 @@
+name: Benchmark
+
+# Runs WPF Locator Doctor against real open-source WPF apps (benchmark/apps.json) and checks the results.
+# See docs/benchmark.md for what is measured and the latest numbers.
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 5 * * 1" # Mondays 05:00 UTC
+  pull_request:
+    paths:
+      - "benchmark/**"
+      - "src/WpfLocatorDoctor.Core/**"
+      - "src/WpfLocatorDoctor.Live/**"
+      - ".github/workflows/benchmark.yml"
+
+permissions:
+  contents: read
+
+jobs:
+  source:
+    # Any OS works; Linux is the cheapest. Fails if a golden file in benchmark/results/source would change,
+    # so a rule change shows up as a diff to review (run benchmark/source_benchmark.py locally and commit the new files).
+    name: Source scan of every app
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 10.0.x
+
+      - name: Build the CLI
+        run: dotnet build src/WpfLocatorDoctor.Cli -c Release -f net10.0
+
+      - name: Scan every app twice and compare with the golden files
+        run: python3 benchmark/source_benchmark.py --check --work "$RUNNER_TEMP/wld-bench"
+
+      - name: Show what changed
+        if: failure()
+        run: |
+          for f in "$RUNNER_TEMP"/wld-bench/out/*/golden-new.txt; do
+            [ -f "$f" ] || continue
+            id=$(basename "$(dirname "$f")")
+            echo "::group::$id"
+            diff -u "benchmark/results/source/$id.txt" "$f" | head -200 || true
+            echo "::endgroup::"
+          done
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: benchmark-source
+          path: |
+            ${{ runner.temp }}/wld-bench/source-summary.json
+            ${{ runner.temp }}/wld-bench/out/*/golden-new.txt
+
+  live:
+    # Builds and starts each app on Windows, then compares the tool with an independent UI Automation dump.
+    name: Live ground truth (${{ matrix.app }})
+    runs-on: windows-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        app: [wpfui, materialdesign, mahapps, wpfsamples]
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: |
+            8.0.x
+            9.0.x
+            10.0.x
+
+      - name: Build the benchmark tools
+        run: |
+          dotnet build benchmark/live/UiaDump -c Release
+          dotnet build benchmark/live/LiveBench -c Release
+
+      - name: Run the live benchmark
+        run: python benchmark/live_benchmark.py --apps ${{ matrix.app }} --work "${{ runner.temp }}/wld-bench"
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: benchmark-live-${{ matrix.app }}
+          path: |
+            benchmark/results/live/
+            ${{ runner.temp }}/wld-bench/live/

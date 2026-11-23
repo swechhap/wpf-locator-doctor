@@ -1,0 +1,1568 @@
+# HandyControl demo @ e9ad3d701b, scan path: src/Shared/HandyControlDemo_Shared
+score 41.3  grade D  elements 1210  controls 1023  screens 137
+check coverage       1.8%  18 of 1023 controls have an AutomationId.
+check quality         70%  18 borrowed from x:Name.
+check uniqueness    42.5%  0 ID(s) used more than once; 0 of 92 data lists have identifiable rows.
+check stability      n/a%  Not measured. Run again with --baseline <previous report.json> to compare.
+check visibility     100%  0 invisible control(s), 0 opaque area(s).
+check names         56.1%  567 of 1010 controls have a readable name.
+problems WT001=1005  WT002=18  WT005=92  WT008=443
+
+WT001	high	UserControl/Basic/Avatar.xaml:11	Button "{Binding DisplayName,RelativeSource={Re…" has no AutomationId.
+WT002	low	UserControl/Basic/ChatBox.xaml:20	ListBox [ListBoxChat] gets its ID "ListBoxChat" from x:Name.
+WT005	medium	UserControl/Basic/ChatBox.xaml:20	Rows in ListBox [ListBoxChat] have no unique ID.
+WT008	low	UserControl/Basic/ChatBox.xaml:20	ListBox [ListBoxChat] has no readable name.
+WT002	low	UserControl/Basic/ChatBox.xaml:39	ToggleButton [ToggleButtonAudio] gets its ID "ToggleButtonAudio" from x:Name.
+WT008	low	UserControl/Basic/ChatBox.xaml:39	ToggleButton [ToggleButtonAudio] has no readable name.
+WT001	high	UserControl/Basic/ChatBox.xaml:40	Button has no AutomationId.
+WT008	low	UserControl/Basic/ChatBox.xaml:40	Button has no readable name.
+WT001	high	UserControl/Basic/ChatBox.xaml:41	TextBox has no AutomationId.
+WT008	low	UserControl/Basic/ChatBox.xaml:41	TextBox has no readable name.
+WT001	high	UserControl/Basic/ChatBox.xaml:48	Button "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Basic/InteractiveDialog.xaml:14	TextBox has no AutomationId.
+WT008	low	UserControl/Basic/InteractiveDialog.xaml:14	TextBox has no readable name.
+WT001	high	UserControl/Basic/InteractiveDialog.xaml:15	Button "{ex:Lang Key={x:Static langs:LangKeys.O…" has no AutomationId.
+WT001	high	UserControl/Basic/TextDialog.xaml:13	Button has no AutomationId.
+WT008	low	UserControl/Basic/TextDialog.xaml:13	Button has no readable name.
+WT002	low	UserControl/Basic/TextDialogWithTimer.xaml:16	Button [ButtonClose] gets its ID "ButtonClose" from x:Name.
+WT008	low	UserControl/Basic/TextDialogWithTimer.xaml:16	Button [ButtonClose] has no readable name.
+WT001	high	UserControl/Controls/AutoCompleteTextBoxDemo.xaml:8	hc:AutoCompleteTextBox has no AutomationId.
+WT008	low	UserControl/Controls/AutoCompleteTextBoxDemo.xaml:8	hc:AutoCompleteTextBox has no readable name.
+WT001	high	UserControl/Controls/BadgeDemo.xaml:12	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/BadgeDemo.xaml:15	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/BadgeDemo.xaml:18	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/BadgeDemo.xaml:21	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/BadgeDemo.xaml:24	Button "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Controls/BadgeDemo.xaml:27	Button "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:13	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:14	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:15	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:16	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:17	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:20	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:21	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:22	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:23	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:24	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:27	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:28	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:29	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:30	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:31	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:34	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:35	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:36	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:37	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:38	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:43	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:44	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:45	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:46	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:47	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:50	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:51	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:52	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:53	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:54	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:57	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:58	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:59	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:60	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:61	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:64	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:65	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:66	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:67	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/ButtonGroupDemo.xaml:68	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/CardDemo.xaml:9	ListBox has no AutomationId.
+WT005	medium	UserControl/Controls/CardDemo.xaml:9	Rows in ListBox have no unique ID.
+WT008	low	UserControl/Controls/CardDemo.xaml:9	ListBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:13	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:13	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:13	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:14	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:14	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:14	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:16	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:16	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:16	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:17	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:17	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:17	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:19	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:19	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:19	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:20	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:20	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:20	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:23	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:23	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:23	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:24	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:24	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:24	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:26	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:26	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:26	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:27	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:27	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:27	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:29	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:29	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:29	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:30	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:30	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:30	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:33	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:33	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:33	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:34	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:34	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:34	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:36	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:36	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:36	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:37	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:37	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:37	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:39	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:39	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:39	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:40	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:40	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:40	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:43	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:43	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:43	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:44	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:44	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:44	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:46	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:46	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:46	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:47	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:47	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:47	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:49	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:49	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:49	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CheckComboBoxDemo.xaml:50	hc:CheckComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/CheckComboBoxDemo.xaml:50	Rows in hc:CheckComboBox have no unique ID.
+WT008	low	UserControl/Controls/CheckComboBoxDemo.xaml:50	hc:CheckComboBox has no readable name.
+WT001	high	UserControl/Controls/CirclePanelDemo.xaml:8	Button has no AutomationId.
+WT008	low	UserControl/Controls/CirclePanelDemo.xaml:8	Button has no readable name.
+WT001	high	UserControl/Controls/CirclePanelDemo.xaml:9	Button has no AutomationId.
+WT008	low	UserControl/Controls/CirclePanelDemo.xaml:9	Button has no readable name.
+WT001	high	UserControl/Controls/CirclePanelDemo.xaml:10	Button has no AutomationId.
+WT008	low	UserControl/Controls/CirclePanelDemo.xaml:10	Button has no readable name.
+WT001	high	UserControl/Controls/CirclePanelDemo.xaml:11	Button has no AutomationId.
+WT008	low	UserControl/Controls/CirclePanelDemo.xaml:11	Button has no readable name.
+WT001	high	UserControl/Controls/CirclePanelDemo.xaml:12	Button has no AutomationId.
+WT008	low	UserControl/Controls/CirclePanelDemo.xaml:12	Button has no readable name.
+WT001	high	UserControl/Controls/CirclePanelDemo.xaml:13	Button has no AutomationId.
+WT008	low	UserControl/Controls/CirclePanelDemo.xaml:13	Button has no readable name.
+WT001	high	UserControl/Controls/CirclePanelDemo.xaml:14	Button has no AutomationId.
+WT008	low	UserControl/Controls/CirclePanelDemo.xaml:14	Button has no readable name.
+WT001	high	UserControl/Controls/CirclePanelDemo.xaml:15	Button has no AutomationId.
+WT008	low	UserControl/Controls/CirclePanelDemo.xaml:15	Button has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:13	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:13	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:13	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:14	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:14	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:14	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:15	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:15	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:15	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:17	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:17	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:17	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:18	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:18	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:18	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:19	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:19	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:19	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:20	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:20	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:20	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:22	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:22	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:22	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:23	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:23	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:23	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:24	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:24	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:24	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:25	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:25	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:25	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:28	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:28	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:28	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:29	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:29	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:29	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:30	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:30	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:30	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:32	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:32	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:32	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:33	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:33	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:33	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:34	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:34	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:34	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:35	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:35	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:35	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:37	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:37	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:37	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:38	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:38	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:38	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:39	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:39	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:39	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/ComboBoxDemo.xaml:40	hc:ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/ComboBoxDemo.xaml:40	Rows in hc:ComboBox have no unique ID.
+WT008	low	UserControl/Controls/ComboBoxDemo.xaml:40	hc:ComboBox has no readable name.
+WT001	high	UserControl/Controls/CompareSliderDemo.xaml:9	hc:CompareSlider has no AutomationId.
+WT008	low	UserControl/Controls/CompareSliderDemo.xaml:9	hc:CompareSlider has no readable name.
+WT001	high	UserControl/Controls/CompareSliderDemo.xaml:25	hc:CompareSlider has no AutomationId.
+WT008	low	UserControl/Controls/CompareSliderDemo.xaml:25	hc:CompareSlider has no readable name.
+WT001	high	UserControl/Controls/ConfettiCannonDemo.xaml:11	Button "Basic Cannon" has no AutomationId.
+WT001	high	UserControl/Controls/ConfettiCannonDemo.xaml:13	Button "Random Direction" has no AutomationId.
+WT001	high	UserControl/Controls/ConfettiCannonDemo.xaml:15	Button "Realistic Look" has no AutomationId.
+WT001	high	UserControl/Controls/ConfettiCannonDemo.xaml:17	Button "Fireworks" has no AutomationId.
+WT001	high	UserControl/Controls/ConfettiCannonDemo.xaml:19	Button "Stars" has no AutomationId.
+WT001	high	UserControl/Controls/ConfettiCannonDemo.xaml:21	Button "Snow" has no AutomationId.
+WT001	high	UserControl/Controls/ConfettiCannonDemo.xaml:23	Button "School Pride" has no AutomationId.
+WT001	high	UserControl/Controls/ConfettiCannonDemo.xaml:25	Button "Custom Canvas" has no AutomationId.
+WT001	high	UserControl/Controls/DatePickerDemo.xaml:13	hc:DatePicker has no AutomationId.
+WT008	low	UserControl/Controls/DatePickerDemo.xaml:13	hc:DatePicker has no readable name.
+WT001	high	UserControl/Controls/DatePickerDemo.xaml:14	hc:DatePicker has no AutomationId.
+WT008	low	UserControl/Controls/DatePickerDemo.xaml:14	hc:DatePicker has no readable name.
+WT001	high	UserControl/Controls/DatePickerDemo.xaml:16	hc:DatePicker has no AutomationId.
+WT008	low	UserControl/Controls/DatePickerDemo.xaml:16	hc:DatePicker has no readable name.
+WT001	high	UserControl/Controls/DatePickerDemo.xaml:17	hc:DatePicker has no AutomationId.
+WT008	low	UserControl/Controls/DatePickerDemo.xaml:17	hc:DatePicker has no readable name.
+WT001	high	UserControl/Controls/DatePickerDemo.xaml:19	hc:DatePicker has no AutomationId.
+WT008	low	UserControl/Controls/DatePickerDemo.xaml:19	hc:DatePicker has no readable name.
+WT001	high	UserControl/Controls/DatePickerDemo.xaml:20	hc:DatePicker has no AutomationId.
+WT008	low	UserControl/Controls/DatePickerDemo.xaml:20	hc:DatePicker has no readable name.
+WT001	high	UserControl/Controls/DatePickerDemo.xaml:23	hc:DatePicker has no AutomationId.
+WT008	low	UserControl/Controls/DatePickerDemo.xaml:23	hc:DatePicker has no readable name.
+WT001	high	UserControl/Controls/DatePickerDemo.xaml:24	hc:DatePicker has no AutomationId.
+WT008	low	UserControl/Controls/DatePickerDemo.xaml:24	hc:DatePicker has no readable name.
+WT001	high	UserControl/Controls/DatePickerDemo.xaml:26	hc:DatePicker has no AutomationId.
+WT008	low	UserControl/Controls/DatePickerDemo.xaml:26	hc:DatePicker has no readable name.
+WT001	high	UserControl/Controls/DatePickerDemo.xaml:27	hc:DatePicker has no AutomationId.
+WT008	low	UserControl/Controls/DatePickerDemo.xaml:27	hc:DatePicker has no readable name.
+WT001	high	UserControl/Controls/DatePickerDemo.xaml:29	hc:DatePicker has no AutomationId.
+WT008	low	UserControl/Controls/DatePickerDemo.xaml:29	hc:DatePicker has no readable name.
+WT001	high	UserControl/Controls/DatePickerDemo.xaml:30	hc:DatePicker has no AutomationId.
+WT008	low	UserControl/Controls/DatePickerDemo.xaml:30	hc:DatePicker has no readable name.
+WT001	high	UserControl/Controls/DialogDemo.xaml:17	Button "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/DialogDemo.xaml:18	Button "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/DialogDemo.xaml:19	Button "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/DialogDemo.xaml:24	TextBox has no AutomationId.
+WT008	low	UserControl/Controls/DialogDemo.xaml:24	TextBox has no readable name.
+WT001	high	UserControl/Controls/DialogDemo.xaml:25	Button "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Controls/DialogDemo.xaml:26	Button "{ex:Lang Key={x:Static langs:LangKeys.N…" has no AutomationId.
+WT001	high	UserControl/Controls/DividerDemo.xaml:15	Button "More" has no AutomationId.
+WT001	high	UserControl/Controls/DividerDemo.xaml:24	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/DividerDemo.xaml:26	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/DividerDemo.xaml:28	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/DividerDemo.xaml:31	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/DividerDemo.xaml:33	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/DividerDemo.xaml:35	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/DividerDemo.xaml:38	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/DividerDemo.xaml:40	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/DividerDemo.xaml:42	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/DrawerDemo.xaml:19	Button has no AutomationId.
+WT008	low	UserControl/Controls/DrawerDemo.xaml:19	Button has no readable name.
+WT001	high	UserControl/Controls/DrawerDemo.xaml:31	Button has no AutomationId.
+WT008	low	UserControl/Controls/DrawerDemo.xaml:31	Button has no readable name.
+WT001	high	UserControl/Controls/DrawerDemo.xaml:43	Button has no AutomationId.
+WT008	low	UserControl/Controls/DrawerDemo.xaml:43	Button has no readable name.
+WT001	high	UserControl/Controls/DrawerDemo.xaml:55	Button has no AutomationId.
+WT008	low	UserControl/Controls/DrawerDemo.xaml:55	Button has no readable name.
+WT001	high	UserControl/Controls/DrawerDemo.xaml:79	Button has no AutomationId.
+WT008	low	UserControl/Controls/DrawerDemo.xaml:79	Button has no readable name.
+WT001	high	UserControl/Controls/DrawerDemo.xaml:91	Button has no AutomationId.
+WT008	low	UserControl/Controls/DrawerDemo.xaml:91	Button has no readable name.
+WT001	high	UserControl/Controls/DrawerDemo.xaml:103	Button has no AutomationId.
+WT008	low	UserControl/Controls/DrawerDemo.xaml:103	Button has no readable name.
+WT001	high	UserControl/Controls/DrawerDemo.xaml:115	Button has no AutomationId.
+WT008	low	UserControl/Controls/DrawerDemo.xaml:115	Button has no readable name.
+WT001	high	UserControl/Controls/DrawerDemo.xaml:121	ToggleButton "Left-Window" has no AutomationId.
+WT001	high	UserControl/Controls/DrawerDemo.xaml:122	ToggleButton "Left-Container" has no AutomationId.
+WT001	high	UserControl/Controls/DrawerDemo.xaml:125	ToggleButton "Top-Windows" has no AutomationId.
+WT001	high	UserControl/Controls/DrawerDemo.xaml:126	ToggleButton "Top-Container" has no AutomationId.
+WT001	high	UserControl/Controls/DrawerDemo.xaml:129	ToggleButton "Right-Windows" has no AutomationId.
+WT001	high	UserControl/Controls/DrawerDemo.xaml:130	ToggleButton "Right-Container" has no AutomationId.
+WT001	high	UserControl/Controls/DrawerDemo.xaml:133	ToggleButton "Bottom-Windows" has no AutomationId.
+WT001	high	UserControl/Controls/DrawerDemo.xaml:134	ToggleButton "Bottom-Container" has no AutomationId.
+WT001	high	UserControl/Controls/ElementGroupDemo.xaml:11	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/ElementGroupDemo.xaml:12	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/ElementGroupDemo.xaml:13	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/ElementGroupDemo.xaml:14	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/ElementGroupDemo.xaml:17	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/ElementGroupDemo.xaml:18	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/ElementGroupDemo.xaml:19	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/ElementGroupDemo.xaml:20	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/ElementGroupDemo.xaml:26	TextBox has no AutomationId.
+WT008	low	UserControl/Controls/ElementGroupDemo.xaml:26	TextBox has no readable name.
+WT001	high	UserControl/Controls/ElementGroupDemo.xaml:27	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/ElementGroupDemo.xaml:28	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/ElementGroupDemo.xaml:41	TextBox has no AutomationId.
+WT008	low	UserControl/Controls/ElementGroupDemo.xaml:41	TextBox has no readable name.
+WT001	high	UserControl/Controls/ElementGroupDemo.xaml:42	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Controls/FloatingBlockDemo.xaml:8	Button has no AutomationId.
+WT008	low	UserControl/Controls/FloatingBlockDemo.xaml:8	Button has no readable name.
+WT001	high	UserControl/Controls/FloatingBlockDemo.xaml:15	Button "Good" has no AutomationId.
+WT001	high	UserControl/Controls/FloatingBlockDemo.xaml:16	Button has no AutomationId.
+WT008	low	UserControl/Controls/FloatingBlockDemo.xaml:16	Button has no readable name.
+WT002	low	UserControl/Controls/GravatarDemo.xaml:23	TextBox [TextBoxName] gets its ID "TextBoxName" from x:Name.
+WT008	low	UserControl/Controls/GravatarDemo.xaml:23	TextBox [TextBoxName] has no readable name.
+WT001	high	UserControl/Controls/GrowlDemo.xaml:13	ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/GrowlDemo.xaml:13	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Controls/GrowlDemo.xaml:13	ComboBox has no readable name.
+WT001	high	UserControl/Controls/GrowlDemo.xaml:18	Button "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Controls/GrowlDemo.xaml:22	Button "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Controls/GrowlDemo.xaml:26	Button "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Controls/GrowlDemo.xaml:30	Button "{ex:Lang Key={x:Static langs:LangKeys.E…" has no AutomationId.
+WT001	high	UserControl/Controls/GrowlDemo.xaml:34	Button "{ex:Lang Key={x:Static langs:LangKeys.A…" has no AutomationId.
+WT001	high	UserControl/Controls/GrowlDemo.xaml:40	Button "{ex:Lang Key={x:Static langs:LangKeys.F…" has no AutomationId.
+WT001	high	UserControl/Controls/GrowlDemo.xaml:43	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/GrowlDemo.xaml:49	Button "{ex:Lang Key={x:Static langs:LangKeys.N…" has no AutomationId.
+WT001	high	UserControl/Controls/GrowlDemo.xaml:55	Button "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Controls/GrowlDemo.xaml:59	Button "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Controls/GrowlDemo.xaml:63	Button "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Controls/GrowlDemo.xaml:67	Button "{ex:Lang Key={x:Static langs:LangKeys.E…" has no AutomationId.
+WT001	high	UserControl/Controls/GrowlDemo.xaml:71	Button "{ex:Lang Key={x:Static langs:LangKeys.A…" has no AutomationId.
+WT001	high	UserControl/Controls/GrowlDemo.xaml:77	Button "{ex:Lang Key={x:Static langs:LangKeys.F…" has no AutomationId.
+WT001	high	UserControl/Controls/GrowlDemo.xaml:80	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/HoneycombPanelDemo.xaml:16	Button "{ex:Lang Key={x:Static langs:LangKeys.A…" has no AutomationId.
+WT001	high	UserControl/Controls/HoneycombPanelDemo.xaml:17	Button "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Controls/HoneycombPanelDemo.xaml:20	ListBox has no AutomationId.
+WT005	medium	UserControl/Controls/HoneycombPanelDemo.xaml:20	Rows in ListBox have no unique ID.
+WT008	low	UserControl/Controls/HoneycombPanelDemo.xaml:20	ListBox has no readable name.
+WT001	high	UserControl/Controls/ImageBrowserDemo.xaml:12	Button "{ex:Lang Key={x:Static langs:LangKeys.O…" has no AutomationId.
+WT001	high	UserControl/Controls/NotificationDemo.xaml:12	ComboBox has no AutomationId.
+WT005	medium	UserControl/Controls/NotificationDemo.xaml:12	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Controls/NotificationDemo.xaml:12	ComboBox has no readable name.
+WT001	high	UserControl/Controls/NotificationDemo.xaml:14	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Controls/NotificationDemo.xaml:15	Button "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Controls/NotifyIconDemo.xaml:17	ToggleButton has no AutomationId.
+WT008	low	UserControl/Controls/NotifyIconDemo.xaml:17	ToggleButton has no readable name.
+WT001	high	UserControl/Controls/NotifyIconDemo.xaml:21	ToggleButton has no AutomationId.
+WT008	low	UserControl/Controls/NotifyIconDemo.xaml:21	ToggleButton has no readable name.
+WT001	high	UserControl/Controls/NotifyIconDemo.xaml:28	ToggleButton has no AutomationId.
+WT008	low	UserControl/Controls/NotifyIconDemo.xaml:28	ToggleButton has no readable name.
+WT001	high	UserControl/Controls/NotifyIconDemo.xaml:32	ToggleButton has no AutomationId.
+WT008	low	UserControl/Controls/NotifyIconDemo.xaml:32	ToggleButton has no readable name.
+WT001	high	UserControl/Controls/NotifyIconDemo.xaml:38	Button "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Controls/NotifyIconDemo.xaml:39	TextBox has no AutomationId.
+WT008	low	UserControl/Controls/NotifyIconDemo.xaml:39	TextBox has no readable name.
+WT001	high	UserControl/Controls/NotifyIconDemo.xaml:45	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Controls/NotifyIconDemo.xaml:46	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.O…" has no AutomationId.
+WT001	high	UserControl/Controls/NotifyIconDemo.xaml:47	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.E…" has no AutomationId.
+WT001	high	UserControl/Controls/NotifyIconDemo.xaml:65	Button "{ex:Lang Key={x:Static langs:LangKeys.O…" has no AutomationId.
+WT001	high	UserControl/Controls/NotifyIconDemo.xaml:66	Button "{ex:Lang Key={x:Static langs:LangKeys.E…" has no AutomationId.
+WT001	high	UserControl/Controls/PaginationDemo.xaml:22	DataGrid has no AutomationId.
+WT005	medium	UserControl/Controls/PaginationDemo.xaml:22	Rows in DataGrid have no unique ID.
+WT008	low	UserControl/Controls/PaginationDemo.xaml:22	DataGrid has no readable name.
+WT001	high	UserControl/Controls/PaginationDemo.xaml:25	CheckBox has no AutomationId.
+WT008	low	UserControl/Controls/PaginationDemo.xaml:25	CheckBox has no readable name.
+WT002	low	UserControl/Controls/PasswordBoxDemo.xaml:12	hc:PasswordBox [passwordBoxDemo] gets its ID "passwordBoxDemo" from x:Name.
+WT008	low	UserControl/Controls/PasswordBoxDemo.xaml:12	hc:PasswordBox [passwordBoxDemo] has no readable name.
+WT001	high	UserControl/Controls/PasswordBoxDemo.xaml:13	TextBox has no AutomationId.
+WT008	low	UserControl/Controls/PasswordBoxDemo.xaml:13	TextBox has no readable name.
+WT001	high	UserControl/Controls/PasswordBoxDemo.xaml:14	hc:PasswordBox has no AutomationId.
+WT008	low	UserControl/Controls/PasswordBoxDemo.xaml:14	hc:PasswordBox has no readable name.
+WT001	high	UserControl/Controls/PasswordBoxDemo.xaml:16	hc:PasswordBox has no AutomationId.
+WT008	low	UserControl/Controls/PasswordBoxDemo.xaml:16	hc:PasswordBox has no readable name.
+WT001	high	UserControl/Controls/PasswordBoxDemo.xaml:17	hc:PasswordBox has no AutomationId.
+WT008	low	UserControl/Controls/PasswordBoxDemo.xaml:17	hc:PasswordBox has no readable name.
+WT001	high	UserControl/Controls/PasswordBoxDemo.xaml:19	hc:PasswordBox has no AutomationId.
+WT008	low	UserControl/Controls/PasswordBoxDemo.xaml:19	hc:PasswordBox has no readable name.
+WT001	high	UserControl/Controls/PasswordBoxDemo.xaml:20	hc:PasswordBox has no AutomationId.
+WT008	low	UserControl/Controls/PasswordBoxDemo.xaml:20	hc:PasswordBox has no readable name.
+WT002	low	UserControl/Controls/PasswordBoxDemo.xaml:23	hc:PasswordBox [passwordBoxDemoSmall] gets its ID "passwordBoxDemoSmall" from x:Name.
+WT008	low	UserControl/Controls/PasswordBoxDemo.xaml:23	hc:PasswordBox [passwordBoxDemoSmall] has no readable name.
+WT001	high	UserControl/Controls/PasswordBoxDemo.xaml:24	TextBox has no AutomationId.
+WT008	low	UserControl/Controls/PasswordBoxDemo.xaml:24	TextBox has no readable name.
+WT001	high	UserControl/Controls/PasswordBoxDemo.xaml:25	hc:PasswordBox has no AutomationId.
+WT008	low	UserControl/Controls/PasswordBoxDemo.xaml:25	hc:PasswordBox has no readable name.
+WT001	high	UserControl/Controls/PasswordBoxDemo.xaml:27	hc:PasswordBox has no AutomationId.
+WT008	low	UserControl/Controls/PasswordBoxDemo.xaml:27	hc:PasswordBox has no readable name.
+WT001	high	UserControl/Controls/PasswordBoxDemo.xaml:28	hc:PasswordBox has no AutomationId.
+WT008	low	UserControl/Controls/PasswordBoxDemo.xaml:28	hc:PasswordBox has no readable name.
+WT001	high	UserControl/Controls/PasswordBoxDemo.xaml:30	hc:PasswordBox has no AutomationId.
+WT008	low	UserControl/Controls/PasswordBoxDemo.xaml:30	hc:PasswordBox has no readable name.
+WT001	high	UserControl/Controls/PasswordBoxDemo.xaml:31	hc:PasswordBox has no AutomationId.
+WT008	low	UserControl/Controls/PasswordBoxDemo.xaml:31	hc:PasswordBox has no readable name.
+WT001	high	UserControl/Controls/PinBoxDemo.xaml:10	TextBox has no AutomationId.
+WT008	low	UserControl/Controls/PinBoxDemo.xaml:10	TextBox has no readable name.
+WT001	high	UserControl/Controls/PoptipDemo.xaml:36	Button has no AutomationId.
+WT008	low	UserControl/Controls/PoptipDemo.xaml:36	Button has no readable name.
+WT001	high	UserControl/Controls/PoptipDemo.xaml:41	Button has no AutomationId.
+WT008	low	UserControl/Controls/PoptipDemo.xaml:41	Button has no readable name.
+WT001	high	UserControl/Controls/PoptipDemo.xaml:50	Button has no AutomationId.
+WT008	low	UserControl/Controls/PoptipDemo.xaml:50	Button has no readable name.
+WT001	high	UserControl/Controls/PoptipDemo.xaml:53	ToggleButton has no AutomationId.
+WT008	low	UserControl/Controls/PoptipDemo.xaml:53	ToggleButton has no readable name.
+WT001	high	UserControl/Controls/PoptipDemo.xaml:54	ToggleButton has no AutomationId.
+WT008	low	UserControl/Controls/PoptipDemo.xaml:54	ToggleButton has no readable name.
+WT001	high	UserControl/Controls/PoptipDemo.xaml:63	ToggleButton has no AutomationId.
+WT008	low	UserControl/Controls/PoptipDemo.xaml:63	ToggleButton has no readable name.
+WT001	high	UserControl/Controls/PoptipDemo.xaml:66	Button has no AutomationId.
+WT008	low	UserControl/Controls/PoptipDemo.xaml:66	Button has no readable name.
+WT001	high	UserControl/Controls/PoptipDemo.xaml:67	Button has no AutomationId.
+WT008	low	UserControl/Controls/PoptipDemo.xaml:67	Button has no readable name.
+WT001	high	UserControl/Controls/PoptipDemo.xaml:68	Button has no AutomationId.
+WT008	low	UserControl/Controls/PoptipDemo.xaml:68	Button has no readable name.
+WT001	high	UserControl/Controls/PoptipDemo.xaml:71	Button has no AutomationId.
+WT008	low	UserControl/Controls/PoptipDemo.xaml:71	Button has no readable name.
+WT001	high	UserControl/Controls/PoptipDemo.xaml:72	Button has no AutomationId.
+WT008	low	UserControl/Controls/PoptipDemo.xaml:72	Button has no readable name.
+WT001	high	UserControl/Controls/PoptipDemo.xaml:73	Button has no AutomationId.
+WT008	low	UserControl/Controls/PoptipDemo.xaml:73	Button has no readable name.
+WT002	low	UserControl/Controls/PreviewSliderDemo.xaml:8	hc:PreviewSlider [PreviewSliderHorizontal] gets its ID "PreviewSliderHorizontal" from x:Name.
+WT008	low	UserControl/Controls/PreviewSliderDemo.xaml:8	hc:PreviewSlider [PreviewSliderHorizontal] has no readable name.
+WT002	low	UserControl/Controls/PreviewSliderDemo.xaml:13	hc:PreviewSlider [PreviewSliderVertical] gets its ID "PreviewSliderVertical" from x:Name.
+WT008	low	UserControl/Controls/PreviewSliderDemo.xaml:13	hc:PreviewSlider [PreviewSliderVertical] has no readable name.
+WT002	low	UserControl/Controls/ProgressBarDemo.xaml:8	Slider [SliderDemo] gets its ID "SliderDemo" from x:Name.
+WT008	low	UserControl/Controls/ProgressBarDemo.xaml:8	Slider [SliderDemo] has no readable name.
+WT001	high	UserControl/Controls/ProgressButtonDemo.xaml:11	hc:ProgressButton "{Binding IsChecked,RelativeSource={Rela…" has no AutomationId.
+WT001	high	UserControl/Controls/ProgressButtonDemo.xaml:12	hc:ProgressButton "{Binding IsChecked,RelativeSource={Rela…" has no AutomationId.
+WT001	high	UserControl/Controls/ProgressButtonDemo.xaml:13	hc:ProgressButton "{Binding IsChecked,RelativeSource={Rela…" has no AutomationId.
+WT001	high	UserControl/Controls/ProgressButtonDemo.xaml:14	hc:ProgressButton "{Binding IsChecked,RelativeSource={Rela…" has no AutomationId.
+WT001	high	UserControl/Controls/ProgressButtonDemo.xaml:15	hc:ProgressButton "{Binding IsChecked,RelativeSource={Rela…" has no AutomationId.
+WT001	high	UserControl/Controls/ProgressButtonDemo.xaml:16	hc:ProgressButton "{Binding IsChecked,RelativeSource={Rela…" has no AutomationId.
+WT001	high	UserControl/Controls/ProgressButtonDemo.xaml:19	ToggleButton "{Binding IsChecked,RelativeSource={Rela…" has no AutomationId.
+WT001	high	UserControl/Controls/ProgressButtonDemo.xaml:20	ToggleButton "{Binding IsChecked,RelativeSource={Rela…" has no AutomationId.
+WT001	high	UserControl/Controls/ProgressButtonDemo.xaml:21	ToggleButton "{Binding IsChecked,RelativeSource={Rela…" has no AutomationId.
+WT001	high	UserControl/Controls/ProgressButtonDemo.xaml:22	ToggleButton "{Binding IsChecked,RelativeSource={Rela…" has no AutomationId.
+WT001	high	UserControl/Controls/ProgressButtonDemo.xaml:23	ToggleButton "{Binding IsChecked,RelativeSource={Rela…" has no AutomationId.
+WT001	high	UserControl/Controls/ProgressButtonDemo.xaml:24	ToggleButton "{Binding IsChecked,RelativeSource={Rela…" has no AutomationId.
+WT001	high	UserControl/Controls/PropertyGridDemo.xaml:15	TextBox has no AutomationId.
+WT008	low	UserControl/Controls/PropertyGridDemo.xaml:15	TextBox has no readable name.
+WT001	high	UserControl/Controls/PropertyGridDemo.xaml:16	TextBox has no AutomationId.
+WT008	low	UserControl/Controls/PropertyGridDemo.xaml:16	TextBox has no readable name.
+WT001	high	UserControl/Controls/PropertyGridDemo.xaml:17	TextBox has no AutomationId.
+WT008	low	UserControl/Controls/PropertyGridDemo.xaml:17	TextBox has no readable name.
+WT001	high	UserControl/Controls/PropertyGridDemo.xaml:18	TextBox has no AutomationId.
+WT008	low	UserControl/Controls/PropertyGridDemo.xaml:18	TextBox has no readable name.
+WT001	high	UserControl/Controls/PropertyGridDemo.xaml:19	TextBox has no AutomationId.
+WT008	low	UserControl/Controls/PropertyGridDemo.xaml:19	TextBox has no readable name.
+WT001	high	UserControl/Controls/PropertyGridDemo.xaml:20	TextBox has no AutomationId.
+WT008	low	UserControl/Controls/PropertyGridDemo.xaml:20	TextBox has no readable name.
+WT001	high	UserControl/Controls/RangeSliderDemo.xaml:10	hc:RangeSlider has no AutomationId.
+WT008	low	UserControl/Controls/RangeSliderDemo.xaml:10	hc:RangeSlider has no readable name.
+WT001	high	UserControl/Controls/RangeSliderDemo.xaml:11	hc:RangeSlider has no AutomationId.
+WT008	low	UserControl/Controls/RangeSliderDemo.xaml:11	hc:RangeSlider has no readable name.
+WT001	high	UserControl/Controls/RangeSliderDemo.xaml:12	hc:RangeSlider has no AutomationId.
+WT008	low	UserControl/Controls/RangeSliderDemo.xaml:12	hc:RangeSlider has no readable name.
+WT001	high	UserControl/Controls/RangeSliderDemo.xaml:13	hc:RangeSlider has no AutomationId.
+WT008	low	UserControl/Controls/RangeSliderDemo.xaml:13	hc:RangeSlider has no readable name.
+WT001	high	UserControl/Controls/RangeSliderDemo.xaml:16	hc:RangeSlider has no AutomationId.
+WT008	low	UserControl/Controls/RangeSliderDemo.xaml:16	hc:RangeSlider has no readable name.
+WT001	high	UserControl/Controls/RangeSliderDemo.xaml:17	hc:RangeSlider has no AutomationId.
+WT008	low	UserControl/Controls/RangeSliderDemo.xaml:17	hc:RangeSlider has no readable name.
+WT001	high	UserControl/Controls/RangeSliderDemo.xaml:18	hc:RangeSlider has no AutomationId.
+WT008	low	UserControl/Controls/RangeSliderDemo.xaml:18	hc:RangeSlider has no readable name.
+WT001	high	UserControl/Controls/RangeSliderDemo.xaml:19	hc:RangeSlider has no AutomationId.
+WT008	low	UserControl/Controls/RangeSliderDemo.xaml:19	hc:RangeSlider has no readable name.
+WT001	high	UserControl/Controls/ScreenshotDemo.xaml:9	Button "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:15	hc:SideMenuItem "Overview" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:19	hc:SideMenuItem "Summary" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:24	hc:SideMenuItem "Dashboards" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:29	hc:SideMenuItem "Wiki" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:35	hc:SideMenuItem "Boards" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:39	hc:SideMenuItem "Work Items" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:44	hc:SideMenuItem "Boards" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:49	hc:SideMenuItem "Backlogs" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:54	hc:SideMenuItem "Sprints" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:59	hc:SideMenuItem "Queries" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:65	hc:SideMenuItem "Repos" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:69	hc:SideMenuItem "Files" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:74	hc:SideMenuItem "Commits" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:79	hc:SideMenuItem "Pushes" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:84	hc:SideMenuItem "Branches" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:89	hc:SideMenuItem "Tags" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:94	hc:SideMenuItem "Pull requests" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:100	hc:SideMenuItem "Pipelines" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:104	hc:SideMenuItem "Builds" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:109	hc:SideMenuItem "Releases" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:114	hc:SideMenuItem "Library" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:119	hc:SideMenuItem "Task groups" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:124	hc:SideMenuItem "Deployment groups" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:130	hc:SideMenuItem "Test Plans" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:134	hc:SideMenuItem "Test Plans" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:139	hc:SideMenuItem "Runs" has no AutomationId.
+WT001	high	UserControl/Controls/SideMenuDemo.xaml:144	hc:SideMenuItem "Load test" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:10	hc:SplitButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:13	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:14	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:15	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:19	hc:SplitButton "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:22	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:23	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:24	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:28	hc:SplitButton "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:31	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:32	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:33	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:37	hc:SplitButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:40	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:41	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:42	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:46	hc:SplitButton "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:49	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:50	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:51	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:55	hc:SplitButton "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:58	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:59	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/SplitButtonDemo.xaml:60	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Controls/SpriteDemo.xaml:11	Button "{ex:Lang Key={x:Static langs:LangKeys.O…" has no AutomationId.
+WT001	high	UserControl/Controls/StepBarDemo.xaml:29	Button "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Controls/StepBarDemo.xaml:30	Button "{ex:Lang Key={x:Static langs:LangKeys.N…" has no AutomationId.
+WT001	high	UserControl/Controls/TabControlDemo.xaml:23	hc:TabControl has no AutomationId.
+WT001	high	UserControl/Controls/TabControlDemo.xaml:24	hc:TabItem "TabItem1" has no AutomationId.
+WT001	high	UserControl/Controls/TabControlDemo.xaml:27	hc:TabItem "TabItem2" has no AutomationId.
+WT001	high	UserControl/Controls/TabControlDemo.xaml:30	hc:TabItem "TabItem3" has no AutomationId.
+WT001	high	UserControl/Controls/TabControlDemo.xaml:33	hc:TabItem "TabItem4" has no AutomationId.
+WT001	high	UserControl/Controls/TabControlDemo.xaml:36	hc:TabItem "TabItem5" has no AutomationId.
+WT001	high	UserControl/Controls/TabControlDemo.xaml:39	hc:TabItem "TabItem6" has no AutomationId.
+WT001	high	UserControl/Controls/TabControlDemo.xaml:42	hc:TabItem "TabItem7" has no AutomationId.
+WT002	low	UserControl/Controls/TabControlDemo.xaml:46	hc:TabControl [tabControlDemo] gets its ID "tabControlDemo" from x:Name.
+WT001	high	UserControl/Controls/TabControlDemo.xaml:47	hc:TabItem "TabItem1" has no AutomationId.
+WT001	high	UserControl/Controls/TabControlDemo.xaml:50	hc:TabItem "TabItem2" has no AutomationId.
+WT001	high	UserControl/Controls/TabControlDemo.xaml:53	hc:TabItem "TabItem3" has no AutomationId.
+WT001	high	UserControl/Controls/TabControlDemo.xaml:56	hc:TabItem "TabItem4" has no AutomationId.
+WT001	high	UserControl/Controls/TabControlDemo.xaml:59	hc:TabItem "TabItem5" has no AutomationId.
+WT001	high	UserControl/Controls/TabControlDemo.xaml:62	hc:TabItem "TabItem6" has no AutomationId.
+WT001	high	UserControl/Controls/TabControlDemo.xaml:65	hc:TabItem "TabItem7" has no AutomationId.
+WT001	high	UserControl/Controls/TabControlDemo.xaml:69	hc:TabControl has no AutomationId.
+WT001	high	UserControl/Controls/TagDemo.xaml:41	Button "{ex:Lang Key={x:Static langs:LangKeys.A…" has no AutomationId.
+WT001	high	UserControl/Controls/TagDemo.xaml:42	TextBox has no AutomationId.
+WT008	low	UserControl/Controls/TagDemo.xaml:42	TextBox has no readable name.
+WT001	high	UserControl/Controls/TextBoxDemo.xaml:15	hc:TextBox has no AutomationId.
+WT008	low	UserControl/Controls/TextBoxDemo.xaml:15	hc:TextBox has no readable name.
+WT001	high	UserControl/Controls/TextBoxDemo.xaml:17	hc:TextBox has no AutomationId.
+WT008	low	UserControl/Controls/TextBoxDemo.xaml:17	hc:TextBox has no readable name.
+WT001	high	UserControl/Controls/TextBoxDemo.xaml:21	hc:TextBox has no AutomationId.
+WT008	low	UserControl/Controls/TextBoxDemo.xaml:21	hc:TextBox has no readable name.
+WT001	high	UserControl/Controls/TextBoxDemo.xaml:25	hc:TextBox has no AutomationId.
+WT008	low	UserControl/Controls/TextBoxDemo.xaml:25	hc:TextBox has no readable name.
+WT001	high	UserControl/Controls/TextBoxDemo.xaml:30	hc:TextBox has no AutomationId.
+WT008	low	UserControl/Controls/TextBoxDemo.xaml:30	hc:TextBox has no readable name.
+WT001	high	UserControl/Controls/TextBoxDemo.xaml:44	hc:TextBox has no AutomationId.
+WT008	low	UserControl/Controls/TextBoxDemo.xaml:44	hc:TextBox has no readable name.
+WT001	high	UserControl/Controls/TextBoxDemo.xaml:50	hc:TextBox has no AutomationId.
+WT008	low	UserControl/Controls/TextBoxDemo.xaml:50	hc:TextBox has no readable name.
+WT001	high	UserControl/Controls/TextBoxDemo.xaml:69	hc:TextBox has no AutomationId.
+WT008	low	UserControl/Controls/TextBoxDemo.xaml:69	hc:TextBox has no readable name.
+WT001	high	UserControl/Controls/TextBoxDemo.xaml:72	hc:TextBox has no AutomationId.
+WT008	low	UserControl/Controls/TextBoxDemo.xaml:72	hc:TextBox has no readable name.
+WT001	high	UserControl/Controls/TextBoxDemo.xaml:77	hc:TextBox has no AutomationId.
+WT008	low	UserControl/Controls/TextBoxDemo.xaml:77	hc:TextBox has no readable name.
+WT001	high	UserControl/Controls/TextBoxDemo.xaml:82	hc:TextBox has no AutomationId.
+WT008	low	UserControl/Controls/TextBoxDemo.xaml:82	hc:TextBox has no readable name.
+WT001	high	UserControl/Controls/TextBoxDemo.xaml:88	hc:TextBox has no AutomationId.
+WT008	low	UserControl/Controls/TextBoxDemo.xaml:88	hc:TextBox has no readable name.
+WT001	high	UserControl/Controls/TextBoxDemo.xaml:103	hc:TextBox has no AutomationId.
+WT008	low	UserControl/Controls/TextBoxDemo.xaml:103	hc:TextBox has no readable name.
+WT001	high	UserControl/Controls/TextBoxDemo.xaml:110	hc:TextBox has no AutomationId.
+WT008	low	UserControl/Controls/TextBoxDemo.xaml:110	hc:TextBox has no readable name.
+WT002	low	UserControl/Controls/TransitioningContentControlDemo.xaml:12	ToggleButton [ButtonVisibilitySwitch] gets its ID "ButtonVisibilitySwitch" from x:Name.
+WT008	low	UserControl/Controls/TransitioningContentControlDemo.xaml:12	ToggleButton [ButtonVisibilitySwitch] has no readable name.
+WT001	high	UserControl/Controls/UniformSpacingPanelDemo.xaml:12	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/UniformSpacingPanelDemo.xaml:13	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/UniformSpacingPanelDemo.xaml:14	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/UniformSpacingPanelDemo.xaml:15	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/UniformSpacingPanelDemo.xaml:19	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/UniformSpacingPanelDemo.xaml:20	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/UniformSpacingPanelDemo.xaml:21	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/UniformSpacingPanelDemo.xaml:22	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/UniformSpacingPanelDemo.xaml:26	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/UniformSpacingPanelDemo.xaml:27	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/UniformSpacingPanelDemo.xaml:28	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/UniformSpacingPanelDemo.xaml:29	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/UniformSpacingPanelDemo.xaml:33	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/UniformSpacingPanelDemo.xaml:34	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/UniformSpacingPanelDemo.xaml:35	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/UniformSpacingPanelDemo.xaml:36	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Controls/WindowDemo.xaml:13	Button "{ex:Lang Key={x:Static langs:LangKeys.O…" has no AutomationId.
+WT001	high	UserControl/Controls/WindowDemo.xaml:14	Button "{ex:Lang Key={x:Static langs:LangKeys.O…" has no AutomationId.
+WT001	high	UserControl/Controls/WindowDemo.xaml:15	Button "{ex:Lang Key={x:Static langs:LangKeys.O…" has no AutomationId.
+WT001	high	UserControl/Controls/WindowDemo.xaml:16	Button "{ex:Lang Key={x:Static langs:LangKeys.O…" has no AutomationId.
+WT001	high	UserControl/Controls/WindowDemo.xaml:17	Button "{ex:Lang Key={x:Static langs:LangKeys.O…" has no AutomationId.
+WT001	high	UserControl/Controls/WindowDemo.xaml:18	Button "{ex:Lang Key={x:Static langs:LangKeys.O…" has no AutomationId.
+WT002	low	UserControl/Controls/WindowDemo.xaml:19	Button "{ex:Lang Key={x:Static langs:LangKeys.O…" gets its ID "ButtonMouseFollow" from x:Name.
+WT001	high	UserControl/Controls/WindowDemo.xaml:20	Button "{ex:Lang Key={x:Static langs:LangKeys.O…" has no AutomationId.
+WT001	high	UserControl/Controls/WindowDemo.xaml:21	Button "{ex:Lang Key={x:Static langs:LangKeys.O…" has no AutomationId.
+WT001	high	UserControl/Main/AppNotification.xaml:13	Button "{hc:Lang Key={x:Static hc:LangKeys.Clos…" has no AutomationId.
+WT001	high	UserControl/Main/AppSprite.xaml:8	Button has no AutomationId.
+WT008	low	UserControl/Main/AppSprite.xaml:8	Button has no readable name.
+WT001	high	UserControl/Main/BlogsView.xaml:9	ListBox has no AutomationId.
+WT005	medium	UserControl/Main/BlogsView.xaml:9	Rows in ListBox have no unique ID.
+WT008	low	UserControl/Main/BlogsView.xaml:9	ListBox has no readable name.
+WT001	high	UserControl/Main/ContributorsView.xaml:14	ListBox has no AutomationId.
+WT005	medium	UserControl/Main/ContributorsView.xaml:14	Rows in ListBox have no unique ID.
+WT008	low	UserControl/Main/ContributorsView.xaml:14	ListBox has no readable name.
+WT001	high	UserControl/Main/LeftMainContent.xaml:13	Button "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Main/LeftMainContent.xaml:14	TabControl has no AutomationId.
+WT002	low	UserControl/Main/LeftMainContent.xaml:39	ToggleButton [ButtonStyleAscending] gets its ID "ButtonStyleAscending" from x:Name.
+WT008	low	UserControl/Main/LeftMainContent.xaml:39	ToggleButton [ButtonStyleAscending] has no readable name.
+WT002	low	UserControl/Main/LeftMainContent.xaml:41	ListBox [ListBoxDemo] gets its ID "ListBoxDemo" from x:Name.
+WT005	medium	UserControl/Main/LeftMainContent.xaml:41	Rows in ListBox [ListBoxDemo] have no unique ID.
+WT008	low	UserControl/Main/LeftMainContent.xaml:41	ListBox [ListBoxDemo] has no readable name.
+WT001	high	UserControl/Main/MainContent.xaml:18	ToggleButton has no AutomationId.
+WT008	low	UserControl/Main/MainContent.xaml:18	ToggleButton has no readable name.
+WT001	high	UserControl/Main/MainContent.xaml:19	Button has no AutomationId.
+WT008	low	UserControl/Main/MainContent.xaml:19	Button has no readable name.
+WT002	low	UserControl/Main/MainWindowContent.xaml:14	Button [ButtonShiftOut] gets its ID "ButtonShiftOut" from x:Name.
+WT008	low	UserControl/Main/MainWindowContent.xaml:14	Button [ButtonShiftOut] has no readable name.
+WT002	low	UserControl/Main/MainWindowContent.xaml:22	Button [ButtonShiftIn] gets its ID "ButtonShiftIn" from x:Name.
+WT008	low	UserControl/Main/MainWindowContent.xaml:22	Button [ButtonShiftIn] has no readable name.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:16	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:17	MenuItem "GitHub" has no AutomationId.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:22	MenuItem "NuGet" has no AutomationId.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:27	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.V…" has no AutomationId.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:33	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.A…" has no AutomationId.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:34	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:39	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.E…" has no AutomationId.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:44	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:49	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:54	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:58	MenuItem "AFei19911012 / HandyControl" has no AutomationId.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:64	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:68	MenuItem "Wiki" has no AutomationId.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:73	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:78	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:84	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.A…" has no AutomationId.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:90	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:91	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:96	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:101	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT002	low	UserControl/Main/NonClientAreaContent.xaml:112	Button [ButtonConfig] gets its ID "ButtonConfig" from x:Name.
+WT008	low	UserControl/Main/NonClientAreaContent.xaml:112	Button [ButtonConfig] has no readable name.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:117	Button has no AutomationId.
+WT008	low	UserControl/Main/NonClientAreaContent.xaml:117	Button has no readable name.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:120	Button has no AutomationId.
+WT008	low	UserControl/Main/NonClientAreaContent.xaml:120	Button has no readable name.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:123	Button has no AutomationId.
+WT008	low	UserControl/Main/NonClientAreaContent.xaml:123	Button has no readable name.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:126	Button has no AutomationId.
+WT008	low	UserControl/Main/NonClientAreaContent.xaml:126	Button has no readable name.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:129	Button has no AutomationId.
+WT008	low	UserControl/Main/NonClientAreaContent.xaml:129	Button has no readable name.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:132	Button has no AutomationId.
+WT008	low	UserControl/Main/NonClientAreaContent.xaml:132	Button has no readable name.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:135	Button has no AutomationId.
+WT008	low	UserControl/Main/NonClientAreaContent.xaml:135	Button has no readable name.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:138	Button has no AutomationId.
+WT008	low	UserControl/Main/NonClientAreaContent.xaml:138	Button has no readable name.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:141	Button has no AutomationId.
+WT008	low	UserControl/Main/NonClientAreaContent.xaml:141	Button has no readable name.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:144	Button has no AutomationId.
+WT008	low	UserControl/Main/NonClientAreaContent.xaml:144	Button has no readable name.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:147	Button has no AutomationId.
+WT008	low	UserControl/Main/NonClientAreaContent.xaml:147	Button has no readable name.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:150	Button has no AutomationId.
+WT008	low	UserControl/Main/NonClientAreaContent.xaml:150	Button has no readable name.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:153	Button has no AutomationId.
+WT008	low	UserControl/Main/NonClientAreaContent.xaml:153	Button has no readable name.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:159	Button has no AutomationId.
+WT008	low	UserControl/Main/NonClientAreaContent.xaml:159	Button has no readable name.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:162	Button has no AutomationId.
+WT008	low	UserControl/Main/NonClientAreaContent.xaml:162	Button has no readable name.
+WT001	high	UserControl/Main/NonClientAreaContent.xaml:165	Button has no AutomationId.
+WT008	low	UserControl/Main/NonClientAreaContent.xaml:165	Button has no readable name.
+WT001	high	UserControl/Main/ProjectsView.xaml:9	ListBox has no AutomationId.
+WT005	medium	UserControl/Main/ProjectsView.xaml:9	Rows in ListBox have no unique ID.
+WT008	low	UserControl/Main/ProjectsView.xaml:9	ListBox has no readable name.
+WT001	high	UserControl/Main/WebsitesView.xaml:9	ListBox has no AutomationId.
+WT005	medium	UserControl/Main/WebsitesView.xaml:9	Rows in ListBox have no unique ID.
+WT008	low	UserControl/Main/WebsitesView.xaml:9	ListBox has no readable name.
+WT001	high	UserControl/Practical/Login.xaml:8	Button "ｻｲﾝｱｯプ" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:14	Button "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:15	Button "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:18	Button "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:19	Button "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:22	Button "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:23	Button "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:26	Button "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:27	Button "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:30	Button "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:31	Button "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:34	Button "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:35	Button "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:40	Button "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:41	Button "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:44	Button "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:45	Button "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:48	Button "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:49	Button "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:52	Button "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:53	Button "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:56	Button "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:57	Button "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:60	Button "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:61	Button "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:66	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:67	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:70	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:71	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:74	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:74	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:75	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:75	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:78	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:78	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:79	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:79	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:82	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:82	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:83	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:83	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:86	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:86	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:87	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:87	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:92	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:93	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:96	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:97	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:100	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:100	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:101	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:101	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:104	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:104	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:105	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:105	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:108	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:108	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:109	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:109	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:112	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:112	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:113	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:113	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:118	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:118	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:119	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:119	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:122	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:122	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:123	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:123	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:126	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:127	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:134	Button "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:135	Button "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:138	Button "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:139	Button "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:142	Button "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:143	Button "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:146	Button "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:147	Button "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:150	Button "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:151	Button "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:154	Button "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:155	Button "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:160	Button "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:161	Button "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:164	Button "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:165	Button "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:168	Button "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:169	Button "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:172	Button "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:173	Button "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:176	Button "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:177	Button "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:180	Button "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:181	Button "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:186	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:187	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:190	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:191	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:194	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:194	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:195	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:195	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:198	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:198	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:199	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:199	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:202	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:202	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:203	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:203	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:206	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:206	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:207	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:207	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:212	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:213	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:216	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:217	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:220	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:220	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:221	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:221	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:224	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:224	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:225	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:225	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:228	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:228	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:229	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:229	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:232	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:232	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:233	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:233	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:238	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:238	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:239	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:239	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:242	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:242	Button has no readable name.
+WT001	high	UserControl/Styles/ButtonDemo.xaml:243	Button has no AutomationId.
+WT008	low	UserControl/Styles/ButtonDemo.xaml:243	Button has no readable name.
+WT001	high	UserControl/Styles/CalendarDemo.xaml:7	Calendar has no AutomationId.
+WT008	low	UserControl/Styles/CalendarDemo.xaml:7	Calendar has no readable name.
+WT001	high	UserControl/Styles/CheckBoxDemo.xaml:10	CheckBox "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/CheckBoxDemo.xaml:11	CheckBox "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/CheckBoxDemo.xaml:12	CheckBox "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/CheckBoxDemo.xaml:13	CheckBox "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/CheckBoxDemo.xaml:14	CheckBox "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/CheckBoxDemo.xaml:15	CheckBox "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/DataGridDemo.xaml:10	TabControl has no AutomationId.
+WT001	high	UserControl/Styles/DataGridDemo.xaml:11	TabItem "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/DataGridDemo.xaml:12	DataGrid has no AutomationId.
+WT005	medium	UserControl/Styles/DataGridDemo.xaml:12	Rows in DataGrid have no unique ID.
+WT008	low	UserControl/Styles/DataGridDemo.xaml:12	DataGrid has no readable name.
+WT001	high	UserControl/Styles/DataGridDemo.xaml:15	CheckBox has no AutomationId.
+WT008	low	UserControl/Styles/DataGridDemo.xaml:15	CheckBox has no readable name.
+WT001	high	UserControl/Styles/DataGridDemo.xaml:34	TabItem "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/DataGridDemo.xaml:35	DataGrid has no AutomationId.
+WT005	medium	UserControl/Styles/DataGridDemo.xaml:35	Rows in DataGrid have no unique ID.
+WT008	low	UserControl/Styles/DataGridDemo.xaml:35	DataGrid has no readable name.
+WT001	high	UserControl/Styles/DataGridDemo.xaml:51	TabItem "Small" has no AutomationId.
+WT001	high	UserControl/Styles/DataGridDemo.xaml:52	DataGrid has no AutomationId.
+WT005	medium	UserControl/Styles/DataGridDemo.xaml:52	Rows in DataGrid have no unique ID.
+WT008	low	UserControl/Styles/DataGridDemo.xaml:52	DataGrid has no readable name.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:14	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:17	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:20	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:23	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:28	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:31	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:34	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:37	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:44	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:47	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:50	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:53	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:58	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:61	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:64	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:67	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:76	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:79	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:82	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:85	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:90	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:93	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:96	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:99	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:106	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:109	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:112	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:115	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:120	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:123	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:126	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/ExpanderDemo.xaml:129	Expander "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/FlowDocumentDemo.xaml:102	TabControl has no AutomationId.
+WT001	high	UserControl/Styles/FlowDocumentDemo.xaml:103	TabItem "{ex:Lang Key={x:Static langs:LangKeys.F…" has no AutomationId.
+WT001	high	UserControl/Styles/FlowDocumentDemo.xaml:106	TabItem "{ex:Lang Key={x:Static langs:LangKeys.F…" has no AutomationId.
+WT001	high	UserControl/Styles/FlowDocumentDemo.xaml:109	TabItem "{ex:Lang Key={x:Static langs:LangKeys.F…" has no AutomationId.
+WT001	high	UserControl/Styles/GeometryDemo.xaml:9	ListBox has no AutomationId.
+WT005	medium	UserControl/Styles/GeometryDemo.xaml:9	Rows in ListBox have no unique ID.
+WT008	low	UserControl/Styles/GeometryDemo.xaml:9	ListBox has no readable name.
+WT001	high	UserControl/Styles/GroupBoxDemo.xaml:53	TextBox has no AutomationId.
+WT008	low	UserControl/Styles/GroupBoxDemo.xaml:53	TextBox has no readable name.
+WT001	high	UserControl/Styles/GroupBoxDemo.xaml:56	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/GroupBoxDemo.xaml:56	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/GroupBoxDemo.xaml:56	ComboBox has no readable name.
+WT001	high	UserControl/Styles/ListBoxDemo.xaml:8	ListBox has no AutomationId.
+WT005	medium	UserControl/Styles/ListBoxDemo.xaml:8	Rows in ListBox have no unique ID.
+WT008	low	UserControl/Styles/ListBoxDemo.xaml:8	ListBox has no readable name.
+WT001	high	UserControl/Styles/ListBoxDemo.xaml:15	ListBox has no AutomationId.
+WT005	medium	UserControl/Styles/ListBoxDemo.xaml:15	Rows in ListBox have no unique ID.
+WT008	low	UserControl/Styles/ListBoxDemo.xaml:15	ListBox has no readable name.
+WT001	high	UserControl/Styles/ListViewDemo.xaml:9	TabControl has no AutomationId.
+WT001	high	UserControl/Styles/ListViewDemo.xaml:10	TabItem "Default" has no AutomationId.
+WT001	high	UserControl/Styles/ListViewDemo.xaml:11	ListView has no AutomationId.
+WT005	medium	UserControl/Styles/ListViewDemo.xaml:11	Rows in ListView have no unique ID.
+WT008	low	UserControl/Styles/ListViewDemo.xaml:11	ListView has no readable name.
+WT001	high	UserControl/Styles/ListViewDemo.xaml:21	TabItem "Small" has no AutomationId.
+WT001	high	UserControl/Styles/ListViewDemo.xaml:22	ListView has no AutomationId.
+WT005	medium	UserControl/Styles/ListViewDemo.xaml:22	Rows in ListView have no unique ID.
+WT008	low	UserControl/Styles/ListViewDemo.xaml:22	ListView has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:13	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:13	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:13	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:14	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:14	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:14	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:15	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:15	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:15	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:17	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:17	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:17	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:18	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:18	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:18	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:19	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:19	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:19	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:20	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:20	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:20	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:22	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:22	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:22	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:23	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:23	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:23	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:24	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:24	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:24	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:25	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:25	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:25	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:28	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:28	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:28	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:29	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:29	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:29	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:30	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:30	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:30	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:32	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:32	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:32	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:33	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:33	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:33	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:34	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:34	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:34	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:35	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:35	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:35	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:37	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:37	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:37	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:38	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:38	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:38	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:39	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:39	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:39	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeComboBoxDemo.xaml:40	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/NativeComboBoxDemo.xaml:40	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/NativeComboBoxDemo.xaml:40	ComboBox has no readable name.
+WT001	high	UserControl/Styles/NativeDatePickerDemo.xaml:13	DatePicker has no AutomationId.
+WT008	low	UserControl/Styles/NativeDatePickerDemo.xaml:13	DatePicker has no readable name.
+WT001	high	UserControl/Styles/NativeDatePickerDemo.xaml:14	DatePicker has no AutomationId.
+WT008	low	UserControl/Styles/NativeDatePickerDemo.xaml:14	DatePicker has no readable name.
+WT001	high	UserControl/Styles/NativeDatePickerDemo.xaml:16	DatePicker has no AutomationId.
+WT008	low	UserControl/Styles/NativeDatePickerDemo.xaml:16	DatePicker has no readable name.
+WT001	high	UserControl/Styles/NativeDatePickerDemo.xaml:17	DatePicker has no AutomationId.
+WT008	low	UserControl/Styles/NativeDatePickerDemo.xaml:17	DatePicker has no readable name.
+WT001	high	UserControl/Styles/NativeDatePickerDemo.xaml:19	DatePicker has no AutomationId.
+WT008	low	UserControl/Styles/NativeDatePickerDemo.xaml:19	DatePicker has no readable name.
+WT001	high	UserControl/Styles/NativeDatePickerDemo.xaml:20	DatePicker has no AutomationId.
+WT008	low	UserControl/Styles/NativeDatePickerDemo.xaml:20	DatePicker has no readable name.
+WT001	high	UserControl/Styles/NativeDatePickerDemo.xaml:23	DatePicker has no AutomationId.
+WT008	low	UserControl/Styles/NativeDatePickerDemo.xaml:23	DatePicker has no readable name.
+WT001	high	UserControl/Styles/NativeDatePickerDemo.xaml:24	DatePicker has no AutomationId.
+WT008	low	UserControl/Styles/NativeDatePickerDemo.xaml:24	DatePicker has no readable name.
+WT001	high	UserControl/Styles/NativeDatePickerDemo.xaml:26	DatePicker has no AutomationId.
+WT008	low	UserControl/Styles/NativeDatePickerDemo.xaml:26	DatePicker has no readable name.
+WT001	high	UserControl/Styles/NativeDatePickerDemo.xaml:27	DatePicker has no AutomationId.
+WT008	low	UserControl/Styles/NativeDatePickerDemo.xaml:27	DatePicker has no readable name.
+WT001	high	UserControl/Styles/NativeDatePickerDemo.xaml:29	DatePicker has no AutomationId.
+WT008	low	UserControl/Styles/NativeDatePickerDemo.xaml:29	DatePicker has no readable name.
+WT001	high	UserControl/Styles/NativeDatePickerDemo.xaml:30	DatePicker has no AutomationId.
+WT008	low	UserControl/Styles/NativeDatePickerDemo.xaml:30	DatePicker has no readable name.
+WT001	high	UserControl/Styles/NativePasswordBoxDemo.xaml:12	PasswordBox has no AutomationId.
+WT008	low	UserControl/Styles/NativePasswordBoxDemo.xaml:12	PasswordBox has no readable name.
+WT001	high	UserControl/Styles/NativePasswordBoxDemo.xaml:13	PasswordBox has no AutomationId.
+WT008	low	UserControl/Styles/NativePasswordBoxDemo.xaml:13	PasswordBox has no readable name.
+WT001	high	UserControl/Styles/NativePasswordBoxDemo.xaml:15	PasswordBox has no AutomationId.
+WT008	low	UserControl/Styles/NativePasswordBoxDemo.xaml:15	PasswordBox has no readable name.
+WT001	high	UserControl/Styles/NativePasswordBoxDemo.xaml:16	PasswordBox has no AutomationId.
+WT008	low	UserControl/Styles/NativePasswordBoxDemo.xaml:16	PasswordBox has no readable name.
+WT001	high	UserControl/Styles/NativePasswordBoxDemo.xaml:18	PasswordBox has no AutomationId.
+WT008	low	UserControl/Styles/NativePasswordBoxDemo.xaml:18	PasswordBox has no readable name.
+WT001	high	UserControl/Styles/NativePasswordBoxDemo.xaml:19	PasswordBox has no AutomationId.
+WT008	low	UserControl/Styles/NativePasswordBoxDemo.xaml:19	PasswordBox has no readable name.
+WT001	high	UserControl/Styles/NativePasswordBoxDemo.xaml:22	PasswordBox has no AutomationId.
+WT008	low	UserControl/Styles/NativePasswordBoxDemo.xaml:22	PasswordBox has no readable name.
+WT001	high	UserControl/Styles/NativePasswordBoxDemo.xaml:23	PasswordBox has no AutomationId.
+WT008	low	UserControl/Styles/NativePasswordBoxDemo.xaml:23	PasswordBox has no readable name.
+WT001	high	UserControl/Styles/NativePasswordBoxDemo.xaml:25	PasswordBox has no AutomationId.
+WT008	low	UserControl/Styles/NativePasswordBoxDemo.xaml:25	PasswordBox has no readable name.
+WT001	high	UserControl/Styles/NativePasswordBoxDemo.xaml:26	PasswordBox has no AutomationId.
+WT008	low	UserControl/Styles/NativePasswordBoxDemo.xaml:26	PasswordBox has no readable name.
+WT001	high	UserControl/Styles/NativePasswordBoxDemo.xaml:28	PasswordBox has no AutomationId.
+WT008	low	UserControl/Styles/NativePasswordBoxDemo.xaml:28	PasswordBox has no readable name.
+WT001	high	UserControl/Styles/NativePasswordBoxDemo.xaml:29	PasswordBox has no AutomationId.
+WT008	low	UserControl/Styles/NativePasswordBoxDemo.xaml:29	PasswordBox has no readable name.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:11	TabControl has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:12	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:20	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:28	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:36	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:44	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:53	TabControl has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:54	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:62	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:70	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:78	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:86	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:95	TabControl has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:96	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:104	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:112	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:120	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:128	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:137	TabControl has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:138	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:146	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:154	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:162	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:170	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:179	TabControl has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:180	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:188	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:196	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:204	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:212	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:221	TabControl has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:222	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:230	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:238	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:246	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTabControlDemo.xaml:254	TabItem "{ex:Lang Key={x:Static langs:LangKeys.T…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeTextBoxDemo.xaml:15	TextBox has no AutomationId.
+WT008	low	UserControl/Styles/NativeTextBoxDemo.xaml:15	TextBox has no readable name.
+WT001	high	UserControl/Styles/NativeTextBoxDemo.xaml:16	TextBox has no AutomationId.
+WT008	low	UserControl/Styles/NativeTextBoxDemo.xaml:16	TextBox has no readable name.
+WT001	high	UserControl/Styles/NativeTextBoxDemo.xaml:20	TextBox has no AutomationId.
+WT008	low	UserControl/Styles/NativeTextBoxDemo.xaml:20	TextBox has no readable name.
+WT001	high	UserControl/Styles/NativeTextBoxDemo.xaml:24	TextBox has no AutomationId.
+WT008	low	UserControl/Styles/NativeTextBoxDemo.xaml:24	TextBox has no readable name.
+WT001	high	UserControl/Styles/NativeTextBoxDemo.xaml:29	TextBox has no AutomationId.
+WT008	low	UserControl/Styles/NativeTextBoxDemo.xaml:29	TextBox has no readable name.
+WT001	high	UserControl/Styles/NativeTextBoxDemo.xaml:44	TextBox has no AutomationId.
+WT008	low	UserControl/Styles/NativeTextBoxDemo.xaml:44	TextBox has no readable name.
+WT001	high	UserControl/Styles/NativeTextBoxDemo.xaml:51	TextBox has no AutomationId.
+WT008	low	UserControl/Styles/NativeTextBoxDemo.xaml:51	TextBox has no readable name.
+WT001	high	UserControl/Styles/NativeTextBoxDemo.xaml:70	TextBox has no AutomationId.
+WT008	low	UserControl/Styles/NativeTextBoxDemo.xaml:70	TextBox has no readable name.
+WT001	high	UserControl/Styles/NativeTextBoxDemo.xaml:72	TextBox has no AutomationId.
+WT008	low	UserControl/Styles/NativeTextBoxDemo.xaml:72	TextBox has no readable name.
+WT001	high	UserControl/Styles/NativeTextBoxDemo.xaml:77	TextBox has no AutomationId.
+WT008	low	UserControl/Styles/NativeTextBoxDemo.xaml:77	TextBox has no readable name.
+WT001	high	UserControl/Styles/NativeTextBoxDemo.xaml:81	TextBox has no AutomationId.
+WT008	low	UserControl/Styles/NativeTextBoxDemo.xaml:81	TextBox has no readable name.
+WT001	high	UserControl/Styles/NativeTextBoxDemo.xaml:86	TextBox has no AutomationId.
+WT008	low	UserControl/Styles/NativeTextBoxDemo.xaml:86	TextBox has no readable name.
+WT001	high	UserControl/Styles/NativeTextBoxDemo.xaml:101	TextBox has no AutomationId.
+WT008	low	UserControl/Styles/NativeTextBoxDemo.xaml:101	TextBox has no readable name.
+WT001	high	UserControl/Styles/NativeTextBoxDemo.xaml:108	TextBox has no AutomationId.
+WT008	low	UserControl/Styles/NativeTextBoxDemo.xaml:108	TextBox has no readable name.
+WT001	high	UserControl/Styles/NativeWindowDemo.xaml:12	Button "{ex:Lang Key={x:Static langs:LangKeys.O…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeWindowDemo.xaml:13	Button "{ex:Lang Key={x:Static langs:LangKeys.O…" has no AutomationId.
+WT001	high	UserControl/Styles/NativeWindowDemo.xaml:14	Button "{ex:Lang Key={x:Static langs:LangKeys.O…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:14	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:15	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:18	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:19	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:22	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:23	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:26	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:27	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:30	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:31	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:34	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:35	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:40	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:41	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:44	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:45	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:48	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/RadioButtonDemo.xaml:48	RadioButton has no readable name.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:49	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/RadioButtonDemo.xaml:49	RadioButton has no readable name.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:52	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/RadioButtonDemo.xaml:52	RadioButton has no readable name.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:53	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/RadioButtonDemo.xaml:53	RadioButton has no readable name.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:56	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/RadioButtonDemo.xaml:56	RadioButton has no readable name.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:57	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/RadioButtonDemo.xaml:57	RadioButton has no readable name.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:60	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/RadioButtonDemo.xaml:60	RadioButton has no readable name.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:61	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/RadioButtonDemo.xaml:61	RadioButton has no readable name.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:66	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:67	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:70	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:71	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:74	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:75	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:78	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:79	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:82	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:83	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:86	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:87	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:92	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:93	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:96	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:97	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:100	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/RadioButtonDemo.xaml:100	RadioButton has no readable name.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:101	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/RadioButtonDemo.xaml:101	RadioButton has no readable name.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:104	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/RadioButtonDemo.xaml:104	RadioButton has no readable name.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:105	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/RadioButtonDemo.xaml:105	RadioButton has no readable name.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:108	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/RadioButtonDemo.xaml:108	RadioButton has no readable name.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:109	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/RadioButtonDemo.xaml:109	RadioButton has no readable name.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:112	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/RadioButtonDemo.xaml:112	RadioButton has no readable name.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:113	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/RadioButtonDemo.xaml:113	RadioButton has no readable name.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:119	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:120	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:121	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:122	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:125	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:126	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:127	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:128	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:131	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:132	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:133	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Styles/RadioButtonDemo.xaml:134	RadioButton "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:14	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:15	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:18	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:19	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:22	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:23	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:26	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:27	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:30	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:31	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:34	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:35	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:40	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:41	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:44	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:45	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:48	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:49	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:52	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:53	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:56	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:57	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:60	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:61	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:66	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:67	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:70	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:71	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:74	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:74	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:75	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:75	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:78	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:78	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:79	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:79	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:82	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:82	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:83	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:83	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:86	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:86	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:87	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:87	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:92	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:93	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:96	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:97	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:100	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:100	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:101	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:101	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:104	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:104	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:105	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:105	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:108	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:108	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:109	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:109	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:112	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:112	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:113	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:113	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:118	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:118	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:119	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:119	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:122	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:122	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:123	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:123	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:126	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:127	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:134	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:135	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:138	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:139	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:142	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:143	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:146	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:147	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:150	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:151	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:154	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:155	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:160	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:161	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:164	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:165	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:168	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:169	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:172	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:173	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:176	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:177	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:180	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:181	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:186	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:187	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:190	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:191	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:194	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:194	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:195	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:195	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:198	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:198	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:199	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:199	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:202	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:202	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:203	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:203	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:206	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:206	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:207	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:207	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:212	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:213	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:216	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:217	RepeatButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:220	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:220	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:221	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:221	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:224	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:224	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:225	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:225	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:228	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:228	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:229	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:229	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:232	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:232	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:233	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:233	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:238	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:238	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:239	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:239	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:242	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:242	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RepeatButtonDemo.xaml:243	RepeatButton has no AutomationId.
+WT008	low	UserControl/Styles/RepeatButtonDemo.xaml:243	RepeatButton has no readable name.
+WT001	high	UserControl/Styles/RichTextBoxDemo.xaml:9	RichTextBox has no AutomationId.
+WT008	low	UserControl/Styles/RichTextBoxDemo.xaml:9	RichTextBox has no readable name.
+WT001	high	UserControl/Styles/RichTextBoxDemo.xaml:18	Hyperlink "https://github.com/NaBian/HandyControl" has no AutomationId.
+WT001	high	UserControl/Styles/SliderDemo.xaml:10	Slider has no AutomationId.
+WT008	low	UserControl/Styles/SliderDemo.xaml:10	Slider has no readable name.
+WT001	high	UserControl/Styles/SliderDemo.xaml:11	Slider has no AutomationId.
+WT008	low	UserControl/Styles/SliderDemo.xaml:11	Slider has no readable name.
+WT001	high	UserControl/Styles/SliderDemo.xaml:12	Slider has no AutomationId.
+WT008	low	UserControl/Styles/SliderDemo.xaml:12	Slider has no readable name.
+WT001	high	UserControl/Styles/SliderDemo.xaml:13	Slider has no AutomationId.
+WT008	low	UserControl/Styles/SliderDemo.xaml:13	Slider has no readable name.
+WT001	high	UserControl/Styles/SliderDemo.xaml:14	Slider has no AutomationId.
+WT008	low	UserControl/Styles/SliderDemo.xaml:14	Slider has no readable name.
+WT001	high	UserControl/Styles/SliderDemo.xaml:17	Slider has no AutomationId.
+WT008	low	UserControl/Styles/SliderDemo.xaml:17	Slider has no readable name.
+WT001	high	UserControl/Styles/SliderDemo.xaml:18	Slider has no AutomationId.
+WT008	low	UserControl/Styles/SliderDemo.xaml:18	Slider has no readable name.
+WT001	high	UserControl/Styles/SliderDemo.xaml:19	Slider has no AutomationId.
+WT008	low	UserControl/Styles/SliderDemo.xaml:19	Slider has no readable name.
+WT001	high	UserControl/Styles/SliderDemo.xaml:20	Slider has no AutomationId.
+WT008	low	UserControl/Styles/SliderDemo.xaml:20	Slider has no readable name.
+WT001	high	UserControl/Styles/SliderDemo.xaml:21	Slider has no AutomationId.
+WT008	low	UserControl/Styles/SliderDemo.xaml:21	Slider has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:14	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:15	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:18	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:19	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:22	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:23	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:26	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:27	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:30	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:31	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:34	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:35	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:40	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:41	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:44	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:45	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:48	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:48	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:49	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:49	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:52	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:52	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:53	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:53	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:56	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:56	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:57	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:57	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:60	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:60	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:61	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:61	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:66	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:66	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:67	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:67	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:70	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:70	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:71	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:71	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:74	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:74	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:75	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:75	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:78	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:78	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:79	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:79	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:82	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:82	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:83	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:83	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:86	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:86	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:87	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:87	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:92	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:92	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:93	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:93	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:96	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:96	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:106	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:106	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:118	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:118	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:119	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:119	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:122	ToggleButton "Switch" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:123	ToggleButton "Switch" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:126	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.O…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:136	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.O…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:152	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:153	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:156	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:157	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.P…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:160	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:161	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:164	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:165	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:168	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:169	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:172	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:173	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.D…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:178	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:179	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:182	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:183	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:186	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:186	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:187	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:187	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:190	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:190	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:191	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:191	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:194	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:194	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:195	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:195	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:198	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:198	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:199	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:199	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:204	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:204	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:205	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:205	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:208	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:208	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:209	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:209	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:212	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:212	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:213	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:213	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:216	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:216	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:217	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:217	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:220	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:220	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:221	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:221	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:224	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:224	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:225	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:225	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:230	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:230	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:231	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:231	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:234	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:234	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:235	ToggleButton has no AutomationId.
+WT008	low	UserControl/Styles/ToggleButtonDemo.xaml:235	ToggleButton has no readable name.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:238	ToggleButton "Switch" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:239	ToggleButton "Switch" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:242	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.O…" has no AutomationId.
+WT001	high	UserControl/Styles/ToggleButtonDemo.xaml:252	ToggleButton "{ex:Lang Key={x:Static langs:LangKeys.O…" has no AutomationId.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:6	CheckBox has no AutomationId.
+WT008	low	UserControl/Styles/ToolBarDemo.xaml:6	CheckBox has no readable name.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:8	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/ToolBarDemo.xaml:8	RadioButton has no readable name.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:10	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/ToolBarDemo.xaml:10	RadioButton has no readable name.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:11	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/ToolBarDemo.xaml:11	RadioButton has no readable name.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:13	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:14	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:17	ComboBox has no AutomationId.
+WT005	medium	UserControl/Styles/ToolBarDemo.xaml:17	Rows in ComboBox have no unique ID.
+WT008	low	UserControl/Styles/ToolBarDemo.xaml:17	ComboBox has no readable name.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:18	TextBox has no AutomationId.
+WT008	low	UserControl/Styles/ToolBarDemo.xaml:18	TextBox has no readable name.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:22	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.R…" has no AutomationId.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:23	MenuItem "GitHub" has no AutomationId.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:28	MenuItem "NuGet" has no AutomationId.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:34	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.A…" has no AutomationId.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:35	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.E…" has no AutomationId.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:40	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:46	MenuItem "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:52	CheckBox has no AutomationId.
+WT008	low	UserControl/Styles/ToolBarDemo.xaml:52	CheckBox has no readable name.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:54	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/ToolBarDemo.xaml:54	RadioButton has no readable name.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:56	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/ToolBarDemo.xaml:56	RadioButton has no readable name.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:57	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/ToolBarDemo.xaml:57	RadioButton has no readable name.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:59	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:60	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:63	CheckBox has no AutomationId.
+WT008	low	UserControl/Styles/ToolBarDemo.xaml:63	CheckBox has no readable name.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:65	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/ToolBarDemo.xaml:65	RadioButton has no readable name.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:67	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/ToolBarDemo.xaml:67	RadioButton has no readable name.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:68	RadioButton has no AutomationId.
+WT008	low	UserControl/Styles/ToolBarDemo.xaml:68	RadioButton has no readable name.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:70	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Styles/ToolBarDemo.xaml:71	Button "{ex:Lang Key={x:Static langs:LangKeys.B…" has no AutomationId.
+WT001	high	UserControl/Styles/TreeViewDemo.xaml:8	TreeView has no AutomationId.
+WT005	medium	UserControl/Styles/TreeViewDemo.xaml:8	Rows in TreeView have no unique ID.
+WT008	low	UserControl/Styles/TreeViewDemo.xaml:8	TreeView has no readable name.
+WT001	high	UserControl/Styles/TreeViewDemo.xaml:15	TreeView has no AutomationId.
+WT005	medium	UserControl/Styles/TreeViewDemo.xaml:15	Rows in TreeView have no unique ID.
+WT008	low	UserControl/Styles/TreeViewDemo.xaml:15	TreeView has no readable name.
+WT002	low	UserControl/Tools/HatchBrushGeneratorDemo.xaml:8	ComboBox [ComboBoxDemo] gets its ID "ComboBoxDemo" from x:Name.
+WT005	medium	UserControl/Tools/HatchBrushGeneratorDemo.xaml:8	Rows in ComboBox [ComboBoxDemo] have no unique ID.
+WT008	low	UserControl/Tools/HatchBrushGeneratorDemo.xaml:8	ComboBox [ComboBoxDemo] has no readable name.
+WT001	high	Window/CustomNonClientAreaWindow.xaml:23	Button has no AutomationId.
+WT008	low	Window/CustomNonClientAreaWindow.xaml:23	Button has no readable name.
+WT001	high	Window/CustomNonClientAreaWindow.xaml:28	Button has no AutomationId.
+WT008	low	Window/CustomNonClientAreaWindow.xaml:28	Button has no readable name.
+WT001	high	Window/CustomNonClientAreaWindow.xaml:33	Button has no AutomationId.
+WT008	low	Window/CustomNonClientAreaWindow.xaml:33	Button has no readable name.
+WT001	high	Window/CustomNonClientAreaWindow.xaml:38	Button has no AutomationId.
+WT008	low	Window/CustomNonClientAreaWindow.xaml:38	Button has no readable name.
+WT001	high	Window/CustomNonClientAreaWindow.xaml:43	Button has no AutomationId.
+WT008	low	Window/CustomNonClientAreaWindow.xaml:43	Button has no readable name.
+WT001	high	Window/CustomNonClientAreaWindow.xaml:48	Button has no AutomationId.
+WT008	low	Window/CustomNonClientAreaWindow.xaml:48	Button has no readable name.
+WT001	high	Window/CustomNonClientAreaWindow.xaml:53	Button has no AutomationId.
+WT008	low	Window/CustomNonClientAreaWindow.xaml:53	Button has no readable name.
+WT001	high	Window/DialogDemoWindow.xaml:14	Button "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	Window/DialogDemoWindow.xaml:15	Button "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	Window/DialogDemoWindow.xaml:16	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	Window/GrowlDemoWindow.xaml:15	Button "{ex:Lang Key={x:Static langs:LangKeys.I…" has no AutomationId.
+WT001	high	Window/GrowlDemoWindow.xaml:16	Button "{ex:Lang Key={x:Static langs:LangKeys.S…" has no AutomationId.
+WT001	high	Window/GrowlDemoWindow.xaml:17	Button "{ex:Lang Key={x:Static langs:LangKeys.W…" has no AutomationId.
+WT001	high	Window/GrowlDemoWindow.xaml:18	Button "{ex:Lang Key={x:Static langs:LangKeys.E…" has no AutomationId.
+WT001	high	Window/GrowlDemoWindow.xaml:19	Button "{ex:Lang Key={x:Static langs:LangKeys.A…" has no AutomationId.
+WT001	high	Window/GrowlDemoWindow.xaml:20	Button "{ex:Lang Key={x:Static langs:LangKeys.F…" has no AutomationId.
+WT001	high	Window/GrowlDemoWindow.xaml:21	Button "{ex:Lang Key={x:Static langs:LangKeys.C…" has no AutomationId.
+WT001	high	Window/NoNonClientAreaDragableWindow.xaml:22	Button has no AutomationId.
+WT008	low	Window/NoNonClientAreaDragableWindow.xaml:22	Button has no readable name.

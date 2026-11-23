@@ -1,0 +1,368 @@
+# WPF UI gallery (lepoco/wpfui) @ 35eae0e697, scan path: src/Wpf.Ui.Gallery
+score 48.2  grade D  elements 584  controls 402  screens 82
+check coverage       1.2%  5 of 402 controls have an AutomationId.
+check quality         70%  5 borrowed from x:Name.
+check uniqueness    80.6%  0 ID(s) used more than once; 0 of 11 data lists have identifiable rows.
+check stability      n/a%  Not measured. Run again with --baseline <previous report.json> to compare.
+check visibility    66.9%  133 invisible control(s), 0 opaque area(s).
+check names         72.4%  194 of 268 controls have a readable name.
+problems WT001=264  WT002=5  WT005=11  WT006=4  WT008=74
+
+WT006	high	Controls/ControlExample.xaml.cs:11	ControlExample derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 114 time(s) in XAML.
+WT006	high	Controls/GalleryNavigationPresenter.xaml.cs:8	GalleryNavigationPresenter derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 11 time(s) in XAML.
+WT006	high	Controls/PageControlDocumentation.xaml.cs:11	PageControlDocumentation derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 1 time(s) in XAML.
+WT002	low	Controls/TermsOfUseContentDialog.xaml:58	CheckBox "Agree" gets its ID "CheckBox" from x:Name.
+WT006	high	Controls/TypographyControl.xaml.cs:11	TypographyControl derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 7 time(s) in XAML.
+WT001	high	Views/Pages/BasicInput/AnchorPage.xaml:38	CheckBox "Disable anchor" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/ButtonPage.xaml:53	Button "Standard WPF button" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/ButtonPage.xaml:57	CheckBox "Disable button" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/ButtonPage.xaml:74	ui:Button "WPF UI button" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/ButtonPage.xaml:79	CheckBox "Disable button" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/ButtonPage.xaml:91	ui:Button "WPF UI button" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/ButtonPage.xaml:101	ui:Button "WPF UI button with font icon" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/ButtonPage.xaml:111	ui:Button "WPF UI button with image icon" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/ButtonPage.xaml:121	ui:Button has no AutomationId.
+WT008	low	Views/Pages/BasicInput/ButtonPage.xaml:121	ui:Button has no readable name.
+WT001	high	Views/Pages/BasicInput/ButtonPage.xaml:136	ui:Button "Primary" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/ButtonPage.xaml:137	ui:Button "Secondary" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/ButtonPage.xaml:138	ui:Button "Success" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/ButtonPage.xaml:139	ui:Button "Caution" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/ButtonPage.xaml:140	ui:Button "Danger" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/ButtonPage.xaml:145	ui:Button "Primary" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/ButtonPage.xaml:146	ui:Button "Secondary" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/ButtonPage.xaml:147	ui:Button "Success" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/ButtonPage.xaml:148	ui:Button "Caution" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/ButtonPage.xaml:149	ui:Button "Danger" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/CheckBoxPage.xaml:23	CheckBox "Two-state CheckBox" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/CheckBoxPage.xaml:31	CheckBox "Three-state CheckBox" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/CheckBoxPage.xaml:42	CheckBox "Select all" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/CheckBoxPage.xaml:48	CheckBox "Option 1" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/CheckBoxPage.xaml:54	CheckBox "Option 2" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/CheckBoxPage.xaml:60	CheckBox "Option 3" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/ComboBoxPage.xaml:26	ComboBox has no AutomationId.
+WT008	low	Views/Pages/BasicInput/ComboBoxPage.xaml:26	ComboBox has no readable name.
+WT001	high	Views/Pages/BasicInput/ComboBoxPage.xaml:41	ComboBox has no AutomationId.
+WT005	medium	Views/Pages/BasicInput/ComboBoxPage.xaml:41	Rows in ComboBox have no unique ID.
+WT008	low	Views/Pages/BasicInput/ComboBoxPage.xaml:41	ComboBox has no readable name.
+WT001	high	Views/Pages/BasicInput/ComboBoxPage.xaml:58	ComboBox has no AutomationId.
+WT005	medium	Views/Pages/BasicInput/ComboBoxPage.xaml:58	Rows in ComboBox have no unique ID.
+WT008	low	Views/Pages/BasicInput/ComboBoxPage.xaml:58	ComboBox has no readable name.
+WT001	high	Views/Pages/BasicInput/ComboBoxPage.xaml:77	ComboBox has no AutomationId.
+WT005	medium	Views/Pages/BasicInput/ComboBoxPage.xaml:77	Rows in ComboBox have no unique ID.
+WT008	low	Views/Pages/BasicInput/ComboBoxPage.xaml:77	ComboBox has no readable name.
+WT001	high	Views/Pages/BasicInput/DropDownButtonPage.xaml:26	ui:DropDownButton "Hello" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/DropDownButtonPage.xaml:29	MenuItem "Add" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/DropDownButtonPage.xaml:30	MenuItem "Remove" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/DropDownButtonPage.xaml:31	MenuItem "Send" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/DropDownButtonPage.xaml:32	MenuItem "Hello" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/HyperlinkButtonPage.xaml:32	ui:HyperlinkButton "WPF UI hyperlink" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/HyperlinkButtonPage.xaml:38	CheckBox "Disable hyperlink" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/HyperlinkButtonPage.xaml:50	ui:HyperlinkButton "WPF UI hyperlink" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/HyperlinkButtonPage.xaml:62	ui:HyperlinkButton "WPF UI hyperlink" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/RadioButtonPage.xaml:31	RadioButton "Option 1" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/RadioButtonPage.xaml:36	RadioButton "Option 2" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/RadioButtonPage.xaml:40	RadioButton "Option 3" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/RadioButtonPage.xaml:45	CheckBox "Disable radio buttons" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/RadioButtonPage.xaml:58	RadioButton "Option 1" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/RadioButtonPage.xaml:63	RadioButton "Option 2" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/RadioButtonPage.xaml:67	RadioButton "Option 3" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/RatingPage.xaml:44	CheckBox "Disable rating" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/RatingPage.xaml:76	CheckBox "Disable rating" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/SliderPage.xaml:31	Slider has no AutomationId.
+WT008	low	Views/Pages/BasicInput/SliderPage.xaml:31	Slider has no readable name.
+WT001	high	Views/Pages/BasicInput/SliderPage.xaml:57	Slider has no AutomationId.
+WT008	low	Views/Pages/BasicInput/SliderPage.xaml:57	Slider has no readable name.
+WT001	high	Views/Pages/BasicInput/SliderPage.xaml:85	Slider has no AutomationId.
+WT008	low	Views/Pages/BasicInput/SliderPage.xaml:85	Slider has no readable name.
+WT001	high	Views/Pages/BasicInput/SliderPage.xaml:114	Slider has no AutomationId.
+WT008	low	Views/Pages/BasicInput/SliderPage.xaml:114	Slider has no readable name.
+WT001	high	Views/Pages/BasicInput/SplitButtonPage.xaml:26	ui:SplitButton has no AutomationId.
+WT008	low	Views/Pages/BasicInput/SplitButtonPage.xaml:26	ui:SplitButton has no readable name.
+WT001	high	Views/Pages/BasicInput/SplitButtonPage.xaml:34	MenuItem has no AutomationId.
+WT008	low	Views/Pages/BasicInput/SplitButtonPage.xaml:34	MenuItem has no readable name.
+WT001	high	Views/Pages/BasicInput/SplitButtonPage.xaml:43	MenuItem has no AutomationId.
+WT008	low	Views/Pages/BasicInput/SplitButtonPage.xaml:43	MenuItem has no readable name.
+WT001	high	Views/Pages/BasicInput/SplitButtonPage.xaml:52	MenuItem has no AutomationId.
+WT008	low	Views/Pages/BasicInput/SplitButtonPage.xaml:52	MenuItem has no readable name.
+WT001	high	Views/Pages/BasicInput/SplitButtonPage.xaml:70	ui:SplitButton has no AutomationId.
+WT008	low	Views/Pages/BasicInput/SplitButtonPage.xaml:70	ui:SplitButton has no readable name.
+WT001	high	Views/Pages/BasicInput/SplitButtonPage.xaml:78	MenuItem has no AutomationId.
+WT008	low	Views/Pages/BasicInput/SplitButtonPage.xaml:78	MenuItem has no readable name.
+WT001	high	Views/Pages/BasicInput/SplitButtonPage.xaml:87	MenuItem has no AutomationId.
+WT008	low	Views/Pages/BasicInput/SplitButtonPage.xaml:87	MenuItem has no readable name.
+WT001	high	Views/Pages/BasicInput/SplitButtonPage.xaml:96	MenuItem has no AutomationId.
+WT008	low	Views/Pages/BasicInput/SplitButtonPage.xaml:96	MenuItem has no readable name.
+WT001	high	Views/Pages/BasicInput/ToggleButtonPage.xaml:30	ToggleButton "Standard ToggleButton" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/ToggleButtonPage.xaml:34	CheckBox "Disable toggle button" has no AutomationId.
+WT001	high	Views/Pages/BasicInput/ToggleSwitchPage.xaml:37	CheckBox "Disable switch" has no AutomationId.
+WT001	high	Views/Pages/Collections/DataGridPage.xaml:31	DataGrid has no AutomationId.
+WT005	medium	Views/Pages/Collections/DataGridPage.xaml:31	Rows in DataGrid have no unique ID.
+WT008	low	Views/Pages/Collections/DataGridPage.xaml:31	DataGrid has no readable name.
+WT001	high	Views/Pages/Collections/DataGridPage.xaml:38	ui:DataGrid has no AutomationId.
+WT005	medium	Views/Pages/Collections/DataGridPage.xaml:38	Rows in ui:DataGrid have no unique ID.
+WT008	low	Views/Pages/Collections/DataGridPage.xaml:38	ui:DataGrid has no readable name.
+WT001	high	Views/Pages/Collections/ListBoxPage.xaml:29	ListBox has no AutomationId.
+WT008	low	Views/Pages/Collections/ListBoxPage.xaml:29	ListBox has no readable name.
+WT001	high	Views/Pages/Collections/ListBoxPage.xaml:41	ListBox has no AutomationId.
+WT005	medium	Views/Pages/Collections/ListBoxPage.xaml:41	Rows in ListBox have no unique ID.
+WT008	low	Views/Pages/Collections/ListBoxPage.xaml:41	ListBox has no readable name.
+WT001	high	Views/Pages/Collections/ListViewPage.xaml:33	ui:ListView has no AutomationId.
+WT005	medium	Views/Pages/Collections/ListViewPage.xaml:33	Rows in ui:ListView have no unique ID.
+WT008	low	Views/Pages/Collections/ListViewPage.xaml:33	ui:ListView has no readable name.
+WT001	high	Views/Pages/Collections/ListViewPage.xaml:62	ui:ListView has no AutomationId.
+WT005	medium	Views/Pages/Collections/ListViewPage.xaml:62	Rows in ui:ListView have no unique ID.
+WT008	low	Views/Pages/Collections/ListViewPage.xaml:62	ui:ListView has no readable name.
+WT002	low	Views/Pages/Collections/ListViewPage.xaml:111	ComboBox "Selection mode" gets its ID "SelectionModeComboBox" from x:Name.
+WT001	high	Views/Pages/Collections/ListViewPage.xaml:132	ui:ListView has no AutomationId.
+WT005	medium	Views/Pages/Collections/ListViewPage.xaml:132	Rows in ui:ListView have no unique ID.
+WT008	low	Views/Pages/Collections/ListViewPage.xaml:132	ui:ListView has no readable name.
+WT001	high	Views/Pages/Collections/ListViewPage.xaml:138	ui:GridView has no AutomationId.
+WT008	low	Views/Pages/Collections/ListViewPage.xaml:138	ui:GridView has no readable name.
+WT001	high	Views/Pages/Collections/TreeViewPage.xaml:29	TreeView has no AutomationId.
+WT008	low	Views/Pages/Collections/TreeViewPage.xaml:29	TreeView has no readable name.
+WT001	high	Views/Pages/DashboardPage.xaml:210	ui:HyperlinkButton "Documentation" has no AutomationId.
+WT001	high	Views/Pages/DashboardPage.xaml:216	ui:HyperlinkButton "Microsoft Store" has no AutomationId.
+WT001	high	Views/Pages/DashboardPage.xaml:222	ui:HyperlinkButton "GitHub" has no AutomationId.
+WT001	high	Views/Pages/DashboardPage.xaml:228	ui:HyperlinkButton "NuGet" has no AutomationId.
+WT001	high	Views/Pages/DashboardPage.xaml:234	ui:HyperlinkButton "Visual Studio Marketplace" has no AutomationId.
+WT002	low	Views/Pages/DateAndTime/CalendarDatePickerPage.xaml:32	ui:CalendarDatePicker [CalendarDatePicker] gets its ID "CalendarDatePicker" from x:Name.
+WT008	low	Views/Pages/DateAndTime/CalendarDatePickerPage.xaml:32	ui:CalendarDatePicker [CalendarDatePicker] has no readable name.
+WT001	high	Views/Pages/DateAndTime/CalendarPage.xaml:26	Calendar has no AutomationId.
+WT008	low	Views/Pages/DateAndTime/CalendarPage.xaml:26	Calendar has no readable name.
+WT001	high	Views/Pages/DateAndTime/DatePickerPage.xaml:26	DatePicker has no AutomationId.
+WT008	low	Views/Pages/DateAndTime/DatePickerPage.xaml:26	DatePicker has no readable name.
+WT001	high	Views/Pages/DesignGuidance/IconsPage.xaml:36	ui:HyperlinkButton "Find out more about Fluent System Icons" has no AutomationId.
+WT001	high	Views/Pages/DesignGuidance/IconsPage.xaml:59	CheckBox "Is filled" has no AutomationId.
+WT001	medium	Views/Pages/DesignGuidance/IconsPage.xaml:86	Button (inside a list row template) has no AutomationId.
+WT008	low	Views/Pages/DesignGuidance/IconsPage.xaml:86	Button has no readable name.
+WT001	high	Views/Pages/DesignGuidance/TypographyPage.xaml:22	ui:HyperlinkButton "Segoe UI Variable." has no AutomationId.
+WT001	high	Views/Pages/DialogsAndFlyouts/ContentDialogPage.xaml:34	Button "Show" has no AutomationId.
+WT001	high	Views/Pages/DialogsAndFlyouts/ContentDialogPage.xaml:48	Button "Show" has no AutomationId.
+WT001	high	Views/Pages/DialogsAndFlyouts/FlyoutPage.xaml:42	Button "The cake is a lie!" has no AutomationId.
+WT001	high	Views/Pages/DialogsAndFlyouts/FlyoutPage.xaml:45	Button "Open flyout" has no AutomationId.
+WT001	high	Views/Pages/DialogsAndFlyouts/MessageBoxPage.xaml:56	Button "Open standard MessageBox" has no AutomationId.
+WT001	high	Views/Pages/DialogsAndFlyouts/MessageBoxPage.xaml:76	Button "Open custom MessageBox" has no AutomationId.
+WT001	high	Views/Pages/DialogsAndFlyouts/MessageBoxPage.xaml:102	Button "Open three button MessageBox" has no AutomationId.
+WT001	high	Views/Pages/DialogsAndFlyouts/MessageBoxPage.xaml:148	Button "Open MessageBox with TextBox" has no AutomationId.
+WT001	high	Views/Pages/DialogsAndFlyouts/MessageBoxPage.xaml:176	Button "Open MessageBox with icon" has no AutomationId.
+WT001	high	Views/Pages/DialogsAndFlyouts/MessageBoxPage.xaml:201	Button "Open MessageBox with auto focus" has no AutomationId.
+WT001	high	Views/Pages/DialogsAndFlyouts/SnackbarPage.xaml:32	Button "Show snackbar" has no AutomationId.
+WT001	high	Views/Pages/DialogsAndFlyouts/SnackbarPage.xaml:44	ComboBox has no AutomationId.
+WT008	low	Views/Pages/DialogsAndFlyouts/SnackbarPage.xaml:44	ComboBox has no readable name.
+WT001	high	Views/Pages/DialogsAndFlyouts/SnackbarPage.xaml:64	Slider has no AutomationId.
+WT008	low	Views/Pages/DialogsAndFlyouts/SnackbarPage.xaml:64	Slider has no readable name.
+WT001	high	Views/Pages/Layout/CardControlPage.xaml:33	ui:Button "Button" has no AutomationId.
+WT001	high	Views/Pages/Layout/CardControlPage.xaml:103	ui:DropDownButton "Hello" has no AutomationId.
+WT001	high	Views/Pages/Layout/CardControlPage.xaml:106	MenuItem "Add" has no AutomationId.
+WT001	high	Views/Pages/Layout/CardControlPage.xaml:107	MenuItem "Remove" has no AutomationId.
+WT001	high	Views/Pages/Layout/CardControlPage.xaml:108	MenuItem "Send" has no AutomationId.
+WT001	high	Views/Pages/Layout/CardControlPage.xaml:109	MenuItem "Hello" has no AutomationId.
+WT001	high	Views/Pages/Layout/ExpanderPage.xaml:29	Expander "This is in the content" has no AutomationId.
+WT001	high	Views/Pages/Layout/ExpanderPage.xaml:46	ui:CardExpander "This is a header text" has no AutomationId.
+WT001	high	Views/Pages/Layout/ExpanderPage.xaml:105	ui:DropDownButton "Hello" has no AutomationId.
+WT001	high	Views/Pages/Layout/ExpanderPage.xaml:108	MenuItem "Add" has no AutomationId.
+WT001	high	Views/Pages/Layout/ExpanderPage.xaml:109	MenuItem "Remove" has no AutomationId.
+WT001	high	Views/Pages/Layout/ExpanderPage.xaml:110	MenuItem "Send" has no AutomationId.
+WT001	high	Views/Pages/Layout/ExpanderPage.xaml:111	MenuItem "Hello" has no AutomationId.
+WT001	high	Views/Pages/Media/WebViewPage.xaml:30	ui:HyperlinkButton "Learn more about WebView2 in WPF" has no AutomationId.
+WT001	high	Views/Pages/Navigation/BreadcrumbBarPage.xaml:78	Button "Reset" has no AutomationId.
+WT001	high	Views/Pages/Navigation/MenuPage.xaml:54	ui:MenuItem "File" has no AutomationId.
+WT001	high	Views/Pages/Navigation/MenuPage.xaml:55	ui:MenuItem "New" has no AutomationId.
+WT001	high	Views/Pages/Navigation/MenuPage.xaml:56	ui:MenuItem "Open..." has no AutomationId.
+WT001	high	Views/Pages/Navigation/MenuPage.xaml:57	ui:MenuItem "Save" has no AutomationId.
+WT001	high	Views/Pages/Navigation/MenuPage.xaml:58	ui:MenuItem "Save As..." has no AutomationId.
+WT001	high	Views/Pages/Navigation/MenuPage.xaml:60	ui:MenuItem "Exit" has no AutomationId.
+WT001	high	Views/Pages/Navigation/MenuPage.xaml:62	ui:MenuItem "Edit" has no AutomationId.
+WT001	high	Views/Pages/Navigation/MenuPage.xaml:63	ui:MenuItem "Undo" has no AutomationId.
+WT001	high	Views/Pages/Navigation/MenuPage.xaml:65	ui:MenuItem "Cut" has no AutomationId.
+WT001	high	Views/Pages/Navigation/MenuPage.xaml:66	ui:MenuItem "Copy" has no AutomationId.
+WT001	high	Views/Pages/Navigation/MenuPage.xaml:67	ui:MenuItem "Paste" has no AutomationId.
+WT001	high	Views/Pages/Navigation/MenuPage.xaml:68	ui:MenuItem has no AutomationId.
+WT008	low	Views/Pages/Navigation/MenuPage.xaml:68	ui:MenuItem has no readable name.
+WT001	high	Views/Pages/Navigation/MenuPage.xaml:70	ui:MenuItem "Word wrap" has no AutomationId.
+WT001	high	Views/Pages/Navigation/MenuPage.xaml:75	ui:MenuItem "Find..." has no AutomationId.
+WT001	high	Views/Pages/Navigation/MenuPage.xaml:76	ui:MenuItem "Find next" has no AutomationId.
+WT001	high	Views/Pages/Navigation/MenuPage.xaml:78	ui:MenuItem "Select All" has no AutomationId.
+WT001	high	Views/Pages/Navigation/MenuPage.xaml:81	ui:MenuItem has no AutomationId.
+WT008	low	Views/Pages/Navigation/MenuPage.xaml:81	ui:MenuItem has no readable name.
+WT001	high	Views/Pages/Navigation/MenuPage.xaml:82	ui:MenuItem has no AutomationId.
+WT008	low	Views/Pages/Navigation/MenuPage.xaml:82	ui:MenuItem has no readable name.
+WT001	high	Views/Pages/Navigation/MenuPage.xaml:83	ui:MenuItem has no AutomationId.
+WT008	low	Views/Pages/Navigation/MenuPage.xaml:83	ui:MenuItem has no readable name.
+WT001	high	Views/Pages/Navigation/MultilevelNavigationPage.xaml:22	Button "Navigate to the first page" has no AutomationId.
+WT001	high	Views/Pages/Navigation/TabControlPage.xaml:26	TabControl has no AutomationId.
+WT001	high	Views/Pages/Navigation/TabControlPage.xaml:27	TabItem "Hello" has no AutomationId.
+WT001	high	Views/Pages/Navigation/TabControlPage.xaml:38	TabItem "The cake" has no AutomationId.
+WT001	high	Views/Pages/OpSystem/ClipboardPage.xaml:35	ui:Button "Copy Text to the Clipboard" has no AutomationId.
+WT001	high	Views/Pages/OpSystem/ClipboardPage.xaml:46	ui:TextBox has no AutomationId.
+WT008	low	Views/Pages/OpSystem/ClipboardPage.xaml:46	ui:TextBox has no readable name.
+WT001	high	Views/Pages/OpSystem/ClipboardPage.xaml:63	ui:Button "Paste Text from the Clipboard" has no AutomationId.
+WT001	high	Views/Pages/OpSystem/FilePickerPage.xaml:30	ui:Button "Open a file" has no AutomationId.
+WT001	high	Views/Pages/OpSystem/FilePickerPage.xaml:59	ui:Button "Open a picture" has no AutomationId.
+WT001	high	Views/Pages/OpSystem/FilePickerPage.xaml:87	ui:Button "Open multiple files" has no AutomationId.
+WT001	high	Views/Pages/OpSystem/FilePickerPage.xaml:111	ui:Button "Open a folder" has no AutomationId.
+WT001	high	Views/Pages/OpSystem/FilePickerPage.xaml:149	ui:TextBox has no AutomationId.
+WT008	low	Views/Pages/OpSystem/FilePickerPage.xaml:149	ui:TextBox has no readable name.
+WT001	high	Views/Pages/OpSystem/FilePickerPage.xaml:170	ui:TextBox has no AutomationId.
+WT008	low	Views/Pages/OpSystem/FilePickerPage.xaml:170	ui:TextBox has no readable name.
+WT001	high	Views/Pages/OpSystem/FilePickerPage.xaml:181	ui:Button "Save a file" has no AutomationId.
+WT001	high	Views/Pages/OpSystem/NotifyIconPage.xaml:32	ui:TextBox has no AutomationId.
+WT008	low	Views/Pages/OpSystem/NotifyIconPage.xaml:32	ui:TextBox has no readable name.
+WT001	high	Views/Pages/OpSystem/NotifyIconPage.xaml:37	ui:TextBox has no AutomationId.
+WT008	low	Views/Pages/OpSystem/NotifyIconPage.xaml:37	ui:TextBox has no readable name.
+WT001	high	Views/Pages/OpSystem/NotifyIconPage.xaml:43	ComboBox has no AutomationId.
+WT005	medium	Views/Pages/OpSystem/NotifyIconPage.xaml:43	Rows in ComboBox have no unique ID.
+WT008	low	Views/Pages/OpSystem/NotifyIconPage.xaml:43	ComboBox has no readable name.
+WT001	high	Views/Pages/OpSystem/NotifyIconPage.xaml:48	ui:Button "Show Balloon Tip" has no AutomationId.
+WT001	high	Views/Pages/OpSystem/NotifyIconPage.xaml:65	ui:TextBox has no AutomationId.
+WT008	low	Views/Pages/OpSystem/NotifyIconPage.xaml:65	ui:TextBox has no readable name.
+WT001	high	Views/Pages/OpSystem/NotifyIconPage.xaml:70	ui:Button "Update Tooltip" has no AutomationId.
+WT001	high	Views/Pages/Samples/MultilevelNavigationSamplePage1.xaml:24	Button "Navigate back" has no AutomationId.
+WT001	high	Views/Pages/Samples/MultilevelNavigationSamplePage1.xaml:31	Button "Navigate to the second page" has no AutomationId.
+WT001	high	Views/Pages/Samples/MultilevelNavigationSamplePage2.xaml:24	Button "Navigate back" has no AutomationId.
+WT001	high	Views/Pages/Samples/MultilevelNavigationSamplePage2.xaml:31	Button "Navigate to the third page" has no AutomationId.
+WT001	high	Views/Pages/Samples/MultilevelNavigationSamplePage3.xaml:24	Button "Navigate back" has no AutomationId.
+WT001	high	Views/Pages/Samples/MultilevelNavigationSamplePage3.xaml:31	Button "Navigate to the first page" has no AutomationId.
+WT001	high	Views/Pages/SettingsPage.xaml:41	ComboBox has no AutomationId.
+WT008	low	Views/Pages/SettingsPage.xaml:41	ComboBox has no readable name.
+WT001	high	Views/Pages/SettingsPage.xaml:56	ui:CardExpander "WPF UI" has no AutomationId.
+WT001	high	Views/Pages/StatusAndInfo/InfoBadgePage.xaml:87	ComboBox has no AutomationId.
+WT008	low	Views/Pages/StatusAndInfo/InfoBadgePage.xaml:87	ComboBox has no readable name.
+WT001	high	Views/Pages/StatusAndInfo/InfoBadgePage.xaml:121	ComboBox has no AutomationId.
+WT008	low	Views/Pages/StatusAndInfo/InfoBadgePage.xaml:121	ComboBox has no readable name.
+WT001	high	Views/Pages/StatusAndInfo/InfoBadgePage.xaml:139	ui:Button has no AutomationId.
+WT008	low	Views/Pages/StatusAndInfo/InfoBadgePage.xaml:139	ui:Button has no readable name.
+WT001	high	Views/Pages/StatusAndInfo/InfoBarPage.xaml:43	CheckBox "Is open" has no AutomationId.
+WT001	high	Views/Pages/StatusAndInfo/InfoBarPage.xaml:48	ComboBox has no AutomationId.
+WT008	low	Views/Pages/StatusAndInfo/InfoBarPage.xaml:48	ComboBox has no readable name.
+WT001	high	Views/Pages/StatusAndInfo/InfoBarPage.xaml:82	CheckBox "Is open" has no AutomationId.
+WT001	high	Views/Pages/StatusAndInfo/InfoBarPage.xaml:87	ComboBox has no AutomationId.
+WT008	low	Views/Pages/StatusAndInfo/InfoBarPage.xaml:87	ComboBox has no readable name.
+WT001	high	Views/Pages/StatusAndInfo/ToolTipPage.xaml:25	Button "Button with a simple ToolTip." has no AutomationId.
+WT001	high	Views/Pages/Text/AutoSuggestBoxPage.xaml:36	CheckBox "Show clear button" has no AutomationId.
+WT001	high	Views/Pages/Text/LabelPage.xaml:40	TextBox has no AutomationId.
+WT008	low	Views/Pages/Text/LabelPage.xaml:40	TextBox has no readable name.
+WT002	low	Views/Pages/Text/NumberBoxPage.xaml:55	ComboBox "Spin button placement mode" gets its ID "SpinButtonPlacementModeComboBox" from x:Name.
+WT001	high	Views/Pages/Text/PasswordBoxPage.xaml:26	PasswordBox has no AutomationId.
+WT008	low	Views/Pages/Text/PasswordBoxPage.xaml:26	PasswordBox has no readable name.
+WT001	high	Views/Pages/Text/PasswordBoxPage.xaml:33	ui:PasswordBox has no AutomationId.
+WT008	low	Views/Pages/Text/PasswordBoxPage.xaml:33	ui:PasswordBox has no readable name.
+WT001	high	Views/Pages/Text/RichTextBoxPage.xaml:26	RichTextBox has no AutomationId.
+WT008	low	Views/Pages/Text/RichTextBoxPage.xaml:26	RichTextBox has no readable name.
+WT001	high	Views/Pages/Text/TextBoxPage.xaml:23	TextBox has no AutomationId.
+WT008	low	Views/Pages/Text/TextBoxPage.xaml:23	TextBox has no readable name.
+WT001	high	Views/Pages/Text/TextBoxPage.xaml:30	ui:TextBox has no AutomationId.
+WT008	low	Views/Pages/Text/TextBoxPage.xaml:30	ui:TextBox has no readable name.
+WT001	high	Views/Pages/Text/TextBoxPage.xaml:37	ui:TextBox has no AutomationId.
+WT008	low	Views/Pages/Text/TextBoxPage.xaml:37	ui:TextBox has no readable name.
+WT005	medium	Views/Pages/Windows/WindowsPage.xaml:23	Rows in ItemsControl have no unique ID.
+WT001	high	Views/Windows/EditorWindow.xaml:41	ui:MenuItem "File" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:42	MenuItem "New" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:46	MenuItem "New window" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:50	MenuItem "Open..." has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:54	MenuItem "Save" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:58	MenuItem "Save As..." has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:63	MenuItem "Exit" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:68	ui:MenuItem "Edit" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:69	MenuItem "Undo" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:74	MenuItem "Cut" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:78	MenuItem "Copy" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:82	MenuItem "Paste" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:86	MenuItem "Delete" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:92	MenuItem "Search with browser" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:96	MenuItem "Find..." has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:100	MenuItem "Find next" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:105	MenuItem "Select All" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:111	ui:MenuItem has no AutomationId.
+WT008	low	Views/Windows/EditorWindow.xaml:111	ui:MenuItem has no readable name.
+WT001	high	Views/Windows/EditorWindow.xaml:115	ui:MenuItem has no AutomationId.
+WT008	low	Views/Windows/EditorWindow.xaml:115	ui:MenuItem has no readable name.
+WT001	high	Views/Windows/EditorWindow.xaml:119	ui:MenuItem has no AutomationId.
+WT008	low	Views/Windows/EditorWindow.xaml:119	ui:MenuItem has no readable name.
+WT001	high	Views/Windows/EditorWindow.xaml:124	ui:MenuItem has no AutomationId.
+WT008	low	Views/Windows/EditorWindow.xaml:124	ui:MenuItem has no readable name.
+WT001	high	Views/Windows/EditorWindow.xaml:129	ui:MenuItem "Format" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:130	MenuItem "Word wrap" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:137	ui:MenuItem "View" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:138	MenuItem "Zoom" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:139	MenuItem "Zoom in" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:143	MenuItem "Zoom out" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:147	MenuItem "Restore default zoom" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:152	MenuItem "Status bar" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:160	ui:MenuItem "Help" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:161	MenuItem "View help" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:165	MenuItem "Send feedback" has no AutomationId.
+WT001	high	Views/Windows/EditorWindow.xaml:170	MenuItem "About WPF UI" has no AutomationId.
+WT002	low	Views/Windows/EditorWindow.xaml:177	RichTextBox [RootTextBox] gets its ID "RootTextBox" from x:Name.
+WT008	low	Views/Windows/EditorWindow.xaml:177	RichTextBox [RootTextBox] has no readable name.
+WT001	high	Views/Windows/MonacoWindow.xaml:42	ui:MenuItem "File" has no AutomationId.
+WT001	high	Views/Windows/MonacoWindow.xaml:43	MenuItem "New" has no AutomationId.
+WT001	high	Views/Windows/MonacoWindow.xaml:47	MenuItem "New window" has no AutomationId.
+WT001	high	Views/Windows/MonacoWindow.xaml:51	MenuItem "Open..." has no AutomationId.
+WT001	high	Views/Windows/MonacoWindow.xaml:55	MenuItem "Save" has no AutomationId.
+WT001	high	Views/Windows/MonacoWindow.xaml:59	MenuItem "Save As..." has no AutomationId.
+WT001	high	Views/Windows/MonacoWindow.xaml:64	MenuItem "Exit" has no AutomationId.
+WT001	high	Views/Windows/MonacoWindow.xaml:69	ui:MenuItem "Debug" has no AutomationId.
+WT001	high	Views/Windows/MonacoWindow.xaml:70	MenuItem "Undo" has no AutomationId.
+WT001	high	Views/Windows/MonacoWindow.xaml:75	MenuItem "Cut" has no AutomationId.
+WT001	high	Views/Windows/MonacoWindow.xaml:79	MenuItem "Copy" has no AutomationId.
+WT001	high	Views/Windows/MonacoWindow.xaml:83	MenuItem "Paste" has no AutomationId.
+WT001	high	Views/Windows/MonacoWindow.xaml:87	MenuItem "Delete" has no AutomationId.
+WT001	high	Views/Windows/MonacoWindow.xaml:93	MenuItem "Search with browser" has no AutomationId.
+WT001	high	Views/Windows/MonacoWindow.xaml:97	MenuItem "Find..." has no AutomationId.
+WT001	high	Views/Windows/MonacoWindow.xaml:101	MenuItem "Find next" has no AutomationId.
+WT001	high	Views/Windows/MonacoWindow.xaml:106	MenuItem "Select All" has no AutomationId.
+WT001	high	Views/Windows/MonacoWindow.xaml:112	ui:MenuItem has no AutomationId.
+WT008	low	Views/Windows/MonacoWindow.xaml:112	ui:MenuItem has no readable name.
+WT001	high	Views/Windows/MonacoWindow.xaml:118	ui:MenuItem has no AutomationId.
+WT008	low	Views/Windows/MonacoWindow.xaml:118	ui:MenuItem has no readable name.
+WT001	high	Views/Windows/MonacoWindow.xaml:123	ui:MenuItem has no AutomationId.
+WT008	low	Views/Windows/MonacoWindow.xaml:123	ui:MenuItem has no readable name.
+WT001	high	Views/Windows/MonacoWindow.xaml:128	ui:MenuItem has no AutomationId.
+WT008	low	Views/Windows/MonacoWindow.xaml:128	ui:MenuItem has no readable name.
+WT001	high	Views/Windows/MonacoWindow.xaml:134	ui:MenuItem "Help" has no AutomationId.
+WT001	high	Views/Windows/MonacoWindow.xaml:135	MenuItem "View help" has no AutomationId.
+WT001	high	Views/Windows/MonacoWindow.xaml:139	MenuItem "Send feedback" has no AutomationId.
+WT001	high	Views/Windows/MonacoWindow.xaml:144	MenuItem "About WPF UI" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:35	MenuItem "File" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:36	MenuItem "New" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:38	MenuItem "New window" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:40	MenuItem "Open..." has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:42	MenuItem "Save" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:44	MenuItem "Save As..." has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:47	MenuItem "Exit" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:50	ui:MenuItem "Debug" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:51	MenuItem "Undo" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:54	MenuItem "Cut" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:56	MenuItem "Copy" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:58	MenuItem "Paste" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:60	MenuItem "Delete" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:64	MenuItem "Search with browser" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:66	MenuItem "Find..." has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:68	MenuItem "Find next" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:71	MenuItem "Select All" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:78	ui:MenuItem has no AutomationId.
+WT008	low	Views/Windows/SandboxWindow.xaml:78	ui:MenuItem has no readable name.
+WT001	high	Views/Windows/SandboxWindow.xaml:81	ui:MenuItem has no AutomationId.
+WT008	low	Views/Windows/SandboxWindow.xaml:81	ui:MenuItem has no readable name.
+WT001	high	Views/Windows/SandboxWindow.xaml:84	ui:MenuItem has no AutomationId.
+WT008	low	Views/Windows/SandboxWindow.xaml:84	ui:MenuItem has no readable name.
+WT001	high	Views/Windows/SandboxWindow.xaml:87	ui:MenuItem has no AutomationId.
+WT008	low	Views/Windows/SandboxWindow.xaml:87	ui:MenuItem has no readable name.
+WT001	high	Views/Windows/SandboxWindow.xaml:102	ui:DropDownButton "Hello" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:105	MenuItem has no AutomationId.
+WT008	low	Views/Windows/SandboxWindow.xaml:105	MenuItem has no readable name.
+WT001	high	Views/Windows/SandboxWindow.xaml:106	MenuItem has no AutomationId.
+WT008	low	Views/Windows/SandboxWindow.xaml:106	MenuItem has no readable name.
+WT001	high	Views/Windows/SandboxWindow.xaml:108	MenuItem has no AutomationId.
+WT008	low	Views/Windows/SandboxWindow.xaml:108	MenuItem has no readable name.
+WT001	high	Views/Windows/SandboxWindow.xaml:109	MenuItem has no AutomationId.
+WT008	low	Views/Windows/SandboxWindow.xaml:109	MenuItem has no readable name.
+WT001	high	Views/Windows/SandboxWindow.xaml:110	MenuItem has no AutomationId.
+WT008	low	Views/Windows/SandboxWindow.xaml:110	MenuItem has no readable name.
+WT001	high	Views/Windows/SandboxWindow.xaml:111	MenuItem "OCR Paste" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:113	MenuItem "Isolate Selected Text" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:114	MenuItem "Select Line" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:115	MenuItem "Toggle Case" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:117	MenuItem "Move Selection Up" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:118	MenuItem "Move Selection Down" has no AutomationId.

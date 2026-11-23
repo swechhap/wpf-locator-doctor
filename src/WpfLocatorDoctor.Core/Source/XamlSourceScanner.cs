@@ -1,3 +1,4 @@
+using System.Text;
 using System.Text.RegularExpressions;
 using System.Xml;
 using System.Xml.Linq;
@@ -14,6 +15,12 @@ public sealed partial class XamlSourceScanner
 {
     private const string WpfNs = "http://schemas.microsoft.com/winfx/2006/xaml/presentation";
     private const string XamlNs = "http://schemas.microsoft.com/winfx/2006/xaml";
+
+    /// <summary>
+    /// Older XAML files often declare a Windows code page (for example encoding="Windows-1252"). Modern .NET only knows
+    /// Unicode encodings until the code pages are registered, and would skip those files as unreadable.
+    /// </summary>
+    static XamlSourceScanner() => Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
     private static readonly HashSet<string> SkippedDirectories = new(StringComparer.OrdinalIgnoreCase)
     {

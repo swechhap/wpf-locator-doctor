@@ -1,0 +1,230 @@
+# Snoop @ 2bf48f60c2, scan path: Snoop.Core
+score 65.2  grade C  elements 224  controls 141  screens 24
+check coverage      42.6%  60 of 141 controls have an AutomationId.
+check quality         70%  60 borrowed from x:Name.
+check uniqueness      79%  0 ID(s) used more than once; 0 of 21 data lists have identifiable rows.
+check stability      n/a%  Not measured. Run again with --baseline <previous report.json> to compare.
+check visibility    99.3%  1 invisible control(s), 0 opaque area(s).
+check names           64%  89 of 139 controls have a readable name.
+problems WT001=81  WT002=60  WT005=21  WT006=7  WT007=1  WT008=50
+
+WT001	high	Controls/Previewer.xaml:307	Button has no AutomationId.
+WT008	low	Controls/Previewer.xaml:307	Button has no readable name.
+WT001	high	Controls/Previewer.xaml:324	ToggleButton has no AutomationId.
+WT008	low	Controls/Previewer.xaml:324	ToggleButton has no readable name.
+WT001	high	Controls/Previewer.xaml:340	Button has no AutomationId.
+WT008	low	Controls/Previewer.xaml:340	Button has no readable name.
+WT007	medium	Controls/PropertyGrid2.xaml:7	controls:Inspector [PropertyGrid] has the ID "PropertyGrid", but this element type isn't visible to UI Automation.
+WT002	low	Controls/PropertyGrid2.xaml:120	ListView [ListView] gets its ID "ListView" from x:Name.
+WT005	medium	Controls/PropertyGrid2.xaml:120	Rows in ListView [ListView] have no unique ID.
+WT008	low	Controls/PropertyGrid2.xaml:120	ListView [ListView] has no readable name.
+WT001	medium	Controls/PropertyGrid2.xaml:180	CheckBox (inside a list row template) has no AutomationId.
+WT008	low	Controls/PropertyGrid2.xaml:180	CheckBox has no readable name.
+WT001	medium	Controls/PropertyGrid2.xaml:261	Button "Get error message" (inside a list row template) has no AutomationId.
+WT001	medium	Controls/PropertyGrid2.xaml:272	TextBox (inside a list row template) has no AutomationId.
+WT008	low	Controls/PropertyGrid2.xaml:272	TextBox has no readable name.
+WT001	high	Controls/PropertyInspector.xaml:39	TextBox has no AutomationId.
+WT008	low	Controls/PropertyInspector.xaml:39	TextBox has no readable name.
+WT001	high	Controls/PropertyInspector.xaml:57	Hyperlink "{Binding ElementName=propertyInspector,…" has no AutomationId.
+WT001	high	Controls/PropertyInspector.xaml:68	MenuItem "Open in Explorer" has no AutomationId.
+WT001	high	Controls/PropertyInspector.xaml:72	MenuItem "Open in ILSpy" has no AutomationId.
+WT001	high	Controls/PropertyInspector.xaml:77	MenuItem "Copy FQ Name" has no AutomationId.
+WT001	high	Controls/PropertyInspector.xaml:108	ToggleButton ".*" has no AutomationId.
+WT002	low	Controls/PropertyInspector.xaml:113	CheckBox "Clear after delve" gets its ID "checkBoxClearAfterDelve" from x:Name.
+WT001	high	Controls/PropertyInspector.xaml:117	Button has no AutomationId.
+WT008	low	Controls/PropertyInspector.xaml:117	Button has no readable name.
+WT002	low	Controls/PropertyInspector.xaml:143	ComboBox [FilterSetCombo] gets its ID "FilterSetCombo" from x:Name.
+WT005	medium	Controls/PropertyInspector.xaml:143	Rows in ComboBox [FilterSetCombo] have no unique ID.
+WT008	low	Controls/PropertyInspector.xaml:143	ComboBox [FilterSetCombo] has no readable name.
+WT001	high	Controls/PropertyInspector.xaml:158	ToggleButton "D" has no AutomationId.
+WT001	high	Controls/PropertyInspector.xaml:173	ToggleButton "U" has no AutomationId.
+WT002	low	Controls/PropertyInspector.xaml:190	TextBox [PropertiesFilter] gets its ID "PropertiesFilter" from x:Name.
+WT008	low	Controls/PropertyInspector.xaml:190	TextBox [PropertiesFilter] has no readable name.
+WT006	medium	Controls/ValueEditors/BoolValueEditor.cs:11	BoolValueEditor derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/ValueEditors/BrushValueEditor.cs:8	BrushValueEditor derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/ValueEditors/ColorValueEditor.cs:3	ColorValueEditor derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT001	high	Controls/ValueEditors/Details/ValueEditorDetailsWindow.xaml:24	Button "Change value" has no AutomationId.
+WT001	high	Controls/ValueEditors/Details/ValueEditorDetailsWindow.xaml:29	Button "Cancel" has no AutomationId.
+WT006	medium	Controls/ValueEditors/EnumValueEditor.cs:14	EnumValueEditor derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/ValueEditors/StandardValueEditor.cs:12	StandardValueEditor derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/ValueEditors/StringValueEditor.cs:10	StringValueEditor derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/ValueEditors/ValueEditor.cs:14	ValueEditor derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT002	low	Controls/ZoomerControl.xaml:32	Slider [ColorSlider] gets its ID "ColorSlider" from x:Name.
+WT008	low	Controls/ZoomerControl.xaml:32	Slider [ColorSlider] has no readable name.
+WT002	low	PowerShell/EmbeddedShellView.xaml:30	CheckBox "Auto-expand" gets its ID "autoExpandCheckBox" from x:Name.
+WT002	low	PowerShell/EmbeddedShellView.xaml:40	TextBox [outputTextBox] gets its ID "outputTextBox" from x:Name.
+WT008	low	PowerShell/EmbeddedShellView.xaml:40	TextBox [outputTextBox] has no readable name.
+WT002	low	PowerShell/EmbeddedShellView.xaml:45	TextBox [commandTextBox] gets its ID "commandTextBox" from x:Name.
+WT008	low	PowerShell/EmbeddedShellView.xaml:45	TextBox [commandTextBox] has no readable name.
+WT001	high	Views/BehaviorsTab/BehaviorsView.xaml:18	ListBox has no AutomationId.
+WT005	medium	Views/BehaviorsTab/BehaviorsView.xaml:18	Rows in ListBox have no unique ID.
+WT008	low	Views/BehaviorsTab/BehaviorsView.xaml:18	ListBox has no readable name.
+WT002	low	Views/DebugListenerTab/DebugListenerControl.xaml:23	CheckBox "Start Listening" gets its ID "checkBoxStartListening" from x:Name.
+WT002	low	Views/DebugListenerTab/DebugListenerControl.xaml:35	ComboBox [comboBoxPresentationTraceLevel] gets its ID "comboBoxPresentationTraceLevel" from x:Name.
+WT008	low	Views/DebugListenerTab/DebugListenerControl.xaml:35	ComboBox [comboBoxPresentationTraceLevel] has no readable name.
+WT002	low	Views/DebugListenerTab/DebugListenerControl.xaml:71	Button "Clear Text" gets its ID "buttonClear" from x:Name.
+WT002	low	Views/DebugListenerTab/DebugListenerControl.xaml:78	Button "Clear Filters" gets its ID "buttonClearFilters" from x:Name.
+WT002	low	Views/DebugListenerTab/DebugListenerControl.xaml:86	Button "Edit Filter" gets its ID "buttonSetFilters" from x:Name.
+WT002	low	Views/DebugListenerTab/DebugListenerControl.xaml:100	TextBox [textBoxDebugContent] gets its ID "textBoxDebugContent" from x:Name.
+WT008	low	Views/DebugListenerTab/DebugListenerControl.xaml:100	TextBox [textBoxDebugContent] has no readable name.
+WT002	low	Views/DebugListenerTab/SetFiltersWindow.xaml:20	ListBox [listBoxFilters] gets its ID "listBoxFilters" from x:Name.
+WT005	medium	Views/DebugListenerTab/SetFiltersWindow.xaml:20	Rows in ListBox [listBoxFilters] have no unique ID.
+WT008	low	Views/DebugListenerTab/SetFiltersWindow.xaml:20	ListBox [listBoxFilters] has no readable name.
+WT002	low	Views/DebugListenerTab/SetFiltersWindow.xaml:26	MenuItem "Group Filters" gets its ID "menuItemGroupFilters" from x:Name.
+WT002	low	Views/DebugListenerTab/SetFiltersWindow.xaml:32	MenuItem "Clear Filter Groups" gets its ID "menuItemClearFilterGroups" from x:Name.
+WT002	low	Views/DebugListenerTab/SetFiltersWindow.xaml:38	MenuItem "Set Inverse" gets its ID "menuItemSetInverse" from x:Name.
+WT002	low	Views/DebugListenerTab/SetFiltersWindow.xaml:78	ComboBox [comboBoxFilterTypes] gets its ID "comboBoxFilterTypes" from x:Name.
+WT008	low	Views/DebugListenerTab/SetFiltersWindow.xaml:78	ComboBox [comboBoxFilterTypes] has no readable name.
+WT002	low	Views/DebugListenerTab/SetFiltersWindow.xaml:95	TextBox [textBlockFilter] gets its ID "textBlockFilter" from x:Name.
+WT008	low	Views/DebugListenerTab/SetFiltersWindow.xaml:95	TextBox [textBlockFilter] has no readable name.
+WT002	low	Views/DebugListenerTab/SetFiltersWindow.xaml:101	Button [buttonRemoveFilter] gets its ID "buttonRemoveFilter" from x:Name.
+WT008	low	Views/DebugListenerTab/SetFiltersWindow.xaml:101	Button [buttonRemoveFilter] has no readable name.
+WT002	low	Views/DebugListenerTab/SetFiltersWindow.xaml:124	Button "Add Another Filter" gets its ID "buttonAddFilter" from x:Name.
+WT002	low	Views/DebugListenerTab/SetFiltersWindow.xaml:135	Button "Set Filter" gets its ID "buttonSetFilter" from x:Name.
+WT001	high	Views/DiagnosticsView.xaml:43	ToggleButton "{Binding ElementName=self, Path=ErrorCo…" has no AutomationId.
+WT001	high	Views/DiagnosticsView.xaml:56	ToggleButton "{Binding ElementName=self, Path=Warning…" has no AutomationId.
+WT001	high	Views/DiagnosticsView.xaml:69	ToggleButton "{Binding ElementName=self, Path=Informa…" has no AutomationId.
+WT001	high	Views/DiagnosticsView.xaml:83	controls:NoSelectionComboBox has no AutomationId.
+WT005	medium	Views/DiagnosticsView.xaml:83	Rows in controls:NoSelectionComboBox have no unique ID.
+WT008	low	Views/DiagnosticsView.xaml:83	controls:NoSelectionComboBox has no readable name.
+WT001	high	Views/DiagnosticsView.xaml:97	Button "Export" has no AutomationId.
+WT002	low	Views/DiagnosticsView.xaml:101	ListView [diagnostics] gets its ID "diagnostics" from x:Name.
+WT005	medium	Views/DiagnosticsView.xaml:101	Rows in ListView [diagnostics] have no unique ID.
+WT008	low	Views/DiagnosticsView.xaml:101	ListView [diagnostics] has no readable name.
+WT002	low	Views/EventsView.xaml:108	controls:NoSelectionComboBox [EventChooser] gets its ID "EventChooser" from x:Name.
+WT005	medium	Views/EventsView.xaml:108	Rows in controls:NoSelectionComboBox [EventChooser] have no unique ID.
+WT008	low	Views/EventsView.xaml:108	controls:NoSelectionComboBox [EventChooser] has no readable name.
+WT001	high	Views/EventsView.xaml:124	Button has no AutomationId.
+WT008	low	Views/EventsView.xaml:124	Button has no readable name.
+WT002	low	Views/EventsView.xaml:145	TreeView [EventTree] gets its ID "EventTree" from x:Name.
+WT005	medium	Views/EventsView.xaml:145	Rows in TreeView [EventTree] have no unique ID.
+WT008	low	Views/EventsView.xaml:145	TreeView [EventTree] has no readable name.
+WT001	high	Views/EventsView.xaml:168	TextBox has no AutomationId.
+WT008	low	Views/EventsView.xaml:168	TextBox has no readable name.
+WT002	low	Views/HighlightSettingsView.xaml:38	ListView [ListView] gets its ID "ListView" from x:Name.
+WT005	medium	Views/HighlightSettingsView.xaml:38	Rows in ListView [ListView] have no unique ID.
+WT008	low	Views/HighlightSettingsView.xaml:38	ListView [ListView] has no readable name.
+WT002	low	Views/HighlightSettingsView.xaml:101	Button "Close" gets its ID "Close" from x:Name.
+WT002	low	Views/HighlightSettingsView.xaml:106	Button "Reset settings" gets its ID "ResetSettings" from x:Name.
+WT002	low	Views/MethodsTab/FullTypeSelector.xaml:20	ComboBox [comboBoxAssemblies] gets its ID "comboBoxAssemblies" from x:Name.
+WT005	medium	Views/MethodsTab/FullTypeSelector.xaml:20	Rows in ComboBox [comboBoxAssemblies] have no unique ID.
+WT008	low	Views/MethodsTab/FullTypeSelector.xaml:20	ComboBox [comboBoxAssemblies] has no readable name.
+WT002	low	Views/MethodsTab/FullTypeSelector.xaml:27	ComboBox [comboBoxTypes] gets its ID "comboBoxTypes" from x:Name.
+WT005	medium	Views/MethodsTab/FullTypeSelector.xaml:27	Rows in ComboBox [comboBoxTypes] have no unique ID.
+WT008	low	Views/MethodsTab/FullTypeSelector.xaml:27	ComboBox [comboBoxTypes] has no readable name.
+WT002	low	Views/MethodsTab/FullTypeSelector.xaml:47	Button "Create instance" gets its ID "buttonCreateInstance" from x:Name.
+WT002	low	Views/MethodsTab/FullTypeSelector.xaml:55	Button "Cancel" gets its ID "buttonCancel" from x:Name.
+WT002	low	Views/MethodsTab/FullTypeSelector.xaml:70	TextBox [textBoxConvertFrom] gets its ID "textBoxConvertFrom" from x:Name.
+WT008	low	Views/MethodsTab/FullTypeSelector.xaml:70	TextBox [textBoxConvertFrom] has no readable name.
+WT001	medium	Views/MethodsTab/MethodsControl.xaml:32	ComboBox (inside a list row template) has no AutomationId.
+WT005	medium	Views/MethodsTab/MethodsControl.xaml:32	Rows in ComboBox have no unique ID.
+WT008	low	Views/MethodsTab/MethodsControl.xaml:32	ComboBox has no readable name.
+WT001	medium	Views/MethodsTab/MethodsControl.xaml:50	ComboBox (inside a list row template) has no AutomationId.
+WT005	medium	Views/MethodsTab/MethodsControl.xaml:50	Rows in ComboBox have no unique ID.
+WT008	low	Views/MethodsTab/MethodsControl.xaml:50	ComboBox has no readable name.
+WT002	low	Views/MethodsTab/MethodsControl.xaml:68	TextBox [ParameterValue] gets its ID "ParameterValue" from x:Name.
+WT008	low	Views/MethodsTab/MethodsControl.xaml:68	TextBox [ParameterValue] has no readable name.
+WT001	medium	Views/MethodsTab/MethodsControl.xaml:88	Button "Create/Modify Parameter" (inside a list row template) has no AutomationId.
+WT001	medium	Views/MethodsTab/MethodsControl.xaml:95	Button "Clear Parameter" (inside a list row template) has no AutomationId.
+WT001	high	Views/MethodsTab/MethodsControl.xaml:122	Button "Change Target" has no AutomationId.
+WT002	low	Views/MethodsTab/MethodsControl.xaml:146	CheckBox "Use DataContext Property" gets its ID "checkBoxUseDataContext" from x:Name.
+WT002	low	Views/MethodsTab/MethodsControl.xaml:157	ComboBox [comboBoxMethods] gets its ID "comboBoxMethods" from x:Name.
+WT005	medium	Views/MethodsTab/MethodsControl.xaml:157	Rows in ComboBox [comboBoxMethods] have no unique ID.
+WT008	low	Views/MethodsTab/MethodsControl.xaml:157	ComboBox [comboBoxMethods] has no readable name.
+WT005	medium	Views/MethodsTab/MethodsControl.xaml:169	Rows in ItemsControl [itemsControlParameters] have no unique ID.
+WT001	high	Views/MethodsTab/MethodsControl.xaml:175	Button "Invoke" has no AutomationId.
+WT002	low	Views/MethodsTab/MethodsControl.xaml:193	TextBox [textBlockResult] gets its ID "textBlockResult" from x:Name.
+WT008	low	Views/MethodsTab/MethodsControl.xaml:193	TextBox [textBlockResult] has no readable name.
+WT002	low	Views/MethodsTab/ParameterCreator.xaml:43	Button "OK" gets its ID "btnOK" from x:Name.
+WT002	low	Views/MethodsTab/ParameterCreator.xaml:52	Button "Cancel" gets its ID "btnCancel" from x:Name.
+WT002	low	Views/MethodsTab/TypeSelector.xaml:19	ComboBox [comboBoxTypes] gets its ID "comboBoxTypes" from x:Name.
+WT005	medium	Views/MethodsTab/TypeSelector.xaml:19	Rows in ComboBox [comboBoxTypes] have no unique ID.
+WT008	low	Views/MethodsTab/TypeSelector.xaml:19	ComboBox [comboBoxTypes] has no readable name.
+WT002	low	Views/MethodsTab/TypeSelector.xaml:25	Button "Create Instance" gets its ID "buttonCreateInstance" from x:Name.
+WT002	low	Views/MethodsTab/TypeSelector.xaml:33	Button "Cancel" gets its ID "buttonCancel" from x:Name.
+WT005	medium	Views/TriggersTab/TriggersView.xaml:242	Rows in ItemsControl have no unique ID.
+WT001	high	Windows/EditUserFilters.xaml:34	TextBox has no AutomationId.
+WT008	low	Windows/EditUserFilters.xaml:34	TextBox has no readable name.
+WT001	high	Windows/EditUserFilters.xaml:45	TextBox has no AutomationId.
+WT008	low	Windows/EditUserFilters.xaml:45	TextBox has no readable name.
+WT002	low	Windows/EditUserFilters.xaml:53	ListBox [filterSetList] gets its ID "filterSetList" from x:Name.
+WT005	medium	Windows/EditUserFilters.xaml:53	Rows in ListBox [filterSetList] have no unique ID.
+WT008	low	Windows/EditUserFilters.xaml:53	ListBox [filterSetList] has no readable name.
+WT001	high	Windows/EditUserFilters.xaml:72	Button "OK" has no AutomationId.
+WT001	high	Windows/EditUserFilters.xaml:77	Button "Cancel" has no AutomationId.
+WT002	low	Windows/EditUserFilters.xaml:89	Button [MoveUp] gets its ID "MoveUp" from x:Name.
+WT008	low	Windows/EditUserFilters.xaml:89	Button [MoveUp] has no readable name.
+WT002	low	Windows/EditUserFilters.xaml:96	Button [MoveDown] gets its ID "MoveDown" from x:Name.
+WT008	low	Windows/EditUserFilters.xaml:96	Button [MoveDown] has no readable name.
+WT001	high	Windows/EditUserFilters.xaml:104	Button "Add new" has no AutomationId.
+WT002	low	Windows/EditUserFilters.xaml:109	Button "Delete" gets its ID "DeleteItem" from x:Name.
+WT002	low	Windows/ErrorDialog.xaml:35	TextBox [_textBlockException] gets its ID "_textBlockException" from x:Name.
+WT008	low	Windows/ErrorDialog.xaml:35	TextBox [_textBlockException] has no readable name.
+WT002	low	Windows/ErrorDialog.xaml:54	Button "Copy details to clipboard" gets its ID "_buttonCopyToClipboard" from x:Name.
+WT001	high	Windows/ErrorDialog.xaml:64	Hyperlink "Click here to create an issue on GitHub." has no AutomationId.
+WT001	high	Windows/ErrorDialog.xaml:77	Button "Close dialog" has no AutomationId.
+WT002	low	Windows/ErrorDialog.xaml:96	CheckBox "Remember option" gets its ID "_checkBoxRemember" from x:Name.
+WT001	high	Windows/ErrorDialog.xaml:114	Button "Close dialog and do not handle exception" has no AutomationId.
+WT001	high	Windows/ErrorDialog.xaml:125	Button "Close dialog and mark exception handled" has no AutomationId.
+WT002	low	Windows/ScreenshotDialog.xaml:76	ComboBox [dpiBox] gets its ID "dpiBox" from x:Name.
+WT008	low	Windows/ScreenshotDialog.xaml:76	ComboBox [dpiBox] has no readable name.
+WT001	high	Windows/ScreenshotDialog.xaml:109	Button "Save" has no AutomationId.
+WT001	high	Windows/ScreenshotDialog.xaml:115	Button "Cancel" has no AutomationId.
+WT002	low	Windows/SnoopUI.xaml:119	ComboBox "Tree" gets its ID "TreeTypeComboBox" from x:Name.
+WT005	medium	Windows/SnoopUI.xaml:119	Rows in ComboBox "Tree" have no unique ID.
+WT001	high	Windows/SnoopUI.xaml:124	MenuItem "File" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:125	MenuItem "Close window" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:128	MenuItem "Settings" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:129	MenuItem "{Binding Path=SettingsFile, Source={x:S…" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:130	MenuItem "Make settings application specific" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:132	MenuItem "Delete application specific settings" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:134	MenuItem "Open settings folder" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:137	MenuItem "Reset settings" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:140	MenuItem "Tracking options" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:141	MenuItem "Track on mouse move when CTRL + SHIFT i…" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:145	MenuItem "Track on click" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:149	MenuItem "Skip template parts" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:153	MenuItem "Ignore hit test visibility" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:158	MenuItem "Highlight selected item" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:161	MenuItem "Highlight options ..." has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:164	MenuItem "Debug" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:165	MenuItem "Launch debugger" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:167	MenuItem "Snoop Snoop" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:170	MenuItem "?" has no AutomationId.
+WT002	low	Windows/SnoopUI.xaml:171	MenuItem [snoopVersion] gets its ID "snoopVersion" from x:Name.
+WT008	low	Windows/SnoopUI.xaml:171	MenuItem [snoopVersion] has no readable name.
+WT002	low	Windows/SnoopUI.xaml:180	ComboBox "Theme" gets its ID "ThemeComboBox" from x:Name.
+WT005	medium	Windows/SnoopUI.xaml:180	Rows in ComboBox "Theme" have no unique ID.
+WT002	low	Windows/SnoopUI.xaml:201	ComboBox [filterComboBox] gets its ID "filterComboBox" from x:Name.
+WT008	low	Windows/SnoopUI.xaml:201	ComboBox [filterComboBox] has no readable name.
+WT001	high	Windows/SnoopUI.xaml:218	Button has no AutomationId.
+WT008	low	Windows/SnoopUI.xaml:218	Button has no readable name.
+WT002	low	Windows/SnoopUI.xaml:232	controls:ProperTreeView [Tree] gets its ID "Tree" from x:Name.
+WT005	medium	Windows/SnoopUI.xaml:232	Rows in controls:ProperTreeView [Tree] have no unique ID.
+WT008	low	Windows/SnoopUI.xaml:232	controls:ProperTreeView [Tree] has no readable name.
+WT001	high	Windows/SnoopUI.xaml:307	TabControl has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:310	TabItem "Properties" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:327	TabItem "Data Context" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:344	TabItem "Events" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:360	TabItem "Triggers" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:377	TabItem "Behaviors" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:394	TabItem "Methods" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:411	TabItem "PowerShell" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:427	TabItem "Debug Listener" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:452	TabControl has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:455	TabItem "{Binding TreeService.DiagnosticContext.…" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:471	TabItem "Preview" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:497	controls:NoFocusHyperlink "{Binding CurrentFocus, Converter={x:Sta…" has no AutomationId.
+WT001	high	Windows/SnoopUI.xaml:515	controls:NoFocusHyperlink "{Binding CurrentFocusScope, Converter={…" has no AutomationId.
+WT001	high	Windows/Zoomer.xaml:32	MenuItem "2D view" has no AutomationId.
+WT001	high	Windows/Zoomer.xaml:37	MenuItem "3D view" has no AutomationId.
+WT001	high	Windows/Zoomer.xaml:43	MenuItem "Reset" has no AutomationId.
+WT001	high	Windows/Zoomer.xaml:58	RadioButton "2D" has no AutomationId.
+WT001	high	Windows/Zoomer.xaml:70	RadioButton "3D" has no AutomationId.
+WT002	low	Windows/Zoomer.xaml:92	Button "Fix" gets its ID "fixTextFormattingModeButton" from x:Name.
+WT002	low	Windows/Zoomer.xaml:100	Slider [ColorSlider] gets its ID "ColorSlider" from x:Name.
+WT008	low	Windows/Zoomer.xaml:100	Slider [ColorSlider] has no readable name.
+WT002	low	Windows/Zoomer.xaml:122	ComboBox [dpiBox] gets its ID "dpiBox" from x:Name.
+WT008	low	Windows/Zoomer.xaml:122	ComboBox [dpiBox] has no readable name.
+WT002	low	Windows/Zoomer.xaml:146	Slider [ZScaleSlider] gets its ID "ZScaleSlider" from x:Name.
+WT008	low	Windows/Zoomer.xaml:146	Slider [ZScaleSlider] has no readable name.

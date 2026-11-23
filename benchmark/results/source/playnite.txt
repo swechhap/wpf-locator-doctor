@@ -1,0 +1,1347 @@
+# Playnite (desktop app) @ 8c08a305d6, scan path: source/Playnite.DesktopApp
+score 52.2  grade D  elements 1034  controls 881  screens 66
+check coverage      19.8%  174 of 881 controls have an AutomationId.
+check quality         70%  174 borrowed from x:Name.
+check uniqueness    58.7%  1 ID(s) used more than once; 0 of 130 data lists have identifiable rows.
+check stability      n/a%  Not measured. Run again with --baseline <previous report.json> to compare.
+check visibility    98.5%  13 invisible control(s), 0 opaque area(s).
+check names         63.3%  542 of 856 controls have a readable name.
+problems WT001=694  WT002=174  WT004=1  WT005=130  WT006=24  WT008=314
+
+WT005	medium	Controls/AddonsSections/AddonUpdates.xaml:33	Rows in ItemsControl have no unique ID.
+WT001	medium	Controls/AddonsSections/AddonUpdates.xaml:41	CheckBox (inside a list row template) has no AutomationId.
+WT008	low	Controls/AddonsSections/AddonUpdates.xaml:41	CheckBox has no readable name.
+WT001	medium	Controls/AddonsSections/AddonUpdates.xaml:43	Expander "{Binding Status, Converter={StaticResou…" (inside a list row template) has no AutomationId.
+WT001	high	Controls/AddonsSections/BrowseAddons.xaml:44	Button "{DynamicResource LOCSearchLabel}" has no AutomationId.
+WT001	high	Controls/AddonsSections/BrowseAddons.xaml:47	TextBox has no AutomationId.
+WT008	low	Controls/AddonsSections/BrowseAddons.xaml:47	TextBox has no readable name.
+WT002	low	Controls/AddonsSections/BrowseAddons.xaml:56	ListBox [ListOnlineAddons] gets its ID "ListOnlineAddons" from x:Name.
+WT005	medium	Controls/AddonsSections/BrowseAddons.xaml:56	Rows in ListBox [ListOnlineAddons] have no unique ID.
+WT008	low	Controls/AddonsSections/BrowseAddons.xaml:56	ListBox [ListOnlineAddons] has no readable name.
+WT005	medium	Controls/AddonsSections/BrowseAddons.xaml:100	Rows in ItemsControl have no unique ID.
+WT001	medium	Controls/AddonsSections/BrowseAddons.xaml:104	Hyperlink "{Binding Key, Mode=OneWay}" (inside a list row template) has no AutomationId.
+WT001	high	Controls/AddonsSections/BrowseAddons.xaml:114	Button has no AutomationId.
+WT008	low	Controls/AddonsSections/BrowseAddons.xaml:114	Button has no readable name.
+WT001	high	Controls/AddonsSections/BrowseAddons.xaml:130	ComboBox has no AutomationId.
+WT005	medium	Controls/AddonsSections/BrowseAddons.xaml:130	Rows in ComboBox have no unique ID.
+WT008	low	Controls/AddonsSections/BrowseAddons.xaml:130	ComboBox has no readable name.
+WT005	medium	Controls/AddonsSections/BrowseAddons.xaml:155	Rows in ItemsControl have no unique ID.
+WT001	medium	Controls/AddonsSections/BrowseAddons.xaml:159	Hyperlink (inside a list row template) has no AutomationId.
+WT008	low	Controls/AddonsSections/BrowseAddons.xaml:159	Hyperlink has no readable name.
+WT005	medium	Controls/AddonsSections/InstalledExtensions.xaml:53	Rows in ItemsControl have no unique ID.
+WT001	medium	Controls/AddonsSections/InstalledExtensions.xaml:58	Hyperlink "{Binding Name}" (inside a list row template) has no AutomationId.
+WT001	high	Controls/AddonsSections/InstalledExtensions.xaml:67	CheckBox "{DynamicResource LOCEnabledTitle}" has no AutomationId.
+WT001	high	Controls/AddonsSections/InstalledExtensions.xaml:72	Button "{DynamicResource LOCUninstallGame}" has no AutomationId.
+WT001	high	Controls/AddonsSections/InstalledExtensions.xaml:96	Hyperlink "{DynamicResource LOCExtensionInstallDir}" has no AutomationId.
+WT001	high	Controls/AddonsSections/InstalledExtensions.xaml:103	Hyperlink "{DynamicResource LOCExtensionDataDir}" has no AutomationId.
+WT001	high	Controls/AddonsSections/InstalledExtensions.xaml:115	Hyperlink "{DynamicResource LOCSettingsCreateExten…" has no AutomationId.
+WT002	low	Controls/AddonsSections/InstalledExtensions.xaml:122	ListBox [ListPlugins] gets its ID "ListPlugins" from x:Name.
+WT005	medium	Controls/AddonsSections/InstalledExtensions.xaml:122	Rows in ListBox [ListPlugins] have no unique ID.
+WT008	low	Controls/AddonsSections/InstalledExtensions.xaml:122	ListBox [ListPlugins] has no readable name.
+WT005	medium	Controls/AddonsSections/InstalledThemes.xaml:50	Rows in ItemsControl have no unique ID.
+WT001	medium	Controls/AddonsSections/InstalledThemes.xaml:55	Hyperlink "{Binding Name}" (inside a list row template) has no AutomationId.
+WT001	high	Controls/AddonsSections/InstalledThemes.xaml:65	Button "{DynamicResource LOCUninstallGame}" has no AutomationId.
+WT001	high	Controls/AddonsSections/InstalledThemes.xaml:90	Hyperlink "{DynamicResource LOCExtensionInstallDir}" has no AutomationId.
+WT001	high	Controls/AddonsSections/InstalledThemes.xaml:97	Hyperlink "{DynamicResource LOCSettingsCreateTheme…" has no AutomationId.
+WT002	low	Controls/AddonsSections/InstalledThemes.xaml:104	ListBox [ListThemeList] gets its ID "ListThemeList" from x:Name.
+WT005	medium	Controls/AddonsSections/InstalledThemes.xaml:104	Rows in ListBox [ListThemeList] have no unique ID.
+WT008	low	Controls/AddonsSections/InstalledThemes.xaml:104	ListBox [ListThemeList] has no readable name.
+WT006	high	Controls/ComboBoxList.cs:16	ComboBoxList derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 2 time(s) in XAML.
+WT006	medium	Controls/ComboBoxListBase.cs:17	ComboBoxListBase derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	high	Controls/DdItemListSelectionBox.cs:20	DdItemListSelectionBox derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 11 time(s) in XAML.
+WT006	medium	Controls/FilterEnumSelectionBox.cs:16	FilterEnumSelectionBox derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/FilterSelectionBox.cs:17	FilterSelectionBoxBase derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/FilterSelectionBox.cs:72	FilterSelectionBox derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/FilterStringSelectionBox.cs:14	FilterStringSelectionBox derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/GameListItem.cs:29	GameListItem derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT002	low	Controls/GamesGridView.xaml:418	ListView [GridGames] gets its ID "GridGames" from x:Name.
+WT005	medium	Controls/GamesGridView.xaml:418	Rows in ListView [GridGames] have no unique ID.
+WT008	low	Controls/GamesGridView.xaml:418	ListView [GridGames] has no readable name.
+WT001	high	Controls/GamesGridView.xaml:474	MenuItem "{DynamicResource LOCGameIconTitle}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:476	MenuItem "{DynamicResource LOCGameNameTitle}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:478	MenuItem "{DynamicResource LOCGamePlatformTitle}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:480	MenuItem "{DynamicResource LOCGameProviderTitle}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:482	MenuItem "{DynamicResource LOCGameDevelopersTitle}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:484	MenuItem "{DynamicResource LOCGamePublishersTitle}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:486	MenuItem "{DynamicResource LOCGameReleaseDateTitl…" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:488	MenuItem "{DynamicResource LOCGameGenresTitle}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:490	MenuItem "{DynamicResource LOCGameCategoriesTitle}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:492	MenuItem "{DynamicResource LOCFeaturesLabel}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:494	MenuItem "{DynamicResource LOCGameTagsTitle}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:496	MenuItem "{DynamicResource LOCGameIsInstalledTitl…" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:498	MenuItem "{DynamicResource LOCGameInstallDirTitle}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:500	MenuItem "{DynamicResource LOCInstallSizeLabel}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:502	MenuItem "{DynamicResource LOCGameROMTitle}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:504	MenuItem "{DynamicResource LOCGameLastActivityTit…" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:506	MenuItem "{DynamicResource LOCRecentActivityLabel}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:508	MenuItem "{DynamicResource LOCTimePlayed}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:510	MenuItem "{DynamicResource LOCPlayCountLabel}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:512	MenuItem "{DynamicResource LOCCompletionStatus}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:514	MenuItem "{DynamicResource LOCSeriesLabel}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:516	MenuItem "{DynamicResource LOCVersionLabel}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:518	MenuItem "{DynamicResource LOCAgeRatingLabel}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:520	MenuItem "{DynamicResource LOCRegionLabel}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:522	MenuItem "{DynamicResource LOCSourceLabel}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:524	MenuItem "{DynamicResource LOCAddedLabel}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:526	MenuItem "{DynamicResource LOCModifiedLabel}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:528	MenuItem "{DynamicResource LOCUserScore}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:530	MenuItem "{DynamicResource LOCCriticScore}" has no AutomationId.
+WT001	high	Controls/GamesGridView.xaml:532	MenuItem "{DynamicResource LOCCommunityScore}" has no AutomationId.
+WT002	low	Controls/GameTaskView.xaml:55	TextBox [TextName] gets its ID "TextName" from x:Name.
+WT008	low	Controls/GameTaskView.xaml:55	TextBox [TextName] has no readable name.
+WT001	high	Controls/GameTaskView.xaml:59	CheckBox has no AutomationId.
+WT008	low	Controls/GameTaskView.xaml:59	CheckBox has no readable name.
+WT002	low	Controls/GameTaskView.xaml:64	ComboBox [ComboType] gets its ID "ComboType" from x:Name.
+WT005	medium	Controls/GameTaskView.xaml:64	Rows in ComboBox [ComboType] have no unique ID.
+WT008	low	Controls/GameTaskView.xaml:64	ComboBox [ComboType] has no readable name.
+WT002	low	Controls/GameTaskView.xaml:70	ComboBox [ComboTrackingMode] gets its ID "ComboTrackingMode" from x:Name.
+WT005	medium	Controls/GameTaskView.xaml:70	Rows in ComboBox [ComboTrackingMode] have no unique ID.
+WT008	low	Controls/GameTaskView.xaml:70	ComboBox [ComboTrackingMode] has no readable name.
+WT001	high	Controls/GameTaskView.xaml:76	TextBox has no AutomationId.
+WT008	low	Controls/GameTaskView.xaml:76	TextBox has no readable name.
+WT002	low	Controls/GameTaskView.xaml:103	pctrls:PathSelectionBox [TextPath] gets its ID "TextPath" from x:Name.
+WT008	low	Controls/GameTaskView.xaml:103	pctrls:PathSelectionBox [TextPath] has no readable name.
+WT002	low	Controls/GameTaskView.xaml:109	TextBox [TextArguments] gets its ID "TextArguments" from x:Name.
+WT008	low	Controls/GameTaskView.xaml:109	TextBox [TextArguments] has no readable name.
+WT002	low	Controls/GameTaskView.xaml:113	pctrls:PathSelectionBox [TextWorkDir] gets its ID "TextWorkDir" from x:Name.
+WT008	low	Controls/GameTaskView.xaml:113	pctrls:PathSelectionBox [TextWorkDir] has no readable name.
+WT002	low	Controls/GameTaskView.xaml:121	ComboBox [ComboEmulator] gets its ID "ComboEmulator" from x:Name.
+WT005	medium	Controls/GameTaskView.xaml:121	Rows in ComboBox [ComboEmulator] have no unique ID.
+WT008	low	Controls/GameTaskView.xaml:121	ComboBox [ComboEmulator] has no readable name.
+WT002	low	Controls/GameTaskView.xaml:126	ComboBox [ComboEmulatorConfig] gets its ID "ComboEmulatorConfig" from x:Name.
+WT005	medium	Controls/GameTaskView.xaml:126	Rows in ComboBox [ComboEmulatorConfig] have no unique ID.
+WT008	low	Controls/GameTaskView.xaml:126	ComboBox [ComboEmulatorConfig] has no readable name.
+WT002	low	Controls/GameTaskView.xaml:133	CheckBox [CheckOverrideArgs] gets its ID "CheckOverrideArgs" from x:Name.
+WT008	low	Controls/GameTaskView.xaml:133	CheckBox [CheckOverrideArgs] has no readable name.
+WT002	low	Controls/GameTaskView.xaml:139	TextBox [TextEmulatorArguments] gets its ID "TextEmulatorArguments" from x:Name.
+WT008	low	Controls/GameTaskView.xaml:139	TextBox [TextEmulatorArguments] has no readable name.
+WT002	low	Controls/GameTaskView.xaml:144	TextBox [TextAdditionalArguments] gets its ID "TextAdditionalArguments" from x:Name.
+WT008	low	Controls/GameTaskView.xaml:144	TextBox [TextAdditionalArguments] has no readable name.
+WT002	low	Controls/GameTaskView.xaml:148	TextBox [EmulatorArguments] gets its ID "EmulatorArguments" from x:Name.
+WT008	low	Controls/GameTaskView.xaml:148	TextBox [EmulatorArguments] has no readable name.
+WT001	high	Controls/GameTaskView.xaml:151	pctrls:PathSelectionBox has no AutomationId.
+WT008	low	Controls/GameTaskView.xaml:151	pctrls:PathSelectionBox has no readable name.
+WT001	high	Controls/GameTaskView.xaml:155	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Controls/GameTaskView.xaml:155	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Controls/GameTaskView.xaml:160	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Controls/GameTaskView.xaml:160	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Controls/LibraryStatistics.xaml:154	Hyperlink "" has no AutomationId.
+WT001	high	Controls/LibraryStatistics.xaml:162	CheckBox "{DynamicResource LOCStatsIncludeHidden}" has no AutomationId.
+WT001	high	Controls/LibraryStatistics.xaml:169	Expander "{DynamicResource LOCStatsGlobal}" has no AutomationId.
+WT001	high	Controls/LibraryStatistics.xaml:179	Expander "{DynamicResource LOCStatsFiltered}" has no AutomationId.
+WT001	high	Controls/LibraryStatistics.xaml:190	ComboBox has no AutomationId.
+WT005	medium	Controls/LibraryStatistics.xaml:190	Rows in ComboBox have no unique ID.
+WT008	low	Controls/LibraryStatistics.xaml:190	ComboBox has no readable name.
+WT001	high	Controls/LibraryStatistics.xaml:192	ListBox has no AutomationId.
+WT005	medium	Controls/LibraryStatistics.xaml:192	Rows in ListBox have no unique ID.
+WT008	low	Controls/LibraryStatistics.xaml:192	ListBox has no readable name.
+WT001	high	Controls/MetadataDownloadSettings.xaml:86	Button "{DynamicResource LOCMetadatSetAllFields…" has no AutomationId.
+WT001	high	Controls/MetadataDownloadSettings.xaml:88	Button "{DynamicResource LOCSelectAll}" has no AutomationId.
+WT001	high	Controls/MetadataDownloadSettings.xaml:90	Button "{DynamicResource LOCDeselectAll}" has no AutomationId.
+WT001	high	Controls/MetadataDownloadSettings.xaml:115	CheckBox has no AutomationId.
+WT008	low	Controls/MetadataDownloadSettings.xaml:115	CheckBox has no readable name.
+WT001	high	Controls/MetadataDownloadSettings.xaml:120	CheckBox has no AutomationId.
+WT008	low	Controls/MetadataDownloadSettings.xaml:120	CheckBox has no readable name.
+WT001	high	Controls/MetadataDownloadSettings.xaml:126	CheckBox has no AutomationId.
+WT008	low	Controls/MetadataDownloadSettings.xaml:126	CheckBox has no readable name.
+WT001	high	Controls/MetadataDownloadSettings.xaml:132	CheckBox has no AutomationId.
+WT008	low	Controls/MetadataDownloadSettings.xaml:132	CheckBox has no readable name.
+WT001	high	Controls/MetadataDownloadSettings.xaml:138	CheckBox has no AutomationId.
+WT008	low	Controls/MetadataDownloadSettings.xaml:138	CheckBox has no readable name.
+WT001	high	Controls/MetadataDownloadSettings.xaml:144	CheckBox has no AutomationId.
+WT008	low	Controls/MetadataDownloadSettings.xaml:144	CheckBox has no readable name.
+WT001	high	Controls/MetadataDownloadSettings.xaml:150	CheckBox has no AutomationId.
+WT008	low	Controls/MetadataDownloadSettings.xaml:150	CheckBox has no readable name.
+WT001	high	Controls/MetadataDownloadSettings.xaml:156	CheckBox has no AutomationId.
+WT008	low	Controls/MetadataDownloadSettings.xaml:156	CheckBox has no readable name.
+WT001	high	Controls/MetadataDownloadSettings.xaml:162	CheckBox has no AutomationId.
+WT008	low	Controls/MetadataDownloadSettings.xaml:162	CheckBox has no readable name.
+WT001	high	Controls/MetadataDownloadSettings.xaml:168	CheckBox has no AutomationId.
+WT008	low	Controls/MetadataDownloadSettings.xaml:168	CheckBox has no readable name.
+WT001	high	Controls/MetadataDownloadSettings.xaml:174	CheckBox has no AutomationId.
+WT008	low	Controls/MetadataDownloadSettings.xaml:174	CheckBox has no readable name.
+WT001	high	Controls/MetadataDownloadSettings.xaml:180	CheckBox has no AutomationId.
+WT008	low	Controls/MetadataDownloadSettings.xaml:180	CheckBox has no readable name.
+WT001	high	Controls/MetadataDownloadSettings.xaml:186	CheckBox has no AutomationId.
+WT008	low	Controls/MetadataDownloadSettings.xaml:186	CheckBox has no readable name.
+WT001	high	Controls/MetadataDownloadSettings.xaml:191	CheckBox has no AutomationId.
+WT008	low	Controls/MetadataDownloadSettings.xaml:191	CheckBox has no readable name.
+WT001	high	Controls/MetadataDownloadSettings.xaml:197	CheckBox has no AutomationId.
+WT008	low	Controls/MetadataDownloadSettings.xaml:197	CheckBox has no readable name.
+WT001	high	Controls/MetadataDownloadSettings.xaml:203	CheckBox has no AutomationId.
+WT008	low	Controls/MetadataDownloadSettings.xaml:203	CheckBox has no readable name.
+WT001	high	Controls/MetadataDownloadSettings.xaml:209	CheckBox has no AutomationId.
+WT008	low	Controls/MetadataDownloadSettings.xaml:209	CheckBox has no readable name.
+WT001	high	Controls/MetadataDownloadSettings.xaml:215	CheckBox has no AutomationId.
+WT008	low	Controls/MetadataDownloadSettings.xaml:215	CheckBox has no readable name.
+WT001	high	Controls/MetadataDownloadSettings.xaml:221	CheckBox has no AutomationId.
+WT008	low	Controls/MetadataDownloadSettings.xaml:221	CheckBox has no readable name.
+WT006	medium	Controls/SearchBox.cs:17	SearchBox derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:39	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/AppearanceAdvanced.xaml:39	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/AppearanceAdvanced.xaml:39	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:61	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/AppearanceAdvanced.xaml:61	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/AppearanceAdvanced.xaml:61	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:82	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/AppearanceAdvanced.xaml:82	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/AppearanceAdvanced.xaml:82	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:101	CheckBox "{DynamicResource LOCSettingsHiddenInQui…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:108	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceAdvanced.xaml:108	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:130	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceAdvanced.xaml:130	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:131	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceAdvanced.xaml:131	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:132	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceAdvanced.xaml:132	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:133	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceAdvanced.xaml:133	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:134	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceAdvanced.xaml:134	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:137	Button "{DynamicResource LOCDefault}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:145	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/AppearanceAdvanced.xaml:145	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/AppearanceAdvanced.xaml:145	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:165	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/AppearanceAdvanced.xaml:165	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/AppearanceAdvanced.xaml:165	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:184	CheckBox "{DynamicResource LOCSettingsPlaytimeUse…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:196	TextBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceAdvanced.xaml:196	TextBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:208	CheckBox "{DynamicResource LOCSettingsPastWeekRel…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:213	Button "{DynamicResource LOCResetLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:222	TextBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceAdvanced.xaml:222	TextBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:234	CheckBox "{DynamicResource LOCSettingsPastWeekRel…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:238	Button "{DynamicResource LOCResetLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:247	TextBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceAdvanced.xaml:247	TextBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:259	TextBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceAdvanced.xaml:259	TextBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:271	CheckBox "{DynamicResource LOCSettingsPastWeekRel…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:275	Button "{DynamicResource LOCResetLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:287	TextBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceAdvanced.xaml:287	TextBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:299	CheckBox "{DynamicResource LOCSettingsPastWeekRel…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:303	Button "{DynamicResource LOCResetLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:313	TextBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceAdvanced.xaml:313	TextBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:325	CheckBox "{DynamicResource LOCSettingsPastWeekRel…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:329	Button "{DynamicResource LOCResetLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceAdvanced.xaml:335	Button "{DynamicResource LOCMenuHelpTitle}" has no AutomationId.
+WT002	low	Controls/SettingsSections/AppearanceDetailsView.xaml:28	CheckBox "{DynamicResource LOCSettingsShowIconLis…" gets its ID "CheckShowIcons" from x:Name.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:32	CheckBox "{DynamicResource LOCSettingsIndentGameD…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:34	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceDetailsView.xaml:34	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:41	pctrls:LongNumericBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceDetailsView.xaml:41	pctrls:LongNumericBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:49	Slider has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceDetailsView.xaml:49	Slider has no readable name.
+WT002	low	Controls/SettingsSections/AppearanceDetailsView.xaml:55	CheckBox "{DynamicResource LOCSmoothScrolling}" gets its ID "CheckSmoothScroll" from x:Name.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:62	Slider has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceDetailsView.xaml:62	Slider has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:74	Slider has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceDetailsView.xaml:74	Slider has no readable name.
+WT002	low	Controls/SettingsSections/AppearanceDetailsView.xaml:80	CheckBox "{DynamicResource LOCSmoothScrolling}" gets its ID "CheckDetailsSmoothScroll" from x:Name.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:87	Slider has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceDetailsView.xaml:87	Slider has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:98	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceDetailsView.xaml:98	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:105	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceDetailsView.xaml:105	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:111	CheckBox "{DynamicResource LOCGameIconTitle}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:114	CheckBox "{DynamicResource LOCGameCoverTitle}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:117	CheckBox "{DynamicResource LOCGameBackgroundTitle}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:120	CheckBox "{DynamicResource LOCTimePlayed}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:123	CheckBox "{DynamicResource LOCGameLastActivityTit…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:126	CheckBox "{DynamicResource LOCDateAddedLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:129	CheckBox "{DynamicResource LOCRecentActivityLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:132	CheckBox "{DynamicResource LOCCompletionStatus}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:135	CheckBox "{DynamicResource LOCPlatformTitle}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:138	CheckBox "{DynamicResource LOCGameProviderTitle}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:141	CheckBox "{DynamicResource LOCGameGenresTitle}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:144	CheckBox "{DynamicResource LOCDeveloperLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:147	CheckBox "{DynamicResource LOCPublisherLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:150	CheckBox "{DynamicResource LOCGameReleaseDateTitl…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:153	CheckBox "{DynamicResource LOCCategoryLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:156	CheckBox "{DynamicResource LOCFeaturesLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:159	CheckBox "{DynamicResource LOCTagsLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:162	CheckBox "{DynamicResource LOCAgeRatingLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:165	CheckBox "{DynamicResource LOCSeriesLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:168	CheckBox "{DynamicResource LOCRegionLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:171	CheckBox "{DynamicResource LOCSourceLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:174	CheckBox "{DynamicResource LOCVersionLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:177	CheckBox "{DynamicResource LOCCommunityScore}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:180	CheckBox "{DynamicResource LOCCriticScore}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:183	CheckBox "{DynamicResource LOCUserScore}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:186	CheckBox "{DynamicResource LOCLinksLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:189	CheckBox "{DynamicResource LOCGameDescriptionTitl…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:192	CheckBox "{DynamicResource LOCNotesLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:195	CheckBox "{DynamicResource LOCNameLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:198	CheckBox "{DynamicResource LOCInstallSizeLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceDetailsView.xaml:201	CheckBox "{DynamicResource LOCGameInstallDirTitle}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceGeneral.xaml:31	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/AppearanceGeneral.xaml:31	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/AppearanceGeneral.xaml:31	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceGeneral.xaml:37	Hyperlink "{DynamicResource LOCSettingsGetThemes}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceGeneral.xaml:43	Hyperlink "{DynamicResource LOCSettingsCreateTheme…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceGeneral.xaml:52	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/AppearanceGeneral.xaml:52	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/AppearanceGeneral.xaml:52	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceGeneral.xaml:58	Hyperlink "{DynamicResource LOCSettingsGetThemes}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceGeneral.xaml:69	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/AppearanceGeneral.xaml:69	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/AppearanceGeneral.xaml:69	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceGeneral.xaml:87	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/AppearanceGeneral.xaml:87	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/AppearanceGeneral.xaml:87	ComboBox has no readable name.
+WT002	low	Controls/SettingsSections/AppearanceGeneral.xaml:102	CheckBox "{DynamicResource LOCSettingsShowGroupCo…" gets its ID "CheckShowGroupCount" from x:Name.
+WT001	high	Controls/SettingsSections/AppearanceGeneral.xaml:104	CheckBox "{DynamicResource LOCSettingsUsedFieldsO…" has no AutomationId.
+WT002	low	Controls/SettingsSections/AppearanceGeneral.xaml:106	CheckBox "{DynamicResource LOCSettingsShowBackgro…" gets its ID "CheckShowBackgroundImage" from x:Name.
+WT001	high	Controls/SettingsSections/AppearanceGeneral.xaml:110	CheckBox "{DynamicResource LOCSettingsBlurWindowB…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceGeneral.xaml:112	Slider has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceGeneral.xaml:112	Slider has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceGeneral.xaml:116	CheckBox "{DynamicResource LOCSettingsBlurHighQua…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceGeneral.xaml:122	CheckBox "{DynamicResource LOCSettingsDarkenWindo…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceGeneral.xaml:124	Slider has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceGeneral.xaml:124	Slider has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceGeneral.xaml:130	CheckBox "{DynamicResource LOCSettingsShowBackIma…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceGeneral.xaml:134	CheckBox "{DynamicResource LOCSettingsBackgroundI…" has no AutomationId.
+WT002	low	Controls/SettingsSections/AppearanceGridView.xaml:51	CheckBox "{DynamicResource LOCSettingsShowNameEmp…" gets its ID "CheckNameEmptyCover" from x:Name.
+WT002	low	Controls/SettingsSections/AppearanceGridView.xaml:53	CheckBox "{DynamicResource LOCSettingsShowNamesUn…" gets its ID "CheckNameUnderCover" from x:Name.
+WT002	low	Controls/SettingsSections/AppearanceGridView.xaml:55	CheckBox "{DynamicResource LOCSettingsDarkenUnins…" gets its ID "CheckDarkenUninstalledCovers" from x:Name.
+WT001	high	Controls/SettingsSections/AppearanceGridView.xaml:62	Slider has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceGridView.xaml:62	Slider has no readable name.
+WT002	low	Controls/SettingsSections/AppearanceGridView.xaml:68	CheckBox "{DynamicResource LOCSmoothScrolling}" gets its ID "CheckSmoothScroll" from x:Name.
+WT001	high	Controls/SettingsSections/AppearanceGridView.xaml:75	Slider has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceGridView.xaml:75	Slider has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceGridView.xaml:87	Slider has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceGridView.xaml:87	Slider has no readable name.
+WT002	low	Controls/SettingsSections/AppearanceGridView.xaml:93	CheckBox "{DynamicResource LOCSmoothScrolling}" gets its ID "CheckDetailsSmoothScroll" from x:Name.
+WT001	high	Controls/SettingsSections/AppearanceGridView.xaml:100	Slider has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceGridView.xaml:100	Slider has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceGridView.xaml:119	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceGridView.xaml:119	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceGridView.xaml:124	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceGridView.xaml:124	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceGridView.xaml:127	Button "{DynamicResource LOCPresets}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceGridView.xaml:131	MenuItem "{DynamicResource LOCSettingsCovertAspec…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceGridView.xaml:134	MenuItem "{DynamicResource LOCSettingsCovertAspec…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceGridView.xaml:137	MenuItem "{DynamicResource LOCSettingsCovertAspec…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceGridView.xaml:140	MenuItem "{DynamicResource LOCSettingsCovertAspec…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceGridView.xaml:143	MenuItem "{DynamicResource LOCSettingsCovertAspec…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceGridView.xaml:146	MenuItem "{DynamicResource LOCSettingsCovertAspec…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceGridView.xaml:149	MenuItem "{DynamicResource LOCSettingsCovertAspec…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceGridView.xaml:152	MenuItem "{DynamicResource LOCSettingsCovertAspec…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceGridView.xaml:169	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceGridView.xaml:169	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceGridView.xaml:175	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceGridView.xaml:175	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceGridView.xaml:179	CheckBox "{DynamicResource LOCSettingsGridItemDra…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceLayout.xaml:55	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/AppearanceLayout.xaml:55	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/AppearanceLayout.xaml:55	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceLayout.xaml:61	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceLayout.xaml:61	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceLayout.xaml:69	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/AppearanceLayout.xaml:69	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/AppearanceLayout.xaml:69	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceLayout.xaml:75	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceLayout.xaml:75	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceLayout.xaml:83	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/AppearanceLayout.xaml:83	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/AppearanceLayout.xaml:83	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceLayout.xaml:89	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceLayout.xaml:89	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceLayout.xaml:97	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/AppearanceLayout.xaml:97	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/AppearanceLayout.xaml:97	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceLayout.xaml:103	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceLayout.xaml:103	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceLayout.xaml:109	CheckBox "{DynamicResource LOCSettingsDrawPanelSe…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceListView.xaml:31	Slider has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceListView.xaml:31	Slider has no readable name.
+WT002	low	Controls/SettingsSections/AppearanceListView.xaml:37	CheckBox "{DynamicResource LOCSmoothScrolling}" gets its ID "CheckSmoothScroll" from x:Name.
+WT001	high	Controls/SettingsSections/AppearanceListView.xaml:44	Slider has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceListView.xaml:44	Slider has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceTopPanel.xaml:27	CheckBox "{DynamicResource LOCSettingsTopPanelGen…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceTopPanel.xaml:29	CheckBox "{DynamicResource LOCSettingsTopPanelGro…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceTopPanel.xaml:31	CheckBox "{DynamicResource LOCSettingsTopPanelSor…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceTopPanel.xaml:33	CheckBox "{DynamicResource LOCSettingsTopPanelFil…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceTopPanel.xaml:35	CheckBox "{DynamicResource LOCDetailsViewLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceTopPanel.xaml:37	CheckBox "{DynamicResource LOCGridViewLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceTopPanel.xaml:39	CheckBox "{DynamicResource LOCListViewLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceTopPanel.xaml:41	CheckBox "{DynamicResource LOCTopPanelExplorerSwi…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceTopPanel.xaml:43	CheckBox "{DynamicResource LOCTopPanelSelectRando…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceTopPanel.xaml:45	CheckBox "{DynamicResource LOCTopPanelSearchBox}" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceTopPanel.xaml:47	CheckBox "{DynamicResource LOCTopPanelSearchButto…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceTopPanel.xaml:49	CheckBox "{DynamicResource LOCTopPanelViewSelectR…" has no AutomationId.
+WT001	high	Controls/SettingsSections/AppearanceTopPanel.xaml:56	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/AppearanceTopPanel.xaml:56	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/AppearanceTopPanel.xaml:56	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceTopPanel.xaml:65	pctrls:DoubleNumericBox has no AutomationId.
+WT008	low	Controls/SettingsSections/AppearanceTopPanel.xaml:65	pctrls:DoubleNumericBox has no readable name.
+WT001	high	Controls/SettingsSections/AppearanceTopPanel.xaml:70	CheckBox "{DynamicResource LOCTopPanelMainButtonM…" has no AutomationId.
+WT002	low	Controls/SettingsSections/Backup.xaml:18	CheckBox "{DynamicResource LOCSettingsEnableAutom…" gets its ID "CheckAutomaticBackup" from x:Name.
+WT001	high	Controls/SettingsSections/Backup.xaml:25	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/Backup.xaml:25	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/Backup.xaml:25	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/Backup.xaml:32	pctrls:PathSelectionBox has no AutomationId.
+WT008	low	Controls/SettingsSections/Backup.xaml:32	pctrls:PathSelectionBox has no readable name.
+WT002	low	Controls/SettingsSections/Backup.xaml:41	Slider [SliderRotatingBackup] gets its ID "SliderRotatingBackup" from x:Name.
+WT008	low	Controls/SettingsSections/Backup.xaml:41	Slider [SliderRotatingBackup] has no readable name.
+WT001	high	Controls/SettingsSections/Backup.xaml:48	CheckBox "{DynamicResource LOCBackupOptionGameMed…" has no AutomationId.
+WT001	high	Controls/SettingsSections/Backup.xaml:50	CheckBox "{DynamicResource LOCBackupOptionExtensi…" has no AutomationId.
+WT001	high	Controls/SettingsSections/Backup.xaml:52	CheckBox "{DynamicResource LOCBackupOptionThemes}" has no AutomationId.
+WT001	high	Controls/SettingsSections/Backup.xaml:54	CheckBox "{DynamicResource LOCBackupOptionExtensi…" has no AutomationId.
+WT001	high	Controls/SettingsSections/Backup.xaml:58	Button "{DynamicResource LOCMenuHelpTitle}" has no AutomationId.
+WT002	low	Controls/SettingsSections/ClientShutdown.xaml:27	CheckBox "{DynamicResource LOCSettingsAutoCloseLa…" gets its ID "CheckShutDownClients" from x:Name.
+WT001	high	Controls/SettingsSections/ClientShutdown.xaml:35	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Controls/SettingsSections/ClientShutdown.xaml:35	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Controls/SettingsSections/ClientShutdown.xaml:44	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Controls/SettingsSections/ClientShutdown.xaml:44	pctrls:NullIntNumericBox has no readable name.
+WT005	medium	Controls/SettingsSections/ClientShutdown.xaml:52	Rows in ItemsControl have no unique ID.
+WT001	medium	Controls/SettingsSections/ClientShutdown.xaml:57	CheckBox "{Binding Item.Name}" (inside a list row template) has no AutomationId.
+WT001	high	Controls/SettingsSections/Development.xaml:22	CheckBox "{DynamicResource LOCDevelTraceLogEnable}" has no AutomationId.
+WT001	high	Controls/SettingsSections/Development.xaml:26	Button "{DynamicResource LOCAddTitle}" has no AutomationId.
+WT002	low	Controls/SettingsSections/Development.xaml:30	ListView [ListDevelExtensions] gets its ID "ListDevelExtensions" from x:Name.
+WT005	medium	Controls/SettingsSections/Development.xaml:30	Rows in ListView [ListDevelExtensions] have no unique ID.
+WT008	low	Controls/SettingsSections/Development.xaml:30	ListView [ListDevelExtensions] has no readable name.
+WT001	medium	Controls/SettingsSections/Development.xaml:42	CheckBox (inside a list row template) has no AutomationId.
+WT008	low	Controls/SettingsSections/Development.xaml:42	CheckBox has no readable name.
+WT001	medium	Controls/SettingsSections/Development.xaml:49	pctrls:PathSelectionBox (inside a list row template) has no AutomationId.
+WT008	low	Controls/SettingsSections/Development.xaml:49	pctrls:PathSelectionBox has no readable name.
+WT001	medium	Controls/SettingsSections/Development.xaml:56	Button "r" (inside a list row template) has no AutomationId.
+WT002	low	Controls/SettingsSections/General.xaml:42	ComboBox [ComboLanguage] gets its ID "ComboLanguage" from x:Name.
+WT005	medium	Controls/SettingsSections/General.xaml:42	Rows in ComboBox [ComboLanguage] have no unique ID.
+WT008	low	Controls/SettingsSections/General.xaml:42	ComboBox [ComboLanguage] has no readable name.
+WT001	high	Controls/SettingsSections/General.xaml:47	Hyperlink "{DynamicResource LOCSettingsCreateLocal…" has no AutomationId.
+WT001	high	Controls/SettingsSections/General.xaml:57	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/General.xaml:57	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/General.xaml:57	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/General.xaml:66	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/General.xaml:66	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/General.xaml:66	ComboBox has no readable name.
+WT002	low	Controls/SettingsSections/General.xaml:71	CheckBox "{DynamicResource LOCSettingsShowTray}" gets its ID "CheckEnableTray" from x:Name.
+WT001	high	Controls/SettingsSections/General.xaml:75	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/General.xaml:75	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/General.xaml:75	ComboBox has no readable name.
+WT002	low	Controls/SettingsSections/General.xaml:89	CheckBox "{DynamicResource LOCSettingsMinimizeToT…" gets its ID "CheckMinimizeToTray" from x:Name.
+WT002	low	Controls/SettingsSections/General.xaml:92	CheckBox "{DynamicResource LOCSettingsCloseToTray}" gets its ID "CheckCloseToTray" from x:Name.
+WT002	low	Controls/SettingsSections/General.xaml:96	CheckBox "{DynamicResource LOCSettingsDownloadMet…" gets its ID "CheckDownloadMetadataOnImport" from x:Name.
+WT002	low	Controls/SettingsSections/General.xaml:100	CheckBox "{DynamicResource LOCSettingsStartInFull…" gets its ID "CheckStartFullscreen" from x:Name.
+WT002	low	Controls/SettingsSections/General.xaml:104	CheckBox "{DynamicResource LOCSettingsStartOnBoot}" gets its ID "CheckStartOnBoot" from x:Name.
+WT002	low	Controls/SettingsSections/General.xaml:108	CheckBox "{DynamicResource LOCSettingsStartOnBoot…" gets its ID "CheckStartOnBootClosedToTray" from x:Name.
+WT002	low	Controls/SettingsSections/General.xaml:113	CheckBox "{DynamicResource LOCSettingsStartMinimi…" gets its ID "CheckStartMinimized" from x:Name.
+WT002	low	Controls/SettingsSections/General.xaml:117	CheckBox "{DynamicResource LOCSettingsScanLibInst…" gets its ID "CheckScanLibInstallSizeOnLibUpdate" from x:Name.
+WT002	low	Controls/SettingsSections/General.xaml:122	CheckBox "{DynamicResource NameFilterUseFuzzyMatc…" gets its ID "CheckFuzzyMatchingInNameFilter" from x:Name.
+WT001	high	Controls/SettingsSections/General.xaml:127	CheckBox "{DynamicResource LOCFiltersClearOnStart…" has no AutomationId.
+WT001	high	Controls/SettingsSections/General.xaml:135	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/General.xaml:135	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/General.xaml:135	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/General.xaml:139	Hyperlink "{DynamicResource LOCMenuHelpTitle}" has no AutomationId.
+WT001	high	Controls/SettingsSections/General.xaml:149	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/General.xaml:149	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/General.xaml:149	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/GeneralAdvanced.xaml:29	CheckBox "Discord Rich Presence" has no AutomationId.
+WT001	high	Controls/SettingsSections/GeneralAdvanced.xaml:31	CheckBox "{DynamicResource LOCElevatedProcessWarn…" has no AutomationId.
+WT001	high	Controls/SettingsSections/GeneralAdvanced.xaml:33	CheckBox "{DynamicResource LOCInstallSizeScanUseS…" has no AutomationId.
+WT001	high	Controls/SettingsSections/GeneralAdvanced.xaml:38	TextBox has no AutomationId.
+WT008	low	Controls/SettingsSections/GeneralAdvanced.xaml:38	TextBox has no readable name.
+WT001	high	Controls/SettingsSections/GeneralAdvanced.xaml:41	Hyperlink "{DynamicResource LOCWhatIsThis}" has no AutomationId.
+WT001	high	Controls/SettingsSections/GeneralAdvanced.xaml:52	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/GeneralAdvanced.xaml:52	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/GeneralAdvanced.xaml:52	ComboBox has no readable name.
+WT002	low	Controls/SettingsSections/GeneralAdvanced.xaml:57	Button "{DynamicResource LOCSettingsClearWebCac…" gets its ID "ButtonClearWebCace" from x:Name.
+WT001	high	Controls/SettingsSections/GeneralAdvanced.xaml:62	Button "{DynamicResource LOCSettingsReset}" has no AutomationId.
+WT002	low	Controls/SettingsSections/GeneralAdvanced.xaml:69	Button "{DynamicResource LOCChange}" gets its ID "ButtonBrowserDbFile" from x:Name.
+WT002	low	Controls/SettingsSections/GeneralAdvanced.xaml:72	TextBox [TextDatabase] gets its ID "TextDatabase" from x:Name.
+WT008	low	Controls/SettingsSections/GeneralAdvanced.xaml:72	TextBox [TextDatabase] has no readable name.
+WT001	high	Controls/SettingsSections/ImportExlusionList.xaml:11	Button "{DynamicResource LOCRemoveTitle}" has no AutomationId.
+WT002	low	Controls/SettingsSections/ImportExlusionList.xaml:15	DataGrid [ListImportExclusionList] gets its ID "ListImportExclusionList" from x:Name.
+WT005	medium	Controls/SettingsSections/ImportExlusionList.xaml:15	Rows in DataGrid [ListImportExclusionList] have no unique ID.
+WT008	low	Controls/SettingsSections/ImportExlusionList.xaml:15	DataGrid [ListImportExclusionList] has no readable name.
+WT001	high	Controls/SettingsSections/Input.xaml:26	CheckBox "{DynamicResource LOCSettingsControllerA…" has no AutomationId.
+WT005	medium	Controls/SettingsSections/Input.xaml:29	Rows in ItemsControl have no unique ID.
+WT001	medium	Controls/SettingsSections/Input.xaml:32	CheckBox "{Binding Name}" (inside a list row template) has no AutomationId.
+WT001	high	Controls/SettingsSections/Input.xaml:36	CheckBox "{DynamicResource LOCGuideButtonFullscre…" has no AutomationId.
+WT001	high	Controls/SettingsSections/Metadata.xaml:37	TabControl has no AutomationId.
+WT001	high	Controls/SettingsSections/Metadata.xaml:38	TabItem "{DynamicResource LOCGeneralLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/Metadata.xaml:42	CheckBox "{DynamicResource LOCSettingsImmediateBa…" has no AutomationId.
+WT001	high	Controls/SettingsSections/Metadata.xaml:57	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/Metadata.xaml:57	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/Metadata.xaml:57	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/Metadata.xaml:67	TabItem "{DynamicResource LOCSettingsWebImageSea…" has no AutomationId.
+WT001	high	Controls/SettingsSections/Metadata.xaml:72	TextBox has no AutomationId.
+WT008	low	Controls/SettingsSections/Metadata.xaml:72	TextBox has no readable name.
+WT001	high	Controls/SettingsSections/Metadata.xaml:74	TextBox has no AutomationId.
+WT008	low	Controls/SettingsSections/Metadata.xaml:74	TextBox has no readable name.
+WT001	high	Controls/SettingsSections/Metadata.xaml:76	TextBox has no AutomationId.
+WT008	low	Controls/SettingsSections/Metadata.xaml:76	TextBox has no readable name.
+WT001	high	Controls/SettingsSections/Metadata.xaml:78	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/Metadata.xaml:78	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/Metadata.xaml:78	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/Metadata.xaml:82	Button "{DynamicResource LOCMenuHelpTitle}" has no AutomationId.
+WT001	high	Controls/SettingsSections/Performance.xaml:27	CheckBox "{DynamicResource LOCSettingsShowMediaSi…" has no AutomationId.
+WT002	low	Controls/SettingsSections/Performance.xaml:29	CheckBox "{DynamicResource LOCSettingsAsyncImageL…" gets its ID "CheckAsyncImages" from x:Name.
+WT002	low	Controls/SettingsSections/Performance.xaml:34	CheckBox "{DynamicResource LOCSettingsDisableAcce…" gets its ID "CheckDisableAcceleration" from x:Name.
+WT001	high	Controls/SettingsSections/Performance.xaml:39	CheckBox "{DynamicResource LOCSettingsAltWebViewR…" has no AutomationId.
+WT001	high	Controls/SettingsSections/Performance.xaml:43	CheckBox "{DynamicResource LOCSettingsPartialDesc…" has no AutomationId.
+WT001	high	Controls/SettingsSections/Performance.xaml:51	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/Performance.xaml:51	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/Performance.xaml:51	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/Scripting.xaml:17	TabControl has no AutomationId.
+WT001	high	Controls/SettingsSections/Scripting.xaml:18	TabItem "{DynamicResource LOCGameScripts}" has no AutomationId.
+WT001	high	Controls/SettingsSections/Scripting.xaml:21	Button "{DynamicResource LOCMenuHelpTitle}" has no AutomationId.
+WT001	high	Controls/SettingsSections/Scripting.xaml:31	Button "{DynamicResource LOCTestScript}" has no AutomationId.
+WT001	high	Controls/SettingsSections/Scripting.xaml:35	TextBox has no AutomationId.
+WT008	low	Controls/SettingsSections/Scripting.xaml:35	TextBox has no readable name.
+WT001	high	Controls/SettingsSections/Scripting.xaml:43	Button "{DynamicResource LOCTestScript}" has no AutomationId.
+WT001	high	Controls/SettingsSections/Scripting.xaml:47	TextBox has no AutomationId.
+WT008	low	Controls/SettingsSections/Scripting.xaml:47	TextBox has no readable name.
+WT001	high	Controls/SettingsSections/Scripting.xaml:55	Button "{DynamicResource LOCTestScript}" has no AutomationId.
+WT001	high	Controls/SettingsSections/Scripting.xaml:59	TextBox has no AutomationId.
+WT008	low	Controls/SettingsSections/Scripting.xaml:59	TextBox has no readable name.
+WT001	high	Controls/SettingsSections/Scripting.xaml:66	TabItem "{DynamicResource LOCApplicationScripts}" has no AutomationId.
+WT001	high	Controls/SettingsSections/Scripting.xaml:70	Button "{DynamicResource LOCTestScript}" has no AutomationId.
+WT001	high	Controls/SettingsSections/Scripting.xaml:74	TextBox has no AutomationId.
+WT008	low	Controls/SettingsSections/Scripting.xaml:74	TextBox has no readable name.
+WT001	high	Controls/SettingsSections/Scripting.xaml:82	Button "{DynamicResource LOCTestScript}" has no AutomationId.
+WT001	high	Controls/SettingsSections/Scripting.xaml:86	TextBox has no AutomationId.
+WT008	low	Controls/SettingsSections/Scripting.xaml:86	TextBox has no readable name.
+WT001	high	Controls/SettingsSections/Search.xaml:15	TabControl has no AutomationId.
+WT001	high	Controls/SettingsSections/Search.xaml:16	TabItem "{DynamicResource LOCGeneralLabel}" has no AutomationId.
+WT001	high	Controls/SettingsSections/Search.xaml:20	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/Search.xaml:20	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/Search.xaml:20	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/Search.xaml:26	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/Search.xaml:26	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/Search.xaml:26	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/Search.xaml:30	CheckBox "{DynamicResource LOCSearchSettingsKeybo…" has no AutomationId.
+WT001	high	Controls/SettingsSections/Search.xaml:34	CheckBox "{DynamicResource LOCSearchSettingsSaveF…" has no AutomationId.
+WT001	high	Controls/SettingsSections/Search.xaml:38	CheckBox "{DynamicResource LOCSearchIncludeComman…" has no AutomationId.
+WT001	high	Controls/SettingsSections/Search.xaml:51	ListView has no AutomationId.
+WT005	medium	Controls/SettingsSections/Search.xaml:51	Rows in ListView have no unique ID.
+WT008	low	Controls/SettingsSections/Search.xaml:51	ListView has no readable name.
+WT001	medium	Controls/SettingsSections/Search.xaml:60	TextBox (inside a list row template) has no AutomationId.
+WT008	low	Controls/SettingsSections/Search.xaml:60	TextBox has no readable name.
+WT001	high	Controls/SettingsSections/Search.xaml:74	TabItem "{DynamicResource LOCSettingsAppearanceL…" has no AutomationId.
+WT001	high	Controls/SettingsSections/Search.xaml:77	CheckBox "{DynamicResource LOCPlatformTitle}" has no AutomationId.
+WT001	high	Controls/SettingsSections/Search.xaml:79	CheckBox "{DynamicResource LOCTimePlayed}" has no AutomationId.
+WT001	high	Controls/SettingsSections/Search.xaml:81	CheckBox "{DynamicResource LOCCompletionStatus}" has no AutomationId.
+WT001	high	Controls/SettingsSections/Search.xaml:83	CheckBox "{DynamicResource LOCGameReleaseDateTitl…" has no AutomationId.
+WT001	high	Controls/SettingsSections/Search.xaml:85	CheckBox "{DynamicResource LOCGameIconTitle}" has no AutomationId.
+WT001	high	Controls/SettingsSections/Search.xaml:87	CheckBox "{DynamicResource LOCLibraryIconTitle}" has no AutomationId.
+WT001	high	Controls/SettingsSections/Search.xaml:89	CheckBox "{DynamicResource LOCHiddenStatus}" has no AutomationId.
+WT002	low	Controls/SettingsSections/Sorting.xaml:14	CheckBox "{DynamicResource LOCSortingNameAutofill}" gets its ID "CheckAsyncImages" from x:Name.
+WT002	low	Controls/SettingsSections/Sorting.xaml:19	ListBox [ListSortingNameRemovedArticles] gets its ID "ListSortingNameRemovedArticles" from x:Name.
+WT005	medium	Controls/SettingsSections/Sorting.xaml:19	Rows in ListBox [ListSortingNameRemovedArticles] have no unique ID.
+WT008	low	Controls/SettingsSections/Sorting.xaml:19	ListBox [ListSortingNameRemovedArticles] has no readable name.
+WT001	high	Controls/SettingsSections/Sorting.xaml:23	Button "{DynamicResource LOCAddTitle}" has no AutomationId.
+WT001	high	Controls/SettingsSections/Sorting.xaml:25	Button "{DynamicResource LOCRemoveTitle}" has no AutomationId.
+WT001	high	Controls/SettingsSections/Sorting.xaml:28	Button "{DynamicResource LOCSortingNameAutofill…" has no AutomationId.
+WT001	high	Controls/SettingsSections/Updates.xaml:30	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/Updates.xaml:30	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/Updates.xaml:30	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/Updates.xaml:34	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/Updates.xaml:34	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/Updates.xaml:34	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/Updates.xaml:38	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/Updates.xaml:38	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/Updates.xaml:38	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/Updates.xaml:42	ComboBox has no AutomationId.
+WT005	medium	Controls/SettingsSections/Updates.xaml:42	Rows in ComboBox have no unique ID.
+WT008	low	Controls/SettingsSections/Updates.xaml:42	ComboBox has no readable name.
+WT001	high	Controls/SettingsSections/Updates.xaml:45	CheckBox "{DynamicResource LOCUpdateNotifyOnlyPat…" has no AutomationId.
+WT002	low	Controls/SliderWithPopup.xaml:10	ctrls:SliderEx [Slider] gets its ID "Slider" from x:Name.
+WT008	low	Controls/SliderWithPopup.xaml:10	ctrls:SliderEx [Slider] has no readable name.
+WT006	medium	Controls/Views/BaseGamesView.cs:22	BaseGamesView derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/Views/DetailsViewGameOverview.cs:14	DetailsViewGameOverview derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/Views/ExplorerPanel.cs:24	ExplorerPanel derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/Views/FilterPanel.cs:29	FilterPanel derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/Views/GameOverview.cs:84	GameOverview derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/Views/GridViewGameOverview.cs:14	GridViewGameOverview derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/Views/Library.cs:29	Library derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/Views/LibraryDetailsView.cs:21	LibraryDetailsView derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/Views/LibraryGridView.cs:25	LibraryGridView derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/Views/LibraryListView.cs:18	LibraryListView derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/Views/NotificationPanel.cs:23	NotificationPanel derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/Views/SearchWindow.cs:21	SearchWindowGameItem derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/Views/SearchWindow.cs:160	SearchWindowSearchItem derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/Views/Sidebar.cs:19	Sidebar derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	medium	Controls/Views/TopPanel.cs:32	TopPanel derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT002	low	Windows/AboutWindow.xaml:21	Button "{DynamicResource LOCAboutCreateDiagButt…" gets its ID "ButtonCreatePackage" from x:Name.
+WT002	low	Windows/AboutWindow.xaml:23	Button "{DynamicResource LOCCloseLabel}" gets its ID "ButtonClose" from x:Name.
+WT001	high	Windows/AboutWindow.xaml:25	Button "{DynamicResource LOCLicenseLabel}" has no AutomationId.
+WT001	high	Windows/AboutWindow.xaml:44	Hyperlink "https://www.playnite.link" has no AutomationId.
+WT001	high	Windows/AboutWindow.xaml:50	Hyperlink "{DynamicResource LOCUserManual}" has no AutomationId.
+WT001	high	Windows/AboutWindow.xaml:56	Hyperlink "{DynamicResource LOCAboutSourceLink}" has no AutomationId.
+WT001	high	Windows/AboutWindow.xaml:62	Hyperlink "{DynamicResource LOCProgramFolder}" has no AutomationId.
+WT001	high	Windows/AboutWindow.xaml:69	Hyperlink "{DynamicResource LOCUserDataFolder}" has no AutomationId.
+WT001	high	Windows/AboutWindow.xaml:78	TabControl has no AutomationId.
+WT001	high	Windows/AboutWindow.xaml:79	TabItem "{DynamicResource LOCSpecialThanks}" has no AutomationId.
+WT001	high	Windows/AboutWindow.xaml:83	TextBox has no AutomationId.
+WT008	low	Windows/AboutWindow.xaml:83	TextBox has no readable name.
+WT001	high	Windows/AboutWindow.xaml:95	TabItem "{DynamicResource LOCContributorsLabel}" has no AutomationId.
+WT001	high	Windows/AboutWindow.xaml:99	TextBox has no AutomationId.
+WT008	low	Windows/AboutWindow.xaml:99	TextBox has no readable name.
+WT005	medium	Windows/ActionSelectionWindow.xaml:25	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/ActionSelectionWindow.xaml:29	Button "" (inside a list row template) has no AutomationId.
+WT001	high	Windows/AddonsWindow.xaml:30	Button "{DynamicResource LOCCancelLabel}" has no AutomationId.
+WT001	high	Windows/AddonsWindow.xaml:33	Button "{DynamicResource LOCSaveLabel}" has no AutomationId.
+WT001	high	Windows/AddonsWindow.xaml:36	Button "{DynamicResource LOCAddonUpdateAddons}" has no AutomationId.
+WT001	high	Windows/AddonsWindow.xaml:49	TreeView has no AutomationId.
+WT008	low	Windows/AddonsWindow.xaml:49	TreeView has no readable name.
+WT002	low	Windows/CategoryConfigWindow.xaml:23	Button "{DynamicResource LOCCancelLabel}" gets its ID "ButtonCancel" from x:Name.
+WT002	low	Windows/CategoryConfigWindow.xaml:25	Button "{DynamicResource LOCCategorySetButton}" gets its ID "ButtonOK" from x:Name.
+WT002	low	Windows/CategoryConfigWindow.xaml:46	Button "{DynamicResource LOCCategoryAddCatButto…" gets its ID "ButtonAddCat" from x:Name.
+WT002	low	Windows/CategoryConfigWindow.xaml:50	TextBox [TextNewCat] gets its ID "TextNewCat" from x:Name.
+WT008	low	Windows/CategoryConfigWindow.xaml:50	TextBox [TextNewCat] has no readable name.
+WT005	medium	Windows/CategoryConfigWindow.xaml:56	Rows in ItemsControl [ListCategories] have no unique ID.
+WT001	medium	Windows/CategoryConfigWindow.xaml:59	CheckBox "{Binding Item}" (inside a list row template) has no AutomationId.
+WT002	low	Windows/CrashHandlerWindow.xaml:16	Button "{DynamicResource LOCCrashRestartPlaynit…" gets its ID "ButtonRestart" from x:Name.
+WT002	low	Windows/CrashHandlerWindow.xaml:19	Button "{DynamicResource LOCCrashSendDiag}" gets its ID "ButtonSaveDiag" from x:Name.
+WT001	high	Windows/CrashHandlerWindow.xaml:22	CheckBox "{DynamicResource LOCCrashRestartSafe}" has no AutomationId.
+WT002	low	Windows/CrashHandlerWindow.xaml:25	Button "{DynamicResource LOCCrashReportIssue}" gets its ID "ButtonReportIssue" from x:Name.
+WT002	low	Windows/CrashHandlerWindow.xaml:35	TextBox [TextBoxDescription] gets its ID "TextBoxDescription" from x:Name.
+WT008	low	Windows/CrashHandlerWindow.xaml:35	TextBox [TextBoxDescription] has no readable name.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:21	TabControl has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:23	TabItem "{DynamicResource LOCPlatformsTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:26	Button "{DynamicResource LOCAddTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:28	Button "{DynamicResource LOCRenameTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:31	Button "{DynamicResource LOCRemoveTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:34	Button "{DynamicResource LOCRemoveUnusedTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:55	ComboBox has no AutomationId.
+WT005	medium	Windows/DatabaseFieldsManagerWindow.xaml:55	Rows in ComboBox have no unique ID.
+WT008	low	Windows/DatabaseFieldsManagerWindow.xaml:55	ComboBox has no readable name.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:63	Button "{DynamicResource LOCSelectIconTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:67	Button "{DynamicResource LOCRemoveLabel}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:78	Button "{DynamicResource LOCSelectCoverTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:82	Button "{DynamicResource LOCRemoveLabel}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:93	Button "{DynamicResource LOCSelectBackgroundTit…" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:97	Button "{DynamicResource LOCRemoveLabel}" has no AutomationId.
+WT002	low	Windows/DatabaseFieldsManagerWindow.xaml:106	ListBox [ListPlatforms] gets its ID "ListPlatforms" from x:Name.
+WT005	medium	Windows/DatabaseFieldsManagerWindow.xaml:106	Rows in ListBox [ListPlatforms] have no unique ID.
+WT008	low	Windows/DatabaseFieldsManagerWindow.xaml:106	ListBox [ListPlatforms] has no readable name.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:114	TabItem "{DynamicResource LOCCategoriesLabel}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:117	Button "{DynamicResource LOCAddTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:119	Button "{DynamicResource LOCRenameTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:122	Button "{DynamicResource LOCRemoveTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:125	Button "{DynamicResource LOCRemoveUnusedTitle}" has no AutomationId.
+WT002	low	Windows/DatabaseFieldsManagerWindow.xaml:128	ListBox [ListCategories] gets its ID "ListCategories" from x:Name.
+WT005	medium	Windows/DatabaseFieldsManagerWindow.xaml:128	Rows in ListBox [ListCategories] have no unique ID.
+WT008	low	Windows/DatabaseFieldsManagerWindow.xaml:128	ListBox [ListCategories] has no readable name.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:135	TabItem "{DynamicResource LOCGenresLabel}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:138	Button "{DynamicResource LOCAddTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:140	Button "{DynamicResource LOCRenameTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:143	Button "{DynamicResource LOCRemoveTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:146	Button "{DynamicResource LOCRemoveUnusedTitle}" has no AutomationId.
+WT002	low	Windows/DatabaseFieldsManagerWindow.xaml:149	ListBox [ListGenres] gets its ID "ListGenres" from x:Name.
+WT005	medium	Windows/DatabaseFieldsManagerWindow.xaml:149	Rows in ListBox [ListGenres] have no unique ID.
+WT008	low	Windows/DatabaseFieldsManagerWindow.xaml:149	ListBox [ListGenres] has no readable name.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:156	TabItem "{DynamicResource LOCCompaniesLabel}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:159	Button "{DynamicResource LOCAddTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:161	Button "{DynamicResource LOCRenameTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:164	Button "{DynamicResource LOCRemoveTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:167	Button "{DynamicResource LOCRemoveUnusedTitle}" has no AutomationId.
+WT002	low	Windows/DatabaseFieldsManagerWindow.xaml:170	ListBox [ListCompanies] gets its ID "ListCompanies" from x:Name.
+WT005	medium	Windows/DatabaseFieldsManagerWindow.xaml:170	Rows in ListBox [ListCompanies] have no unique ID.
+WT008	low	Windows/DatabaseFieldsManagerWindow.xaml:170	ListBox [ListCompanies] has no readable name.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:177	TabItem "{DynamicResource LOCFeaturesLabel}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:180	Button "{DynamicResource LOCAddTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:182	Button "{DynamicResource LOCRenameTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:185	Button "{DynamicResource LOCRemoveTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:188	Button "{DynamicResource LOCRemoveUnusedTitle}" has no AutomationId.
+WT002	low	Windows/DatabaseFieldsManagerWindow.xaml:191	ListBox [ListFeatures] gets its ID "ListFeatures" from x:Name.
+WT005	medium	Windows/DatabaseFieldsManagerWindow.xaml:191	Rows in ListBox [ListFeatures] have no unique ID.
+WT008	low	Windows/DatabaseFieldsManagerWindow.xaml:191	ListBox [ListFeatures] has no readable name.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:198	TabItem "{DynamicResource LOCTagsLabel}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:201	Button "{DynamicResource LOCAddTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:203	Button "{DynamicResource LOCRenameTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:206	Button "{DynamicResource LOCRemoveTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:209	Button "{DynamicResource LOCRemoveUnusedTitle}" has no AutomationId.
+WT002	low	Windows/DatabaseFieldsManagerWindow.xaml:212	ListBox [ListTags] gets its ID "ListTags" from x:Name.
+WT005	medium	Windows/DatabaseFieldsManagerWindow.xaml:212	Rows in ListBox [ListTags] have no unique ID.
+WT008	low	Windows/DatabaseFieldsManagerWindow.xaml:212	ListBox [ListTags] has no readable name.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:219	TabItem "{DynamicResource LOCSeriesLabel}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:222	Button "{DynamicResource LOCAddTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:224	Button "{DynamicResource LOCRenameTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:227	Button "{DynamicResource LOCRemoveTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:230	Button "{DynamicResource LOCRemoveUnusedTitle}" has no AutomationId.
+WT002	low	Windows/DatabaseFieldsManagerWindow.xaml:233	ListBox [ListSeries] gets its ID "ListSeries" from x:Name.
+WT005	medium	Windows/DatabaseFieldsManagerWindow.xaml:233	Rows in ListBox [ListSeries] have no unique ID.
+WT008	low	Windows/DatabaseFieldsManagerWindow.xaml:233	ListBox [ListSeries] has no readable name.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:240	TabItem "{DynamicResource LOCAgeRatingsLabel}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:243	Button "{DynamicResource LOCAddTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:245	Button "{DynamicResource LOCRenameTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:248	Button "{DynamicResource LOCRemoveTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:251	Button "{DynamicResource LOCRemoveUnusedTitle}" has no AutomationId.
+WT002	low	Windows/DatabaseFieldsManagerWindow.xaml:254	ListBox [ListAgeRatings] gets its ID "ListAgeRatings" from x:Name.
+WT005	medium	Windows/DatabaseFieldsManagerWindow.xaml:254	Rows in ListBox [ListAgeRatings] have no unique ID.
+WT008	low	Windows/DatabaseFieldsManagerWindow.xaml:254	ListBox [ListAgeRatings] has no readable name.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:261	TabItem "{DynamicResource LOCRegionsLabel}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:264	Button "{DynamicResource LOCAddTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:266	Button "{DynamicResource LOCRenameTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:269	Button "{DynamicResource LOCRemoveTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:272	Button "{DynamicResource LOCRemoveUnusedTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:293	ComboBox has no AutomationId.
+WT005	medium	Windows/DatabaseFieldsManagerWindow.xaml:293	Rows in ComboBox have no unique ID.
+WT008	low	Windows/DatabaseFieldsManagerWindow.xaml:293	ComboBox has no readable name.
+WT002	low	Windows/DatabaseFieldsManagerWindow.xaml:300	ListBox [ListRegions] gets its ID "ListRegions" from x:Name.
+WT005	medium	Windows/DatabaseFieldsManagerWindow.xaml:300	Rows in ListBox [ListRegions] have no unique ID.
+WT008	low	Windows/DatabaseFieldsManagerWindow.xaml:300	ListBox [ListRegions] has no readable name.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:308	TabItem "{DynamicResource LOCSourcesLabel}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:311	Button "{DynamicResource LOCAddTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:313	Button "{DynamicResource LOCRenameTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:316	Button "{DynamicResource LOCRemoveTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:319	Button "{DynamicResource LOCRemoveUnusedTitle}" has no AutomationId.
+WT002	low	Windows/DatabaseFieldsManagerWindow.xaml:322	ListBox [ListSources] gets its ID "ListSources" from x:Name.
+WT005	medium	Windows/DatabaseFieldsManagerWindow.xaml:322	Rows in ListBox [ListSources] have no unique ID.
+WT008	low	Windows/DatabaseFieldsManagerWindow.xaml:322	ListBox [ListSources] has no readable name.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:329	TabItem "{DynamicResource LOCCompletionStatuses}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:332	Button "{DynamicResource LOCAddTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:334	Button "{DynamicResource LOCRenameTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:337	Button "{DynamicResource LOCRemoveTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:340	Button "{DynamicResource LOCRemoveUnusedTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:354	ComboBox has no AutomationId.
+WT005	medium	Windows/DatabaseFieldsManagerWindow.xaml:354	Rows in ComboBox have no unique ID.
+WT008	low	Windows/DatabaseFieldsManagerWindow.xaml:354	ComboBox has no readable name.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:359	ComboBox has no AutomationId.
+WT005	medium	Windows/DatabaseFieldsManagerWindow.xaml:359	Rows in ComboBox have no unique ID.
+WT008	low	Windows/DatabaseFieldsManagerWindow.xaml:359	ComboBox has no readable name.
+WT002	low	Windows/DatabaseFieldsManagerWindow.xaml:365	ListBox [ListCompletionStatuses] gets its ID "ListCompletionStatuses" from x:Name.
+WT005	medium	Windows/DatabaseFieldsManagerWindow.xaml:365	Rows in ListBox [ListCompletionStatuses] have no unique ID.
+WT008	low	Windows/DatabaseFieldsManagerWindow.xaml:365	ListBox [ListCompletionStatuses] has no readable name.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:373	TabItem "{DynamicResource LOCSettingsTopPanelFil…" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:376	Button "{DynamicResource LOCRenameTitle}" has no AutomationId.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:379	Button "{DynamicResource LOCRemoveTitle}" has no AutomationId.
+WT002	low	Windows/DatabaseFieldsManagerWindow.xaml:382	Button "5" gets its ID "ButtonMoveUpFilterPreset" from x:Name.
+WT002	low	Windows/DatabaseFieldsManagerWindow.xaml:385	Button "6" gets its ID "ButtonMoveDownFilterPreset" from x:Name.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:399	CheckBox "{DynamicResource LOCFilterPresetShowOnF…" has no AutomationId.
+WT002	low	Windows/DatabaseFieldsManagerWindow.xaml:402	ListBox [ListFilterPresets] gets its ID "ListFilterPresets" from x:Name.
+WT005	medium	Windows/DatabaseFieldsManagerWindow.xaml:402	Rows in ListBox [ListFilterPresets] have no unique ID.
+WT008	low	Windows/DatabaseFieldsManagerWindow.xaml:402	ListBox [ListFilterPresets] has no readable name.
+WT001	high	Windows/DatabaseFieldsManagerWindow.xaml:414	Button "{DynamicResource LOCMenuHelpTitle}" has no AutomationId.
+WT002	low	Windows/DatabaseFieldsManagerWindow.xaml:418	Button "{DynamicResource LOCCancelLabel}" gets its ID "ButtonCancel" from x:Name.
+WT002	low	Windows/DatabaseFieldsManagerWindow.xaml:421	Button "{DynamicResource LOCSaveLabel}" gets its ID "ButtonOK" from x:Name.
+WT001	high	Windows/EmulatedGameImportWindow.xaml:44	controls:ExtendedDataGrid has no AutomationId.
+WT005	medium	Windows/EmulatedGameImportWindow.xaml:44	Rows in controls:ExtendedDataGrid have no unique ID.
+WT008	low	Windows/EmulatedGameImportWindow.xaml:44	controls:ExtendedDataGrid has no readable name.
+WT001	medium	Windows/EmulatedGameImportWindow.xaml:67	CheckBox (inside a list row template) has no AutomationId.
+WT008	low	Windows/EmulatedGameImportWindow.xaml:67	CheckBox has no readable name.
+WT001	medium	Windows/EmulatedGameImportWindow.xaml:74	TextBox (inside a list row template) has no AutomationId.
+WT008	low	Windows/EmulatedGameImportWindow.xaml:74	TextBox has no readable name.
+WT001	medium	Windows/EmulatedGameImportWindow.xaml:108	ListView (inside a list row template) has no AutomationId.
+WT005	medium	Windows/EmulatedGameImportWindow.xaml:108	Rows in ListView have no unique ID.
+WT008	low	Windows/EmulatedGameImportWindow.xaml:108	ListView has no readable name.
+WT001	medium	Windows/EmulatedGameImportWindow.xaml:134	CheckBox (inside a list row template) has no AutomationId.
+WT008	low	Windows/EmulatedGameImportWindow.xaml:134	CheckBox has no readable name.
+WT001	medium	Windows/EmulatedGameImportWindow.xaml:144	TextBox (inside a list row template) has no AutomationId.
+WT008	low	Windows/EmulatedGameImportWindow.xaml:144	TextBox has no readable name.
+WT005	medium	Windows/EmulatedGameImportWindow.xaml:158	Rows in ItemsControl have no unique ID.
+WT002	low	Windows/EmulatedGameImportWindow.xaml:169	ComboBox [ComboEmulatorList] gets its ID "ComboEmulatorList" from x:Name.
+WT005	medium	Windows/EmulatedGameImportWindow.xaml:169	Rows in ComboBox [ComboEmulatorList] have no unique ID.
+WT008	low	Windows/EmulatedGameImportWindow.xaml:169	ComboBox [ComboEmulatorList] has no readable name.
+WT001	medium	Windows/EmulatedGameImportWindow.xaml:173	ComboBox (inside a list row template) has no AutomationId.
+WT005	medium	Windows/EmulatedGameImportWindow.xaml:173	Rows in ComboBox have no unique ID.
+WT008	low	Windows/EmulatedGameImportWindow.xaml:173	ComboBox has no readable name.
+WT001	medium	Windows/EmulatedGameImportWindow.xaml:180	ComboBox (inside a list row template) has no AutomationId.
+WT005	medium	Windows/EmulatedGameImportWindow.xaml:180	Rows in ComboBox have no unique ID.
+WT008	low	Windows/EmulatedGameImportWindow.xaml:180	ComboBox has no readable name.
+WT001	medium	Windows/EmulatedGameImportWindow.xaml:187	ComboBox (inside a list row template) has no AutomationId.
+WT005	medium	Windows/EmulatedGameImportWindow.xaml:187	Rows in ComboBox have no unique ID.
+WT008	low	Windows/EmulatedGameImportWindow.xaml:187	ComboBox has no readable name.
+WT001	medium	Windows/EmulatedGameImportWindow.xaml:193	dctrls:PathSelectionBox (inside a list row template) has no AutomationId.
+WT008	low	Windows/EmulatedGameImportWindow.xaml:193	dctrls:PathSelectionBox has no readable name.
+WT001	medium	Windows/EmulatedGameImportWindow.xaml:199	TextBox (inside a list row template) has no AutomationId.
+WT008	low	Windows/EmulatedGameImportWindow.xaml:199	TextBox has no readable name.
+WT002	low	Windows/EmulatedGameImportWindow.xaml:204	CheckBox "{DynamicResource LOCEmuExcludeOnlineFil…" gets its ID "CheckExcludeOnlineFiles" from x:Name.
+WT001	medium	Windows/EmulatedGameImportWindow.xaml:208	CheckBox "{DynamicResource LOCEmuUseSimplifiedOnl…" (inside a list row template) has no AutomationId.
+WT001	medium	Windows/EmulatedGameImportWindow.xaml:214	CheckBox "{DynamicResource LOCEmuImportWithRelati…" (inside a list row template) has no AutomationId.
+WT001	medium	Windows/EmulatedGameImportWindow.xaml:218	CheckBox "{DynamicResource LOCEmuImportScanSubfol…" (inside a list row template) has no AutomationId.
+WT001	medium	Windows/EmulatedGameImportWindow.xaml:220	CheckBox "{DynamicResource LOCEmuImportScanInside…" (inside a list row template) has no AutomationId.
+WT001	medium	Windows/EmulatedGameImportWindow.xaml:222	CheckBox "{DynamicResource LOCEmuMergeRelatedFile…" (inside a list row template) has no AutomationId.
+WT002	low	Windows/EmulatedGameImportWindow.xaml:225	CheckBox "{DynamicResource LOCEmuSaveScanConfig}" gets its ID "CheckSaveConfig" from x:Name.
+WT001	medium	Windows/EmulatedGameImportWindow.xaml:232	TextBox (inside a list row template) has no AutomationId.
+WT008	low	Windows/EmulatedGameImportWindow.xaml:232	TextBox has no readable name.
+WT001	medium	Windows/EmulatedGameImportWindow.xaml:234	Button "{DynamicResource LOCRemoveLabel}" (inside a list row template) has no AutomationId.
+WT001	high	Windows/EmulatedGameImportWindow.xaml:245	Button "{DynamicResource LOCEmuAddScanner}" has no AutomationId.
+WT001	high	Windows/EmulatedGameImportWindow.xaml:248	Button "{DynamicResource LOCEmuAddSavedScanner}" has no AutomationId.
+WT001	high	Windows/EmulatedGameImportWindow.xaml:263	Button "{DynamicResource LOCSelectAll}" has no AutomationId.
+WT001	high	Windows/EmulatedGameImportWindow.xaml:266	Button "{DynamicResource LOCDeselectAll}" has no AutomationId.
+WT001	high	Windows/EmulatedGameImportWindow.xaml:273	Button "{DynamicResource LOCCloseLabel}" has no AutomationId.
+WT001	high	Windows/EmulatedGameImportWindow.xaml:276	Button "{DynamicResource LOCImportLabel}" has no AutomationId.
+WT001	high	Windows/EmulatedGameImportWindow.xaml:280	Button "{DynamicResource LOCStartScan}" has no AutomationId.
+WT001	high	Windows/EmulatedGameImportWindow.xaml:284	Button "{DynamicResource LOCMenuHelpTitle}" has no AutomationId.
+WT001	high	Windows/EmulatorDownloadWindow.xaml:34	Button "{DynamicResource LOCCloseLabel}" has no AutomationId.
+WT001	high	Windows/EmulatorDownloadWindow.xaml:53	DataGrid has no AutomationId.
+WT005	medium	Windows/EmulatorDownloadWindow.xaml:53	Rows in DataGrid have no unique ID.
+WT008	low	Windows/EmulatorDownloadWindow.xaml:53	DataGrid has no readable name.
+WT001	medium	Windows/EmulatorDownloadWindow.xaml:87	Hyperlink "{Binding Website, Mode=OneWay}" (inside a list row template) has no AutomationId.
+WT001	high	Windows/EmulatorImportWindow.xaml:37	DataGrid has no AutomationId.
+WT005	medium	Windows/EmulatorImportWindow.xaml:37	Rows in DataGrid have no unique ID.
+WT008	low	Windows/EmulatorImportWindow.xaml:37	DataGrid has no readable name.
+WT001	medium	Windows/EmulatorImportWindow.xaml:45	CheckBox (inside a list row template) has no AutomationId.
+WT008	low	Windows/EmulatorImportWindow.xaml:45	CheckBox has no readable name.
+WT001	medium	Windows/EmulatorImportWindow.xaml:52	TextBox (inside a list row template) has no AutomationId.
+WT008	low	Windows/EmulatorImportWindow.xaml:52	TextBox has no readable name.
+WT005	medium	Windows/EmulatorImportWindow.xaml:73	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/EmulatorImportWindow.xaml:76	CheckBox "{Binding Name}" (inside a list row template) has no AutomationId.
+WT001	high	Windows/EmulatorImportWindow.xaml:88	Button "{DynamicResource LOCEmuScanDirectory}" has no AutomationId.
+WT001	high	Windows/EmulatorImportWindow.xaml:90	CheckBox "{DynamicResource LOCEmuScanHideImported}" has no AutomationId.
+WT001	high	Windows/EmulatorImportWindow.xaml:92	Button "{DynamicResource LOCSelectAll}" has no AutomationId.
+WT001	high	Windows/EmulatorImportWindow.xaml:94	Button "{DynamicResource LOCDeselectAll}" has no AutomationId.
+WT001	high	Windows/EmulatorImportWindow.xaml:100	Button "{DynamicResource LOCCloseLabel}" has no AutomationId.
+WT001	high	Windows/EmulatorImportWindow.xaml:103	Button "{DynamicResource LOCImportLabel}" has no AutomationId.
+WT001	high	Windows/EmulatorImportWindow.xaml:106	Button "{DynamicResource LOCMenuHelpTitle}" has no AutomationId.
+WT002	low	Windows/EmulatorsWindow.xaml:44	Button "{DynamicResource LOCCancelLabel}" gets its ID "ButtonCancel" from x:Name.
+WT002	low	Windows/EmulatorsWindow.xaml:47	Button "{DynamicResource LOCSaveLabel}" gets its ID "ButtonOK" from x:Name.
+WT001	high	Windows/EmulatorsWindow.xaml:50	Button "{DynamicResource LOCMenuHelpTitle}" has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:57	TabControl has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:58	TabItem "{DynamicResource LOCEmulatorsTitle}" has no AutomationId.
+WT002	low	Windows/EmulatorsWindow.xaml:61	Button "{DynamicResource LOCImportLabel}" gets its ID "ButtonImportEmulator" from x:Name.
+WT002	low	Windows/EmulatorsWindow.xaml:63	Button "{DynamicResource LOCAddTitle}" gets its ID "ButtonAddEmulator" from x:Name.
+WT002	low	Windows/EmulatorsWindow.xaml:65	Button "{DynamicResource LOCCopyTitle}" gets its ID "ButtonCopyEmulator" from x:Name.
+WT002	low	Windows/EmulatorsWindow.xaml:68	Button "{DynamicResource LOCRemoveTitle}" gets its ID "ButtonRemoveEmulator" from x:Name.
+WT002	low	Windows/EmulatorsWindow.xaml:71	Button "{DynamicResource LOCDownloadEmulatorsBu…" gets its ID "ButtonDownloadEmulators" from x:Name.
+WT002	low	Windows/EmulatorsWindow.xaml:85	ListBox [ListEmulators] gets its ID "ListEmulators" from x:Name.
+WT005	medium	Windows/EmulatorsWindow.xaml:85	Rows in ListBox [ListEmulators] have no unique ID.
+WT008	low	Windows/EmulatorsWindow.xaml:85	ListBox [ListEmulators] has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:112	TextBox has no AutomationId.
+WT008	low	Windows/EmulatorsWindow.xaml:112	TextBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:116	pctrls:PathSelectionBox has no AutomationId.
+WT008	low	Windows/EmulatorsWindow.xaml:116	pctrls:PathSelectionBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:121	ComboBox has no AutomationId.
+WT005	medium	Windows/EmulatorsWindow.xaml:121	Rows in ComboBox have no unique ID.
+WT008	low	Windows/EmulatorsWindow.xaml:121	ComboBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:148	Button "{DynamicResource LOCAddTitle}" has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:155	Button "{DynamicResource LOCCopyTitle}" has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:158	Button "{DynamicResource LOCRemoveTitle}" has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:163	ListBox has no AutomationId.
+WT005	medium	Windows/EmulatorsWindow.xaml:163	Rows in ListBox have no unique ID.
+WT008	low	Windows/EmulatorsWindow.xaml:163	ListBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:193	TabControl has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:195	TabItem "{DynamicResource LOCGeneralLabel}" has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:200	TextBox has no AutomationId.
+WT008	low	Windows/EmulatorsWindow.xaml:200	TextBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:203	ComboBox has no AutomationId.
+WT005	medium	Windows/EmulatorsWindow.xaml:203	Rows in ComboBox have no unique ID.
+WT008	low	Windows/EmulatorsWindow.xaml:203	ComboBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:213	TextBox has no AutomationId.
+WT008	low	Windows/EmulatorsWindow.xaml:213	TextBox has no readable name.
+WT002	low	Windows/EmulatorsWindow.xaml:230	CheckBox [CheckOverBuiltInArguments] gets its ID "CheckOverBuiltInArguments" from x:Name.
+WT008	low	Windows/EmulatorsWindow.xaml:230	CheckBox [CheckOverBuiltInArguments] has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:234	TextBox has no AutomationId.
+WT008	low	Windows/EmulatorsWindow.xaml:234	TextBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:253	TabItem "{DynamicResource LOCScripts}" has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:273	TextBox has no AutomationId.
+WT008	low	Windows/EmulatorsWindow.xaml:273	TextBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:275	TextBox has no AutomationId.
+WT008	low	Windows/EmulatorsWindow.xaml:275	TextBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:277	TextBox has no AutomationId.
+WT008	low	Windows/EmulatorsWindow.xaml:277	TextBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:282	TabControl has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:284	TabItem "{DynamicResource LOCGeneralLabel}" has no AutomationId.
+WT002	low	Windows/EmulatorsWindow.xaml:289	TextBox [TextEmulatorProfileName] gets its ID "TextEmulatorProfileName" from x:Name.
+WT008	low	Windows/EmulatorsWindow.xaml:289	TextBox [TextEmulatorProfileName] has no readable name.
+WT002	low	Windows/EmulatorsWindow.xaml:299	pctrls:PathSelectionBox [TextExecutable] gets its ID "TextExecutable" from x:Name.
+WT008	low	Windows/EmulatorsWindow.xaml:299	pctrls:PathSelectionBox [TextExecutable] has no readable name.
+WT002	low	Windows/EmulatorsWindow.xaml:304	TextBox [TextArguments] gets its ID "TextArguments" from x:Name.
+WT008	low	Windows/EmulatorsWindow.xaml:304	TextBox [TextArguments] has no readable name.
+WT002	low	Windows/EmulatorsWindow.xaml:308	pctrls:PathSelectionBox [TextWorkdir] gets its ID "TextWorkdir" from x:Name.
+WT008	low	Windows/EmulatorsWindow.xaml:308	pctrls:PathSelectionBox [TextWorkdir] has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:313	ComboBox has no AutomationId.
+WT005	medium	Windows/EmulatorsWindow.xaml:313	Rows in ComboBox have no unique ID.
+WT008	low	Windows/EmulatorsWindow.xaml:313	ComboBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:319	pctrls:PathSelectionBox has no AutomationId.
+WT008	low	Windows/EmulatorsWindow.xaml:319	pctrls:PathSelectionBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:325	TextBox has no AutomationId.
+WT008	low	Windows/EmulatorsWindow.xaml:325	TextBox has no readable name.
+WT002	low	Windows/EmulatorsWindow.xaml:330	TextBox [TextImageExtension] gets its ID "TextImageExtension" from x:Name.
+WT008	low	Windows/EmulatorsWindow.xaml:330	TextBox [TextImageExtension] has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:334	TabItem "{DynamicResource LOCScripts}" has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:354	TextBox has no AutomationId.
+WT008	low	Windows/EmulatorsWindow.xaml:354	TextBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:357	TextBox has no AutomationId.
+WT008	low	Windows/EmulatorsWindow.xaml:357	TextBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:360	TextBox has no AutomationId.
+WT008	low	Windows/EmulatorsWindow.xaml:360	TextBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:364	TabItem "{DynamicResource LOCStartupScript}" has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:365	TextBox has no AutomationId.
+WT008	low	Windows/EmulatorsWindow.xaml:365	TextBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:378	TabItem "{DynamicResource LOCEmuAutoScanConfigur…" has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:392	TextBox has no AutomationId.
+WT008	low	Windows/EmulatorsWindow.xaml:392	TextBox has no readable name.
+WT002	low	Windows/EmulatorsWindow.xaml:408	ListBox [ListScannerConfigs] gets its ID "ListScannerConfigs" from x:Name.
+WT005	medium	Windows/EmulatorsWindow.xaml:408	Rows in ListBox [ListScannerConfigs] have no unique ID.
+WT008	low	Windows/EmulatorsWindow.xaml:408	ListBox [ListScannerConfigs] has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:417	TabControl has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:420	TabItem "{DynamicResource LOCGeneralLabel}" has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:439	TextBox has no AutomationId.
+WT008	low	Windows/EmulatorsWindow.xaml:439	TextBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:443	pctrls:PathSelectionBox has no AutomationId.
+WT008	low	Windows/EmulatorsWindow.xaml:443	pctrls:PathSelectionBox has no readable name.
+WT002	low	Windows/EmulatorsWindow.xaml:449	ComboBox [ComboEmulatorList] gets its ID "ComboEmulatorList" from x:Name.
+WT005	medium	Windows/EmulatorsWindow.xaml:449	Rows in ComboBox [ComboEmulatorList] have no unique ID.
+WT008	low	Windows/EmulatorsWindow.xaml:449	ComboBox [ComboEmulatorList] has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:453	ComboBox has no AutomationId.
+WT005	medium	Windows/EmulatorsWindow.xaml:453	Rows in ComboBox have no unique ID.
+WT008	low	Windows/EmulatorsWindow.xaml:453	ComboBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:461	ComboBox has no AutomationId.
+WT005	medium	Windows/EmulatorsWindow.xaml:461	Rows in ComboBox have no unique ID.
+WT008	low	Windows/EmulatorsWindow.xaml:461	ComboBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:469	TextBox has no AutomationId.
+WT008	low	Windows/EmulatorsWindow.xaml:469	TextBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:474	ComboBox has no AutomationId.
+WT005	medium	Windows/EmulatorsWindow.xaml:474	Rows in ComboBox have no unique ID.
+WT008	low	Windows/EmulatorsWindow.xaml:474	ComboBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:479	CheckBox "{DynamicResource LOCEmuScanIncludeGloba…" has no AutomationId.
+WT002	low	Windows/EmulatorsWindow.xaml:484	CheckBox "{DynamicResource LOCEmuExcludeOnlineFil…" gets its ID "CheckExcludeOnlineFiles" from x:Name.
+WT001	high	Windows/EmulatorsWindow.xaml:491	CheckBox "{DynamicResource LOCEmuUseSimplifiedOnl…" has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:498	CheckBox "{DynamicResource LOCEmuImportWithRelati…" has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:505	CheckBox "{DynamicResource LOCEmuImportScanSubfol…" has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:510	CheckBox "{DynamicResource LOCEmuImportScanInside…" has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:515	CheckBox "{DynamicResource LOCEmuMergeRelatedFile…" has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:522	TabItem "{DynamicResource LOCExclusions}" has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:525	TextBox has no AutomationId.
+WT008	low	Windows/EmulatorsWindow.xaml:525	TextBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:528	TextBox has no AutomationId.
+WT008	low	Windows/EmulatorsWindow.xaml:528	TextBox has no readable name.
+WT001	high	Windows/EmulatorsWindow.xaml:535	Button "{DynamicResource LOCAddTitle}" has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:537	Button "{DynamicResource LOCCopyTitle}" has no AutomationId.
+WT001	high	Windows/EmulatorsWindow.xaml:540	Button "{DynamicResource LOCRemoveLabel}" has no AutomationId.
+WT001	high	Windows/ExtensionCrashHandlerWindow.xaml:16	Button "{DynamicResource LOCCrashSaveLog}" has no AutomationId.
+WT001	high	Windows/ExtensionCrashHandlerWindow.xaml:19	Button "{DynamicResource LOCCrashRestartPlaynit…" has no AutomationId.
+WT001	high	Windows/ExtensionCrashHandlerWindow.xaml:22	CheckBox "{DynamicResource LOCCrashDisableExtensi…" has no AutomationId.
+WT001	high	Windows/ExtensionCrashHandlerWindow.xaml:26	CheckBox "{DynamicResource LOCCrashRestartSafe}" has no AutomationId.
+WT002	low	Windows/FirstTimeStartupWindow.xaml:29	TabControl [TabMain] gets its ID "TabMain" from x:Name.
+WT001	high	Windows/FirstTimeStartupWindow.xaml:50	TabItem "{DynamicResource LOCWelcomeLabel}" has no AutomationId.
+WT001	high	Windows/FirstTimeStartupWindow.xaml:59	TabItem "{DynamicResource LOCFirstExternalTitle}" has no AutomationId.
+WT005	medium	Windows/FirstTimeStartupWindow.xaml:64	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/FirstTimeStartupWindow.xaml:68	CheckBox "{Binding Name}" (inside a list row template) has no AutomationId.
+WT001	high	Windows/FirstTimeStartupWindow.xaml:82	TabItem "{Binding SelectedLibraryPlugin.Name}" has no AutomationId.
+WT001	high	Windows/FirstTimeStartupWindow.xaml:96	TabItem "Done" has no AutomationId.
+WT002	low	Windows/FirstTimeStartupWindow.xaml:107	Button "{DynamicResource LOCFinishLabel}" gets its ID "ButtonFinish" from x:Name.
+WT002	low	Windows/FirstTimeStartupWindow.xaml:111	Button "{DynamicResource LOCNextLabel}" gets its ID "ButtonNext" from x:Name.
+WT002	low	Windows/GameEditWindow.xaml:74	TabControl [TabControlMain] gets its ID "TabControlMain" from x:Name.
+WT002	low	Windows/GameEditWindow.xaml:75	TabItem "{DynamicResource LOCGeneralLabel}" gets its ID "TabGeneral" from x:Name.
+WT002	low	Windows/GameEditWindow.xaml:136	CheckBox [CheckName] gets its ID "CheckName" from x:Name.
+WT008	low	Windows/GameEditWindow.xaml:136	CheckBox [CheckName] has no readable name.
+WT002	low	Windows/GameEditWindow.xaml:138	TextBox [TextName] gets its ID "TextName" from x:Name.
+WT008	low	Windows/GameEditWindow.xaml:138	TextBox [TextName] has no readable name.
+WT002	low	Windows/GameEditWindow.xaml:143	CheckBox [CheckSortingName] gets its ID "CheckSortingName" from x:Name.
+WT008	low	Windows/GameEditWindow.xaml:143	CheckBox [CheckSortingName] has no readable name.
+WT002	low	Windows/GameEditWindow.xaml:145	TextBox [TextSortingName] gets its ID "TextSortingName" from x:Name.
+WT008	low	Windows/GameEditWindow.xaml:145	TextBox [TextSortingName] has no readable name.
+WT002	low	Windows/GameEditWindow.xaml:150	CheckBox [CheckPlatform] gets its ID "CheckPlatform" from x:Name.
+WT008	low	Windows/GameEditWindow.xaml:150	CheckBox [CheckPlatform] has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:153	Button "+" has no AutomationId.
+WT002	low	Windows/GameEditWindow.xaml:164	CheckBox [CheckGenres] gets its ID "CheckGenres" from x:Name.
+WT008	low	Windows/GameEditWindow.xaml:164	CheckBox [CheckGenres] has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:167	Button "+" has no AutomationId.
+WT002	low	Windows/GameEditWindow.xaml:178	CheckBox [CheckDeveloper] gets its ID "CheckDeveloper" from x:Name.
+WT008	low	Windows/GameEditWindow.xaml:178	CheckBox [CheckDeveloper] has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:181	Button "+" has no AutomationId.
+WT002	low	Windows/GameEditWindow.xaml:192	CheckBox [CheckPublisher] gets its ID "CheckPublisher" from x:Name.
+WT008	low	Windows/GameEditWindow.xaml:192	CheckBox [CheckPublisher] has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:195	Button "+" has no AutomationId.
+WT002	low	Windows/GameEditWindow.xaml:206	CheckBox [CheckCategories] gets its ID "CheckCategories" from x:Name.
+WT008	low	Windows/GameEditWindow.xaml:206	CheckBox [CheckCategories] has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:209	Button "+" has no AutomationId.
+WT002	low	Windows/GameEditWindow.xaml:220	CheckBox [CheckFeature] gets its ID "CheckFeature" from x:Name.
+WT008	low	Windows/GameEditWindow.xaml:220	CheckBox [CheckFeature] has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:223	Button "+" has no AutomationId.
+WT002	low	Windows/GameEditWindow.xaml:234	CheckBox [CheckTag] gets its ID "CheckTag" from x:Name.
+WT008	low	Windows/GameEditWindow.xaml:234	CheckBox [CheckTag] has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:237	Button "+" has no AutomationId.
+WT002	low	Windows/GameEditWindow.xaml:249	CheckBox [CheckDescription] gets its ID "CheckDescription" from x:Name.
+WT008	low	Windows/GameEditWindow.xaml:249	CheckBox [CheckDescription] has no readable name.
+WT002	low	Windows/GameEditWindow.xaml:252	TextBox [TextDescription] gets its ID "TextDescription" from x:Name.
+WT008	low	Windows/GameEditWindow.xaml:252	TextBox [TextDescription] has no readable name.
+WT002	low	Windows/GameEditWindow.xaml:263	CheckBox [CheckReleaseDate] gets its ID "CheckReleaseDate" from x:Name.
+WT008	low	Windows/GameEditWindow.xaml:263	CheckBox [CheckReleaseDate] has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:265	TextBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:265	TextBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:283	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:283	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:286	Button "+" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:297	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:297	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:300	Button "+" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:311	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:311	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:314	Button "+" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:325	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:325	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:328	Button "+" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:332	ComboBox has no AutomationId.
+WT005	medium	Windows/GameEditWindow.xaml:332	Rows in ComboBox have no unique ID.
+WT008	low	Windows/GameEditWindow.xaml:332	ComboBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:340	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:340	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:343	Button "+" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:347	ComboBox has no AutomationId.
+WT005	medium	Windows/GameEditWindow.xaml:347	Rows in ComboBox have no unique ID.
+WT008	low	Windows/GameEditWindow.xaml:347	ComboBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:355	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:355	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:357	TextBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:357	TextBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:376	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:376	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:378	TextBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:378	TextBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:397	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:397	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:399	TextBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:399	TextBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:419	TabItem "{DynamicResource LOCAdvanced}" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:480	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:480	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:482	DatePicker has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:482	DatePicker has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:487	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:487	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:492	TextBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:492	TextBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:511	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:511	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:513	TextBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:513	TextBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:529	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:529	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:531	TextBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:531	TextBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:535	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:535	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:538	TextBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:538	TextBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:545	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:545	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:547	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:547	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:552	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:552	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:554	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:554	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:559	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:559	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:561	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:561	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:580	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:580	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:582	DatePicker has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:582	DatePicker has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:595	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:595	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:598	TextBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:598	TextBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:607	TextBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:607	TextBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:613	TextBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:613	TextBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:625	TabItem "{DynamicResource LOCMediaLabel}" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:632	Button "{DynamicResource LOCOpenMetadataFolder}" has no AutomationId.
+WT002	low	Windows/GameEditWindow.xaml:649	CheckBox [CheckIcon] gets its ID "CheckIcon" from x:Name.
+WT008	low	Windows/GameEditWindow.xaml:649	CheckBox [CheckIcon] has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:657	Button "" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:661	Button "" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:665	Button "" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:669	Button "" has no AutomationId.
+WT002	low	Windows/GameEditWindow.xaml:700	CheckBox [CheckImage] gets its ID "CheckImage" from x:Name.
+WT004	high	Windows/GameEditWindow.xaml:700	"CheckImage" is used 2 times on this screen (line 700, line 753).
+WT008	low	Windows/GameEditWindow.xaml:700	CheckBox [CheckImage] has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:708	Button "" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:713	Button "" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:717	Button "" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:721	Button "" has no AutomationId.
+WT002	low	Windows/GameEditWindow.xaml:753	CheckBox [CheckImage] gets its ID "CheckImage" from x:Name.
+WT008	low	Windows/GameEditWindow.xaml:753	CheckBox [CheckImage] has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:761	Button "" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:766	Button "" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:770	Button "" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:774	Button "" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:781	TextBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:781	TextBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:811	TabItem "{DynamicResource LOCLinksLabel}" has no AutomationId.
+WT002	low	Windows/GameEditWindow.xaml:821	Button "{DynamicResource LOCAddLinkButton}" gets its ID "ButtonAddLink" from x:Name.
+WT002	low	Windows/GameEditWindow.xaml:823	CheckBox "{DynamicResource LOCSaveChanges}" gets its ID "CheckLinks" from x:Name.
+WT005	medium	Windows/GameEditWindow.xaml:826	Rows in ItemsControl [ItemsLinks] have no unique ID.
+WT001	medium	Windows/GameEditWindow.xaml:840	TextBox (inside a list row template) has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:840	TextBox has no readable name.
+WT001	medium	Windows/GameEditWindow.xaml:842	TextBox (inside a list row template) has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:842	TextBox has no readable name.
+WT002	low	Windows/GameEditWindow.xaml:845	Button "5" gets its ID "ButtonMoveUpAction" from x:Name.
+WT002	low	Windows/GameEditWindow.xaml:848	Button "6" gets its ID "ButtonMoveDownAction" from x:Name.
+WT002	low	Windows/GameEditWindow.xaml:851	Button "r" gets its ID "ButtonRemoveLink" from x:Name.
+WT001	high	Windows/GameEditWindow.xaml:863	TabItem "{DynamicResource LOCInstallationLabel}" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:884	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:884	CheckBox has no readable name.
+WT002	low	Windows/GameEditWindow.xaml:888	pctrls:PathSelectionBox [TextInstallDir] gets its ID "TextInstallDir" from x:Name.
+WT008	low	Windows/GameEditWindow.xaml:888	pctrls:PathSelectionBox [TextInstallDir] has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:892	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:892	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:898	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:898	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:902	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:902	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:917	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:917	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:924	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:924	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:930	Button "{DynamicResource LOCInstallSizeCalculat…" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:937	TextBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:937	TextBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:959	Button "{DynamicResource LOCAddRom}" has no AutomationId.
+WT002	low	Windows/GameEditWindow.xaml:961	CheckBox "{DynamicResource LOCSaveChanges}" gets its ID "CheckSaveRoms" from x:Name.
+WT001	high	Windows/GameEditWindow.xaml:964	ListView has no AutomationId.
+WT005	medium	Windows/GameEditWindow.xaml:964	Rows in ListView have no unique ID.
+WT008	low	Windows/GameEditWindow.xaml:964	ListView has no readable name.
+WT001	medium	Windows/GameEditWindow.xaml:985	TextBox (inside a list row template) has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:985	TextBox has no readable name.
+WT001	medium	Windows/GameEditWindow.xaml:993	pctrls:PathSelectionBox (inside a list row template) has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:993	pctrls:PathSelectionBox has no readable name.
+WT001	medium	Windows/GameEditWindow.xaml:1003	Button "5" (inside a list row template) has no AutomationId.
+WT001	medium	Windows/GameEditWindow.xaml:1006	Button "6" (inside a list row template) has no AutomationId.
+WT001	medium	Windows/GameEditWindow.xaml:1009	Button "r" (inside a list row template) has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:1022	TabItem "{DynamicResource LOCActionsLabel}" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:1029	Button "{DynamicResource LOCMenuHelpTitle}" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:1040	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:1040	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:1045	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:1045	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:1049	Button "{DynamicResource LOCAddAction}" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:1051	CheckBox "{DynamicResource LOCSaveChanges}" has no AutomationId.
+WT005	medium	Windows/GameEditWindow.xaml:1056	Rows in ItemsControl [OtherTasksItems] have no unique ID.
+WT002	low	Windows/GameEditWindow.xaml:1065	Button "5" gets its ID "ButtonMoveUpAction" from x:Name.
+WT002	low	Windows/GameEditWindow.xaml:1068	Button "6" gets its ID "ButtonMoveDownAction" from x:Name.
+WT002	low	Windows/GameEditWindow.xaml:1071	Button "{DynamicResource LOCDeleteAction}" gets its ID "ButtonDeleteAction" from x:Name.
+WT001	high	Windows/GameEditWindow.xaml:1084	TabItem "{DynamicResource LOCScripts}" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:1091	Button "{DynamicResource LOCMenuHelpTitle}" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:1106	TextBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:1106	TextBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:1113	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:1113	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:1119	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:1119	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:1121	CheckBox "{DynamicResource LOCExecuteGlobalScript}" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:1124	Button "{DynamicResource LOCTestScript}" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:1129	TextBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:1129	TextBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:1137	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:1137	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:1143	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:1143	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:1145	CheckBox "{DynamicResource LOCExecuteGlobalScript}" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:1148	Button "{DynamicResource LOCTestScript}" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:1153	TextBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:1153	TextBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:1160	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:1160	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:1166	CheckBox has no AutomationId.
+WT008	low	Windows/GameEditWindow.xaml:1166	CheckBox has no readable name.
+WT001	high	Windows/GameEditWindow.xaml:1168	CheckBox "{DynamicResource LOCExecuteGlobalScript}" has no AutomationId.
+WT001	high	Windows/GameEditWindow.xaml:1171	Button "{DynamicResource LOCTestScript}" has no AutomationId.
+WT002	low	Windows/GameEditWindow.xaml:1182	Button "{DynamicResource LOCMenuDownloadMetadat…" gets its ID "ButtonDownload" from x:Name.
+WT002	low	Windows/GameEditWindow.xaml:1197	Button "{DynamicResource LOCCancelLabel}" gets its ID "ButtonCancel" from x:Name.
+WT002	low	Windows/GameEditWindow.xaml:1200	Button "{DynamicResource LOCSaveLabel}" gets its ID "ButtonOK" from x:Name.
+WT001	high	Windows/GoogleImageDownloadWindow.xaml:41	ListBox has no AutomationId.
+WT005	medium	Windows/GoogleImageDownloadWindow.xaml:41	Rows in ListBox have no unique ID.
+WT008	low	Windows/GoogleImageDownloadWindow.xaml:41	ListBox has no readable name.
+WT001	high	Windows/GoogleImageDownloadWindow.xaml:74	Button "{DynamicResource LOCLoadMore}" has no AutomationId.
+WT002	low	Windows/GoogleImageDownloadWindow.xaml:80	Button "{DynamicResource LOCSearchLabel}" gets its ID "ButtonSearch" from x:Name.
+WT001	high	Windows/GoogleImageDownloadWindow.xaml:82	ComboBox has no AutomationId.
+WT005	medium	Windows/GoogleImageDownloadWindow.xaml:82	Rows in ComboBox have no unique ID.
+WT008	low	Windows/GoogleImageDownloadWindow.xaml:82	ComboBox has no readable name.
+WT001	high	Windows/GoogleImageDownloadWindow.xaml:88	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Windows/GoogleImageDownloadWindow.xaml:88	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Windows/GoogleImageDownloadWindow.xaml:93	pctrls:NullIntNumericBox has no AutomationId.
+WT008	low	Windows/GoogleImageDownloadWindow.xaml:93	pctrls:NullIntNumericBox has no readable name.
+WT001	high	Windows/GoogleImageDownloadWindow.xaml:96	Button "{DynamicResource LOCPresets}" has no AutomationId.
+WT001	high	Windows/GoogleImageDownloadWindow.xaml:100	MenuItem "{DynamicResource LOCSearchResolutionAny…" has no AutomationId.
+WT001	high	Windows/GoogleImageDownloadWindow.xaml:102	MenuItem "1920x620 (Steam Hero)" has no AutomationId.
+WT001	high	Windows/GoogleImageDownloadWindow.xaml:105	MenuItem "1920x1080 (1080p)" has no AutomationId.
+WT001	high	Windows/GoogleImageDownloadWindow.xaml:108	MenuItem "2560x1440 (1440p)" has no AutomationId.
+WT002	low	Windows/GoogleImageDownloadWindow.xaml:115	TextBox [TextSearch] gets its ID "TextSearch" from x:Name.
+WT008	low	Windows/GoogleImageDownloadWindow.xaml:115	TextBox [TextSearch] has no readable name.
+WT002	low	Windows/GoogleImageDownloadWindow.xaml:124	Button "{DynamicResource LOCCancelLabel}" gets its ID "ButtonCancel" from x:Name.
+WT002	low	Windows/GoogleImageDownloadWindow.xaml:127	Button "{DynamicResource LOCSelect}" gets its ID "ButtonOK" from x:Name.
+WT001	high	Windows/GoogleImageDownloadWindow.xaml:133	ComboBox has no AutomationId.
+WT005	medium	Windows/GoogleImageDownloadWindow.xaml:133	Rows in ComboBox have no unique ID.
+WT008	low	Windows/GoogleImageDownloadWindow.xaml:133	ComboBox has no readable name.
+WT001	high	Windows/GoogleImageDownloadWindow.xaml:137	CheckBox "{DynamicResource LOCTransparent}" has no AutomationId.
+WT001	high	Windows/ImageSelectionWindow.xaml:28	ListBox has no AutomationId.
+WT005	medium	Windows/ImageSelectionWindow.xaml:28	Rows in ListBox have no unique ID.
+WT008	low	Windows/ImageSelectionWindow.xaml:28	ListBox has no readable name.
+WT002	low	Windows/ImageSelectionWindow.xaml:60	Button "{DynamicResource LOCCancelLabel}" gets its ID "ButtonCancel" from x:Name.
+WT002	low	Windows/ImageSelectionWindow.xaml:63	Button "{DynamicResource LOCSelect}" gets its ID "ButtonOK" from x:Name.
+WT002	low	Windows/InstalledGamesWindow.xaml:29	ListView [ListPrograms] gets its ID "ListPrograms" from x:Name.
+WT005	medium	Windows/InstalledGamesWindow.xaml:29	Rows in ListView [ListPrograms] have no unique ID.
+WT008	low	Windows/InstalledGamesWindow.xaml:29	ListView [ListPrograms] has no readable name.
+WT001	high	Windows/InstalledGamesWindow.xaml:44	CheckBox has no AutomationId.
+WT008	low	Windows/InstalledGamesWindow.xaml:44	CheckBox has no readable name.
+WT001	medium	Windows/InstalledGamesWindow.xaml:48	CheckBox (inside a list row template) has no AutomationId.
+WT008	low	Windows/InstalledGamesWindow.xaml:48	CheckBox has no readable name.
+WT002	low	Windows/InstalledGamesWindow.xaml:75	Button "{DynamicResource LOCBrowse}" gets its ID "ButtonBrowse" from x:Name.
+WT002	low	Windows/InstalledGamesWindow.xaml:78	Button "{DynamicResource LOCScanFolder}" gets its ID "ButtonScan" from x:Name.
+WT002	low	Windows/InstalledGamesWindow.xaml:81	Button "{DynamicResource LOCDetectInstalled}" gets its ID "ButtonDetectInstalled" from x:Name.
+WT001	high	Windows/InstalledGamesWindow.xaml:84	CheckBox "{DynamicResource LOCEmuScanHideImported}" has no AutomationId.
+WT002	low	Windows/InstalledGamesWindow.xaml:86	Button "{DynamicResource LOCCancelLabel}" gets its ID "ButtonCancel" from x:Name.
+WT002	low	Windows/InstalledGamesWindow.xaml:89	Button "{DynamicResource LOCAddGames}" gets its ID "ButtonOK" from x:Name.
+WT002	low	Windows/ItemSelectionWithSearchWindow.xaml:36	ListBox [ListSearch] gets its ID "ListSearch" from x:Name.
+WT005	medium	Windows/ItemSelectionWithSearchWindow.xaml:36	Rows in ListBox [ListSearch] have no unique ID.
+WT008	low	Windows/ItemSelectionWithSearchWindow.xaml:36	ListBox [ListSearch] has no readable name.
+WT002	low	Windows/ItemSelectionWithSearchWindow.xaml:59	Button "{DynamicResource LOCSearchLabel}" gets its ID "ButtonSearch" from x:Name.
+WT002	low	Windows/ItemSelectionWithSearchWindow.xaml:61	TextBox [TextSearch] gets its ID "TextSearch" from x:Name.
+WT008	low	Windows/ItemSelectionWithSearchWindow.xaml:61	TextBox [TextSearch] has no readable name.
+WT002	low	Windows/ItemSelectionWithSearchWindow.xaml:71	Button "{DynamicResource LOCCancelLabel}" gets its ID "ButtonCancel" from x:Name.
+WT002	low	Windows/ItemSelectionWithSearchWindow.xaml:74	Button "{DynamicResource LOCSelect}" gets its ID "ButtonOK" from x:Name.
+WT002	low	Windows/LibraryIntegrationsWindow.xaml:34	Button "{DynamicResource LOCCancelLabel}" gets its ID "ButtonCancel" from x:Name.
+WT002	low	Windows/LibraryIntegrationsWindow.xaml:37	Button "{DynamicResource LOCSaveLabel}" gets its ID "ButtonOK" from x:Name.
+WT001	high	Windows/LibraryIntegrationsWindow.xaml:45	ListBox has no AutomationId.
+WT005	medium	Windows/LibraryIntegrationsWindow.xaml:45	Rows in ListBox have no unique ID.
+WT008	low	Windows/LibraryIntegrationsWindow.xaml:45	ListBox has no readable name.
+WT001	high	Windows/LicenseAgreementWindow.xaml:19	Button "{DynamicResource LOCLicenseAccept}" has no AutomationId.
+WT001	high	Windows/LicenseAgreementWindow.xaml:21	Button "{DynamicResource LOCLicenseDecline}" has no AutomationId.
+WT001	high	Windows/LicenseAgreementWindow.xaml:24	TextBox has no AutomationId.
+WT008	low	Windows/LicenseAgreementWindow.xaml:24	TextBox has no readable name.
+WT002	low	Windows/MessageBoxWindow.xaml:61	TextBox [TextInputText] gets its ID "TextInputText" from x:Name.
+WT008	low	Windows/MessageBoxWindow.xaml:61	TextBox [TextInputText] has no readable name.
+WT005	medium	Windows/MessageBoxWindow.xaml:66	Rows in ItemsControl [ItemsToggleOptions] have no unique ID.
+WT001	medium	Windows/MessageBoxWindow.xaml:71	CheckBox "{Binding Title}" (inside a list row template) has no AutomationId.
+WT002	low	Windows/MessageBoxWindow.xaml:92	Button "{DynamicResource LOCOKLabel}" gets its ID "ButtonOK" from x:Name.
+WT002	low	Windows/MessageBoxWindow.xaml:94	Button "{DynamicResource LOCYesLabel}" gets its ID "ButtonYes" from x:Name.
+WT002	low	Windows/MessageBoxWindow.xaml:96	Button "{DynamicResource LOCNoLabel}" gets its ID "ButtonNo" from x:Name.
+WT002	low	Windows/MessageBoxWindow.xaml:98	Button "{DynamicResource LOCCancelLabel}" gets its ID "ButtonCancel" from x:Name.
+WT002	low	Windows/MetadataComparisonWindow.xaml:35	Button "{DynamicResource LOCCancelLabel}" gets its ID "ButtonCancel" from x:Name.
+WT002	low	Windows/MetadataComparisonWindow.xaml:38	Button "{DynamicResource LOCSelect}" gets its ID "ButtonOK" from x:Name.
+WT001	high	Windows/MetadataComparisonWindow.xaml:53	Button "{DynamicResource LOCSelectAll}" has no AutomationId.
+WT001	high	Windows/MetadataComparisonWindow.xaml:55	Button "{DynamicResource LOCSelectAll}" has no AutomationId.
+WT001	high	Windows/MetadataComparisonWindow.xaml:61	RadioButton "{Binding CurrentGame.Name}" has no AutomationId.
+WT001	high	Windows/MetadataComparisonWindow.xaml:68	RadioButton "{Binding NewGame.Name}" has no AutomationId.
+WT001	high	Windows/MetadataComparisonWindow.xaml:81	RadioButton "{Binding CurrentGame.ReleaseDate}" has no AutomationId.
+WT001	high	Windows/MetadataComparisonWindow.xaml:88	RadioButton "{Binding NewGame.ReleaseDate}" has no AutomationId.
+WT005	medium	Windows/MetadataComparisonWindow.xaml:101	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/MetadataComparisonWindow.xaml:105	CheckBox "{Binding Item.Name}" (inside a list row template) has no AutomationId.
+WT005	medium	Windows/MetadataComparisonWindow.xaml:109	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/MetadataComparisonWindow.xaml:113	CheckBox "{Binding Item.Name}" (inside a list row template) has no AutomationId.
+WT005	medium	Windows/MetadataComparisonWindow.xaml:123	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/MetadataComparisonWindow.xaml:127	CheckBox "{Binding Item.Name}" (inside a list row template) has no AutomationId.
+WT005	medium	Windows/MetadataComparisonWindow.xaml:131	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/MetadataComparisonWindow.xaml:135	CheckBox "{Binding Item.Name}" (inside a list row template) has no AutomationId.
+WT005	medium	Windows/MetadataComparisonWindow.xaml:145	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/MetadataComparisonWindow.xaml:149	CheckBox "{Binding Item.Name}" (inside a list row template) has no AutomationId.
+WT005	medium	Windows/MetadataComparisonWindow.xaml:153	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/MetadataComparisonWindow.xaml:157	CheckBox "{Binding Item.Name}" (inside a list row template) has no AutomationId.
+WT005	medium	Windows/MetadataComparisonWindow.xaml:167	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/MetadataComparisonWindow.xaml:171	CheckBox "{Binding Item.Name}" (inside a list row template) has no AutomationId.
+WT005	medium	Windows/MetadataComparisonWindow.xaml:175	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/MetadataComparisonWindow.xaml:179	CheckBox "{Binding Item.Name}" (inside a list row template) has no AutomationId.
+WT005	medium	Windows/MetadataComparisonWindow.xaml:189	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/MetadataComparisonWindow.xaml:193	CheckBox "{Binding Item.Name}" (inside a list row template) has no AutomationId.
+WT005	medium	Windows/MetadataComparisonWindow.xaml:197	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/MetadataComparisonWindow.xaml:201	CheckBox "{Binding Item.Name}" (inside a list row template) has no AutomationId.
+WT005	medium	Windows/MetadataComparisonWindow.xaml:211	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/MetadataComparisonWindow.xaml:215	CheckBox "{Binding Item.Name}" (inside a list row template) has no AutomationId.
+WT005	medium	Windows/MetadataComparisonWindow.xaml:220	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/MetadataComparisonWindow.xaml:224	CheckBox "{Binding Item.Name}" (inside a list row template) has no AutomationId.
+WT005	medium	Windows/MetadataComparisonWindow.xaml:235	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/MetadataComparisonWindow.xaml:239	CheckBox "{Binding Item.Name}" (inside a list row template) has no AutomationId.
+WT005	medium	Windows/MetadataComparisonWindow.xaml:243	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/MetadataComparisonWindow.xaml:247	CheckBox "{Binding Item.Name}" (inside a list row template) has no AutomationId.
+WT005	medium	Windows/MetadataComparisonWindow.xaml:257	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/MetadataComparisonWindow.xaml:261	CheckBox "{Binding Item.Name}" (inside a list row template) has no AutomationId.
+WT005	medium	Windows/MetadataComparisonWindow.xaml:265	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/MetadataComparisonWindow.xaml:269	CheckBox "{Binding Item.Name}" (inside a list row template) has no AutomationId.
+WT005	medium	Windows/MetadataComparisonWindow.xaml:279	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/MetadataComparisonWindow.xaml:283	CheckBox "{Binding Item.Name}" (inside a list row template) has no AutomationId.
+WT005	medium	Windows/MetadataComparisonWindow.xaml:287	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/MetadataComparisonWindow.xaml:291	CheckBox "{Binding Item.Name}" (inside a list row template) has no AutomationId.
+WT005	medium	Windows/MetadataComparisonWindow.xaml:301	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/MetadataComparisonWindow.xaml:305	CheckBox "{Binding Item.Name}" (inside a list row template) has no AutomationId.
+WT005	medium	Windows/MetadataComparisonWindow.xaml:309	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/MetadataComparisonWindow.xaml:313	CheckBox "{Binding Item.Name}" (inside a list row template) has no AutomationId.
+WT001	high	Windows/MetadataComparisonWindow.xaml:323	RadioButton "{Binding CurrentGame.Description}" has no AutomationId.
+WT001	high	Windows/MetadataComparisonWindow.xaml:331	RadioButton "{Binding NewGame.Description}" has no AutomationId.
+WT001	high	Windows/MetadataComparisonWindow.xaml:345	RadioButton "{Binding CurrentGame.CriticScore}" has no AutomationId.
+WT001	high	Windows/MetadataComparisonWindow.xaml:352	RadioButton "{Binding NewGame.CriticScore}" has no AutomationId.
+WT001	high	Windows/MetadataComparisonWindow.xaml:365	RadioButton "{Binding CurrentGame.CommunityScore}" has no AutomationId.
+WT001	high	Windows/MetadataComparisonWindow.xaml:372	RadioButton "{Binding NewGame.CommunityScore}" has no AutomationId.
+WT001	high	Windows/MetadataComparisonWindow.xaml:385	RadioButton "{Binding CurrentGame.InstallSize, Conve…" has no AutomationId.
+WT001	high	Windows/MetadataComparisonWindow.xaml:392	RadioButton "{Binding NewGame.InstallSize, Converter…" has no AutomationId.
+WT001	high	Windows/MetadataComparisonWindow.xaml:405	RadioButton "{Binding CurrentIconDimensions}" has no AutomationId.
+WT001	high	Windows/MetadataComparisonWindow.xaml:417	RadioButton "{Binding NewIconDimensions}" has no AutomationId.
+WT001	high	Windows/MetadataComparisonWindow.xaml:435	RadioButton "{Binding CurrentCoverDimensions}" has no AutomationId.
+WT001	high	Windows/MetadataComparisonWindow.xaml:447	RadioButton "{Binding NewCoverDimensions}" has no AutomationId.
+WT001	high	Windows/MetadataComparisonWindow.xaml:465	RadioButton "{Binding CurrentBackgroundDimensions}" has no AutomationId.
+WT001	high	Windows/MetadataComparisonWindow.xaml:477	RadioButton "{Binding NewBackgroundDimensions}" has no AutomationId.
+WT002	low	Windows/MetadataDownloadWindow.xaml:37	TabControl [TabMain] gets its ID "TabMain" from x:Name.
+WT001	high	Windows/MetadataDownloadWindow.xaml:55	TabItem "{DynamicResource LOCMetaGamesSourceIntr…" has no AutomationId.
+WT001	high	Windows/MetadataDownloadWindow.xaml:62	RadioButton "{DynamicResource LOCMetaGameSourceAll}" has no AutomationId.
+WT001	high	Windows/MetadataDownloadWindow.xaml:64	RadioButton "{DynamicResource LOCMetaGameSourceFilte…" has no AutomationId.
+WT001	high	Windows/MetadataDownloadWindow.xaml:66	RadioButton "{DynamicResource LOCMetaGameSourceSelec…" has no AutomationId.
+WT001	high	Windows/MetadataDownloadWindow.xaml:70	CheckBox "{DynamicResource LOCMetaSkipNonEmpty}" has no AutomationId.
+WT001	high	Windows/MetadataDownloadWindow.xaml:79	TabItem "{DynamicResource LOCMetaDescriptionFiel…" has no AutomationId.
+WT001	high	Windows/MetadataDownloadWindow.xaml:83	CheckBox "{DynamicResource LOCSaveAsDefault}" has no AutomationId.
+WT002	low	Windows/MetadataDownloadWindow.xaml:98	Button "{DynamicResource LOCCancelLabel}" gets its ID "ButtonClose" from x:Name.
+WT002	low	Windows/MetadataDownloadWindow.xaml:100	Button "{DynamicResource LOCDownloadMetaButton}" gets its ID "ButtonDownload" from x:Name.
+WT002	low	Windows/MetadataDownloadWindow.xaml:103	Button "{DynamicResource LOCFinishLabel}" gets its ID "ButtonFinish" from x:Name.
+WT002	low	Windows/MetadataDownloadWindow.xaml:106	Button "{DynamicResource LOCNextLabel}" gets its ID "ButtonNext" from x:Name.
+WT002	low	Windows/MetadataDownloadWindow.xaml:110	Button "{DynamicResource LOCBackLabel}" gets its ID "ButtonBack" from x:Name.
+WT001	high	Windows/MultiItemSelectionWindow.xaml:27	Button "{DynamicResource LOCSelect}" has no AutomationId.
+WT001	high	Windows/MultiItemSelectionWindow.xaml:29	Button "{DynamicResource LOCCancelLabel}" has no AutomationId.
+WT005	medium	Windows/MultiItemSelectionWindow.xaml:33	Rows in ItemsControl have no unique ID.
+WT001	medium	Windows/MultiItemSelectionWindow.xaml:36	CheckBox "{Binding Name}" (inside a list row template) has no AutomationId.
+WT002	low	Windows/PluginSettingsWindow.xaml:27	Button "{DynamicResource LOCCancelLabel}" gets its ID "ButtonCancel" from x:Name.
+WT002	low	Windows/PluginSettingsWindow.xaml:30	Button "{DynamicResource LOCSaveLabel}" gets its ID "ButtonOK" from x:Name.
+WT001	high	Windows/ProgressWindow.xaml:33	Button "{DynamicResource LOCCancelLabel}" has no AutomationId.
+WT001	high	Windows/RandomGameSelectWindow.xaml:30	CheckBox "{DynamicResource LOCRandomGameLimistToF…" has no AutomationId.
+WT001	high	Windows/RandomGameSelectWindow.xaml:34	Button "{DynamicResource LOCGameSearchItemActio…" has no AutomationId.
+WT001	high	Windows/RandomGameSelectWindow.xaml:36	Button "{DynamicResource LOCRandomGamePickAnoth…" has no AutomationId.
+WT001	high	Windows/RandomGameSelectWindow.xaml:40	Button "{DynamicResource LOCPlayGame}" has no AutomationId.
+WT001	high	Windows/SearchWindow.xaml:56	Button "{DynamicResource LOCBackLabel}" has no AutomationId.
+WT001	high	Windows/SearchWindow.xaml:70	Button "{DynamicResource LOCSettingsLabel}" has no AutomationId.
+WT001	high	Windows/SearchWindow.xaml:75	MenuItem "{DynamicResource LOCSearchFilterUninsta…" has no AutomationId.
+WT001	high	Windows/SearchWindow.xaml:77	MenuItem "{DynamicResource LOCSearchFilterHidden}" has no AutomationId.
+WT001	high	Windows/SearchWindow.xaml:79	MenuItem "{DynamicResource LOCMenuPlayniteSetting…" has no AutomationId.
+WT001	high	Windows/SearchWindow.xaml:83	Button "{DynamicResource LOCMenuHelpTitle}" has no AutomationId.
+WT001	high	Windows/SearchWindow.xaml:87	ToggleButton "{DynamicResource LOCGameMenu}" has no AutomationId.
+WT001	high	Windows/SearchWindow.xaml:93	ToggleButton "{Binding SelectedSearchItem.SecondaryAc…" has no AutomationId.
+WT001	high	Windows/SearchWindow.xaml:98	ToggleButton "{Binding SelectedSearchItem.PrimaryActi…" has no AutomationId.
+WT002	low	Windows/SearchWindow.xaml:104	TextBox [TextSearchBox] gets its ID "TextSearchBox" from x:Name.
+WT008	low	Windows/SearchWindow.xaml:104	TextBox [TextSearchBox] has no readable name.
+WT001	high	Windows/SearchWindow.xaml:132	ListBox has no AutomationId.
+WT005	medium	Windows/SearchWindow.xaml:132	Rows in ListBox have no unique ID.
+WT008	low	Windows/SearchWindow.xaml:132	ListBox has no readable name.
+WT002	low	Windows/SettingsWindow.xaml:37	Button "{DynamicResource LOCCancelLabel}" gets its ID "ButtonCancel" from x:Name.
+WT002	low	Windows/SettingsWindow.xaml:40	Button "{DynamicResource LOCSaveLabel}" gets its ID "ButtonOK" from x:Name.
+WT001	high	Windows/SettingsWindow.xaml:48	TreeView has no AutomationId.
+WT008	low	Windows/SettingsWindow.xaml:48	TreeView has no readable name.
+WT002	low	Windows/ToolsConfigWindow.xaml:26	Button "{DynamicResource LOCCancelLabel}" gets its ID "ButtonCancel" from x:Name.
+WT002	low	Windows/ToolsConfigWindow.xaml:29	Button "{DynamicResource LOCSaveLabel}" gets its ID "ButtonOK" from x:Name.
+WT001	high	Windows/ToolsConfigWindow.xaml:46	Button "{DynamicResource LOCAddTitle}" has no AutomationId.
+WT001	high	Windows/ToolsConfigWindow.xaml:49	Button "{DynamicResource LOCAddFromExe}" has no AutomationId.
+WT001	high	Windows/ToolsConfigWindow.xaml:52	Button "{DynamicResource LOCRemoveTitle}" has no AutomationId.
+WT002	low	Windows/ToolsConfigWindow.xaml:57	ListBox [ListTools] gets its ID "ListTools" from x:Name.
+WT005	medium	Windows/ToolsConfigWindow.xaml:57	Rows in ListBox [ListTools] have no unique ID.
+WT008	low	Windows/ToolsConfigWindow.xaml:57	ListBox [ListTools] has no readable name.
+WT001	high	Windows/ToolsConfigWindow.xaml:66	ComboBox has no AutomationId.
+WT005	medium	Windows/ToolsConfigWindow.xaml:66	Rows in ComboBox have no unique ID.
+WT008	low	Windows/ToolsConfigWindow.xaml:66	ComboBox has no readable name.
+WT001	high	Windows/ToolsConfigWindow.xaml:71	TextBox has no AutomationId.
+WT008	low	Windows/ToolsConfigWindow.xaml:71	TextBox has no readable name.
+WT001	high	Windows/ToolsConfigWindow.xaml:76	pctrls:PathSelectionBox has no AutomationId.
+WT008	low	Windows/ToolsConfigWindow.xaml:76	pctrls:PathSelectionBox has no readable name.
+WT001	high	Windows/ToolsConfigWindow.xaml:82	TextBox has no AutomationId.
+WT008	low	Windows/ToolsConfigWindow.xaml:82	TextBox has no readable name.
+WT001	high	Windows/ToolsConfigWindow.xaml:88	pctrls:PathSelectionBox has no AutomationId.
+WT008	low	Windows/ToolsConfigWindow.xaml:88	pctrls:PathSelectionBox has no readable name.
+WT001	high	Windows/ToolsConfigWindow.xaml:92	CheckBox "{DynamicResource LOCToolsShowOnSidebar}" has no AutomationId.
+WT001	high	Windows/ToolsConfigWindow.xaml:97	Button "{DynamicResource LOCSelectIconTitle}" has no AutomationId.
+WT001	high	Windows/ToolsConfigWindow.xaml:101	Button "{DynamicResource LOCRemoveLabel}" has no AutomationId.
+WT001	high	Windows/ToolsConfigWindow.xaml:112	TextBox has no AutomationId.
+WT008	low	Windows/ToolsConfigWindow.xaml:112	TextBox has no readable name.
+WT005	medium	Windows/UpdateWindow.xaml:26	Rows in ItemsControl [ItemsNotes] have no unique ID.
+WT002	low	Windows/UpdateWindow.xaml:50	Button "{DynamicResource LOCCloseLabel}" gets its ID "ButtonClose" from x:Name.
+WT002	low	Windows/UpdateWindow.xaml:54	Button "{DynamicResource LOCUpdaterInstallUpdat…" gets its ID "ButtonInstall" from x:Name.

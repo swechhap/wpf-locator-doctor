@@ -1,0 +1,107 @@
+{
+  "app": "MahApps.Metro demo",
+  "commit": "9466e8acd96591e1f552841bc5357f376552bb57",
+  "scanPath": "src/MahApps.Metro.Samples/MahApps.Metro.Demo",
+  "labels": [
+    {
+      "finding": "WT001\thigh\tExampleViews/ButtonsExample.xaml:202\tButton \"Content\" has no AutomationId.",
+      "label": "real",
+      "why": "Demo button with no ID; several buttons on the page share the text \"Content\", so text is no help either."
+    },
+    {
+      "finding": "WT001\thigh\tExampleViews/ButtonsExample.xaml:372\tCheckBox has no AutomationId.",
+      "label": "real",
+      "why": "Check box with no ID and no text; only findable by position."
+    },
+    {
+      "finding": "WT001\thigh\tExampleViews/MultiSelectionComboBoxExample.xaml:132\tTextBox has no AutomationId.",
+      "label": "real",
+      "why": "Text box with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tExampleViews/MultiSelectionComboBoxExample.xaml:140\tComboBox has no AutomationId.",
+      "label": "real",
+      "why": "Combo box with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tExampleViews/NumericUpDownExamples.xaml:313\tComboBox has no AutomationId.",
+      "label": "real",
+      "why": "Combo box with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tExampleViews/OtherExamples.xaml:170\tMenuItem \"Properties\" has no AutomationId.",
+      "label": "real",
+      "why": "Context menu item with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tExampleViews/TabControlExamples.xaml:485\tmah:MetroTabItem \"headers\" has no AutomationId.",
+      "label": "real",
+      "why": "MetroTabItem derives from TabItem and has no ID."
+    },
+    {
+      "finding": "WT001\thigh\tExampleViews/TextExamples.xaml:188\tTextBox has no AutomationId.",
+      "label": "real",
+      "why": "Text box with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tExampleWindows/VSDemo.xaml:267\tTabItem \"Communication\" has no AutomationId.",
+      "label": "real",
+      "why": "Tab with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tMainWindow.xaml:299\tMenuItem \"ShowLastSeparator in (RightWindowComman…\" has no AutomationId.",
+      "label": "real",
+      "why": "Menu item with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tMainWindow.xaml:412\tTabItem \"MultiSelectionComboBox\" has no AutomationId.",
+      "label": "real",
+      "why": "Tab with no ID; tests must find it by its header text."
+    },
+    {
+      "finding": "WT005\tmedium\tExampleViews/TransitionExamples.xaml:308\tRows in ItemsControl have no unique ID.",
+      "label": "real",
+      "why": "Generated rows (one per transition type) carry no ID."
+    },
+    {
+      "finding": "WT008\tlow\tExampleViews/ButtonsExample.xaml:305\tButton has no readable name.",
+      "label": "real",
+      "why": "Icon-only round button; no name in the XAML or the Circle style."
+    },
+    {
+      "finding": "WT008\tlow\tExampleViews/ColorPickerExample.xaml:92\tTextBox has no readable name.",
+      "label": "real",
+      "why": "The MetroHeader text is shown above the box but isn't its automation name."
+    },
+    {
+      "finding": "WT008\tlow\tExampleViews/SelectionExamples.xaml:103\tListView has no readable name.",
+      "label": "real",
+      "why": "List view with no label or AutomationProperties.Name."
+    },
+    {
+      "finding": "WT008\tlow\tExampleViews/SelectionExamples.xaml:192\tTreeView has no readable name.",
+      "label": "real",
+      "why": "Tree view with no label or AutomationProperties.Name."
+    },
+    {
+      "finding": "WT008\tlow\tExampleViews/Sliders.xaml:292\tSlider has no readable name.",
+      "label": "real",
+      "why": "The card header is shown above the slider but isn't its automation name."
+    },
+    {
+      "finding": "WT008\tlow\tExampleViews/Sliders.xaml:507\tmah:RangeSlider has no readable name.",
+      "label": "real",
+      "why": "Range slider with no name."
+    },
+    {
+      "finding": "WT008\tlow\tExampleViews/TextExamples.xaml:404\tTextBox has no readable name.",
+      "label": "real",
+      "why": "A text box's text isn't its name; no label points at it."
+    },
+    {
+      "finding": "WT008\tlow\tExampleWindows/VSDemo.xaml:284\tTextBox has no readable name.",
+      "label": "real",
+      "why": "The caption is a TextBlock, not a Label with Target."
+    }
+  ]
+}

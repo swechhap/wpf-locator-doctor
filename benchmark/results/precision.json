@@ -1,0 +1,96 @@
+{
+  "overall": {
+    "real": 207,
+    "falseAlarm": 13,
+    "precision": 0.941
+  },
+  "byApp": {
+    "ilspy": {
+      "real": 18,
+      "falseAlarm": 2,
+      "precision": 0.9
+    },
+    "dnspyex": {
+      "real": 19,
+      "falseAlarm": 1,
+      "precision": 0.95
+    },
+    "screentogif": {
+      "real": 20,
+      "falseAlarm": 0,
+      "precision": 1.0
+    },
+    "snoop": {
+      "real": 19,
+      "falseAlarm": 1,
+      "precision": 0.95
+    },
+    "mahapps": {
+      "real": 20,
+      "falseAlarm": 0,
+      "precision": 1.0
+    },
+    "materialdesign": {
+      "real": 19,
+      "falseAlarm": 1,
+      "precision": 0.95
+    },
+    "handycontrol": {
+      "real": 20,
+      "falseAlarm": 0,
+      "precision": 1.0
+    },
+    "wpfui": {
+      "real": 18,
+      "falseAlarm": 2,
+      "precision": 0.9
+    },
+    "wpfsamples": {
+      "real": 19,
+      "falseAlarm": 1,
+      "precision": 0.95
+    },
+    "npe": {
+      "real": 15,
+      "falseAlarm": 5,
+      "precision": 0.75
+    },
+    "playnite": {
+      "real": 20,
+      "falseAlarm": 0,
+      "precision": 1.0
+    }
+  },
+  "byRule": {
+    "WT001": {
+      "real": 97,
+      "falseAlarm": 1,
+      "precision": 0.99
+    },
+    "WT002": {
+      "real": 36,
+      "falseAlarm": 0,
+      "precision": 1.0
+    },
+    "WT005": {
+      "real": 13,
+      "falseAlarm": 1,
+      "precision": 0.929
+    },
+    "WT006": {
+      "real": 0,
+      "falseAlarm": 3,
+      "precision": 0.0
+    },
+    "WT007": {
+      "real": 2,
+      "falseAlarm": 0,
+      "precision": 1.0
+    },
+    "WT008": {
+      "real": 59,
+      "falseAlarm": 8,
+      "precision": 0.881
+    }
+  }
+}

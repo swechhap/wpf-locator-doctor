@@ -1,0 +1,107 @@
+{
+  "app": "dnSpyEx",
+  "commit": "bb09d2c54718e0f73d01d2e1085ddb8772aee555",
+  "scanPath": ".",
+  "labels": [
+    {
+      "finding": "WT001\thigh\tExtensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:107\tCheckBox has no AutomationId.",
+      "label": "real",
+      "why": "\"Array is null\" check box with no ID and no text; tests can only find it by position."
+    },
+    {
+      "finding": "WT001\thigh\tExtensions/dnSpy.AsmEditor/DnlibDialogs/DeclSecurityDlg.xaml:48\tButton \"{x:Static p:dnSpy_AsmEditor_Resources.B…\" has no AutomationId.",
+      "label": "real",
+      "why": "Dialog button with no ID; its text is a translated resource."
+    },
+    {
+      "finding": "WT001\thigh\tExtensions/dnSpy.AsmEditor/DnlibDialogs/SecurityAttributeDlg.xaml:48\tButton \"{x:Static p:dnSpy_AsmEditor_Resources.B…\" has no AutomationId.",
+      "label": "real",
+      "why": "Dialog button with no ID; its text is a translated resource."
+    },
+    {
+      "finding": "WT001\thigh\tExtensions/dnSpy.AsmEditor/Method/MethodOptionsDlg.xaml:147\tTabItem \"{x:Static p:dnSpy_AsmEditor_Resources.M…\" has no AutomationId.",
+      "label": "real",
+      "why": "Tab with no ID; its header is a translated resource."
+    },
+    {
+      "finding": "WT001\thigh\tExtensions/dnSpy.AsmEditor/MethodBody/MethodBodyControl.xaml:94\tCheckBox \"{x:Static p:dnSpy_AsmEditor_Resources.M…\" has no AutomationId.",
+      "label": "real",
+      "why": "Check box with no ID; its text is a translated resource."
+    },
+    {
+      "finding": "WT001\thigh\tExtensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:126\tTabItem \"{x:Static p:dnSpy_AsmEditor_Resources.M…\" has no AutomationId.",
+      "label": "real",
+      "why": "Tab with no ID; its header is a translated resource."
+    },
+    {
+      "finding": "WT001\thigh\tExtensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:174\tCheckBox \"ILLibrary\" has no AutomationId.",
+      "label": "real",
+      "why": "Check box with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tExtensions/dnSpy.AsmEditor/Module/ModuleOptionsDlg.xaml:230\tCheckBox \"System\" has no AutomationId.",
+      "label": "real",
+      "why": "Check box with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tExtensions/dnSpy.AsmEditor/SaveModule/SaveModuleOptionsDlg.xaml:396\tCheckBox \"Reserved5\" has no AutomationId.",
+      "label": "real",
+      "why": "Check box with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tExtensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Exceptions/ExceptionControl.xaml:56\tCheckBox has no AutomationId.",
+      "label": "real",
+      "why": "Toolbar toggle with only an icon and a tooltip: no ID and no name."
+    },
+    {
+      "finding": "WT001\thigh\tdnSpy/dnSpy/Hex/Commands/LocalSettingsDlg.xaml:86\tButton \"{x:Static p:dnSpy_Resources.Button_Canc…\" has no AutomationId.",
+      "label": "real",
+      "why": "Dialog button with no ID; its text is a translated resource."
+    },
+    {
+      "finding": "WT001\thigh\tdnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:321\tComboBox has no AutomationId.",
+      "label": "real",
+      "why": "Combo box with no ID and no label."
+    },
+    {
+      "finding": "WT001\thigh\tdnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:218\tButton has no AutomationId.",
+      "label": "real",
+      "why": "Icon-only toolbar button with no ID."
+    },
+    {
+      "finding": "WT002\tlow\tExtensions/dnSpy.AsmEditor/DnlibDialogs/ConstantTypeControl.xaml:178\tTextBox \"{x:Static p:dnSpy_AsmEditor_Resources.V…\" gets its ID \"uint16ArrayTextBox\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from Name=\"uint16ArrayTextBox\"."
+    },
+    {
+      "finding": "WT002\tlow\tExtensions/dnSpy.Debugger/dnSpy.Debugger/ToolWindows/Modules/ModulesControl.xaml:66\tListView [listView] gets its ID \"listView\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from Name=\"listView\"."
+    },
+    {
+      "finding": "WT008\tlow\tExtensions/dnSpy.AsmEditor/DnlibDialogs/MarshalTypeControl.xaml:43\tComboBox has no readable name.",
+      "label": "real",
+      "why": "Combo box next to a check box, with no Label Target or AutomationProperties.Name."
+    },
+    {
+      "finding": "WT008\tlow\tExtensions/dnSpy.AsmEditor/Resources/ResourceControl.xaml:47\tTextBox has no readable name.",
+      "label": "real",
+      "why": "Read-only text box with no Label Target or AutomationProperties.Name."
+    },
+    {
+      "finding": "WT008\tlow\tExtensions/dnSpy.AsmEditor/Resources/ResourceElementControl.xaml:52\tButton has no readable name.",
+      "label": "false alarm",
+      "why": "The EllipsisButton style sets Content=\"...\", so the button has a (weak) name at runtime. The source scan doesn't follow styles."
+    },
+    {
+      "finding": "WT008\tlow\tExtensions/dnSpy.AsmEditor/SaveModule/SaveMultiModuleDlg.xaml:71\tTextBox has no readable name.",
+      "label": "real",
+      "why": "The Label above it has no Target, so the text box gets no name."
+    },
+    {
+      "finding": "WT008\tlow\tdnSpy/dnSpy/Hex/Commands/SelectDlg.xaml:75\tComboBox has no readable name.",
+      "label": "real",
+      "why": "Combo box with no Label Target or AutomationProperties.Name."
+    }
+  ]
+}

@@ -1,0 +1,97 @@
+{
+  "id": "materialdesign",
+  "name": "MaterialDesignInXamlToolkit demo",
+  "commit": "5b626957f891f02dcb179cd0be754d8e782767aa",
+  "groundTruthElements": 73,
+  "groundTruthWindows": 1,
+  "liveScan": {
+    "elements": 52,
+    "score": 59,
+    "coveragePercent": 62.5,
+    "problemsByRule": {
+      "WT001": 6,
+      "WT005": 2,
+      "WT002": 8,
+      "WT008": 13
+    }
+  },
+  "liveVsTruth": {
+    "groundTruthControls": 26,
+    "skippedByDesign": {
+      "window system menu": 1,
+      "inside a title bar or scroll bar": 7
+    },
+    "comparedControls": 18,
+    "liveScanControls": 18,
+    "paired": 18,
+    "pairedOutcome": {
+      "both without an ID": 6,
+      "same ID": 12
+    },
+    "missedByLiveScan": 0,
+    "onlyInLiveScan": 0,
+    "idAgreement": 1.0,
+    "groundTruthIdCoverage": 0.6667,
+    "examples": {}
+  },
+  "sourceVsTruth": {
+    "groundTruthControls": 18,
+    "sourceScreensOnScreen": [
+      "DocumentationLinks",
+      "Home",
+      "MainWindow"
+    ],
+    "matchedToSource": 8,
+    "outcome": {
+      "same ID": 8,
+      "can't be paired (no ID and no name)": 6,
+      "ID not found in the XAML": 4
+    },
+    "pairableControls": 12,
+    "sourceSeesControl": 0.6667,
+    "idAgreement": 1.0,
+    "groundTruthIdsFoundInXaml": 0.6667,
+    "falseAlarms": 0,
+    "examples": {
+      "can't be paired (no ID and no name)": [
+        "Button",
+        "Button",
+        "Button",
+        "List",
+        "Button",
+        "Button"
+      ],
+      "ID not found in the XAML": [
+        "Button #PART_Toggle",
+        "Button #Root",
+        "Button #Root",
+        "Button #PART_Toggle"
+      ]
+    }
+  },
+  "locators": {
+    "elementsChecked": 46,
+    "elementsWithoutLocator": 0,
+    "locators": 88,
+    "outcome": {
+      "finds exactly the element": 88
+    },
+    "unique": 1.0,
+    "bestLocatorUnique": 1.0,
+    "byKind": {
+      "AutomationId": {
+        "finds exactly the element": 17
+      },
+      "name + type": {
+        "finds exactly the element": 15
+      },
+      "position": {
+        "finds exactly the element": 46
+      },
+      "inside a parent's ID": {
+        "finds exactly the element": 10
+      }
+    },
+    "examples": {}
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "app": "ILSpy",
+  "commit": "1377eb6e7351b21112858c8c1df39848f40181ec",
+  "scanPath": "ILSpy",
+  "labels": [
+    {
+      "finding": "WT001\thigh\tControls/MainMenu.xaml:25\tMenuItem \"{x:Static properties:Resources.Theme}\" has no AutomationId.",
+      "label": "real",
+      "why": "Menu item with no ID set anywhere; tests must find it by its translated header."
+    },
+    {
+      "finding": "WT001\thigh\tControls/MainToolBar.xaml:51\tCheckBox has no AutomationId.",
+      "label": "real",
+      "why": "Toolbar check box with only an image and a tooltip: no ID and no name, so tests can only find it by position."
+    },
+    {
+      "finding": "WT001\thigh\tOptions/DisplaySettingsPanel.xaml:67\tCheckBox \"{x:Static properties:Resources.DecodeCu…\" has no AutomationId.",
+      "label": "real",
+      "why": "Options check box with no ID; its text is a translated resource."
+    },
+    {
+      "finding": "WT001\thigh\tOptions/DisplaySettingsPanel.xaml:81\tCheckBox \"{x:Static properties:Resources.StyleThe…\" has no AutomationId.",
+      "label": "real",
+      "why": "Options check box with no ID; its text is a translated resource."
+    },
+    {
+      "finding": "WT001\thigh\tOptions/OptionsDialog.xaml:17\tButton \"{x:Static properties:Resources.ResetToD…\" has no AutomationId.",
+      "label": "real",
+      "why": "Dialog button with no ID; its text is a translated resource."
+    },
+    {
+      "finding": "WT001\tmedium\tMetadata/FlagsTooltip.xaml:19\tCheckBox \"{Binding Name}\" (inside a list row template) has no AutomationId.",
+      "label": "false alarm",
+      "why": "Display-only check box inside a tooltip (IsChecked is one-way); a tester has no reason to reach it."
+    },
+    {
+      "finding": "WT001\tmedium\tOptions/DecompilerSettingsPanel.xaml:19\tCheckBox \"{Binding Category}\" (inside a list row template) has no AutomationId.",
+      "label": "real",
+      "why": "Per-category \"select all\" check box repeated in every group, with no ID on it or on the group."
+    },
+    {
+      "finding": "WT002\tlow\tControls/MainToolBar.xaml:69\tComboBox [languageComboBox] gets its ID \"languageComboBox\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from Name=\"languageComboBox\"; renaming it would break tests."
+    },
+    {
+      "finding": "WT002\tlow\tViews/CreateListDialog.xaml:18\tTextBox [ListNameBox] gets its ID \"ListNameBox\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from Name=\"ListNameBox\"."
+    },
+    {
+      "finding": "WT002\tlow\tViews/OpenFromGacDialog.xaml:29\tTextBox \"{x:Static properties:Resources._Search}\" gets its ID \"filterTextBox\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from Name=\"filterTextBox\"."
+    },
+    {
+      "finding": "WT005\tmedium\tControls/MainToolBar.xaml:80\tRows in ComboBox [languageVersionComboBox] have no unique ID.",
+      "label": "real",
+      "why": "Combo box items come from data with no ID per item; tests must pick versions by text."
+    },
+    {
+      "finding": "WT005\tmedium\tOptions/DecompilerSettingsPanel.xaml:13\tRows in ItemsControl have no unique ID.",
+      "label": "real",
+      "why": "Plain ItemsControl of setting groups: the generated rows carry no ID."
+    },
+    {
+      "finding": "WT005\tmedium\tOptions/DecompilerSettingsPanel.xaml:24\tRows in ItemsControl have no unique ID.",
+      "label": "real",
+      "why": "Rows of setting check boxes carry no ID; tests must use the description text."
+    },
+    {
+      "finding": "WT005\tmedium\tOptions/DisplaySettingsPanel.xaml:14\tRows in ComboBox have no unique ID.",
+      "label": "real",
+      "why": "Theme combo box items come from data with no ID."
+    },
+    {
+      "finding": "WT005\tmedium\tOptions/DisplaySettingsPanel.xaml:29\tRows in ComboBox have no unique ID.",
+      "label": "real",
+      "why": "Font combo box items come from data with no ID."
+    },
+    {
+      "finding": "WT006\tmedium\tControls/TreeView/SharpTreeNodeView.cs:30\tSharpTreeNodeView derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).",
+      "label": "false alarm",
+      "why": "SharpTreeNodeView is only the inside of SharpTreeViewItem, which has its own automation peer, so tests still reach every node. The message also says it isn't used in XAML, but SharpTreeView.xaml uses it in a template."
+    },
+    {
+      "finding": "WT008\tlow\tControls/MainToolBar.xaml:69\tComboBox [languageComboBox] has no readable name.",
+      "label": "real",
+      "why": "Combo box has only a tooltip, which UI Automation exposes as help text, not as a name."
+    },
+    {
+      "finding": "WT008\tlow\tMetadata/FlagsTooltip.xaml:16\tListBox has no readable name.",
+      "label": "real",
+      "why": "List box inside a tooltip with no label or name."
+    },
+    {
+      "finding": "WT008\tlow\tOptions/DisplaySettingsPanel.xaml:29\tComboBox has no readable name.",
+      "label": "real",
+      "why": "The Label before it has no Target, so the combo box gets no name."
+    },
+    {
+      "finding": "WT008\tlow\tViews/DebugSteps.xaml:17\tTreeView [tree] has no readable name.",
+      "label": "real",
+      "why": "Tree view with no label or AutomationProperties.Name."
+    }
+  ]
+}

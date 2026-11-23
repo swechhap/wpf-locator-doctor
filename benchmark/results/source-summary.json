@@ -8,8 +8,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.61,
-        0.52
+        0.8,
+        0.69
       ],
       "deterministic": true,
       "score": 54.7,
@@ -43,8 +43,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        4.23,
-        3.78
+        3.86,
+        3.8
       ],
       "deterministic": true,
       "score": 57.1,
@@ -78,8 +78,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.84,
-        0.76
+        1.02,
+        1.02
       ],
       "deterministic": true,
       "score": 69,
@@ -114,8 +114,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.43,
-        0.38
+        0.54,
+        0.53
       ],
       "deterministic": true,
       "score": 65.2,
@@ -150,8 +150,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.31,
-        0.29
+        0.41,
+        0.41
       ],
       "deterministic": true,
       "score": 47.7,
@@ -185,8 +185,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.31,
-        0.29
+        0.39,
+        0.4
       ],
       "deterministic": true,
       "score": 49.8,
@@ -220,8 +220,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.35,
-        0.31
+        0.43,
+        0.43
       ],
       "deterministic": true,
       "score": 41.3,
@@ -254,8 +254,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.33,
-        0.29
+        0.4,
+        0.4
       ],
       "deterministic": true,
       "score": 48.2,
@@ -289,8 +289,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        1.61,
-        1.24
+        1.53,
+        1.51
       ],
       "deterministic": true,
       "score": 68.7,
@@ -326,8 +326,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.31,
-        0.29
+        0.41,
+        0.41
       ],
       "deterministic": true,
       "score": 60.1,
@@ -360,8 +360,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.47,
-        0.42
+        0.58,
+        0.57
       ],
       "deterministic": true,
       "score": 52.2,

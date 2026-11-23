@@ -1,0 +1,100 @@
+{
+  "id": "wpfsamples",
+  "name": "GlobalizationHomepage sample (uses x:Uid)",
+  "commit": "811d01e95c8c929e68539d698d0a0609e94fd185",
+  "groundTruthElements": 100,
+  "groundTruthWindows": 1,
+  "liveScan": {
+    "elements": 66,
+    "score": 75.2,
+    "coveragePercent": 73.8,
+    "problemsByRule": {
+      "WT001": 11,
+      "WT003": 29,
+      "WT008": 2
+    }
+  },
+  "liveVsTruth": {
+    "groundTruthControls": 46,
+    "skippedByDesign": {
+      "window system menu": 1,
+      "inside a title bar or scroll bar": 3
+    },
+    "comparedControls": 42,
+    "liveScanControls": 42,
+    "paired": 42,
+    "pairedOutcome": {
+      "same ID": 31,
+      "both without an ID": 11
+    },
+    "missedByLiveScan": 0,
+    "onlyInLiveScan": 0,
+    "idAgreement": 1.0,
+    "groundTruthIdCoverage": 0.7381,
+    "examples": {}
+  },
+  "sourceVsTruth": {
+    "groundTruthControls": 42,
+    "sourceScreensOnScreen": [
+      "HomePage"
+    ],
+    "matchedToSource": 39,
+    "outcome": {
+      "can't be paired (no ID and no name)": 1,
+      "ID not found in the XAML": 2,
+      "same ID": 29,
+      "source scan expects an ID that UI Automation doesn't show": 10
+    },
+    "pairableControls": 41,
+    "sourceSeesControl": 0.9512,
+    "idAgreement": 0.7436,
+    "groundTruthIdsFoundInXaml": 0.9355,
+    "falseAlarms": 0,
+    "examples": {
+      "can't be paired (no ID and no name)": [
+        "MenuItem"
+      ],
+      "ID not found in the XAML": [
+        "Button \"Back\" #BrowseBack",
+        "Button \"Forward\" #BrowseForward"
+      ],
+      "source scan expects an ID that UI Automation doesn't show": [
+        "Hyperlink \"Windows Vista\" vs source Hyperlink id='Hyperlink_1' at HomePage.xaml:282",
+        "Hyperlink \"Windows Mobile\" vs source Hyperlink id='Hyperlink_2' at HomePage.xaml:285",
+        "Hyperlink \"Clip Art\" vs source Hyperlink id='Hyperlink_3' at HomePage.xaml:288",
+        "Hyperlink \"CRM\" vs source Hyperlink id='Hyperlink_4' at HomePage.xaml:300",
+        "Hyperlink \"Analytics & Reporting\" vs source Hyperlink id='Hyperlink_5' at HomePage.xaml:303",
+        "Hyperlink \"Financial management\" vs source Hyperlink id='Hyperlink_6' at HomePage.xaml:306",
+        "Hyperlink \"What You Should Know About Zotob\" vs source Hyperlink id='Hyperlink_7' at HomePage.xaml:318",
+        "Hyperlink \"Protect Your PC\" vs source Hyperlink id='Hyperlink_8' at HomePage.xaml:321",
+        "Hyperlink \"Windows XP Service Pack 2\" vs source Hyperlink id='Hyperlink_9' at HomePage.xaml:324",
+        "Hyperlink \"Security Home\" vs source Hyperlink id='Hyperlink_10' at HomePage.xaml:327"
+      ]
+    }
+  },
+  "locators": {
+    "elementsChecked": 70,
+    "elementsWithoutLocator": 0,
+    "locators": 198,
+    "outcome": {
+      "finds exactly the element": 198
+    },
+    "unique": 1.0,
+    "bestLocatorUnique": 1.0,
+    "byKind": {
+      "AutomationId": {
+        "finds exactly the element": 58
+      },
+      "name + type": {
+        "finds exactly the element": 59
+      },
+      "position": {
+        "finds exactly the element": 70
+      },
+      "inside a parent's ID": {
+        "finds exactly the element": 11
+      }
+    },
+    "examples": {}
+  }
+}

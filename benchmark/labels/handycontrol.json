@@ -1,0 +1,107 @@
+{
+  "app": "HandyControl demo",
+  "commit": "e9ad3d701b90e724399a413569fbd7f35a141053",
+  "scanPath": "src/Shared/HandyControlDemo_Shared",
+  "labels": [
+    {
+      "finding": "WT001\thigh\tUserControl/Controls/ProgressButtonDemo.xaml:15\thc:ProgressButton \"{Binding IsChecked,RelativeSource={Rela…\" has no AutomationId.",
+      "label": "real",
+      "why": "ProgressButton (a ToggleButton) with no ID; four of them sit side by side with the same bound text."
+    },
+    {
+      "finding": "WT001\thigh\tUserControl/Controls/SplitButtonDemo.xaml:59\tMenuItem \"{ex:Lang Key={x:Static langs:LangKeys.T…\" has no AutomationId.",
+      "label": "real",
+      "why": "Menu item with no ID; three items share the same header."
+    },
+    {
+      "finding": "WT001\thigh\tUserControl/Controls/TabControlDemo.xaml:62\thc:TabItem \"TabItem6\" has no AutomationId.",
+      "label": "real",
+      "why": "hc:TabItem derives from TabItem and has no ID."
+    },
+    {
+      "finding": "WT001\thigh\tUserControl/Controls/TagDemo.xaml:42\tTextBox has no AutomationId.",
+      "label": "real",
+      "why": "Text box with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tUserControl/Styles/RadioButtonDemo.xaml:100\tRadioButton has no AutomationId.",
+      "label": "real",
+      "why": "Icon-only radio button with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tUserControl/Styles/RepeatButtonDemo.xaml:118\tRepeatButton has no AutomationId.",
+      "label": "real",
+      "why": "Icon-only repeat button with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tUserControl/Styles/RepeatButtonDemo.xaml:134\tRepeatButton \"{ex:Lang Key={x:Static langs:LangKeys.D…\" has no AutomationId.",
+      "label": "real",
+      "why": "Repeat button with no ID; an enabled and a disabled copy share the same text."
+    },
+    {
+      "finding": "WT001\thigh\tUserControl/Styles/RepeatButtonDemo.xaml:146\tRepeatButton \"{ex:Lang Key={x:Static langs:LangKeys.I…\" has no AutomationId.",
+      "label": "real",
+      "why": "Repeat button with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tUserControl/Styles/SliderDemo.xaml:13\tSlider has no AutomationId.",
+      "label": "real",
+      "why": "Slider with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tUserControl/Styles/ToggleButtonDemo.xaml:195\tToggleButton has no AutomationId.",
+      "label": "real",
+      "why": "Icon-only toggle button with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tUserControl/Styles/ToggleButtonDemo.xaml:35\tToggleButton \"{ex:Lang Key={x:Static langs:LangKeys.D…\" has no AutomationId.",
+      "label": "real",
+      "why": "Toggle button with no ID; an enabled and a disabled copy share the same text."
+    },
+    {
+      "finding": "WT002\tlow\tUserControl/Main/MainWindowContent.xaml:22\tButton [ButtonShiftIn] gets its ID \"ButtonShiftIn\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from x:Name."
+    },
+    {
+      "finding": "WT008\tlow\tUserControl/Controls/CirclePanelDemo.xaml:11\tButton has no readable name.",
+      "label": "real",
+      "why": "Decorative button with a Path template and no content or name."
+    },
+    {
+      "finding": "WT008\tlow\tUserControl/Controls/ComboBoxDemo.xaml:38\thc:ComboBox has no readable name.",
+      "label": "real",
+      "why": "InfoElement.Title and Placeholder are drawn by the template; nothing sets the automation name (HandyControl sets none)."
+    },
+    {
+      "finding": "WT008\tlow\tUserControl/Controls/TextBoxDemo.xaml:82\thc:TextBox has no readable name.",
+      "label": "real",
+      "why": "InfoElement.Title is drawn by the template, not exposed as the name."
+    },
+    {
+      "finding": "WT008\tlow\tUserControl/Styles/RepeatButtonDemo.xaml:238\tRepeatButton has no readable name.",
+      "label": "real",
+      "why": "Icon-only repeat button with no name."
+    },
+    {
+      "finding": "WT008\tlow\tUserControl/Styles/SliderDemo.xaml:14\tSlider has no readable name.",
+      "label": "real",
+      "why": "Slider with no name."
+    },
+    {
+      "finding": "WT008\tlow\tUserControl/Styles/ToggleButtonDemo.xaml:205\tToggleButton has no readable name.",
+      "label": "real",
+      "why": "Icon-only toggle button with no name."
+    },
+    {
+      "finding": "WT008\tlow\tUserControl/Styles/ToggleButtonDemo.xaml:74\tToggleButton has no readable name.",
+      "label": "real",
+      "why": "Icon-only toggle button with no name."
+    },
+    {
+      "finding": "WT008\tlow\tUserControl/Styles/ToolBarDemo.xaml:52\tCheckBox has no readable name.",
+      "label": "real",
+      "why": "Check box with no content or name."
+    }
+  ]
+}

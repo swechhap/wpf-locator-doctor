@@ -165,10 +165,19 @@ def compare_source(truth: list[dict], source: list[dict]) -> dict:
     screens = defaultdict(list)
     for s in source:
         screens[s["screen"]].append(s)
-    # Screens that are on screen now: their class appears in the UI Automation tree, or they share an ID with it.
+    # Screens that are on screen now: their class appears in the UI Automation tree (user controls do; windows and pages
+    # don't), they share an ID with it, or at least two (and a quarter) of their named controls match one on screen by type and name.
+    gt_names = Counter((e["controlType"], norm_name(e.get("name"))) for e in gt_controls if norm_name(e.get("name")))
+
+    def names_match(els):
+        named = [e for e in els if e.get("isInteractive") and norm_name(e.get("name"))]
+        hits = sum(1 for e in named if (e["controlType"], norm_name(e["name"])) in gt_names)
+        return hits >= 2 and hits >= len(named) / 4
+
     relevant = {name for name, els in screens.items()
                 if name in class_names or name.split(".")[-1] in class_names
-                or any(e.get("automationId") in gt_ids for e in els if not is_bound(e.get("automationId")))}
+                or any(e.get("automationId") in gt_ids for e in els if not is_bound(e.get("automationId")))
+                or names_match(els)}
     pool = [s for name in relevant for s in screens[name]]
     by_id = defaultdict(list)
     for s in source:
@@ -198,7 +207,9 @@ def compare_source(truth: list[dict], source: list[dict]) -> dict:
             n = norm_name(g.get("name"))
             match = take(by_name.get((g["controlType"], n), [])) if n else None
         if match is None:
-            k = "not in the XAML (template, code or data)" if not gi else "ID not found in the XAML"
+            k = ("ID not found in the XAML" if gi
+                 else "not in the XAML (template, code or data)" if norm_name(g.get("name"))
+                 else "can't be paired (no ID and no name)")
             outcome[k] += 1
             examples[k].append(describe(g))
             continue
@@ -218,7 +229,8 @@ def compare_source(truth: list[dict], source: list[dict]) -> dict:
             loc = match.get("location") or match.get("screen")
             examples[k].append(f"{describe(g)} vs source {match.get('kind')} id={si!r} at {loc}")
 
-    matched = sum(v for k, v in outcome.items() if not k.startswith(("not in the XAML", "ID not found")))
+    unpairable = outcome["can't be paired (no ID and no name)"]
+    matched = sum(v for k, v in outcome.items() if not k.startswith(("not in the XAML", "ID not found", "can't be paired")))
     agree = outcome["same ID"] + outcome["both without an ID"] + outcome["data-bound ID in the XAML"]
     gt_with_id = [g for g in gt_controls if g.get("automationId")]
     id_seen = sum(1 for g in gt_with_id if g["automationId"] in by_id)
@@ -227,7 +239,8 @@ def compare_source(truth: list[dict], source: list[dict]) -> dict:
         "sourceScreensOnScreen": sorted(relevant),
         "matchedToSource": matched,
         "outcome": dict(outcome),
-        "sourceSeesControl": ratio(matched, len(gt_controls)),
+        "pairableControls": len(gt_controls) - unpairable,
+        "sourceSeesControl": ratio(matched, len(gt_controls) - unpairable),
         "idAgreement": ratio(agree, matched),
         "groundTruthIdsFoundInXaml": ratio(id_seen, len(gt_with_id)),
         "falseAlarms": outcome["source scan says no ID, but it has one (false alarm)"],

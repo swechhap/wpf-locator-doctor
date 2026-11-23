@@ -1,0 +1,107 @@
+{
+  "app": "Snoop",
+  "commit": "2bf48f60c2bb1753001f6be9122395def9070fa9",
+  "scanPath": "Snoop.Core",
+  "labels": [
+    {
+      "finding": "WT001\thigh\tControls/PropertyInspector.xaml:117\tButton has no AutomationId.",
+      "label": "real",
+      "why": "Icon-only \"go back\" button with no ID and no name."
+    },
+    {
+      "finding": "WT001\thigh\tControls/PropertyInspector.xaml:72\tMenuItem \"Open in ILSpy\" has no AutomationId.",
+      "label": "real",
+      "why": "Context menu item with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tControls/ValueEditors/Details/ValueEditorDetailsWindow.xaml:24\tButton \"Change value\" has no AutomationId.",
+      "label": "real",
+      "why": "Dialog button with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tWindows/SnoopUI.xaml:307\tTabControl has no AutomationId.",
+      "label": "real",
+      "why": "Main tab control with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tWindows/SnoopUI.xaml:360\tTabItem \"Triggers\" has no AutomationId.",
+      "label": "real",
+      "why": "Tab with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tWindows/SnoopUI.xaml:394\tTabItem \"Methods\" has no AutomationId.",
+      "label": "real",
+      "why": "Tab with no ID."
+    },
+    {
+      "finding": "WT002\tlow\tControls/PropertyInspector.xaml:113\tCheckBox \"Clear after delve\" gets its ID \"checkBoxClearAfterDelve\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from x:Name."
+    },
+    {
+      "finding": "WT002\tlow\tViews/DebugListenerTab/DebugListenerControl.xaml:23\tCheckBox \"Start Listening\" gets its ID \"checkBoxStartListening\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from Name."
+    },
+    {
+      "finding": "WT002\tlow\tViews/DebugListenerTab/DebugListenerControl.xaml:78\tButton \"Clear Filters\" gets its ID \"buttonClearFilters\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from Name."
+    },
+    {
+      "finding": "WT002\tlow\tViews/DebugListenerTab/DebugListenerControl.xaml:86\tButton \"Edit Filter\" gets its ID \"buttonSetFilters\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from Name."
+    },
+    {
+      "finding": "WT002\tlow\tViews/DebugListenerTab/SetFiltersWindow.xaml:32\tMenuItem \"Clear Filter Groups\" gets its ID \"menuItemClearFilterGroups\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from Name."
+    },
+    {
+      "finding": "WT002\tlow\tViews/MethodsTab/FullTypeSelector.xaml:55\tButton \"Cancel\" gets its ID \"buttonCancel\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from Name."
+    },
+    {
+      "finding": "WT002\tlow\tViews/MethodsTab/MethodsControl.xaml:146\tCheckBox \"Use DataContext Property\" gets its ID \"checkBoxUseDataContext\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from x:Name."
+    },
+    {
+      "finding": "WT005\tmedium\tViews/MethodsTab/FullTypeSelector.xaml:27\tRows in ComboBox [comboBoxTypes] have no unique ID.",
+      "label": "real",
+      "why": "Type combo box filled from data, with no ID per item."
+    },
+    {
+      "finding": "WT006\tmedium\tControls/ValueEditors/StringValueEditor.cs:10\tStringValueEditor derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).",
+      "label": "false alarm",
+      "why": "StringValueEditor is a ContentControl wrapper; the text box inside it is visible to tests, so nothing is lost. It is used in EditorTemplates.xaml, although the message says it isn't used in any XAML file."
+    },
+    {
+      "finding": "WT008\tlow\tControls/Previewer.xaml:324\tToggleButton has no readable name.",
+      "label": "real",
+      "why": "Icon-only toggle button; the tooltip becomes help text, not a name."
+    },
+    {
+      "finding": "WT008\tlow\tViews/EventsView.xaml:108\tcontrols:NoSelectionComboBox [EventChooser] has no readable name.",
+      "label": "real",
+      "why": "NoSelectionComboBox shows a Header in its template, but nothing turns it into the automation name."
+    },
+    {
+      "finding": "WT008\tlow\tViews/EventsView.xaml:168\tTextBox has no readable name.",
+      "label": "real",
+      "why": "The caption is a TextBlock, not a Label with Target."
+    },
+    {
+      "finding": "WT008\tlow\tViews/HighlightSettingsView.xaml:38\tListView [ListView] has no readable name.",
+      "label": "real",
+      "why": "List view with no label or AutomationProperties.Name."
+    },
+    {
+      "finding": "WT008\tlow\tViews/MethodsTab/MethodsControl.xaml:193\tTextBox [textBlockResult] has no readable name.",
+      "label": "real",
+      "why": "The caption is a TextBlock, not a Label with Target."
+    }
+  ]
+}

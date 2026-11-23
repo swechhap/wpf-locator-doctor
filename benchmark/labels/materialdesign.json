@@ -1,0 +1,107 @@
+{
+  "app": "MaterialDesignInXamlToolkit demo",
+  "commit": "5b626957f891f02dcb179cd0be754d8e782767aa",
+  "scanPath": "src/MainDemo.Wpf",
+  "labels": [
+    {
+      "finding": "WT001\thigh\tButtons.xaml:847\tButton \"Cancel\" has no AutomationId.",
+      "label": "real",
+      "why": "Popup button with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tCards.xaml:486\tTextBox has no AutomationId.",
+      "label": "real",
+      "why": "Text box with no ID (it does get a name from its hint)."
+    },
+    {
+      "finding": "WT001\thigh\tElevation.xaml:23\tButton \"4 DP\" has no AutomationId.",
+      "label": "real",
+      "why": "Demo button with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tFields.xaml:144\tTextBox has no AutomationId.",
+      "label": "real",
+      "why": "Text box with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tFieldsLineUp.xaml:241\tComboBox has no AutomationId.",
+      "label": "real",
+      "why": "Combo box with no ID, no hint and no label."
+    },
+    {
+      "finding": "WT001\thigh\tMenusAndToolBars.xaml:424\tMenuItem \"Hello World\" has no AutomationId.",
+      "label": "real",
+      "why": "Context menu item with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tSmartHint.xaml:1500\tComboBox has no AutomationId.",
+      "label": "real",
+      "why": "Combo box with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tTabs.xaml:241\tTabItem \"TAB 2\" has no AutomationId.",
+      "label": "real",
+      "why": "Tab with no ID; several tab controls on the page use the same headers."
+    },
+    {
+      "finding": "WT001\thigh\tTabs.xaml:409\tTextBox has no AutomationId.",
+      "label": "real",
+      "why": "Text box with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tTabs.xaml:960\tTabControl has no AutomationId.",
+      "label": "real",
+      "why": "Tab control with no ID; its tabs come from data."
+    },
+    {
+      "finding": "WT001\thigh\tToggles.xaml:472\tListBox has no AutomationId.",
+      "label": "real",
+      "why": "Segmented list box with no ID."
+    },
+    {
+      "finding": "WT002\tlow\tFields.xaml:505\tCheckBox \"Enabled\" gets its ID \"RevealPasswordOutlinedEnabled\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from x:Name."
+    },
+    {
+      "finding": "WT002\tlow\tPopupBox.xaml:154\tComboBox [HorizontalOffsetComboBox] gets its ID \"HorizontalOffsetComboBox\" from x:Name.",
+      "label": "real",
+      "why": "The ID really comes from x:Name."
+    },
+    {
+      "finding": "WT008\tlow\tFields.xaml:669\tTextBox has no readable name.",
+      "label": "real",
+      "why": "No hint, no label and no AutomationProperties.Name; the tooltip becomes help text only."
+    },
+    {
+      "finding": "WT008\tlow\tFieldsLineUp.xaml:223\tPasswordBox has no readable name.",
+      "label": "real",
+      "why": "Password box with no hint or label, so the style's hint-to-name binding gives nothing."
+    },
+    {
+      "finding": "WT008\tlow\tIconPack.xaml:99\tButton [SearchButton] has no readable name.",
+      "label": "real",
+      "why": "Icon-only search button with no name."
+    },
+    {
+      "finding": "WT008\tlow\tPickers.xaml:489\tCalendar has no readable name.",
+      "label": "real",
+      "why": "Calendar with no name."
+    },
+    {
+      "finding": "WT008\tlow\tSliders.xaml:99\tSlider has no readable name.",
+      "label": "real",
+      "why": "Slider with no name."
+    },
+    {
+      "finding": "WT008\tlow\tSmartHint.xaml:130\tTextBox has no readable name.",
+      "label": "false alarm",
+      "why": "MaterialDesign's TextBox style sets AutomationProperties.Name from HintAssist.Hint, so this box is named \"Helper text\" at runtime. The source scan doesn't read the library's styles."
+    },
+    {
+      "finding": "WT008\tlow\tToggles.xaml:407\tListBox has no readable name.",
+      "label": "real",
+      "why": "List box with no name (the tooltip becomes help text)."
+    }
+  ]
+}

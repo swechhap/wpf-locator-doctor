@@ -1,0 +1,112 @@
+{
+  "id": "mahapps",
+  "name": "MahApps.Metro demo",
+  "commit": "9466e8acd96591e1f552841bc5357f376552bb57",
+  "groundTruthElements": 257,
+  "groundTruthWindows": 1,
+  "liveScan": {
+    "elements": 177,
+    "score": 58.3,
+    "coveragePercent": 5.8,
+    "problemsByRule": {
+      "WT001": 98,
+      "WT002": 3,
+      "WT008": 39
+    }
+  },
+  "liveVsTruth": {
+    "groundTruthControls": 112,
+    "skippedByDesign": {
+      "part of another control": 4,
+      "inside a title bar or scroll bar": 4
+    },
+    "comparedControls": 104,
+    "liveScanControls": 104,
+    "paired": 104,
+    "pairedOutcome": {
+      "both without an ID": 98,
+      "same ID": 6
+    },
+    "missedByLiveScan": 0,
+    "onlyInLiveScan": 0,
+    "idAgreement": 1.0,
+    "groundTruthIdCoverage": 0.0577,
+    "examples": {}
+  },
+  "sourceVsTruth": {
+    "groundTruthControls": 108,
+    "sourceScreensOnScreen": [
+      "ButtonsExample",
+      "MainWindow"
+    ],
+    "matchedToSource": 62,
+    "outcome": {
+      "can't be paired (no ID and no name)": 38,
+      "both without an ID": 59,
+      "same ID": 3,
+      "not in the XAML (template, code or data)": 1,
+      "ID not found in the XAML": 7
+    },
+    "pairableControls": 70,
+    "sourceSeesControl": 0.8857,
+    "idAgreement": 1.0,
+    "groundTruthIdsFoundInXaml": 0.3,
+    "falseAlarms": 0,
+    "examples": {
+      "can't be paired (no ID and no name)": [
+        "Button",
+        "Button",
+        "Button",
+        "Button",
+        "Button",
+        "Button",
+        "Button",
+        "Button",
+        "Button",
+        "Button",
+        "Button",
+        "Button",
+        "Button",
+        "Button",
+        "Button"
+      ],
+      "not in the XAML (template, code or data)": [
+        "Button \"Header\""
+      ],
+      "ID not found in the XAML": [
+        "Button #PART_Button",
+        "Button #PART_Button",
+        "Button #PART_Button",
+        "Button #PART_Button",
+        "Button \"Minimize\" #Minimize",
+        "Button \"Maximize\" #MaximizeRestore",
+        "Button \"Close\" #Close"
+      ]
+    }
+  },
+  "locators": {
+    "elementsChecked": 114,
+    "elementsWithoutLocator": 0,
+    "locators": 199,
+    "outcome": {
+      "finds exactly the element": 199
+    },
+    "unique": 1.0,
+    "bestLocatorUnique": 1.0,
+    "byKind": {
+      "position": {
+        "finds exactly the element": 114
+      },
+      "name + type": {
+        "finds exactly the element": 45
+      },
+      "AutomationId": {
+        "finds exactly the element": 12
+      },
+      "inside a parent's ID": {
+        "finds exactly the element": 28
+      }
+    },
+    "examples": {}
+  }
+}

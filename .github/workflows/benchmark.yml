@@ -35,6 +35,9 @@ jobs:
       - name: Scan every app twice and compare with the golden files
         run: python3 benchmark/source_benchmark.py --check --work "$RUNNER_TEMP/wld-bench"
 
+      - name: Recompute precision from the hand-checked labels (fails if a labelled problem no longer exists)
+        run: python3 benchmark/labels.py score
+
       - name: Show what changed
         if: failure()
         run: |

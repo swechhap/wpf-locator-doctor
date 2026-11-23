@@ -1,0 +1,107 @@
+{
+  "app": "WPF UI gallery (lepoco/wpfui)",
+  "commit": "35eae0e6975625ac3ff4b3426e89dcae66c8da06",
+  "scanPath": "src/Wpf.Ui.Gallery",
+  "labels": [
+    {
+      "finding": "WT001\thigh\tViews/Pages/BasicInput/HyperlinkButtonPage.xaml:62\tui:HyperlinkButton \"WPF UI hyperlink\" has no AutomationId.",
+      "label": "real",
+      "why": "Hyperlink button with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tViews/Pages/BasicInput/RadioButtonPage.xaml:58\tRadioButton \"Option 1\" has no AutomationId.",
+      "label": "real",
+      "why": "Radio button with no ID; the page repeats \"Option 1\" in several groups."
+    },
+    {
+      "finding": "WT001\thigh\tViews/Pages/BasicInput/RadioButtonPage.xaml:63\tRadioButton \"Option 2\" has no AutomationId.",
+      "label": "real",
+      "why": "Radio button with no ID; the page repeats \"Option 2\" in several groups."
+    },
+    {
+      "finding": "WT001\thigh\tViews/Pages/BasicInput/SplitButtonPage.xaml:34\tMenuItem has no AutomationId.",
+      "label": "real",
+      "why": "Colour-swatch menu item with no ID and no text."
+    },
+    {
+      "finding": "WT001\thigh\tViews/Pages/BasicInput/SplitButtonPage.xaml:43\tMenuItem has no AutomationId.",
+      "label": "real",
+      "why": "Colour-swatch menu item with no ID and no text."
+    },
+    {
+      "finding": "WT001\thigh\tViews/Pages/BasicInput/SplitButtonPage.xaml:78\tMenuItem has no AutomationId.",
+      "label": "real",
+      "why": "Colour-swatch menu item with no ID and no text."
+    },
+    {
+      "finding": "WT001\thigh\tViews/Pages/DashboardPage.xaml:222\tui:HyperlinkButton \"GitHub\" has no AutomationId.",
+      "label": "real",
+      "why": "Hyperlink button with no ID. The live run confirmed it: the GitHub button on the dashboard has no AutomationId."
+    },
+    {
+      "finding": "WT001\thigh\tViews/Pages/DialogsAndFlyouts/MessageBoxPage.xaml:176\tButton \"Open MessageBox with icon\" has no AutomationId.",
+      "label": "real",
+      "why": "Button with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tViews/Pages/Navigation/MenuPage.xaml:78\tui:MenuItem \"Select All\" has no AutomationId.",
+      "label": "real",
+      "why": "Menu item with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tViews/Windows/MonacoWindow.xaml:75\tMenuItem \"Cut\" has no AutomationId.",
+      "label": "real",
+      "why": "Menu item with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tViews/Windows/SandboxWindow.xaml:102\tui:DropDownButton \"Hello\" has no AutomationId.",
+      "label": "real",
+      "why": "Drop-down button with no ID."
+    },
+    {
+      "finding": "WT001\thigh\tViews/Windows/SandboxWindow.xaml:71\tMenuItem \"Select All\" has no AutomationId.",
+      "label": "real",
+      "why": "Menu item with no ID."
+    },
+    {
+      "finding": "WT005\tmedium\tViews/Pages/Windows/WindowsPage.xaml:23\tRows in ItemsControl have no unique ID.",
+      "label": "real",
+      "why": "Window cards come from data; the rows carry no ID."
+    },
+    {
+      "finding": "WT006\thigh\tControls/TypographyControl.xaml.cs:11\tTypographyControl derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 7 time(s) in XAML.",
+      "label": "false alarm",
+      "why": "TypographyControl is a display-only sample; the text inside it still reaches UI Automation through its parent, and there is nothing to click."
+    },
+    {
+      "finding": "WT008\tlow\tViews/Pages/BasicInput/SplitButtonPage.xaml:87\tMenuItem has no readable name.",
+      "label": "real",
+      "why": "Colour-swatch menu item with no header text and no name."
+    },
+    {
+      "finding": "WT008\tlow\tViews/Pages/DialogsAndFlyouts/SnackbarPage.xaml:44\tComboBox has no readable name.",
+      "label": "real",
+      "why": "Combo box with no label or AutomationProperties.Name."
+    },
+    {
+      "finding": "WT008\tlow\tViews/Pages/OpSystem/NotifyIconPage.xaml:43\tComboBox has no readable name.",
+      "label": "real",
+      "why": "Combo box with no label or AutomationProperties.Name."
+    },
+    {
+      "finding": "WT008\tlow\tViews/Pages/StatusAndInfo/InfoBarPage.xaml:48\tComboBox has no readable name.",
+      "label": "real",
+      "why": "Combo box with no label or AutomationProperties.Name."
+    },
+    {
+      "finding": "WT008\tlow\tViews/Windows/SandboxWindow.xaml:109\tMenuItem has no readable name.",
+      "label": "false alarm",
+      "why": "A MenuItem with Command=\"ApplicationCommands.Copy\" and no Header shows the command's text, so it is named \"Copy\" at runtime."
+    },
+    {
+      "finding": "WT008\tlow\tViews/Windows/SandboxWindow.xaml:84\tui:MenuItem has no readable name.",
+      "label": "real",
+      "why": "Icon-only menu item with no header, so no name."
+    }
+  ]
+}

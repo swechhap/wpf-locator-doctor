@@ -8,8 +8,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.54,
-        0.51
+        0.59,
+        0.52
       ],
       "deterministic": true,
       "score": 54.8,
@@ -43,8 +43,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        3.99,
-        3.55
+        4.18,
+        3.42
       ],
       "deterministic": true,
       "score": 57.1,
@@ -78,8 +78,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.78,
-        0.78
+        0.84,
+        0.79
       ],
       "deterministic": true,
       "score": 69,
@@ -114,8 +114,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.39,
-        0.39
+        0.43,
+        0.4
       ],
       "deterministic": true,
       "score": 65.2,
@@ -150,7 +150,7 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.29,
+        0.32,
         0.3
       ],
       "deterministic": true,
@@ -185,8 +185,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.3,
-        0.3
+        0.31,
+        0.29
       ],
       "deterministic": true,
       "score": 49.8,
@@ -220,8 +220,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.31,
-        0.33
+        0.36,
+        0.32
       ],
       "deterministic": true,
       "score": 41.3,
@@ -254,7 +254,7 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.29,
+        0.32,
         0.29
       ],
       "deterministic": true,
@@ -289,8 +289,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        1.23,
-        1.23
+        1.5,
+        1.21
       ],
       "deterministic": true,
       "score": 68.7,
@@ -326,7 +326,7 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.29,
+        0.32,
         0.3
       ],
       "deterministic": true,
@@ -360,30 +360,30 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.43,
-        0.42
+        0.47,
+        0.43
       ],
       "deterministic": true,
       "score": 52.2,
       "grade": "D",
-      "elements": 1034,
-      "controls": 881,
+      "elements": 1035,
+      "controls": 882,
       "screens": 66,
-      "problems": 1337,
+      "problems": 1338,
       "problemsByRule": {
         "WT001": 694,
         "WT002": 174,
         "WT004": 1,
         "WT005": 130,
-        "WT006": 24,
+        "WT006": 25,
         "WT008": 314
       },
       "checks": {
-        "coverage": 19.8,
+        "coverage": 19.7,
         "quality": 70,
         "uniqueness": 58.7,
         "stability": null,
-        "visibility": 98.5,
+        "visibility": 98.4,
         "names": 63.3
       },
       "notes": 0

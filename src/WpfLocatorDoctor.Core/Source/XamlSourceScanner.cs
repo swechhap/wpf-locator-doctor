@@ -156,7 +156,9 @@ public sealed partial class XamlSourceScanner
 
         var csFiles = EnumerateFiles(root, "*.cs")
             .Where(f => !f.EndsWith(".g.cs", StringComparison.OrdinalIgnoreCase) && !f.EndsWith(".g.i.cs", StringComparison.OrdinalIgnoreCase))
-            .Select(f => (f, System.IO.Path.GetRelativePath(root, f)));
+            .Select(f => (Path: f, DisplayPath: System.IO.Path.GetRelativePath(root, f)))
+            // The first class with a given name wins, so the order must not depend on the disk or operating system.
+            .OrderBy(f => f.DisplayPath.Replace('\\', '/'), StringComparer.Ordinal);
         facts.CustomControls = CodeBehindAnalyzer.Analyze(csFiles);
         result.CustomControls.AddRange(facts.CustomControls.Values.Where(c => c.Status != PeerStatus.Unknown));
 

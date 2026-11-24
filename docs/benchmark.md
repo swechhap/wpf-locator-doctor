@@ -8,8 +8,9 @@ by hand, and on every pull request that touches the scanning code. Everything it
 
 ## In short
 
-- **No crashes.** The source scan read all 11 apps (1,208 screens, 9,673 controls) in about 10 seconds in total, and gave
-  exactly the same report every time, on macOS and on Linux.
+- **No crashes.** The source scan read all 11 apps (1,208 screens, 9,674 controls) in about 10 seconds in total, and gave
+  the same report both times it was run. (macOS and Linux could differ when two classes shared a name; see
+  [What we found](#what-we-found).)
 - **97% of the problems it reports are real.** Of 220 problems picked at random (20 per app) and checked by hand, 213 were
   real and 7 were false alarms (with this sample size the true figure is very likely between 94% and 98%; each app counts
   equally, however many problems it has). The first run found 94%; three fixes since then (see
@@ -85,18 +86,18 @@ Times are from one run on a Mac; the GitHub Actions Linux runner takes about 10 
 
 | App | Styles | Crashed | Time | Same twice | Score | Screens | Controls | Problems | Precision (hand-checked) |
 |---|---|---|---:|---|---:|---:|---:|---:|---:|
-| ILSpy | plain WPF, controls built in code, docking layout | no | 0.5 s | yes | 54.8 (D) | 104 | 89 | 144 | 90% (18/20) |
-| dnSpyEx | MVVM, controls built in code, plug-in extensions | no | 4.0 s | yes | 57.1 (D) | 113 | 960 | 1339 | 95% (19/20) |
+| ILSpy | plain WPF, controls built in code, docking layout | no | 0.6 s | yes | 54.8 (D) | 104 | 89 | 144 | 90% (18/20) |
+| dnSpyEx | MVVM, controls built in code, plug-in extensions | no | 4.2 s | yes | 57.1 (D) | 113 | 960 | 1339 | 95% (19/20) |
 | ScreenToGif | plain WPF, custom controls, heavy code-behind | no | 0.8 s | yes | 69 (C) | 61 | 1091 | 1407 | 100% (20/20) |
 | Snoop | plain WPF, custom controls, tool windows | no | 0.4 s | yes | 65.2 (C) | 24 | 141 | 220 | 95% (19/20) |
 | MahApps.Metro demo | themed control library, custom window chrome | no | 0.3 s | yes | 47.7 (D) | 38 | 709 | 1154 | 100% (20/20) |
 | MaterialDesignInXamlToolkit demo | themed control library, MVVM | no | 0.3 s | yes | 49.8 (D) | 53 | 1174 | 1594 | 95% (19/20) |
-| HandyControl demo | themed control library, MVVM, shared projects | no | 0.3 s | yes | 41.3 (D) | 137 | 1023 | 1558 | 100% (20/20) |
+| HandyControl demo | themed control library, MVVM, shared projects | no | 0.4 s | yes | 41.3 (D) | 137 | 1023 | 1558 | 100% (20/20) |
 | WPF UI gallery (lepoco/wpfui) | themed control library, MVVM, navigation pages | no | 0.3 s | yes | 48.4 (D) | 82 | 402 | 353 | 95% (19/20) |
-| Microsoft WPF-Samples | plain WPF, x:Uid localization, hundreds of small samples | no | 1.2 s | yes | 68.7 (C) | 506 | 2942 | 3512 | 95% (19/20) |
+| Microsoft WPF-Samples | plain WPF, x:Uid localization, hundreds of small samples | no | 1.5 s | yes | 68.7 (C) | 506 | 2942 | 3512 | 95% (19/20) |
 | NuGet Package Explorer | MVVM, plain WPF | no | 0.3 s | yes | 61.7 (C) | 24 | 261 | 329 | 100% (20/20) |
-| Playnite (desktop app) | MVVM, themes where views live in styles | no | 0.4 s | yes | 52.2 (D) | 66 | 881 | 1337 | 100% (20/20) |
-| **All 11 apps** | | 0 crashes | 8.8 s | | | 1208 | 9673 | 12947 | **97%** (213/220) |
+| Playnite (desktop app) | MVVM, themes where views live in styles | no | 0.5 s | yes | 52.2 (D) | 66 | 882 | 1338 | 100% (20/20) |
+| **All 11 apps** | | 0 crashes | 9.6 s | | | 1208 | 9674 | 12948 | **97%** (213/220) |
 
 The low scores are expected: open-source WPF apps rarely set AutomationIds (ILSpy and Snoop set none at all).
 
@@ -109,7 +110,7 @@ The low scores are expected: open-source WPF apps rarely set AutomationIds (ILSp
 | WT003 ID looks machine-generated | 35 | 0 | – |
 | WT004 Same ID used more than once | 1 | 0 | – |
 | WT005 List rows can't be told apart | 742 | 14 | 93% |
-| WT006 Custom control is invisible to test tools | 71 | 3 | 0% |
+| WT006 Custom control is invisible to test tools | 72 | 3 | 0% |
 | WT007 ID is set on an element test tools can't see | 16 | 2 | 100% |
 | WT008 Control has no readable name | 3006 | 61 | 97% |
 
@@ -169,6 +170,13 @@ samples were redrawn, and the 46 new picks were checked by hand in the same way.
   WPF-Samples globalization page have an `x:Uid`, but UI Automation shows no ID for them. The scan now reports them as
   "no AutomationId" instead of "ID looks machine-generated".
 
+Fixed separately, after CI on Linux gave a different dnSpyEx report from macOS:
+
+- **The report could depend on the order the disk lists files in.** When two C# classes have the same name, the first one read
+  wins, so dnSpyEx's `ZoomingUIElement` was reported from a different file on Linux. C# files are now read in a fixed order,
+  with a test. This also added one WT006 in Playnite, whose `<cv:MainWindow>` had been mistaken for its window class. Classes
+  are still matched by short name only, so a wrong match between same-named classes remains possible.
+
 ### Follow-ups (accuracy problems, not fixed yet)
 
 The scoring rules were left alone; these are the problems worth fixing next, most valuable first.
@@ -178,7 +186,7 @@ The scoring rules were left alone; these are the problems worth fixing next, mos
    `"..."`). The scan reports "no readable name" for these: about 103 problems in the MaterialDesign demo alone.
 2. **WT006 "custom control is invisible" over-reports.** All 3 sampled cases were wrappers or display-only controls whose
    insides are still visible to tests (ILSpy's `SharpTreeNodeView`, Snoop's value editors, WPF UI's `TypographyControl`).
-   Looking over all 71, most are layout panels, page headers and editor shells of this kind; a few are real, such as dnSpyEx's
+   Looking over all 71 in the first run, most are layout panels, page headers and editor shells of this kind; a few are real, such as dnSpyEx's
    window buttons built on `ButtonBase` and ScreenToGif's `ColorBox`. The rule should treat controls that contain other controls
    differently from controls a test must click. Also, the message "It isn't used in any XAML file" was wrong 33 times out of 46:
    those classes are used inside templates, styles or resource dictionaries, which the usage count skips.

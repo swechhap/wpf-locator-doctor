@@ -1,12 +1,12 @@
 # Playnite (desktop app) @ 8c08a305d6, scan path: source/Playnite.DesktopApp
-score 52.2  grade D  elements 1034  controls 881  screens 66
-check coverage      19.8%  174 of 881 controls have an AutomationId.
+score 52.2  grade D  elements 1035  controls 882  screens 66
+check coverage      19.7%  174 of 882 controls have an AutomationId.
 check quality         70%  174 borrowed from x:Name.
 check uniqueness    58.7%  1 ID(s) used more than once; 0 of 130 data lists have identifiable rows.
 check stability      n/a%  Not measured. Run again with --baseline <previous report.json> to compare.
-check visibility    98.5%  13 invisible control(s), 0 opaque area(s).
+check visibility    98.4%  14 invisible control(s), 0 opaque area(s).
 check names         63.3%  542 of 856 controls have a readable name.
-problems WT001=694  WT002=174  WT004=1  WT005=130  WT006=24  WT008=314
+problems WT001=694  WT002=174  WT004=1  WT005=130  WT006=25  WT008=314
 
 WT005	medium	Controls/AddonsSections/AddonUpdates.xaml:33	Rows in ItemsControl have no unique ID.
 WT001	medium	Controls/AddonsSections/AddonUpdates.xaml:41	CheckBox (inside a list row template) has no AutomationId.
@@ -566,6 +566,7 @@ WT006	medium	Controls/Views/Library.cs:29	Library derives from Control and doesn
 WT006	medium	Controls/Views/LibraryDetailsView.cs:21	LibraryDetailsView derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
 WT006	medium	Controls/Views/LibraryGridView.cs:25	LibraryGridView derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
 WT006	medium	Controls/Views/LibraryListView.cs:18	LibraryListView derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
+WT006	high	Controls/Views/MainWindow.cs:17	MainWindow derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 1 time(s) in XAML.
 WT006	medium	Controls/Views/NotificationPanel.cs:23	NotificationPanel derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
 WT006	medium	Controls/Views/SearchWindow.cs:21	SearchWindowGameItem derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
 WT006	medium	Controls/Views/SearchWindow.cs:160	SearchWindowSearchItem derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).

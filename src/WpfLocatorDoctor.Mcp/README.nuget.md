@@ -14,6 +14,7 @@ are in the Windows download on the [releases page](https://github.com/swechhap/w
 ## Set it up
 
 You need the .NET SDK, version 10 or newer. `dnx` downloads and runs the server; nothing else to install.
+If your shell can't find `dnx` (for example with .NET from Homebrew), use `dotnet dnx` instead.
 
 **Claude Code** (in your WPF project's folder):
 

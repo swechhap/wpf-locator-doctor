@@ -5,7 +5,7 @@
 ## Install
 
 ```bash
-dotnet tool install -g wpf-locator-doctor --prerelease
+dotnet tool install -g wpf-locator-doctor
 ```
 
 You need the .NET SDK, version 10 or newer. Works on Windows, macOS and Linux.
@@ -35,6 +35,6 @@ This package contains the **source scan**, which reads your XAML and C# files. T
 
 ## More
 
-This is an early preview. Commands and report formats may change before 1.0. An MCP server, so AI assistants can find locators for you, is coming next.
+This is an early version. Commands and report formats may change before 1.0. To use it from an AI assistant, see the MCP server: [wpf-locator-doctor-mcp](https://www.nuget.org/packages/wpf-locator-doctor-mcp).
 
 Source code, full documentation and issues: https://github.com/swechhap/wpf-locator-doctor

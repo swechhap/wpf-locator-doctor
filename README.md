@@ -227,10 +227,18 @@ GitHub Actions builds and tests on Linux and Windows for every push and pull req
 - The source scan can't see controls created only in C# code, and it guesses third-party controls (Telerik, DevExpress…) from their class names.
 - The live scan only sees open windows and the list rows on screen. Open other screens and scan again.
 - The live scan runs in CI on every push: it starts the practice app on Windows, scans it, and fails the build if the scan breaks.
-- A [benchmark on 11 open-source WPF apps](docs/benchmark.md) (ILSpy, dnSpyEx, MahApps.Metro, MaterialDesign and others) found
-  no crashes, 97% of reported problems real, and live scans and recommended locators that matched UI Automation every time.
-  Its weak spots: readable names set by a control library's styles can be reported as missing, and the
-  "invisible custom control" check over-reports controls that only wrap other controls. Details and follow-ups are on that page.
+- A [benchmark on 11 open-source WPF apps](docs/benchmark.md) (ILSpy, dnSpyEx, MahApps.Metro, MaterialDesign and others) shows how
+  far to trust the results, and where that evidence stops:
+  - **Source scan:** no crashes on any of the 11 apps. In a sample of 220 reported problems, 213 (97%) were judged real. The only
+    reviewer was the AI assistant that built the benchmark, so a second opinion is welcome. The sample only looks for false alarms;
+    it doesn't measure the problems the scan misses.
+  - **Uneven by rule:** machine-generated IDs (WT003) and duplicate IDs (WT004) weren't in the sample, and the "invisible custom
+    control" check (WT006) was wrong in all 3 cases sampled, because it over-reports controls that only wrap other controls
+    or display something.
+    Readable names set by a control library's styles can be reported as missing.
+  - **Live scan:** tested on the first screen of 4 of the apps only. It matched UI Automation on all 180 controls compared, and all 566
+    recommended locators found exactly the intended element. On those screens the source scan found 38% to 95% of the controls it
+    could be compared on; most of the rest come from control libraries' templates.
 
 ## License
 

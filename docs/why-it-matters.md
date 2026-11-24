@@ -103,9 +103,10 @@ Both read the source code on Windows, macOS and Linux. Reading the running app n
 - The source scan can't see controls created only in C# code, and it guesses third-party controls (Telerik, DevExpress…) from
   their class names. The live scan covers both, on Windows.
 - The live scan sees only the windows that are open and the list rows on screen. Open other screens and scan again.
-- It is new. It is tested on every change against the included practice app, but it hasn't yet been tried on many large
-  real-world apps. If you try it on yours, please [open an issue](https://github.com/swechhap/wpf-locator-doctor/issues) with
-  what you find. That feedback shapes what comes next.
+- It is new. It is tested on every change against the included practice app, and a [benchmark](benchmark.md) runs it on 11
+  open-source WPF apps. That benchmark is limited: the live tests cover only the first screens of 4 apps, an AI assistant judged
+  the sampled problems, and missed problems weren't measured. If you try it on yours, please
+  [open an issue](https://github.com/swechhap/wpf-locator-doctor/issues) with what you find. That feedback shapes what comes next.
 
 ## Coming next
 

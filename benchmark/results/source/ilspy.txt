@@ -1,12 +1,12 @@
 # ILSpy @ 1377eb6e73, scan path: ILSpy
-score 54.7  grade D  elements 212  controls 89  screens 104
+score 54.8  grade D  elements 212  controls 89  screens 104
 check coverage      22.5%  20 of 89 controls have an AutomationId.
 check quality         70%  20 borrowed from x:Name.
 check uniqueness    62.7%  0 ID(s) used more than once; 0 of 22 data lists have identifiable rows.
 check stability      n/a%  Not measured. Run again with --baseline <previous report.json> to compare.
 check visibility     100%  0 invisible control(s), 0 opaque area(s).
-check names           67%  59 of 88 controls have a readable name.
-problems WT001=69  WT002=20  WT005=22  WT006=5  WT008=29
+check names         68.2%  60 of 88 controls have a readable name.
+problems WT001=69  WT002=20  WT005=22  WT006=5  WT008=28
 
 WT005	medium	Analyzers/AnalyzerTreeView.xaml:1	Rows in treeView:SharpTreeView have no unique ID.
 WT005	medium	AssemblyTree/AssemblyListPane.xaml:1	Rows in treeView:SharpTreeView "Assemblies and Classes" have no unique ID.
@@ -103,9 +103,8 @@ WT001	high	Options/OptionsDialog.xaml:24	Button "{x:Static properties:Resources.
 WT001	high	Options/OptionsDialog.xaml:27	TabControl has no AutomationId.
 WT002	low	Search/SearchPane.xaml:25	controls:SearchBox [searchBox] gets its ID "searchBox" from x:Name.
 WT008	low	Search/SearchPane.xaml:25	controls:SearchBox [searchBox] has no readable name.
-WT002	low	Search/SearchPane.xaml:32	ComboBox [searchModeComboBox] gets its ID "searchModeComboBox" from x:Name.
-WT005	medium	Search/SearchPane.xaml:32	Rows in ComboBox [searchModeComboBox] have no unique ID.
-WT008	low	Search/SearchPane.xaml:32	ComboBox [searchModeComboBox] has no readable name.
+WT002	low	Search/SearchPane.xaml:32	ComboBox "{x:Static properties:Resources._SearchF…" gets its ID "searchModeComboBox" from x:Name.
+WT005	medium	Search/SearchPane.xaml:32	Rows in ComboBox "{x:Static properties:Resources._SearchF…" have no unique ID.
 WT002	low	Search/SearchPane.xaml:51	ListView [listBox] gets its ID "listBox" from x:Name.
 WT005	medium	Search/SearchPane.xaml:51	Rows in ListView [listBox] have no unique ID.
 WT008	low	Search/SearchPane.xaml:51	ListView [listBox] has no readable name.

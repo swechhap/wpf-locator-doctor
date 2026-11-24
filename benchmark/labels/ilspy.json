@@ -29,6 +29,11 @@
       "why": "Dialog button with no ID; its text is a translated resource."
     },
     {
+      "finding": "WT001\thigh\tViews/DebugSteps.xaml:25\tMenuItem \"{x:Static properties:Resources.ShowStat…\" has no AutomationId.",
+      "label": "real",
+      "why": "Context menu item with no ID; its header is a translated resource."
+    },
+    {
       "finding": "WT001\tmedium\tMetadata/FlagsTooltip.xaml:19\tCheckBox \"{Binding Name}\" (inside a list row template) has no AutomationId.",
       "label": "false alarm",
       "why": "Display-only check box inside a tooltip (IsChecked is one-way); a tester has no reason to reach it."
@@ -44,14 +49,9 @@
       "why": "The ID really comes from Name=\"languageComboBox\"; renaming it would break tests."
     },
     {
-      "finding": "WT002\tlow\tViews/CreateListDialog.xaml:18\tTextBox [ListNameBox] gets its ID \"ListNameBox\" from x:Name.",
+      "finding": "WT002\tlow\tViews/OpenFromGacDialog.xaml:31\tListView [listView] gets its ID \"listView\" from x:Name.",
       "label": "real",
-      "why": "The ID really comes from Name=\"ListNameBox\"."
-    },
-    {
-      "finding": "WT002\tlow\tViews/OpenFromGacDialog.xaml:29\tTextBox \"{x:Static properties:Resources._Search}\" gets its ID \"filterTextBox\" from x:Name.",
-      "label": "real",
-      "why": "The ID really comes from Name=\"filterTextBox\"."
+      "why": "The ID really comes from Name=\"listView\"."
     },
     {
       "finding": "WT005\tmedium\tControls/MainToolBar.xaml:80\tRows in ComboBox [languageVersionComboBox] have no unique ID.",
@@ -99,9 +99,9 @@
       "why": "The Label before it has no Target, so the combo box gets no name."
     },
     {
-      "finding": "WT008\tlow\tViews/DebugSteps.xaml:17\tTreeView [tree] has no readable name.",
+      "finding": "WT008\tlow\tViews/CreateListDialog.xaml:18\tTextBox [ListNameBox] has no readable name.",
       "label": "real",
-      "why": "Tree view with no label or AutomationProperties.Name."
+      "why": "The Label above it has no Target, so the text box gets no name."
     }
   ]
 }

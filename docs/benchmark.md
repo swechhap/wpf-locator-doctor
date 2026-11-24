@@ -8,18 +8,22 @@ by hand, and on every pull request that touches the scanning code. Everything it
 
 ## In short
 
-- **No crashes.** The source scan read all 11 apps (1,208 screens, 9,673 controls) in about 10 seconds in total, and gave
-  exactly the same report every time, on macOS and on Linux.
-- **94% of the problems it reports are real.** Of 220 problems picked at random (20 per app) and checked by hand, 207 were
-  real and 13 were false alarms (with this sample size the true figure is very likely between 90% and 97%; each app counts
-  equally, however many problems it has).
-  "Control has no AutomationId", the most common problem, was right 97 times out of 98.
+- **No crashes.** The source scan read all 11 apps (1,208 screens, 9,674 controls) in about 10 seconds in total, and gave
+  the same report both times it was run. (macOS and Linux could differ when two classes shared a name; see
+  [What we found](#what-we-found).)
+- **97% of the problems it reports are real.** Of 220 problems picked at random (20 per app) and checked by hand, 213 were
+  real and 7 were false alarms (with this sample size the true figure is very likely between 94% and 98%; each app counts
+  equally, however many problems it has). The first run found 94%; three fixes since then (see
+  [What we found](#what-we-found)) removed 6 of its 13 false alarms. 46 of the 220 were also redrawn, so the two figures are
+  not an exact like-for-like comparison.
+  "Control has no AutomationId", the most common problem, was right 106 times out of 107.
 - **The live scan agreed with UI Automation on every control.** On 4 running apps, it found the same 180 controls, with the same
   IDs, as an independent dump of the UI Automation tree.
 - **Every locator it recommended worked.** All 566 locators that `recommend_locators` gave for 262 elements found exactly the
   intended element when run with plain FlaUI.
-- **Where it is weaker:** deciding whether a control has a readable name (88% right), and the "custom control is invisible"
-  check (0 of 3 sampled were real problems). The reasons are listed under [What we found](#what-we-found).
+- **Where it is weaker:** the "custom control is invisible" check (0 of 3 sampled were real problems), and readable names
+  set by a control library's styles, which the source scan doesn't read. The reasons are listed under
+  [What we found](#what-we-found).
 
 ## The apps
 
@@ -79,22 +83,22 @@ assistant that built this benchmark), so a second opinion on any of them is welc
 
 ### Source scan
 
-Times are from the GitHub Actions Linux runner.
+Times are from one run on a Mac; the GitHub Actions Linux runner takes about 10 seconds in total.
 
 | App | Styles | Crashed | Time | Same twice | Score | Screens | Controls | Problems | Precision (hand-checked) |
 |---|---|---|---:|---|---:|---:|---:|---:|---:|
-| ILSpy | plain WPF, controls built in code, docking layout | no | 0.8 s | yes | 54.7 (D) | 104 | 89 | 145 | 90% (18/20) |
-| dnSpyEx | MVVM, controls built in code, plug-in extensions | no | 3.9 s | yes | 57.1 (D) | 113 | 960 | 1339 | 95% (19/20) |
-| ScreenToGif | plain WPF, custom controls, heavy code-behind | no | 1.0 s | yes | 69 (C) | 61 | 1091 | 1407 | 100% (20/20) |
-| Snoop | plain WPF, custom controls, tool windows | no | 0.5 s | yes | 65.2 (C) | 24 | 141 | 220 | 95% (19/20) |
-| MahApps.Metro demo | themed control library, custom window chrome | no | 0.4 s | yes | 47.7 (D) | 38 | 709 | 1157 | 100% (20/20) |
-| MaterialDesignInXamlToolkit demo | themed control library, MVVM | no | 0.4 s | yes | 49.8 (D) | 53 | 1174 | 1594 | 95% (19/20) |
-| HandyControl demo | themed control library, MVVM, shared projects | no | 0.4 s | yes | 41.3 (D) | 137 | 1023 | 1558 | 100% (20/20) |
-| WPF UI gallery (lepoco/wpfui) | themed control library, MVVM, navigation pages | no | 0.4 s | yes | 48.2 (D) | 82 | 402 | 358 | 90% (18/20) |
-| Microsoft WPF-Samples | plain WPF, x:Uid localization, hundreds of small samples | no | 1.5 s | yes | 68.7 (C) | 506 | 2942 | 3518 | 95% (19/20) |
-| NuGet Package Explorer | MVVM, plain WPF | no | 0.4 s | yes | 60.1 (C) | 24 | 261 | 366 | 75% (15/20) |
-| Playnite (desktop app) | MVVM, themes where views live in styles | no | 0.6 s | yes | 52.2 (D) | 66 | 881 | 1337 | 100% (20/20) |
-| **All 11 apps** | | 0 crashes | 10.4 s | | | 1208 | 9673 | 12999 | **94%** (207/220) |
+| ILSpy | plain WPF, controls built in code, docking layout | no | 0.6 s | yes | 54.8 (D) | 104 | 89 | 144 | 90% (18/20) |
+| dnSpyEx | MVVM, controls built in code, plug-in extensions | no | 3.6 s | yes | 57.1 (D) | 113 | 960 | 1339 | 95% (19/20) |
+| ScreenToGif | plain WPF, custom controls, heavy code-behind | no | 0.8 s | yes | 69 (C) | 61 | 1091 | 1407 | 100% (20/20) |
+| Snoop | plain WPF, custom controls, tool windows | no | 0.4 s | yes | 65.2 (C) | 24 | 141 | 220 | 95% (19/20) |
+| MahApps.Metro demo | themed control library, custom window chrome | no | 0.3 s | yes | 47.7 (D) | 38 | 709 | 1154 | 100% (20/20) |
+| MaterialDesignInXamlToolkit demo | themed control library, MVVM | no | 0.3 s | yes | 49.8 (D) | 53 | 1174 | 1594 | 95% (19/20) |
+| HandyControl demo | themed control library, MVVM, shared projects | no | 0.3 s | yes | 41.3 (D) | 137 | 1023 | 1558 | 100% (20/20) |
+| WPF UI gallery (lepoco/wpfui) | themed control library, MVVM, navigation pages | no | 0.3 s | yes | 48.4 (D) | 82 | 402 | 353 | 95% (19/20) |
+| Microsoft WPF-Samples | plain WPF, x:Uid localization, hundreds of small samples | no | 1.2 s | yes | 68.7 (C) | 506 | 2942 | 3512 | 95% (19/20) |
+| NuGet Package Explorer | MVVM, plain WPF | no | 0.3 s | yes | 61.7 (C) | 24 | 261 | 329 | 100% (20/20) |
+| Playnite (desktop app) | MVVM, themes where views live in styles | no | 0.4 s | yes | 52.2 (D) | 66 | 882 | 1338 | 100% (20/20) |
+| **All 11 apps** | | 0 crashes | 8.5 s | | | 1208 | 9674 | 12948 | **97%** (213/220) |
 
 The low scores are expected: open-source WPF apps rarely set AutomationIds (ILSpy and Snoop set none at all).
 
@@ -102,14 +106,14 @@ The low scores are expected: open-source WPF apps rarely set AutomationIds (ILSp
 
 | Rule | Problems (all apps) | Hand-checked | Precision |
 |---|---:|---:|---:|
-| WT001 Control has no AutomationId | 6592 | 98 | 99% |
-| WT002 ID is borrowed from x:Name | 2474 | 36 | 100% |
-| WT003 ID looks machine-generated | 45 | 0 | – |
+| WT001 Control has no AutomationId | 6602 | 107 | 99% |
+| WT002 ID is borrowed from x:Name | 2474 | 33 | 100% |
+| WT003 ID looks machine-generated | 35 | 0 | – |
 | WT004 Same ID used more than once | 1 | 0 | – |
 | WT005 List rows can't be told apart | 742 | 14 | 93% |
-| WT006 Custom control is invisible to test tools | 71 | 3 | 0% |
+| WT006 Custom control is invisible to test tools | 72 | 3 | 0% |
 | WT007 ID is set on an element test tools can't see | 16 | 2 | 100% |
-| WT008 Control has no readable name | 3058 | 67 | 88% |
+| WT008 Control has no readable name | 3006 | 61 | 97% |
 
 The sample is random, so rare rules got few or no checks. WT006 was looked at more closely below.
 
@@ -119,7 +123,7 @@ The sample is random, so rare rules got few or no checks. WT006 was looked at mo
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
 | MahApps.Metro demo | 257 | 104 | 100% | 0 | 89% (62/70) | 100% | 199 (114 elements) | 100% |
 | MaterialDesignInXamlToolkit demo | 73 | 18 | 100% | 0 | 67% (8/12) | 100% | 88 (46 elements) | 100% |
-| WPF-Samples GlobalizationHomepage (uses x:Uid) | 100 | 42 | 100% | 0 | 95% (39/41) | 74% | 198 (70 elements) | 100% |
+| WPF-Samples GlobalizationHomepage (uses x:Uid) | 100 | 42 | 100% | 0 | 95% (39/41) | 100% | 198 (70 elements) | 100% |
 | WPF UI gallery | 95 | 16 | 100% | 0 | 38% (5/13) | 100% | 81 (32 elements) | 100% |
 
 How to read it:
@@ -133,7 +137,8 @@ How to read it:
   README's Known limits say. Controls with no ID and no name can't be paired with the XAML at all, and are left out of this
   column (38 on MahApps' first screen, mostly icon-only buttons).
 - **Source scan: same ID:** when it did find the control, whether it expected the same AutomationId UI Automation reported.
-  The one app below 100% is explained by the `x:Uid` on hyperlinks issue below.
+  In the first run WPF-Samples was at 74%, because 10 hyperlinks' `x:Uid` was counted as their ID. After the fix below, the
+  Windows run measured 100% (39 of 39).
 - **Locators:** every locator the tool recommended (by ID, by ID inside a parent, by name and type, and by position) found
   exactly the intended element. No source-scan false alarms ("no ID" when the control does have one) were found on these screens.
 
@@ -147,32 +152,56 @@ Full details, including examples of every disagreement, are in [`benchmark/resul
   `encoding="Windows-1252"`; modern .NET can't read that until the code pages are registered, so the scan noted them as
   unreadable and left them out. The source scanner now registers them, with a test.
 
-### Follow-ups (accuracy problems, not fixed here)
+### Fixed after the first run
+
+These three were found by the first run and fixed in the source scan afterwards, each with tests. Together they removed
+6 of the 13 false alarms in the hand-checked sample. Because the fixes changed the problem lists of five apps, those apps'
+samples were redrawn, and the 46 new picks were checked by hand in the same way.
+
+- **`Label Target="SomeName"` is now understood.** WPF accepts a plain element name in `Target`, as well as
+  `{Binding ElementName=...}` and `{x:Reference ...}`, and the label then names the control. The scan used to report
+  "no readable name" for these boxes: 29 problems, most of them in NuGet Package Explorer.
+- **A menu item with only a built-in `Command` is now named after the command.** A `MenuItem` with no `Header` and
+  `Command="ApplicationCommands.Copy"` (or `Command="Copy"`, or `{x:Static ApplicationCommands.Copy}`) shows the command's
+  text, "Copy". This works for WPF's own command classes (`ApplicationCommands`, `NavigationCommands`, `EditingCommands`,
+  `ComponentCommands`, `MediaCommands`), with the English texts taken from WPF's source; the app's own commands still need a `Header`. 23 "no readable name" problems went.
+- **`x:Uid` no longer counts as the AutomationId of a `Hyperlink`.** The live test showed 10 hyperlinks on the WPF-Samples
+  globalization page with an `x:Uid` and no ID in UI Automation, and
+  [WPF's source](https://github.com/dotnet/wpf/blob/main/src/Microsoft.DotNet.Wpf/src/PresentationFramework/System/Windows/Automation/Peers/FrameworkContentElementAutomationPeer.cs)
+  confirms that hyperlinks (and `Table`, `TableCell`) skip `x:Uid` but do use `x:Name`. The 10 are now reported as
+  "no AutomationId" instead of "ID looks machine-generated". Other text parts, such as `Run` and `Paragraph`, are never shown to
+  UI Automation as elements of their own, so they are no longer listed. No app here has a named hyperlink on a scanned screen,
+  so the `x:Name` part rests on WPF's source and a unit test, not a live test.
+
+Fixed separately, after CI on Linux gave a different dnSpyEx report from macOS:
+
+- **The report could depend on the order the disk lists files in.** When two C# classes have the same name, the first one read
+  wins, so dnSpyEx's `ZoomingUIElement` was reported from a different file on Linux. C# files are now read in a fixed order,
+  with a test. This also added one WT006 in Playnite, whose `<cv:MainWindow>` had been mistaken for its window class. Classes
+  are still matched by short name only, so a wrong match between same-named classes remains possible.
+
+### Follow-ups (accuracy problems, not fixed yet)
 
 The scoring rules were left alone; these are the problems worth fixing next, most valuable first.
 
-1. **`Label Target="SomeName"` isn't understood.** WPF accepts a plain name in `Target`, and the label then names the control.
-   The scan only understands `Target="{Binding ElementName=SomeName}"`, so it reports "no readable name" on correctly labelled
-   boxes: 4 of the 5 false alarms in NuGet Package Explorer, and about 29 problems across the apps.
-2. **Names set by styles aren't seen.** MaterialDesign's text box, combo box and password box styles set
+1. **Names set by styles aren't seen.** MaterialDesign's text box, combo box and password box styles set
    `AutomationProperties.Name` from `HintAssist.Hint`, and some app styles set `Content` (dnSpyEx's `EllipsisButton` sets
    `"..."`). The scan reports "no readable name" for these: about 103 problems in the MaterialDesign demo alone.
-3. **A menu item with only a `Command` gets the command's text as its name** (for example `Command="ApplicationCommands.Copy"`
-   shows "Copy"). The scan reports it as unnamed: about 19 problems.
-4. **`x:Uid` (and probably `x:Name`) on a `Hyperlink` doesn't become its AutomationId.** Hyperlinks are content elements, and
-   WPF only falls back to `x:Uid` / `x:Name` for real controls. The live test showed it: 10 hyperlinks on the WPF-Samples
-   globalization page have an `x:Uid` that the source scan counts as their ID, but UI Automation shows no ID for them.
-5. **WT006 "custom control is invisible" over-reports.** All 3 sampled cases were wrappers or display-only controls whose
+2. **WT006 "custom control is invisible" over-reports.** All 3 sampled cases were wrappers or display-only controls whose
    insides are still visible to tests (ILSpy's `SharpTreeNodeView`, Snoop's value editors, WPF UI's `TypographyControl`).
-   Looking over all 71, most are layout panels, page headers and editor shells of this kind; a few are real, such as dnSpyEx's
+   Looking over all 71 in the first run, most are layout panels, page headers and editor shells of this kind; a few are real, such as dnSpyEx's
    window buttons built on `ButtonBase` and ScreenToGif's `ColorBox`. The rule should treat controls that contain other controls
    differently from controls a test must click. Also, the message "It isn't used in any XAML file" was wrong 33 times out of 46:
    those classes are used inside templates, styles or resource dictionaries, which the usage count skips.
-6. **Markup is shown as if it were a name** in messages and suggested IDs, for example
+3. **Markup is shown as if it were a name** in messages and suggested IDs, for example
    `MenuItem "{x:Static properties:Resources.Theme}"` or `"{StaticResource RemoveIcon}"` (taken from a button's icon), and
    a menu header written as `<AccessText>D</AccessText>elete` is shown as "elete". This doesn't change the score, but the
-   messages and suggested IDs look odd.
-7. **The live benchmark only reads each app's first screen** (about 180 controls in all). Opening more screens (tabs, navigation
+   messages and suggested IDs look odd. The `Label Target` fix makes a few more of these visible, because a label whose
+   text is a translated resource now names its control with that markup.
+4. **An empty combo box is reported as having rows that can't be told apart.** A `ComboBox` with no items, no
+   `ItemsSource` and no name for code to fill it has no rows at all. This is 3 of the 30 such combo boxes reported in
+   WPF-Samples; the two that were hand-checked (one in each run) were false alarms.
+5. **The live benchmark only reads each app's first screen** (about 180 controls in all). Opening more screens (tabs, navigation
    pages, dialogs) would make the live numbers stronger.
 
 ### Expected limits, confirmed

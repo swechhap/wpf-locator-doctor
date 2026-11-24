@@ -1,4 +1,5 @@
 using WpfLocatorDoctor.Core.Model;
+using WpfLocatorDoctor.Core.Rules;
 using WpfLocatorDoctor.Core.Source;
 
 namespace WpfLocatorDoctor.Core.Tests;
@@ -47,6 +48,33 @@ public class XamlSourceScannerTests
         var d = Single(r, e => e.Name == "D");
         Assert.Equal(IdOrigin.None, d.IdOrigin);
         Assert.Null(d.AutomationId);
+    }
+
+    [Fact]
+    public void A_hyperlink_uses_x_Name_but_not_x_Uid_and_text_parts_are_not_listed()
+    {
+        // WPF's FrameworkContentElementAutomationPeer skips x:Uid (also seen live on WPF-Samples' GlobalizationHomepage) but uses x:Name.
+        var r = Scan("""
+            <TextBlock>
+              <Hyperlink x:Uid="Hyperlink_1" NavigateUri="https://example.com">Uid link</Hyperlink>
+              <Hyperlink x:Uid="Hyperlink_3" x:Name="NamedLink">Named link</Hyperlink>
+              <Hyperlink AutomationProperties.AutomationId="HelpLink" x:Uid="Hyperlink_2">Help</Hyperlink>
+              <Run x:Name="StatusRun" Text="Ready"/>
+            </TextBlock>
+            """);
+
+        var uidLink = Single(r, e => e.Name == "Uid link");
+        Assert.Equal((null, IdOrigin.None), (uidLink.AutomationId, uidLink.IdOrigin));
+        Assert.True(uidLink.IsInteractive);
+
+        var namedLink = Single(r, e => e.Name == "Named link");
+        Assert.Equal(("NamedLink", IdOrigin.XName), (namedLink.AutomationId, namedLink.IdOrigin));
+
+        var help = Single(r, e => e.Name == "Help");
+        Assert.Equal(("HelpLink", IdOrigin.Explicit), (help.AutomationId, help.IdOrigin));
+
+        // UI Automation never shows a Run as an element of its own.
+        Assert.DoesNotContain(r.Screens.Single().Elements, e => e.Kind == "Run");
     }
 
     [Fact]
@@ -202,6 +230,73 @@ public class XamlSourceScannerTests
         Assert.False(icon.HasName);
         Assert.Equal("Refresh", icon.Hint);
     }
+
+    [Fact]
+    public void Label_Target_can_be_a_plain_element_name()
+    {
+        var r = Scan("""
+            <StackPanel>
+              <Label Content="_Id:" Target="IdBox"/>
+              <TextBox x:Name="IdBox"/>
+              <Label Content="_Version:" Target="{x:Reference VersionBox}"/>
+              <TextBox x:Name="VersionBox"/>
+              <Label Content="Not a name" Target="{Binding SomeProperty}"/>
+              <TextBox x:Name="OtherBox"/>
+            </StackPanel>
+            """);
+
+        Assert.Equal("Id", Single(r, e => e.XName == "IdBox").Name);
+        Assert.Equal("Version", Single(r, e => e.XName == "VersionBox").Name);
+        Assert.False(Single(r, e => e.XName == "OtherBox").HasName);
+    }
+
+    [Fact]
+    public void Menu_item_without_a_header_is_named_by_a_built_in_command()
+    {
+        var r = Scan("""
+            <Menu>
+              <MenuItem AutomationProperties.AutomationId="Copy" Command="ApplicationCommands.Copy"/>
+              <MenuItem AutomationProperties.AutomationId="Undo" Command="Undo"/>
+              <MenuItem AutomationProperties.AutomationId="SelectAll" Command="{x:Static ApplicationCommands.SelectAll}"/>
+              <MenuItem AutomationProperties.AutomationId="Back" Command="NavigationCommands.BrowseBack"/>
+              <MenuItem AutomationProperties.AutomationId="Header" Header="_Paste here" Command="Paste"/>
+              <MenuItem AutomationProperties.AutomationId="Mine" Command="local:AppCommands.Export"/>
+              <MenuItem AutomationProperties.AutomationId="Bound" Command="{Binding ExportCommand}"/>
+            </Menu>
+            """);
+
+        Assert.Equal("Copy", Single(r, e => e.AutomationId == "Copy").Name);
+        Assert.Equal("Undo", Single(r, e => e.AutomationId == "Undo").Name);
+        Assert.Equal("Select All", Single(r, e => e.AutomationId == "SelectAll").Name);
+        Assert.Equal("Back", Single(r, e => e.AutomationId == "Back").Name);
+        Assert.Equal("Paste here", Single(r, e => e.AutomationId == "Header").Name);
+        Assert.False(Single(r, e => e.AutomationId == "Mine").HasName);
+        Assert.False(Single(r, e => e.AutomationId == "Bound").HasName);
+    }
+
+    [Fact]
+    public void A_button_does_not_take_its_name_from_a_command()
+    {
+        var r = Scan("""<Button AutomationProperties.AutomationId="CopyButton" Command="ApplicationCommands.Copy"/>""");
+        Assert.False(Single(r, e => e.AutomationId == "CopyButton").HasName);
+    }
+
+    [Theory]
+    [InlineData("Close", "Close")]
+    [InlineData("ApplicationCommands.Close", "Close")]
+    [InlineData("{x:Static Member=MediaCommands.TogglePlayPause}", "Toggle Play Pause")]
+    [InlineData("{x:Static local:Commands.Close}", null)]
+    [InlineData("{x:Static Close}", null)]
+    [InlineData("NavigationCommands.BrowseHome", "Home")]
+    [InlineData("SelectToPageUp", "Select To PageUp")]
+    [InlineData("EditingCommands.ToggleBold", "ToggleBold")]
+    [InlineData("NoSuchCommand", null)]
+    [InlineData("ApplicationCommands.NoSuchCommand", null)]
+    [InlineData("hc:ControlCommands.Close", null)]
+    [InlineData("{Binding CloseCommand}", null)]
+    [InlineData("", null)]
+    public void Built_in_command_text_is_recognised(string command, string? expected) =>
+        Assert.Equal(expected, BuiltInCommands.TextOf(command));
 
     [Fact]
     public void Custom_control_without_peer_is_invisible_and_counted_as_interactive()

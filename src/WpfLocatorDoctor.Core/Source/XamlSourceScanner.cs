@@ -73,6 +73,22 @@ public sealed partial class XamlSourceScanner
     [GeneratedRegex(@"^\{\s*x:Type\s+(?:\w+:)?(\w+)\s*\}$")]
     private static partial Regex XTypeReference();
 
+    [GeneratedRegex(@"^[A-Za-z_]\w*$")]
+    private static partial Regex PlainName();
+
+    /// <summary>
+    /// Text and document parts that WPF never shows to UI Automation as elements of their own,
+    /// so neither x:Uid nor x:Name gives a test anything to find.
+    /// </summary>
+    private static readonly HashSet<string> TextWithoutPeer = new(StringComparer.Ordinal)
+    {
+        "Run", "Span", "Bold", "Italic", "Underline", "LineBreak", "InlineUIContainer", "Paragraph", "Section",
+        "List", "ListItem", "TableRowGroup", "TableRow", "Figure", "Floater", "BlockUIContainer",
+    };
+
+    /// <summary>Content elements that UI Automation does show. WPF uses their x:Name as the AutomationId, but not their x:Uid.</summary>
+    private static readonly HashSet<string> TextWithPeer = new(StringComparer.Ordinal) { "Hyperlink", "Table", "TableCell" };
+
     private readonly record struct Ctx(
         string[] Path,
         bool Repeated,
@@ -130,7 +146,9 @@ public sealed partial class XamlSourceScanner
 
         var csFiles = EnumerateFiles(root, "*.cs")
             .Where(f => !f.EndsWith(".g.cs", StringComparison.OrdinalIgnoreCase) && !f.EndsWith(".g.i.cs", StringComparison.OrdinalIgnoreCase))
-            .Select(f => (f, System.IO.Path.GetRelativePath(root, f)));
+            .Select(f => (Path: f, DisplayPath: System.IO.Path.GetRelativePath(root, f)))
+            // The first class with a given name wins, so the order must not depend on the disk or operating system.
+            .OrderBy(f => f.DisplayPath.Replace('\\', '/'), StringComparer.Ordinal);
         facts.CustomControls = CodeBehindAnalyzer.Analyze(csFiles);
         result.CustomControls.AddRange(facts.CustomControls.Values.Where(c => c.Status != PeerStatus.Unknown));
 
@@ -260,10 +278,13 @@ public sealed partial class XamlSourceScanner
             var name = e.Attribute(XName.Get("Name", XamlNs))?.Value ?? e.Attribute("Name")?.Value;
             if (!string.IsNullOrEmpty(name)) namedText.TryAdd(name, text);
 
+            // WPF accepts Target="{Binding ElementName=Box}", Target="{x:Reference Box}" and plain Target="Box".
             if (e.Name.LocalName == "Label" && e.Attribute("Target")?.Value is { } target)
             {
                 var m = ElementReference().Match(target);
-                if (m.Success) labelTargets.TryAdd(m.Groups[1].Success ? m.Groups[1].Value : m.Groups[2].Value, text);
+                var targetName = m.Success ? (m.Groups[1].Success ? m.Groups[1].Value : m.Groups[2].Value)
+                    : PlainName().IsMatch(target.Trim()) ? target.Trim() : null;
+                if (targetName is not null) labelTargets.TryAdd(targetName, text);
             }
         }
 
@@ -429,7 +450,10 @@ public sealed partial class XamlSourceScanner
         return li.HasLineInfo() ? new SourceLocation(display, li.LineNumber, li.LinePosition) : new SourceLocation(display, 0, 0);
     }
 
-    /// <summary>WPF's own order: AutomationProperties.AutomationId, then x:Uid, then x:Name.</summary>
+    /// <summary>
+    /// WPF's own order: AutomationProperties.AutomationId, then x:Uid, then x:Name. A Hyperlink (and Table, TableCell)
+    /// skips x:Uid, as WPF's FrameworkContentElementAutomationPeer does.
+    /// </summary>
     internal static (string? Id, IdOrigin Origin) GetIdInfo(XElement el)
     {
         var explicitId = el.Attribute("AutomationProperties.AutomationId")?.Value;
@@ -441,8 +465,11 @@ public sealed partial class XamlSourceScanner
             return (explicitId, IdHeuristics.LooksGenerated(explicitId) ? IdOrigin.GeneratedLooking : IdOrigin.Explicit);
         }
 
+        var isWpf = el.Name.NamespaceName == WpfNs;
+        if (isWpf && TextWithoutPeer.Contains(el.Name.LocalName)) return (null, IdOrigin.None);
+
         var uid = el.Attribute(XName.Get("Uid", XamlNs))?.Value;
-        if (!string.IsNullOrWhiteSpace(uid))
+        if (!string.IsNullOrWhiteSpace(uid) && !(isWpf && TextWithPeer.Contains(el.Name.LocalName)))
             return (uid, IdHeuristics.LooksGenerated(uid) ? IdOrigin.GeneratedLooking : IdOrigin.Uid);
 
         var name = el.Attribute(XName.Get("Name", XamlNs))?.Value ?? el.Attribute("Name")?.Value;
@@ -524,7 +551,10 @@ public sealed partial class XamlSourceScanner
         }
 
         var found = FindText(el, 0);
-        return found is null ? null : IdHeuristics.CleanLabel(found);
+        if (found is not null) return IdHeuristics.CleanLabel(found);
+
+        // A menu item without a header shows the text of its command, when that is one of WPF's own commands.
+        return effective == "MenuItem" ? BuiltInCommands.TextOf(el.Attribute("Command")?.Value) : null;
     }
 
     /// <summary>Controls whose readable name comes from what they display.</summary>

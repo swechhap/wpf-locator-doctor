@@ -1,12 +1,12 @@
 # WPF UI gallery (lepoco/wpfui) @ 35eae0e697, scan path: src/Wpf.Ui.Gallery
-score 48.2  grade D  elements 584  controls 402  screens 82
+score 48.4  grade D  elements 584  controls 402  screens 82
 check coverage       1.2%  5 of 402 controls have an AutomationId.
 check quality         70%  5 borrowed from x:Name.
 check uniqueness    80.6%  0 ID(s) used more than once; 0 of 11 data lists have identifiable rows.
 check stability      n/a%  Not measured. Run again with --baseline <previous report.json> to compare.
 check visibility    66.9%  133 invisible control(s), 0 opaque area(s).
-check names         72.4%  194 of 268 controls have a readable name.
-problems WT001=264  WT002=5  WT005=11  WT006=4  WT008=74
+check names         74.3%  199 of 268 controls have a readable name.
+problems WT001=264  WT002=5  WT005=11  WT006=4  WT008=69
 
 WT006	high	Controls/ControlExample.xaml.cs:11	ControlExample derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 114 time(s) in XAML.
 WT006	high	Controls/GalleryNavigationPresenter.xaml.cs:8	GalleryNavigationPresenter derives from Control and doesn't override OnCreateAutomationPeer, so test tools can't see it. It is used 11 time(s) in XAML.
@@ -350,16 +350,11 @@ WT008	low	Views/Windows/SandboxWindow.xaml:84	ui:MenuItem has no readable name.
 WT001	high	Views/Windows/SandboxWindow.xaml:87	ui:MenuItem has no AutomationId.
 WT008	low	Views/Windows/SandboxWindow.xaml:87	ui:MenuItem has no readable name.
 WT001	high	Views/Windows/SandboxWindow.xaml:102	ui:DropDownButton "Hello" has no AutomationId.
-WT001	high	Views/Windows/SandboxWindow.xaml:105	MenuItem has no AutomationId.
-WT008	low	Views/Windows/SandboxWindow.xaml:105	MenuItem has no readable name.
-WT001	high	Views/Windows/SandboxWindow.xaml:106	MenuItem has no AutomationId.
-WT008	low	Views/Windows/SandboxWindow.xaml:106	MenuItem has no readable name.
-WT001	high	Views/Windows/SandboxWindow.xaml:108	MenuItem has no AutomationId.
-WT008	low	Views/Windows/SandboxWindow.xaml:108	MenuItem has no readable name.
-WT001	high	Views/Windows/SandboxWindow.xaml:109	MenuItem has no AutomationId.
-WT008	low	Views/Windows/SandboxWindow.xaml:109	MenuItem has no readable name.
-WT001	high	Views/Windows/SandboxWindow.xaml:110	MenuItem has no AutomationId.
-WT008	low	Views/Windows/SandboxWindow.xaml:110	MenuItem has no readable name.
+WT001	high	Views/Windows/SandboxWindow.xaml:105	MenuItem "Undo" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:106	MenuItem "Redo" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:108	MenuItem "Cut" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:109	MenuItem "Copy" has no AutomationId.
+WT001	high	Views/Windows/SandboxWindow.xaml:110	MenuItem "Paste" has no AutomationId.
 WT001	high	Views/Windows/SandboxWindow.xaml:111	MenuItem "OCR Paste" has no AutomationId.
 WT001	high	Views/Windows/SandboxWindow.xaml:113	MenuItem "Isolate Selected Text" has no AutomationId.
 WT001	high	Views/Windows/SandboxWindow.xaml:114	MenuItem "Select Line" has no AutomationId.

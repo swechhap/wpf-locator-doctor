@@ -137,6 +137,7 @@ WT005	medium	dnSpy/dnSpy/Hex/Commands/SelectDlg.xaml:75	Rows in ComboBox have no
 WT008	low	dnSpy/dnSpy/Hex/Commands/SelectDlg.xaml:75	ComboBox has no readable name.
 WT001	high	dnSpy/dnSpy/Hex/Commands/SelectDlg.xaml:98	Button "{x:Static p:dnSpy_Resources.Button_OK}" has no AutomationId.
 WT001	high	dnSpy/dnSpy/Hex/Commands/SelectDlg.xaml:99	Button "{x:Static p:dnSpy_Resources.Button_Canc…" has no AutomationId.
+WT006	medium	dnSpy/dnSpy/Hex/Editor/HexIntraTextAdornmentService.cs:322	ZoomingUIElement derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
 WT001	high	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:176	ToggleButton has no AutomationId.
 WT008	low	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:176	ToggleButton has no readable name.
 WT002	low	dnSpy/dnSpy/Hex/Editor/Search/SearchControl.xaml:178	TextBox [searchStringTextBox] gets its ID "searchStringTextBox" from x:Name.
@@ -219,7 +220,6 @@ WT002	low	dnSpy/dnSpy/Settings/Dialog/AppSettingsDlg.xaml:356	TextBox [searchTex
 WT008	low	dnSpy/dnSpy/Settings/Dialog/AppSettingsDlg.xaml:356	TextBox [searchTextBox] has no readable name.
 WT001	high	dnSpy/dnSpy/Settings/Dialog/AppSettingsDlg.xaml:370	Button "{x:Static p:dnSpy_Resources.Button_OK}" has no AutomationId.
 WT001	high	dnSpy/dnSpy/Settings/Dialog/AppSettingsDlg.xaml:371	Button "{x:Static p:dnSpy_Resources.Button_Canc…" has no AutomationId.
-WT006	medium	dnSpy/dnSpy/Text/Editor/IntraTextAdornmentService.cs:282	ZoomingUIElement derives from ContentControl and doesn't override OnCreateAutomationPeer, so test tools can't see it. It isn't used in any XAML file (it may be created in code).
 WT001	high	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:169	ToggleButton has no AutomationId.
 WT008	low	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:169	ToggleButton has no readable name.
 WT002	low	dnSpy/dnSpy/Text/Editor/Search/SearchControl.xaml:171	TextBox [searchStringTextBox] gets its ID "searchStringTextBox" from x:Name.

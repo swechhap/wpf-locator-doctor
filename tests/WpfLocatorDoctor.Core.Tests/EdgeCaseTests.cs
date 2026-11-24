@@ -56,6 +56,17 @@ public sealed class EdgeCaseTests : IDisposable
     }
 
     [Fact]
+    public void Classes_with_the_same_name_are_reported_from_the_first_file_whatever_order_the_disk_lists_them()
+    {
+        const string code = "using System.Windows.Controls; namespace N; class Zoomer : ContentControl { }";
+        foreach (var folder in new[] { "C", "A", "B" }) Write($"{folder}/Service.cs", code);
+
+        var control = Assert.Single(new XamlSourceScanner().Scan(_root).CustomControls);
+
+        Assert.Equal(Path.Combine("A", "Service.cs"), control.Location!.File);
+    }
+
+    [Fact]
     public void A_baseline_with_duplicate_screen_names_still_loads()
     {
         var old = new Scorecard

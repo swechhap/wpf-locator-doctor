@@ -228,8 +228,8 @@ GitHub Actions builds and tests on Linux and Windows for every push and pull req
 - The live scan only sees open windows and the list rows on screen. Open other screens and scan again.
 - The live scan runs in CI on every push: it starts the practice app on Windows, scans it, and fails the build if the scan breaks.
 - A [benchmark on 11 open-source WPF apps](docs/benchmark.md) (ILSpy, dnSpyEx, MahApps.Metro, MaterialDesign and others) found
-  no crashes, 94% of reported problems real, and live scans and recommended locators that matched UI Automation every time.
-  Its weak spots: readable names set by styles or `Label Target="Name"` can be reported as missing, and the
+  no crashes, 97% of reported problems real, and live scans and recommended locators that matched UI Automation every time.
+  Its weak spots: readable names set by a control library's styles can be reported as missing, and the
   "invisible custom control" check over-reports controls that only wrap other controls. Details and follow-ups are on that page.
 
 ## License

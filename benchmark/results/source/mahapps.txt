@@ -5,8 +5,8 @@ check quality         70%  77 borrowed from x:Name.
 check uniqueness    60.2%  0 ID(s) used more than once; 0 of 83 data lists have identifiable rows.
 check stability      n/a%  Not measured. Run again with --baseline <previous report.json> to compare.
 check visibility     100%  0 invisible control(s), 0 opaque area(s).
-check names         47.2%  326 of 690 controls have a readable name.
-problems WT001=632  WT002=77  WT005=83  WT006=1  WT008=364
+check names         47.7%  329 of 690 controls have a readable name.
+problems WT001=632  WT002=77  WT005=83  WT006=1  WT008=361
 
 WT002	low	ExampleViews/AutoSuggestBoxExample.xaml:56	TextBox [Log] gets its ID "Log" from x:Name.
 WT008	low	ExampleViews/AutoSuggestBoxExample.xaml:56	TextBox [Log] has no readable name.
@@ -773,12 +773,9 @@ WT008	low	ExampleViews/TextExamples.xaml:418	TextBox has no readable name.
 WT001	high	ExampleViews/TextExamples.xaml:423	TextBox has no AutomationId.
 WT008	low	ExampleViews/TextExamples.xaml:423	TextBox has no readable name.
 WT001	high	ExampleViews/TextExamples.xaml:426	MenuItem "Something of my own" has no AutomationId.
-WT001	high	ExampleViews/TextExamples.xaml:428	MenuItem has no AutomationId.
-WT008	low	ExampleViews/TextExamples.xaml:428	MenuItem has no readable name.
-WT001	high	ExampleViews/TextExamples.xaml:429	MenuItem has no AutomationId.
-WT008	low	ExampleViews/TextExamples.xaml:429	MenuItem has no readable name.
-WT001	high	ExampleViews/TextExamples.xaml:430	MenuItem has no AutomationId.
-WT008	low	ExampleViews/TextExamples.xaml:430	MenuItem has no readable name.
+WT001	high	ExampleViews/TextExamples.xaml:428	MenuItem "Cut" has no AutomationId.
+WT001	high	ExampleViews/TextExamples.xaml:429	MenuItem "Copy" has no AutomationId.
+WT001	high	ExampleViews/TextExamples.xaml:430	MenuItem "Paste" has no AutomationId.
 WT001	high	ExampleViews/TextExamples.xaml:436	TextBox has no AutomationId.
 WT008	low	ExampleViews/TextExamples.xaml:436	TextBox has no readable name.
 WT001	high	ExampleViews/TextExamples.xaml:439	TextBox has no AutomationId.

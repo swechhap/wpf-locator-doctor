@@ -1,12 +1,12 @@
 # Microsoft WPF-Samples @ 811d01e95c, scan path: .
-score 68.7  grade C  elements 4629  controls 2942  screens 506
-check coverage      40.4%  1190 of 2942 controls have an AutomationId.
-check quality       67.7%  1145 borrowed from x:Name, 45 look generated.
-check uniqueness    93.5%  0 ID(s) used more than once; 0 of 136 data lists have identifiable rows.
+score 68.7  grade C  elements 4621  controls 2942  screens 506
+check coverage      40.1%  1180 of 2942 controls have an AutomationId.
+check quality       68.2%  1145 borrowed from x:Name, 35 look generated.
+check uniqueness    93.4%  0 ID(s) used more than once; 0 of 136 data lists have identifiable rows.
 check stability      n/a%  Not measured. Run again with --baseline <previous report.json> to compare.
 check visibility    95.3%  137 invisible control(s), 0 opaque area(s).
-check names         78.5%  2066 of 2633 controls have a readable name.
-problems WT001=1617  WT002=1145  WT003=45  WT005=136  WT006=6  WT007=2  WT008=567
+check names         78.7%  2072 of 2633 controls have a readable name.
+problems WT001=1627  WT002=1145  WT003=35  WT005=136  WT006=6  WT007=2  WT008=561
 note Could not read Documents/Fixed Documents/DocumentStructure/content/fixedpage1_structure.xaml: '<', hexadecimal value 0x3C, is an invalid attribute character. Line 6, position 3.
 
 WT001	high	Accessibility/FindText/FindText/content/flowdocumentsample2.xaml:23	Hyperlink "- Donald E. Knuth" has no AutomationId.
@@ -522,24 +522,18 @@ WT002	low	Documents/Fixed Documents/DocumentSerialization/ThumbViewer.xaml:608	M
 WT002	low	Documents/Fixed Documents/DocumentSerialization/ThumbViewer.xaml:609	MenuItem "Add Comment..." gets its ID "cm_Comment" from x:Name.
 WT001	high	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:19	MenuItem "File" has no AutomationId.
 WT001	high	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:20	MenuItem "Open..." has no AutomationId.
-WT002	low	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:21	MenuItem [menuFileClose] gets its ID "menuFileClose" from x:Name.
-WT008	low	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:21	MenuItem [menuFileClose] has no readable name.
+WT002	low	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:21	MenuItem "Close" gets its ID "menuFileClose" from x:Name.
 WT002	low	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:24	MenuItem "Add Structure..." gets its ID "menuFileAddStructure" from x:Name.
 WT002	low	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:27	MenuItem "Print..." gets its ID "menuFilePrint" from x:Name.
 WT001	high	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:30	MenuItem "Exit" has no AutomationId.
 WT001	high	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:33	MenuItem "View" has no AutomationId.
-WT002	low	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:34	MenuItem [menuViewIncreaseZoom] gets its ID "menuViewIncreaseZoom" from x:Name.
-WT008	low	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:34	MenuItem [menuViewIncreaseZoom] has no readable name.
-WT002	low	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:36	MenuItem [menuViewDecreaseZoom] gets its ID "menuViewDecreaseZoom" from x:Name.
-WT008	low	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:36	MenuItem [menuViewDecreaseZoom] has no readable name.
+WT002	low	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:34	MenuItem "Increase Zoom" gets its ID "menuViewIncreaseZoom" from x:Name.
+WT002	low	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:36	MenuItem "Decrease Zoom" gets its ID "menuViewDecreaseZoom" from x:Name.
 WT001	high	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:39	MenuItem "Previous Page" has no AutomationId.
 WT001	high	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:40	MenuItem "Next Page" has no AutomationId.
-WT001	high	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:41	MenuItem has no AutomationId.
-WT008	low	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:41	MenuItem has no readable name.
-WT001	high	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:42	MenuItem has no AutomationId.
-WT008	low	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:42	MenuItem has no readable name.
-WT001	high	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:44	MenuItem has no AutomationId.
-WT008	low	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:44	MenuItem has no readable name.
+WT001	high	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:41	MenuItem "First Page" has no AutomationId.
+WT001	high	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:42	MenuItem "Last Page" has no AutomationId.
+WT001	high	Documents/Fixed Documents/DocumentStructure/MainWindow.xaml:44	MenuItem "Copy" has no AutomationId.
 WT001	high	Documents/Flow Content/FlowContentProperty/MainWindow.xaml:21	Button "LeftToRight" has no AutomationId.
 WT001	high	Documents/Flow Content/FlowContentProperty/MainWindow.xaml:22	Button "RightToLeft" has no AutomationId.
 WT001	high	Documents/Flow Content/FlowDocumentNewsClient/Document.xaml:8	MenuItem "Adjust Readability" has no AutomationId.
@@ -2009,16 +2003,16 @@ WT003	medium	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:
 WT003	medium	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:241	Button "Licensing" has the ID "Button_24", which looks machine-generated.
 WT003	medium	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:242	Button "Careers" has the ID "Button_25", which looks machine-generated.
 WT003	medium	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:243	Button "Find a Partner" has the ID "Button_26", which looks machine-generated.
-WT003	medium	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:282	Hyperlink "Windows Vista" has the ID "Hyperlink_1", which looks machine-generated.
-WT003	medium	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:285	Hyperlink "Windows Mobile" has the ID "Hyperlink_2", which looks machine-generated.
-WT003	medium	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:288	Hyperlink "Clip Art" has the ID "Hyperlink_3", which looks machine-generated.
-WT003	medium	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:300	Hyperlink "CRM" has the ID "Hyperlink_4", which looks machine-generated.
-WT003	medium	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:303	Hyperlink "Analytics & Reporting" has the ID "Hyperlink_5", which looks machine-generated.
-WT003	medium	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:306	Hyperlink "Financial management" has the ID "Hyperlink_6", which looks machine-generated.
-WT003	medium	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:318	Hyperlink "What You Should Know About Zotob" has the ID "Hyperlink_7", which looks machine-generated.
-WT003	medium	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:321	Hyperlink "Protect Your PC" has the ID "Hyperlink_8", which looks machine-generated.
-WT003	medium	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:324	Hyperlink "Windows XP Service Pack 2" has the ID "Hyperlink_9", which looks machine-generated.
-WT003	medium	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:327	Hyperlink "Security Home" has the ID "Hyperlink_10", which looks machine-generated.
+WT001	high	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:282	Hyperlink "Windows Vista" has no AutomationId.
+WT001	high	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:285	Hyperlink "Windows Mobile" has no AutomationId.
+WT001	high	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:288	Hyperlink "Clip Art" has no AutomationId.
+WT001	high	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:300	Hyperlink "CRM" has no AutomationId.
+WT001	high	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:303	Hyperlink "Analytics & Reporting" has no AutomationId.
+WT001	high	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:306	Hyperlink "Financial management" has no AutomationId.
+WT001	high	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:318	Hyperlink "What You Should Know About Zotob" has no AutomationId.
+WT001	high	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:321	Hyperlink "Protect Your PC" has no AutomationId.
+WT001	high	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:324	Hyperlink "Windows XP Service Pack 2" has no AutomationId.
+WT001	high	Globalization and Localization/GlobalizationHomepage/HomePage.xaml:327	Hyperlink "Security Home" has no AutomationId.
 WT003	medium	Globalization and Localization/GlobalizationRunDialog/MainWindow.xaml:54	ComboBox [ComboBox_1] has the ID "ComboBox_1", which looks machine-generated.
 WT005	medium	Globalization and Localization/GlobalizationRunDialog/MainWindow.xaml:54	Rows in ComboBox [ComboBox_1] have no unique ID.
 WT008	low	Globalization and Localization/GlobalizationRunDialog/MainWindow.xaml:54	ComboBox [ComboBox_1] has no readable name.

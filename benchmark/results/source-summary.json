@@ -43,8 +43,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        4.18,
-        3.42
+        3.57,
+        3.34
       ],
       "deterministic": true,
       "score": 57.1,
@@ -78,8 +78,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.84,
-        0.79
+        0.78,
+        0.77
       ],
       "deterministic": true,
       "score": 69,
@@ -114,8 +114,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.43,
-        0.4
+        0.4,
+        0.39
       ],
       "deterministic": true,
       "score": 65.2,
@@ -150,7 +150,7 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.32,
+        0.3,
         0.3
       ],
       "deterministic": true,
@@ -185,7 +185,7 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.31,
+        0.29,
         0.29
       ],
       "deterministic": true,
@@ -220,8 +220,8 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.36,
-        0.32
+        0.32,
+        0.31
       ],
       "deterministic": true,
       "score": 41.3,
@@ -254,7 +254,7 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.32,
+        0.3,
         0.29
       ],
       "deterministic": true,
@@ -289,13 +289,13 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        1.5,
-        1.21
+        1.25,
+        1.22
       ],
       "deterministic": true,
       "score": 68.7,
       "grade": "C",
-      "elements": 4620,
+      "elements": 4621,
       "controls": 2942,
       "screens": 506,
       "problems": 3512,
@@ -326,7 +326,7 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.32,
+        0.3,
         0.3
       ],
       "deterministic": true,
@@ -360,7 +360,7 @@
       "crashed": false,
       "exitCode": 0,
       "seconds": [
-        0.47,
+        0.43,
         0.43
       ],
       "deterministic": true,

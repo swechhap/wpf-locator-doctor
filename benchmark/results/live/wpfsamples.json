@@ -24,8 +24,8 @@
     "liveScanControls": 42,
     "paired": 42,
     "pairedOutcome": {
-      "same ID": 31,
-      "both without an ID": 11
+      "both without an ID": 11,
+      "same ID": 31
     },
     "missedByLiveScan": 0,
     "onlyInLiveScan": 0,
@@ -43,11 +43,11 @@
       "can't be paired (no ID and no name)": 1,
       "ID not found in the XAML": 2,
       "same ID": 29,
-      "source scan expects an ID that UI Automation doesn't show": 10
+      "both without an ID": 10
     },
     "pairableControls": 41,
     "sourceSeesControl": 0.9512,
-    "idAgreement": 0.7436,
+    "idAgreement": 1.0,
     "groundTruthIdsFoundInXaml": 0.9355,
     "falseAlarms": 0,
     "examples": {
@@ -57,18 +57,6 @@
       "ID not found in the XAML": [
         "Button \"Back\" #BrowseBack",
         "Button \"Forward\" #BrowseForward"
-      ],
-      "source scan expects an ID that UI Automation doesn't show": [
-        "Hyperlink \"Windows Vista\" vs source Hyperlink id='Hyperlink_1' at HomePage.xaml:282",
-        "Hyperlink \"Windows Mobile\" vs source Hyperlink id='Hyperlink_2' at HomePage.xaml:285",
-        "Hyperlink \"Clip Art\" vs source Hyperlink id='Hyperlink_3' at HomePage.xaml:288",
-        "Hyperlink \"CRM\" vs source Hyperlink id='Hyperlink_4' at HomePage.xaml:300",
-        "Hyperlink \"Analytics & Reporting\" vs source Hyperlink id='Hyperlink_5' at HomePage.xaml:303",
-        "Hyperlink \"Financial management\" vs source Hyperlink id='Hyperlink_6' at HomePage.xaml:306",
-        "Hyperlink \"What You Should Know About Zotob\" vs source Hyperlink id='Hyperlink_7' at HomePage.xaml:318",
-        "Hyperlink \"Protect Your PC\" vs source Hyperlink id='Hyperlink_8' at HomePage.xaml:321",
-        "Hyperlink \"Windows XP Service Pack 2\" vs source Hyperlink id='Hyperlink_9' at HomePage.xaml:324",
-        "Hyperlink \"Security Home\" vs source Hyperlink id='Hyperlink_10' at HomePage.xaml:327"
       ]
     }
   },

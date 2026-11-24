@@ -1,4 +1,5 @@
 using WpfLocatorDoctor.Core.Model;
+using WpfLocatorDoctor.Core.Rules;
 using WpfLocatorDoctor.Core.Source;
 
 namespace WpfLocatorDoctor.Core.Tests;
@@ -50,13 +51,13 @@ public class XamlSourceScannerTests
     }
 
     [Fact]
-    public void Hyperlinks_and_other_content_elements_only_use_an_explicit_AutomationId()
+    public void A_hyperlink_uses_x_Name_but_not_x_Uid_and_text_parts_are_not_listed()
     {
-        // WPF does not fall back to x:Uid or x:Name for content elements (seen live on WPF-Samples' GlobalizationHomepage).
+        // WPF's FrameworkContentElementAutomationPeer skips x:Uid (also seen live on WPF-Samples' GlobalizationHomepage) but uses x:Name.
         var r = Scan("""
             <TextBlock>
               <Hyperlink x:Uid="Hyperlink_1" NavigateUri="https://example.com">Uid link</Hyperlink>
-              <Hyperlink x:Name="NamedLink">Named link</Hyperlink>
+              <Hyperlink x:Uid="Hyperlink_3" x:Name="NamedLink">Named link</Hyperlink>
               <Hyperlink AutomationProperties.AutomationId="HelpLink" x:Uid="Hyperlink_2">Help</Hyperlink>
               <Run x:Name="StatusRun" Text="Ready"/>
             </TextBlock>
@@ -67,13 +68,12 @@ public class XamlSourceScannerTests
         Assert.True(uidLink.IsInteractive);
 
         var namedLink = Single(r, e => e.Name == "Named link");
-        Assert.Equal((null, IdOrigin.None), (namedLink.AutomationId, namedLink.IdOrigin));
-        Assert.Equal("NamedLink", namedLink.XName);
+        Assert.Equal(("NamedLink", IdOrigin.XName), (namedLink.AutomationId, namedLink.IdOrigin));
 
         var help = Single(r, e => e.Name == "Help");
         Assert.Equal(("HelpLink", IdOrigin.Explicit), (help.AutomationId, help.IdOrigin));
 
-        // A Run is neither a control nor given an ID, so it isn't listed at all.
+        // UI Automation never shows a Run as an element of its own.
         Assert.DoesNotContain(r.Screens.Single().Elements, e => e.Kind == "Run");
     }
 
@@ -268,7 +268,7 @@ public class XamlSourceScannerTests
         Assert.Equal("Copy", Single(r, e => e.AutomationId == "Copy").Name);
         Assert.Equal("Undo", Single(r, e => e.AutomationId == "Undo").Name);
         Assert.Equal("Select All", Single(r, e => e.AutomationId == "SelectAll").Name);
-        Assert.Equal("Browse Back", Single(r, e => e.AutomationId == "Back").Name);
+        Assert.Equal("Back", Single(r, e => e.AutomationId == "Back").Name);
         Assert.Equal("Paste here", Single(r, e => e.AutomationId == "Header").Name);
         Assert.False(Single(r, e => e.AutomationId == "Mine").HasName);
         Assert.False(Single(r, e => e.AutomationId == "Bound").HasName);
@@ -287,11 +287,16 @@ public class XamlSourceScannerTests
     [InlineData("{x:Static Member=MediaCommands.TogglePlayPause}", "Toggle Play Pause")]
     [InlineData("{x:Static local:Commands.Close}", null)]
     [InlineData("{x:Static Close}", null)]
-    [InlineData("ApplicationCommands.NotACommand", null)]
+    [InlineData("NavigationCommands.BrowseHome", "Home")]
+    [InlineData("SelectToPageUp", "Select To PageUp")]
+    [InlineData("EditingCommands.ToggleBold", "ToggleBold")]
+    [InlineData("NoSuchCommand", null)]
+    [InlineData("ApplicationCommands.NoSuchCommand", null)]
+    [InlineData("hc:ControlCommands.Close", null)]
     [InlineData("{Binding CloseCommand}", null)]
     [InlineData("", null)]
     public void Built_in_command_text_is_recognised(string command, string? expected) =>
-        Assert.Equal(expected, XamlSourceScanner.BuiltInCommandText(command));
+        Assert.Equal(expected, BuiltInCommands.TextOf(command));
 
     [Fact]
     public void Custom_control_without_peer_is_invisible_and_counted_as_interactive()

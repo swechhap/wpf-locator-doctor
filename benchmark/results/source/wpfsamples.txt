@@ -1,5 +1,5 @@
 # Microsoft WPF-Samples @ 811d01e95c, scan path: .
-score 68.7  grade C  elements 4620  controls 2942  screens 506
+score 68.7  grade C  elements 4621  controls 2942  screens 506
 check coverage      40.1%  1180 of 2942 controls have an AutomationId.
 check quality       68.2%  1145 borrowed from x:Name, 35 look generated.
 check uniqueness    93.4%  0 ID(s) used more than once; 0 of 136 data lists have identifiable rows.

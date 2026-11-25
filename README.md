@@ -243,3 +243,4 @@ GitHub Actions builds and tests on Linux and Windows for every push and pull req
 ## License
 
 [MIT](LICENSE). Free to use, change and share, including in commercial projects.
+The downloads also contain libraries under their own licenses: see [THIRD-PARTY-NOTICES.txt](THIRD-PARTY-NOTICES.txt).

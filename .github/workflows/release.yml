@@ -66,6 +66,9 @@ jobs:
           dotnet pack src/WpfLocatorDoctor.Cli -c Release -p:Version=${{ steps.version.outputs.version }} -o out
           dotnet pack src/WpfLocatorDoctor.Mcp -c Release -p:Version=${{ steps.version.outputs.version }} -o out
 
+      - name: Check the packages carry their license files
+        run: python3 .github/scripts/check_licenses.py out/*.nupkg
+
       - name: Attach the packages to the release
         env:
           GH_TOKEN: ${{ github.token }}
@@ -131,6 +134,12 @@ jobs:
 
           $sha = (Get-FileHash wpf-locator-doctor-mcp-win-x64.mcpb -Algorithm SHA256).Hash.ToLowerInvariant()
           "sha256=$sha" >> $env:GITHUB_OUTPUT
+
+      - name: Check the downloads carry their license files
+        shell: pwsh
+        run: |
+          python .github/scripts/check_licenses.py wpf-locator-doctor-live-win-x64.zip wpf-locator-doctor-mcp-win-x64.zip wpf-locator-doctor-mcp-win-x64.mcpb
+          if ($LASTEXITCODE -ne 0) { exit $LASTEXITCODE }
 
       - name: Attach the downloads to the release
         shell: pwsh

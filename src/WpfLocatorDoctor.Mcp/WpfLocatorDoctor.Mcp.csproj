@@ -34,6 +34,8 @@
 
   <ItemGroup>
     <None Include="README.nuget.md" Pack="true" PackagePath="\" />
+    <!-- The licenses of this tool and of the libraries inside it go into every download (the package and the Windows builds). -->
+    <None Include="..\..\LICENSE;..\..\THIRD-PARTY-NOTICES.txt" Pack="true" PackagePath="\" CopyToPublishDirectory="PreserveNewest" />
     <None Include=".mcp/server.json" Pack="true" PackagePath="/.mcp/" />
   </ItemGroup>
 

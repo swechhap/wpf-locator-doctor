@@ -38,6 +38,14 @@ jobs:
           dotnet pack src/WpfLocatorDoctor.Cli -c Release -o packages
           dotnet pack src/WpfLocatorDoctor.Mcp -c Release -o packages
 
+      - name: Check every download carries its license files
+        if: runner.os == 'Linux'
+        run: |
+          for project in Cli Mcp; do
+            dotnet publish src/WpfLocatorDoctor.$project -c Release -f net10.0-windows -r win-x64 --self-contained false -o windows-downloads/$project
+          done
+          python3 .github/scripts/check_licenses.py packages/*.nupkg windows-downloads/*
+
       - uses: actions/upload-artifact@v4
         if: always()
         with:

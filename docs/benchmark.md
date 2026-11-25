@@ -11,12 +11,13 @@ by hand, and on every pull request that touches the scanning code. Everything it
 - **No crashes.** The source scan read all 11 apps (1,208 screens, 9,674 controls) in about 10 seconds in total, and gave
   the same report both times it was run. (macOS and Linux could differ when two classes shared a name; see
   [What we found](#what-we-found).)
-- **97% of the problems it reports are real.** Of 220 problems picked at random (20 per app) and checked by hand, 213 were
-  real and 7 were false alarms (with this sample size the true figure is very likely between 94% and 98%; each app counts
-  equally, however many problems it has). The first run found 94%; three fixes since then (see
+- **97% of the sampled problems were judged real.** Of 220 problems picked at random (20 per app), 213 were judged real and
+  7 false alarms. The only reviewer was the AI assistant that built this benchmark. The sample only looks for false alarms,
+  not for problems the scan misses. (If the labels are right, with this sample size the true figure is very likely between
+  94% and 98%; each app counts equally, however many problems it has.) The first run found 94%; three fixes since then (see
   [What we found](#what-we-found)) removed 6 of its 13 false alarms. 46 of the 220 were also redrawn, so the two figures are
   not an exact like-for-like comparison.
-  "Control has no AutomationId", the most common problem, was right 106 times out of 107.
+  "Control has no AutomationId", the most common problem, was judged right 106 times out of 107.
 - **The live scan agreed with UI Automation on every control.** On 4 running apps, it found the same 180 controls, with the same
   IDs, as an independent dump of the UI Automation tree.
 - **Every locator it recommended worked.** All 566 locators that `recommend_locators` gave for 262 elements found exactly the
@@ -72,7 +73,7 @@ anything UI Automation calls a button, text box, check box, radio button, combo 
 slider, hyperlink, spinner, split button, calendar or document. Then, for each element (up to 600 per app), it asks the same
 logic as `recommend_locators` for its locators and runs every one with plain FlaUI, to check it finds exactly that element.
 
-**3. Hand-checked sample** ([`benchmark/labels/`](../benchmark/labels), [`benchmark/labels.py`](../benchmark/labels.py)).
+**3. Sample reviewed by the AI assistant** ([`benchmark/labels/`](../benchmark/labels), [`benchmark/labels.py`](../benchmark/labels.py)).
 For each app, 20 problems were picked at random from the source scan and each was labelled **real** (a tester would agree it
 is a problem) or **false alarm** (it isn't, for example because the ID or name is set somewhere the scan doesn't look), after
 reading the XAML and, where needed, the C# classes and the control library's styles. Each label has a one-line reason.
@@ -85,7 +86,7 @@ assistant that built this benchmark), so a second opinion on any of them is welc
 
 Times are from one run on a Mac; the GitHub Actions Linux runner takes about 10 seconds in total.
 
-| App | Styles | Crashed | Time | Same twice | Score | Screens | Controls | Problems | Precision (hand-checked) |
+| App | Styles | Crashed | Time | Same twice | Score | Screens | Controls | Problems | Precision (AI-reviewed) |
 |---|---|---|---:|---|---:|---:|---:|---:|---:|
 | ILSpy | plain WPF, controls built in code, docking layout | no | 0.6 s | yes | 54.8 (D) | 104 | 89 | 144 | 90% (18/20) |
 | dnSpyEx | MVVM, controls built in code, plug-in extensions | no | 3.6 s | yes | 57.1 (D) | 113 | 960 | 1339 | 95% (19/20) |
@@ -104,7 +105,7 @@ The low scores are expected: open-source WPF apps rarely set AutomationIds (ILSp
 
 ### Precision by problem type
 
-| Rule | Problems (all apps) | Hand-checked | Precision |
+| Rule | Problems (all apps) | AI-reviewed | Precision |
 |---|---:|---:|---:|
 | WT001 Control has no AutomationId | 6602 | 107 | 99% |
 | WT002 ID is borrowed from x:Name | 2474 | 33 | 100% |
@@ -155,8 +156,8 @@ Full details, including examples of every disagreement, are in [`benchmark/resul
 ### Fixed after the first run
 
 These three were found by the first run and fixed in the source scan afterwards, each with tests. Together they removed
-6 of the 13 false alarms in the hand-checked sample. Because the fixes changed the problem lists of five apps, those apps'
-samples were redrawn, and the 46 new picks were checked by hand in the same way.
+6 of the 13 false alarms in the sample. Because the fixes changed the problem lists of five apps, those apps'
+samples were redrawn, and the 46 new picks were reviewed by the AI assistant in the same way.
 
 - **`Label Target="SomeName"` is now understood.** WPF accepts a plain element name in `Target`, as well as
   `{Binding ElementName=...}` and `{x:Reference ...}`, and the label then names the control. The scan used to report
@@ -200,7 +201,7 @@ The scoring rules were left alone; these are the problems worth fixing next, mos
    text is a translated resource now names its control with that markup.
 4. **An empty combo box is reported as having rows that can't be told apart.** A `ComboBox` with no items, no
    `ItemsSource` and no name for code to fill it has no rows at all. This is 3 of the 30 such combo boxes reported in
-   WPF-Samples; the two that were hand-checked (one in each run) were false alarms.
+   WPF-Samples; the two in the samples (one in each run) were judged false alarms.
 5. **The live benchmark only reads each app's first screen** (about 180 controls in all). Opening more screens (tabs, navigation
    pages, dialogs) would make the live numbers stronger.
 
@@ -240,5 +241,5 @@ python3 benchmark/labels.py score
 python3 benchmark/summary.py
 ```
 
-When a rule change alters the golden files, `labels.py score` lists any hand-checked problem that no longer exists; run
+When a rule change alters the golden files, `labels.py score` lists any labelled problem that no longer exists; run
 `python3 benchmark/labels.py sample` to draw replacements, label them, and score again.

@@ -25,7 +25,7 @@ def main() -> None:
     precision = json.loads((RESULTS / "precision.json").read_text(encoding="utf-8"))
 
     print("### Source scan\n")
-    print("| App | Styles | Crashed | Time | Same twice | Score | Screens | Controls | Problems | Precision (hand-checked) |")
+    print("| App | Styles | Crashed | Time | Same twice | Score | Screens | Controls | Problems | Precision (AI-reviewed) |")
     print("|---|---|---|---:|---|---:|---:|---:|---:|---:|")
     for id_, a in apps.items():
         s = source[id_]
@@ -45,7 +45,7 @@ def main() -> None:
     for s in source.values():
         for rule, n in s.get("problemsByRule", {}).items():
             totals[rule] = totals.get(rule, 0) + n
-    print("| Rule | Problems | Hand-checked | Precision |")
+    print("| Rule | Problems | AI-reviewed | Precision |")
     print("|---|---:|---:|---:|")
     for rule in sorted(totals):
         p = precision["byRule"].get(rule, {})
